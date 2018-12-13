@@ -78,7 +78,6 @@ var home_HomePage = /** @class */ (function () {
         }).catch(function (error) {
             console.log("promesse échouée", error);
         });
-        console.log("getContent", getContent);
     };
     HomePage = __decorate([
         Object(core["k" /* Component */])({

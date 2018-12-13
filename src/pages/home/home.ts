@@ -19,8 +19,6 @@ export class HomePage {
       }).catch((error) => {
         console.log("promesse échouée", error);
       });
-
-    console.log("getContent", getContent);
   }
 
 }
