@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Conversaton Optimizer",
+  "short_name": "conversation-optimizr",
+  "version": "0.1.0",
+  "content_security_policy": "script-src 'self' 'sha256-N0k0/YcUD0DG7+FEelEAXKBs7MLL5QYx8+LoBNMtJJY='; object-src 'self'",
+  "browser_action": {
+    "default_title": "Conversation Optimizr",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "*://*/*"
+  ]
+}

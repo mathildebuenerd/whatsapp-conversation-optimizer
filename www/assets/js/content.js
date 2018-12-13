@@ -16,8 +16,10 @@
       //
       // }
       // console.log(`divToFind`, divToFind);
-      containerToScroll.scrollTop -= 3000;
-      containerToScroll.scrollTop += 5000;
+
+      // go at the top of the page
+      containerToScroll.scrollTop = 0;
+      // containerToScroll.scrollTop += 5000;
 
 
     }, 2000);

@@ -23,5 +23,4 @@ export class HomePage {
     console.log("getContent", getContent);
   }
 
-
 }
