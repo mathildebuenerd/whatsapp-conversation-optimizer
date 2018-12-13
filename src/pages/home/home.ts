@@ -21,4 +21,11 @@ export class HomePage {
       });
   }
 
+  openAddingForm() {
+
+  }
+
+  addToStorage() {
+
+  }
 }

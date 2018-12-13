@@ -51,13 +51,22 @@
       myStyle.type = 'text/css';
       myStyle.innerHTML =
         `.machineMessage {
-          content: attr(data-before);
-          padding: 30px;
+          position: fixed;
+          top: 0;
+          left: 0;
+          padding: 0 30px;
+          background-color: #242424;
+          width: 100vw;
+          height: 10vh;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+        }
+        
+        .machineMessage p {
           letter-spacing: 2px;
           font: 2em monospace;
           animation: processing 1s ease infinite;
-          position:fixed;
-          z-index: 10;
         }
         
         @keyframes processing {
@@ -74,18 +83,25 @@
         }`;
       document.querySelector('head').appendChild(myStyle);
 
+      // Add the tag for the machine messages
+      const machineMessage = document.createElement(`div`);
+      const machineMessageText = document.createElement(`p`);
+      machineMessage.setAttribute(`class`, `machineMessage`);
+      machineMessage.appendChild(machineMessageText);
+      document.body.appendChild(machineMessage);
+
+    //  reduce the height of the whatsapp app to let space for the machine messages
+      const app = document.querySelector(`#app`);
+      app.style.height = `90vh`;
+      app.style.position = `absolute`;
+      app.style.bottom = `0`;
+      app.style.top = `auto`;
+
     }
 
     function machineProcessingMessage(message, add = '') {
 
-      let machineMessage;
-
-      if (!document.querySelector(`.machineMessage`)) {
-        machineMessage = document.createElement(`div`);
-        machineMessage.setAttribute(`class`, `machineMessage`);
-      } else {
-        machineMessage = document.querySelector(`.machineMessage`);
-      }
+      let machineMessage = document.querySelector(`.machineMessage p`);
 
       // Decrease the opacity of the background
       const backgroundToFade = document.querySelector(`.copyable-area > div div:last-child`);
@@ -137,10 +153,9 @@
       // });
     }
     function removeProcessingAnimation() {
-      const containerToScroll = document.querySelector(`.copyable-area > div`);
-      containerToScroll.removeAttribute(`style`);
-      let processingAnimation = document.getElementById(`custom-style`);
-      processingAnimation.parentNode.removeChild(processingAnimation);
+      // Decrease the opacity of the background
+      const backgroundToFade = document.querySelector(`.copyable-area > div div:last-child`);
+      backgroundToFade.style.opacity = 1;
     }
     function showSuccessMessage() {
 
