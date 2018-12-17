@@ -72,16 +72,28 @@ var home_HomePage = /** @class */ (function () {
         this.navCtrl = navCtrl;
     }
     HomePage.prototype.scrapConversation = function () {
+        var _this = this;
         var getContent = browser.tabs.executeScript(null, { file: '../assets/js/content.js' }).then(function (content) {
             console.log("promesse réussie");
             console.log(content);
+            var contactName = "Amandla";
+            _this.addConversationToStorage(contactName, content);
+            console.log(JSON.parse(localStorage.getItem("conversations")));
+            console.log(JSON.parse(localStorage.getItem("Amandla")));
+            // console.log(JSON.parse(localStorage.getItem("conversations")));
         }).catch(function (error) {
             console.log("promesse échouée", error);
         });
     };
     HomePage.prototype.openAddingForm = function () {
     };
-    HomePage.prototype.addToStorage = function () {
+    HomePage.prototype.addConversationToStorage = function (contactName, data) {
+        if (!JSON.parse(localStorage.getItem("conversations"))) {
+            localStorage.setItem("conversations", JSON.stringify({}));
+        }
+        var conversations = JSON.parse(localStorage.getItem("conversations"));
+        var newConversation = conversations.contactName = data;
+        localStorage.setItem(conversations, JSON.stringify(newConversation));
     };
     HomePage = __decorate([
         Object(core["k" /* Component */])({
