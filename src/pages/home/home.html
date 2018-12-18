@@ -1,17 +1,28 @@
 <ion-header>Conversation Optimizer</ion-header>
 
 <ion-content padding>
-  <button ion-button
-          (click)="scrapConversation()">Get this conversation</button>
 
-  <ion-item>
-    <ion-label stacked>Contact Name</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+  <ion-card padding>
+    <ion-card-title></ion-card-title>
+    <button ion-button
+            (click)="scrapConversation()">Get this conversation</button>
+  </ion-card>
 
 
-  <button ion-button
-          (click)="addToStorage()">Add the conversation</button>
+
+
+
+  <ion-card padding
+            *ngIf="askForName">
+    <ion-item>
+      <ion-label stacked>Contact Name</ion-label>
+      <ion-input type="text">{{ this.currentName }}</ion-input>
+    </ion-item>
+    <button ion-button
+            [disabled]="this.currentName === ''"
+            (click)="addConversationToStorage(this.currentName, this.currentConversation)">Validate</button>
+  </ion-card>
+
 
 </ion-content>
 

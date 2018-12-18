@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 121:
+/***/ 123:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,7 +13,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 121;
+webpackEmptyAsyncContext.id = 123;
 
 /***/ }),
 
@@ -70,30 +70,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var home_HomePage = /** @class */ (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
+        this.currentName = "";
+        this.askForName = false;
     }
     HomePage.prototype.scrapConversation = function () {
         var _this = this;
         var getContent = browser.tabs.executeScript(null, { file: '../assets/js/content.js' }).then(function (content) {
             console.log("promesse réussie");
             console.log(content);
-            var contactName = "Amandla";
-            _this.addConversationToStorage(contactName, content);
-            console.log(JSON.parse(localStorage.getItem("conversations")));
-            console.log(JSON.parse(localStorage.getItem("Amandla")));
+            _this.askForName = true;
+            _this.currentConversation = content;
+            // console.log(JSON.parse(localStorage.getItem("conversations")));
             // console.log(JSON.parse(localStorage.getItem("conversations")));
         }).catch(function (error) {
             console.log("promesse échouée", error);
         });
     };
-    HomePage.prototype.openAddingForm = function () {
+    HomePage.prototype.openAddContactForm = function () {
     };
     HomePage.prototype.addConversationToStorage = function (contactName, data) {
         if (!JSON.parse(localStorage.getItem("conversations"))) {
             localStorage.setItem("conversations", JSON.stringify({}));
         }
-        var conversations = JSON.parse(localStorage.getItem("conversations"));
-        var newConversation = conversations.contactName = data;
-        localStorage.setItem(conversations, JSON.stringify(newConversation));
+        var newConversation = { contactName: data };
+        localStorage.setItem("conversations", JSON.stringify(newConversation));
+        console.log(JSON.parse(localStorage.getItem("conversations")));
     };
     HomePage = __decorate([
         Object(core["k" /* Component */])({
@@ -269,7 +270,7 @@ var gesture_controller = __webpack_require__(6);
 var transition_controller = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/deep-linker.js
-var deep_linker = __webpack_require__(13);
+var deep_linker = __webpack_require__(14);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
 var dom_controller = __webpack_require__(8);
@@ -306,29 +307,14 @@ function View_MyApp_Host_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), cor
 var MyAppNgFactory = core["_13" /* ɵccf */]("ng-component", app_component_MyApp, View_MyApp_Host_0, {}, {}, []);
 
 //# sourceMappingURL=app.component.ngfactory.js.map
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
-var toolbar_header = __webpack_require__(103);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
-var content_ngfactory = __webpack_require__(228);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
-var content = __webpack_require__(20);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
-var keyboard = __webpack_require__(28);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
-var button_ngfactory = __webpack_require__(34);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
-var button_button = __webpack_require__(18);
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card.js
+var card = __webpack_require__(84);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
 var item_ngfactory = __webpack_require__(183);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
-var item = __webpack_require__(15);
+var item = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
 var util_form = __webpack_require__(12);
@@ -343,13 +329,37 @@ var item_content = __webpack_require__(59);
 var label = __webpack_require__(38);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.ngfactory.js
-var input_ngfactory = __webpack_require__(229);
+var input_ngfactory = __webpack_require__(228);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.js
 var input = __webpack_require__(58);
 
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
+var content = __webpack_require__(20);
+
 // EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(14);
+var esm5_forms = __webpack_require__(15);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
+var button_ngfactory = __webpack_require__(34);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
+var button_button = __webpack_require__(18);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
+var toolbar_header = __webpack_require__(105);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
+var content_ngfactory = __webpack_require__(229);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
+var keyboard = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-title.js
+var card_title = __webpack_require__(85);
+
+// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
+var common = __webpack_require__(13);
 
 // CONCATENATED MODULE: ./src/pages/home/home.ngfactory.js
 /**
@@ -381,25 +391,26 @@ var esm5_forms = __webpack_require__(14);
 
 
 
+
+
+
 var styles_HomePage = [];
 var RenderType_HomePage = core["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_HomePage, data: {} });
 
-function View_HomePage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 2, "ion-header", [], null, null, null, null, null)), core["_16" /* ɵdid */](1, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Conversation Optimizer"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n"])), (_l()(), core["_17" /* ɵeld */](4, 0, null, null, 25, "ion-content", [["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](5, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n  "])), (_l()(), core["_17" /* ɵeld */](7, 0, null, 1, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+function View_HomePage_1(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 22, "ion-card", [["padding", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](1, 16384, null, 0, card["a" /* Card */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](3, 0, null, null, 14, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](4, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 1, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 2, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 3, { _icons: 1 }), core["_16" /* ɵdid */](8, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](10, 0, null, 1, 2, "ion-label", [["stacked", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](11, 16384, [[1, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [8, null], [8, ""], [8, null], [8, null]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Contact Name"])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](14, 0, null, 3, 2, "ion-input", [["type", "text"]], null, null, null, input_ngfactory["b" /* View_TextInput_0 */], input_ngfactory["a" /* RenderType_TextInput */])), core["_16" /* ɵdid */](15, 5423104, null, 0, input["a" /* TextInput */], [config["a" /* Config */], platform_platform["a" /* Platform */], util_form["a" /* Form */], app["a" /* App */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, content["a" /* Content */]], [2, item["a" /* Item */]], [2, esm5_forms["f" /* NgControl */]], dom_controller["a" /* DomController */]], { type: [0, "type"] }, null), (_l()(), core["_36" /* ɵted */](16, null, ["", ""])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](19, 0, null, null, 2, "button", [["ion-button", ""]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.addConversationToStorage(_co.currentName, _co.currentConversation) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](20, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Validate"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n  "]))], function (_ck, _v) { var currVal_0 = "text"; _ck(_v, 15, 0, currVal_0); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.currentName; _ck(_v, 16, 0, currVal_1); var currVal_2 = (_co.currentName === ""); _ck(_v, 19, 0, currVal_2); }); }
+function View_HomePage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 2, "ion-header", [], null, null, null, null, null)), core["_16" /* ɵdid */](1, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Conversation Optimizer"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n"])), (_l()(), core["_17" /* ɵeld */](4, 0, null, null, 16, "ion-content", [["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](5, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_17" /* ɵeld */](7, 0, null, 1, 9, "ion-card", [["padding", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](8, 16384, null, 0, card["a" /* Card */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](10, 0, null, null, 1, "ion-card-title", [], null, null, null, null, null)), core["_16" /* ɵdid */](11, 16384, null, 0, card_title["a" /* CardTitle */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](13, 0, null, null, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.scrapConversation() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](8, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Get this conversation"])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_17" /* ɵeld */](11, 0, null, 1, 13, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](12, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 1, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 2, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 3, { _icons: 1 }), core["_16" /* ɵdid */](16, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n    "])), (_l()(), core["_17" /* ɵeld */](18, 0, null, 1, 2, "ion-label", [["stacked", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](19, 16384, [[1, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [8, null], [8, ""], [8, null], [8, null]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Contact Name"])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n    "])), (_l()(), core["_17" /* ɵeld */](22, 0, null, 3, 1, "ion-input", [["type", "text"]], null, null, null, input_ngfactory["b" /* View_TextInput_0 */], input_ngfactory["a" /* RenderType_TextInput */])), core["_16" /* ɵdid */](23, 5423104, null, 0, input["a" /* TextInput */], [config["a" /* Config */], platform_platform["a" /* Platform */], util_form["a" /* Form */], app["a" /* App */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, content["a" /* Content */]], [2, item["a" /* Item */]], [2, esm5_forms["f" /* NgControl */]], dom_controller["a" /* DomController */]], { type: [0, "type"] }, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n\n  "])), (_l()(), core["_17" /* ɵeld */](26, 0, null, 1, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.addToStorage() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](27, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Add the conversation"])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n\n"]))], function (_ck, _v) { var currVal_2 = "text"; _ck(_v, 23, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 5).statusbarPadding; var currVal_1 = core["_29" /* ɵnov */](_v, 5)._hasRefresher; _ck(_v, 4, 0, currVal_0, currVal_1); }); }
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](14, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Get this conversation"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n\n\n\n\n  "])), (_l()(), core["_12" /* ɵand */](16777216, null, 1, 1, null, View_HomePage_1)), core["_16" /* ɵdid */](19, 16384, null, 0, common["i" /* NgIf */], [core["_0" /* ViewContainerRef */], core["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n\n"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.askForName; _ck(_v, 19, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 5).statusbarPadding; var currVal_1 = core["_29" /* ɵnov */](_v, 5)._hasRefresher; _ck(_v, 4, 0, currVal_0, currVal_1); }); }
 function View_HomePage_Host_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "page-home", [], null, null, null, View_HomePage_0, RenderType_HomePage)), core["_16" /* ɵdid */](1, 49152, null, 0, home_HomePage, [nav_controller["a" /* NavController */]], null, null)], null, null); }
 var HomePageNgFactory = core["_13" /* ɵccf */]("page-home", home_HomePage, View_HomePage_Host_0, {}, {}, []);
 
 //# sourceMappingURL=home.ngfactory.js.map
-// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
-var common = __webpack_require__(16);
-
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-config.js
-var gesture_config = __webpack_require__(111);
+var gesture_config = __webpack_require__(113);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-controller.js
 var action_sheet_controller = __webpack_require__(81);
@@ -408,13 +419,13 @@ var action_sheet_controller = __webpack_require__(81);
 var alert_controller = __webpack_require__(83);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/events.js
-var events = __webpack_require__(108);
+var events = __webpack_require__(110);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/tap-click/haptic.js
 var haptic = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-controller.js
-var loading_controller = __webpack_require__(88);
+var loading_controller = __webpack_require__(90);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
 var ionic_angular_module = __webpack_require__(180);
@@ -426,34 +437,34 @@ var url_serializer = __webpack_require__(44);
 var module_loader = __webpack_require__(40);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-controller.js
-var modal_controller = __webpack_require__(90);
+var modal_controller = __webpack_require__(92);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-controller.js
 var picker_controller = __webpack_require__(55);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-controller.js
-var popover_controller = __webpack_require__(95);
+var popover_controller = __webpack_require__(97);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/tap-click/tap-click.js + 3 modules
-var tap_click = __webpack_require__(107);
+var tap_click = __webpack_require__(109);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-controller.js
-var toast_controller = __webpack_require__(102);
+var toast_controller = __webpack_require__(104);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/ionic-error-handler.js
 var ionic_error_handler = __webpack_require__(179);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform-registry.js
-var platform_registry = __webpack_require__(109);
+var platform_registry = __webpack_require__(111);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/menu-controller.js
 var menu_controller = __webpack_require__(24);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/ng-module-loader.js
-var ng_module_loader = __webpack_require__(89);
+var ng_module_loader = __webpack_require__(91);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/mode-registry.js
-var mode_registry = __webpack_require__(110);
+var mode_registry = __webpack_require__(112);
 
 // CONCATENATED MODULE: ./src/app/app.module.ngfactory.js
 /**
