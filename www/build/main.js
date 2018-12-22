@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 123:
+/***/ 122:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,11 +13,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 123;
+webpackEmptyAsyncContext.id = 122;
 
 /***/ }),
 
-/***/ 154:
+/***/ 153:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -30,7 +30,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 154;
+webpackEmptyAsyncContext.id = 153;
 
 /***/ }),
 
@@ -47,13 +47,13 @@ var platform_browser = __webpack_require__(30);
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 4 modules
-var ionic_angular = __webpack_require__(77);
+var ionic_angular = __webpack_require__(78);
 
 // EXTERNAL MODULE: ./node_modules/@ionic-native/splash-screen/index.js
-var splash_screen = __webpack_require__(70);
+var splash_screen = __webpack_require__(71);
 
 // EXTERNAL MODULE: ./node_modules/@ionic-native/status-bar/index.js
-var status_bar = __webpack_require__(71);
+var status_bar = __webpack_require__(72);
 
 // CONCATENATED MODULE: ./src/pages/home/home.ts
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -308,7 +308,7 @@ var MyAppNgFactory = core["_13" /* ɵccf */]("ng-component", app_component_MyApp
 
 //# sourceMappingURL=app.component.ngfactory.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card.js
-var card = __webpack_require__(84);
+var card = __webpack_require__(85);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
 var item_ngfactory = __webpack_require__(183);
@@ -346,9 +346,6 @@ var button_ngfactory = __webpack_require__(34);
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
 var button_button = __webpack_require__(18);
 
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
-var toolbar_header = __webpack_require__(105);
-
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
 var content_ngfactory = __webpack_require__(229);
 
@@ -356,10 +353,13 @@ var content_ngfactory = __webpack_require__(229);
 var keyboard = __webpack_require__(28);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-title.js
-var card_title = __webpack_require__(85);
+var card_title = __webpack_require__(86);
 
 // EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
 var common = __webpack_require__(13);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list-header.js
+var list_header = __webpack_require__(62);
 
 // CONCATENATED MODULE: ./src/pages/home/home.ngfactory.js
 /**
@@ -400,26 +400,26 @@ var RenderType_HomePage = core["_15" /* ɵcrt */]({ encapsulation: 2, styles: st
 function View_HomePage_1(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 22, "ion-card", [["padding", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](1, 16384, null, 0, card["a" /* Card */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](3, 0, null, null, 14, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](4, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 1, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 2, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 3, { _icons: 1 }), core["_16" /* ɵdid */](8, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](10, 0, null, 1, 2, "ion-label", [["stacked", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](11, 16384, [[1, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [8, null], [8, ""], [8, null], [8, null]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Contact Name"])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](14, 0, null, 3, 2, "ion-input", [["type", "text"]], null, null, null, input_ngfactory["b" /* View_TextInput_0 */], input_ngfactory["a" /* RenderType_TextInput */])), core["_16" /* ɵdid */](15, 5423104, null, 0, input["a" /* TextInput */], [config["a" /* Config */], platform_platform["a" /* Platform */], util_form["a" /* Form */], app["a" /* App */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, content["a" /* Content */]], [2, item["a" /* Item */]], [2, esm5_forms["f" /* NgControl */]], dom_controller["a" /* DomController */]], { type: [0, "type"] }, null), (_l()(), core["_36" /* ɵted */](16, null, ["", ""])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](19, 0, null, null, 2, "button", [["ion-button", ""]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.addConversationToStorage(_co.currentName, _co.currentConversation) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](20, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Validate"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n  "]))], function (_ck, _v) { var currVal_0 = "text"; _ck(_v, 15, 0, currVal_0); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.currentName; _ck(_v, 16, 0, currVal_1); var currVal_2 = (_co.currentName === ""); _ck(_v, 19, 0, currVal_2); }); }
-function View_HomePage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 2, "ion-header", [], null, null, null, null, null)), core["_16" /* ɵdid */](1, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Conversation Optimizer"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n"])), (_l()(), core["_17" /* ɵeld */](4, 0, null, null, 16, "ion-content", [["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](5, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_17" /* ɵeld */](7, 0, null, 1, 9, "ion-card", [["padding", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](8, 16384, null, 0, card["a" /* Card */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](10, 0, null, null, 1, "ion-card-title", [], null, null, null, null, null)), core["_16" /* ɵdid */](11, 16384, null, 0, card_title["a" /* CardTitle */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](13, 0, null, null, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](20, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Validate"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n  "]))], function (_ck, _v) { var currVal_0 = "text"; _ck(_v, 15, 0, currVal_0); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.currentName; _ck(_v, 16, 0, currVal_1); var currVal_2 = !_co.currentName; _ck(_v, 19, 0, currVal_2); }); }
+function View_HomePage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 81, "ion-content", [["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](1, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_17" /* ɵeld */](3, 0, null, 1, 9, "ion-card", [["padding", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](4, 16384, null, 0, card["a" /* Card */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](6, 0, null, null, 1, "ion-card-title", [], null, null, null, null, null)), core["_16" /* ɵdid */](7, 16384, null, 0, card_title["a" /* CardTitle */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](9, 0, null, null, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.scrapConversation() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](14, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Get this conversation"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n\n\n\n\n  "])), (_l()(), core["_12" /* ɵand */](16777216, null, 1, 1, null, View_HomePage_1)), core["_16" /* ɵdid */](19, 16384, null, 0, common["i" /* NgIf */], [core["_0" /* ViewContainerRef */], core["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n\n"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.askForName; _ck(_v, 19, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 5).statusbarPadding; var currVal_1 = core["_29" /* ɵnov */](_v, 5)._hasRefresher; _ck(_v, 4, 0, currVal_0, currVal_1); }); }
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](10, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Get this conversation"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n\n\n\n\n  "])), (_l()(), core["_12" /* ɵand */](16777216, null, 1, 1, null, View_HomePage_1)), core["_16" /* ɵdid */](15, 16384, null, 0, common["i" /* NgIf */], [core["_0" /* ViewContainerRef */], core["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_17" /* ɵeld */](17, 0, null, 1, 63, "ion-card", [["padding", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](18, 16384, null, 0, card["a" /* Card */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](20, 0, null, null, 2, "ion-card-title", [], null, null, null, null, null)), core["_16" /* ɵdid */](21, 16384, null, 0, card_title["a" /* CardTitle */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Your stats"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](24, 0, null, null, 17, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](25, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 4, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 5, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 6, { _icons: 1 }), core["_16" /* ɵdid */](29, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](31, 0, null, 2, 6, "ion-list-header", [["class", "item"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](32, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 7, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 8, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 9, { _icons: 1 }), core["_16" /* ɵdid */](36, 16384, null, 0, list_header["a" /* ListHeader */], [config["a" /* Config */], core["N" /* Renderer */], core["p" /* ElementRef */], [8, null]], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["Most positive contact"])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](39, 0, null, 2, 1, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](40, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n    "])), (_l()(), core["_17" /* ɵeld */](43, 0, null, null, 17, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](44, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 10, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 11, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 12, { _icons: 1 }), core["_16" /* ɵdid */](48, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](50, 0, null, 2, 6, "ion-list-header", [["class", "item"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](51, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 13, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 14, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 15, { _icons: 1 }), core["_16" /* ɵdid */](55, 16384, null, 0, list_header["a" /* ListHeader */], [config["a" /* Config */], core["N" /* Renderer */], core["p" /* ElementRef */], [8, null]], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["Most negative contact"])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](58, 0, null, 2, 1, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](59, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n    "])), (_l()(), core["_17" /* ɵeld */](62, 0, null, null, 17, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](63, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 16, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 17, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 18, { _icons: 1 }), core["_16" /* ɵdid */](67, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](69, 0, null, 2, 6, "ion-list-header", [["class", "item"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](70, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 19, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 20, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 21, { _icons: 1 }), core["_16" /* ɵdid */](74, 16384, null, 0, list_header["a" /* ListHeader */], [config["a" /* Config */], core["N" /* Renderer */], core["p" /* ElementRef */], [8, null]], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["Positivity over days"])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](77, 0, null, 2, 1, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](78, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n\n"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.askForName; _ck(_v, 15, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 1).statusbarPadding; var currVal_1 = core["_29" /* ɵnov */](_v, 1)._hasRefresher; _ck(_v, 0, 0, currVal_0, currVal_1); var currVal_3 = core["_29" /* ɵnov */](_v, 40).statusbarPadding; var currVal_4 = core["_29" /* ɵnov */](_v, 40)._hasRefresher; _ck(_v, 39, 0, currVal_3, currVal_4); var currVal_5 = core["_29" /* ɵnov */](_v, 59).statusbarPadding; var currVal_6 = core["_29" /* ɵnov */](_v, 59)._hasRefresher; _ck(_v, 58, 0, currVal_5, currVal_6); var currVal_7 = core["_29" /* ɵnov */](_v, 78).statusbarPadding; var currVal_8 = core["_29" /* ɵnov */](_v, 78)._hasRefresher; _ck(_v, 77, 0, currVal_7, currVal_8); }); }
 function View_HomePage_Host_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "page-home", [], null, null, null, View_HomePage_0, RenderType_HomePage)), core["_16" /* ɵdid */](1, 49152, null, 0, home_HomePage, [nav_controller["a" /* NavController */]], null, null)], null, null); }
 var HomePageNgFactory = core["_13" /* ɵccf */]("page-home", home_HomePage, View_HomePage_Host_0, {}, {}, []);
 
 //# sourceMappingURL=home.ngfactory.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-config.js
-var gesture_config = __webpack_require__(113);
+var gesture_config = __webpack_require__(112);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-controller.js
-var action_sheet_controller = __webpack_require__(81);
+var action_sheet_controller = __webpack_require__(82);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-controller.js
-var alert_controller = __webpack_require__(83);
+var alert_controller = __webpack_require__(84);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/events.js
-var events = __webpack_require__(110);
+var events = __webpack_require__(109);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/tap-click/haptic.js
 var haptic = __webpack_require__(29);
@@ -446,7 +446,7 @@ var picker_controller = __webpack_require__(55);
 var popover_controller = __webpack_require__(97);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/tap-click/tap-click.js + 3 modules
-var tap_click = __webpack_require__(109);
+var tap_click = __webpack_require__(108);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-controller.js
 var toast_controller = __webpack_require__(104);
@@ -455,7 +455,7 @@ var toast_controller = __webpack_require__(104);
 var ionic_error_handler = __webpack_require__(179);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform-registry.js
-var platform_registry = __webpack_require__(111);
+var platform_registry = __webpack_require__(110);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/menu-controller.js
 var menu_controller = __webpack_require__(24);
@@ -464,7 +464,7 @@ var menu_controller = __webpack_require__(24);
 var ng_module_loader = __webpack_require__(91);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/mode-registry.js
-var mode_registry = __webpack_require__(112);
+var mode_registry = __webpack_require__(111);
 
 // CONCATENATED MODULE: ./src/app/app.module.ngfactory.js
 /**

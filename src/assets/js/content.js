@@ -30,6 +30,7 @@
 
       // If the counter is at 7, it means we were not able to scroll top for 14 seconds,
       // So we have probably reached the top
+      // But it could also be because the network is slow
       if (counter === 7) {
         console.log(`on a atteint le bout`);
         isScrollingFinished = true;
@@ -50,12 +51,12 @@
       myStyle.setAttribute(`id`, `custom-style`);
       myStyle.type = 'text/css';
       myStyle.innerHTML =
-        `.machineMessage {
+        `.machine-message {
           position: fixed;
           top: 0;
           left: 0;
           padding: 0 30px;
-          background-color: #242424;
+          background-color: #eee;
           width: 100vw;
           height: 10vh;
           box-sizing: border-box;
@@ -63,15 +64,33 @@
           align-items: center;
         }
         
-        .machineMessage p {
+        .machine-message p {
           letter-spacing: 2px;
           font: 2em monospace;
-          animation: processing 1s ease infinite;
+          animation: machineMessage 1s ease infinite;
         }
         
-        @keyframes processing {
+        .success-message {
+          position: fixed,
+          left: 50vw,
+          top: 50vh,
+          transform: translate(-50%, -50%),
+          background: linear-gradient(to bottom right, #4DBCE9, #26ADE4),
+          display: inline-flex,
+          box-sizing: border-box,
+          padding: 30px,
+          borderRadius: 3px,
+          box-shadow: 5px 5px 10px #9696984d,
+          font: 1.5em 'Roboto', sans-serif,
+          color: white,
+          letter-spacing: 1px,
+          animation: temporaryAlert 5s
+        }
+        
+        @keyframes machineMessage {
           0%{opacity: 0;}
-          50%{opacity: 1;}
+          40%{opacity: 1;}
+          60%{opacity: 1;}
           100%{opacity: 0;}
         }
         
@@ -86,11 +105,11 @@
       // Add the tag for the machine messages
       const machineMessage = document.createElement(`div`);
       const machineMessageText = document.createElement(`p`);
-      machineMessage.setAttribute(`class`, `machineMessage`);
+      machineMessage.setAttribute(`class`, `machine-message`);
       machineMessage.appendChild(machineMessageText);
       document.body.appendChild(machineMessage);
 
-    //  reduce the height of the whatsapp app to let space for the machine messages
+      //  reduce the height of the whatsapp app to let space for the machine messages
       const app = document.querySelector(`#app`);
       app.style.height = `90vh`;
       app.style.position = `absolute`;
@@ -101,7 +120,7 @@
 
     function machineProcessingMessage(message, add = '') {
 
-      let machineMessage = document.querySelector(`.machineMessage p`);
+      let machineMessage = document.querySelector(`.machine-message p`);
 
       // Decrease the opacity of the background
       const backgroundToFade = document.querySelector(`.copyable-area > div div:last-child`);
@@ -124,31 +143,65 @@
     let messages = getMessages();
     return messages;
 
+    function getEmojis(message) {
+      // In whatsapp, the emojis are displayed as an image
+      // But the alt text is the unicode character
+
+      let emojis = message.querySelectorAll(`img`);
+      let emojiList = [];
+
+      for (const item of emojis) {
+        // console.log(`emojis`, emojis);
+        // console.log(`item`, item);
+        const emoji = item.attributes[`alt`].nodeValue;
+        emojiList.push(emoji);
+      }
+
+
+      console.log("emojiList", emojiList);
+      return emojiList;
+
+
+
+    }
+
     function getMessages() {
 
       // return new Promise( (resolve, reject) => {
-        const messagesInElements = document.querySelectorAll(`.message-in .selectable-text`);
-        const messagesOutElements = document.querySelectorAll(`.message-out .selectable-text`);
+      // We use div:last-child to avoid getting the messages that are quoted
+      const messagesInElements = document.querySelectorAll(`.message-in .copyable-text[data-pre-plain-text] > div:last-child`);
+      const messagesOutElements = document.querySelectorAll(`.message-out .copyable-text[data-pre-plain-text] > div:last-child`);
 
-        let messagesIn = [];
-        // console.log(`messagesIn`, messagesIn);
-        let messagesOut = [];
-        // console.log(`messagesOut`, messagesOut);
+      let messagesIn = [];
+      // console.log(`messagesIn`, messagesIn);
+      let messagesOut = [];
+      // console.log(`messagesOut`, messagesOut);
+
+      console.log(`typeof de messagesIn[0]: ${typeof messagesIn[0]}`);
 
 
-        for (let i=0; i<messagesInElements.length; i++) {
-          messagesIn.push(messagesInElements[i].textContent)
-        }
+      for (let i=0; i<messagesInElements.length; i++) {
+        messagesIn[i] = {};
+        messagesIn[i].text = messagesInElements[i].textContent;
+        messagesIn[i].emojis = getEmojis(messagesInElements[i]);
+        messagesIn[i].date = messagesInElements[i].parentNode.attributes[`data-pre-plain-text`].nodeValue;
+        console.log(`messagesIn[i]`, messagesIn[i]);
+        // messagesIn.push(messagesInElements[i].textContent)
+      }
 
-        for (let i=0; i<messagesOutElements.length; i++) {
-          messagesOut.push(messagesOutElements[i].textContent)
-        }
+      for (let i=0; i<messagesOutElements.length; i++) {
+        messagesOut[i] = {};
+        messagesOut[i].text = messagesOutElements[i].textContent;
+        messagesOut[i].emojis = getEmojis(messagesOutElements[i]);
+        messagesOut[i].date = messagesOutElements[i].parentNode.attributes[`data-pre-plain-text`].nodeValue;
+        // messagesOut.push(messagesOutElements[i].textContent)
+      }
 
-          let allMessages = {
-            messagesIn: messagesIn,
-            messagesOut: messagesOut
-          };
-           return allMessages;
+      let allMessages = {
+        messagesIn: messagesIn,
+        messagesOut: messagesOut
+      };
+      return allMessages;
 
       // });
     }
@@ -164,26 +217,8 @@
       app.style.opacity = 0.3;
 
       let successMessage = document.createElement(`div`);
-      successMessage.setAttribute(`id`, `success-message`);
+      successMessage.setAttribute(`class`, `success-message`);
       successMessage.textContent = "Perfetto! We got all the messages.";
-      Object.assign(
-        successMessage.style,
-        {
-          position: "fixed",
-          left: "50vw",
-          top: "50vh",
-          transform: "translate(-50%, -50%)",
-          background: "linear-gradient(to bottom right, #4DBCE9, #26ADE4)",
-          display: "inline-flex",
-          boxSizing: "border-box",
-          padding: "30px",
-          borderRadius: "3px",
-          boxShadow: "5px 5px 10px #9696984d",
-          font: "1.5em 'Roboto', sans-serif",
-          color: "white",
-          letterSpacing: "1px",
-          animation: "temporaryAlert 5s"
-        });
       document.body.appendChild(successMessage);
     }
   });

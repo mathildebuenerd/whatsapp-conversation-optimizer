@@ -1,5 +1,3 @@
-<ion-header>Conversation Optimizer</ion-header>
-
 <ion-content padding>
 
   <ion-card padding>
@@ -19,8 +17,27 @@
       <ion-input type="text">{{ this.currentName }}</ion-input>
     </ion-item>
     <button ion-button
-            [disabled]="this.currentName === ''"
+            [disabled]="!this.currentName"
             (click)="addConversationToStorage(this.currentName, this.currentConversation)">Validate</button>
+  </ion-card>
+
+  <ion-card padding>
+    <ion-card-title>Your stats</ion-card-title>
+    <ion-item>
+      <ion-list-header>Most positive contact</ion-list-header>
+      <ion-content></ion-content>
+    </ion-item>
+
+    <ion-item>
+      <ion-list-header>Most negative contact</ion-list-header>
+      <ion-content></ion-content>
+    </ion-item>
+
+    <ion-item>
+      <ion-list-header>Positivity over days</ion-list-header>
+      <ion-content></ion-content>
+    </ion-item>
+
   </ion-card>
 
 
