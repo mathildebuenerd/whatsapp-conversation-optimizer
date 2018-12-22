@@ -164,6 +164,23 @@
 
 
     }
+    function getDate(rawDate) {
+      // The date looks like this : [10:20, 17/12/2018] Contact Name:
+      // So we extract one by one the parameters
+      const regHour = /\[(.*?)\:/;
+      const regMinute = /\:(.*?)\,/;
+      const regDay = /\, (.*?)\//;
+      const regMonth = /\/(.*?)\//;
+      const regYear = /\/(.{4})\]/;
+
+      return {
+        hour: rawDate.match(regHour)[1],
+        minute: rawDate.match(regMinute)[1],
+        day: rawDate.match(regDay)[1],
+        month: rawDate.match(regMonth)[1],
+        year: rawDate.match(regYear)[1]
+      }
+    }
 
     function getMessages() {
 
@@ -184,7 +201,8 @@
         messagesIn[i] = {};
         messagesIn[i].text = messagesInElements[i].textContent;
         messagesIn[i].emojis = getEmojis(messagesInElements[i]);
-        messagesIn[i].date = messagesInElements[i].parentNode.attributes[`data-pre-plain-text`].nodeValue;
+        messagesIn[i].date = {};
+        messagesIn[i].date = getDate(messagesInElements[i].parentNode.attributes[`data-pre-plain-text`].nodeValue);
         console.log(`messagesIn[i]`, messagesIn[i]);
         // messagesIn.push(messagesInElements[i].textContent)
       }
@@ -193,7 +211,8 @@
         messagesOut[i] = {};
         messagesOut[i].text = messagesOutElements[i].textContent;
         messagesOut[i].emojis = getEmojis(messagesOutElements[i]);
-        messagesOut[i].date = messagesOutElements[i].parentNode.attributes[`data-pre-plain-text`].nodeValue;
+        messagesOut[i].date = {};
+        messagesOut[i].date = getDate(messagesOutElements[i].parentNode.attributes[`data-pre-plain-text`].nodeValue);
         // messagesOut.push(messagesOutElements[i].textContent)
       }
 
