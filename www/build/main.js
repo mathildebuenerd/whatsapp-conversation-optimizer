@@ -70,7 +70,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var home_HomePage = /** @class */ (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
-        this.currentName = "";
+        this.currentName = '';
         this.askForName = false;
     }
     HomePage.prototype.scrapConversation = function () {
@@ -88,13 +88,27 @@ var home_HomePage = /** @class */ (function () {
     };
     HomePage.prototype.openAddContactForm = function () {
     };
-    HomePage.prototype.addConversationToStorage = function (contactName, data) {
+    HomePage.prototype.addConversationToStorage = function () {
+        // localStorage.removeItem("conversations");
         if (!JSON.parse(localStorage.getItem("conversations"))) {
-            localStorage.setItem("conversations", JSON.stringify({}));
+            console.log("conversations n'existe pas");
+            var conversations_1 = [];
+            localStorage.setItem('conversations', JSON.stringify(conversations_1));
         }
-        var newConversation = { contactName: data };
-        localStorage.setItem("conversations", JSON.stringify(newConversation));
+        // as we can't "push()" into the localstorage
+        // we have to first get all the content, modify it and then add it back to the localstorage
+        var conversations = [];
+        conversations = JSON.parse(localStorage.getItem('conversations'));
+        // console.log(conversations);
+        conversations.push({
+            name: this.currentName,
+            messages: this.currentConversation
+        });
+        localStorage.setItem("conversations", JSON.stringify(conversations));
         console.log(JSON.parse(localStorage.getItem("conversations")));
+        this.currentName = "";
+        this.currentConversation = "";
+        this.askForName = false;
     };
     HomePage = __decorate([
         Object(core["k" /* Component */])({
@@ -310,6 +324,9 @@ var MyAppNgFactory = core["_13" /* ɵccf */]("ng-component", app_component_MyApp
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card.js
 var card = __webpack_require__(85);
 
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-title.js
+var card_title = __webpack_require__(86);
+
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
 var item_ngfactory = __webpack_require__(183);
 
@@ -331,14 +348,14 @@ var label = __webpack_require__(38);
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.ngfactory.js
 var input_ngfactory = __webpack_require__(228);
 
+// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
+var esm5_forms = __webpack_require__(15);
+
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.js
 var input = __webpack_require__(58);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
 var content = __webpack_require__(20);
-
-// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
 var button_ngfactory = __webpack_require__(34);
@@ -351,9 +368,6 @@ var content_ngfactory = __webpack_require__(229);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
 var keyboard = __webpack_require__(28);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-title.js
-var card_title = __webpack_require__(86);
 
 // EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
 var common = __webpack_require__(13);
@@ -397,10 +411,13 @@ var list_header = __webpack_require__(62);
 var styles_HomePage = [];
 var RenderType_HomePage = core["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_HomePage, data: {} });
 
-function View_HomePage_1(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 22, "ion-card", [["padding", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](1, 16384, null, 0, card["a" /* Card */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](3, 0, null, null, 14, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](4, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 1, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 2, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 3, { _icons: 1 }), core["_16" /* ɵdid */](8, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](10, 0, null, 1, 2, "ion-label", [["stacked", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](11, 16384, [[1, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [8, null], [8, ""], [8, null], [8, null]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Contact Name"])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](14, 0, null, 3, 2, "ion-input", [["type", "text"]], null, null, null, input_ngfactory["b" /* View_TextInput_0 */], input_ngfactory["a" /* RenderType_TextInput */])), core["_16" /* ɵdid */](15, 5423104, null, 0, input["a" /* TextInput */], [config["a" /* Config */], platform_platform["a" /* Platform */], util_form["a" /* Form */], app["a" /* App */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, content["a" /* Content */]], [2, item["a" /* Item */]], [2, esm5_forms["f" /* NgControl */]], dom_controller["a" /* DomController */]], { type: [0, "type"] }, null), (_l()(), core["_36" /* ɵted */](16, null, ["", ""])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](19, 0, null, null, 2, "button", [["ion-button", ""]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.addConversationToStorage(_co.currentName, _co.currentConversation) !== false);
+function View_HomePage_1(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 28, "ion-card", [["padding", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](1, 16384, null, 0, card["a" /* Card */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](3, 0, null, null, 2, "ion-card-title", [], null, null, null, null, null)), core["_16" /* ɵdid */](4, 16384, null, 0, card_title["a" /* CardTitle */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Remember that conversation"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](7, 0, null, null, 16, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_16" /* ɵdid */](8, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 1, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 2, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 3, { _icons: 1 }), core["_16" /* ɵdid */](12, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](14, 0, null, 1, 2, "ion-label", [["stacked", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](15, 16384, [[1, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [8, null], [8, ""], [8, null], [8, null]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["Contact Name"])), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n      "])), (_l()(), core["_17" /* ɵeld */](18, 0, null, 3, 4, "ion-input", [["type", "text"]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("ngModelChange" === en)) {
+        var pd_0 = ((_co.currentName = $event) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](20, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Validate"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n  "]))], function (_ck, _v) { var currVal_0 = "text"; _ck(_v, 15, 0, currVal_0); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.currentName; _ck(_v, 16, 0, currVal_1); var currVal_2 = !_co.currentName; _ck(_v, 19, 0, currVal_2); }); }
+    } return ad; }, input_ngfactory["b" /* View_TextInput_0 */], input_ngfactory["a" /* RenderType_TextInput */])), core["_16" /* ɵdid */](19, 671744, null, 0, esm5_forms["h" /* NgModel */], [[8, null], [8, null], [8, null], [8, null]], { model: [0, "model"] }, { update: "ngModelChange" }), core["_32" /* ɵprd */](2048, null, esm5_forms["f" /* NgControl */], null, [esm5_forms["h" /* NgModel */]]), core["_16" /* ɵdid */](21, 16384, null, 0, esm5_forms["g" /* NgControlStatus */], [esm5_forms["f" /* NgControl */]], null, null), core["_16" /* ɵdid */](22, 5423104, null, 0, input["a" /* TextInput */], [config["a" /* Config */], platform_platform["a" /* Platform */], util_form["a" /* Form */], app["a" /* App */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, content["a" /* Content */]], [2, item["a" /* Item */]], [2, esm5_forms["f" /* NgControl */]], dom_controller["a" /* DomController */]], { type: [0, "type"] }, null), (_l()(), core["_36" /* ɵted */](-1, 2, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](25, 0, null, null, 2, "button", [["ion-button", ""]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.addConversationToStorage() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](26, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Add to storage"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n  "]))], function (_ck, _v) { var _co = _v.component; var currVal_7 = _co.currentName; _ck(_v, 19, 0, currVal_7); var currVal_8 = "text"; _ck(_v, 22, 0, currVal_8); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = core["_29" /* ɵnov */](_v, 21).ngClassUntouched; var currVal_1 = core["_29" /* ɵnov */](_v, 21).ngClassTouched; var currVal_2 = core["_29" /* ɵnov */](_v, 21).ngClassPristine; var currVal_3 = core["_29" /* ɵnov */](_v, 21).ngClassDirty; var currVal_4 = core["_29" /* ɵnov */](_v, 21).ngClassValid; var currVal_5 = core["_29" /* ɵnov */](_v, 21).ngClassInvalid; var currVal_6 = core["_29" /* ɵnov */](_v, 21).ngClassPending; _ck(_v, 18, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); var currVal_9 = (_co.currentName === ""); _ck(_v, 25, 0, currVal_9); }); }
 function View_HomePage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 81, "ion-content", [["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](1, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_17" /* ɵeld */](3, 0, null, 1, 9, "ion-card", [["padding", ""]], null, null, null, null, null)), core["_16" /* ɵdid */](4, 16384, null, 0, card["a" /* Card */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](6, 0, null, null, 1, "ion-card-title", [], null, null, null, null, null)), core["_16" /* ɵdid */](7, 16384, null, 0, card_title["a" /* CardTitle */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_17" /* ɵeld */](9, 0, null, null, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.scrapConversation() !== false);
         ad = (pd_0 && ad);

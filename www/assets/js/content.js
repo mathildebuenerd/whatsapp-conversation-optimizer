@@ -147,7 +147,7 @@
       // In whatsapp, the emojis are displayed as an image
       // But the alt text is the unicode character
 
-      let emojis = message.querySelectorAll(`img`);
+      let emojis = message.querySelectorAll(`img:not(._1JVSX)`);
       let emojiList = [];
 
       for (const item of emojis) {
