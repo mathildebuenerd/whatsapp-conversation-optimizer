@@ -1,0 +1,17 @@
+<ion-content padding>
+
+  <ion-card padding>
+    <ion-card-title>{{ this.name }}'s profile</ion-card-title>
+  </ion-card>
+
+  <ion-card *ngIf="!isAnalyzed">
+    <button ion-button
+            (click)="analyzeContact()">Analyze contact</button>
+  </ion-card>
+
+  <ion-card *ngIf="isAnalyzed">
+    <ion-card-title>Favourite emojis</ion-card-title>
+    <ion-content>{{ this.favouriteEmojis }}</ion-content>
+  </ion-card>
+
+</ion-content>

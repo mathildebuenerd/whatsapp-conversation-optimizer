@@ -6,13 +6,20 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { GetWhatsappConversationsService } from "../services/getWhatsappConversations.service";
+import { ContactsPage } from "../pages/contacts/contacts";
+import { ContactProfilePage } from "../pages/contacts/contact-profile/contact-profile";
+import { TabsPage } from "../pages/tabs-menu/tabs-menu";
+
+import { TextAnalysisService } from "../services/TextAnalysis.service";
 
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    // ContactsPage,
+    // ContactProfilePage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -21,12 +28,15 @@ import { GetWhatsappConversationsService } from "../services/getWhatsappConversa
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ContactsPage,
+    ContactProfilePage,
+    TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    GetWhatsappConversationsService,
+    TextAnalysisService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
