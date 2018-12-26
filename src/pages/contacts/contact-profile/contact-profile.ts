@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import { TextAnalysisService } from "../../../services/TextAnalysis.service";
 
 
@@ -24,21 +24,26 @@ export class ContactProfilePage {
 
   favouriteEmojis: Object;
 
-  constructor(analysis: TextAnalysisService) {
+  constructor(analysis: TextAnalysisService,
+              public navParams: NavParams) {
     // this.name = name;
     // this.data = Object;
-    this.isAnalyzed = false;
     this.analysis = analysis;
+    // console.log(`this.analysis`, this.analysis);
+  }
+
+  ngOnInit() {
+    // Get the name passed when we came from the precedent page
+    this.name = this.navParams.get('contactName');
+    this.isAnalyzed = false;
     this.favouriteEmojis = {
       "out": {},
       "in": {}
     };
-
-    console.log(`this.analysis`, this.analysis);
   }
 
   analyzeContact() {
-    const emojis = this.analysis.getEmojis("Mezzo");
+    const emojis = this.analysis.getEmojis(this.name);
     console.log(`emojis received in analyseContact`, emojis);
     this.favouriteEmojis["out"] = emojis["emojiOut"];
     this.favouriteEmojis["in"] = emojis["emojiIn"];
@@ -46,9 +51,7 @@ export class ContactProfilePage {
     this.isAnalyzed = true;
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactProfilePage');
-  }
+
 
 
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {ContactProfilePage} from "./contact-profile/contact-profile";
 
 /**
  * Generated class for the ContactsPage page.
@@ -15,11 +16,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ContactsPage {
 
+  contactList: Array<string> = JSON.parse(localStorage.getItem('contactList'));
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    // this.contactList = JSON.parse(localStorage.getItem('contactList'));
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContactsPage');
+  }
+
+  ionViewWillEnter() {
+    // Make sure that we have all the contacts displayed
+    this.contactList = JSON.parse(localStorage.getItem('contactList'));
+  }
+
+  onGoToSingleContact(name: string) {
+    this.navCtrl.push(ContactProfilePage, {contactName: name});
   }
 
 }

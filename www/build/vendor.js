@@ -361,16 +361,16 @@
 /* unused harmony export ɵd */
 /* unused harmony export ɵba */
 /* unused harmony export ɵbb */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subscription__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subscription__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subscription___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Subscription__);
 /**
  * @license Angular v5.2.11
@@ -6941,7 +6941,7 @@ var SystemJsNgModuleLoader = /** @class */ (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__(132)(module)
+        return __webpack_require__(133)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -6961,7 +6961,7 @@ var SystemJsNgModuleLoader = /** @class */ (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(132)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(133)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -19710,7 +19710,7 @@ function transition$$1(stateChangeExpr, steps) {
 
 //# sourceMappingURL=core.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(123)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(124)))
 
 /***/ }),
 /* 1 */
@@ -20349,7 +20349,7 @@ function requestIonicCallback(functionToLazy) {
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
-var dom = __webpack_require__(14);
+var dom = __webpack_require__(15);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/platform/query-params.js
 /**
@@ -21906,7 +21906,7 @@ var core = __webpack_require__(0);
 var platform_browser = __webpack_require__(33);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-constants.js
-var app_constants = __webpack_require__(47);
+var app_constants = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config = __webpack_require__(1);
@@ -21927,7 +21927,7 @@ var animation = __webpack_require__(19);
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/page-transition.js
-var page_transition = __webpack_require__(40);
+var page_transition = __webpack_require__(41);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/transitions/transition-ios.js
 var __extends = (this && this.__extends) || (function () {
@@ -23301,7 +23301,7 @@ var Ion = (function () {
 /* unused harmony export ɵg */
 /* unused harmony export ɵf */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_tslib__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_tslib__ = __webpack_require__(57);
 /**
  * @license Angular v5.2.11
  * (c) 2010-2018 Google, Inc. https://angular.io/
@@ -29968,7 +29968,7 @@ var NavParams = (function () {
 /* unused harmony export getNavFromTree */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav_util__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__url_serializer__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__url_serializer__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__view_controller__ = __webpack_require__(4);
 
 
@@ -30746,13 +30746,102 @@ var NavController = (function () {
 
 /***/ }),
 /* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Form; });
+/* unused harmony export IonicTapInput */
+/* unused harmony export IonicFormInput */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(2);
+
+
+/**
+ * @hidden
+ */
+var Form = (function () {
+    function Form() {
+        this._focused = null;
+        this._ids = -1;
+        this._inputs = [];
+    }
+    Form.prototype.register = function (input) {
+        this._inputs.push(input);
+    };
+    Form.prototype.deregister = function (input) {
+        Object(__WEBPACK_IMPORTED_MODULE_1__util__["q" /* removeArrayItem */])(this._inputs, input);
+        this.unsetAsFocused(input);
+    };
+    Form.prototype.setAsFocused = function (input) {
+        this._focused = input;
+    };
+    Form.prototype.unsetAsFocused = function (input) {
+        if (input === this._focused) {
+            this._focused = null;
+        }
+    };
+    /**
+     * Focuses the next input element, if it exists.
+     */
+    Form.prototype.tabFocus = function (currentInput) {
+        var inputs = this._inputs;
+        var index = inputs.indexOf(currentInput) + 1;
+        if (index > 0 && index < inputs.length) {
+            var nextInput = inputs[index];
+            if (nextInput !== this._focused) {
+                (void 0) /* console.debug */;
+                return nextInput.initFocus();
+            }
+        }
+        index = inputs.indexOf(this._focused);
+        if (index > 0) {
+            var previousInput = inputs[index - 1];
+            if (previousInput) {
+                (void 0) /* console.debug */;
+                previousInput.initFocus();
+            }
+        }
+    };
+    Form.prototype.nextId = function () {
+        return ++this._ids;
+    };
+    Form.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    Form.ctorParameters = function () { return []; };
+    return Form;
+}());
+
+/**
+ * @hidden
+ */
+var IonicTapInput = (function () {
+    function IonicTapInput() {
+    }
+    return IonicTapInput;
+}());
+
+/**
+ * @hidden
+ */
+var IonicFormInput = (function () {
+    function IonicFormInput() {
+    }
+    return IonicFormInput;
+}());
+
+//# sourceMappingURL=form.js.map
+
+/***/ }),
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var root_1 = __webpack_require__(38);
+var root_1 = __webpack_require__(39);
 var toSubscriber_1 = __webpack_require__(200);
-var observable_1 = __webpack_require__(128);
+var observable_1 = __webpack_require__(129);
 var pipe_1 = __webpack_require__(202);
 /**
  * A representation of any set of values over any amount of time. This is the most basic building block
@@ -31056,7 +31145,7 @@ exports.Observable = Observable;
 //# sourceMappingURL=Observable.js.map
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31149,96 +31238,467 @@ function copyInputAttributes(srcElement, destElement) {
 //# sourceMappingURL=dom.js.map
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Form; });
-/* unused harmony export IonicTapInput */
-/* unused harmony export IonicFormInput */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Item; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_form__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__icon_icon__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ion__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__label_label__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__item_reorder__ = __webpack_require__(37);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+
+
 
 
 /**
- * @hidden
+ * @name Item
+ * @description
+ * An item can contain text, images, and anything else. Generally it is placed in a list with other
+ * items. It can easily be swiped, deleted, reordered, edited, and more. An item is only required to
+ * be in a [List](../../list/List) if manipulating the item via gestures is required. It requires an
+ * [ItemSliding](../ItemSliding) wrapper element in order to be swiped.
+ *
+ *
+ * ## Common Usage
+ * There are a few elements that are considered items, but not all of them are styled to look the same.
+ * The basic item can be written as an `<ion-item>` element or it can be added to any element by adding
+ * `ion-item` as an attribute. List headers and item dividers, although styled differently, are also items
+ * and can be written as `<ion-list-header>` and `<ion-item-divider>`, respectively.
+ *
+ * ### As an Element
+ * A basic item should be written as a `<ion-item>` element when it is not clickable.
+ *
+ * ```html
+ * <ion-item>
+ *   Item
+ * </ion-item>
+ * ```
+ *
+ * A list header should be written as `<ion-list-header>`.
+ *
+ * ```html
+ * <ion-list-header>
+ *   List Header
+ * </ion-list-header>
+ * ```
+ *
+ * An item divider should be written as `<ion-item-divider>`.
+ *
+ * ```html
+ * <ion-item-divider>
+ *   Item Divider
+ * </ion-item-divider>
+ * ```
+ *
+ * ### As an Attribute
+ * The attribute `ion-item` should be added to a `<button>` when the item can be clicked or tapped. It
+ * should be added to an `<a>` element when the item needs to contain a `href`. It can be added as an
+ * attribute to any element to take on the item styling.
+ *
+ * ```html
+ * <button ion-item (click)="buttonClick()">
+ *   Button Item
+ * </button>
+ *
+ * <a ion-item href="https://www.ionicframework.com">
+ *   Anchor Item
+ * </a>
+ * ```
+ *
+ * Note: do not add `ion-item` as an attribute to an `<ion-list-header>` or `<ion-item-divider>` element
+ * as they are already items and their styling will be changed to look like a basic item.
+ *
+ * ## Detail Arrows
+ * By default, `<button>` and `<a>` elements with the `ion-item` attribute will display a right arrow icon
+ * on `ios` mode. To hide the right arrow icon on either of these elements, add the `detail-none` attribute
+ * to the item. To show the right arrow icon on an element that doesn't display it naturally, add the
+ * `detail-push` attribute to the item.
+ *
+ * ```html
+ * <ion-item detail-push>
+ *   Item with Detail Arrow
+ * </ion-item>
+ *
+ * <button ion-item (click)="buttonClick()">
+ *   Button Item with Detail Arrow
+ * </button>
+ *
+ * <a ion-item detail-none href="https://www.ionicframework.com">
+ *   Anchor Item with no Detail Arrow
+ * </a>
+ * ```
+ *
+ * This feature is not enabled by default for `md` and `wp` modes, but it can be enabled by setting the
+ * Sass variables `$item-md-detail-push-show` and `$item-wp-detail-push-show`, respectively, to `true`.
+ * It can also be disabled for ios by setting `$item-ios-detail-push-show` to `false`. See the
+ * [theming documentation](http://ionicframework.com/docs/theming/overriding-ionic-variables/) for
+ * more information on overriding Sass variables.
+ *
+ *
+ * ## Item Placement
+ * Items rely heavily on content projection to position content. The item grabs content based on the
+ * element or attribute and positions it that way. This logic makes it possible to write a complex
+ * item with simple, understandable markup without having to worry about styling and positioning
+ * the elements.
+ *
+ * The below chart details the attributes item looks for and where it will place the element with
+ * that attribute inside of the item:
+ *
+ *  | Attribute      | Description                                                                                          |
+ *  |----------------|----------------------------------------------------------------------------------------------------- |
+ *  | `item-start`   | Placed to the left of all other elements, outside of the inner item.                                 |
+ *  | `item-end`     | Placed to the right of all other elements, inside of the inner item, outside of the input wrapper.   |
+ *  | `item-content` | Placed to the right of any `ion-label`, inside of the input wrapper.                                 |
+ *
+ * ### Checkboxes, Radios and Toggles
+ * [Checkboxes](../../checkbox/Checkbox) are positioned in the same place as the `item-start` attribute.
+ * [Radios](../../radio/RadioButton) and [Toggles](../../toggle/Toggle) are positioned in the same place
+ * as the `item-end` attribute. All of these components can be positioned differently by adding the
+ * `item-start` or `item-end` attribute.
+ *
+ * ### Content and Inputs
+ * A [Label](../../label/Label) is placed inside of the item to the left of all content and inputs. The
+ * following components are all placed in the same position as the `item-content` attribute: [Select](../../select/Select),
+ * [Input](../../input/Input), [TextArea](../../input/TextArea), [DateTime](../../datetime/DateTime), and
+ * [Range](../../range/Range).
+ *
+ * Any element directly placed inside of an `<ion-item>` that does not have one of the previously mentioned
+ * attributes and isn't one of the above elements will be placed inside of a [Label](../../label/Label).
+ *
+ * ### Text Alignment
+ * By default, Items will align text to the left and add an ellipsis when the text is wider than the item.
+ * See the [Utility Attributes Documentation](../../../../theming/css-utilities/) for attributes that can
+ * be added to `ion-item` to transform the text.
+ *
+ * @usage
+ *
+ * ```html
+ * <ion-list>
+ *
+ *   <ion-list-header>
+ *     Header
+ *   </ion-list-header>
+ *
+ *   <ion-item>
+ *     Item
+ *   </ion-item>
+ *
+ *   <ion-item detail-push>
+ *     Item with Detail Arrow
+ *   </ion-item>
+ *
+ *   <button ion-item (click)="buttonClick()">
+ *     Button Item
+ *   </button>
+ *
+ *   <ion-item-divider>
+ *     Item Divider
+ *   </ion-item-divider>
+ *
+ *   <button ion-item detail-none (click)="buttonClick()">
+ *     Button Item with no Detail Arrow
+ *   </button>
+ *
+ *   <a ion-item href="https://www.ionicframework.com">
+ *     Anchor Item
+ *   </a>
+ *
+ *   <ion-item no-lines>
+ *     Item with no border
+ *   </ion-item>
+ *
+ *   <ion-item text-wrap>
+ *     Multiline text that should wrap when it is too long
+ *     to fit on one line in the item.
+ *   </ion-item>
+ *
+ * </ion-list>
+ * ```
+ *
+ *
+ * @advanced
+ *
+ * ```html
+ * <ion-list>
+ *
+ *   <!-- List header with buttons on each side -->
+ *   <ion-list-header>
+ *     <button ion-button item-start (click)="buttonClick()">Button</button>
+ *     List Header
+ *     <button ion-button outline item-end (click)="buttonClick()">Outline</button>
+ *   </ion-list-header>
+ *
+ *   <!-- Loops through and creates multiple items -->
+ *   <ion-item *ngFor="let item of items">
+ *     Item {% raw %}{{item}}{% endraw %}
+ *   </ion-item>
+ *
+ *   <!-- Button item with an icon on the left -->
+ *   <button ion-item>
+ *     <ion-icon name="star" item-start></ion-icon>
+ *     Button Item
+ *   </button>
+ *
+ *   <!-- Item with a label and content -->
+ *   <ion-item>
+ *     <ion-label>
+ *       Item Label
+ *     </ion-label>
+ *     <div item-content>
+ *       Item Content next to the label
+ *     </div>
+ *   </ion-item>
+ *
+ *   <!-- Item with left and right buttons -->
+ *   <ion-item>
+ *     <button ion-button item-start (click)="buttonClick()">Button</button>
+ *     Item
+ *     <button ion-button outline item-end (click)="buttonClick()">Outline</button>
+ *   </ion-item>
+ *
+ *   <!-- Item divider with a right button -->
+ *   <ion-item-divider>
+ *     Item Divider
+ *     <button ion-button item-end>Button</button>
+ *   </ion-item-divider>
+ *
+ *   <!-- Disabled button item with left and right buttons -->
+ *   <button ion-item disabled>
+ *     <button ion-button item-start (click)="buttonClick()">
+ *       <ion-icon name="home"></ion-icon>
+ *       Left Icon
+ *     </button>
+ *     Disabled Button Item
+ *     <button ion-button outline item-end (click)="buttonClick()">
+ *       <ion-icon name="star"></ion-icon>
+ *       Left Icon
+ *     </button>
+ *   </button>
+ *
+ *   <!-- Item with an avatar on the left and button on the right -->
+ *   <ion-item>
+ *     <ion-avatar item-start>
+ *       <img src="img/my-avatar.png">
+ *     </ion-avatar>
+ *     Avatar Item
+ *     <button ion-button outline item-end>View</button>
+ *   </ion-item>
+ *
+ *   <!-- Item with a thumbnail on the right -->
+ *   <ion-item>
+ *     <h2>Item</h2>
+ *     <p>Item Paragraph</p>
+ *     <ion-thumbnail item-end>
+ *       <img src="img/my-thumbnail.png">
+ *     </ion-thumbnail>
+ *   </ion-item>
+ *
+ *   <!-- Sliding item -->
+ *   <ion-item-sliding>
+ *     <ion-item>
+ *       Item
+ *     </ion-item>
+ *     <ion-item-options>
+ *       <button ion-button color="primary" (click)="archive()">Archive</button>
+ *     </ion-item-options>
+ *   </ion-item-sliding>
+ *
+ * </ion-list>
+ * ```
+ *
+ *
+ * @demo /docs/demos/src/item/
+ * @see {@link /docs/components#lists List Component Docs}
+ * @see {@link ../../list/List List API Docs}
+ * @see {@link ../ItemSliding ItemSliding API Docs}
  */
-var Form = (function () {
-    function Form() {
-        this._focused = null;
-        this._ids = -1;
-        this._inputs = [];
+var Item = (function (_super) {
+    __extends(Item, _super);
+    function Item(form, config, elementRef, renderer, reorder) {
+        var _this = _super.call(this, config, elementRef, renderer, 'item') || this;
+        _this._ids = -1;
+        _this._inputs = [];
+        _this._viewLabel = true;
+        _this._name = 'item';
+        /**
+         * @hidden
+         */
+        _this.labelId = null;
+        _this._setName(elementRef);
+        _this._hasReorder = !!reorder;
+        _this.id = form.nextId().toString();
+        _this.labelId = 'lbl-' + _this.id;
+        // auto add "tappable" attribute to ion-item components that have a click listener
+        if (!renderer.orgListen) {
+            renderer.orgListen = renderer.listen;
+            renderer.listen = function (renderElement, name, callback) {
+                if (name === 'click' && renderElement.setAttribute) {
+                    renderElement.setAttribute('tappable', '');
+                }
+                return renderer.orgListen(renderElement, name, callback);
+            };
+        }
+        return _this;
     }
-    Form.prototype.register = function (input) {
-        this._inputs.push(input);
+    /**
+     * @hidden
+     */
+    Item.prototype.registerInput = function (type) {
+        this._inputs.push(type);
+        return this.id + '-' + (++this._ids);
     };
-    Form.prototype.deregister = function (input) {
-        Object(__WEBPACK_IMPORTED_MODULE_1__util__["q" /* removeArrayItem */])(this._inputs, input);
-        this.unsetAsFocused(input);
-    };
-    Form.prototype.setAsFocused = function (input) {
-        this._focused = input;
-    };
-    Form.prototype.unsetAsFocused = function (input) {
-        if (input === this._focused) {
-            this._focused = null;
+    /**
+     * @hidden
+     */
+    Item.prototype.ngAfterContentInit = function () {
+        if (this._viewLabel && this._inputs.length) {
+            var labelText = this.getLabelText().trim();
+            this._viewLabel = (labelText.length > 0);
+        }
+        if (this._inputs.length > 1) {
+            this.setElementClass('item-multiple-inputs', true);
         }
     };
     /**
-     * Focuses the next input element, if it exists.
+     * @hidden
      */
-    Form.prototype.tabFocus = function (currentInput) {
-        var inputs = this._inputs;
-        var index = inputs.indexOf(currentInput) + 1;
-        if (index > 0 && index < inputs.length) {
-            var nextInput = inputs[index];
-            if (nextInput !== this._focused) {
-                (void 0) /* console.debug */;
-                return nextInput.initFocus();
-            }
-        }
-        index = inputs.indexOf(this._focused);
-        if (index > 0) {
-            var previousInput = inputs[index - 1];
-            if (previousInput) {
-                (void 0) /* console.debug */;
-                previousInput.initFocus();
-            }
+    Item.prototype._updateColor = function (newColor, componentName) {
+        componentName = componentName || 'item'; // item-radio
+        this._setColor(newColor, componentName);
+    };
+    /**
+     * @hidden
+     */
+    Item.prototype._setName = function (elementRef) {
+        var nodeName = elementRef.nativeElement.nodeName.replace('ION-', '');
+        if (nodeName === 'LIST-HEADER' || nodeName === 'ITEM-DIVIDER') {
+            this._name = nodeName;
         }
     };
-    Form.prototype.nextId = function () {
-        return ++this._ids;
+    /**
+     * @hidden
+     */
+    Item.prototype.getLabelText = function () {
+        return this._label ? this._label.text : '';
     };
-    Form.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Injectable */] },
+    Object.defineProperty(Item.prototype, "contentLabel", {
+        /**
+         * @hidden
+         */
+        set: function (label) {
+            if (label) {
+                this._label = label;
+                label.id = this.labelId;
+                if (label.type) {
+                    this.setElementClass('item-label-' + label.type, true);
+                }
+                this._viewLabel = false;
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Item.prototype, "viewLabel", {
+        /**
+         * @hidden
+         */
+        set: function (label) {
+            if (!this._label) {
+                this._label = label;
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Item.prototype, "_buttons", {
+        /**
+         * @hidden
+         */
+        set: function (buttons) {
+            buttons.forEach(function (button) {
+                if (!button._size) {
+                    button.setElementClass('item-button', true);
+                }
+            });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Item.prototype, "_icons", {
+        /**
+         * @hidden
+         */
+        set: function (icons) {
+            icons.forEach(function (icon) {
+                icon.setElementClass('item-icon', true);
+            });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Item.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
+                    selector: 'ion-list-header,ion-item,[ion-item],ion-item-divider',
+                    template: '<ng-content select="[item-start],[item-left],ion-checkbox:not([item-end]):not([item-right])"></ng-content>' +
+                        '<div class="item-inner">' +
+                        '<div class="input-wrapper">' +
+                        '<ng-content select="ion-label"></ng-content>' +
+                        '<ion-label *ngIf="_viewLabel">' +
+                        '<ng-content></ng-content>' +
+                        '</ion-label>' +
+                        '<ng-content select="ion-select,ion-input,ion-textarea,ion-datetime,ion-range,[item-content]"></ng-content>' +
+                        '</div>' +
+                        '<ng-content select="[item-end],[item-right],ion-radio,ion-toggle"></ng-content>' +
+                        '<ion-reorder *ngIf="_hasReorder"></ion-reorder>' +
+                        '</div>' +
+                        '<div class="button-effect"></div>',
+                    host: {
+                        'class': 'item'
+                    },
+                    changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ChangeDetectionStrategy */].OnPush,
+                    encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* ViewEncapsulation */].None,
+                },] },
     ];
     /** @nocollapse */
-    Form.ctorParameters = function () { return []; };
-    return Form;
-}());
+    Item.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_3__util_form__["a" /* Form */], },
+        { type: __WEBPACK_IMPORTED_MODULE_2__config_config__["a" /* Config */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
+        { type: __WEBPACK_IMPORTED_MODULE_7__item_reorder__["a" /* ItemReorder */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
+    ]; };
+    Item.propDecorators = {
+        'contentLabel': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ContentChild */], args: [__WEBPACK_IMPORTED_MODULE_6__label_label__["a" /* Label */],] },],
+        'viewLabel': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: [__WEBPACK_IMPORTED_MODULE_6__label_label__["a" /* Label */],] },],
+        '_buttons': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ContentChildren */], args: [__WEBPACK_IMPORTED_MODULE_1__button_button__["a" /* Button */],] },],
+        '_icons': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ContentChildren */], args: [__WEBPACK_IMPORTED_MODULE_4__icon_icon__["a" /* Icon */],] },],
+    };
+    return Item;
+}(__WEBPACK_IMPORTED_MODULE_5__ion__["a" /* Ion */]));
 
-/**
- * @hidden
- */
-var IonicTapInput = (function () {
-    function IonicTapInput() {
-    }
-    return IonicTapInput;
-}());
-
-/**
- * @hidden
- */
-var IonicFormInput = (function () {
-    function IonicFormInput() {
-    }
-    return IonicFormInput;
-}());
-
-//# sourceMappingURL=form.js.map
+//# sourceMappingURL=item.js.map
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31313,7 +31773,7 @@ var IonicFormInput = (function () {
 /* unused harmony export ɵu */
 /* unused harmony export ɵw */
 /* unused harmony export ɵr */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__);
@@ -39498,7 +39958,7 @@ var ReactiveFormsModule = /** @class */ (function () {
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39893,466 +40353,6 @@ var Button = (function (_super) {
 }(__WEBPACK_IMPORTED_MODULE_2__ion__["a" /* Ion */]));
 
 //# sourceMappingURL=button.js.map
-
-/***/ }),
-/* 18 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Item; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_form__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__icon_icon__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ion__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__label_label__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__item_reorder__ = __webpack_require__(42);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-
-
-
-
-/**
- * @name Item
- * @description
- * An item can contain text, images, and anything else. Generally it is placed in a list with other
- * items. It can easily be swiped, deleted, reordered, edited, and more. An item is only required to
- * be in a [List](../../list/List) if manipulating the item via gestures is required. It requires an
- * [ItemSliding](../ItemSliding) wrapper element in order to be swiped.
- *
- *
- * ## Common Usage
- * There are a few elements that are considered items, but not all of them are styled to look the same.
- * The basic item can be written as an `<ion-item>` element or it can be added to any element by adding
- * `ion-item` as an attribute. List headers and item dividers, although styled differently, are also items
- * and can be written as `<ion-list-header>` and `<ion-item-divider>`, respectively.
- *
- * ### As an Element
- * A basic item should be written as a `<ion-item>` element when it is not clickable.
- *
- * ```html
- * <ion-item>
- *   Item
- * </ion-item>
- * ```
- *
- * A list header should be written as `<ion-list-header>`.
- *
- * ```html
- * <ion-list-header>
- *   List Header
- * </ion-list-header>
- * ```
- *
- * An item divider should be written as `<ion-item-divider>`.
- *
- * ```html
- * <ion-item-divider>
- *   Item Divider
- * </ion-item-divider>
- * ```
- *
- * ### As an Attribute
- * The attribute `ion-item` should be added to a `<button>` when the item can be clicked or tapped. It
- * should be added to an `<a>` element when the item needs to contain a `href`. It can be added as an
- * attribute to any element to take on the item styling.
- *
- * ```html
- * <button ion-item (click)="buttonClick()">
- *   Button Item
- * </button>
- *
- * <a ion-item href="https://www.ionicframework.com">
- *   Anchor Item
- * </a>
- * ```
- *
- * Note: do not add `ion-item` as an attribute to an `<ion-list-header>` or `<ion-item-divider>` element
- * as they are already items and their styling will be changed to look like a basic item.
- *
- * ## Detail Arrows
- * By default, `<button>` and `<a>` elements with the `ion-item` attribute will display a right arrow icon
- * on `ios` mode. To hide the right arrow icon on either of these elements, add the `detail-none` attribute
- * to the item. To show the right arrow icon on an element that doesn't display it naturally, add the
- * `detail-push` attribute to the item.
- *
- * ```html
- * <ion-item detail-push>
- *   Item with Detail Arrow
- * </ion-item>
- *
- * <button ion-item (click)="buttonClick()">
- *   Button Item with Detail Arrow
- * </button>
- *
- * <a ion-item detail-none href="https://www.ionicframework.com">
- *   Anchor Item with no Detail Arrow
- * </a>
- * ```
- *
- * This feature is not enabled by default for `md` and `wp` modes, but it can be enabled by setting the
- * Sass variables `$item-md-detail-push-show` and `$item-wp-detail-push-show`, respectively, to `true`.
- * It can also be disabled for ios by setting `$item-ios-detail-push-show` to `false`. See the
- * [theming documentation](http://ionicframework.com/docs/theming/overriding-ionic-variables/) for
- * more information on overriding Sass variables.
- *
- *
- * ## Item Placement
- * Items rely heavily on content projection to position content. The item grabs content based on the
- * element or attribute and positions it that way. This logic makes it possible to write a complex
- * item with simple, understandable markup without having to worry about styling and positioning
- * the elements.
- *
- * The below chart details the attributes item looks for and where it will place the element with
- * that attribute inside of the item:
- *
- *  | Attribute      | Description                                                                                          |
- *  |----------------|----------------------------------------------------------------------------------------------------- |
- *  | `item-start`   | Placed to the left of all other elements, outside of the inner item.                                 |
- *  | `item-end`     | Placed to the right of all other elements, inside of the inner item, outside of the input wrapper.   |
- *  | `item-content` | Placed to the right of any `ion-label`, inside of the input wrapper.                                 |
- *
- * ### Checkboxes, Radios and Toggles
- * [Checkboxes](../../checkbox/Checkbox) are positioned in the same place as the `item-start` attribute.
- * [Radios](../../radio/RadioButton) and [Toggles](../../toggle/Toggle) are positioned in the same place
- * as the `item-end` attribute. All of these components can be positioned differently by adding the
- * `item-start` or `item-end` attribute.
- *
- * ### Content and Inputs
- * A [Label](../../label/Label) is placed inside of the item to the left of all content and inputs. The
- * following components are all placed in the same position as the `item-content` attribute: [Select](../../select/Select),
- * [Input](../../input/Input), [TextArea](../../input/TextArea), [DateTime](../../datetime/DateTime), and
- * [Range](../../range/Range).
- *
- * Any element directly placed inside of an `<ion-item>` that does not have one of the previously mentioned
- * attributes and isn't one of the above elements will be placed inside of a [Label](../../label/Label).
- *
- * ### Text Alignment
- * By default, Items will align text to the left and add an ellipsis when the text is wider than the item.
- * See the [Utility Attributes Documentation](../../../../theming/css-utilities/) for attributes that can
- * be added to `ion-item` to transform the text.
- *
- * @usage
- *
- * ```html
- * <ion-list>
- *
- *   <ion-list-header>
- *     Header
- *   </ion-list-header>
- *
- *   <ion-item>
- *     Item
- *   </ion-item>
- *
- *   <ion-item detail-push>
- *     Item with Detail Arrow
- *   </ion-item>
- *
- *   <button ion-item (click)="buttonClick()">
- *     Button Item
- *   </button>
- *
- *   <ion-item-divider>
- *     Item Divider
- *   </ion-item-divider>
- *
- *   <button ion-item detail-none (click)="buttonClick()">
- *     Button Item with no Detail Arrow
- *   </button>
- *
- *   <a ion-item href="https://www.ionicframework.com">
- *     Anchor Item
- *   </a>
- *
- *   <ion-item no-lines>
- *     Item with no border
- *   </ion-item>
- *
- *   <ion-item text-wrap>
- *     Multiline text that should wrap when it is too long
- *     to fit on one line in the item.
- *   </ion-item>
- *
- * </ion-list>
- * ```
- *
- *
- * @advanced
- *
- * ```html
- * <ion-list>
- *
- *   <!-- List header with buttons on each side -->
- *   <ion-list-header>
- *     <button ion-button item-start (click)="buttonClick()">Button</button>
- *     List Header
- *     <button ion-button outline item-end (click)="buttonClick()">Outline</button>
- *   </ion-list-header>
- *
- *   <!-- Loops through and creates multiple items -->
- *   <ion-item *ngFor="let item of items">
- *     Item {% raw %}{{item}}{% endraw %}
- *   </ion-item>
- *
- *   <!-- Button item with an icon on the left -->
- *   <button ion-item>
- *     <ion-icon name="star" item-start></ion-icon>
- *     Button Item
- *   </button>
- *
- *   <!-- Item with a label and content -->
- *   <ion-item>
- *     <ion-label>
- *       Item Label
- *     </ion-label>
- *     <div item-content>
- *       Item Content next to the label
- *     </div>
- *   </ion-item>
- *
- *   <!-- Item with left and right buttons -->
- *   <ion-item>
- *     <button ion-button item-start (click)="buttonClick()">Button</button>
- *     Item
- *     <button ion-button outline item-end (click)="buttonClick()">Outline</button>
- *   </ion-item>
- *
- *   <!-- Item divider with a right button -->
- *   <ion-item-divider>
- *     Item Divider
- *     <button ion-button item-end>Button</button>
- *   </ion-item-divider>
- *
- *   <!-- Disabled button item with left and right buttons -->
- *   <button ion-item disabled>
- *     <button ion-button item-start (click)="buttonClick()">
- *       <ion-icon name="home"></ion-icon>
- *       Left Icon
- *     </button>
- *     Disabled Button Item
- *     <button ion-button outline item-end (click)="buttonClick()">
- *       <ion-icon name="star"></ion-icon>
- *       Left Icon
- *     </button>
- *   </button>
- *
- *   <!-- Item with an avatar on the left and button on the right -->
- *   <ion-item>
- *     <ion-avatar item-start>
- *       <img src="img/my-avatar.png">
- *     </ion-avatar>
- *     Avatar Item
- *     <button ion-button outline item-end>View</button>
- *   </ion-item>
- *
- *   <!-- Item with a thumbnail on the right -->
- *   <ion-item>
- *     <h2>Item</h2>
- *     <p>Item Paragraph</p>
- *     <ion-thumbnail item-end>
- *       <img src="img/my-thumbnail.png">
- *     </ion-thumbnail>
- *   </ion-item>
- *
- *   <!-- Sliding item -->
- *   <ion-item-sliding>
- *     <ion-item>
- *       Item
- *     </ion-item>
- *     <ion-item-options>
- *       <button ion-button color="primary" (click)="archive()">Archive</button>
- *     </ion-item-options>
- *   </ion-item-sliding>
- *
- * </ion-list>
- * ```
- *
- *
- * @demo /docs/demos/src/item/
- * @see {@link /docs/components#lists List Component Docs}
- * @see {@link ../../list/List List API Docs}
- * @see {@link ../ItemSliding ItemSliding API Docs}
- */
-var Item = (function (_super) {
-    __extends(Item, _super);
-    function Item(form, config, elementRef, renderer, reorder) {
-        var _this = _super.call(this, config, elementRef, renderer, 'item') || this;
-        _this._ids = -1;
-        _this._inputs = [];
-        _this._viewLabel = true;
-        _this._name = 'item';
-        /**
-         * @hidden
-         */
-        _this.labelId = null;
-        _this._setName(elementRef);
-        _this._hasReorder = !!reorder;
-        _this.id = form.nextId().toString();
-        _this.labelId = 'lbl-' + _this.id;
-        // auto add "tappable" attribute to ion-item components that have a click listener
-        if (!renderer.orgListen) {
-            renderer.orgListen = renderer.listen;
-            renderer.listen = function (renderElement, name, callback) {
-                if (name === 'click' && renderElement.setAttribute) {
-                    renderElement.setAttribute('tappable', '');
-                }
-                return renderer.orgListen(renderElement, name, callback);
-            };
-        }
-        return _this;
-    }
-    /**
-     * @hidden
-     */
-    Item.prototype.registerInput = function (type) {
-        this._inputs.push(type);
-        return this.id + '-' + (++this._ids);
-    };
-    /**
-     * @hidden
-     */
-    Item.prototype.ngAfterContentInit = function () {
-        if (this._viewLabel && this._inputs.length) {
-            var labelText = this.getLabelText().trim();
-            this._viewLabel = (labelText.length > 0);
-        }
-        if (this._inputs.length > 1) {
-            this.setElementClass('item-multiple-inputs', true);
-        }
-    };
-    /**
-     * @hidden
-     */
-    Item.prototype._updateColor = function (newColor, componentName) {
-        componentName = componentName || 'item'; // item-radio
-        this._setColor(newColor, componentName);
-    };
-    /**
-     * @hidden
-     */
-    Item.prototype._setName = function (elementRef) {
-        var nodeName = elementRef.nativeElement.nodeName.replace('ION-', '');
-        if (nodeName === 'LIST-HEADER' || nodeName === 'ITEM-DIVIDER') {
-            this._name = nodeName;
-        }
-    };
-    /**
-     * @hidden
-     */
-    Item.prototype.getLabelText = function () {
-        return this._label ? this._label.text : '';
-    };
-    Object.defineProperty(Item.prototype, "contentLabel", {
-        /**
-         * @hidden
-         */
-        set: function (label) {
-            if (label) {
-                this._label = label;
-                label.id = this.labelId;
-                if (label.type) {
-                    this.setElementClass('item-label-' + label.type, true);
-                }
-                this._viewLabel = false;
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Item.prototype, "viewLabel", {
-        /**
-         * @hidden
-         */
-        set: function (label) {
-            if (!this._label) {
-                this._label = label;
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Item.prototype, "_buttons", {
-        /**
-         * @hidden
-         */
-        set: function (buttons) {
-            buttons.forEach(function (button) {
-                if (!button._size) {
-                    button.setElementClass('item-button', true);
-                }
-            });
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Item.prototype, "_icons", {
-        /**
-         * @hidden
-         */
-        set: function (icons) {
-            icons.forEach(function (icon) {
-                icon.setElementClass('item-icon', true);
-            });
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Item.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
-                    selector: 'ion-list-header,ion-item,[ion-item],ion-item-divider',
-                    template: '<ng-content select="[item-start],[item-left],ion-checkbox:not([item-end]):not([item-right])"></ng-content>' +
-                        '<div class="item-inner">' +
-                        '<div class="input-wrapper">' +
-                        '<ng-content select="ion-label"></ng-content>' +
-                        '<ion-label *ngIf="_viewLabel">' +
-                        '<ng-content></ng-content>' +
-                        '</ion-label>' +
-                        '<ng-content select="ion-select,ion-input,ion-textarea,ion-datetime,ion-range,[item-content]"></ng-content>' +
-                        '</div>' +
-                        '<ng-content select="[item-end],[item-right],ion-radio,ion-toggle"></ng-content>' +
-                        '<ion-reorder *ngIf="_hasReorder"></ion-reorder>' +
-                        '</div>' +
-                        '<div class="button-effect"></div>',
-                    host: {
-                        'class': 'item'
-                    },
-                    changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ChangeDetectionStrategy */].OnPush,
-                    encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* ViewEncapsulation */].None,
-                },] },
-    ];
-    /** @nocollapse */
-    Item.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_3__util_form__["a" /* Form */], },
-        { type: __WEBPACK_IMPORTED_MODULE_2__config_config__["a" /* Config */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
-        { type: __WEBPACK_IMPORTED_MODULE_7__item_reorder__["a" /* ItemReorder */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
-    ]; };
-    Item.propDecorators = {
-        'contentLabel': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ContentChild */], args: [__WEBPACK_IMPORTED_MODULE_6__label_label__["a" /* Label */],] },],
-        'viewLabel': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: [__WEBPACK_IMPORTED_MODULE_6__label_label__["a" /* Label */],] },],
-        '_buttons': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ContentChildren */], args: [__WEBPACK_IMPORTED_MODULE_1__button_button__["a" /* Button */],] },],
-        '_icons': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ContentChildren */], args: [__WEBPACK_IMPORTED_MODULE_4__icon_icon__["a" /* Icon */],] },],
-    };
-    return Item;
-}(__WEBPACK_IMPORTED_MODULE_5__ion__["a" /* Ion */]));
-
-//# sourceMappingURL=item.js.map
 
 /***/ }),
 /* 19 */
@@ -41454,7 +41454,7 @@ var ANIMATION_TRANSITION_END_FALLBACK_PADDING_MS = 400;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__platform_keyboard__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navigation_nav_controller__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_scroll_view__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_scroll_view__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_view_controller__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -42412,7 +42412,7 @@ function cssFormat(val) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dom_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_dom__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_dom__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__key__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__platform__ = __webpack_require__(3);
 
@@ -43211,7 +43211,7 @@ var SplitPane = (function (_super) {
 /* unused harmony export View_Button_Host_0 */
 /* unused harmony export ButtonNgFactory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
@@ -43705,7 +43705,7 @@ var menuTypes = {};
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UIEventManager; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointer_events__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointer_events__ = __webpack_require__(135);
 
 /**
  * @hidden
@@ -43761,7 +43761,7 @@ var UIEventManager = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ion__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__debouncer__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__debouncer__ = __webpack_require__(140);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -44197,7 +44197,7 @@ var Haptic = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_nav_controller__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toolbar_base__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toolbar_base__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_view_controller__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -44407,7 +44407,7 @@ var Navbar = (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return DomSanitizerImpl; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_tslib__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_tslib__ = __webpack_require__(57);
 /**
  * @license Angular v5.2.11
  * (c) 2010-2018 Google, Inc. https://angular.io/
@@ -49813,8 +49813,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isFunction_1 = __webpack_require__(84);
-var Subscription_1 = __webpack_require__(39);
-var Observer_1 = __webpack_require__(127);
+var Subscription_1 = __webpack_require__(40);
+var Observer_1 = __webpack_require__(128);
 var rxSubscriber_1 = __webpack_require__(86);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -50359,515 +50359,6 @@ var Icon = (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LAZY_LOADED_TOKEN; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ModuleLoader; });
-/* harmony export (immutable) */ __webpack_exports__["c"] = provideModuleLoader;
-/* unused harmony export setupPreloadingImplementation */
-/* harmony export (immutable) */ __webpack_exports__["d"] = setupPreloading;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(2);
-
-
-
-var LAZY_LOADED_TOKEN = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* InjectionToken */]('LZYCMP');
-/**
- * @hidden
- */
-var ModuleLoader = (function () {
-    function ModuleLoader(_ngModuleLoader, _injector) {
-        this._ngModuleLoader = _ngModuleLoader;
-        this._injector = _injector;
-        /** @internal */
-        this._cfrMap = new Map();
-        this._promiseMap = new Map();
-    }
-    ModuleLoader.prototype.load = function (modulePath) {
-        var _this = this;
-        (void 0) /* console.time */;
-        var splitString = modulePath.split(SPLITTER);
-        var promise = this._promiseMap.get(modulePath);
-        if (!promise) {
-            promise = this._ngModuleLoader.load(splitString[0], splitString[1]);
-            this._promiseMap.set(modulePath, promise);
-        }
-        return promise.then(function (loadedModule) {
-            (void 0) /* console.timeEnd */;
-            var ref = loadedModule.create(_this._injector);
-            var component = ref.injector.get(LAZY_LOADED_TOKEN);
-            _this._cfrMap.set(component, ref.componentFactoryResolver);
-            return {
-                componentFactoryResolver: ref.componentFactoryResolver,
-                component: component
-            };
-        });
-    };
-    ModuleLoader.prototype.getComponentFactoryResolver = function (component) {
-        return this._cfrMap.get(component);
-    };
-    ModuleLoader.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Injectable */] },
-    ];
-    /** @nocollapse */
-    ModuleLoader.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__["a" /* NgModuleLoader */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injector */], },
-    ]; };
-    return ModuleLoader;
-}());
-
-var SPLITTER = '#';
-/**
- * @hidden
- */
-function provideModuleLoader(ngModuleLoader, injector) {
-    return new ModuleLoader(ngModuleLoader, injector);
-}
-/**
- * @hidden
- */
-function setupPreloadingImplementation(config, deepLinkConfig, moduleLoader) {
-    if (!deepLinkConfig || !deepLinkConfig.links || !config.getBoolean('preloadModules')) {
-        return Promise.resolve();
-    }
-    var linksToLoad = deepLinkConfig.links.filter(function (link) { return !!link.loadChildren && link.priority !== 'off'; });
-    // Load the high priority modules first
-    var highPriorityPromises = linksToLoad
-        .filter(function (link) { return link.priority === 'high'; })
-        .map(function (link) { return moduleLoader.load(link.loadChildren); });
-    return Promise.all(highPriorityPromises).then(function () {
-        // Load the low priority modules after the high priority are done
-        var lowPriorityPromises = linksToLoad
-            .filter(function (link) { return link.priority === 'low'; })
-            .map(function (link) { return moduleLoader.load(link.loadChildren); });
-        return Promise.all(lowPriorityPromises);
-    }).catch(function (err) {
-        console.error(err.message);
-    });
-}
-/**
- * @hidden
- */
-function setupPreloading(config, deepLinkConfig, moduleLoader, ngZone) {
-    return function () {
-        Object(__WEBPACK_IMPORTED_MODULE_2__util__["s" /* requestIonicCallback */])(function () {
-            ngZone.runOutsideAngular(function () {
-                setupPreloadingImplementation(config, deepLinkConfig, moduleLoader);
-            });
-        });
-    };
-}
-//# sourceMappingURL=module-loader.js.map
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {
-// CommonJS / Node have global context exposed as "global" variable.
-// We don't want to include the whole node.d.ts this this compilation unit so we'll just fake
-// the global "global" var for now.
-var __window = typeof window !== 'undefined' && window;
-var __self = typeof self !== 'undefined' && typeof WorkerGlobalScope !== 'undefined' &&
-    self instanceof WorkerGlobalScope && self;
-var __global = typeof global !== 'undefined' && global;
-var _root = __window || __global || __self;
-exports.root = _root;
-// Workaround Closure Compiler restriction: The body of a goog.module cannot use throw.
-// This is needed when used with angular/tsickle which inserts a goog.module statement.
-// Wrap in IIFE
-(function () {
-    if (!_root) {
-        throw new Error('RxJS could not find any global context (window, self, global)');
-    }
-})();
-//# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(123)))
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var isArray_1 = __webpack_require__(124);
-var isObject_1 = __webpack_require__(125);
-var isFunction_1 = __webpack_require__(84);
-var tryCatch_1 = __webpack_require__(126);
-var errorObject_1 = __webpack_require__(85);
-var UnsubscriptionError_1 = __webpack_require__(201);
-/**
- * Represents a disposable resource, such as the execution of an Observable. A
- * Subscription has one important method, `unsubscribe`, that takes no argument
- * and just disposes the resource held by the subscription.
- *
- * Additionally, subscriptions may be grouped together through the `add()`
- * method, which will attach a child Subscription to the current Subscription.
- * When a Subscription is unsubscribed, all its children (and its grandchildren)
- * will be unsubscribed as well.
- *
- * @class Subscription
- */
-var Subscription = (function () {
-    /**
-     * @param {function(): void} [unsubscribe] A function describing how to
-     * perform the disposal of resources when the `unsubscribe` method is called.
-     */
-    function Subscription(unsubscribe) {
-        /**
-         * A flag to indicate whether this Subscription has already been unsubscribed.
-         * @type {boolean}
-         */
-        this.closed = false;
-        this._parent = null;
-        this._parents = null;
-        this._subscriptions = null;
-        if (unsubscribe) {
-            this._unsubscribe = unsubscribe;
-        }
-    }
-    /**
-     * Disposes the resources held by the subscription. May, for instance, cancel
-     * an ongoing Observable execution or cancel any other type of work that
-     * started when the Subscription was created.
-     * @return {void}
-     */
-    Subscription.prototype.unsubscribe = function () {
-        var hasErrors = false;
-        var errors;
-        if (this.closed) {
-            return;
-        }
-        var _a = this, _parent = _a._parent, _parents = _a._parents, _unsubscribe = _a._unsubscribe, _subscriptions = _a._subscriptions;
-        this.closed = true;
-        this._parent = null;
-        this._parents = null;
-        // null out _subscriptions first so any child subscriptions that attempt
-        // to remove themselves from this subscription will noop
-        this._subscriptions = null;
-        var index = -1;
-        var len = _parents ? _parents.length : 0;
-        // if this._parent is null, then so is this._parents, and we
-        // don't have to remove ourselves from any parent subscriptions.
-        while (_parent) {
-            _parent.remove(this);
-            // if this._parents is null or index >= len,
-            // then _parent is set to null, and the loop exits
-            _parent = ++index < len && _parents[index] || null;
-        }
-        if (isFunction_1.isFunction(_unsubscribe)) {
-            var trial = tryCatch_1.tryCatch(_unsubscribe).call(this);
-            if (trial === errorObject_1.errorObject) {
-                hasErrors = true;
-                errors = errors || (errorObject_1.errorObject.e instanceof UnsubscriptionError_1.UnsubscriptionError ?
-                    flattenUnsubscriptionErrors(errorObject_1.errorObject.e.errors) : [errorObject_1.errorObject.e]);
-            }
-        }
-        if (isArray_1.isArray(_subscriptions)) {
-            index = -1;
-            len = _subscriptions.length;
-            while (++index < len) {
-                var sub = _subscriptions[index];
-                if (isObject_1.isObject(sub)) {
-                    var trial = tryCatch_1.tryCatch(sub.unsubscribe).call(sub);
-                    if (trial === errorObject_1.errorObject) {
-                        hasErrors = true;
-                        errors = errors || [];
-                        var err = errorObject_1.errorObject.e;
-                        if (err instanceof UnsubscriptionError_1.UnsubscriptionError) {
-                            errors = errors.concat(flattenUnsubscriptionErrors(err.errors));
-                        }
-                        else {
-                            errors.push(err);
-                        }
-                    }
-                }
-            }
-        }
-        if (hasErrors) {
-            throw new UnsubscriptionError_1.UnsubscriptionError(errors);
-        }
-    };
-    /**
-     * Adds a tear down to be called during the unsubscribe() of this
-     * Subscription.
-     *
-     * If the tear down being added is a subscription that is already
-     * unsubscribed, is the same reference `add` is being called on, or is
-     * `Subscription.EMPTY`, it will not be added.
-     *
-     * If this subscription is already in an `closed` state, the passed
-     * tear down logic will be executed immediately.
-     *
-     * @param {TeardownLogic} teardown The additional logic to execute on
-     * teardown.
-     * @return {Subscription} Returns the Subscription used or created to be
-     * added to the inner subscriptions list. This Subscription can be used with
-     * `remove()` to remove the passed teardown logic from the inner subscriptions
-     * list.
-     */
-    Subscription.prototype.add = function (teardown) {
-        if (!teardown || (teardown === Subscription.EMPTY)) {
-            return Subscription.EMPTY;
-        }
-        if (teardown === this) {
-            return this;
-        }
-        var subscription = teardown;
-        switch (typeof teardown) {
-            case 'function':
-                subscription = new Subscription(teardown);
-            case 'object':
-                if (subscription.closed || typeof subscription.unsubscribe !== 'function') {
-                    return subscription;
-                }
-                else if (this.closed) {
-                    subscription.unsubscribe();
-                    return subscription;
-                }
-                else if (typeof subscription._addParent !== 'function' /* quack quack */) {
-                    var tmp = subscription;
-                    subscription = new Subscription();
-                    subscription._subscriptions = [tmp];
-                }
-                break;
-            default:
-                throw new Error('unrecognized teardown ' + teardown + ' added to Subscription.');
-        }
-        var subscriptions = this._subscriptions || (this._subscriptions = []);
-        subscriptions.push(subscription);
-        subscription._addParent(this);
-        return subscription;
-    };
-    /**
-     * Removes a Subscription from the internal list of subscriptions that will
-     * unsubscribe during the unsubscribe process of this Subscription.
-     * @param {Subscription} subscription The subscription to remove.
-     * @return {void}
-     */
-    Subscription.prototype.remove = function (subscription) {
-        var subscriptions = this._subscriptions;
-        if (subscriptions) {
-            var subscriptionIndex = subscriptions.indexOf(subscription);
-            if (subscriptionIndex !== -1) {
-                subscriptions.splice(subscriptionIndex, 1);
-            }
-        }
-    };
-    Subscription.prototype._addParent = function (parent) {
-        var _a = this, _parent = _a._parent, _parents = _a._parents;
-        if (!_parent || _parent === parent) {
-            // If we don't have a parent, or the new parent is the same as the
-            // current parent, then set this._parent to the new parent.
-            this._parent = parent;
-        }
-        else if (!_parents) {
-            // If there's already one parent, but not multiple, allocate an Array to
-            // store the rest of the parent Subscriptions.
-            this._parents = [parent];
-        }
-        else if (_parents.indexOf(parent) === -1) {
-            // Only add the new parent to the _parents list if it's not already there.
-            _parents.push(parent);
-        }
-    };
-    Subscription.EMPTY = (function (empty) {
-        empty.closed = true;
-        return empty;
-    }(new Subscription()));
-    return Subscription;
-}());
-exports.Subscription = Subscription;
-function flattenUnsubscriptionErrors(errors) {
-    return errors.reduce(function (errs, err) { return errs.concat((err instanceof UnsubscriptionError_1.UnsubscriptionError) ? err.errors : err); }, []);
-}
-//# sourceMappingURL=Subscription.js.map
-
-/***/ }),
-/* 40 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageTransition; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transition__ = __webpack_require__(35);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-/**
- * @hidden
- */
-var PageTransition = (function (_super) {
-    __extends(PageTransition, _super);
-    function PageTransition() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    PageTransition.prototype.init = function () {
-        var _this = this;
-        if (this.enteringView) {
-            this.enteringPage = new __WEBPACK_IMPORTED_MODULE_0__animations_animation__["a" /* Animation */](this.plt, this.enteringView.pageRef());
-            this.add(this.enteringPage.beforeAddClass('show-page'));
-            // Resize content before transition starts
-            this.beforeAddRead(function () {
-                _this.enteringView.readReady.emit();
-            });
-            this.beforeAddWrite(function () {
-                _this.enteringView.writeReady.emit();
-            });
-        }
-    };
-    PageTransition.prototype.destroy = function () {
-        _super.prototype.destroy.call(this);
-        this.enteringPage && this.enteringPage.destroy();
-        this.enteringPage = null;
-    };
-    return PageTransition;
-}(__WEBPACK_IMPORTED_MODULE_1__transition__["a" /* Transition */]));
-
-//# sourceMappingURL=page-transition.js.map
-
-/***/ }),
-/* 41 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Label; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ion__ = __webpack_require__(8);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-/**
- * @name Label
- * @description
- * Labels are placed inside of an `ion-item` element and can be used
- * to describe an `ion-input`, `ion-toggle`, `ion-checkbox`, and more.
- *
- * @property [fixed] - A persistent label that sits next the input.
- * @property [floating] - A label that will float above the input if the input is empty or loses focus.
- * @property [stacked] - A stacked label will always appear on top of the input.
-
- *
- * @usage
- * ```html
- *  <ion-item>
- *    <ion-label>Username</ion-label>
- *    <ion-input></ion-input>
- *  </ion-item>
- *
- *  <ion-item>
- *    <ion-label fixed>Website</ion-label>
- *    <ion-input type="url"></ion-input>
- *  </ion-item>
- *
- *  <ion-item>
- *    <ion-label floating>Email</ion-label>
- *    <ion-input type="email"></ion-input>
- *  </ion-item>
- *
- *  <ion-item>
- *    <ion-label stacked>Phone</ion-label>
- *    <ion-input type="tel"></ion-input>
- *  </ion-item>
- *
- *  <ion-item>
- *    <ion-label>Toggle</ion-label>
- *    <ion-toggle></ion-toggle>
- *  </ion-item>
- *
- *  <ion-item>
- *    <ion-label>Checkbox</ion-label>
- *    <ion-checkbox></ion-checkbox>
- *  </ion-item>
- * ```
- *
- * @demo /docs/demos/src/label/
- * @see {@link ../../../../components#inputs Input Component Docs}
- * @see {@link ../../input/Input Input API Docs}
- *
- */
-var Label = (function (_super) {
-    __extends(Label, _super);
-    function Label(config, elementRef, renderer, isFloating, isStacked, isFixed, isInset) {
-        var _this = _super.call(this, config, elementRef, renderer, 'label') || this;
-        _this.type = (isFloating === '' ? 'floating' : (isStacked === '' ? 'stacked' : (isFixed === '' ? 'fixed' : (isInset === '' ? 'inset' : null))));
-        return _this;
-    }
-    Object.defineProperty(Label.prototype, "id", {
-        /**
-         * @hidden
-         */
-        get: function () {
-            return this._id;
-        },
-        set: function (val) {
-            this._id = val;
-            if (val) {
-                this.setElementAttribute('id', val);
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Label.prototype, "text", {
-        /**
-         * @hidden
-         */
-        get: function () {
-            return this.getNativeElement().textContent || '';
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Label.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Directive */], args: [{
-                    selector: 'ion-label'
-                },] },
-    ];
-    /** @nocollapse */
-    Label.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_1__config_config__["a" /* Config */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
-        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Attribute */], args: ['floating',] },] },
-        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Attribute */], args: ['stacked',] },] },
-        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Attribute */], args: ['fixed',] },] },
-        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Attribute */], args: ['inset',] },] },
-    ]; };
-    Label.propDecorators = {
-        'id': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-    };
-    return Label;
-}(__WEBPACK_IMPORTED_MODULE_2__ion__["a" /* Ion */]));
-
-//# sourceMappingURL=label.js.map
-
-/***/ }),
-/* 42 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 
 // EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
 var core = __webpack_require__(0);
@@ -50882,10 +50373,10 @@ var dom_controller = __webpack_require__(6);
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder-util.js
-var item_reorder_util = __webpack_require__(141);
+var item_reorder_util = __webpack_require__(142);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
-var dom = __webpack_require__(14);
+var dom = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/ui-event-manager.js
 var ui_event_manager = __webpack_require__(29);
@@ -51354,15 +50845,524 @@ var item_reorder_ItemReorder = (function () {
 //# sourceMappingURL=item-reorder.js.map
 
 /***/ }),
+/* 38 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LAZY_LOADED_TOKEN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ModuleLoader; });
+/* harmony export (immutable) */ __webpack_exports__["c"] = provideModuleLoader;
+/* unused harmony export setupPreloadingImplementation */
+/* harmony export (immutable) */ __webpack_exports__["d"] = setupPreloading;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(2);
+
+
+
+var LAZY_LOADED_TOKEN = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* InjectionToken */]('LZYCMP');
+/**
+ * @hidden
+ */
+var ModuleLoader = (function () {
+    function ModuleLoader(_ngModuleLoader, _injector) {
+        this._ngModuleLoader = _ngModuleLoader;
+        this._injector = _injector;
+        /** @internal */
+        this._cfrMap = new Map();
+        this._promiseMap = new Map();
+    }
+    ModuleLoader.prototype.load = function (modulePath) {
+        var _this = this;
+        (void 0) /* console.time */;
+        var splitString = modulePath.split(SPLITTER);
+        var promise = this._promiseMap.get(modulePath);
+        if (!promise) {
+            promise = this._ngModuleLoader.load(splitString[0], splitString[1]);
+            this._promiseMap.set(modulePath, promise);
+        }
+        return promise.then(function (loadedModule) {
+            (void 0) /* console.timeEnd */;
+            var ref = loadedModule.create(_this._injector);
+            var component = ref.injector.get(LAZY_LOADED_TOKEN);
+            _this._cfrMap.set(component, ref.componentFactoryResolver);
+            return {
+                componentFactoryResolver: ref.componentFactoryResolver,
+                component: component
+            };
+        });
+    };
+    ModuleLoader.prototype.getComponentFactoryResolver = function (component) {
+        return this._cfrMap.get(component);
+    };
+    ModuleLoader.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    ModuleLoader.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__["a" /* NgModuleLoader */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injector */], },
+    ]; };
+    return ModuleLoader;
+}());
+
+var SPLITTER = '#';
+/**
+ * @hidden
+ */
+function provideModuleLoader(ngModuleLoader, injector) {
+    return new ModuleLoader(ngModuleLoader, injector);
+}
+/**
+ * @hidden
+ */
+function setupPreloadingImplementation(config, deepLinkConfig, moduleLoader) {
+    if (!deepLinkConfig || !deepLinkConfig.links || !config.getBoolean('preloadModules')) {
+        return Promise.resolve();
+    }
+    var linksToLoad = deepLinkConfig.links.filter(function (link) { return !!link.loadChildren && link.priority !== 'off'; });
+    // Load the high priority modules first
+    var highPriorityPromises = linksToLoad
+        .filter(function (link) { return link.priority === 'high'; })
+        .map(function (link) { return moduleLoader.load(link.loadChildren); });
+    return Promise.all(highPriorityPromises).then(function () {
+        // Load the low priority modules after the high priority are done
+        var lowPriorityPromises = linksToLoad
+            .filter(function (link) { return link.priority === 'low'; })
+            .map(function (link) { return moduleLoader.load(link.loadChildren); });
+        return Promise.all(lowPriorityPromises);
+    }).catch(function (err) {
+        console.error(err.message);
+    });
+}
+/**
+ * @hidden
+ */
+function setupPreloading(config, deepLinkConfig, moduleLoader, ngZone) {
+    return function () {
+        Object(__WEBPACK_IMPORTED_MODULE_2__util__["s" /* requestIonicCallback */])(function () {
+            ngZone.runOutsideAngular(function () {
+                setupPreloadingImplementation(config, deepLinkConfig, moduleLoader);
+            });
+        });
+    };
+}
+//# sourceMappingURL=module-loader.js.map
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
+// CommonJS / Node have global context exposed as "global" variable.
+// We don't want to include the whole node.d.ts this this compilation unit so we'll just fake
+// the global "global" var for now.
+var __window = typeof window !== 'undefined' && window;
+var __self = typeof self !== 'undefined' && typeof WorkerGlobalScope !== 'undefined' &&
+    self instanceof WorkerGlobalScope && self;
+var __global = typeof global !== 'undefined' && global;
+var _root = __window || __global || __self;
+exports.root = _root;
+// Workaround Closure Compiler restriction: The body of a goog.module cannot use throw.
+// This is needed when used with angular/tsickle which inserts a goog.module statement.
+// Wrap in IIFE
+(function () {
+    if (!_root) {
+        throw new Error('RxJS could not find any global context (window, self, global)');
+    }
+})();
+//# sourceMappingURL=root.js.map
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(124)))
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var isArray_1 = __webpack_require__(125);
+var isObject_1 = __webpack_require__(126);
+var isFunction_1 = __webpack_require__(84);
+var tryCatch_1 = __webpack_require__(127);
+var errorObject_1 = __webpack_require__(85);
+var UnsubscriptionError_1 = __webpack_require__(201);
+/**
+ * Represents a disposable resource, such as the execution of an Observable. A
+ * Subscription has one important method, `unsubscribe`, that takes no argument
+ * and just disposes the resource held by the subscription.
+ *
+ * Additionally, subscriptions may be grouped together through the `add()`
+ * method, which will attach a child Subscription to the current Subscription.
+ * When a Subscription is unsubscribed, all its children (and its grandchildren)
+ * will be unsubscribed as well.
+ *
+ * @class Subscription
+ */
+var Subscription = (function () {
+    /**
+     * @param {function(): void} [unsubscribe] A function describing how to
+     * perform the disposal of resources when the `unsubscribe` method is called.
+     */
+    function Subscription(unsubscribe) {
+        /**
+         * A flag to indicate whether this Subscription has already been unsubscribed.
+         * @type {boolean}
+         */
+        this.closed = false;
+        this._parent = null;
+        this._parents = null;
+        this._subscriptions = null;
+        if (unsubscribe) {
+            this._unsubscribe = unsubscribe;
+        }
+    }
+    /**
+     * Disposes the resources held by the subscription. May, for instance, cancel
+     * an ongoing Observable execution or cancel any other type of work that
+     * started when the Subscription was created.
+     * @return {void}
+     */
+    Subscription.prototype.unsubscribe = function () {
+        var hasErrors = false;
+        var errors;
+        if (this.closed) {
+            return;
+        }
+        var _a = this, _parent = _a._parent, _parents = _a._parents, _unsubscribe = _a._unsubscribe, _subscriptions = _a._subscriptions;
+        this.closed = true;
+        this._parent = null;
+        this._parents = null;
+        // null out _subscriptions first so any child subscriptions that attempt
+        // to remove themselves from this subscription will noop
+        this._subscriptions = null;
+        var index = -1;
+        var len = _parents ? _parents.length : 0;
+        // if this._parent is null, then so is this._parents, and we
+        // don't have to remove ourselves from any parent subscriptions.
+        while (_parent) {
+            _parent.remove(this);
+            // if this._parents is null or index >= len,
+            // then _parent is set to null, and the loop exits
+            _parent = ++index < len && _parents[index] || null;
+        }
+        if (isFunction_1.isFunction(_unsubscribe)) {
+            var trial = tryCatch_1.tryCatch(_unsubscribe).call(this);
+            if (trial === errorObject_1.errorObject) {
+                hasErrors = true;
+                errors = errors || (errorObject_1.errorObject.e instanceof UnsubscriptionError_1.UnsubscriptionError ?
+                    flattenUnsubscriptionErrors(errorObject_1.errorObject.e.errors) : [errorObject_1.errorObject.e]);
+            }
+        }
+        if (isArray_1.isArray(_subscriptions)) {
+            index = -1;
+            len = _subscriptions.length;
+            while (++index < len) {
+                var sub = _subscriptions[index];
+                if (isObject_1.isObject(sub)) {
+                    var trial = tryCatch_1.tryCatch(sub.unsubscribe).call(sub);
+                    if (trial === errorObject_1.errorObject) {
+                        hasErrors = true;
+                        errors = errors || [];
+                        var err = errorObject_1.errorObject.e;
+                        if (err instanceof UnsubscriptionError_1.UnsubscriptionError) {
+                            errors = errors.concat(flattenUnsubscriptionErrors(err.errors));
+                        }
+                        else {
+                            errors.push(err);
+                        }
+                    }
+                }
+            }
+        }
+        if (hasErrors) {
+            throw new UnsubscriptionError_1.UnsubscriptionError(errors);
+        }
+    };
+    /**
+     * Adds a tear down to be called during the unsubscribe() of this
+     * Subscription.
+     *
+     * If the tear down being added is a subscription that is already
+     * unsubscribed, is the same reference `add` is being called on, or is
+     * `Subscription.EMPTY`, it will not be added.
+     *
+     * If this subscription is already in an `closed` state, the passed
+     * tear down logic will be executed immediately.
+     *
+     * @param {TeardownLogic} teardown The additional logic to execute on
+     * teardown.
+     * @return {Subscription} Returns the Subscription used or created to be
+     * added to the inner subscriptions list. This Subscription can be used with
+     * `remove()` to remove the passed teardown logic from the inner subscriptions
+     * list.
+     */
+    Subscription.prototype.add = function (teardown) {
+        if (!teardown || (teardown === Subscription.EMPTY)) {
+            return Subscription.EMPTY;
+        }
+        if (teardown === this) {
+            return this;
+        }
+        var subscription = teardown;
+        switch (typeof teardown) {
+            case 'function':
+                subscription = new Subscription(teardown);
+            case 'object':
+                if (subscription.closed || typeof subscription.unsubscribe !== 'function') {
+                    return subscription;
+                }
+                else if (this.closed) {
+                    subscription.unsubscribe();
+                    return subscription;
+                }
+                else if (typeof subscription._addParent !== 'function' /* quack quack */) {
+                    var tmp = subscription;
+                    subscription = new Subscription();
+                    subscription._subscriptions = [tmp];
+                }
+                break;
+            default:
+                throw new Error('unrecognized teardown ' + teardown + ' added to Subscription.');
+        }
+        var subscriptions = this._subscriptions || (this._subscriptions = []);
+        subscriptions.push(subscription);
+        subscription._addParent(this);
+        return subscription;
+    };
+    /**
+     * Removes a Subscription from the internal list of subscriptions that will
+     * unsubscribe during the unsubscribe process of this Subscription.
+     * @param {Subscription} subscription The subscription to remove.
+     * @return {void}
+     */
+    Subscription.prototype.remove = function (subscription) {
+        var subscriptions = this._subscriptions;
+        if (subscriptions) {
+            var subscriptionIndex = subscriptions.indexOf(subscription);
+            if (subscriptionIndex !== -1) {
+                subscriptions.splice(subscriptionIndex, 1);
+            }
+        }
+    };
+    Subscription.prototype._addParent = function (parent) {
+        var _a = this, _parent = _a._parent, _parents = _a._parents;
+        if (!_parent || _parent === parent) {
+            // If we don't have a parent, or the new parent is the same as the
+            // current parent, then set this._parent to the new parent.
+            this._parent = parent;
+        }
+        else if (!_parents) {
+            // If there's already one parent, but not multiple, allocate an Array to
+            // store the rest of the parent Subscriptions.
+            this._parents = [parent];
+        }
+        else if (_parents.indexOf(parent) === -1) {
+            // Only add the new parent to the _parents list if it's not already there.
+            _parents.push(parent);
+        }
+    };
+    Subscription.EMPTY = (function (empty) {
+        empty.closed = true;
+        return empty;
+    }(new Subscription()));
+    return Subscription;
+}());
+exports.Subscription = Subscription;
+function flattenUnsubscriptionErrors(errors) {
+    return errors.reduce(function (errs, err) { return errs.concat((err instanceof UnsubscriptionError_1.UnsubscriptionError) ? err.errors : err); }, []);
+}
+//# sourceMappingURL=Subscription.js.map
+
+/***/ }),
+/* 41 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageTransition; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transition__ = __webpack_require__(35);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+/**
+ * @hidden
+ */
+var PageTransition = (function (_super) {
+    __extends(PageTransition, _super);
+    function PageTransition() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    PageTransition.prototype.init = function () {
+        var _this = this;
+        if (this.enteringView) {
+            this.enteringPage = new __WEBPACK_IMPORTED_MODULE_0__animations_animation__["a" /* Animation */](this.plt, this.enteringView.pageRef());
+            this.add(this.enteringPage.beforeAddClass('show-page'));
+            // Resize content before transition starts
+            this.beforeAddRead(function () {
+                _this.enteringView.readReady.emit();
+            });
+            this.beforeAddWrite(function () {
+                _this.enteringView.writeReady.emit();
+            });
+        }
+    };
+    PageTransition.prototype.destroy = function () {
+        _super.prototype.destroy.call(this);
+        this.enteringPage && this.enteringPage.destroy();
+        this.enteringPage = null;
+    };
+    return PageTransition;
+}(__WEBPACK_IMPORTED_MODULE_1__transition__["a" /* Transition */]));
+
+//# sourceMappingURL=page-transition.js.map
+
+/***/ }),
+/* 42 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Label; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ion__ = __webpack_require__(8);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+/**
+ * @name Label
+ * @description
+ * Labels are placed inside of an `ion-item` element and can be used
+ * to describe an `ion-input`, `ion-toggle`, `ion-checkbox`, and more.
+ *
+ * @property [fixed] - A persistent label that sits next the input.
+ * @property [floating] - A label that will float above the input if the input is empty or loses focus.
+ * @property [stacked] - A stacked label will always appear on top of the input.
+
+ *
+ * @usage
+ * ```html
+ *  <ion-item>
+ *    <ion-label>Username</ion-label>
+ *    <ion-input></ion-input>
+ *  </ion-item>
+ *
+ *  <ion-item>
+ *    <ion-label fixed>Website</ion-label>
+ *    <ion-input type="url"></ion-input>
+ *  </ion-item>
+ *
+ *  <ion-item>
+ *    <ion-label floating>Email</ion-label>
+ *    <ion-input type="email"></ion-input>
+ *  </ion-item>
+ *
+ *  <ion-item>
+ *    <ion-label stacked>Phone</ion-label>
+ *    <ion-input type="tel"></ion-input>
+ *  </ion-item>
+ *
+ *  <ion-item>
+ *    <ion-label>Toggle</ion-label>
+ *    <ion-toggle></ion-toggle>
+ *  </ion-item>
+ *
+ *  <ion-item>
+ *    <ion-label>Checkbox</ion-label>
+ *    <ion-checkbox></ion-checkbox>
+ *  </ion-item>
+ * ```
+ *
+ * @demo /docs/demos/src/label/
+ * @see {@link ../../../../components#inputs Input Component Docs}
+ * @see {@link ../../input/Input Input API Docs}
+ *
+ */
+var Label = (function (_super) {
+    __extends(Label, _super);
+    function Label(config, elementRef, renderer, isFloating, isStacked, isFixed, isInset) {
+        var _this = _super.call(this, config, elementRef, renderer, 'label') || this;
+        _this.type = (isFloating === '' ? 'floating' : (isStacked === '' ? 'stacked' : (isFixed === '' ? 'fixed' : (isInset === '' ? 'inset' : null))));
+        return _this;
+    }
+    Object.defineProperty(Label.prototype, "id", {
+        /**
+         * @hidden
+         */
+        get: function () {
+            return this._id;
+        },
+        set: function (val) {
+            this._id = val;
+            if (val) {
+                this.setElementAttribute('id', val);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Label.prototype, "text", {
+        /**
+         * @hidden
+         */
+        get: function () {
+            return this.getNativeElement().textContent || '';
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Label.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Directive */], args: [{
+                    selector: 'ion-label'
+                },] },
+    ];
+    /** @nocollapse */
+    Label.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_1__config_config__["a" /* Config */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Attribute */], args: ['floating',] },] },
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Attribute */], args: ['stacked',] },] },
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Attribute */], args: ['fixed',] },] },
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Attribute */], args: ['inset',] },] },
+    ]; };
+    Label.propDecorators = {
+        'id': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+    };
+    return Label;
+}(__WEBPACK_IMPORTED_MODULE_2__ion__["a" /* Ion */]));
+
+//# sourceMappingURL=label.js.map
+
+/***/ }),
 /* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Tabs; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);
@@ -51372,10 +51372,10 @@ var item_reorder_ItemReorder = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_keyboard__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__navigation_nav_controller__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_nav_util__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_url_serializer__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_url_serializer__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__split_pane_split_pane__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__tab_highlight__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__tab_highlight__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__navigation_view_controller__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -52004,7 +52004,7 @@ var tabIds = -1;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Toolbar; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toolbar_base__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toolbar_base__ = __webpack_require__(160);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -52143,1791 +52143,12 @@ var Toolbar = (function (_super) {
 
 /***/ }),
 /* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Observable_1 = __webpack_require__(13);
-var Subscriber_1 = __webpack_require__(34);
-var Subscription_1 = __webpack_require__(39);
-var ObjectUnsubscribedError_1 = __webpack_require__(218);
-var SubjectSubscription_1 = __webpack_require__(219);
-var rxSubscriber_1 = __webpack_require__(86);
-/**
- * @class SubjectSubscriber<T>
- */
-var SubjectSubscriber = (function (_super) {
-    __extends(SubjectSubscriber, _super);
-    function SubjectSubscriber(destination) {
-        _super.call(this, destination);
-        this.destination = destination;
-    }
-    return SubjectSubscriber;
-}(Subscriber_1.Subscriber));
-exports.SubjectSubscriber = SubjectSubscriber;
-/**
- * @class Subject<T>
- */
-var Subject = (function (_super) {
-    __extends(Subject, _super);
-    function Subject() {
-        _super.call(this);
-        this.observers = [];
-        this.closed = false;
-        this.isStopped = false;
-        this.hasError = false;
-        this.thrownError = null;
-    }
-    Subject.prototype[rxSubscriber_1.rxSubscriber] = function () {
-        return new SubjectSubscriber(this);
-    };
-    Subject.prototype.lift = function (operator) {
-        var subject = new AnonymousSubject(this, this);
-        subject.operator = operator;
-        return subject;
-    };
-    Subject.prototype.next = function (value) {
-        if (this.closed) {
-            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
-        }
-        if (!this.isStopped) {
-            var observers = this.observers;
-            var len = observers.length;
-            var copy = observers.slice();
-            for (var i = 0; i < len; i++) {
-                copy[i].next(value);
-            }
-        }
-    };
-    Subject.prototype.error = function (err) {
-        if (this.closed) {
-            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
-        }
-        this.hasError = true;
-        this.thrownError = err;
-        this.isStopped = true;
-        var observers = this.observers;
-        var len = observers.length;
-        var copy = observers.slice();
-        for (var i = 0; i < len; i++) {
-            copy[i].error(err);
-        }
-        this.observers.length = 0;
-    };
-    Subject.prototype.complete = function () {
-        if (this.closed) {
-            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
-        }
-        this.isStopped = true;
-        var observers = this.observers;
-        var len = observers.length;
-        var copy = observers.slice();
-        for (var i = 0; i < len; i++) {
-            copy[i].complete();
-        }
-        this.observers.length = 0;
-    };
-    Subject.prototype.unsubscribe = function () {
-        this.isStopped = true;
-        this.closed = true;
-        this.observers = null;
-    };
-    Subject.prototype._trySubscribe = function (subscriber) {
-        if (this.closed) {
-            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
-        }
-        else {
-            return _super.prototype._trySubscribe.call(this, subscriber);
-        }
-    };
-    /** @deprecated internal use only */ Subject.prototype._subscribe = function (subscriber) {
-        if (this.closed) {
-            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
-        }
-        else if (this.hasError) {
-            subscriber.error(this.thrownError);
-            return Subscription_1.Subscription.EMPTY;
-        }
-        else if (this.isStopped) {
-            subscriber.complete();
-            return Subscription_1.Subscription.EMPTY;
-        }
-        else {
-            this.observers.push(subscriber);
-            return new SubjectSubscription_1.SubjectSubscription(this, subscriber);
-        }
-    };
-    Subject.prototype.asObservable = function () {
-        var observable = new Observable_1.Observable();
-        observable.source = this;
-        return observable;
-    };
-    Subject.create = function (destination, source) {
-        return new AnonymousSubject(destination, source);
-    };
-    return Subject;
-}(Observable_1.Observable));
-exports.Subject = Subject;
-/**
- * @class AnonymousSubject<T>
- */
-var AnonymousSubject = (function (_super) {
-    __extends(AnonymousSubject, _super);
-    function AnonymousSubject(destination, source) {
-        _super.call(this);
-        this.destination = destination;
-        this.source = source;
-    }
-    AnonymousSubject.prototype.next = function (value) {
-        var destination = this.destination;
-        if (destination && destination.next) {
-            destination.next(value);
-        }
-    };
-    AnonymousSubject.prototype.error = function (err) {
-        var destination = this.destination;
-        if (destination && destination.error) {
-            this.destination.error(err);
-        }
-    };
-    AnonymousSubject.prototype.complete = function () {
-        var destination = this.destination;
-        if (destination && destination.complete) {
-            this.destination.complete();
-        }
-    };
-    /** @deprecated internal use only */ AnonymousSubject.prototype._subscribe = function (subscriber) {
-        var source = this.source;
-        if (source) {
-            return this.source.subscribe(subscriber);
-        }
-        else {
-            return Subscription_1.Subscription.EMPTY;
-        }
-    };
-    return AnonymousSubject;
-}(Subject));
-exports.AnonymousSubject = AnonymousSubject;
-//# sourceMappingURL=Subject.js.map
-
-/***/ }),
-/* 46 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRootToken; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return IonicApp; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ion__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__overlay_portal__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_constants__ = __webpack_require__(47);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-
-
-
-var AppRootToken = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* InjectionToken */]('USERROOT');
-/**
- * @hidden
- */
-var IonicApp = (function (_super) {
-    __extends(IonicApp, _super);
-    function IonicApp(_userCmp, _cfr, elementRef, renderer, config, _plt, app) {
-        var _this = _super.call(this, config, elementRef, renderer, 'app-root') || this;
-        _this._userCmp = _userCmp;
-        _this._cfr = _cfr;
-        _this._plt = _plt;
-        // register with App that this is Ionic's appRoot component. tada!
-        app._appRoot = _this;
-        _this._stopScrollPlugin = window['IonicStopScroll'];
-        return _this;
-    }
-    IonicApp.prototype.ngOnInit = function () {
-        var _this = this;
-        // load the user root component
-        // into Ionic's root component
-        var factory = this._cfr.resolveComponentFactory(this._userCmp);
-        var componentRef = this._viewport.createComponent(factory);
-        this._renderer.setElementClass(componentRef.location.nativeElement, 'app-root', true);
-        componentRef.changeDetectorRef.detectChanges();
-        // set the mode class name
-        // ios/md/wp
-        this.setElementClass(this._config.get('mode'), true);
-        var versions = this._plt.versions();
-        this._plt.platforms().forEach(function (platformName) {
-            // platform-ios
-            var platformClass = 'platform-' + platformName;
-            _this.setElementClass(platformClass, true);
-            var platformVersion = versions[platformName];
-            if (platformVersion) {
-                // platform-ios9
-                platformClass += platformVersion.major;
-                _this.setElementClass(platformClass, true);
-                // platform-ios9_3
-                _this.setElementClass(platformClass + '_' + platformVersion.minor, true);
-            }
-        });
-        // touch devices should not use :hover CSS pseudo
-        // enable :hover CSS when the "hoverCSS" setting is not false
-        if (this._config.getBoolean('hoverCSS', true)) {
-            this.setElementClass('enable-hover', true);
-        }
-        // sweet, the app root has loaded!
-        // which means angular and ionic has fully loaded!
-        // fire off the platform prepare ready, which could
-        // have been switched out by any of the platform engines
-        this._plt.prepareReady();
-    };
-    /**
-     * @hidden
-     */
-    IonicApp.prototype._getPortal = function (portal) {
-        if (portal === __WEBPACK_IMPORTED_MODULE_6__app_constants__["b" /* PORTAL_LOADING */]) {
-            return this._loadingPortal;
-        }
-        if (portal === __WEBPACK_IMPORTED_MODULE_6__app_constants__["d" /* PORTAL_TOAST */]) {
-            return this._toastPortal;
-        }
-        // Modals need their own overlay becuase we don't want an ActionSheet
-        // or Alert to trigger lifecycle events inside a modal
-        if (portal === __WEBPACK_IMPORTED_MODULE_6__app_constants__["c" /* PORTAL_MODAL */]) {
-            return this._modalPortal;
-        }
-        return this._overlayPortal;
-    };
-    IonicApp.prototype._getActivePortal = function () {
-        var defaultPortal = this._overlayPortal;
-        var modalPortal = this._modalPortal;
-        var hasModal = modalPortal.length() > 0;
-        var hasDefault = defaultPortal.length() > 0;
-        if (!hasModal && !hasDefault) {
-            return null;
-        }
-        else if (hasModal && hasDefault) {
-            var defaultIndex = defaultPortal.getActive().getZIndex();
-            var modalIndex = modalPortal.getActive().getZIndex();
-            if (defaultIndex > modalIndex) {
-                return defaultPortal;
-            }
-            else {
-                (void 0) /* assert */;
-                return modalPortal;
-            }
-        }
-        if (hasModal) {
-            return modalPortal;
-        }
-        else if (hasDefault) {
-            return defaultPortal;
-        }
-    };
-    IonicApp.prototype._disableScroll = function (shouldDisableScroll) {
-        var _this = this;
-        if (shouldDisableScroll) {
-            this.stopScroll().then(function () {
-                _this._tmr = _this._plt.timeout(function () {
-                    (void 0) /* console.debug */;
-                    _this.setElementClass('disable-scroll', true);
-                }, 32);
-            });
-        }
-        else {
-            var plugin = this._stopScrollPlugin;
-            if (plugin && plugin.cancel) {
-                plugin.cancel();
-            }
-            clearTimeout(this._tmr);
-            (void 0) /* console.debug */;
-            this.setElementClass('disable-scroll', false);
-        }
-    };
-    IonicApp.prototype.stopScroll = function () {
-        var _this = this;
-        if (this._stopScrollPlugin) {
-            return new Promise(function (resolve) {
-                _this._stopScrollPlugin.stop(function () { return resolve(true); });
-            });
-        }
-        else {
-            return Promise.resolve(false);
-        }
-    };
-    IonicApp.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
-                    selector: 'ion-app',
-                    template: '<div #viewport app-viewport></div>' +
-                        '<div #modalPortal overlay-portal></div>' +
-                        '<div #overlayPortal overlay-portal></div>' +
-                        '<div #loadingPortal class="loading-portal" overlay-portal></div>' +
-                        '<div #toastPortal class="toast-portal" [overlay-portal]="10000"></div>' +
-                        '<div class="click-block"></div>'
-                },] },
-    ];
-    /** @nocollapse */
-    IonicApp.ctorParameters = function () { return [
-        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* Inject */], args: [AppRootToken,] },] },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ComponentFactoryResolver */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
-        { type: __WEBPACK_IMPORTED_MODULE_2__config_config__["a" /* Config */], },
-        { type: __WEBPACK_IMPORTED_MODULE_5__platform_platform__["a" /* Platform */], },
-        { type: __WEBPACK_IMPORTED_MODULE_1__app__["a" /* App */], },
-    ]; };
-    IonicApp.propDecorators = {
-        '_viewport': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['viewport', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */] },] },],
-        '_modalPortal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['modalPortal', { read: __WEBPACK_IMPORTED_MODULE_4__overlay_portal__["a" /* OverlayPortal */] },] },],
-        '_overlayPortal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['overlayPortal', { read: __WEBPACK_IMPORTED_MODULE_4__overlay_portal__["a" /* OverlayPortal */] },] },],
-        '_loadingPortal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['loadingPortal', { read: __WEBPACK_IMPORTED_MODULE_4__overlay_portal__["a" /* OverlayPortal */] },] },],
-        '_toastPortal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['toastPortal', { read: __WEBPACK_IMPORTED_MODULE_4__overlay_portal__["a" /* OverlayPortal */] },] },],
-    };
-    return IonicApp;
-}(__WEBPACK_IMPORTED_MODULE_3__ion__["a" /* Ion */]));
-
-//# sourceMappingURL=app-root.js.map
-
-/***/ }),
-/* 47 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PORTAL_DEFAULT; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return PORTAL_MODAL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PORTAL_LOADING; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return PORTAL_TOAST; });
-var PORTAL_DEFAULT = 1;
-var PORTAL_MODAL = 2;
-var PORTAL_LOADING = 3;
-var PORTAL_TOAST = 4;
-//# sourceMappingURL=app-constants.js.map
-
-/***/ }),
-/* 48 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return UrlSerializer; });
-/* harmony export (immutable) */ __webpack_exports__["c"] = formatUrlPart;
-/* unused harmony export isPartMatch */
-/* unused harmony export createMatchedData */
-/* unused harmony export findLinkByComponentData */
-/* unused harmony export normalizeLinks */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DeepLinkConfigToken; });
-/* harmony export (immutable) */ __webpack_exports__["d"] = setupUrlSerializer;
-/* unused harmony export navGroupStringtoObjects */
-/* unused harmony export urlToNavGroupStrings */
-/* unused harmony export convertUrlToSegments */
-/* unused harmony export convertUrlToDehydratedSegments */
-/* unused harmony export hydrateSegmentsWithNav */
-/* unused harmony export getNavFromNavGroup */
-/* unused harmony export getSegmentsFromNavGroups */
-/* unused harmony export getSegmentsFromUrlPieces */
-/* unused harmony export hydrateSegment */
-/* unused harmony export getNonHydratedSegmentIfLinkAndUrlMatch */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
-
-
-/**
- * @hidden
- */
-var UrlSerializer = (function () {
-    function UrlSerializer(_app, config) {
-        this._app = _app;
-        if (config && Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["e" /* isArray */])(config.links)) {
-            this.links = normalizeLinks(config.links);
-        }
-        else {
-            this.links = [];
-        }
-    }
-    /**
-     * Parse the URL into a Path, which is made up of multiple NavSegments.
-     * Match which components belong to each segment.
-     */
-    UrlSerializer.prototype.parse = function (browserUrl) {
-        if (browserUrl.charAt(0) === '/') {
-            browserUrl = browserUrl.substr(1);
-        }
-        // trim off data after ? and #
-        browserUrl = browserUrl.split('?')[0].split('#')[0];
-        return convertUrlToSegments(this._app, browserUrl, this.links);
-    };
-    UrlSerializer.prototype.createSegmentFromName = function (navContainer, nameOrComponent) {
-        var configLink = this.getLinkFromName(nameOrComponent);
-        if (configLink) {
-            return this._createSegment(this._app, navContainer, configLink, null);
-        }
-        return null;
-    };
-    UrlSerializer.prototype.getLinkFromName = function (nameOrComponent) {
-        return this.links.find(function (link) {
-            return (link.component === nameOrComponent) ||
-                (link.name === nameOrComponent);
-        });
-    };
-    /**
-     * Serialize a path, which is made up of multiple NavSegments,
-     * into a URL string. Turn each segment into a string and concat them to a URL.
-     */
-    UrlSerializer.prototype.serialize = function (segments) {
-        if (!segments || !segments.length) {
-            return '/';
-        }
-        var sections = segments.map(function (segment) {
-            if (segment.type === 'tabs') {
-                if (segment.requiresExplicitNavPrefix) {
-                    return "/" + segment.type + "/" + segment.navId + "/" + segment.secondaryId + "/" + segment.id;
-                }
-                return "/" + segment.secondaryId + "/" + segment.id;
-            }
-            // it's a nav
-            if (segment.requiresExplicitNavPrefix) {
-                return "/" + segment.type + "/" + segment.navId + "/" + segment.id;
-            }
-            return "/" + segment.id;
-        });
-        return sections.join('');
-    };
-    /**
-     * Serializes a component and its data into a NavSegment.
-     */
-    UrlSerializer.prototype.serializeComponent = function (navContainer, component, data) {
-        if (component) {
-            var link = findLinkByComponentData(this.links, component, data);
-            if (link) {
-                return this._createSegment(this._app, navContainer, link, data);
-            }
-        }
-        return null;
-    };
-    /**
-   * @internal
-   */
-    UrlSerializer.prototype._createSegment = function (app, navContainer, configLink, data) {
-        var urlParts = configLink.segmentParts;
-        if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["l" /* isPresent */])(data)) {
-            // create a copy of the original parts in the link config
-            urlParts = urlParts.slice();
-            // loop through all the data and convert it to a string
-            var keys = Object.keys(data);
-            var keysLength = keys.length;
-            if (keysLength) {
-                for (var i = 0; i < urlParts.length; i++) {
-                    if (urlParts[i].charAt(0) === ':') {
-                        for (var j = 0; j < keysLength; j++) {
-                            if (urlParts[i] === ":" + keys[j]) {
-                                // this data goes into the URL part (between slashes)
-                                urlParts[i] = encodeURIComponent(data[keys[j]]);
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        var requiresExplicitPrefix = true;
-        if (navContainer.parent) {
-            requiresExplicitPrefix = navContainer.parent && navContainer.parent.getAllChildNavs().length > 1;
-        }
-        else {
-            // if it's a root nav, and there are multiple root navs, we need an explicit prefix
-            requiresExplicitPrefix = app.getRootNavById(navContainer.id) && app.getRootNavs().length > 1;
-        }
-        return {
-            id: urlParts.join('/'),
-            name: configLink.name,
-            component: configLink.component,
-            loadChildren: configLink.loadChildren,
-            data: data,
-            defaultHistory: configLink.defaultHistory,
-            navId: navContainer.name || navContainer.id,
-            type: navContainer.getType(),
-            secondaryId: navContainer.getSecondaryIdentifier(),
-            requiresExplicitNavPrefix: requiresExplicitPrefix
-        };
-    };
-    return UrlSerializer;
-}());
-
-function formatUrlPart(name) {
-    name = name.replace(URL_REPLACE_REG, '-');
-    name = name.charAt(0).toLowerCase() + name.substring(1).replace(/[A-Z]/g, function (match) {
-        return '-' + match.toLowerCase();
-    });
-    while (name.indexOf('--') > -1) {
-        name = name.replace('--', '-');
-    }
-    if (name.charAt(0) === '-') {
-        name = name.substring(1);
-    }
-    if (name.substring(name.length - 1) === '-') {
-        name = name.substring(0, name.length - 1);
-    }
-    return encodeURIComponent(name);
-}
-var isPartMatch = function (urlPart, configLinkPart) {
-    if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["l" /* isPresent */])(urlPart) && Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["l" /* isPresent */])(configLinkPart)) {
-        if (configLinkPart.charAt(0) === ':') {
-            return true;
-        }
-        return (urlPart === configLinkPart);
-    }
-    return false;
-};
-var createMatchedData = function (matchedUrlParts, link) {
-    var data = null;
-    for (var i = 0; i < link.segmentPartsLen; i++) {
-        if (link.segmentParts[i].charAt(0) === ':') {
-            data = data || {};
-            data[link.segmentParts[i].substring(1)] = decodeURIComponent(matchedUrlParts[i]);
-        }
-    }
-    return data;
-};
-var findLinkByComponentData = function (links, component, instanceData) {
-    var foundLink = null;
-    var foundLinkDataMatches = -1;
-    for (var i = 0; i < links.length; i++) {
-        var link = links[i];
-        if (link.component === component) {
-            // ok, so the component matched, but multiple links can point
-            // to the same component, so let's make sure this is the right link
-            var dataMatches = 0;
-            if (instanceData) {
-                var instanceDataKeys = Object.keys(instanceData);
-                // this link has data
-                for (var j = 0; j < instanceDataKeys.length; j++) {
-                    if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["l" /* isPresent */])(link.dataKeys[instanceDataKeys[j]])) {
-                        dataMatches++;
-                    }
-                }
-            }
-            else if (link.dataLen) {
-                // this component does not have data but the link does
-                continue;
-            }
-            if (dataMatches >= foundLinkDataMatches) {
-                foundLink = link;
-                foundLinkDataMatches = dataMatches;
-            }
-        }
-    }
-    return foundLink;
-};
-var normalizeLinks = function (links) {
-    for (var i = 0, ilen = links.length; i < ilen; i++) {
-        var link = links[i];
-        if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["f" /* isBlank */])(link.segment)) {
-            link.segment = link.name;
-        }
-        link.dataKeys = {};
-        link.segmentParts = link.segment.split('/');
-        link.segmentPartsLen = link.segmentParts.length;
-        // used for sorting
-        link.staticLen = link.dataLen = 0;
-        var stillCountingStatic = true;
-        for (var j = 0; j < link.segmentPartsLen; j++) {
-            if (link.segmentParts[j].charAt(0) === ':') {
-                link.dataLen++;
-                stillCountingStatic = false;
-                link.dataKeys[link.segmentParts[j].substring(1)] = true;
-            }
-            else if (stillCountingStatic) {
-                link.staticLen++;
-            }
-        }
-    }
-    // sort by the number of parts, with the links
-    // with the most parts first
-    return links.sort(sortConfigLinks);
-};
-function sortConfigLinks(a, b) {
-    // sort by the number of parts
-    if (a.segmentPartsLen > b.segmentPartsLen) {
-        return -1;
-    }
-    if (a.segmentPartsLen < b.segmentPartsLen) {
-        return 1;
-    }
-    // sort by the number of static parts in a row
-    if (a.staticLen > b.staticLen) {
-        return -1;
-    }
-    if (a.staticLen < b.staticLen) {
-        return 1;
-    }
-    // sort by the number of total data parts
-    if (a.dataLen < b.dataLen) {
-        return -1;
-    }
-    if (a.dataLen > b.dataLen) {
-        return 1;
-    }
-    return 0;
-}
-var URL_REPLACE_REG = /\s+|\?|\!|\$|\,|\.|\+|\"|\'|\*|\^|\||\/|\\|\[|\]|#|%|`|>|<|;|:|@|&|=/g;
-/**
- * @hidden
- */
-var DeepLinkConfigToken = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* InjectionToken */]('USERLINKS');
-function setupUrlSerializer(app, userDeepLinkConfig) {
-    return new UrlSerializer(app, userDeepLinkConfig);
-}
-function navGroupStringtoObjects(navGroupStrings) {
-    // each string has a known format-ish, convert it to it
-    return navGroupStrings.map(function (navGroupString) {
-        var sections = navGroupString.split('/');
-        if (sections[0] === 'nav') {
-            return {
-                type: 'nav',
-                navId: sections[1],
-                niceId: sections[1],
-                secondaryId: null,
-                segmentPieces: sections.splice(2)
-            };
-        }
-        else if (sections[0] === 'tabs') {
-            return {
-                type: 'tabs',
-                navId: sections[1],
-                niceId: sections[1],
-                secondaryId: sections[2],
-                segmentPieces: sections.splice(3)
-            };
-        }
-        return {
-            type: null,
-            navId: null,
-            niceId: null,
-            secondaryId: null,
-            segmentPieces: sections
-        };
-    });
-}
-function urlToNavGroupStrings(url) {
-    var tokens = url.split('/');
-    var keywordIndexes = [];
-    for (var i = 0; i < tokens.length; i++) {
-        if (i !== 0 && (tokens[i] === 'nav' || tokens[i] === 'tabs')) {
-            keywordIndexes.push(i);
-        }
-    }
-    // append the last index + 1 to the list no matter what
-    keywordIndexes.push(tokens.length);
-    var groupings = [];
-    var activeKeywordIndex = 0;
-    var tmpArray = [];
-    for (var i = 0; i < tokens.length; i++) {
-        if (i >= keywordIndexes[activeKeywordIndex]) {
-            groupings.push(tmpArray.join('/'));
-            tmpArray = [];
-            activeKeywordIndex++;
-        }
-        tmpArray.push(tokens[i]);
-    }
-    // okay, after the loop we've gotta push one more time just to be safe
-    groupings.push(tmpArray.join('/'));
-    return groupings;
-}
-function convertUrlToSegments(app, url, navLinks) {
-    var pairs = convertUrlToDehydratedSegments(url, navLinks);
-    return hydrateSegmentsWithNav(app, pairs);
-}
-function convertUrlToDehydratedSegments(url, navLinks) {
-    var navGroupStrings = urlToNavGroupStrings(url);
-    var navGroups = navGroupStringtoObjects(navGroupStrings);
-    return getSegmentsFromNavGroups(navGroups, navLinks);
-}
-function hydrateSegmentsWithNav(app, dehydratedSegmentPairs) {
-    var segments = [];
-    for (var i = 0; i < dehydratedSegmentPairs.length; i++) {
-        var navs = getNavFromNavGroup(dehydratedSegmentPairs[i].navGroup, app);
-        // okay, cool, let's walk through the segments and hydrate them
-        for (var _i = 0, _a = dehydratedSegmentPairs[i].segments; _i < _a.length; _i++) {
-            var dehydratedSegment = _a[_i];
-            if (navs.length === 1) {
-                segments.push(hydrateSegment(dehydratedSegment, navs[0]));
-                navs = navs[0].getActiveChildNavs();
-            }
-            else if (navs.length > 1) {
-                // this is almost certainly an async race condition bug in userland
-                // if you're in this state, it would be nice to just bail here
-                // but alas we must perservere and handle the issue
-                // the simple solution is to just use the last child
-                // because that is probably what the user wants anyway
-                // remember, do not harm, even if it makes our shizzle ugly
-                segments.push(hydrateSegment(dehydratedSegment, navs[navs.length - 1]));
-                navs = navs[navs.length - 1].getActiveChildNavs();
-            }
-            else {
-                break;
-            }
-        }
-    }
-    return segments;
-}
-function getNavFromNavGroup(navGroup, app) {
-    if (navGroup.navId) {
-        var rootNav = app.getNavByIdOrName(navGroup.navId);
-        if (rootNav) {
-            return [rootNav];
-        }
-        return [];
-    }
-    // we don't know what nav to use, so just use the root nav.
-    // if there is more than one root nav, throw an error
-    return app.getRootNavs();
-}
-/*
- * Let's face the facts: Getting a dehydrated segment from the url is really hard
- * because we need to do a ton of crazy looping
- * the are chunks of a url that are totally irrelevant at this stage, such as the secondary identifier
- * stating which tab is selected, etc.
- * but is necessary.
- * We look at segment pieces in reverse order to try to build segments
- * as in, if you had an array like this
- * ['my', 'super', 'cool', 'url']
- * we want to look at the pieces in reverse order:
- * url
- * cool url
- * super cool url
- * my super cool url
- * cool
- * super cool
- * my super cool
- * super
- * my super
- * my
- **/
-function getSegmentsFromNavGroups(navGroups, navLinks) {
-    var pairs = [];
-    var usedNavLinks = new Set();
-    for (var _i = 0, navGroups_1 = navGroups; _i < navGroups_1.length; _i++) {
-        var navGroup = navGroups_1[_i];
-        var segments = [];
-        var segmentPieces = navGroup.segmentPieces.concat([]);
-        for (var i = segmentPieces.length; i >= 0; i--) {
-            var created = false;
-            for (var j = 0; j < i; j++) {
-                var startIndex = i - j - 1;
-                var endIndex = i;
-                var subsetOfUrl = segmentPieces.slice(startIndex, endIndex);
-                for (var _a = 0, navLinks_1 = navLinks; _a < navLinks_1.length; _a++) {
-                    var navLink = navLinks_1[_a];
-                    if (!usedNavLinks.has(navLink.name)) {
-                        var segment = getSegmentsFromUrlPieces(subsetOfUrl, navLink);
-                        if (segment) {
-                            i = startIndex + 1;
-                            usedNavLinks.add(navLink.name);
-                            created = true;
-                            // sweet, we found a segment
-                            segments.push(segment);
-                            // now we want to null out the url subsection in the segmentPieces
-                            for (var k = startIndex; k < endIndex; k++) {
-                                segmentPieces[k] = null;
-                            }
-                            break;
-                        }
-                    }
-                }
-                if (created) {
-                    break;
-                }
-            }
-            if (!created && segmentPieces[i - 1]) {
-                // this is very likely a tab's secondary identifier
-                segments.push({
-                    id: null,
-                    name: null,
-                    secondaryId: segmentPieces[i - 1],
-                    component: null,
-                    loadChildren: null,
-                    data: null,
-                    defaultHistory: null
-                });
-            }
-        }
-        // since we're getting segments in from right-to-left in the url, reverse them
-        // so they're in the correct order. Also filter out and bogus segments
-        var orderedSegments = segments.reverse();
-        // okay, this is the lazy persons approach here.
-        // so here's the deal! Right now if section of the url is not a part of a segment
-        // it is almost certainly the secondaryId for a tabs component
-        // basically, knowing the segment for the `tab` itself is good, but we also need to know
-        // which tab is selected, so we have an identifer in the url that is associated with the tabs component
-        // telling us which tab is selected. With that in mind, we are going to go through and find the segments with only secondary identifiers,
-        // and simply add the secondaryId to the next segment, and then remove the empty segment from the list
-        for (var i = 0; i < orderedSegments.length; i++) {
-            if (orderedSegments[i].secondaryId && !orderedSegments[i].id && ((i + 1) <= orderedSegments.length - 1)) {
-                orderedSegments[i + 1].secondaryId = orderedSegments[i].secondaryId;
-                orderedSegments[i] = null;
-            }
-        }
-        var cleanedSegments = segments.filter(function (segment) { return !!segment; });
-        // if the nav group has a secondary id, make sure the first segment also has it set
-        if (navGroup.secondaryId && segments.length) {
-            cleanedSegments[0].secondaryId = navGroup.secondaryId;
-        }
-        pairs.push({
-            navGroup: navGroup,
-            segments: cleanedSegments
-        });
-    }
-    return pairs;
-}
-function getSegmentsFromUrlPieces(urlSections, navLink) {
-    if (navLink.segmentPartsLen !== urlSections.length) {
-        return null;
-    }
-    for (var i = 0; i < urlSections.length; i++) {
-        if (!isPartMatch(urlSections[i], navLink.segmentParts[i])) {
-            // just return an empty array if the part doesn't match
-            return null;
-        }
-    }
-    return {
-        id: urlSections.join('/'),
-        name: navLink.name,
-        component: navLink.component,
-        loadChildren: navLink.loadChildren,
-        data: createMatchedData(urlSections, navLink),
-        defaultHistory: navLink.defaultHistory
-    };
-}
-function hydrateSegment(segment, nav) {
-    var hydratedSegment = Object.assign({}, segment);
-    hydratedSegment.type = nav.getType();
-    hydratedSegment.navId = nav.name || nav.id;
-    // secondaryId is set on an empty dehydrated segment in the case of tabs to identify which tab is selected
-    hydratedSegment.secondaryId = segment.secondaryId;
-    return hydratedSegment;
-}
-function getNonHydratedSegmentIfLinkAndUrlMatch(urlChunks, navLink) {
-    var allSegmentsMatch = true;
-    for (var i = 0; i < urlChunks.length; i++) {
-        if (!isPartMatch(urlChunks[i], navLink.segmentParts[i])) {
-            allSegmentsMatch = false;
-            break;
-        }
-    }
-    if (allSegmentsMatch) {
-        return {
-            id: navLink.segmentParts.join('/'),
-            name: navLink.name,
-            component: navLink.component,
-            loadChildren: navLink.loadChildren,
-            data: createMatchedData(urlChunks, navLink),
-            defaultHistory: navLink.defaultHistory
-        };
-    }
-    return null;
-}
-//# sourceMappingURL=url-serializer.js.map
-
-/***/ }),
-/* 49 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
-var core = __webpack_require__(0);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
-var util = __webpack_require__(2);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
-var config_config = __webpack_require__(1);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
-var dom_controller = __webpack_require__(6);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/tap-click/haptic.js
-var haptic = __webpack_require__(31);
-
-// CONCATENATED MODULE: ./node_modules/ionic-angular/components/picker/picker-options.js
-var PICKER_OPT_SELECTED = 'picker-opt-selected';
-var DECELERATION_FRICTION = 0.97;
-var FRAME_MS = (1000 / 60);
-var MAX_PICKER_SPEED = 60;
-//# sourceMappingURL=picker-options.js.map
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
-var platform = __webpack_require__(3);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
-var dom = __webpack_require__(14);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/ui-event-manager.js
-var ui_event_manager = __webpack_require__(29);
-
-// CONCATENATED MODULE: ./node_modules/ionic-angular/components/picker/picker-column.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return picker_column_PickerColumnCmp; });
-
-
-
-
-
-
-
-
-
-/**
- * @hidden
- */
-var picker_column_PickerColumnCmp = (function () {
-    function PickerColumnCmp(config, _plt, elementRef, _zone, _haptic, plt, domCtrl) {
-        this._plt = _plt;
-        this.elementRef = elementRef;
-        this._zone = _zone;
-        this._haptic = _haptic;
-        this.y = 0;
-        this.pos = [];
-        this.startY = null;
-        this.ionChange = new core["r" /* EventEmitter */]();
-        this.events = new ui_event_manager["a" /* UIEventManager */](plt);
-        this.rotateFactor = config.getNumber('pickerRotateFactor', 0);
-        this.scaleFactor = config.getNumber('pickerScaleFactor', 1);
-        this.decelerateFunc = this.decelerate.bind(this);
-        this.debouncer = domCtrl.debouncer();
-    }
-    PickerColumnCmp.prototype.ngAfterViewInit = function () {
-        // get the scrollable element within the column
-        var colEle = this.colEle.nativeElement;
-        this.colHeight = colEle.clientHeight;
-        // get the height of one option
-        this.optHeight = (colEle.firstElementChild ? colEle.firstElementChild.clientHeight : 0);
-        // Listening for pointer events
-        this.events.pointerEvents({
-            element: this.elementRef.nativeElement,
-            pointerDown: this.pointerStart.bind(this),
-            pointerMove: this.pointerMove.bind(this),
-            pointerUp: this.pointerEnd.bind(this),
-            capture: true,
-            zone: false
-        });
-    };
-    PickerColumnCmp.prototype.ngOnDestroy = function () {
-        this._plt.cancelRaf(this.rafId);
-        this.events.destroy();
-    };
-    PickerColumnCmp.prototype.pointerStart = function (ev) {
-        (void 0) /* console.debug */;
-        this._haptic.gestureSelectionStart();
-        // We have to prevent default in order to block scrolling under the picker
-        // but we DO NOT have to stop propagation, since we still want
-        // some "click" events to capture
-        ev.preventDefault();
-        // cancel any previous raf's that haven't fired yet
-        this._plt.cancelRaf(this.rafId);
-        // remember where the pointer started from`
-        this.startY = Object(dom["f" /* pointerCoord */])(ev).y;
-        // reset everything
-        this.velocity = 0;
-        this.pos.length = 0;
-        this.pos.push(this.startY, Date.now());
-        var options = this.col.options;
-        var minY = (options.length - 1);
-        var maxY = 0;
-        for (var i = 0; i < options.length; i++) {
-            if (!options[i].disabled) {
-                minY = Math.min(minY, i);
-                maxY = Math.max(maxY, i);
-            }
-        }
-        this.minY = (minY * this.optHeight * -1);
-        this.maxY = (maxY * this.optHeight * -1);
-        return true;
-    };
-    PickerColumnCmp.prototype.pointerMove = function (ev) {
-        var _this = this;
-        ev.preventDefault();
-        ev.stopPropagation();
-        var currentY = Object(dom["f" /* pointerCoord */])(ev).y;
-        this.pos.push(currentY, Date.now());
-        this.debouncer.write(function () {
-            if (_this.startY === null) {
-                return;
-            }
-            // update the scroll position relative to pointer start position
-            var y = _this.y + (currentY - _this.startY);
-            if (y > _this.minY) {
-                // scrolling up higher than scroll area
-                y = Math.pow(y, 0.8);
-                _this.bounceFrom = y;
-            }
-            else if (y < _this.maxY) {
-                // scrolling down below scroll area
-                y += Math.pow(_this.maxY - y, 0.9);
-                _this.bounceFrom = y;
-            }
-            else {
-                _this.bounceFrom = 0;
-            }
-            _this.update(y, 0, false, false);
-            var currentIndex = Math.max(Math.abs(Math.round(y / _this.optHeight)), 0);
-            if (currentIndex !== _this.lastTempIndex) {
-                // Trigger a haptic event for physical feedback that the index has changed
-                _this._haptic.gestureSelectionChanged();
-                _this.lastTempIndex = currentIndex;
-            }
-        });
-    };
-    PickerColumnCmp.prototype.pointerEnd = function (ev) {
-        ev.preventDefault();
-        this.debouncer.cancel();
-        if (this.startY === null) {
-            return;
-        }
-        (void 0) /* console.debug */;
-        this.velocity = 0;
-        if (this.bounceFrom > 0) {
-            // bounce back up
-            this.update(this.minY, 100, true, true);
-            return;
-        }
-        else if (this.bounceFrom < 0) {
-            // bounce back down
-            this.update(this.maxY, 100, true, true);
-            return;
-        }
-        var endY = Object(dom["f" /* pointerCoord */])(ev).y;
-        this.pos.push(endY, Date.now());
-        var endPos = (this.pos.length - 1);
-        var startPos = endPos;
-        var timeRange = (Date.now() - 100);
-        // move pointer to position measured 100ms ago
-        for (var i = endPos; i > 0 && this.pos[i] > timeRange; i -= 2) {
-            startPos = i;
-        }
-        if (startPos !== endPos) {
-            // compute relative movement between these two points
-            var timeOffset = (this.pos[endPos] - this.pos[startPos]);
-            var movedTop = (this.pos[startPos - 1] - this.pos[endPos - 1]);
-            // based on XXms compute the movement to apply for each render step
-            var velocity = ((movedTop / timeOffset) * FRAME_MS);
-            this.velocity = Object(util["a" /* clamp */])(-MAX_PICKER_SPEED, velocity, MAX_PICKER_SPEED);
-        }
-        if (Math.abs(endY - this.startY) > 3) {
-            var y = this.y + (endY - this.startY);
-            this.update(y, 0, true, true);
-        }
-        this.startY = null;
-        this.decelerate();
-    };
-    PickerColumnCmp.prototype.decelerate = function () {
-        var y = 0;
-        if (isNaN(this.y) || !this.optHeight) {
-            // fallback in case numbers get outta wack
-            this.update(y, 0, true, true);
-            this._haptic.gestureSelectionEnd();
-        }
-        else if (Math.abs(this.velocity) > 0) {
-            // still decelerating
-            this.velocity *= DECELERATION_FRICTION;
-            // do not let it go slower than a velocity of 1
-            this.velocity = (this.velocity > 0)
-                ? Math.max(this.velocity, 1)
-                : Math.min(this.velocity, -1);
-            y = Math.round(this.y - this.velocity);
-            if (y > this.minY) {
-                // whoops, it's trying to scroll up farther than the options we have!
-                y = this.minY;
-                this.velocity = 0;
-            }
-            else if (y < this.maxY) {
-                // gahh, it's trying to scroll down farther than we can!
-                y = this.maxY;
-                this.velocity = 0;
-            }
-            var notLockedIn = (y % this.optHeight !== 0 || Math.abs(this.velocity) > 1);
-            this.update(y, 0, true, !notLockedIn);
-            if (notLockedIn) {
-                // isn't locked in yet, keep decelerating until it is
-                this.rafId = this._plt.raf(this.decelerateFunc);
-            }
-        }
-        else if (this.y % this.optHeight !== 0) {
-            // needs to still get locked into a position so options line up
-            var currentPos = Math.abs(this.y % this.optHeight);
-            // create a velocity in the direction it needs to scroll
-            this.velocity = (currentPos > (this.optHeight / 2) ? 1 : -1);
-            this._haptic.gestureSelectionEnd();
-            this.decelerate();
-        }
-        var currentIndex = Math.max(Math.abs(Math.round(y / this.optHeight)), 0);
-        if (currentIndex !== this.lastTempIndex) {
-            // Trigger a haptic event for physical feedback that the index has changed
-            this._haptic.gestureSelectionChanged();
-        }
-        this.lastTempIndex = currentIndex;
-    };
-    PickerColumnCmp.prototype.optClick = function (ev, index) {
-        if (!this.velocity) {
-            ev.preventDefault();
-            ev.stopPropagation();
-            this.setSelected(index, 150);
-        }
-    };
-    PickerColumnCmp.prototype.setSelected = function (selectedIndex, duration) {
-        // if there is a selected index, then figure out it's y position
-        // if there isn't a selected index, then just use the top y position
-        var y = (selectedIndex > -1) ? ((selectedIndex * this.optHeight) * -1) : 0;
-        this._plt.cancelRaf(this.rafId);
-        this.velocity = 0;
-        // so what y position we're at
-        this.update(y, duration, true, true);
-    };
-    PickerColumnCmp.prototype.update = function (y, duration, saveY, emitChange) {
-        // ensure we've got a good round number :)
-        y = Math.round(y);
-        var i;
-        var button;
-        var opt;
-        var optOffset;
-        var visible;
-        var translateX;
-        var translateY;
-        var translateZ;
-        var rotateX;
-        var transform;
-        var selected;
-        var parent = this.colEle.nativeElement;
-        var children = parent.children;
-        var length = children.length;
-        var selectedIndex = this.col.selectedIndex = Math.min(Math.max(Math.round(-y / this.optHeight), 0), length - 1);
-        var durationStr = (duration === 0) ? null : duration + 'ms';
-        var scaleStr = "scale(" + this.scaleFactor + ")";
-        for (i = 0; i < length; i++) {
-            button = children[i];
-            opt = this.col.options[i];
-            optOffset = (i * this.optHeight) + y;
-            visible = true;
-            transform = '';
-            if (this.rotateFactor !== 0) {
-                rotateX = optOffset * this.rotateFactor;
-                if (Math.abs(rotateX) > 90) {
-                    visible = false;
-                }
-                else {
-                    translateX = 0;
-                    translateY = 0;
-                    translateZ = 90;
-                    transform = "rotateX(" + rotateX + "deg) ";
-                }
-            }
-            else {
-                translateX = 0;
-                translateZ = 0;
-                translateY = optOffset;
-                if (Math.abs(translateY) > 170) {
-                    visible = false;
-                }
-            }
-            selected = selectedIndex === i;
-            if (visible) {
-                transform += "translate3d(0px," + translateY + "px," + translateZ + "px) ";
-                if (this.scaleFactor !== 1 && !selected) {
-                    transform += scaleStr;
-                }
-            }
-            else {
-                transform = 'translate3d(-9999px,0px,0px)';
-            }
-            // Update transition duration
-            if (duration !== opt._dur) {
-                opt._dur = duration;
-                button.style[this._plt.Css.transitionDuration] = durationStr;
-            }
-            // Update transform
-            if (transform !== opt._trans) {
-                opt._trans = transform;
-                button.style[this._plt.Css.transform] = transform;
-            }
-            // Update selected item
-            if (selected !== opt._selected) {
-                opt._selected = selected;
-                if (selected) {
-                    button.classList.add(PICKER_OPT_SELECTED);
-                }
-                else {
-                    button.classList.remove(PICKER_OPT_SELECTED);
-                }
-            }
-        }
-        this.col.prevSelected = selectedIndex;
-        if (saveY) {
-            this.y = y;
-        }
-        if (emitChange) {
-            if (this.lastIndex === undefined) {
-                // have not set a last index yet
-                this.lastIndex = this.col.selectedIndex;
-            }
-            else if (this.lastIndex !== this.col.selectedIndex) {
-                // new selected index has changed from the last index
-                // update the lastIndex and emit that it has changed
-                this.lastIndex = this.col.selectedIndex;
-                var ionChange = this.ionChange;
-                if (ionChange.observers.length > 0) {
-                    this._zone.run(ionChange.emit.bind(ionChange, this.col.options[this.col.selectedIndex]));
-                }
-            }
-        }
-    };
-    PickerColumnCmp.prototype.refresh = function () {
-        var min = this.col.options.length - 1;
-        var max = 0;
-        var options = this.col.options;
-        for (var i = 0; i < options.length; i++) {
-            if (!options[i].disabled) {
-                min = Math.min(min, i);
-                max = Math.max(max, i);
-            }
-        }
-        var selectedIndex = Object(util["a" /* clamp */])(min, this.col.selectedIndex, max);
-        if (this.col.prevSelected !== selectedIndex) {
-            var y = (selectedIndex * this.optHeight) * -1;
-            this._plt.cancelRaf(this.rafId);
-            this.velocity = 0;
-            this.update(y, 150, true, false);
-        }
-    };
-    PickerColumnCmp.decorators = [
-        { type: core["k" /* Component */], args: [{
-                    selector: '.picker-col',
-                    template: '<div *ngIf="col.prefix" class="picker-prefix" [style.width]="col.prefixWidth">{{col.prefix}}</div>' +
-                        '<div class="picker-opts" #colEle [style.max-width]="col.optionsWidth">' +
-                        '<button *ngFor="let o of col.options; let i=index"' +
-                        '[class.picker-opt-disabled]="o.disabled" ' +
-                        'class="picker-opt" disable-activated (click)="optClick($event, i)">' +
-                        '{{o.text}}' +
-                        '</button>' +
-                        '</div>' +
-                        '<div *ngIf="col.suffix" class="picker-suffix" [style.width]="col.suffixWidth">{{col.suffix}}</div>',
-                    host: {
-                        '[style.max-width]': 'col.columnWidth',
-                        '[class.picker-opts-left]': 'col.align=="left"',
-                        '[class.picker-opts-right]': 'col.align=="right"',
-                    }
-                },] },
-    ];
-    /** @nocollapse */
-    PickerColumnCmp.ctorParameters = function () { return [
-        { type: config_config["a" /* Config */], },
-        { type: platform["a" /* Platform */], },
-        { type: core["p" /* ElementRef */], },
-        { type: core["G" /* NgZone */], },
-        { type: haptic["a" /* Haptic */], },
-        { type: platform["a" /* Platform */], },
-        { type: dom_controller["a" /* DomController */], },
-    ]; };
-    PickerColumnCmp.propDecorators = {
-        'colEle': [{ type: core["Y" /* ViewChild */], args: ['colEle',] },],
-        'col': [{ type: core["z" /* Input */] },],
-        'ionChange': [{ type: core["I" /* Output */] },],
-    };
-    return PickerColumnCmp;
-}());
-
-//# sourceMappingURL=picker-column.js.map
-
-/***/ }),
-/* 50 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Nav; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_deep_linker__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_dom_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_nav_controller__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_nav_controller_base__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__transitions_transition_controller__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_view_controller__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__split_pane_split_pane__ = __webpack_require__(25);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * @name Nav
- * @description
- *
- * `ion-nav` is the declarative component for a [NavController](../../../navigation/NavController/).
- *
- * For more information on using nav controllers like Nav or [Tab](../../Tabs/Tab/),
- * take a look at the [NavController API Docs](../../../navigation/NavController/).
- *
- *
- * @usage
- * You must set a root page to be loaded initially by any Nav you create, using
- * the 'root' property:
- *
- * ```ts
- * import { Component } from '@angular/core';
- * import { GettingStartedPage } from './getting-started';
- *
- * @Component({
- *   template: `<ion-nav [root]="root"></ion-nav>`
- * })
- * class MyApp {
- *   root = GettingStartedPage;
- *
- *   constructor(){
- *   }
- * }
- * ```
- *
- * @demo /docs/demos/src/navigation/
- * @see {@link /docs/components#navigation Navigation Component Docs}
- */
-var Nav = (function (_super) {
-    __extends(Nav, _super);
-    function Nav(viewCtrl, parent, app, config, plt, elementRef, zone, renderer, cfr, gestureCtrl, transCtrl, linker, domCtrl, errHandler) {
-        var _this = _super.call(this, parent, app, config, plt, elementRef, zone, renderer, cfr, gestureCtrl, transCtrl, linker, domCtrl, errHandler) || this;
-        _this._hasInit = false;
-        if (viewCtrl) {
-            // an ion-nav can also act as an ion-page within a parent ion-nav
-            // this would happen when an ion-nav nests a child ion-nav.
-            viewCtrl._setContent(_this);
-        }
-        if (parent) {
-            // this Nav has a parent Nav
-            parent.registerChildNav(_this);
-        }
-        else if (viewCtrl && viewCtrl.getNav()) {
-            // this Nav was opened from a modal
-            _this.parent = viewCtrl.getNav();
-            _this.parent.registerChildNav(_this);
-        }
-        else if (app && !app.getRootNavById(_this.id)) {
-            // a root nav has not been registered yet with the app
-            // this is the root navcontroller for the entire app
-            app.registerRootNav(_this);
-        }
-        return _this;
-    }
-    Object.defineProperty(Nav.prototype, "_vp", {
-        /**
-         * @hidden
-         */
-        set: function (val) {
-            this.setViewport(val);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Nav.prototype.ngAfterViewInit = function () {
-        var _this = this;
-        this._hasInit = true;
-        var segment = this._linker.getSegmentByNavIdOrName(this.id, this.name);
-        if (segment && (segment.component || segment.loadChildren)) {
-            return this._linker.initViews(segment).then(function (views) {
-                return _this.setPages(views, null, null);
-            });
-        }
-        else if (this._root) {
-            // no segment match, so use the root property but don't set the url I guess
-            var setUrl = segment ? false : true;
-            return this.push(this._root, this.rootParams, {
-                isNavRoot: (this._app.getRootNavById(this.id) === this),
-                updateUrl: setUrl
-            }, null);
-        }
-    };
-    Object.defineProperty(Nav.prototype, "root", {
-        /**
-         * @input {Page} The Page component to load as the root page within this nav.
-         */
-        get: function () {
-            return this._root;
-        },
-        set: function (page) {
-            this._root = page;
-            if (this._hasInit) {
-                this.setRoot(page);
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @hidden
-     */
-    Nav.prototype.ngOnDestroy = function () {
-        this.destroy();
-    };
-    Nav.prototype.initPane = function () {
-        var isMain = this._elementRef.nativeElement.hasAttribute('main');
-        return isMain;
-    };
-    Nav.prototype.paneChanged = function (isPane) {
-        if (isPane) {
-            this.resize();
-        }
-    };
-    Nav.prototype.goToRoot = function (opts) {
-        return this.setRoot(this._root, this.rootParams, opts, null);
-    };
-    /*
-     * @private
-     */
-    Nav.prototype.getType = function () {
-        return 'nav';
-    };
-    /*
-     * @private
-     */
-    Nav.prototype.getSecondaryIdentifier = function () {
-        return null;
-    };
-    Nav.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
-                    selector: 'ion-nav',
-                    template: '<div #viewport nav-viewport></div>' +
-                        '<div class="nav-decor"></div>',
-                    encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* ViewEncapsulation */].None,
-                    providers: [{ provide: __WEBPACK_IMPORTED_MODULE_11__split_pane_split_pane__["a" /* RootNode */], useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* forwardRef */])(function () { return Nav; }) }]
-                },] },
-    ];
-    /** @nocollapse */
-    Nav.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_10__navigation_view_controller__["a" /* ViewController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
-        { type: __WEBPACK_IMPORTED_MODULE_6__navigation_nav_controller__["a" /* NavController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
-        { type: __WEBPACK_IMPORTED_MODULE_1__app_app__["a" /* App */], },
-        { type: __WEBPACK_IMPORTED_MODULE_2__config_config__["a" /* Config */], },
-        { type: __WEBPACK_IMPORTED_MODULE_8__platform_platform__["a" /* Platform */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgZone */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ComponentFactoryResolver */], },
-        { type: __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__["l" /* GestureController */], },
-        { type: __WEBPACK_IMPORTED_MODULE_9__transitions_transition_controller__["a" /* TransitionController */], },
-        { type: __WEBPACK_IMPORTED_MODULE_3__navigation_deep_linker__["a" /* DeepLinker */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
-        { type: __WEBPACK_IMPORTED_MODULE_4__platform_dom_controller__["a" /* DomController */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ErrorHandler */], },
-    ]; };
-    Nav.propDecorators = {
-        '_vp': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['viewport', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */] },] },],
-        'root': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-        'rootParams': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-        'name': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-    };
-    return Nav;
-}(__WEBPACK_IMPORTED_MODULE_7__navigation_nav_controller_base__["a" /* NavControllerBase */]));
-
-//# sourceMappingURL=nav.js.map
-
-/***/ }),
-/* 51 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioGroup; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list_header__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__(2);
-
-
-
-
-/**
- * @name RadioGroup
- * @description
- * A radio group is a group of [radio buttons](../RadioButton). It allows
- * a user to select at most one radio button from a set. Checking one radio
- * button that belongs to a radio group unchecks any previous checked
- * radio button within the same group.
- *
- * See the [Angular Forms Docs](https://angular.io/docs/ts/latest/guide/forms.html)
- * for more information on forms and inputs.
- *
- * @usage
- * ```html
- * <ion-list radio-group [(ngModel)]="autoManufacturers">
- *
- *   <ion-list-header>
- *     Auto Manufacturers
- *   </ion-list-header>
- *
- *   <ion-item>
- *     <ion-label>Cord</ion-label>
- *     <ion-radio value="cord"></ion-radio>
- *   </ion-item>
- *
- *   <ion-item>
- *     <ion-label>Duesenberg</ion-label>
- *     <ion-radio value="duesenberg"></ion-radio>
- *   </ion-item>
- *
- *   <ion-item>
- *     <ion-label>Hudson</ion-label>
- *     <ion-radio value="hudson"></ion-radio>
- *   </ion-item>
- *
- *   <ion-item>
- *     <ion-label>Packard</ion-label>
- *     <ion-radio value="packard"></ion-radio>
- *   </ion-item>
- *
- *   <ion-item>
- *     <ion-label>Studebaker</ion-label>
- *     <ion-radio value="studebaker"></ion-radio>
- *   </ion-item>
- *
- * </ion-list>
- * ```
- *
- * @demo /docs/demos/src/radio/
- * @see {@link /docs/components#radio Radio Component Docs}
- * @see {@link ../RadioButton RadioButton API Docs}
-*/
-var RadioGroup = (function () {
-    function RadioGroup(_renderer, _elementRef, _cd) {
-        this._renderer = _renderer;
-        this._elementRef = _elementRef;
-        this._cd = _cd;
-        /**
-         * @internal
-         */
-        this._disabled = false;
-        /**
-         * @hidden
-         */
-        this._btns = [];
-        /**
-         * @hidden
-         */
-        this._ids = -1;
-        /**
-         * @hidden
-         */
-        this._init = false;
-        /**
-         * @output {any} Emitted when the selected button has changed.
-         */
-        this.ionChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* EventEmitter */]();
-        this.id = ++radioGroupIds;
-    }
-    Object.defineProperty(RadioGroup.prototype, "disabled", {
-        /**
-         * @input {boolean} If true, the user cannot interact with any of the buttons in the group.
-         */
-        get: function () {
-            return this._disabled;
-        },
-        set: function (val) {
-            this._disabled = Object(__WEBPACK_IMPORTED_MODULE_3__util_util__["o" /* isTrueProperty */])(val);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype.ngAfterContentInit = function () {
-        var activeButton = this._btns.find(function (b) { return b.checked; });
-        if (activeButton) {
-            this._setActive(activeButton);
-        }
-    };
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype.writeValue = function (val) {
-        (void 0) /* console.debug */;
-        this.value = val;
-        if (this._init) {
-            this._update();
-            this.onTouched();
-            this.ionChange.emit(val);
-        }
-        this._init = true;
-    };
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype.registerOnChange = function (fn) {
-        var _this = this;
-        this._fn = fn;
-        this.onChange = function (val) {
-            // onChange used when there's an formControlName
-            (void 0) /* console.debug */;
-            fn(val);
-            _this.value = val;
-            _this._update();
-            _this.onTouched();
-            _this.ionChange.emit(val);
-        };
-    };
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype._update = function () {
-        var _this = this;
-        // loop through each of the radiobuttons
-        var hasChecked = false;
-        this._btns.forEach(function (radioButton) {
-            // check this radiobutton if its value is
-            // the same as the radiogroups value
-            radioButton.checked = Object(__WEBPACK_IMPORTED_MODULE_3__util_util__["g" /* isCheckedProperty */])(_this.value, radioButton.value) && !hasChecked;
-            if (radioButton.checked) {
-                // if this button is checked, then set it as
-                // the radiogroup's active descendant
-                _this._setActive(radioButton);
-                hasChecked = true;
-            }
-        });
-    };
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype._setActive = function (radioButton) {
-        this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-activedescendant', radioButton.id);
-    };
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype.add = function (button) {
-        var _this = this;
-        this._btns.push(button);
-        // listen for radiobutton select events
-        button.ionSelect.subscribe(function (val) {
-            // this radiobutton has been selected
-            _this.onChange(val);
-        });
-        return this.id + '-' + (++this._ids);
-    };
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype.remove = function (button) {
-        var index = this._btns.indexOf(button);
-        if (index > -1) {
-            if (button.value === this.value) {
-                this.value = null;
-            }
-            this._btns.splice(index, 1);
-        }
-    };
-    Object.defineProperty(RadioGroup.prototype, "_header", {
-        /**
-         * @hidden
-         */
-        set: function (header) {
-            if (header) {
-                if (!header.id) {
-                    header.id = 'rg-hdr-' + this.id;
-                }
-                this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-describedby', header.id);
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype.onChange = function (val) {
-        // onChange used when there is not an formControlName
-        (void 0) /* console.debug */;
-        this.value = val;
-        this._update();
-        this.onTouched();
-        this.ionChange.emit(val);
-        this._cd.detectChanges();
-    };
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype.onTouched = function () { };
-    /**
-     * @hidden
-     */
-    RadioGroup.prototype.setDisabledState = function (isDisabled) {
-        this.disabled = isDisabled;
-    };
-    RadioGroup.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Directive */], args: [{
-                    selector: '[radio-group]',
-                    host: {
-                        'role': 'radiogroup'
-                    },
-                    providers: [{ provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* NG_VALUE_ACCESSOR */], useExisting: RadioGroup, multi: true }],
-                },] },
-    ];
-    /** @nocollapse */
-    RadioGroup.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* ChangeDetectorRef */], },
-    ]; };
-    RadioGroup.propDecorators = {
-        'disabled': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-        'ionChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */] },],
-        '_header': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ContentChild */], args: [__WEBPACK_IMPORTED_MODULE_2__list_list_header__["a" /* ListHeader */],] },],
-    };
-    return RadioGroup;
-}());
-
-var radioGroupIds = -1;
-//# sourceMappingURL=radio-group.js.map
-
-/***/ }),
-/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.js
-var app_root = __webpack_require__(46);
+var app_root = __webpack_require__(47);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/menu-controller.js
 var menu_controller = __webpack_require__(28);
@@ -53939,7 +52160,7 @@ var action_sheet = __webpack_require__(91);
 var action_sheet_controller = __webpack_require__(92);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.js
-var action_sheet_component = __webpack_require__(57);
+var action_sheet_component = __webpack_require__(60);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert.js + 1 modules
 var alert_alert = __webpack_require__(93);
@@ -53948,13 +52169,13 @@ var alert_alert = __webpack_require__(93);
 var alert_controller = __webpack_require__(94);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.js
-var alert_component = __webpack_require__(58);
+var alert_component = __webpack_require__(61);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
 var app = __webpack_require__(5);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/avatar/avatar.js
-var avatar = __webpack_require__(135);
+var avatar = __webpack_require__(136);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/backdrop/backdrop.js
 var backdrop = __webpack_require__(24);
@@ -53963,49 +52184,49 @@ var backdrop = __webpack_require__(24);
 var badge = __webpack_require__(95);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
-var button_button = __webpack_require__(17);
+var button_button = __webpack_require__(18);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card.js
-var card = __webpack_require__(59);
+var card = __webpack_require__(62);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-content.js
-var card_content = __webpack_require__(136);
+var card_content = __webpack_require__(137);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-header.js
-var card_header = __webpack_require__(137);
+var card_header = __webpack_require__(138);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-title.js
-var card_title = __webpack_require__(60);
+var card_title = __webpack_require__(63);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/checkbox/checkbox.js
-var checkbox_checkbox = __webpack_require__(138);
+var checkbox_checkbox = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/chip/chip.js
-var chip = __webpack_require__(142);
+var chip = __webpack_require__(143);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
 var content = __webpack_require__(20);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/datetime/datetime.js + 1 modules
-var datetime = __webpack_require__(143);
+var datetime = __webpack_require__(144);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/fab/fab.js
-var fab = __webpack_require__(63);
+var fab = __webpack_require__(66);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/fab/fab-container.js
-var fab_container = __webpack_require__(145);
+var fab_container = __webpack_require__(146);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/fab/fab-list.js
 var fab_list = __webpack_require__(96);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/col.js
-var col = __webpack_require__(146);
+var col = __webpack_require__(147);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/grid.js
-var grid = __webpack_require__(147);
+var grid = __webpack_require__(148);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/row.js
-var row = __webpack_require__(148);
+var row = __webpack_require__(149);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/ion.js
 var ion = __webpack_require__(8);
@@ -54014,67 +52235,67 @@ var ion = __webpack_require__(8);
 var icon = __webpack_require__(36);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/img/img.js
-var img = __webpack_require__(149);
+var img = __webpack_require__(150);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/infinite-scroll/infinite-scroll.js
 var infinite_scroll = __webpack_require__(97);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/infinite-scroll/infinite-scroll-content.js
-var infinite_scroll_content = __webpack_require__(150);
+var infinite_scroll_content = __webpack_require__(151);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.js
-var input = __webpack_require__(64);
+var input = __webpack_require__(67);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
-var item = __webpack_require__(18);
+var item = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-content.js
-var item_content = __webpack_require__(65);
+var item_content = __webpack_require__(51);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-divider.js
-var item_divider = __webpack_require__(152);
+var item_divider = __webpack_require__(153);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-group.js
-var item_group = __webpack_require__(153);
+var item_group = __webpack_require__(154);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-options.js
 var item_options = __webpack_require__(98);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
-var item_reorder = __webpack_require__(42);
+var item_reorder = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-sliding.js
-var item_sliding = __webpack_require__(154);
+var item_sliding = __webpack_require__(155);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/reorder.js
-var reorder = __webpack_require__(67);
+var reorder = __webpack_require__(68);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/label/label.js
-var label = __webpack_require__(41);
+var label = __webpack_require__(42);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list.js + 1 modules
-var list = __webpack_require__(66);
+var list = __webpack_require__(52);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list-header.js
-var list_header = __webpack_require__(68);
+var list_header = __webpack_require__(69);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading.js + 1 modules
-var loading = __webpack_require__(155);
+var loading = __webpack_require__(156);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-controller.js
 var loading_controller = __webpack_require__(99);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.js
-var loading_component = __webpack_require__(69);
+var loading_component = __webpack_require__(70);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/menu/menu.js + 1 modules
-var menu_menu = __webpack_require__(156);
+var menu_menu = __webpack_require__(157);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/menu/menu-close.js
-var menu_close = __webpack_require__(157);
+var menu_close = __webpack_require__(158);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/menu/menu-toggle.js
-var menu_toggle = __webpack_require__(158);
+var menu_toggle = __webpack_require__(159);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(19);
@@ -54239,25 +52460,25 @@ var menu_types_MenuOverlayType = (function (_super) {
 menu_controller["a" /* MenuController */].registerType('overlay', menu_types_MenuOverlayType);
 //# sourceMappingURL=menu-types.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal.js + 2 modules
-var modal = __webpack_require__(160);
+var modal = __webpack_require__(161);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.js
-var modal_component = __webpack_require__(70);
+var modal_component = __webpack_require__(71);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-controller.js
-var modal_controller = __webpack_require__(107);
+var modal_controller = __webpack_require__(108);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav.js
-var nav = __webpack_require__(50);
+var nav = __webpack_require__(53);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav-pop.js
-var nav_pop = __webpack_require__(108);
+var nav_pop = __webpack_require__(109);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav-pop-anchor.js
 var nav_pop_anchor = __webpack_require__(166);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav-push.js
-var nav_push = __webpack_require__(109);
+var nav_push = __webpack_require__(110);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav-push-anchor.js
 var nav_push_anchor = __webpack_require__(167);
@@ -54266,34 +52487,34 @@ var nav_push_anchor = __webpack_require__(167);
 var note = __webpack_require__(168);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/option/option.js
-var option_option = __webpack_require__(110);
+var option_option = __webpack_require__(111);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker.js + 1 modules
-var picker = __webpack_require__(144);
+var picker = __webpack_require__(145);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.js
-var picker_component = __webpack_require__(62);
+var picker_component = __webpack_require__(65);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-column.js + 1 modules
-var picker_column = __webpack_require__(49);
+var picker_column = __webpack_require__(50);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-controller.js
-var picker_controller = __webpack_require__(61);
+var picker_controller = __webpack_require__(64);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover.js + 2 modules
-var popover = __webpack_require__(112);
+var popover = __webpack_require__(113);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.js
-var popover_component = __webpack_require__(72);
+var popover_component = __webpack_require__(73);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-controller.js
-var popover_controller = __webpack_require__(111);
+var popover_controller = __webpack_require__(112);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-button.js
-var radio_button = __webpack_require__(73);
+var radio_button = __webpack_require__(74);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-group.js
-var radio_group = __webpack_require__(51);
+var radio_group = __webpack_require__(54);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/range/range.js
 var range = __webpack_require__(169);
@@ -54302,7 +52523,7 @@ var range = __webpack_require__(169);
 var range_knob = __webpack_require__(170);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher.js
-var refresher = __webpack_require__(113);
+var refresher = __webpack_require__(114);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
 var refresher_content = __webpack_require__(171);
@@ -54317,19 +52538,19 @@ var searchbar = __webpack_require__(173);
 var segment = __webpack_require__(174);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/segment/segment-button.js
-var segment_button = __webpack_require__(114);
+var segment_button = __webpack_require__(115);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select.js
 var select_select = __webpack_require__(175);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.js
-var select_popover_component = __webpack_require__(74);
+var select_popover_component = __webpack_require__(75);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/show-hide-when/show-when.js
 var show_when = __webpack_require__(176);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/show-hide-when/display-when.js
-var display_when = __webpack_require__(115);
+var display_when = __webpack_require__(116);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/show-hide-when/hide-when.js
 var hide_when = __webpack_require__(177);
@@ -54338,22 +52559,22 @@ var hide_when = __webpack_require__(177);
 var slide = __webpack_require__(178);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/slides/slides.js + 14 modules
-var slides = __webpack_require__(116);
+var slides = __webpack_require__(117);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/spinner/spinner.js
-var spinner = __webpack_require__(71);
+var spinner = __webpack_require__(72);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/split-pane/split-pane.js
 var split_pane = __webpack_require__(25);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab.js
-var tab = __webpack_require__(76);
+var tab = __webpack_require__(77);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab-button.js
-var tab_button = __webpack_require__(78);
+var tab_button = __webpack_require__(79);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab-highlight.js
-var tab_highlight = __webpack_require__(77);
+var tab_highlight = __webpack_require__(78);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tabs.js
 var tabs = __webpack_require__(43);
@@ -54362,10 +52583,10 @@ var tabs = __webpack_require__(43);
 var toast = __webpack_require__(180);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.js
-var toast_component = __webpack_require__(75);
+var toast_component = __webpack_require__(76);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-controller.js
-var toast_controller = __webpack_require__(117);
+var toast_controller = __webpack_require__(118);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toggle/toggle.js + 1 modules
 var toggle = __webpack_require__(181);
@@ -54374,7 +52595,7 @@ var toggle = __webpack_require__(181);
 var toolbar_footer = __webpack_require__(182);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
-var toolbar_header = __webpack_require__(118);
+var toolbar_header = __webpack_require__(119);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
 var toolbar = __webpack_require__(44);
@@ -54383,7 +52604,7 @@ var toolbar = __webpack_require__(44);
 var toolbar_item = __webpack_require__(183);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
-var toolbar_title = __webpack_require__(79);
+var toolbar_title = __webpack_require__(80);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
 var navbar = __webpack_require__(32);
@@ -54395,13 +52616,13 @@ var thumbnail = __webpack_require__(179);
 var typography = __webpack_require__(184);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-footer.js
-var virtual_footer = __webpack_require__(119);
+var virtual_footer = __webpack_require__(120);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-header.js
-var virtual_header = __webpack_require__(120);
+var virtual_header = __webpack_require__(121);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-item.js
-var virtual_item = __webpack_require__(121);
+var virtual_item = __webpack_require__(122);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-scroll.js + 1 modules
 var virtual_scroll = __webpack_require__(185);
@@ -54706,7 +52927,7 @@ function IonicPage(_config) {
 var nav_controller = __webpack_require__(12);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller-base.js + 1 modules
-var nav_controller_base = __webpack_require__(55);
+var nav_controller_base = __webpack_require__(58);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
 var nav_params = __webpack_require__(10);
@@ -54715,16 +52936,16 @@ var nav_params = __webpack_require__(10);
 var nav_util = __webpack_require__(27);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/tap-click/tap-click.js + 3 modules
-var tap_click = __webpack_require__(105);
+var tap_click = __webpack_require__(106);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/url-serializer.js
-var url_serializer = __webpack_require__(48);
+var url_serializer = __webpack_require__(49);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
 var view_controller = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/pan-gesture.js + 1 modules
-var pan_gesture = __webpack_require__(56);
+var pan_gesture = __webpack_require__(59);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
 var util = __webpack_require__(2);
@@ -56948,13 +55169,13 @@ var gesture_Gesture = (function () {
 var slide_edge_gesture = __webpack_require__(90);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/slide-gesture.js
-var slide_gesture = __webpack_require__(133);
+var slide_gesture = __webpack_require__(134);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
 var gesture_controller = __webpack_require__(7);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/events.js
-var events = __webpack_require__(102);
+var events = __webpack_require__(103);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/ionic-error-handler.js
 var ionic_error_handler = __webpack_require__(186);
@@ -56963,25 +55184,25 @@ var ionic_error_handler = __webpack_require__(186);
 var keyboard = __webpack_require__(21);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
-var util_form = __webpack_require__(15);
+var util_form = __webpack_require__(13);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/page-transition.js
-var page_transition = __webpack_require__(40);
+var page_transition = __webpack_require__(41);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/transition.js
 var transition = __webpack_require__(35);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform-registry.js
-var platform_registry = __webpack_require__(104);
+var platform_registry = __webpack_require__(105);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/mode-registry.js
-var mode_registry = __webpack_require__(106);
+var mode_registry = __webpack_require__(107);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-config.js
-var gesture_config = __webpack_require__(103);
+var gesture_config = __webpack_require__(104);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(122);
+var ionic_angular_module = __webpack_require__(123);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/index.js
 /* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "a", function() { return app_root["b" /* IonicApp */]; });
@@ -57443,8 +55664,2096 @@ var ionic_angular_module = __webpack_require__(122);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 53 */,
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Observable_1 = __webpack_require__(14);
+var Subscriber_1 = __webpack_require__(34);
+var Subscription_1 = __webpack_require__(40);
+var ObjectUnsubscribedError_1 = __webpack_require__(218);
+var SubjectSubscription_1 = __webpack_require__(219);
+var rxSubscriber_1 = __webpack_require__(86);
+/**
+ * @class SubjectSubscriber<T>
+ */
+var SubjectSubscriber = (function (_super) {
+    __extends(SubjectSubscriber, _super);
+    function SubjectSubscriber(destination) {
+        _super.call(this, destination);
+        this.destination = destination;
+    }
+    return SubjectSubscriber;
+}(Subscriber_1.Subscriber));
+exports.SubjectSubscriber = SubjectSubscriber;
+/**
+ * @class Subject<T>
+ */
+var Subject = (function (_super) {
+    __extends(Subject, _super);
+    function Subject() {
+        _super.call(this);
+        this.observers = [];
+        this.closed = false;
+        this.isStopped = false;
+        this.hasError = false;
+        this.thrownError = null;
+    }
+    Subject.prototype[rxSubscriber_1.rxSubscriber] = function () {
+        return new SubjectSubscriber(this);
+    };
+    Subject.prototype.lift = function (operator) {
+        var subject = new AnonymousSubject(this, this);
+        subject.operator = operator;
+        return subject;
+    };
+    Subject.prototype.next = function (value) {
+        if (this.closed) {
+            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
+        }
+        if (!this.isStopped) {
+            var observers = this.observers;
+            var len = observers.length;
+            var copy = observers.slice();
+            for (var i = 0; i < len; i++) {
+                copy[i].next(value);
+            }
+        }
+    };
+    Subject.prototype.error = function (err) {
+        if (this.closed) {
+            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
+        }
+        this.hasError = true;
+        this.thrownError = err;
+        this.isStopped = true;
+        var observers = this.observers;
+        var len = observers.length;
+        var copy = observers.slice();
+        for (var i = 0; i < len; i++) {
+            copy[i].error(err);
+        }
+        this.observers.length = 0;
+    };
+    Subject.prototype.complete = function () {
+        if (this.closed) {
+            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
+        }
+        this.isStopped = true;
+        var observers = this.observers;
+        var len = observers.length;
+        var copy = observers.slice();
+        for (var i = 0; i < len; i++) {
+            copy[i].complete();
+        }
+        this.observers.length = 0;
+    };
+    Subject.prototype.unsubscribe = function () {
+        this.isStopped = true;
+        this.closed = true;
+        this.observers = null;
+    };
+    Subject.prototype._trySubscribe = function (subscriber) {
+        if (this.closed) {
+            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
+        }
+        else {
+            return _super.prototype._trySubscribe.call(this, subscriber);
+        }
+    };
+    /** @deprecated internal use only */ Subject.prototype._subscribe = function (subscriber) {
+        if (this.closed) {
+            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
+        }
+        else if (this.hasError) {
+            subscriber.error(this.thrownError);
+            return Subscription_1.Subscription.EMPTY;
+        }
+        else if (this.isStopped) {
+            subscriber.complete();
+            return Subscription_1.Subscription.EMPTY;
+        }
+        else {
+            this.observers.push(subscriber);
+            return new SubjectSubscription_1.SubjectSubscription(this, subscriber);
+        }
+    };
+    Subject.prototype.asObservable = function () {
+        var observable = new Observable_1.Observable();
+        observable.source = this;
+        return observable;
+    };
+    Subject.create = function (destination, source) {
+        return new AnonymousSubject(destination, source);
+    };
+    return Subject;
+}(Observable_1.Observable));
+exports.Subject = Subject;
+/**
+ * @class AnonymousSubject<T>
+ */
+var AnonymousSubject = (function (_super) {
+    __extends(AnonymousSubject, _super);
+    function AnonymousSubject(destination, source) {
+        _super.call(this);
+        this.destination = destination;
+        this.source = source;
+    }
+    AnonymousSubject.prototype.next = function (value) {
+        var destination = this.destination;
+        if (destination && destination.next) {
+            destination.next(value);
+        }
+    };
+    AnonymousSubject.prototype.error = function (err) {
+        var destination = this.destination;
+        if (destination && destination.error) {
+            this.destination.error(err);
+        }
+    };
+    AnonymousSubject.prototype.complete = function () {
+        var destination = this.destination;
+        if (destination && destination.complete) {
+            this.destination.complete();
+        }
+    };
+    /** @deprecated internal use only */ AnonymousSubject.prototype._subscribe = function (subscriber) {
+        var source = this.source;
+        if (source) {
+            return this.source.subscribe(subscriber);
+        }
+        else {
+            return Subscription_1.Subscription.EMPTY;
+        }
+    };
+    return AnonymousSubject;
+}(Subject));
+exports.AnonymousSubject = AnonymousSubject;
+//# sourceMappingURL=Subject.js.map
+
+/***/ }),
+/* 47 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRootToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return IonicApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ion__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__overlay_portal__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__platform_platform__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_constants__ = __webpack_require__(48);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+
+
+
+var AppRootToken = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* InjectionToken */]('USERROOT');
+/**
+ * @hidden
+ */
+var IonicApp = (function (_super) {
+    __extends(IonicApp, _super);
+    function IonicApp(_userCmp, _cfr, elementRef, renderer, config, _plt, app) {
+        var _this = _super.call(this, config, elementRef, renderer, 'app-root') || this;
+        _this._userCmp = _userCmp;
+        _this._cfr = _cfr;
+        _this._plt = _plt;
+        // register with App that this is Ionic's appRoot component. tada!
+        app._appRoot = _this;
+        _this._stopScrollPlugin = window['IonicStopScroll'];
+        return _this;
+    }
+    IonicApp.prototype.ngOnInit = function () {
+        var _this = this;
+        // load the user root component
+        // into Ionic's root component
+        var factory = this._cfr.resolveComponentFactory(this._userCmp);
+        var componentRef = this._viewport.createComponent(factory);
+        this._renderer.setElementClass(componentRef.location.nativeElement, 'app-root', true);
+        componentRef.changeDetectorRef.detectChanges();
+        // set the mode class name
+        // ios/md/wp
+        this.setElementClass(this._config.get('mode'), true);
+        var versions = this._plt.versions();
+        this._plt.platforms().forEach(function (platformName) {
+            // platform-ios
+            var platformClass = 'platform-' + platformName;
+            _this.setElementClass(platformClass, true);
+            var platformVersion = versions[platformName];
+            if (platformVersion) {
+                // platform-ios9
+                platformClass += platformVersion.major;
+                _this.setElementClass(platformClass, true);
+                // platform-ios9_3
+                _this.setElementClass(platformClass + '_' + platformVersion.minor, true);
+            }
+        });
+        // touch devices should not use :hover CSS pseudo
+        // enable :hover CSS when the "hoverCSS" setting is not false
+        if (this._config.getBoolean('hoverCSS', true)) {
+            this.setElementClass('enable-hover', true);
+        }
+        // sweet, the app root has loaded!
+        // which means angular and ionic has fully loaded!
+        // fire off the platform prepare ready, which could
+        // have been switched out by any of the platform engines
+        this._plt.prepareReady();
+    };
+    /**
+     * @hidden
+     */
+    IonicApp.prototype._getPortal = function (portal) {
+        if (portal === __WEBPACK_IMPORTED_MODULE_6__app_constants__["b" /* PORTAL_LOADING */]) {
+            return this._loadingPortal;
+        }
+        if (portal === __WEBPACK_IMPORTED_MODULE_6__app_constants__["d" /* PORTAL_TOAST */]) {
+            return this._toastPortal;
+        }
+        // Modals need their own overlay becuase we don't want an ActionSheet
+        // or Alert to trigger lifecycle events inside a modal
+        if (portal === __WEBPACK_IMPORTED_MODULE_6__app_constants__["c" /* PORTAL_MODAL */]) {
+            return this._modalPortal;
+        }
+        return this._overlayPortal;
+    };
+    IonicApp.prototype._getActivePortal = function () {
+        var defaultPortal = this._overlayPortal;
+        var modalPortal = this._modalPortal;
+        var hasModal = modalPortal.length() > 0;
+        var hasDefault = defaultPortal.length() > 0;
+        if (!hasModal && !hasDefault) {
+            return null;
+        }
+        else if (hasModal && hasDefault) {
+            var defaultIndex = defaultPortal.getActive().getZIndex();
+            var modalIndex = modalPortal.getActive().getZIndex();
+            if (defaultIndex > modalIndex) {
+                return defaultPortal;
+            }
+            else {
+                (void 0) /* assert */;
+                return modalPortal;
+            }
+        }
+        if (hasModal) {
+            return modalPortal;
+        }
+        else if (hasDefault) {
+            return defaultPortal;
+        }
+    };
+    IonicApp.prototype._disableScroll = function (shouldDisableScroll) {
+        var _this = this;
+        if (shouldDisableScroll) {
+            this.stopScroll().then(function () {
+                _this._tmr = _this._plt.timeout(function () {
+                    (void 0) /* console.debug */;
+                    _this.setElementClass('disable-scroll', true);
+                }, 32);
+            });
+        }
+        else {
+            var plugin = this._stopScrollPlugin;
+            if (plugin && plugin.cancel) {
+                plugin.cancel();
+            }
+            clearTimeout(this._tmr);
+            (void 0) /* console.debug */;
+            this.setElementClass('disable-scroll', false);
+        }
+    };
+    IonicApp.prototype.stopScroll = function () {
+        var _this = this;
+        if (this._stopScrollPlugin) {
+            return new Promise(function (resolve) {
+                _this._stopScrollPlugin.stop(function () { return resolve(true); });
+            });
+        }
+        else {
+            return Promise.resolve(false);
+        }
+    };
+    IonicApp.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
+                    selector: 'ion-app',
+                    template: '<div #viewport app-viewport></div>' +
+                        '<div #modalPortal overlay-portal></div>' +
+                        '<div #overlayPortal overlay-portal></div>' +
+                        '<div #loadingPortal class="loading-portal" overlay-portal></div>' +
+                        '<div #toastPortal class="toast-portal" [overlay-portal]="10000"></div>' +
+                        '<div class="click-block"></div>'
+                },] },
+    ];
+    /** @nocollapse */
+    IonicApp.ctorParameters = function () { return [
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* Inject */], args: [AppRootToken,] },] },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ComponentFactoryResolver */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
+        { type: __WEBPACK_IMPORTED_MODULE_2__config_config__["a" /* Config */], },
+        { type: __WEBPACK_IMPORTED_MODULE_5__platform_platform__["a" /* Platform */], },
+        { type: __WEBPACK_IMPORTED_MODULE_1__app__["a" /* App */], },
+    ]; };
+    IonicApp.propDecorators = {
+        '_viewport': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['viewport', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */] },] },],
+        '_modalPortal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['modalPortal', { read: __WEBPACK_IMPORTED_MODULE_4__overlay_portal__["a" /* OverlayPortal */] },] },],
+        '_overlayPortal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['overlayPortal', { read: __WEBPACK_IMPORTED_MODULE_4__overlay_portal__["a" /* OverlayPortal */] },] },],
+        '_loadingPortal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['loadingPortal', { read: __WEBPACK_IMPORTED_MODULE_4__overlay_portal__["a" /* OverlayPortal */] },] },],
+        '_toastPortal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['toastPortal', { read: __WEBPACK_IMPORTED_MODULE_4__overlay_portal__["a" /* OverlayPortal */] },] },],
+    };
+    return IonicApp;
+}(__WEBPACK_IMPORTED_MODULE_3__ion__["a" /* Ion */]));
+
+//# sourceMappingURL=app-root.js.map
+
+/***/ }),
+/* 48 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PORTAL_DEFAULT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return PORTAL_MODAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PORTAL_LOADING; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return PORTAL_TOAST; });
+var PORTAL_DEFAULT = 1;
+var PORTAL_MODAL = 2;
+var PORTAL_LOADING = 3;
+var PORTAL_TOAST = 4;
+//# sourceMappingURL=app-constants.js.map
+
+/***/ }),
+/* 49 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return UrlSerializer; });
+/* harmony export (immutable) */ __webpack_exports__["c"] = formatUrlPart;
+/* unused harmony export isPartMatch */
+/* unused harmony export createMatchedData */
+/* unused harmony export findLinkByComponentData */
+/* unused harmony export normalizeLinks */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DeepLinkConfigToken; });
+/* harmony export (immutable) */ __webpack_exports__["d"] = setupUrlSerializer;
+/* unused harmony export navGroupStringtoObjects */
+/* unused harmony export urlToNavGroupStrings */
+/* unused harmony export convertUrlToSegments */
+/* unused harmony export convertUrlToDehydratedSegments */
+/* unused harmony export hydrateSegmentsWithNav */
+/* unused harmony export getNavFromNavGroup */
+/* unused harmony export getSegmentsFromNavGroups */
+/* unused harmony export getSegmentsFromUrlPieces */
+/* unused harmony export hydrateSegment */
+/* unused harmony export getNonHydratedSegmentIfLinkAndUrlMatch */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
+
+
+/**
+ * @hidden
+ */
+var UrlSerializer = (function () {
+    function UrlSerializer(_app, config) {
+        this._app = _app;
+        if (config && Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["e" /* isArray */])(config.links)) {
+            this.links = normalizeLinks(config.links);
+        }
+        else {
+            this.links = [];
+        }
+    }
+    /**
+     * Parse the URL into a Path, which is made up of multiple NavSegments.
+     * Match which components belong to each segment.
+     */
+    UrlSerializer.prototype.parse = function (browserUrl) {
+        if (browserUrl.charAt(0) === '/') {
+            browserUrl = browserUrl.substr(1);
+        }
+        // trim off data after ? and #
+        browserUrl = browserUrl.split('?')[0].split('#')[0];
+        return convertUrlToSegments(this._app, browserUrl, this.links);
+    };
+    UrlSerializer.prototype.createSegmentFromName = function (navContainer, nameOrComponent) {
+        var configLink = this.getLinkFromName(nameOrComponent);
+        if (configLink) {
+            return this._createSegment(this._app, navContainer, configLink, null);
+        }
+        return null;
+    };
+    UrlSerializer.prototype.getLinkFromName = function (nameOrComponent) {
+        return this.links.find(function (link) {
+            return (link.component === nameOrComponent) ||
+                (link.name === nameOrComponent);
+        });
+    };
+    /**
+     * Serialize a path, which is made up of multiple NavSegments,
+     * into a URL string. Turn each segment into a string and concat them to a URL.
+     */
+    UrlSerializer.prototype.serialize = function (segments) {
+        if (!segments || !segments.length) {
+            return '/';
+        }
+        var sections = segments.map(function (segment) {
+            if (segment.type === 'tabs') {
+                if (segment.requiresExplicitNavPrefix) {
+                    return "/" + segment.type + "/" + segment.navId + "/" + segment.secondaryId + "/" + segment.id;
+                }
+                return "/" + segment.secondaryId + "/" + segment.id;
+            }
+            // it's a nav
+            if (segment.requiresExplicitNavPrefix) {
+                return "/" + segment.type + "/" + segment.navId + "/" + segment.id;
+            }
+            return "/" + segment.id;
+        });
+        return sections.join('');
+    };
+    /**
+     * Serializes a component and its data into a NavSegment.
+     */
+    UrlSerializer.prototype.serializeComponent = function (navContainer, component, data) {
+        if (component) {
+            var link = findLinkByComponentData(this.links, component, data);
+            if (link) {
+                return this._createSegment(this._app, navContainer, link, data);
+            }
+        }
+        return null;
+    };
+    /**
+   * @internal
+   */
+    UrlSerializer.prototype._createSegment = function (app, navContainer, configLink, data) {
+        var urlParts = configLink.segmentParts;
+        if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["l" /* isPresent */])(data)) {
+            // create a copy of the original parts in the link config
+            urlParts = urlParts.slice();
+            // loop through all the data and convert it to a string
+            var keys = Object.keys(data);
+            var keysLength = keys.length;
+            if (keysLength) {
+                for (var i = 0; i < urlParts.length; i++) {
+                    if (urlParts[i].charAt(0) === ':') {
+                        for (var j = 0; j < keysLength; j++) {
+                            if (urlParts[i] === ":" + keys[j]) {
+                                // this data goes into the URL part (between slashes)
+                                urlParts[i] = encodeURIComponent(data[keys[j]]);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        var requiresExplicitPrefix = true;
+        if (navContainer.parent) {
+            requiresExplicitPrefix = navContainer.parent && navContainer.parent.getAllChildNavs().length > 1;
+        }
+        else {
+            // if it's a root nav, and there are multiple root navs, we need an explicit prefix
+            requiresExplicitPrefix = app.getRootNavById(navContainer.id) && app.getRootNavs().length > 1;
+        }
+        return {
+            id: urlParts.join('/'),
+            name: configLink.name,
+            component: configLink.component,
+            loadChildren: configLink.loadChildren,
+            data: data,
+            defaultHistory: configLink.defaultHistory,
+            navId: navContainer.name || navContainer.id,
+            type: navContainer.getType(),
+            secondaryId: navContainer.getSecondaryIdentifier(),
+            requiresExplicitNavPrefix: requiresExplicitPrefix
+        };
+    };
+    return UrlSerializer;
+}());
+
+function formatUrlPart(name) {
+    name = name.replace(URL_REPLACE_REG, '-');
+    name = name.charAt(0).toLowerCase() + name.substring(1).replace(/[A-Z]/g, function (match) {
+        return '-' + match.toLowerCase();
+    });
+    while (name.indexOf('--') > -1) {
+        name = name.replace('--', '-');
+    }
+    if (name.charAt(0) === '-') {
+        name = name.substring(1);
+    }
+    if (name.substring(name.length - 1) === '-') {
+        name = name.substring(0, name.length - 1);
+    }
+    return encodeURIComponent(name);
+}
+var isPartMatch = function (urlPart, configLinkPart) {
+    if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["l" /* isPresent */])(urlPart) && Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["l" /* isPresent */])(configLinkPart)) {
+        if (configLinkPart.charAt(0) === ':') {
+            return true;
+        }
+        return (urlPart === configLinkPart);
+    }
+    return false;
+};
+var createMatchedData = function (matchedUrlParts, link) {
+    var data = null;
+    for (var i = 0; i < link.segmentPartsLen; i++) {
+        if (link.segmentParts[i].charAt(0) === ':') {
+            data = data || {};
+            data[link.segmentParts[i].substring(1)] = decodeURIComponent(matchedUrlParts[i]);
+        }
+    }
+    return data;
+};
+var findLinkByComponentData = function (links, component, instanceData) {
+    var foundLink = null;
+    var foundLinkDataMatches = -1;
+    for (var i = 0; i < links.length; i++) {
+        var link = links[i];
+        if (link.component === component) {
+            // ok, so the component matched, but multiple links can point
+            // to the same component, so let's make sure this is the right link
+            var dataMatches = 0;
+            if (instanceData) {
+                var instanceDataKeys = Object.keys(instanceData);
+                // this link has data
+                for (var j = 0; j < instanceDataKeys.length; j++) {
+                    if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["l" /* isPresent */])(link.dataKeys[instanceDataKeys[j]])) {
+                        dataMatches++;
+                    }
+                }
+            }
+            else if (link.dataLen) {
+                // this component does not have data but the link does
+                continue;
+            }
+            if (dataMatches >= foundLinkDataMatches) {
+                foundLink = link;
+                foundLinkDataMatches = dataMatches;
+            }
+        }
+    }
+    return foundLink;
+};
+var normalizeLinks = function (links) {
+    for (var i = 0, ilen = links.length; i < ilen; i++) {
+        var link = links[i];
+        if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["f" /* isBlank */])(link.segment)) {
+            link.segment = link.name;
+        }
+        link.dataKeys = {};
+        link.segmentParts = link.segment.split('/');
+        link.segmentPartsLen = link.segmentParts.length;
+        // used for sorting
+        link.staticLen = link.dataLen = 0;
+        var stillCountingStatic = true;
+        for (var j = 0; j < link.segmentPartsLen; j++) {
+            if (link.segmentParts[j].charAt(0) === ':') {
+                link.dataLen++;
+                stillCountingStatic = false;
+                link.dataKeys[link.segmentParts[j].substring(1)] = true;
+            }
+            else if (stillCountingStatic) {
+                link.staticLen++;
+            }
+        }
+    }
+    // sort by the number of parts, with the links
+    // with the most parts first
+    return links.sort(sortConfigLinks);
+};
+function sortConfigLinks(a, b) {
+    // sort by the number of parts
+    if (a.segmentPartsLen > b.segmentPartsLen) {
+        return -1;
+    }
+    if (a.segmentPartsLen < b.segmentPartsLen) {
+        return 1;
+    }
+    // sort by the number of static parts in a row
+    if (a.staticLen > b.staticLen) {
+        return -1;
+    }
+    if (a.staticLen < b.staticLen) {
+        return 1;
+    }
+    // sort by the number of total data parts
+    if (a.dataLen < b.dataLen) {
+        return -1;
+    }
+    if (a.dataLen > b.dataLen) {
+        return 1;
+    }
+    return 0;
+}
+var URL_REPLACE_REG = /\s+|\?|\!|\$|\,|\.|\+|\"|\'|\*|\^|\||\/|\\|\[|\]|#|%|`|>|<|;|:|@|&|=/g;
+/**
+ * @hidden
+ */
+var DeepLinkConfigToken = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* InjectionToken */]('USERLINKS');
+function setupUrlSerializer(app, userDeepLinkConfig) {
+    return new UrlSerializer(app, userDeepLinkConfig);
+}
+function navGroupStringtoObjects(navGroupStrings) {
+    // each string has a known format-ish, convert it to it
+    return navGroupStrings.map(function (navGroupString) {
+        var sections = navGroupString.split('/');
+        if (sections[0] === 'nav') {
+            return {
+                type: 'nav',
+                navId: sections[1],
+                niceId: sections[1],
+                secondaryId: null,
+                segmentPieces: sections.splice(2)
+            };
+        }
+        else if (sections[0] === 'tabs') {
+            return {
+                type: 'tabs',
+                navId: sections[1],
+                niceId: sections[1],
+                secondaryId: sections[2],
+                segmentPieces: sections.splice(3)
+            };
+        }
+        return {
+            type: null,
+            navId: null,
+            niceId: null,
+            secondaryId: null,
+            segmentPieces: sections
+        };
+    });
+}
+function urlToNavGroupStrings(url) {
+    var tokens = url.split('/');
+    var keywordIndexes = [];
+    for (var i = 0; i < tokens.length; i++) {
+        if (i !== 0 && (tokens[i] === 'nav' || tokens[i] === 'tabs')) {
+            keywordIndexes.push(i);
+        }
+    }
+    // append the last index + 1 to the list no matter what
+    keywordIndexes.push(tokens.length);
+    var groupings = [];
+    var activeKeywordIndex = 0;
+    var tmpArray = [];
+    for (var i = 0; i < tokens.length; i++) {
+        if (i >= keywordIndexes[activeKeywordIndex]) {
+            groupings.push(tmpArray.join('/'));
+            tmpArray = [];
+            activeKeywordIndex++;
+        }
+        tmpArray.push(tokens[i]);
+    }
+    // okay, after the loop we've gotta push one more time just to be safe
+    groupings.push(tmpArray.join('/'));
+    return groupings;
+}
+function convertUrlToSegments(app, url, navLinks) {
+    var pairs = convertUrlToDehydratedSegments(url, navLinks);
+    return hydrateSegmentsWithNav(app, pairs);
+}
+function convertUrlToDehydratedSegments(url, navLinks) {
+    var navGroupStrings = urlToNavGroupStrings(url);
+    var navGroups = navGroupStringtoObjects(navGroupStrings);
+    return getSegmentsFromNavGroups(navGroups, navLinks);
+}
+function hydrateSegmentsWithNav(app, dehydratedSegmentPairs) {
+    var segments = [];
+    for (var i = 0; i < dehydratedSegmentPairs.length; i++) {
+        var navs = getNavFromNavGroup(dehydratedSegmentPairs[i].navGroup, app);
+        // okay, cool, let's walk through the segments and hydrate them
+        for (var _i = 0, _a = dehydratedSegmentPairs[i].segments; _i < _a.length; _i++) {
+            var dehydratedSegment = _a[_i];
+            if (navs.length === 1) {
+                segments.push(hydrateSegment(dehydratedSegment, navs[0]));
+                navs = navs[0].getActiveChildNavs();
+            }
+            else if (navs.length > 1) {
+                // this is almost certainly an async race condition bug in userland
+                // if you're in this state, it would be nice to just bail here
+                // but alas we must perservere and handle the issue
+                // the simple solution is to just use the last child
+                // because that is probably what the user wants anyway
+                // remember, do not harm, even if it makes our shizzle ugly
+                segments.push(hydrateSegment(dehydratedSegment, navs[navs.length - 1]));
+                navs = navs[navs.length - 1].getActiveChildNavs();
+            }
+            else {
+                break;
+            }
+        }
+    }
+    return segments;
+}
+function getNavFromNavGroup(navGroup, app) {
+    if (navGroup.navId) {
+        var rootNav = app.getNavByIdOrName(navGroup.navId);
+        if (rootNav) {
+            return [rootNav];
+        }
+        return [];
+    }
+    // we don't know what nav to use, so just use the root nav.
+    // if there is more than one root nav, throw an error
+    return app.getRootNavs();
+}
+/*
+ * Let's face the facts: Getting a dehydrated segment from the url is really hard
+ * because we need to do a ton of crazy looping
+ * the are chunks of a url that are totally irrelevant at this stage, such as the secondary identifier
+ * stating which tab is selected, etc.
+ * but is necessary.
+ * We look at segment pieces in reverse order to try to build segments
+ * as in, if you had an array like this
+ * ['my', 'super', 'cool', 'url']
+ * we want to look at the pieces in reverse order:
+ * url
+ * cool url
+ * super cool url
+ * my super cool url
+ * cool
+ * super cool
+ * my super cool
+ * super
+ * my super
+ * my
+ **/
+function getSegmentsFromNavGroups(navGroups, navLinks) {
+    var pairs = [];
+    var usedNavLinks = new Set();
+    for (var _i = 0, navGroups_1 = navGroups; _i < navGroups_1.length; _i++) {
+        var navGroup = navGroups_1[_i];
+        var segments = [];
+        var segmentPieces = navGroup.segmentPieces.concat([]);
+        for (var i = segmentPieces.length; i >= 0; i--) {
+            var created = false;
+            for (var j = 0; j < i; j++) {
+                var startIndex = i - j - 1;
+                var endIndex = i;
+                var subsetOfUrl = segmentPieces.slice(startIndex, endIndex);
+                for (var _a = 0, navLinks_1 = navLinks; _a < navLinks_1.length; _a++) {
+                    var navLink = navLinks_1[_a];
+                    if (!usedNavLinks.has(navLink.name)) {
+                        var segment = getSegmentsFromUrlPieces(subsetOfUrl, navLink);
+                        if (segment) {
+                            i = startIndex + 1;
+                            usedNavLinks.add(navLink.name);
+                            created = true;
+                            // sweet, we found a segment
+                            segments.push(segment);
+                            // now we want to null out the url subsection in the segmentPieces
+                            for (var k = startIndex; k < endIndex; k++) {
+                                segmentPieces[k] = null;
+                            }
+                            break;
+                        }
+                    }
+                }
+                if (created) {
+                    break;
+                }
+            }
+            if (!created && segmentPieces[i - 1]) {
+                // this is very likely a tab's secondary identifier
+                segments.push({
+                    id: null,
+                    name: null,
+                    secondaryId: segmentPieces[i - 1],
+                    component: null,
+                    loadChildren: null,
+                    data: null,
+                    defaultHistory: null
+                });
+            }
+        }
+        // since we're getting segments in from right-to-left in the url, reverse them
+        // so they're in the correct order. Also filter out and bogus segments
+        var orderedSegments = segments.reverse();
+        // okay, this is the lazy persons approach here.
+        // so here's the deal! Right now if section of the url is not a part of a segment
+        // it is almost certainly the secondaryId for a tabs component
+        // basically, knowing the segment for the `tab` itself is good, but we also need to know
+        // which tab is selected, so we have an identifer in the url that is associated with the tabs component
+        // telling us which tab is selected. With that in mind, we are going to go through and find the segments with only secondary identifiers,
+        // and simply add the secondaryId to the next segment, and then remove the empty segment from the list
+        for (var i = 0; i < orderedSegments.length; i++) {
+            if (orderedSegments[i].secondaryId && !orderedSegments[i].id && ((i + 1) <= orderedSegments.length - 1)) {
+                orderedSegments[i + 1].secondaryId = orderedSegments[i].secondaryId;
+                orderedSegments[i] = null;
+            }
+        }
+        var cleanedSegments = segments.filter(function (segment) { return !!segment; });
+        // if the nav group has a secondary id, make sure the first segment also has it set
+        if (navGroup.secondaryId && segments.length) {
+            cleanedSegments[0].secondaryId = navGroup.secondaryId;
+        }
+        pairs.push({
+            navGroup: navGroup,
+            segments: cleanedSegments
+        });
+    }
+    return pairs;
+}
+function getSegmentsFromUrlPieces(urlSections, navLink) {
+    if (navLink.segmentPartsLen !== urlSections.length) {
+        return null;
+    }
+    for (var i = 0; i < urlSections.length; i++) {
+        if (!isPartMatch(urlSections[i], navLink.segmentParts[i])) {
+            // just return an empty array if the part doesn't match
+            return null;
+        }
+    }
+    return {
+        id: urlSections.join('/'),
+        name: navLink.name,
+        component: navLink.component,
+        loadChildren: navLink.loadChildren,
+        data: createMatchedData(urlSections, navLink),
+        defaultHistory: navLink.defaultHistory
+    };
+}
+function hydrateSegment(segment, nav) {
+    var hydratedSegment = Object.assign({}, segment);
+    hydratedSegment.type = nav.getType();
+    hydratedSegment.navId = nav.name || nav.id;
+    // secondaryId is set on an empty dehydrated segment in the case of tabs to identify which tab is selected
+    hydratedSegment.secondaryId = segment.secondaryId;
+    return hydratedSegment;
+}
+function getNonHydratedSegmentIfLinkAndUrlMatch(urlChunks, navLink) {
+    var allSegmentsMatch = true;
+    for (var i = 0; i < urlChunks.length; i++) {
+        if (!isPartMatch(urlChunks[i], navLink.segmentParts[i])) {
+            allSegmentsMatch = false;
+            break;
+        }
+    }
+    if (allSegmentsMatch) {
+        return {
+            id: navLink.segmentParts.join('/'),
+            name: navLink.name,
+            component: navLink.component,
+            loadChildren: navLink.loadChildren,
+            data: createMatchedData(urlChunks, navLink),
+            defaultHistory: navLink.defaultHistory
+        };
+    }
+    return null;
+}
+//# sourceMappingURL=url-serializer.js.map
+
+/***/ }),
+/* 50 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
+var util = __webpack_require__(2);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
+var config_config = __webpack_require__(1);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
+var dom_controller = __webpack_require__(6);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/tap-click/haptic.js
+var haptic = __webpack_require__(31);
+
+// CONCATENATED MODULE: ./node_modules/ionic-angular/components/picker/picker-options.js
+var PICKER_OPT_SELECTED = 'picker-opt-selected';
+var DECELERATION_FRICTION = 0.97;
+var FRAME_MS = (1000 / 60);
+var MAX_PICKER_SPEED = 60;
+//# sourceMappingURL=picker-options.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
+var platform = __webpack_require__(3);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
+var dom = __webpack_require__(15);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/ui-event-manager.js
+var ui_event_manager = __webpack_require__(29);
+
+// CONCATENATED MODULE: ./node_modules/ionic-angular/components/picker/picker-column.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return picker_column_PickerColumnCmp; });
+
+
+
+
+
+
+
+
+
+/**
+ * @hidden
+ */
+var picker_column_PickerColumnCmp = (function () {
+    function PickerColumnCmp(config, _plt, elementRef, _zone, _haptic, plt, domCtrl) {
+        this._plt = _plt;
+        this.elementRef = elementRef;
+        this._zone = _zone;
+        this._haptic = _haptic;
+        this.y = 0;
+        this.pos = [];
+        this.startY = null;
+        this.ionChange = new core["r" /* EventEmitter */]();
+        this.events = new ui_event_manager["a" /* UIEventManager */](plt);
+        this.rotateFactor = config.getNumber('pickerRotateFactor', 0);
+        this.scaleFactor = config.getNumber('pickerScaleFactor', 1);
+        this.decelerateFunc = this.decelerate.bind(this);
+        this.debouncer = domCtrl.debouncer();
+    }
+    PickerColumnCmp.prototype.ngAfterViewInit = function () {
+        // get the scrollable element within the column
+        var colEle = this.colEle.nativeElement;
+        this.colHeight = colEle.clientHeight;
+        // get the height of one option
+        this.optHeight = (colEle.firstElementChild ? colEle.firstElementChild.clientHeight : 0);
+        // Listening for pointer events
+        this.events.pointerEvents({
+            element: this.elementRef.nativeElement,
+            pointerDown: this.pointerStart.bind(this),
+            pointerMove: this.pointerMove.bind(this),
+            pointerUp: this.pointerEnd.bind(this),
+            capture: true,
+            zone: false
+        });
+    };
+    PickerColumnCmp.prototype.ngOnDestroy = function () {
+        this._plt.cancelRaf(this.rafId);
+        this.events.destroy();
+    };
+    PickerColumnCmp.prototype.pointerStart = function (ev) {
+        (void 0) /* console.debug */;
+        this._haptic.gestureSelectionStart();
+        // We have to prevent default in order to block scrolling under the picker
+        // but we DO NOT have to stop propagation, since we still want
+        // some "click" events to capture
+        ev.preventDefault();
+        // cancel any previous raf's that haven't fired yet
+        this._plt.cancelRaf(this.rafId);
+        // remember where the pointer started from`
+        this.startY = Object(dom["f" /* pointerCoord */])(ev).y;
+        // reset everything
+        this.velocity = 0;
+        this.pos.length = 0;
+        this.pos.push(this.startY, Date.now());
+        var options = this.col.options;
+        var minY = (options.length - 1);
+        var maxY = 0;
+        for (var i = 0; i < options.length; i++) {
+            if (!options[i].disabled) {
+                minY = Math.min(minY, i);
+                maxY = Math.max(maxY, i);
+            }
+        }
+        this.minY = (minY * this.optHeight * -1);
+        this.maxY = (maxY * this.optHeight * -1);
+        return true;
+    };
+    PickerColumnCmp.prototype.pointerMove = function (ev) {
+        var _this = this;
+        ev.preventDefault();
+        ev.stopPropagation();
+        var currentY = Object(dom["f" /* pointerCoord */])(ev).y;
+        this.pos.push(currentY, Date.now());
+        this.debouncer.write(function () {
+            if (_this.startY === null) {
+                return;
+            }
+            // update the scroll position relative to pointer start position
+            var y = _this.y + (currentY - _this.startY);
+            if (y > _this.minY) {
+                // scrolling up higher than scroll area
+                y = Math.pow(y, 0.8);
+                _this.bounceFrom = y;
+            }
+            else if (y < _this.maxY) {
+                // scrolling down below scroll area
+                y += Math.pow(_this.maxY - y, 0.9);
+                _this.bounceFrom = y;
+            }
+            else {
+                _this.bounceFrom = 0;
+            }
+            _this.update(y, 0, false, false);
+            var currentIndex = Math.max(Math.abs(Math.round(y / _this.optHeight)), 0);
+            if (currentIndex !== _this.lastTempIndex) {
+                // Trigger a haptic event for physical feedback that the index has changed
+                _this._haptic.gestureSelectionChanged();
+                _this.lastTempIndex = currentIndex;
+            }
+        });
+    };
+    PickerColumnCmp.prototype.pointerEnd = function (ev) {
+        ev.preventDefault();
+        this.debouncer.cancel();
+        if (this.startY === null) {
+            return;
+        }
+        (void 0) /* console.debug */;
+        this.velocity = 0;
+        if (this.bounceFrom > 0) {
+            // bounce back up
+            this.update(this.minY, 100, true, true);
+            return;
+        }
+        else if (this.bounceFrom < 0) {
+            // bounce back down
+            this.update(this.maxY, 100, true, true);
+            return;
+        }
+        var endY = Object(dom["f" /* pointerCoord */])(ev).y;
+        this.pos.push(endY, Date.now());
+        var endPos = (this.pos.length - 1);
+        var startPos = endPos;
+        var timeRange = (Date.now() - 100);
+        // move pointer to position measured 100ms ago
+        for (var i = endPos; i > 0 && this.pos[i] > timeRange; i -= 2) {
+            startPos = i;
+        }
+        if (startPos !== endPos) {
+            // compute relative movement between these two points
+            var timeOffset = (this.pos[endPos] - this.pos[startPos]);
+            var movedTop = (this.pos[startPos - 1] - this.pos[endPos - 1]);
+            // based on XXms compute the movement to apply for each render step
+            var velocity = ((movedTop / timeOffset) * FRAME_MS);
+            this.velocity = Object(util["a" /* clamp */])(-MAX_PICKER_SPEED, velocity, MAX_PICKER_SPEED);
+        }
+        if (Math.abs(endY - this.startY) > 3) {
+            var y = this.y + (endY - this.startY);
+            this.update(y, 0, true, true);
+        }
+        this.startY = null;
+        this.decelerate();
+    };
+    PickerColumnCmp.prototype.decelerate = function () {
+        var y = 0;
+        if (isNaN(this.y) || !this.optHeight) {
+            // fallback in case numbers get outta wack
+            this.update(y, 0, true, true);
+            this._haptic.gestureSelectionEnd();
+        }
+        else if (Math.abs(this.velocity) > 0) {
+            // still decelerating
+            this.velocity *= DECELERATION_FRICTION;
+            // do not let it go slower than a velocity of 1
+            this.velocity = (this.velocity > 0)
+                ? Math.max(this.velocity, 1)
+                : Math.min(this.velocity, -1);
+            y = Math.round(this.y - this.velocity);
+            if (y > this.minY) {
+                // whoops, it's trying to scroll up farther than the options we have!
+                y = this.minY;
+                this.velocity = 0;
+            }
+            else if (y < this.maxY) {
+                // gahh, it's trying to scroll down farther than we can!
+                y = this.maxY;
+                this.velocity = 0;
+            }
+            var notLockedIn = (y % this.optHeight !== 0 || Math.abs(this.velocity) > 1);
+            this.update(y, 0, true, !notLockedIn);
+            if (notLockedIn) {
+                // isn't locked in yet, keep decelerating until it is
+                this.rafId = this._plt.raf(this.decelerateFunc);
+            }
+        }
+        else if (this.y % this.optHeight !== 0) {
+            // needs to still get locked into a position so options line up
+            var currentPos = Math.abs(this.y % this.optHeight);
+            // create a velocity in the direction it needs to scroll
+            this.velocity = (currentPos > (this.optHeight / 2) ? 1 : -1);
+            this._haptic.gestureSelectionEnd();
+            this.decelerate();
+        }
+        var currentIndex = Math.max(Math.abs(Math.round(y / this.optHeight)), 0);
+        if (currentIndex !== this.lastTempIndex) {
+            // Trigger a haptic event for physical feedback that the index has changed
+            this._haptic.gestureSelectionChanged();
+        }
+        this.lastTempIndex = currentIndex;
+    };
+    PickerColumnCmp.prototype.optClick = function (ev, index) {
+        if (!this.velocity) {
+            ev.preventDefault();
+            ev.stopPropagation();
+            this.setSelected(index, 150);
+        }
+    };
+    PickerColumnCmp.prototype.setSelected = function (selectedIndex, duration) {
+        // if there is a selected index, then figure out it's y position
+        // if there isn't a selected index, then just use the top y position
+        var y = (selectedIndex > -1) ? ((selectedIndex * this.optHeight) * -1) : 0;
+        this._plt.cancelRaf(this.rafId);
+        this.velocity = 0;
+        // so what y position we're at
+        this.update(y, duration, true, true);
+    };
+    PickerColumnCmp.prototype.update = function (y, duration, saveY, emitChange) {
+        // ensure we've got a good round number :)
+        y = Math.round(y);
+        var i;
+        var button;
+        var opt;
+        var optOffset;
+        var visible;
+        var translateX;
+        var translateY;
+        var translateZ;
+        var rotateX;
+        var transform;
+        var selected;
+        var parent = this.colEle.nativeElement;
+        var children = parent.children;
+        var length = children.length;
+        var selectedIndex = this.col.selectedIndex = Math.min(Math.max(Math.round(-y / this.optHeight), 0), length - 1);
+        var durationStr = (duration === 0) ? null : duration + 'ms';
+        var scaleStr = "scale(" + this.scaleFactor + ")";
+        for (i = 0; i < length; i++) {
+            button = children[i];
+            opt = this.col.options[i];
+            optOffset = (i * this.optHeight) + y;
+            visible = true;
+            transform = '';
+            if (this.rotateFactor !== 0) {
+                rotateX = optOffset * this.rotateFactor;
+                if (Math.abs(rotateX) > 90) {
+                    visible = false;
+                }
+                else {
+                    translateX = 0;
+                    translateY = 0;
+                    translateZ = 90;
+                    transform = "rotateX(" + rotateX + "deg) ";
+                }
+            }
+            else {
+                translateX = 0;
+                translateZ = 0;
+                translateY = optOffset;
+                if (Math.abs(translateY) > 170) {
+                    visible = false;
+                }
+            }
+            selected = selectedIndex === i;
+            if (visible) {
+                transform += "translate3d(0px," + translateY + "px," + translateZ + "px) ";
+                if (this.scaleFactor !== 1 && !selected) {
+                    transform += scaleStr;
+                }
+            }
+            else {
+                transform = 'translate3d(-9999px,0px,0px)';
+            }
+            // Update transition duration
+            if (duration !== opt._dur) {
+                opt._dur = duration;
+                button.style[this._plt.Css.transitionDuration] = durationStr;
+            }
+            // Update transform
+            if (transform !== opt._trans) {
+                opt._trans = transform;
+                button.style[this._plt.Css.transform] = transform;
+            }
+            // Update selected item
+            if (selected !== opt._selected) {
+                opt._selected = selected;
+                if (selected) {
+                    button.classList.add(PICKER_OPT_SELECTED);
+                }
+                else {
+                    button.classList.remove(PICKER_OPT_SELECTED);
+                }
+            }
+        }
+        this.col.prevSelected = selectedIndex;
+        if (saveY) {
+            this.y = y;
+        }
+        if (emitChange) {
+            if (this.lastIndex === undefined) {
+                // have not set a last index yet
+                this.lastIndex = this.col.selectedIndex;
+            }
+            else if (this.lastIndex !== this.col.selectedIndex) {
+                // new selected index has changed from the last index
+                // update the lastIndex and emit that it has changed
+                this.lastIndex = this.col.selectedIndex;
+                var ionChange = this.ionChange;
+                if (ionChange.observers.length > 0) {
+                    this._zone.run(ionChange.emit.bind(ionChange, this.col.options[this.col.selectedIndex]));
+                }
+            }
+        }
+    };
+    PickerColumnCmp.prototype.refresh = function () {
+        var min = this.col.options.length - 1;
+        var max = 0;
+        var options = this.col.options;
+        for (var i = 0; i < options.length; i++) {
+            if (!options[i].disabled) {
+                min = Math.min(min, i);
+                max = Math.max(max, i);
+            }
+        }
+        var selectedIndex = Object(util["a" /* clamp */])(min, this.col.selectedIndex, max);
+        if (this.col.prevSelected !== selectedIndex) {
+            var y = (selectedIndex * this.optHeight) * -1;
+            this._plt.cancelRaf(this.rafId);
+            this.velocity = 0;
+            this.update(y, 150, true, false);
+        }
+    };
+    PickerColumnCmp.decorators = [
+        { type: core["k" /* Component */], args: [{
+                    selector: '.picker-col',
+                    template: '<div *ngIf="col.prefix" class="picker-prefix" [style.width]="col.prefixWidth">{{col.prefix}}</div>' +
+                        '<div class="picker-opts" #colEle [style.max-width]="col.optionsWidth">' +
+                        '<button *ngFor="let o of col.options; let i=index"' +
+                        '[class.picker-opt-disabled]="o.disabled" ' +
+                        'class="picker-opt" disable-activated (click)="optClick($event, i)">' +
+                        '{{o.text}}' +
+                        '</button>' +
+                        '</div>' +
+                        '<div *ngIf="col.suffix" class="picker-suffix" [style.width]="col.suffixWidth">{{col.suffix}}</div>',
+                    host: {
+                        '[style.max-width]': 'col.columnWidth',
+                        '[class.picker-opts-left]': 'col.align=="left"',
+                        '[class.picker-opts-right]': 'col.align=="right"',
+                    }
+                },] },
+    ];
+    /** @nocollapse */
+    PickerColumnCmp.ctorParameters = function () { return [
+        { type: config_config["a" /* Config */], },
+        { type: platform["a" /* Platform */], },
+        { type: core["p" /* ElementRef */], },
+        { type: core["G" /* NgZone */], },
+        { type: haptic["a" /* Haptic */], },
+        { type: platform["a" /* Platform */], },
+        { type: dom_controller["a" /* DomController */], },
+    ]; };
+    PickerColumnCmp.propDecorators = {
+        'colEle': [{ type: core["Y" /* ViewChild */], args: ['colEle',] },],
+        'col': [{ type: core["z" /* Input */] },],
+        'ionChange': [{ type: core["I" /* Output */] },],
+    };
+    return PickerColumnCmp;
+}());
+
+//# sourceMappingURL=picker-column.js.map
+
+/***/ }),
+/* 51 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemContent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+
+/**
+ * @hidden
+ */
+var ItemContent = (function () {
+    function ItemContent() {
+    }
+    ItemContent.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Directive */], args: [{
+                    selector: 'ion-item,[ion-item]',
+                    host: {
+                        'class': 'item-block'
+                    }
+                },] },
+    ];
+    /** @nocollapse */
+    ItemContent.ctorParameters = function () { return []; };
+    return ItemContent;
+}());
+
+//# sourceMappingURL=item-content.js.map
+
+/***/ }),
+/* 52 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
+var config = __webpack_require__(1);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
+var dom_controller = __webpack_require__(6);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
+var gesture_controller = __webpack_require__(7);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/ion.js
+var ion = __webpack_require__(8);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
+var util = __webpack_require__(2);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/pan-gesture.js + 1 modules
+var pan_gesture = __webpack_require__(59);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
+var dom = __webpack_require__(15);
+
+// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/item-sliding-gesture.js
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+/**
+ * @hidden
+ */
+var item_sliding_gesture_ItemSlidingGesture = (function (_super) {
+    __extends(ItemSlidingGesture, _super);
+    function ItemSlidingGesture(plt, list, gestureCtrl, domCtrl) {
+        var _this = _super.call(this, plt, list.getNativeElement(), {
+            maxAngle: 20,
+            threshold: 5,
+            zone: false,
+            domController: domCtrl,
+            gesture: gestureCtrl.createGesture({
+                name: gesture_controller["c" /* GESTURE_ITEM_SWIPE */],
+                priority: gesture_controller["h" /* GESTURE_PRIORITY_SLIDING_ITEM */],
+                disableScroll: true
+            })
+        }) || this;
+        _this.list = list;
+        _this.preSelectedContainer = null;
+        _this.selectedContainer = null;
+        _this.openContainer = null;
+        return _this;
+    }
+    ItemSlidingGesture.prototype.canStart = function (ev) {
+        if (this.selectedContainer) {
+            return false;
+        }
+        // Get swiped sliding container
+        var container = getContainer(ev);
+        if (!container) {
+            this.closeOpened();
+            return false;
+        }
+        // Close open container if it is not the selected one.
+        if (container !== this.openContainer) {
+            this.closeOpened();
+        }
+        var coord = Object(dom["f" /* pointerCoord */])(ev);
+        this.preSelectedContainer = container;
+        this.firstCoordX = coord.x;
+        this.firstTimestamp = Date.now();
+        return true;
+    };
+    ItemSlidingGesture.prototype.onDragStart = function (ev) {
+        ev.preventDefault();
+        var coord = Object(dom["f" /* pointerCoord */])(ev);
+        this.selectedContainer = this.openContainer = this.preSelectedContainer;
+        this.selectedContainer.startSliding(coord.x);
+    };
+    ItemSlidingGesture.prototype.onDragMove = function (ev) {
+        ev.preventDefault();
+        this.selectedContainer.moveSliding(Object(dom["f" /* pointerCoord */])(ev).x);
+    };
+    ItemSlidingGesture.prototype.onDragEnd = function (ev) {
+        ev.preventDefault();
+        var coordX = Object(dom["f" /* pointerCoord */])(ev).x;
+        var deltaX = (coordX - this.firstCoordX);
+        var deltaT = (Date.now() - this.firstTimestamp);
+        this.selectedContainer.endSliding(deltaX / deltaT);
+        this.selectedContainer = null;
+        this.preSelectedContainer = null;
+    };
+    ItemSlidingGesture.prototype.notCaptured = function (ev) {
+        if (!clickedOptionButton(ev)) {
+            this.closeOpened();
+        }
+    };
+    ItemSlidingGesture.prototype.closeOpened = function () {
+        this.selectedContainer = null;
+        if (this.openContainer) {
+            this.openContainer.close();
+            this.openContainer = null;
+            return true;
+        }
+        return false;
+    };
+    ItemSlidingGesture.prototype.destroy = function () {
+        _super.prototype.destroy.call(this);
+        this.closeOpened();
+        this.list = null;
+        this.preSelectedContainer = null;
+        this.selectedContainer = null;
+        this.openContainer = null;
+    };
+    return ItemSlidingGesture;
+}(pan_gesture["a" /* PanGesture */]));
+
+function getContainer(ev) {
+    var ele = ev.target.closest('ion-item-sliding');
+    if (ele) {
+        return ele['$ionComponent'];
+    }
+    return null;
+}
+function clickedOptionButton(ev) {
+    var ele = ev.target.closest('ion-item-options>button');
+    return !!ele;
+}
+//# sourceMappingURL=item-sliding-gesture.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
+var platform = __webpack_require__(3);
+
+// CONCATENATED MODULE: ./node_modules/ionic-angular/components/list/list.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return list_List; });
+var list___extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+
+
+
+
+/**
+ * The List is a widely used interface element in almost any mobile app,
+ * and can include content ranging from basic text all the way to
+ * buttons, toggles, icons, and thumbnails.
+ *
+ * Both the list, which contains items, and the list items themselves
+ * can be any HTML element.
+ *
+ * Using the List and Item components make it easy to support various
+ * interaction modes such as swipe to edit, drag to reorder, and
+ * removing items.
+ *
+ * @demo /docs/demos/src/list/
+ * @see {@link /docs/components#lists List Component Docs}
+ * @advanced
+ *
+ * Enable the sliding items.
+ *
+ * ```ts
+ * import { Component, ViewChild } from '@angular/core';
+ * import { List } from 'ionic-angular';
+ *
+ * @Component({...})
+ * export class MyClass {
+ *   @ViewChild(List) list: List;
+ *
+ *   constructor() { }
+ *
+ *   stopSliding() {
+ *     this.list.enableSlidingItems(false);
+ *   }
+ * }
+ * ```
+ *
+ */
+var list_List = (function (_super) {
+    list___extends(List, _super);
+    function List(config, elementRef, renderer, _plt, _gestureCtrl, _domCtrl) {
+        var _this = _super.call(this, config, elementRef, renderer, 'list') || this;
+        _this._plt = _plt;
+        _this._gestureCtrl = _gestureCtrl;
+        _this._domCtrl = _domCtrl;
+        _this._enableSliding = true;
+        _this._containsSlidingItems = false;
+        return _this;
+    }
+    Object.defineProperty(List.prototype, "sliding", {
+        /**
+         * @input {boolean} If true, the sliding items will be enabled.
+         */
+        get: function () {
+            return this._enableSliding;
+        },
+        set: function (val) {
+            this._enableSliding = Object(util["o" /* isTrueProperty */])(val);
+            this._updateSlidingState();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @hidden
+     */
+    List.prototype.containsSlidingItem = function (contains) {
+        this._containsSlidingItems = contains;
+        this._updateSlidingState();
+    };
+    List.prototype._updateSlidingState = function () {
+        var shouldSlide = this._enableSliding && this._containsSlidingItems;
+        if (!shouldSlide) {
+            this._slidingGesture && this._slidingGesture.destroy();
+            this._slidingGesture = null;
+        }
+        else if (!this._slidingGesture) {
+            (void 0) /* console.debug */;
+            this._slidingGesture = new item_sliding_gesture_ItemSlidingGesture(this._plt, this, this._gestureCtrl, this._domCtrl);
+            this._slidingGesture.listen();
+        }
+    };
+    /**
+     * Close any sliding items that are open.
+     */
+    List.prototype.closeSlidingItems = function () {
+        this._slidingGesture && this._slidingGesture.closeOpened();
+    };
+    /**
+     * @hidden
+     */
+    List.prototype.destroy = function () {
+        this._slidingGesture && this._slidingGesture.destroy();
+    };
+    List.decorators = [
+        { type: core["o" /* Directive */], args: [{
+                    selector: 'ion-list',
+                },] },
+    ];
+    /** @nocollapse */
+    List.ctorParameters = function () { return [
+        { type: config["a" /* Config */], },
+        { type: core["p" /* ElementRef */], },
+        { type: core["N" /* Renderer */], },
+        { type: platform["a" /* Platform */], },
+        { type: gesture_controller["l" /* GestureController */], },
+        { type: dom_controller["a" /* DomController */], },
+    ]; };
+    List.propDecorators = {
+        'sliding': [{ type: core["z" /* Input */] },],
+    };
+    return List;
+}(ion["a" /* Ion */]));
+
+//# sourceMappingURL=list.js.map
+
+/***/ }),
+/* 53 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Nav; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_deep_linker__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_dom_controller__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_nav_controller__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_nav_controller_base__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_platform__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__transitions_transition_controller__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_view_controller__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__split_pane_split_pane__ = __webpack_require__(25);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * @name Nav
+ * @description
+ *
+ * `ion-nav` is the declarative component for a [NavController](../../../navigation/NavController/).
+ *
+ * For more information on using nav controllers like Nav or [Tab](../../Tabs/Tab/),
+ * take a look at the [NavController API Docs](../../../navigation/NavController/).
+ *
+ *
+ * @usage
+ * You must set a root page to be loaded initially by any Nav you create, using
+ * the 'root' property:
+ *
+ * ```ts
+ * import { Component } from '@angular/core';
+ * import { GettingStartedPage } from './getting-started';
+ *
+ * @Component({
+ *   template: `<ion-nav [root]="root"></ion-nav>`
+ * })
+ * class MyApp {
+ *   root = GettingStartedPage;
+ *
+ *   constructor(){
+ *   }
+ * }
+ * ```
+ *
+ * @demo /docs/demos/src/navigation/
+ * @see {@link /docs/components#navigation Navigation Component Docs}
+ */
+var Nav = (function (_super) {
+    __extends(Nav, _super);
+    function Nav(viewCtrl, parent, app, config, plt, elementRef, zone, renderer, cfr, gestureCtrl, transCtrl, linker, domCtrl, errHandler) {
+        var _this = _super.call(this, parent, app, config, plt, elementRef, zone, renderer, cfr, gestureCtrl, transCtrl, linker, domCtrl, errHandler) || this;
+        _this._hasInit = false;
+        if (viewCtrl) {
+            // an ion-nav can also act as an ion-page within a parent ion-nav
+            // this would happen when an ion-nav nests a child ion-nav.
+            viewCtrl._setContent(_this);
+        }
+        if (parent) {
+            // this Nav has a parent Nav
+            parent.registerChildNav(_this);
+        }
+        else if (viewCtrl && viewCtrl.getNav()) {
+            // this Nav was opened from a modal
+            _this.parent = viewCtrl.getNav();
+            _this.parent.registerChildNav(_this);
+        }
+        else if (app && !app.getRootNavById(_this.id)) {
+            // a root nav has not been registered yet with the app
+            // this is the root navcontroller for the entire app
+            app.registerRootNav(_this);
+        }
+        return _this;
+    }
+    Object.defineProperty(Nav.prototype, "_vp", {
+        /**
+         * @hidden
+         */
+        set: function (val) {
+            this.setViewport(val);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Nav.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this._hasInit = true;
+        var segment = this._linker.getSegmentByNavIdOrName(this.id, this.name);
+        if (segment && (segment.component || segment.loadChildren)) {
+            return this._linker.initViews(segment).then(function (views) {
+                return _this.setPages(views, null, null);
+            });
+        }
+        else if (this._root) {
+            // no segment match, so use the root property but don't set the url I guess
+            var setUrl = segment ? false : true;
+            return this.push(this._root, this.rootParams, {
+                isNavRoot: (this._app.getRootNavById(this.id) === this),
+                updateUrl: setUrl
+            }, null);
+        }
+    };
+    Object.defineProperty(Nav.prototype, "root", {
+        /**
+         * @input {Page} The Page component to load as the root page within this nav.
+         */
+        get: function () {
+            return this._root;
+        },
+        set: function (page) {
+            this._root = page;
+            if (this._hasInit) {
+                this.setRoot(page);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @hidden
+     */
+    Nav.prototype.ngOnDestroy = function () {
+        this.destroy();
+    };
+    Nav.prototype.initPane = function () {
+        var isMain = this._elementRef.nativeElement.hasAttribute('main');
+        return isMain;
+    };
+    Nav.prototype.paneChanged = function (isPane) {
+        if (isPane) {
+            this.resize();
+        }
+    };
+    Nav.prototype.goToRoot = function (opts) {
+        return this.setRoot(this._root, this.rootParams, opts, null);
+    };
+    /*
+     * @private
+     */
+    Nav.prototype.getType = function () {
+        return 'nav';
+    };
+    /*
+     * @private
+     */
+    Nav.prototype.getSecondaryIdentifier = function () {
+        return null;
+    };
+    Nav.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
+                    selector: 'ion-nav',
+                    template: '<div #viewport nav-viewport></div>' +
+                        '<div class="nav-decor"></div>',
+                    encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* ViewEncapsulation */].None,
+                    providers: [{ provide: __WEBPACK_IMPORTED_MODULE_11__split_pane_split_pane__["a" /* RootNode */], useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* forwardRef */])(function () { return Nav; }) }]
+                },] },
+    ];
+    /** @nocollapse */
+    Nav.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_10__navigation_view_controller__["a" /* ViewController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
+        { type: __WEBPACK_IMPORTED_MODULE_6__navigation_nav_controller__["a" /* NavController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
+        { type: __WEBPACK_IMPORTED_MODULE_1__app_app__["a" /* App */], },
+        { type: __WEBPACK_IMPORTED_MODULE_2__config_config__["a" /* Config */], },
+        { type: __WEBPACK_IMPORTED_MODULE_8__platform_platform__["a" /* Platform */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgZone */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ComponentFactoryResolver */], },
+        { type: __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__["l" /* GestureController */], },
+        { type: __WEBPACK_IMPORTED_MODULE_9__transitions_transition_controller__["a" /* TransitionController */], },
+        { type: __WEBPACK_IMPORTED_MODULE_3__navigation_deep_linker__["a" /* DeepLinker */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
+        { type: __WEBPACK_IMPORTED_MODULE_4__platform_dom_controller__["a" /* DomController */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ErrorHandler */], },
+    ]; };
+    Nav.propDecorators = {
+        '_vp': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['viewport', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */] },] },],
+        'root': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+        'rootParams': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+        'name': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+    };
+    return Nav;
+}(__WEBPACK_IMPORTED_MODULE_7__navigation_nav_controller_base__["a" /* NavControllerBase */]));
+
+//# sourceMappingURL=nav.js.map
+
+/***/ }),
 /* 54 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioGroup; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list_header__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__(2);
+
+
+
+
+/**
+ * @name RadioGroup
+ * @description
+ * A radio group is a group of [radio buttons](../RadioButton). It allows
+ * a user to select at most one radio button from a set. Checking one radio
+ * button that belongs to a radio group unchecks any previous checked
+ * radio button within the same group.
+ *
+ * See the [Angular Forms Docs](https://angular.io/docs/ts/latest/guide/forms.html)
+ * for more information on forms and inputs.
+ *
+ * @usage
+ * ```html
+ * <ion-list radio-group [(ngModel)]="autoManufacturers">
+ *
+ *   <ion-list-header>
+ *     Auto Manufacturers
+ *   </ion-list-header>
+ *
+ *   <ion-item>
+ *     <ion-label>Cord</ion-label>
+ *     <ion-radio value="cord"></ion-radio>
+ *   </ion-item>
+ *
+ *   <ion-item>
+ *     <ion-label>Duesenberg</ion-label>
+ *     <ion-radio value="duesenberg"></ion-radio>
+ *   </ion-item>
+ *
+ *   <ion-item>
+ *     <ion-label>Hudson</ion-label>
+ *     <ion-radio value="hudson"></ion-radio>
+ *   </ion-item>
+ *
+ *   <ion-item>
+ *     <ion-label>Packard</ion-label>
+ *     <ion-radio value="packard"></ion-radio>
+ *   </ion-item>
+ *
+ *   <ion-item>
+ *     <ion-label>Studebaker</ion-label>
+ *     <ion-radio value="studebaker"></ion-radio>
+ *   </ion-item>
+ *
+ * </ion-list>
+ * ```
+ *
+ * @demo /docs/demos/src/radio/
+ * @see {@link /docs/components#radio Radio Component Docs}
+ * @see {@link ../RadioButton RadioButton API Docs}
+*/
+var RadioGroup = (function () {
+    function RadioGroup(_renderer, _elementRef, _cd) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this._cd = _cd;
+        /**
+         * @internal
+         */
+        this._disabled = false;
+        /**
+         * @hidden
+         */
+        this._btns = [];
+        /**
+         * @hidden
+         */
+        this._ids = -1;
+        /**
+         * @hidden
+         */
+        this._init = false;
+        /**
+         * @output {any} Emitted when the selected button has changed.
+         */
+        this.ionChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* EventEmitter */]();
+        this.id = ++radioGroupIds;
+    }
+    Object.defineProperty(RadioGroup.prototype, "disabled", {
+        /**
+         * @input {boolean} If true, the user cannot interact with any of the buttons in the group.
+         */
+        get: function () {
+            return this._disabled;
+        },
+        set: function (val) {
+            this._disabled = Object(__WEBPACK_IMPORTED_MODULE_3__util_util__["o" /* isTrueProperty */])(val);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype.ngAfterContentInit = function () {
+        var activeButton = this._btns.find(function (b) { return b.checked; });
+        if (activeButton) {
+            this._setActive(activeButton);
+        }
+    };
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype.writeValue = function (val) {
+        (void 0) /* console.debug */;
+        this.value = val;
+        if (this._init) {
+            this._update();
+            this.onTouched();
+            this.ionChange.emit(val);
+        }
+        this._init = true;
+    };
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype.registerOnChange = function (fn) {
+        var _this = this;
+        this._fn = fn;
+        this.onChange = function (val) {
+            // onChange used when there's an formControlName
+            (void 0) /* console.debug */;
+            fn(val);
+            _this.value = val;
+            _this._update();
+            _this.onTouched();
+            _this.ionChange.emit(val);
+        };
+    };
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype._update = function () {
+        var _this = this;
+        // loop through each of the radiobuttons
+        var hasChecked = false;
+        this._btns.forEach(function (radioButton) {
+            // check this radiobutton if its value is
+            // the same as the radiogroups value
+            radioButton.checked = Object(__WEBPACK_IMPORTED_MODULE_3__util_util__["g" /* isCheckedProperty */])(_this.value, radioButton.value) && !hasChecked;
+            if (radioButton.checked) {
+                // if this button is checked, then set it as
+                // the radiogroup's active descendant
+                _this._setActive(radioButton);
+                hasChecked = true;
+            }
+        });
+    };
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype._setActive = function (radioButton) {
+        this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-activedescendant', radioButton.id);
+    };
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype.add = function (button) {
+        var _this = this;
+        this._btns.push(button);
+        // listen for radiobutton select events
+        button.ionSelect.subscribe(function (val) {
+            // this radiobutton has been selected
+            _this.onChange(val);
+        });
+        return this.id + '-' + (++this._ids);
+    };
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype.remove = function (button) {
+        var index = this._btns.indexOf(button);
+        if (index > -1) {
+            if (button.value === this.value) {
+                this.value = null;
+            }
+            this._btns.splice(index, 1);
+        }
+    };
+    Object.defineProperty(RadioGroup.prototype, "_header", {
+        /**
+         * @hidden
+         */
+        set: function (header) {
+            if (header) {
+                if (!header.id) {
+                    header.id = 'rg-hdr-' + this.id;
+                }
+                this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-describedby', header.id);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype.onChange = function (val) {
+        // onChange used when there is not an formControlName
+        (void 0) /* console.debug */;
+        this.value = val;
+        this._update();
+        this.onTouched();
+        this.ionChange.emit(val);
+        this._cd.detectChanges();
+    };
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype.onTouched = function () { };
+    /**
+     * @hidden
+     */
+    RadioGroup.prototype.setDisabledState = function (isDisabled) {
+        this.disabled = isDisabled;
+    };
+    RadioGroup.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Directive */], args: [{
+                    selector: '[radio-group]',
+                    host: {
+                        'role': 'radiogroup'
+                    },
+                    providers: [{ provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* NG_VALUE_ACCESSOR */], useExisting: RadioGroup, multi: true }],
+                },] },
+    ];
+    /** @nocollapse */
+    RadioGroup.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* ChangeDetectorRef */], },
+    ]; };
+    RadioGroup.propDecorators = {
+        'disabled': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+        'ionChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */] },],
+        '_header': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ContentChild */], args: [__WEBPACK_IMPORTED_MODULE_2__list_list_header__["a" /* ListHeader */],] },],
+    };
+    return RadioGroup;
+}());
+
+var radioGroupIds = -1;
+//# sourceMappingURL=radio-group.js.map
+
+/***/ }),
+/* 55 */,
+/* 56 */,
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57650,7 +57959,7 @@ function __importDefault(mod) {
 
 
 /***/ }),
-/* 55 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58786,7 +59095,7 @@ var ACTIVE_TRANSITION_OFFSET = 2000;
 //# sourceMappingURL=nav-controller-base.js.map
 
 /***/ }),
-/* 56 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58849,7 +59158,7 @@ var PanRecognizer = (function () {
 
 //# sourceMappingURL=recognizers.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
-var dom = __webpack_require__(14);
+var dom = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/ui-event-manager.js
 var ui_event_manager = __webpack_require__(29);
@@ -59010,7 +59319,7 @@ var pan_gesture_PanGesture = (function () {
 //# sourceMappingURL=pan-gesture.js.map
 
 /***/ }),
-/* 57 */
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59182,14 +59491,14 @@ var actionSheetIds = -1;
 //# sourceMappingURL=action-sheet-component.js.map
 
 /***/ }),
-/* 58 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertCmp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_dom__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_dom__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__gestures_gesture_controller__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__platform_key__ = __webpack_require__(23);
@@ -59487,7 +59796,7 @@ var alertIds = -1;
 //# sourceMappingURL=alert-component.js.map
 
 /***/ }),
-/* 59 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59533,7 +59842,7 @@ var Card = (function (_super) {
 //# sourceMappingURL=card.js.map
 
 /***/ }),
-/* 60 */
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59579,7 +59888,7 @@ var CardTitle = (function (_super) {
 //# sourceMappingURL=card-title.js.map
 
 /***/ }),
-/* 61 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59587,7 +59896,7 @@ var CardTitle = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__picker__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__picker__ = __webpack_require__(145);
 
 
 
@@ -59624,7 +59933,7 @@ var PickerController = (function () {
 //# sourceMappingURL=picker-controller.js.map
 
 /***/ }),
-/* 62 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59636,7 +59945,7 @@ var PickerController = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_key__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navigation_nav_params__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_view_controller__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__picker_column__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__picker_column__ = __webpack_require__(50);
 
 
 
@@ -59825,7 +60134,7 @@ var pickerIds = -1;
 //# sourceMappingURL=picker-component.js.map
 
 /***/ }),
-/* 63 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59926,27 +60235,27 @@ var FabButton = (function (_super) {
 //# sourceMappingURL=fab.js.map
 
 /***/ }),
-/* 64 */
+/* 67 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextInput; });
 /* unused harmony export getScrollData */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__content_content__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_dom__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_dom__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_dom_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util_form__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util_form__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_base_input__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__item_item__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__item_item__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__platform_platform__ = __webpack_require__(3);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -60731,321 +61040,13 @@ function removeClone(plt, srcComponentEle, srcNativeInputEle) {
 //# sourceMappingURL=input.js.map
 
 /***/ }),
-/* 65 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemContent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-
-/**
- * @hidden
- */
-var ItemContent = (function () {
-    function ItemContent() {
-    }
-    ItemContent.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Directive */], args: [{
-                    selector: 'ion-item,[ion-item]',
-                    host: {
-                        'class': 'item-block'
-                    }
-                },] },
-    ];
-    /** @nocollapse */
-    ItemContent.ctorParameters = function () { return []; };
-    return ItemContent;
-}());
-
-//# sourceMappingURL=item-content.js.map
-
-/***/ }),
-/* 66 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
-var core = __webpack_require__(0);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
-var config = __webpack_require__(1);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
-var dom_controller = __webpack_require__(6);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
-var gesture_controller = __webpack_require__(7);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/ion.js
-var ion = __webpack_require__(8);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
-var util = __webpack_require__(2);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/pan-gesture.js + 1 modules
-var pan_gesture = __webpack_require__(56);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
-var dom = __webpack_require__(14);
-
-// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/item-sliding-gesture.js
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-/**
- * @hidden
- */
-var item_sliding_gesture_ItemSlidingGesture = (function (_super) {
-    __extends(ItemSlidingGesture, _super);
-    function ItemSlidingGesture(plt, list, gestureCtrl, domCtrl) {
-        var _this = _super.call(this, plt, list.getNativeElement(), {
-            maxAngle: 20,
-            threshold: 5,
-            zone: false,
-            domController: domCtrl,
-            gesture: gestureCtrl.createGesture({
-                name: gesture_controller["c" /* GESTURE_ITEM_SWIPE */],
-                priority: gesture_controller["h" /* GESTURE_PRIORITY_SLIDING_ITEM */],
-                disableScroll: true
-            })
-        }) || this;
-        _this.list = list;
-        _this.preSelectedContainer = null;
-        _this.selectedContainer = null;
-        _this.openContainer = null;
-        return _this;
-    }
-    ItemSlidingGesture.prototype.canStart = function (ev) {
-        if (this.selectedContainer) {
-            return false;
-        }
-        // Get swiped sliding container
-        var container = getContainer(ev);
-        if (!container) {
-            this.closeOpened();
-            return false;
-        }
-        // Close open container if it is not the selected one.
-        if (container !== this.openContainer) {
-            this.closeOpened();
-        }
-        var coord = Object(dom["f" /* pointerCoord */])(ev);
-        this.preSelectedContainer = container;
-        this.firstCoordX = coord.x;
-        this.firstTimestamp = Date.now();
-        return true;
-    };
-    ItemSlidingGesture.prototype.onDragStart = function (ev) {
-        ev.preventDefault();
-        var coord = Object(dom["f" /* pointerCoord */])(ev);
-        this.selectedContainer = this.openContainer = this.preSelectedContainer;
-        this.selectedContainer.startSliding(coord.x);
-    };
-    ItemSlidingGesture.prototype.onDragMove = function (ev) {
-        ev.preventDefault();
-        this.selectedContainer.moveSliding(Object(dom["f" /* pointerCoord */])(ev).x);
-    };
-    ItemSlidingGesture.prototype.onDragEnd = function (ev) {
-        ev.preventDefault();
-        var coordX = Object(dom["f" /* pointerCoord */])(ev).x;
-        var deltaX = (coordX - this.firstCoordX);
-        var deltaT = (Date.now() - this.firstTimestamp);
-        this.selectedContainer.endSliding(deltaX / deltaT);
-        this.selectedContainer = null;
-        this.preSelectedContainer = null;
-    };
-    ItemSlidingGesture.prototype.notCaptured = function (ev) {
-        if (!clickedOptionButton(ev)) {
-            this.closeOpened();
-        }
-    };
-    ItemSlidingGesture.prototype.closeOpened = function () {
-        this.selectedContainer = null;
-        if (this.openContainer) {
-            this.openContainer.close();
-            this.openContainer = null;
-            return true;
-        }
-        return false;
-    };
-    ItemSlidingGesture.prototype.destroy = function () {
-        _super.prototype.destroy.call(this);
-        this.closeOpened();
-        this.list = null;
-        this.preSelectedContainer = null;
-        this.selectedContainer = null;
-        this.openContainer = null;
-    };
-    return ItemSlidingGesture;
-}(pan_gesture["a" /* PanGesture */]));
-
-function getContainer(ev) {
-    var ele = ev.target.closest('ion-item-sliding');
-    if (ele) {
-        return ele['$ionComponent'];
-    }
-    return null;
-}
-function clickedOptionButton(ev) {
-    var ele = ev.target.closest('ion-item-options>button');
-    return !!ele;
-}
-//# sourceMappingURL=item-sliding-gesture.js.map
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
-var platform = __webpack_require__(3);
-
-// CONCATENATED MODULE: ./node_modules/ionic-angular/components/list/list.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return list_List; });
-var list___extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-
-
-
-
-/**
- * The List is a widely used interface element in almost any mobile app,
- * and can include content ranging from basic text all the way to
- * buttons, toggles, icons, and thumbnails.
- *
- * Both the list, which contains items, and the list items themselves
- * can be any HTML element.
- *
- * Using the List and Item components make it easy to support various
- * interaction modes such as swipe to edit, drag to reorder, and
- * removing items.
- *
- * @demo /docs/demos/src/list/
- * @see {@link /docs/components#lists List Component Docs}
- * @advanced
- *
- * Enable the sliding items.
- *
- * ```ts
- * import { Component, ViewChild } from '@angular/core';
- * import { List } from 'ionic-angular';
- *
- * @Component({...})
- * export class MyClass {
- *   @ViewChild(List) list: List;
- *
- *   constructor() { }
- *
- *   stopSliding() {
- *     this.list.enableSlidingItems(false);
- *   }
- * }
- * ```
- *
- */
-var list_List = (function (_super) {
-    list___extends(List, _super);
-    function List(config, elementRef, renderer, _plt, _gestureCtrl, _domCtrl) {
-        var _this = _super.call(this, config, elementRef, renderer, 'list') || this;
-        _this._plt = _plt;
-        _this._gestureCtrl = _gestureCtrl;
-        _this._domCtrl = _domCtrl;
-        _this._enableSliding = true;
-        _this._containsSlidingItems = false;
-        return _this;
-    }
-    Object.defineProperty(List.prototype, "sliding", {
-        /**
-         * @input {boolean} If true, the sliding items will be enabled.
-         */
-        get: function () {
-            return this._enableSliding;
-        },
-        set: function (val) {
-            this._enableSliding = Object(util["o" /* isTrueProperty */])(val);
-            this._updateSlidingState();
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @hidden
-     */
-    List.prototype.containsSlidingItem = function (contains) {
-        this._containsSlidingItems = contains;
-        this._updateSlidingState();
-    };
-    List.prototype._updateSlidingState = function () {
-        var shouldSlide = this._enableSliding && this._containsSlidingItems;
-        if (!shouldSlide) {
-            this._slidingGesture && this._slidingGesture.destroy();
-            this._slidingGesture = null;
-        }
-        else if (!this._slidingGesture) {
-            (void 0) /* console.debug */;
-            this._slidingGesture = new item_sliding_gesture_ItemSlidingGesture(this._plt, this, this._gestureCtrl, this._domCtrl);
-            this._slidingGesture.listen();
-        }
-    };
-    /**
-     * Close any sliding items that are open.
-     */
-    List.prototype.closeSlidingItems = function () {
-        this._slidingGesture && this._slidingGesture.closeOpened();
-    };
-    /**
-     * @hidden
-     */
-    List.prototype.destroy = function () {
-        this._slidingGesture && this._slidingGesture.destroy();
-    };
-    List.decorators = [
-        { type: core["o" /* Directive */], args: [{
-                    selector: 'ion-list',
-                },] },
-    ];
-    /** @nocollapse */
-    List.ctorParameters = function () { return [
-        { type: config["a" /* Config */], },
-        { type: core["p" /* ElementRef */], },
-        { type: core["N" /* Renderer */], },
-        { type: platform["a" /* Platform */], },
-        { type: gesture_controller["l" /* GestureController */], },
-        { type: dom_controller["a" /* DomController */], },
-    ]; };
-    List.propDecorators = {
-        'sliding': [{ type: core["z" /* Input */] },],
-    };
-    return List;
-}(ion["a" /* Ion */]));
-
-//# sourceMappingURL=list.js.map
-
-/***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Reorder; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_reorder_util__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_reorder_util__ = __webpack_require__(142);
 
 
 /**
@@ -61083,7 +61084,7 @@ var Reorder = (function () {
 //# sourceMappingURL=reorder.js.map
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61143,7 +61144,7 @@ var ListHeader = (function (_super) {
 //# sourceMappingURL=list-header.js.map
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61259,7 +61260,7 @@ var loadingIds = -1;
 //# sourceMappingURL=loading-component.js.map
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61269,7 +61270,7 @@ var loadingIds = -1;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navigation_nav_params__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gestures_gesture_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_module_loader__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_module_loader__ = __webpack_require__(38);
 
 
 
@@ -61379,7 +61380,7 @@ var ModalCmp = (function () {
 //# sourceMappingURL=modal-component.js.map
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61710,7 +61711,7 @@ var SPINNERS = {
 //# sourceMappingURL=spinner.js.map
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61721,7 +61722,7 @@ var SPINNERS = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_nav_params__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_module_loader__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_module_loader__ = __webpack_require__(38);
 
 
 
@@ -61832,18 +61833,18 @@ var popoverIds = -1;
 //# sourceMappingURL=popover-component.js.map
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioButton; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_form__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_form__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ion__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__item_item__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_group__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__item_item__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_group__ = __webpack_require__(54);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -62070,7 +62071,7 @@ var RadioButton = (function (_super) {
 //# sourceMappingURL=radio-button.js.map
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62121,7 +62122,7 @@ var SelectPopover = (function () {
 //# sourceMappingURL=select-popover-component.js.map
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62223,7 +62224,7 @@ var toastIds = -1;
 //# sourceMappingURL=toast-component.js.map
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62235,7 +62236,7 @@ var toastIds = -1;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_dom_controller__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_nav_controller_base__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_nav_controller_base__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__tabs__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__transitions_transition_controller__ = __webpack_require__(22);
@@ -62632,7 +62633,7 @@ var Tab = (function (_super) {
 //# sourceMappingURL=tab.js.map
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62686,7 +62687,7 @@ var TabHighlight = (function () {
 //# sourceMappingURL=tab-highlight.js.map
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62774,7 +62775,7 @@ var TabButton = (function (_super) {
 //# sourceMappingURL=tab-button.js.map
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62872,7 +62873,7 @@ var ToolbarTitle = (function (_super) {
 //# sourceMappingURL=toolbar-title.js.map
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62965,7 +62966,7 @@ var SplashScreen = (function (_super) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63174,7 +63175,6 @@ var StatusBar = (function (_super) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 82 */,
 /* 83 */,
 /* 84 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -63203,7 +63203,7 @@ exports.errorObject = { e: {} };
 
 "use strict";
 
-var root_1 = __webpack_require__(38);
+var root_1 = __webpack_require__(39);
 var Symbol = root_1.root.Symbol;
 exports.rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 'function') ?
     Symbol.for('rxSubscriber') : '@@rxSubscriber';
@@ -63219,14 +63219,14 @@ exports.$$rxSubscriber = exports.rxSubscriber;
 
 "use strict";
 
-var root_1 = __webpack_require__(38);
+var root_1 = __webpack_require__(39);
 var isArrayLike_1 = __webpack_require__(209);
 var isPromise_1 = __webpack_require__(210);
-var isObject_1 = __webpack_require__(125);
-var Observable_1 = __webpack_require__(13);
+var isObject_1 = __webpack_require__(126);
+var Observable_1 = __webpack_require__(14);
 var iterator_1 = __webpack_require__(211);
 var InnerSubscriber_1 = __webpack_require__(212);
-var observable_1 = __webpack_require__(128);
+var observable_1 = __webpack_require__(129);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -63346,7 +63346,7 @@ exports.OuterSubscriber = OuterSubscriber;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_deep_linker__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_dom_controller__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_nav_controller_base__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_nav_controller_base__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__transitions_transition_controller__ = __webpack_require__(22);
 var __extends = (this && this.__extends) || (function () {
@@ -63444,9 +63444,9 @@ var OverlayPortal = (function (_super) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlideEdgeGesture; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__slide_gesture__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__slide_gesture__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_dom__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_dom__ = __webpack_require__(15);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -63526,7 +63526,7 @@ var SlideEdgeGesture = (function (_super) {
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.js
-var action_sheet_component = __webpack_require__(57);
+var action_sheet_component = __webpack_require__(60);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(19);
@@ -63926,7 +63926,7 @@ var ActionSheetController = (function () {
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.js
-var alert_component = __webpack_require__(58);
+var alert_component = __webpack_require__(61);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(19);
@@ -64498,7 +64498,7 @@ var Badge = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fab__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fab__ = __webpack_require__(66);
 
 
 
@@ -65093,7 +65093,7 @@ var ItemOptions = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__loading__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__loading__ = __webpack_require__(156);
 
 
 
@@ -65267,7 +65267,7 @@ function loadAndCompile(compiler, modulePath, ngModuleExport) {
     if (!ngModuleExport) {
         ngModuleExport = 'default';
     }
-    return __webpack_require__(162)(modulePath)
+    return __webpack_require__(163)(modulePath)
         .then(function (rawModule) {
         var module = rawModule[ngModuleExport];
         if (!module) {
@@ -65277,7 +65277,7 @@ function loadAndCompile(compiler, modulePath, ngModuleExport) {
     });
 }
 function loadPrecompiledFactory(modulePath, ngModuleExport) {
-    return __webpack_require__(162)(modulePath)
+    return __webpack_require__(163)(modulePath)
         .then(function (rawModule) {
         var ngModuleFactory = rawModule[ngModuleExport];
         if (!ngModuleFactory) {
@@ -65290,6 +65290,95 @@ function loadPrecompiledFactory(modulePath, ngModuleExport) {
 
 /***/ }),
 /* 101 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/label/label.js
+var label = __webpack_require__(42);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
+var config = __webpack_require__(1);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/icon/icon.js
+var icon = __webpack_require__(36);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/reorder.js
+var reorder = __webpack_require__(68);
+
+// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/reorder.ngfactory.js
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+var styles_Reorder = [];
+var RenderType_Reorder = core["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_Reorder, data: {} });
+
+function View_Reorder_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "ion-icon", [["name", "reorder"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_16" /* ɵdid */](1, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], { name: [0, "name"] }, null)], function (_ck, _v) { var currVal_1 = "reorder"; _ck(_v, 1, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 1)._hidden; _ck(_v, 0, 0, currVal_0); }); }
+function View_Reorder_Host_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "ion-reorder", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (core["_29" /* ɵnov */](_v, 1).onClick($event) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, View_Reorder_0, RenderType_Reorder)), core["_16" /* ɵdid */](1, 49152, null, 0, reorder["a" /* Reorder */], [core["p" /* ElementRef */]], null, null)], null, null); }
+var ReorderNgFactory = core["_13" /* ɵccf */]("ion-reorder", reorder["a" /* Reorder */], View_Reorder_Host_0, {}, {}, []);
+
+//# sourceMappingURL=reorder.ngfactory.js.map
+// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
+var common = __webpack_require__(9);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
+var item = __webpack_require__(16);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
+var util_form = __webpack_require__(13);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
+var item_reorder = __webpack_require__(37);
+
+// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RenderType_Item; });
+/* harmony export (immutable) */ __webpack_exports__["b"] = View_Item_0;
+/* unused harmony export View_Item_Host_0 */
+/* unused harmony export ItemNgFactory */
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+var styles_Item = [];
+var RenderType_Item = core["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_Item, data: {} });
+
+function View_Item_1(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 2, "ion-label", [], null, null, null, null, null)), core["_16" /* ɵdid */](1, 16384, [[1, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [8, null], [8, null], [8, null], [8, null]], null, null), core["_28" /* ɵncd */](null, 2)], null, null); }
+function View_Item_2(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "ion-reorder", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (core["_29" /* ɵnov */](_v, 1).onClick($event) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, View_Reorder_0, RenderType_Reorder)), core["_16" /* ɵdid */](1, 49152, null, 0, reorder["a" /* Reorder */], [core["p" /* ElementRef */]], null, null)], null, null); }
+function View_Item_0(_l) { return core["_37" /* ɵvid */](2, [core["_34" /* ɵqud */](671088640, 1, { viewLabel: 0 }), core["_28" /* ɵncd */](null, 0), (_l()(), core["_17" /* ɵeld */](2, 0, null, null, 8, "div", [["class", "item-inner"]], null, null, null, null, null)), (_l()(), core["_17" /* ɵeld */](3, 0, null, null, 4, "div", [["class", "input-wrapper"]], null, null, null, null, null)), core["_28" /* ɵncd */](null, 1), (_l()(), core["_12" /* ɵand */](16777216, null, null, 1, null, View_Item_1)), core["_16" /* ɵdid */](6, 16384, null, 0, common["i" /* NgIf */], [core["_0" /* ViewContainerRef */], core["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), core["_28" /* ɵncd */](null, 3), core["_28" /* ɵncd */](null, 4), (_l()(), core["_12" /* ɵand */](16777216, null, null, 1, null, View_Item_2)), core["_16" /* ɵdid */](10, 16384, null, 0, common["i" /* NgIf */], [core["_0" /* ViewContainerRef */], core["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_17" /* ɵeld */](11, 0, null, null, 0, "div", [["class", "button-effect"]], null, null, null, null, null))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co._viewLabel; _ck(_v, 6, 0, currVal_0); var currVal_1 = _co._hasReorder; _ck(_v, 10, 0, currVal_1); }, null); }
+function View_Item_Host_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 4, "ion-list-header", [["class", "item"]], null, null, null, View_Item_0, RenderType_Item)), core["_16" /* ɵdid */](1, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 1, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 2, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 3, { _icons: 1 })], null, null); }
+var ItemNgFactory = core["_13" /* ɵccf */]("ion-list-header,ion-item,[ion-item],ion-item-divider", item["a" /* Item */], View_Item_Host_0, { color: "color", mode: "mode" }, {}, ["[item-start],[item-left],ion-checkbox:not([item-end]):not([item-right])", "ion-label", "*", "ion-select,ion-input,ion-textarea,ion-datetime,ion-range,[item-content]", "[item-end],[item-right],ion-radio,ion-toggle"]);
+
+//# sourceMappingURL=item.ngfactory.js.map
+
+/***/ }),
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65331,14 +65420,14 @@ var ContentNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵcc
 //# sourceMappingURL=content.ngfactory.js.map
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Events; });
 /* unused harmony export setupEvents */
 /* harmony export (immutable) */ __webpack_exports__["b"] = setupProvideEvents;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scroll_view__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scroll_view__ = __webpack_require__(141);
 
 /**
  * @name Events
@@ -65514,7 +65603,7 @@ function setupProvideEvents(plt, dom) {
 //# sourceMappingURL=events.js.map
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65560,7 +65649,7 @@ var IonicGestureConfig = (function (_super) {
 //# sourceMappingURL=gesture-config.js.map
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65806,7 +65895,7 @@ function providePlatformConfigs() {
 //# sourceMappingURL=platform-registry.js.map
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65971,10 +66060,10 @@ var gesture_controller = __webpack_require__(7);
 var platform = __webpack_require__(3);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
-var util_dom = __webpack_require__(14);
+var util_dom = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/pointer-events.js
-var pointer_events = __webpack_require__(134);
+var pointer_events = __webpack_require__(135);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/tap-click/ripple.js
 
@@ -66330,7 +66419,7 @@ function setupTapClick(config, plt, dom, app, gestureCtrl) {
 //# sourceMappingURL=tap-click.js.map
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66435,7 +66524,7 @@ function registerModeConfigs(config) {
 //# sourceMappingURL=mode-registry.js.map
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66443,7 +66532,7 @@ function registerModeConfigs(config) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_deep_linker__ = __webpack_require__(11);
 
 
@@ -66609,7 +66698,7 @@ var ModalController = (function () {
 //# sourceMappingURL=modal-controller.js.map
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66676,7 +66765,7 @@ var NavPop = (function () {
 //# sourceMappingURL=nav-pop.js.map
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66765,7 +66854,7 @@ var NavPush = (function () {
 //# sourceMappingURL=nav-push.js.map
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66864,7 +66953,7 @@ var Option = (function () {
 //# sourceMappingURL=option.js.map
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66872,7 +66961,7 @@ var Option = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__popover__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__popover__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_deep_linker__ = __webpack_require__(11);
 
 
@@ -67012,25 +67101,25 @@ var PopoverController = (function () {
 //# sourceMappingURL=popover-controller.js.map
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/overlay-proxy.js
-var overlay_proxy = __webpack_require__(161);
+var overlay_proxy = __webpack_require__(162);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.js
-var popover_component = __webpack_require__(72);
+var popover_component = __webpack_require__(73);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/page-transition.js
-var page_transition = __webpack_require__(40);
+var page_transition = __webpack_require__(41);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/popover/popover-transitions.js
 var __extends = (this && this.__extends) || (function () {
@@ -67391,7 +67480,7 @@ var popover_Popover = (function (_super) {
 //# sourceMappingURL=popover.js.map
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67401,7 +67490,7 @@ var popover_Popover = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gestures_gesture_controller__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_dom__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_dom__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__gestures_ui_event_manager__ = __webpack_require__(29);
 
 
@@ -67873,7 +67962,7 @@ var STATE_COMPLETING = 'completing';
 //# sourceMappingURL=refresher.js.map
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67986,7 +68075,7 @@ var SegmentButton = (function () {
 //# sourceMappingURL=segment-button.js.map
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68038,7 +68127,7 @@ var DisplayWhen = (function () {
 //# sourceMappingURL=display-when.js.map
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72331,7 +72420,7 @@ var slidesId = -1;
 //# sourceMappingURL=slides.js.map
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72434,7 +72523,7 @@ var ToastController = (function () {
 //# sourceMappingURL=toast-controller.js.map
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72505,7 +72594,7 @@ var Header = (function (_super) {
 //# sourceMappingURL=toolbar-header.js.map
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72532,7 +72621,7 @@ var VirtualFooter = (function () {
 //# sourceMappingURL=virtual-footer.js.map
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72559,7 +72648,7 @@ var VirtualHeader = (function () {
 //# sourceMappingURL=virtual-header.js.map
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72588,7 +72677,7 @@ var VirtualItem = (function () {
 //# sourceMappingURL=virtual-item.js.map
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72598,122 +72687,122 @@ var VirtualItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_app_app__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_app_app_root__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_app_app_root__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_deep_linker__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_dom_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util_events__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_form__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util_events__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_form__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__gestures_gesture_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gestures_gesture_config__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gestures_gesture_config__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__tap_click_haptic__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__platform_keyboard__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__util_module_loader__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__util_module_loader__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__util_ng_module_loader__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__platform_platform_registry__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__tap_click_tap_click__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__config_mode_registry__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__platform_platform_registry__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__tap_click_tap_click__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__config_mode_registry__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__transitions_transition_controller__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__navigation_url_serializer__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_action_sheet_action_sheet_component__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__navigation_url_serializer__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_action_sheet_action_sheet_component__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_action_sheet_action_sheet_controller__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_alert_alert_component__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_alert_alert_component__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_alert_alert_controller__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_app_click_block__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_app_click_block__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_app_overlay_portal__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_avatar_avatar__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_avatar_avatar__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_backdrop_backdrop__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_badge_badge__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_button_button__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_card_card__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_card_card_content__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_card_card_header__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_card_card_title__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_checkbox_checkbox__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_chip_chip__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_button_button__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_card_card__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_card_card_content__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_card_card_header__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_card_card_title__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_checkbox_checkbox__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_chip_chip__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_content_content__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_datetime_datetime__ = __webpack_require__(143);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_fab_fab__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_fab_fab_container__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_datetime_datetime__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_fab_fab__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_fab_fab_container__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_fab_fab_list__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_grid_col__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_grid_grid__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_grid_row__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_grid_col__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_grid_grid__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_grid_row__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_icon_icon__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_img_img__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_img_img__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_infinite_scroll_infinite_scroll__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_infinite_scroll_infinite_scroll_content__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_input_input__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_item_item__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_item_item_content__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_item_item_divider__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_item_item_group__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_infinite_scroll_infinite_scroll_content__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_input_input__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_item_item__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_item_item_content__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_item_item_divider__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_item_item_group__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_item_item_options__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_item_item_reorder__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_item_item_sliding__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_item_reorder__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_label_label__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_list_list__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_list_list_header__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_loading_loading_component__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_item_item_reorder__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_item_item_sliding__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_item_reorder__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_label_label__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_list_list__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_list_list_header__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_loading_loading_component__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_loading_loading_controller__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_menu_menu__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_menu_menu_close__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_menu_menu__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_menu_menu_close__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__components_app_menu_controller__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_menu_menu_toggle__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__components_modal_modal_component__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_modal_modal_controller__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_nav_nav__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_nav_nav_pop__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_menu_menu_toggle__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__components_modal_modal_component__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_modal_modal_controller__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_nav_nav__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_nav_nav_pop__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__components_nav_nav_pop_anchor__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__components_nav_nav_push__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__components_nav_nav_push__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__components_nav_nav_push_anchor__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__components_note_note__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__components_option_option__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__components_picker_picker_component__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__components_picker_picker_column__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__components_picker_picker_controller__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__components_popover_popover_component__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__components_popover_popover_controller__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__components_radio_radio_button__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__components_radio_radio_group__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__components_option_option__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__components_picker_picker_component__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__components_picker_picker_column__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__components_picker_picker_controller__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__components_popover_popover_component__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__components_popover_popover_controller__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__components_radio_radio_button__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__components_radio_radio_group__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__components_range_range__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__components_range_range_knob__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__components_refresher_refresher__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__components_refresher_refresher__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__components_refresher_refresher_content__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__components_scroll_scroll__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__components_searchbar_searchbar__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__components_segment_segment__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__components_select_select__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__components_select_select_popover_component__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__components_segment_segment_button__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__components_select_select_popover_component__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__components_segment_segment_button__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__components_show_hide_when_show_when__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__components_show_hide_when_hide_when__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__components_slides_slide__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__components_slides_slides__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__components_spinner_spinner__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__components_slides_slides__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__components_spinner_spinner__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_100__components_split_pane_split_pane__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__components_tabs_tab__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__components_tabs_tab_button__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__components_tabs_tab_highlight__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__components_tabs_tab__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__components_tabs_tab_button__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__components_tabs_tab_highlight__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__components_tabs_tabs__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__components_thumbnail_thumbnail__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__components_toast_toast_component__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__components_toast_toast_controller__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__components_toast_toast_component__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__components_toast_toast_controller__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_108__components_toggle_toggle__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_109__components_toolbar_toolbar_footer__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__components_toolbar_toolbar_header__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__components_toolbar_toolbar_header__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__components_toolbar_toolbar__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__components_toolbar_toolbar_item__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__components_toolbar_toolbar_title__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__components_toolbar_toolbar_title__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__components_toolbar_navbar__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__components_typography_typography__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__components_virtual_scroll_virtual_footer__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__components_virtual_scroll_virtual_header__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__components_virtual_scroll_virtual_item__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__components_virtual_scroll_virtual_footer__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__components_virtual_scroll_virtual_header__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__components_virtual_scroll_virtual_item__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_119__components_virtual_scroll_virtual_scroll__ = __webpack_require__(185);
 /**
  * Import Angular
@@ -73221,7 +73310,7 @@ function provideLocationStrategy(platformLocationStrategy, baseHref, config) {
 //# sourceMappingURL=module.js.map
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports) {
 
 var g;
@@ -73248,7 +73337,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73257,7 +73346,7 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 //# sourceMappingURL=isArray.js.map
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73269,7 +73358,7 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73294,7 +73383,7 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73308,12 +73397,12 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var root_1 = __webpack_require__(38);
+var root_1 = __webpack_require__(39);
 function getSymbolObservable(context) {
     var $$observable;
     var Symbol = context.Symbol;
@@ -73340,7 +73429,7 @@ exports.$$observable = exports.observable;
 //# sourceMappingURL=observable.js.map
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73350,7 +73439,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(14);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -73427,7 +73516,7 @@ exports.EmptyObservable = EmptyObservable;
 //# sourceMappingURL=EmptyObservable.js.map
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73439,7 +73528,7 @@ exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73530,15 +73619,15 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=refCount.js.map
 
 /***/ }),
-/* 132 */,
-/* 133 */
+/* 133 */,
+/* 134 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlideGesture; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pan_gesture__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pan_gesture__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_dom__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_dom__ = __webpack_require__(15);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -73632,7 +73721,7 @@ var SlideGesture = (function (_super) {
 //# sourceMappingURL=slide-gesture.js.map
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73739,7 +73828,7 @@ var POINTER_EVENT_TYPE_TOUCH = 2;
 //# sourceMappingURL=pointer-events.js.map
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73770,7 +73859,7 @@ var Avatar = (function () {
 //# sourceMappingURL=avatar.js.map
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73816,7 +73905,7 @@ var CardContent = (function (_super) {
 //# sourceMappingURL=card-content.js.map
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73862,18 +73951,18 @@ var CardHeader = (function (_super) {
 //# sourceMappingURL=card-header.js.map
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Checkbox; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_form__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_form__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_base_input__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__item_item__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__item_item__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -74036,7 +74125,7 @@ var Checkbox = (function (_super) {
 //# sourceMappingURL=checkbox.js.map
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74071,12 +74160,12 @@ var TimeoutDebouncer = (function () {
 //# sourceMappingURL=debouncer.js.map
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ScrollView; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom__ = __webpack_require__(15);
 
 var ScrollView = (function () {
     function ScrollView(_app, _plt, _dom) {
@@ -74526,7 +74615,7 @@ var EVENT_OPTS = {
 //# sourceMappingURL=scroll-view.js.map
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74565,7 +74654,7 @@ function findReorderItem(node, listNode) {
 //# sourceMappingURL=item-reorder-util.js.map
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74695,7 +74784,7 @@ var Chip = (function (_super) {
 //# sourceMappingURL=chip.js.map
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74704,22 +74793,22 @@ var Chip = (function (_super) {
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(16);
+var esm5_forms = __webpack_require__(17);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config_config = __webpack_require__(1);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-controller.js
-var picker_controller = __webpack_require__(61);
+var picker_controller = __webpack_require__(64);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
-var util_form = __webpack_require__(15);
+var util_form = __webpack_require__(13);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/base-input.js
 var base_input = __webpack_require__(30);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
-var item_item = __webpack_require__(18);
+var item_item = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
 var util = __webpack_require__(2);
@@ -75931,7 +76020,7 @@ var DEFAULT_FORMAT = 'MMM D, YYYY';
 //# sourceMappingURL=datetime.js.map
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75943,7 +76032,7 @@ var core = __webpack_require__(0);
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.js
-var picker_component = __webpack_require__(62);
+var picker_component = __webpack_require__(65);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(19);
@@ -76097,7 +76186,7 @@ var picker_Picker = (function (_super) {
 //# sourceMappingURL=picker.js.map
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76105,7 +76194,7 @@ var picker_Picker = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gestures_ui_event_manager__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fab__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fab__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fab_list__ = __webpack_require__(96);
 
 
@@ -76283,7 +76372,7 @@ var FabContainer = (function () {
 //# sourceMappingURL=fab-container.js.map
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76332,7 +76421,7 @@ var Col = (function () {
 //# sourceMappingURL=col.js.map
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76892,7 +76981,7 @@ var Grid = (function () {
 //# sourceMappingURL=grid.js.map
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76948,7 +77037,7 @@ var Row = (function () {
 //# sourceMappingURL=row.js.map
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77347,7 +77436,7 @@ function getUnitValue(val) {
 //# sourceMappingURL=img.js.map
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77404,18 +77493,18 @@ var InfiniteScrollContent = (function () {
 //# sourceMappingURL=infinite-scroll-content.js.map
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(14);
 var takeUntil_1 = __webpack_require__(226);
 Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 //# sourceMappingURL=takeUntil.js.map
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77464,7 +77553,7 @@ var ItemDivider = (function (_super) {
 //# sourceMappingURL=item-divider.js.map
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77490,15 +77579,15 @@ var ItemGroup = (function () {
 //# sourceMappingURL=item-group.js.map
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemSliding; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__item__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__item__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__item_options__ = __webpack_require__(98);
 
@@ -77913,7 +78002,7 @@ var ItemSliding = (function () {
 //# sourceMappingURL=item-sliding.js.map
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77922,10 +78011,10 @@ var ItemSliding = (function () {
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-constants.js
-var app_constants = __webpack_require__(47);
+var app_constants = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.js
-var loading_component = __webpack_require__(69);
+var loading_component = __webpack_require__(70);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(19);
@@ -78176,7 +78265,7 @@ var loading_Loading = (function (_super) {
 //# sourceMappingURL=loading.js.map
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78316,7 +78405,7 @@ var menu_gestures_MenuContentGesture = (function (_super) {
 var menu_controller = __webpack_require__(28);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav.js
-var nav = __webpack_require__(50);
+var nav = __webpack_require__(53);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
 var platform = __webpack_require__(3);
@@ -78994,7 +79083,7 @@ var menu_Menu = (function () {
 //# sourceMappingURL=menu.js.map
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79057,13 +79146,13 @@ var MenuClose = (function () {
 //# sourceMappingURL=menu-close.js.map
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuToggle; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_menu_controller__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toolbar_navbar__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_view_controller__ = __webpack_require__(4);
@@ -79222,7 +79311,7 @@ var MenuToggle = (function () {
 //# sourceMappingURL=menu-toggle.js.map
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79266,28 +79355,28 @@ var ToolbarBase = (function (_super) {
 //# sourceMappingURL=toolbar-base.js.map
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/overlay-proxy.js
-var overlay_proxy = __webpack_require__(161);
+var overlay_proxy = __webpack_require__(162);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-constants.js
-var app_constants = __webpack_require__(47);
+var app_constants = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.js
-var modal_component = __webpack_require__(70);
+var modal_component = __webpack_require__(71);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/page-transition.js
-var page_transition = __webpack_require__(40);
+var page_transition = __webpack_require__(41);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/modal/modal-transitions.js
 var __extends = (this && this.__extends) || (function () {
@@ -79514,7 +79603,7 @@ var modal_Modal = (function (_super) {
 //# sourceMappingURL=modal.js.map
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79587,8 +79676,8 @@ var OverlayProxy = (function () {
 //# sourceMappingURL=overlay-proxy.js.map
 
 /***/ }),
-/* 162 */,
-/* 163 */
+/* 163 */,
+/* 164 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79670,95 +79759,6 @@ var ClickBlock = (function () {
 //# sourceMappingURL=click-block.js.map
 
 /***/ }),
-/* 164 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
-var core = __webpack_require__(0);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/label/label.js
-var label = __webpack_require__(41);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
-var config = __webpack_require__(1);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/icon/icon.js
-var icon = __webpack_require__(36);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/reorder.js
-var reorder = __webpack_require__(67);
-
-// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/reorder.ngfactory.js
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-var styles_Reorder = [];
-var RenderType_Reorder = core["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_Reorder, data: {} });
-
-function View_Reorder_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "ion-icon", [["name", "reorder"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_16" /* ɵdid */](1, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], { name: [0, "name"] }, null)], function (_ck, _v) { var currVal_1 = "reorder"; _ck(_v, 1, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 1)._hidden; _ck(_v, 0, 0, currVal_0); }); }
-function View_Reorder_Host_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "ion-reorder", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (core["_29" /* ɵnov */](_v, 1).onClick($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, View_Reorder_0, RenderType_Reorder)), core["_16" /* ɵdid */](1, 49152, null, 0, reorder["a" /* Reorder */], [core["p" /* ElementRef */]], null, null)], null, null); }
-var ReorderNgFactory = core["_13" /* ɵccf */]("ion-reorder", reorder["a" /* Reorder */], View_Reorder_Host_0, {}, {}, []);
-
-//# sourceMappingURL=reorder.ngfactory.js.map
-// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
-var common = __webpack_require__(9);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
-var item = __webpack_require__(18);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
-var util_form = __webpack_require__(15);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
-var item_reorder = __webpack_require__(42);
-
-// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RenderType_Item; });
-/* harmony export (immutable) */ __webpack_exports__["b"] = View_Item_0;
-/* unused harmony export View_Item_Host_0 */
-/* unused harmony export ItemNgFactory */
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-var styles_Item = [];
-var RenderType_Item = core["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_Item, data: {} });
-
-function View_Item_1(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 2, "ion-label", [], null, null, null, null, null)), core["_16" /* ɵdid */](1, 16384, [[1, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [8, null], [8, null], [8, null], [8, null]], null, null), core["_28" /* ɵncd */](null, 2)], null, null); }
-function View_Item_2(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "ion-reorder", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (core["_29" /* ɵnov */](_v, 1).onClick($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, View_Reorder_0, RenderType_Reorder)), core["_16" /* ɵdid */](1, 49152, null, 0, reorder["a" /* Reorder */], [core["p" /* ElementRef */]], null, null)], null, null); }
-function View_Item_0(_l) { return core["_37" /* ɵvid */](2, [core["_34" /* ɵqud */](671088640, 1, { viewLabel: 0 }), core["_28" /* ɵncd */](null, 0), (_l()(), core["_17" /* ɵeld */](2, 0, null, null, 8, "div", [["class", "item-inner"]], null, null, null, null, null)), (_l()(), core["_17" /* ɵeld */](3, 0, null, null, 4, "div", [["class", "input-wrapper"]], null, null, null, null, null)), core["_28" /* ɵncd */](null, 1), (_l()(), core["_12" /* ɵand */](16777216, null, null, 1, null, View_Item_1)), core["_16" /* ɵdid */](6, 16384, null, 0, common["i" /* NgIf */], [core["_0" /* ViewContainerRef */], core["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), core["_28" /* ɵncd */](null, 3), core["_28" /* ɵncd */](null, 4), (_l()(), core["_12" /* ɵand */](16777216, null, null, 1, null, View_Item_2)), core["_16" /* ɵdid */](10, 16384, null, 0, common["i" /* NgIf */], [core["_0" /* ViewContainerRef */], core["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_17" /* ɵeld */](11, 0, null, null, 0, "div", [["class", "button-effect"]], null, null, null, null, null))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co._viewLabel; _ck(_v, 6, 0, currVal_0); var currVal_1 = _co._hasReorder; _ck(_v, 10, 0, currVal_1); }, null); }
-function View_Item_Host_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 4, "ion-list-header", [["class", "item"]], null, null, null, View_Item_0, RenderType_Item)), core["_16" /* ɵdid */](1, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_34" /* ɵqud */](335544320, 1, { contentLabel: 0 }), core["_34" /* ɵqud */](603979776, 2, { _buttons: 1 }), core["_34" /* ɵqud */](603979776, 3, { _icons: 1 })], null, null); }
-var ItemNgFactory = core["_13" /* ɵccf */]("ion-list-header,ion-item,[ion-item],ion-item-divider", item["a" /* Item */], View_Item_Host_0, { color: "color", mode: "mode" }, {}, ["[item-start],[item-left],ion-checkbox:not([item-end]):not([item-right])", "ion-label", "*", "ion-select,ion-input,ion-textarea,ion-datetime,ion-range,[item-content]", "[item-end],[item-right],ion-radio,ion-toggle"]);
-
-//# sourceMappingURL=item.ngfactory.js.map
-
-/***/ }),
 /* 165 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -79803,7 +79803,7 @@ function isIosUIWebView(plt) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navigation_deep_linker__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navigation_view_controller__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_pop__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_pop__ = __webpack_require__(109);
 
 
 
@@ -79856,7 +79856,7 @@ var NavPopAnchor = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavPushAnchor; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navigation_deep_linker__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_push__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_push__ = __webpack_require__(110);
 
 
 
@@ -79971,16 +79971,16 @@ var Note = (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Range; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_dom_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_form__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_form__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tap_click_haptic__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_base_input__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__item_item__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__item_item__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_dom__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_dom__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__gestures_ui_event_manager__ = __webpack_require__(29);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -80613,7 +80613,7 @@ var RangeKnob = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RefresherContent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__refresher__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__refresher__ = __webpack_require__(114);
 
 
 
@@ -80819,11 +80819,11 @@ var Scroll = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Searchbar; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_base_input__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_debouncer__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_debouncer__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__platform_platform__ = __webpack_require__(3);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -81216,10 +81216,10 @@ var Searchbar = (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Segment; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_base_input__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__segment_button__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__segment_button__ = __webpack_require__(115);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -81355,19 +81355,19 @@ var Segment = (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Select; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__action_sheet_action_sheet__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alert_alert__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover_popover__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover_popover__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_deep_linker__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__util_form__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__util_form__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util_base_input__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__item_item__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__option_option__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__select_popover_component__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__item_item__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__option_option__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__select_popover_component__ = __webpack_require__(75);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -81867,7 +81867,7 @@ var Select = (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShowWhen; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__display_when__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__display_when__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__platform_platform__ = __webpack_require__(3);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -81956,7 +81956,7 @@ var ShowWhen = (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HideWhen; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__display_when__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__display_when__ = __webpack_require__(116);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -82042,7 +82042,7 @@ var HideWhen = (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Slide; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slides__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slides__ = __webpack_require__(117);
 
 
 /**
@@ -82131,10 +82131,10 @@ var Thumbnail = (function () {
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-constants.js
-var app_constants = __webpack_require__(47);
+var app_constants = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.js
-var toast_component = __webpack_require__(75);
+var toast_component = __webpack_require__(76);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(19);
@@ -82483,7 +82483,7 @@ var TOAST_POSITION_BOTTOM = 'bottom';
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(16);
+var esm5_forms = __webpack_require__(17);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config = __webpack_require__(1);
@@ -82492,7 +82492,7 @@ var config = __webpack_require__(1);
 var dom_controller = __webpack_require__(6);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
-var util_form = __webpack_require__(15);
+var util_form = __webpack_require__(13);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
 var gesture_controller = __webpack_require__(7);
@@ -82507,7 +82507,7 @@ var util = __webpack_require__(2);
 var base_input = __webpack_require__(30);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
-var item = __webpack_require__(18);
+var item = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/key.js
 var key = __webpack_require__(23);
@@ -82516,10 +82516,10 @@ var key = __webpack_require__(23);
 var platform = __webpack_require__(3);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/pan-gesture.js + 1 modules
-var pan_gesture = __webpack_require__(56);
+var pan_gesture = __webpack_require__(59);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
-var dom = __webpack_require__(14);
+var dom = __webpack_require__(15);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/toggle/toggle-gesture.js
 var __extends = (this && this.__extends) || (function () {
@@ -82880,7 +82880,7 @@ var Footer = (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToolbarItem; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ion__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navbar__ = __webpack_require__(32);
@@ -83589,13 +83589,13 @@ var platform = __webpack_require__(3);
 var view_controller = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-item.js
-var virtual_item = __webpack_require__(121);
+var virtual_item = __webpack_require__(122);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-footer.js
-var virtual_footer = __webpack_require__(119);
+var virtual_footer = __webpack_require__(120);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-header.js
-var virtual_header = __webpack_require__(120);
+var virtual_header = __webpack_require__(121);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-scroll.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return virtual_scroll_VirtualScroll; });
@@ -84428,7 +84428,7 @@ var fromEvent = __webpack_require__(230);
 var fromEvent_default = /*#__PURE__*/__webpack_require__.n(fromEvent);
 
 // EXTERNAL MODULE: ./node_modules/rxjs/Observable.js
-var Observable = __webpack_require__(13);
+var Observable = __webpack_require__(14);
 var Observable_default = /*#__PURE__*/__webpack_require__.n(Observable);
 
 // CONCATENATED MODULE: ./node_modules/@ionic-native/core/bootstrap.js
@@ -85258,9 +85258,9 @@ var IonicNativePlugin = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button_ngfactory__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_button__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_button__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__backdrop_backdrop__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__action_sheet_component__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__action_sheet_component__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__gestures_gesture_controller__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_nav_params__ = __webpack_require__(10);
@@ -85319,12 +85319,12 @@ var ActionSheetCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" 
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertCmpNgFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button_ngfactory__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__backdrop_backdrop__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__alert_component__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__alert_component__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__gestures_gesture_controller__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_nav_params__ = __webpack_require__(10);
@@ -85414,8 +85414,8 @@ var AlertCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__transitions_transition_controller__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_deep_linker__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_dom_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__click_block__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_root__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__click_block__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_root__ = __webpack_require__(47);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
  *
@@ -85455,7 +85455,7 @@ var core = __webpack_require__(0);
 var common = __webpack_require__(9);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/spinner/spinner.js
-var spinner = __webpack_require__(71);
+var spinner = __webpack_require__(72);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config = __webpack_require__(1);
@@ -85485,7 +85485,7 @@ var SpinnerNgFactory = core["_13" /* ɵccf */]("ion-spinner", spinner["a" /* Spi
 var backdrop = __webpack_require__(24);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.js
-var loading_component = __webpack_require__(69);
+var loading_component = __webpack_require__(70);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
 var view_controller = __webpack_require__(4);
@@ -85545,11 +85545,11 @@ var LoadingCmpNgFactory = core["_13" /* ɵccf */]("ion-loading", loading_compone
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalCmpNgFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__backdrop_backdrop__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_component__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_component__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_nav_params__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_module_loader__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_module_loader__ = __webpack_require__(38);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
  *
@@ -85594,13 +85594,13 @@ var common = __webpack_require__(9);
 var button_ngfactory = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
-var button_button = __webpack_require__(17);
+var button_button = __webpack_require__(18);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config = __webpack_require__(1);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-column.js + 1 modules
-var picker_column = __webpack_require__(49);
+var picker_column = __webpack_require__(50);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
 var platform = __webpack_require__(3);
@@ -85643,7 +85643,7 @@ var PickerColumnCmpNgFactory = core["_13" /* ɵccf */](".picker-col", picker_col
 var backdrop = __webpack_require__(24);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.js
-var picker_component = __webpack_require__(62);
+var picker_component = __webpack_require__(65);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
 var view_controller = __webpack_require__(4);
@@ -85714,12 +85714,12 @@ var PickerCmpNgFactory = core["_13" /* ɵccf */]("ion-picker-cmp", picker_compon
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopoverCmpNgFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__backdrop_backdrop__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__popover_component__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__popover_component__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_nav_params__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__gestures_gesture_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_module_loader__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_module_loader__ = __webpack_require__(38);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
  *
@@ -85759,37 +85759,37 @@ var PopoverCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* �
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
-var item_ngfactory = __webpack_require__(164);
+var item_ngfactory = __webpack_require__(101);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
-var item = __webpack_require__(18);
+var item = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
-var util_form = __webpack_require__(15);
+var util_form = __webpack_require__(13);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config = __webpack_require__(1);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
-var item_reorder = __webpack_require__(42);
+var item_reorder = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-content.js
-var item_content = __webpack_require__(65);
+var item_content = __webpack_require__(51);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/label/label.js
-var label = __webpack_require__(41);
+var label = __webpack_require__(42);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
 var button_ngfactory = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
-var button_button = __webpack_require__(17);
+var button_button = __webpack_require__(18);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-button.js
-var radio_button = __webpack_require__(73);
+var radio_button = __webpack_require__(74);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-group.js
-var radio_group = __webpack_require__(51);
+var radio_group = __webpack_require__(54);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/radio/radio-button.ngfactory.js
 /**
@@ -85818,10 +85818,10 @@ var RadioButtonNgFactory = core["_13" /* ɵccf */]("ion-radio", radio_button["a"
 
 //# sourceMappingURL=radio-button.ngfactory.js.map
 // EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(16);
+var esm5_forms = __webpack_require__(17);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list.js + 1 modules
-var list = __webpack_require__(66);
+var list = __webpack_require__(52);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
 var platform = __webpack_require__(3);
@@ -85836,7 +85836,7 @@ var dom_controller = __webpack_require__(6);
 var common = __webpack_require__(9);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.js
-var select_popover_component = __webpack_require__(74);
+var select_popover_component = __webpack_require__(75);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
 var nav_params = __webpack_require__(10);
@@ -85902,10 +85902,10 @@ var SelectPopoverNgFactory = core["_13" /* ɵccf */]("ng-component", select_popo
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToastCmpNgFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button_ngfactory__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toast_component__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toast_component__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_nav_params__ = __webpack_require__(10);
 /**
@@ -85947,7 +85947,7 @@ var ToastCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 
 var Subscriber_1 = __webpack_require__(34);
 var rxSubscriber_1 = __webpack_require__(86);
-var Observer_1 = __webpack_require__(127);
+var Observer_1 = __webpack_require__(128);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -86044,9 +86044,9 @@ exports.noop = noop;
 
 "use strict";
 
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(14);
 var ArrayObservable_1 = __webpack_require__(205);
-var isScheduler_1 = __webpack_require__(130);
+var isScheduler_1 = __webpack_require__(131);
 var mergeAll_1 = __webpack_require__(207);
 /* tslint:enable:max-line-length */
 /**
@@ -86145,10 +86145,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(14);
 var ScalarObservable_1 = __webpack_require__(206);
-var EmptyObservable_1 = __webpack_require__(129);
-var isScheduler_1 = __webpack_require__(130);
+var EmptyObservable_1 = __webpack_require__(130);
+var isScheduler_1 = __webpack_require__(131);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -86273,7 +86273,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(14);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -86591,7 +86591,7 @@ exports.isPromise = isPromise;
 
 "use strict";
 
-var root_1 = __webpack_require__(38);
+var root_1 = __webpack_require__(39);
 function symbolIteratorPonyfill(root) {
     var Symbol = root.Symbol;
     if (typeof Symbol === 'function') {
@@ -86720,8 +86720,8 @@ exports.share = share;
 "use strict";
 
 var multicast_1 = __webpack_require__(216);
-var refCount_1 = __webpack_require__(131);
-var Subject_1 = __webpack_require__(45);
+var refCount_1 = __webpack_require__(132);
+var Subject_1 = __webpack_require__(46);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
 }
@@ -86820,11 +86820,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(45);
-var Observable_1 = __webpack_require__(13);
+var Subject_1 = __webpack_require__(46);
+var Observable_1 = __webpack_require__(14);
 var Subscriber_1 = __webpack_require__(34);
-var Subscription_1 = __webpack_require__(39);
-var refCount_1 = __webpack_require__(131);
+var Subscription_1 = __webpack_require__(40);
+var refCount_1 = __webpack_require__(132);
 /**
  * @class ConnectableObservable<T>
  */
@@ -87030,7 +87030,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(39);
+var Subscription_1 = __webpack_require__(40);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -87086,9 +87086,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
-var EmptyObservable_1 = __webpack_require__(129);
-var isArray_1 = __webpack_require__(124);
+var Observable_1 = __webpack_require__(14);
+var EmptyObservable_1 = __webpack_require__(130);
+var isArray_1 = __webpack_require__(125);
 var subscribeToResult_1 = __webpack_require__(87);
 var OuterSubscriber_1 = __webpack_require__(88);
 /**
@@ -87304,8 +87304,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var root_1 = __webpack_require__(38);
-var Observable_1 = __webpack_require__(13);
+var root_1 = __webpack_require__(39);
+var Observable_1 = __webpack_require__(14);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -87700,7 +87700,7 @@ var TakeUntilSubscriber = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button_ngfactory__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__icon_icon__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navbar__ = __webpack_require__(32);
@@ -87746,7 +87746,7 @@ var NavbarNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵccf
 /* unused harmony export ToolbarTitleNgFactory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toolbar_title__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toolbar_title__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__toolbar__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navbar__ = __webpack_require__(32);
@@ -87777,7 +87777,7 @@ var ToolbarTitleNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /*
 
 "use strict";
 
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(14);
 var fromEvent_1 = __webpack_require__(231);
 Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 //# sourceMappingURL=fromEvent.js.map
@@ -87803,11 +87803,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
-var tryCatch_1 = __webpack_require__(126);
+var Observable_1 = __webpack_require__(14);
+var tryCatch_1 = __webpack_require__(127);
 var isFunction_1 = __webpack_require__(84);
 var errorObject_1 = __webpack_require__(85);
-var Subscription_1 = __webpack_require__(39);
+var Subscription_1 = __webpack_require__(40);
 var toString = Object.prototype.toString;
 function isNodeStyleEventEmitter(sourceObj) {
     return !!sourceObj && typeof sourceObj.addListener === 'function' && typeof sourceObj.removeListener === 'function';
@@ -88035,7 +88035,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(13);
+var Observable_1 = __webpack_require__(14);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -88124,7 +88124,7 @@ exports.ErrorObservable = ErrorObservable;
 /* unused harmony export NavNgFactory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__split_pane_split_pane__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_nav_controller__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_app__ = __webpack_require__(5);
@@ -88173,15 +88173,15 @@ var NavNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵccf */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button_ngfactory__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__input__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__input__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_form__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_form__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__content_content__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__item_item__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__item_item__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__platform_dom_controller__ = __webpack_require__(6);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
@@ -88279,7 +88279,7 @@ var badge = __webpack_require__(95);
 var common = __webpack_require__(9);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab-button.js
-var tab_button = __webpack_require__(78);
+var tab_button = __webpack_require__(79);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/tabs/tab-button.ngfactory.js
 /**
@@ -88309,7 +88309,7 @@ var TabButtonNgFactory = core["_13" /* ɵccf */](".tab-button", tab_button["a" /
 
 //# sourceMappingURL=tab-button.ngfactory.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab-highlight.js
-var tab_highlight = __webpack_require__(77);
+var tab_highlight = __webpack_require__(78);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
 var dom_controller = __webpack_require__(6);
@@ -88390,7 +88390,7 @@ var TabsNgFactory = core["_13" /* ɵccf */]("ion-tabs", tabs["a" /* Tabs */], Vi
 /* unused harmony export View_Tab_Host_0 */
 /* unused harmony export TabNgFactory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);

@@ -26,12 +26,29 @@ export class TextAnalysisService {
       console.log(`message:`, message);
       if (message.emojis !== []) {
         for (const emoji of message.emojis) {
+          let found = false;
+          for (const entry in emojiList) {
+            if (emojiList[entry].character === emoji) {
+              emojiList[entry].occurrence++;
+              found = true;
+              break;
+            }
+          }
+          if (!found) {
+            emojiList.push(
+              {
+                character: emoji,
+                occurrence: 1
+              });
+          }
+
           console.log(`message.emojis`, message.emojis);
           console.log(`emoji`, emoji);
-          emojiList.push(emoji);
+
         }
       }
     }
+    console.log(`emojiList`, emojiList);
     return emojiList;
   }
 

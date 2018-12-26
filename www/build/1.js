@@ -10,13 +10,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 4 modules
-var ionic_angular = __webpack_require__(52);
+var ionic_angular = __webpack_require__(45);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contact-profile/contact-profile.ts
-var contact_profile = __webpack_require__(82);
+var contact_profile = __webpack_require__(55);
 
 // EXTERNAL MODULE: ./src/services/TextAnalysis.service.ts
-var TextAnalysis_service = __webpack_require__(53);
+var TextAnalysis_service = __webpack_require__(56);
 
 // CONCATENATED MODULE: ./src/pages/contacts/contact-profile/contact-profile.module.ts
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -83,13 +83,13 @@ var contact_profile_ngfactory = __webpack_require__(197);
 var common = __webpack_require__(9);
 
 // EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(16);
+var esm5_forms = __webpack_require__(17);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(122);
+var ionic_angular_module = __webpack_require__(123);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
-var module_loader = __webpack_require__(37);
+var module_loader = __webpack_require__(38);
 
 // CONCATENATED MODULE: ./src/pages/contacts/contact-profile/contact-profile.module.ngfactory.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactProfilePageModuleNgFactory", function() { return ContactProfilePageModuleNgFactory; });
