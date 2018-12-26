@@ -14,6 +14,7 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
     this.currentName = '';
     this.askForName = false;
+    console.log(`conversations localStorage:`, JSON.parse(localStorage.getItem("conversations")));
   }
 
   scrapConversation(): void {

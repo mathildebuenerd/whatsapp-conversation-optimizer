@@ -22,22 +22,28 @@ export class ContactProfilePage {
   isAnalyzed: boolean;
   analysis;
 
-  favouriteEmojis: Array<string>;
+  favouriteEmojis: Object;
 
   constructor(analysis: TextAnalysisService) {
     // this.name = name;
     // this.data = Object;
     this.isAnalyzed = false;
     this.analysis = analysis;
+    this.favouriteEmojis = {
+      "out": {},
+      "in": {}
+    };
 
     console.log(`this.analysis`, this.analysis);
-
-
-
   }
 
   analyzeContact() {
-    this.analysis.getEmojis("Mezzo");
+    const emojis = this.analysis.getEmojis("Mezzo");
+    console.log(`emojis received in analyseContact`, emojis);
+    this.favouriteEmojis["out"] = emojis["emojiOut"];
+    this.favouriteEmojis["in"] = emojis["emojiIn"];
+    console.log(`this.favouriteEmojis`, this.favouriteEmojis);
+    this.isAnalyzed = true;
   }
 
   ionViewDidLoad() {

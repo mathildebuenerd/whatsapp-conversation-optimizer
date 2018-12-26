@@ -10,8 +10,21 @@
   </ion-card>
 
   <ion-card *ngIf="isAnalyzed">
-    <ion-card-title>Favourite emojis</ion-card-title>
-    <ion-content>{{ this.favouriteEmojis }}</ion-content>
+    <ion-card-title padding>Favourite emojis</ion-card-title>
+    <div class="container" padding>
+      <h3>Sent</h3>
+      <div class="emoji-list">
+        <span class="emoji" *ngFor="let emoji of favouriteEmojis['out']">{{ emoji }}</span>
+      </div>
+    </div>
+
+    <div class="container" padding>
+      <h3>Received</h3>
+      <div class="emoji-list">
+        <span class="emoji" *ngFor="let emoji of favouriteEmojis['in']">{{ emoji }}</span>
+      </div>
+    </div>
+
   </ion-card>
 
 </ion-content>
