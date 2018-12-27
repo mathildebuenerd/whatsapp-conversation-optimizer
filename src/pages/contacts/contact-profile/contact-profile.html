@@ -1,13 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle="left">
+      <ion-icon name="menu">Return to contact list</ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
 <ion-content padding>
 
-  <ion-card padding>
-    <ion-card-title>{{ this.name }}'s profile</ion-card-title>
-  </ion-card>
+  <ion-title>{{ this.name }}</ion-title>
 
-  <ion-card *ngIf="!isAnalyzed">
+  <div *ngIf="!isAnalyzed">
     <button ion-button
             (click)="analyzeContact()">Analyze contact</button>
-  </ion-card>
+  </div>
 
   <ion-card *ngIf="isAnalyzed">
     <ion-card-title padding>Favourite emojis</ion-card-title>

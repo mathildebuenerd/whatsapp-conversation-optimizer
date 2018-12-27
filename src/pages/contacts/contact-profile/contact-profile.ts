@@ -29,17 +29,31 @@ export class ContactProfilePage {
     // this.name = name;
     // this.data = Object;
     this.analysis = analysis;
+    this.favouriteEmojis = {
+      "out": {},
+      "in": {}
+    };
     // console.log(`this.analysis`, this.analysis);
   }
 
   ngOnInit() {
     // Get the name passed when we came from the precedent page
     this.name = this.navParams.get('contactName');
+
     this.isAnalyzed = false;
-    this.favouriteEmojis = {
-      "out": {},
-      "in": {}
-    };
+
+    if (JSON.parse(localStorage.getItem('analyses'))) {
+      const allAnalyses = JSON.parse(localStorage.getItem('analyses'));
+      for (const entry of allAnalyses) {
+        if (entry.name === this.name) {
+          this.favouriteEmojis = {
+            "out": entry.analyses.emojis.emojiIn,
+            "in": entry.analyses.emojis.emojiOut
+          };
+          this.isAnalyzed = true;
+        }
+      }
+    }
   }
 
   analyzeContact() {

@@ -1,5 +1,3 @@
-import {type} from "os";
-
 export class TextAnalysisService {
 
   constructor() {
@@ -60,14 +58,38 @@ export class TextAnalysisService {
     const emojiIn = this.countEmojis(data.messages[0].messagesIn);
     const emojiOut = this.countEmojis(data.messages[0].messagesOut);
 
-
-
     // const contactConversation = allConversations.get
+
+    this.addToStorage(contact, "emojis", {emojiIn, emojiOut});
 
     return {
       emojiIn,
       emojiOut
     }
+  }
+
+  addToStorage(contactName: string, type: string, data: Object) {
+
+    console.log(`j'ajoute au storage`);
+
+    let analyses;
+
+    if (!JSON.parse(localStorage.getItem('analyses'))) {
+      analyses = [];
+      localStorage.setItem('analyses', JSON.stringify(analyses));
+    }
+
+    analyses = JSON.parse(localStorage.getItem('analyses'));
+    analyses.push({
+      name: contactName,
+      analyses: {
+        [type]: data
+      }
+    });
+
+    console.log(`analyses`, analyses);
+    localStorage.setItem('analyses', JSON.stringify(analyses));
+    console.log(`ce que j'ai ajouté au storage:`, JSON.parse(localStorage.getItem('analyses')));
   }
 
 }
