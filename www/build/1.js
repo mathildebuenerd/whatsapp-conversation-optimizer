@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 240:
+/***/ 238:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,13 +10,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 4 modules
-var ionic_angular = __webpack_require__(45);
+var ionic_angular = __webpack_require__(44);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contact-profile/contact-profile.ts
-var contact_profile = __webpack_require__(56);
+var contact_profile = __webpack_require__(55);
 
 // EXTERNAL MODULE: ./src/services/TextAnalysis.service.ts
-var TextAnalysis_service = __webpack_require__(57);
+var TextAnalysis_service = __webpack_require__(56);
 
 // CONCATENATED MODULE: ./src/pages/contacts/contact-profile/contact-profile.module.ts
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -38,7 +38,7 @@ var contact_profile_module_ContactProfilePageModule = /** @class */ (function ()
                 contact_profile["a" /* ContactProfilePage */],
             ],
             imports: [
-                ionic_angular["d" /* IonicPageModule */].forChild(contact_profile["a" /* ContactProfilePage */]),
+                ionic_angular["e" /* IonicPageModule */].forChild(contact_profile["a" /* ContactProfilePage */]),
             ],
             providers: [
                 TextAnalysis_service["a" /* TextAnalysisService */]
@@ -77,19 +77,19 @@ var select_popover_component_ngfactory = __webpack_require__(197);
 var toast_component_ngfactory = __webpack_require__(198);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contact-profile/contact-profile.ngfactory.js
-var contact_profile_ngfactory = __webpack_require__(200);
+var contact_profile_ngfactory = __webpack_require__(199);
 
 // EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
-var common = __webpack_require__(9);
+var common = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(17);
+var esm5_forms = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(125);
+var ionic_angular_module = __webpack_require__(123);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
-var module_loader = __webpack_require__(39);
+var module_loader = __webpack_require__(38);
 
 // CONCATENATED MODULE: ./src/pages/contacts/contact-profile/contact-profile.module.ngfactory.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactProfilePageModuleNgFactory", function() { return ContactProfilePageModuleNgFactory; });

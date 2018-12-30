@@ -3,37 +3,27 @@
     <button ion-button
             (click)="scrapConversation()">Get this conversation</button>
 
-  <ion-card padding
-            *ngIf="askForName">
-    <ion-card-title>Remember that conversation</ion-card-title>
-    <ion-item>
-      <ion-label stacked>Contact Name</ion-label>
-      <ion-input type="text"
-                 [(ngModel)]="this.currentName"></ion-input>
-    </ion-item>
-    <button ion-button
-            [disabled]="this.currentName === ''"
-            (click)="addConversationToStorage()">Add to storage</button>
-  </ion-card>
+  <!--<ion-card padding-->
+            <!--*ngIf="askForName">-->
+    <!--<ion-card-title>Remember that conversation</ion-card-title>-->
+    <!--<ion-item>-->
+      <!--<ion-label stacked>Contact Name</ion-label>-->
+      <!--<ion-input type="text"-->
+                 <!--[(ngModel)]="this.currentName"></ion-input>-->
+    <!--</ion-item>-->
+    <!--<button ion-button-->
+            <!--[disabled]="this.currentName === ''"-->
+            <!--(click)="addConversationToStorage()">Add to storage</button>-->
+  <!--</ion-card>-->
 
-  <ion-card padding>
-    <ion-card-title>Your stats</ion-card-title>
-    <ion-item>
-      <ion-list-header>Most positive contact</ion-list-header>
-      <ion-content></ion-content>
-    </ion-item>
-
-    <ion-item>
-      <ion-list-header>Most negative contact</ion-list-header>
-      <ion-content></ion-content>
-    </ion-item>
-
-    <ion-item>
-      <ion-list-header>Positivity over days</ion-list-header>
-      <ion-content></ion-content>
-    </ion-item>
-
-  </ion-card>
+  <button ion-button
+          (click)="printLocalStorage('conversations')">
+    Print conversations
+  </button>
+  <button ion-button
+          (click)="printLocalStorage('analyses')">
+    Print analyses
+  </button>
 
 
 </ion-content>

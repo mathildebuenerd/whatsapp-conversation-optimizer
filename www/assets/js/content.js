@@ -123,8 +123,7 @@
       let machineMessage = document.querySelector(`.machine-message p`);
 
       // Decrease the opacity of the background
-      const backgroundToFade = document.querySelector(`.copyable-area > div div:last-child`);
-      backgroundToFade.style.opacity = 0.3;
+      toggleProcessingAnimation();
 
       if (add === '') {
         machineMessage.textContent = message;
@@ -137,8 +136,8 @@
   }).then( () => {
     console.log(`deuxième promesse`);
 
-    removeProcessingAnimation();
-    showSuccessMessage();
+    toggleProcessingAnimation();
+    // showSuccessMessage();
 
     let messages = getMessages();
     return messages;
@@ -153,8 +152,13 @@
       for (const item of emojis) {
         // console.log(`emojis`, emojis);
         // console.log(`item`, item);
-        const emoji = item.attributes[`alt`].nodeValue;
-        emojiList.push(emoji);
+        if (item.attributes[`alt`]) {
+          const emoji = item.attributes[`alt`].nodeValue;
+          emojiList.push(emoji);
+        } else {
+          console.warn(`This item doesn't have an 'alt' attribute :`, item);
+        }
+
       }
 
 
@@ -224,23 +228,30 @@
 
       // });
     }
-    function removeProcessingAnimation() {
-      // Decrease the opacity of the background
-      const backgroundToFade = document.querySelector(`.copyable-area > div div:last-child`);
+
+    // function showSuccessMessage() {
+    //
+    //   // First de down the opacity of the background
+    //   let app = document.querySelector(`.app-wrapper-web`);
+    //   app.style.opacity = 0.3;
+    //
+    //   let successMessage = document.createElement(`div`);
+    //   successMessage.setAttribute(`class`, `success-message`);
+    //   successMessage.textContent = "Perfetto! We got all the messages.";
+    //   document.body.appendChild(successMessage);
+    // }
+  });
+
+  function toggleProcessingAnimation() {
+    // Decrease the opacity of the background
+    const backgroundToFade = document.querySelector(`.copyable-area > div div:last-child`);
+
+    if (backgroundToFade.style.opacity === 1) {
+      backgroundToFade.style.opacity = 0.5;
+    } else {
       backgroundToFade.style.opacity = 1;
     }
-    function showSuccessMessage() {
-
-      // First de down the opacity of the background
-      let app = document.querySelector(`.app-wrapper-web`);
-      app.style.opacity = 0.3;
-
-      let successMessage = document.createElement(`div`);
-      successMessage.setAttribute(`class`, `success-message`);
-      successMessage.textContent = "Perfetto! We got all the messages.";
-      document.body.appendChild(successMessage);
-    }
-  });
+  }
 
 })();
 

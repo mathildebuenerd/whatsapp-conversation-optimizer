@@ -10,10 +10,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 4 modules
-var ionic_angular = __webpack_require__(45);
+var ionic_angular = __webpack_require__(44);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contacts.ts
-var contacts = __webpack_require__(84);
+var contacts = __webpack_require__(81);
 
 // CONCATENATED MODULE: ./src/pages/contacts/contacts.module.ts
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -34,7 +34,7 @@ var contacts_module_ContactsPageModule = /** @class */ (function () {
                 contacts["a" /* ContactsPage */],
             ],
             imports: [
-                ionic_angular["d" /* IonicPageModule */].forChild(contacts["a" /* ContactsPage */]),
+                ionic_angular["e" /* IonicPageModule */].forChild(contacts["a" /* ContactsPage */]),
             ],
         })
     ], ContactsPageModule);
@@ -70,19 +70,19 @@ var select_popover_component_ngfactory = __webpack_require__(197);
 var toast_component_ngfactory = __webpack_require__(198);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contacts.ngfactory.js
-var contacts_ngfactory = __webpack_require__(199);
+var contacts_ngfactory = __webpack_require__(200);
 
 // EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
-var common = __webpack_require__(9);
+var common = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(17);
+var esm5_forms = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(125);
+var ionic_angular_module = __webpack_require__(123);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
-var module_loader = __webpack_require__(39);
+var module_loader = __webpack_require__(38);
 
 // CONCATENATED MODULE: ./src/pages/contacts/contacts.module.ngfactory.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactsPageModuleNgFactory", function() { return ContactsPageModuleNgFactory; });

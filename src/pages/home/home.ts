@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {AlertController, NavController} from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -9,11 +9,10 @@ export class HomePage {
 
   currentName: string;
   currentConversation: Object;
-  askForName: boolean;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,
+              public alertCtrl: AlertController) {
     this.currentName = '';
-    this.askForName = false;
     // localStorage.removeItem("conversations");
     console.log(`conversations localStorage:`, JSON.parse(localStorage.getItem("conversations")));
   }
@@ -24,8 +23,9 @@ export class HomePage {
       console.log("promesse réussie");
       console.log(content);
 
-      this.askForName = true;
       this.currentConversation = content;
+
+      this.askForName();
 
       // console.log(JSON.parse(localStorage.getItem("conversations")));
       // console.log(JSON.parse(localStorage.getItem("conversations")));
@@ -73,6 +73,33 @@ export class HomePage {
 
     this.currentName = "";
     this.currentConversation = "";
-    this.askForName = false;
+  }
+
+  printLocalStorage(key) {
+    console.log(JSON.parse(localStorage.getItem(key)));
+  }
+
+  private askForName() {
+    const promptAlert = this.alertCtrl.create({
+      title: 'Remember that conversation',
+      message: 'Enter contact name',
+      inputs: [
+        {
+          name: 'contact-name',
+          placeholder: 'Julien'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Save conversation',
+          handler: data => {
+            console.log(`data:`, data);
+            this.currentName = data['contact-name'];
+            this.addConversationToStorage();
+          }
+        }
+      ]
+    });
+    promptAlert.present();
   }
 }
