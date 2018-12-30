@@ -274,7 +274,7 @@ var home_HomePage = /** @class */ (function () {
     };
     HomePage.prototype.openAddContactForm = function () {
     };
-    HomePage.prototype.addConversationToStorage = function () {
+    HomePage.prototype.addConversationToStorage = function (contactName, language) {
         var conversations;
         var contactList;
         if (!JSON.parse(localStorage.getItem("conversations"))) {
@@ -291,30 +291,42 @@ var home_HomePage = /** @class */ (function () {
         // we have to first get all the content, modify it and then add it back to the localstorage
         conversations = JSON.parse(localStorage.getItem('conversations'));
         // console.log(conversations);
+        for (var _i = 0, conversations_1 = conversations; _i < conversations_1.length; _i++) {
+            var contact = conversations_1[_i];
+            if (contact[name] === contactName) {
+                // If we have already added that contact, we remove it before adding it again
+                // In order to avoid duplication
+                conversations.pop(contact);
+                break;
+            }
+        }
         conversations.push({
-            name: this.currentName,
+            name: contactName,
+            language: language,
             messages: this.currentConversation
         });
         contactList = JSON.parse(localStorage.getItem('contactList'));
-        contactList.push(this.currentName);
+        contactList.push(contactName);
         localStorage.setItem("conversations", JSON.stringify(conversations));
         localStorage.setItem('contactList', JSON.stringify(contactList));
         console.log(JSON.parse(localStorage.getItem("conversations")));
-        this.currentName = "";
+        // this.currentName = "";
         this.currentConversation = "";
-    };
-    HomePage.prototype.printLocalStorage = function (key) {
-        console.log(JSON.parse(localStorage.getItem(key)));
     };
     HomePage.prototype.askForName = function () {
         var _this = this;
         var promptAlert = this.alertCtrl.create({
             title: 'Remember that conversation',
-            message: 'Enter contact name',
+            message: 'Enter contact name and language of the conversation',
             inputs: [
                 {
                     name: 'contact-name',
                     placeholder: 'Julien'
+                },
+                {
+                    name: 'language',
+                    placeholder: "enter the code, eg 'en' for english",
+                    value: 'en'
                 }
             ],
             buttons: [
@@ -322,13 +334,36 @@ var home_HomePage = /** @class */ (function () {
                     text: 'Save conversation',
                     handler: function (data) {
                         console.log("data:", data);
-                        _this.currentName = data['contact-name'];
-                        _this.addConversationToStorage();
+                        // this.currentName = data['contact-name'];
+                        _this.addConversationToStorage(data['contact-name'], data['language']);
                     }
                 }
             ]
         });
         promptAlert.present();
+    };
+    HomePage.prototype.printLocalStorage = function (key) {
+        console.log(JSON.parse(localStorage.getItem(key)));
+    };
+    HomePage.prototype.emptyStorage = function () {
+        // Confirm alert to avoid deleting accidentally the data
+        var confirmAlert = this.alertCtrl.create({
+            title: 'You are going to completly empty the storage',
+            message: 'Are you sure you want to delete all the data?',
+            buttons: [
+                {
+                    text: 'Cancel',
+                    role: 'cancel'
+                },
+                {
+                    text: 'Delete',
+                    handler: function () {
+                        localStorage.clear();
+                    }
+                }
+            ]
+        });
+        confirmAlert.present();
     };
     HomePage = __decorate([
         Object(core["k" /* Component */])({
@@ -613,7 +648,7 @@ var alert_controller = __webpack_require__(62);
 var styles_HomePage = [];
 var RenderType_HomePage = core["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_HomePage, data: {} });
 
-function View_HomePage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 26, "ion-content", [["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](1, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n    "])), (_l()(), core["_17" /* ɵeld */](3, 0, null, 1, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+function View_HomePage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 30, "ion-content", [["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_16" /* ɵdid */](1, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], core["p" /* ElementRef */], core["N" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["G" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n    "])), (_l()(), core["_17" /* ɵeld */](3, 0, null, 1, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.scrapConversation() !== false);
         ad = (pd_0 && ad);
     } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](4, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["Get this conversation"])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n            "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n      "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n      "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n                 "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n            "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n            "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_17" /* ɵeld */](19, 0, null, 1, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
@@ -622,7 +657,10 @@ function View_HomePage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core[
     } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](20, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n    Print conversations\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n  "])), (_l()(), core["_17" /* ɵeld */](23, 0, null, 1, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.printLocalStorage("analyses") !== false);
         ad = (pd_0 && ad);
-    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](24, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n    Print analyses\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n\n"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n\n"]))], null, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 1).statusbarPadding; var currVal_1 = core["_29" /* ɵnov */](_v, 1)._hasRefresher; _ck(_v, 0, 0, currVal_0, currVal_1); }); }
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](24, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n    Print analyses\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n  "])), (_l()(), core["_17" /* ɵeld */](27, 0, null, 1, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.emptyStorage() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](28, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n    Empty storage\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n\n"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n\n\n"]))], null, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 1).statusbarPadding; var currVal_1 = core["_29" /* ɵnov */](_v, 1)._hasRefresher; _ck(_v, 0, 0, currVal_0, currVal_1); }); }
 function View_HomePage_Host_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "page-home", [], null, null, null, View_HomePage_0, RenderType_HomePage)), core["_16" /* ɵdid */](1, 49152, null, 0, home_HomePage, [nav_controller["a" /* NavController */], alert_controller["a" /* AlertController */]], null, null)], null, null); }
 var HomePageNgFactory = core["_13" /* ɵccf */]("page-home", home_HomePage, View_HomePage_Host_0, {}, {}, []);
 

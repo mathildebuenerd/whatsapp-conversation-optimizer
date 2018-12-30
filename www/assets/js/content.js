@@ -1,15 +1,16 @@
 (function getContent() {
   return new Promise((resolve, reject) => {
 
-    // Add some custom CSS for the UIs
+    // Add some custom CSS for the UI
     addCustomCSS();
+    toggleProcessingAnimation();
 
     // Get the element that contains all the messages
     // It's an infinite scroll so we have to scroll it until the end in order to get all the messages
     const containerToScroll = document.querySelector(`.copyable-area > div`);
 
     // Message explaining to the user what's happening
-    machineProcessingMessage(`We are getting all the messages...`);
+    machineProcessingMessage(`We are scrolling all the conversation to get all the messages...`);
 
     // We setup a variable to count how many times in a row we are not able to scroll top anymore
     // If it's more than 5 times, it probable means that we have reached the top of the conversation thread
@@ -47,11 +48,12 @@
 
     function addCustomCSS() {
 
-      let myStyle = document.createElement('style');
-      myStyle.setAttribute(`id`, `custom-style`);
-      myStyle.type = 'text/css';
-      myStyle.innerHTML =
-        `.machine-message {
+      if (!document.querySelector("#custom-style")) {
+        let myStyle = document.createElement('style');
+        myStyle.setAttribute(`id`, `custom-style`);
+        myStyle.type = 'text/css';
+        myStyle.innerHTML =
+          `.machine-message {
           position: fixed;
           top: 0;
           left: 0;
@@ -100,44 +102,33 @@
           80%{opacity: 1; transform: scale(1);}
           100%{opacity: 0; transform: scale(0);}
         }`;
-      document.querySelector('head').appendChild(myStyle);
-
-      // Add the tag for the machine messages
-      const machineMessage = document.createElement(`div`);
-      const machineMessageText = document.createElement(`p`);
-      machineMessage.setAttribute(`class`, `machine-message`);
-      machineMessage.appendChild(machineMessageText);
-      document.body.appendChild(machineMessage);
-
-      //  reduce the height of the whatsapp app to let space for the machine messages
-      const app = document.querySelector(`#app`);
-      app.style.height = `90vh`;
-      app.style.position = `absolute`;
-      app.style.bottom = `0`;
-      app.style.top = `auto`;
-
-    }
-
-    function machineProcessingMessage(message, add = '') {
-
-      let machineMessage = document.querySelector(`.machine-message p`);
-
-      // Decrease the opacity of the background
-      toggleProcessingAnimation();
-
-      if (add === '') {
-        machineMessage.textContent = message;
-      } else if (add === 'add') {
-        machineMessage.textContent += ` ${message}`;
+        document.querySelector('head').appendChild(myStyle);
       }
+
+      if (!document.querySelector(".machine-message")) {
+        // Add the tag for the machine messages
+        const machineMessage = document.createElement(`div`);
+        const machineMessageText = document.createElement(`p`);
+        machineMessage.setAttribute(`class`, `machine-message`);
+        machineMessage.appendChild(machineMessageText);
+        document.body.appendChild(machineMessage);
+
+        //  reduce the height of the whatsapp app to let space for the machine messages
+        const app = document.querySelector(`#app`);
+        app.style.height = `90vh`;
+        app.style.position = `absolute`;
+        app.style.bottom = `0`;
+        app.style.top = `auto`;
+      }
+
     }
+
 
 
   }).then( () => {
     console.log(`deuxième promesse`);
 
     toggleProcessingAnimation();
-    // showSuccessMessage();
 
     let messages = getMessages();
     return messages;
@@ -145,6 +136,8 @@
     function getEmojis(message) {
       // In whatsapp, the emojis are displayed as an image
       // But the alt text is the unicode character
+
+      machineProcessingMessage(`We are getting all the emojis`);
 
       let emojis = message.querySelectorAll(`img:not(._1JVSX)`);
       let emojiList = [];
@@ -225,33 +218,30 @@
         messagesOut: messagesOut
       };
       return allMessages;
-
-      // });
     }
-
-    // function showSuccessMessage() {
-    //
-    //   // First de down the opacity of the background
-    //   let app = document.querySelector(`.app-wrapper-web`);
-    //   app.style.opacity = 0.3;
-    //
-    //   let successMessage = document.createElement(`div`);
-    //   successMessage.setAttribute(`class`, `success-message`);
-    //   successMessage.textContent = "Perfetto! We got all the messages.";
-    //   document.body.appendChild(successMessage);
-    // }
   });
 
   function toggleProcessingAnimation() {
     // Decrease the opacity of the background
-    const backgroundToFade = document.querySelector(`.copyable-area > div div:last-child`);
+    const backgroundToFade = document.querySelector(`._9tCEa`);
 
-    if (backgroundToFade.style.opacity === 1) {
-      backgroundToFade.style.opacity = 0.5;
+    if (window.getComputedStyle(backgroundToFade, null).getPropertyValue('opacity') === '1') {
+      backgroundToFade.style.opacity = '0.5';
     } else {
-      backgroundToFade.style.opacity = 1;
+      backgroundToFade.style.opacity = '1';
     }
   }
+  function machineProcessingMessage(message, add = '') {
+
+    let machineMessage = document.querySelector(`.machine-message p`);
+
+    if (add === '') {
+      machineMessage.textContent = message;
+    } else if (add === 'add') {
+      machineMessage.textContent += ` ${message}`;
+    }
+  }
+
 
 })();
 

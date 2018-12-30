@@ -25678,11 +25678,11 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-html, body {
-  width: 400px !important;
-  height: 400px !important;
-  position: static;
-  z-index: 999;
+.button-md {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .toolbar-title.toolbar-title-md {

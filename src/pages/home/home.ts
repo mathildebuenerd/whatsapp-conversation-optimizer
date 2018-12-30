@@ -24,7 +24,6 @@ export class HomePage {
       console.log(content);
 
       this.currentConversation = content;
-
       this.askForName();
 
       // console.log(JSON.parse(localStorage.getItem("conversations")));
@@ -38,7 +37,7 @@ export class HomePage {
 
   }
 
-  addConversationToStorage() {
+  addConversationToStorage(contactName, language) {
     let conversations;
     let contactList;
     if (!JSON.parse(localStorage.getItem("conversations"))) {
@@ -58,35 +57,48 @@ export class HomePage {
     // we have to first get all the content, modify it and then add it back to the localstorage
     conversations = JSON.parse(localStorage.getItem('conversations'));
     // console.log(conversations);
+
+    for (const contact of conversations) {
+      if (contact[name] === contactName) {
+        // If we have already added that contact, we remove it before adding it again
+        // In order to avoid duplication
+        conversations.pop(contact);
+        break;
+      }
+    }
     conversations.push({
-      name: this.currentName,
+      name: contactName,
+      language: language,
       messages: this.currentConversation
     });
 
     contactList = JSON.parse(localStorage.getItem('contactList'));
-    contactList.push(this.currentName);
+    contactList.push(contactName);
 
     localStorage.setItem("conversations", JSON.stringify(conversations));
     localStorage.setItem('contactList', JSON.stringify(contactList));
     console.log(JSON.parse(localStorage.getItem("conversations")));
 
 
-    this.currentName = "";
+    // this.currentName = "";
     this.currentConversation = "";
   }
 
-  printLocalStorage(key) {
-    console.log(JSON.parse(localStorage.getItem(key)));
-  }
+
 
   private askForName() {
     const promptAlert = this.alertCtrl.create({
       title: 'Remember that conversation',
-      message: 'Enter contact name',
+      message: 'Enter contact name and language of the conversation',
       inputs: [
         {
           name: 'contact-name',
           placeholder: 'Julien'
+        },
+        {
+          name: 'language',
+          placeholder: `enter the code, eg 'en' for english`,
+          value: 'en'
         }
       ],
       buttons: [
@@ -94,12 +106,36 @@ export class HomePage {
           text: 'Save conversation',
           handler: data => {
             console.log(`data:`, data);
-            this.currentName = data['contact-name'];
-            this.addConversationToStorage();
+            // this.currentName = data['contact-name'];
+            this.addConversationToStorage(data['contact-name'], data['language']);
           }
         }
       ]
     });
     promptAlert.present();
+  }
+
+  printLocalStorage(key) {
+    console.log(JSON.parse(localStorage.getItem(key)));
+  }
+  emptyStorage() {
+    // Confirm alert to avoid deleting accidentally the data
+    let confirmAlert = this.alertCtrl.create({
+      title: 'You are going to completly empty the storage',
+      message: 'Are you sure you want to delete all the data?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        },
+        {
+          text: 'Delete',
+          handler: () => {
+            localStorage.clear();
+          }
+        }
+      ]
+    });
+    confirmAlert.present();
   }
 }
