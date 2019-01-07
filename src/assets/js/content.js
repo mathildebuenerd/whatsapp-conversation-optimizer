@@ -154,7 +154,6 @@
 
       }
 
-
       console.log("emojiList", emojiList);
       return emojiList;
 
