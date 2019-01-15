@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 238:
+/***/ 249:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13,7 +13,7 @@ var core = __webpack_require__(0);
 var ionic_angular = __webpack_require__(44);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contacts.ts
-var contacts = __webpack_require__(81);
+var contacts = __webpack_require__(82);
 
 // CONCATENATED MODULE: ./src/pages/contacts/contacts.module.ts
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -43,34 +43,34 @@ var contacts_module_ContactsPageModule = /** @class */ (function () {
 
 //# sourceMappingURL=contacts.module.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
-var action_sheet_component_ngfactory = __webpack_require__(190);
+var action_sheet_component_ngfactory = __webpack_require__(191);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
-var alert_component_ngfactory = __webpack_require__(191);
+var alert_component_ngfactory = __webpack_require__(192);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
-var app_root_ngfactory = __webpack_require__(192);
+var app_root_ngfactory = __webpack_require__(193);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js + 1 modules
-var loading_component_ngfactory = __webpack_require__(193);
+var loading_component_ngfactory = __webpack_require__(194);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
-var modal_component_ngfactory = __webpack_require__(194);
+var modal_component_ngfactory = __webpack_require__(195);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
-var picker_component_ngfactory = __webpack_require__(195);
+var picker_component_ngfactory = __webpack_require__(196);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
-var popover_component_ngfactory = __webpack_require__(196);
+var popover_component_ngfactory = __webpack_require__(197);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js + 1 modules
-var select_popover_component_ngfactory = __webpack_require__(197);
+var select_popover_component_ngfactory = __webpack_require__(198);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
-var toast_component_ngfactory = __webpack_require__(198);
+var toast_component_ngfactory = __webpack_require__(199);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contacts.ngfactory.js
-var contacts_ngfactory = __webpack_require__(199);
+var contacts_ngfactory = __webpack_require__(201);
 
 // EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
 var common = __webpack_require__(10);
@@ -79,7 +79,7 @@ var common = __webpack_require__(10);
 var esm5_forms = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(123);
+var ionic_angular_module = __webpack_require__(124);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
 var module_loader = __webpack_require__(38);

@@ -10,9 +10,14 @@
 
   <ion-title>{{ this.name }}</ion-title>
 
-  <div *ngIf="!isAnalyzed">
+  <div>
     <button ion-button
+            *ngIf="!isAnalyzed"
             (click)="analyzeContact()">Analyze contact</button>
+
+    <button ion-button
+            *ngIf="isAnalyzed"
+            (click)="analyzeContact()">Update contact analysis</button>
   </div>
 
   <ion-card *ngIf="isAnalyzed">

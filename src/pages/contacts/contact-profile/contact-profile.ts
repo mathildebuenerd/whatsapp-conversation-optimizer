@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import { TextAnalysisService } from "../../../services/TextAnalysis.service";
+import { SentimentAnalysisService } from "../../../services/SentimentAnalysis.service";
 
 
 /**
@@ -25,6 +26,7 @@ export class ContactProfilePage {
   favouriteEmojis: Object;
 
   constructor(analysis: TextAnalysisService,
+              sentiment: SentimentAnalysisService,
               public navParams: NavParams) {
     // this.name = name;
     // this.data = Object;
@@ -61,8 +63,17 @@ export class ContactProfilePage {
     console.log(`emojis received in analyseContact`, emojis);
     this.favouriteEmojis["out"] = emojis["emojiOut"];
     this.favouriteEmojis["in"] = emojis["emojiIn"];
+
+
+
     console.log(`this.favouriteEmojis`, this.favouriteEmojis);
     this.isAnalyzed = true;
+
+  //  Integration of the sentiment analysis
+    const testSentiment = this.analysis.sentiment();
+    console.log(testSentiment);
+
+
   }
 
 

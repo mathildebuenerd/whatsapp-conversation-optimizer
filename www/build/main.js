@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 133:
+/***/ 134:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,20 +13,20 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 133;
+webpackEmptyAsyncContext.id = 134;
 
 /***/ }),
 
-/***/ 163:
+/***/ 164:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/contacts/contact-profile/contact-profile.module.ngfactory": [
-		239,
+		248,
 		1
 	],
 	"../pages/contacts/contacts.module.ngfactory": [
-		238,
+		249,
 		0
 	]
 };
@@ -41,12 +41,109 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 163;
+webpackAsyncContext.id = 164;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export RenderType_ContactProfilePage */
+/* unused harmony export View_ContactProfilePage_0 */
+/* unused harmony export View_ContactProfilePage_Host_0 */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactProfilePageNgFactory; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_button_button_ngfactory__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular_components_button_button__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular_components_card_card__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular_components_card_card_title__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_angular_components_toolbar_toolbar_header__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__node_modules_ionic_angular_components_toolbar_navbar_ngfactory__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ionic_angular_components_app_app__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ionic_angular_navigation_nav_controller__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ionic_angular_components_menu_menu_toggle__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ionic_angular_components_app_menu_controller__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_ionic_angular_components_toolbar_toolbar_item__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ionic_angular_components_toolbar_toolbar__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_ionic_angular_components_icon_icon__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__node_modules_ionic_angular_components_content_content_ngfactory__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ionic_angular_components_content_content__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ionic_angular_platform_platform__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic_angular_platform_dom_controller__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ionic_angular_platform_keyboard__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_ionic_angular_components_toolbar_toolbar_title__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__contact_profile__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_TextAnalysis_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__services_SentimentAnalysis_service__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28_ionic_angular_navigation_nav_params__ = __webpack_require__(9);
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var styles_ContactProfilePage = [];
+var RenderType_ContactProfilePage = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_ContactProfilePage, data: {} });
+
+function View_ContactProfilePage_1(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.analyzeContact() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_button_button_ngfactory__["b" /* View_Button_0 */], __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_button_button_ngfactory__["a" /* RenderType_Button */])), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](1, 1097728, null, 0, __WEBPACK_IMPORTED_MODULE_2_ionic_angular_components_button_button__["a" /* Button */], [[8, ""], __WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 0, ["Analyze contact"]))], null, null); }
+function View_ContactProfilePage_2(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.analyzeContact() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_button_button_ngfactory__["b" /* View_Button_0 */], __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_button_button_ngfactory__["a" /* RenderType_Button */])), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](1, 1097728, null, 0, __WEBPACK_IMPORTED_MODULE_2_ionic_angular_components_button_button__["a" /* Button */], [[8, ""], __WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 0, ["Update contact analysis"]))], null, null); }
+function View_ContactProfilePage_4(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 7, "span", [["class", "emoji"]], [[1, "data-occurrence", 0]], null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n          "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](2, 0, null, null, 1, "span", [["class", "emoji-character"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](3, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n          "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](5, 0, null, null, 1, "span", [["class", "emoji-occurrence"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](6, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n        "]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.occurrence; _ck(_v, 0, 0, currVal_0); var currVal_1 = _v.context.$implicit.character; _ck(_v, 3, 0, currVal_1); var currVal_2 = _v.context.$implicit.occurrence; _ck(_v, 6, 0, currVal_2); }); }
+function View_ContactProfilePage_5(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 7, "span", [["class", "emoji"]], [[1, "data-occurrence", 0]], null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n          "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](2, 0, null, null, 1, "span", [["class", "emoji-character"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](3, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n          "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](5, 0, null, null, 1, "span", [["class", "emoji-occurrence"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](6, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n        "]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.occurrence; _ck(_v, 0, 0, currVal_0); var currVal_1 = _v.context.$implicit.character; _ck(_v, 3, 0, currVal_1); var currVal_2 = _v.context.$implicit.occurrence; _ck(_v, 6, 0, currVal_2); }); }
+function View_ContactProfilePage_3(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 34, "ion-card", [], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](1, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_4_ionic_angular_components_card_card__["a" /* Card */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](3, 0, null, null, 2, "ion-card-title", [["padding", ""]], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](4, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_5_ionic_angular_components_card_card_title__["a" /* CardTitle */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["Favourite emojis"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](7, 0, null, null, 11, "div", [["class", "container"], ["padding", ""]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](9, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["Sent"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](12, 0, null, null, 4, "div", [["class", "emoji-list"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵand */](16777216, null, null, 1, null, View_ContactProfilePage_4)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](15, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_6__angular_common__["h" /* NgForOf */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* TemplateRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](21, 0, null, null, 11, "div", [["class", "container"], ["padding", ""]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](23, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["Received"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](26, 0, null, null, 4, "div", [["class", "emoji-list"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵand */](16777216, null, null, 1, null, View_ContactProfilePage_5)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](29, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_6__angular_common__["h" /* NgForOf */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* TemplateRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n\n  "]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.favouriteEmojis["out"]; _ck(_v, 15, 0, currVal_0); var currVal_1 = _co.favouriteEmojis["in"]; _ck(_v, 29, 0, currVal_1); }, null); }
+function View_ContactProfilePage_0(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 16, "ion-header", [], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](1, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_7_ionic_angular_components_toolbar_toolbar_header__["a" /* Header */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], [2, __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__["a" /* ViewController */]]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](3, 0, null, null, 12, "ion-navbar", [["class", "toolbar"]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, __WEBPACK_IMPORTED_MODULE_9__node_modules_ionic_angular_components_toolbar_navbar_ngfactory__["b" /* View_Navbar_0 */], __WEBPACK_IMPORTED_MODULE_9__node_modules_ionic_angular_components_toolbar_navbar_ngfactory__["a" /* RenderType_Navbar */])), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](4, 49152, null, 0, __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__["a" /* Navbar */], [__WEBPACK_IMPORTED_MODULE_11_ionic_angular_components_app_app__["a" /* App */], [2, __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__["a" /* ViewController */]], [2, __WEBPACK_IMPORTED_MODULE_12_ionic_angular_navigation_nav_controller__["a" /* NavController */]], __WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 3, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](6, 0, null, 0, 8, "button", [["menuToggle", "left"]], [[8, "hidden", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (__WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 7).toggle() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](7, 1064960, null, 0, __WEBPACK_IMPORTED_MODULE_13_ionic_angular_components_menu_menu_toggle__["a" /* MenuToggle */], [__WEBPACK_IMPORTED_MODULE_14_ionic_angular_components_app_menu_controller__["a" /* MenuController */], [2, __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__["a" /* ViewController */]], [2, __WEBPACK_IMPORTED_MODULE_2_ionic_angular_components_button_button__["a" /* Button */]], [2, __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__["a" /* Navbar */]]], { menuToggle: [0, "menuToggle"] }, null), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](8, 16384, null, 1, __WEBPACK_IMPORTED_MODULE_15_ionic_angular_components_toolbar_toolbar_item__["a" /* ToolbarItem */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], [2, __WEBPACK_IMPORTED_MODULE_16_ionic_angular_components_toolbar_toolbar__["a" /* Toolbar */]], [2, __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__["a" /* Navbar */]]], null, null), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_34" /* ɵqud */](603979776, 1, { _buttons: 1 }), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](11, 0, null, null, 2, "ion-icon", [["name", "menu"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](12, 147456, null, 0, __WEBPACK_IMPORTED_MODULE_17_ionic_angular_components_icon_icon__["a" /* Icon */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["Return to contact list"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 3, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](18, 0, null, null, 18, "ion-content", [["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, __WEBPACK_IMPORTED_MODULE_18__node_modules_ionic_angular_components_content_content_ngfactory__["b" /* View_Content_0 */], __WEBPACK_IMPORTED_MODULE_18__node_modules_ionic_angular_components_content_content_ngfactory__["a" /* RenderType_Content */])), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](19, 4374528, null, 0, __WEBPACK_IMPORTED_MODULE_19_ionic_angular_components_content_content__["a" /* Content */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_20_ionic_angular_platform_platform__["a" /* Platform */], __WEBPACK_IMPORTED_MODULE_21_ionic_angular_platform_dom_controller__["a" /* DomController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], __WEBPACK_IMPORTED_MODULE_11_ionic_angular_components_app_app__["a" /* App */], __WEBPACK_IMPORTED_MODULE_22_ionic_angular_platform_keyboard__["a" /* Keyboard */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgZone */], [2, __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__["a" /* ViewController */]], [2, __WEBPACK_IMPORTED_MODULE_12_ionic_angular_navigation_nav_controller__["a" /* NavController */]]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](21, 0, null, 1, 2, "ion-title", [], null, null, null, __WEBPACK_IMPORTED_MODULE_23__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__["b" /* View_ToolbarTitle_0 */], __WEBPACK_IMPORTED_MODULE_23__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__["a" /* RenderType_ToolbarTitle */])), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](22, 49152, null, 0, __WEBPACK_IMPORTED_MODULE_24_ionic_angular_components_toolbar_toolbar_title__["a" /* ToolbarTitle */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], [2, __WEBPACK_IMPORTED_MODULE_16_ionic_angular_components_toolbar_toolbar__["a" /* Toolbar */]], [2, __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__["a" /* Navbar */]]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](23, 0, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](25, 0, null, 1, 7, "div", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵand */](16777216, null, null, 1, null, View_ContactProfilePage_1)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](28, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_6__angular_common__["i" /* NgIf */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵand */](16777216, null, null, 1, null, View_ContactProfilePage_2)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](31, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_6__angular_common__["i" /* NgIf */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵand */](16777216, null, 1, 1, null, View_ContactProfilePage_3)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](35, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_6__angular_common__["i" /* NgIf */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 1, ["\n\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_3 = "left"; _ck(_v, 7, 0, currVal_3); var currVal_5 = "menu"; _ck(_v, 12, 0, currVal_5); var currVal_9 = !_co.isAnalyzed; _ck(_v, 28, 0, currVal_9); var currVal_10 = _co.isAnalyzed; _ck(_v, 31, 0, currVal_10); var currVal_11 = _co.isAnalyzed; _ck(_v, 35, 0, currVal_11); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 4)._hidden; var currVal_1 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 4)._sbPadding; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_2 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 7).isHidden; _ck(_v, 6, 0, currVal_2); var currVal_4 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 12)._hidden; _ck(_v, 11, 0, currVal_4); var currVal_6 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 19).statusbarPadding; var currVal_7 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 19)._hasRefresher; _ck(_v, 18, 0, currVal_6, currVal_7); var currVal_8 = _co.name; _ck(_v, 23, 0, currVal_8); }); }
+function View_ContactProfilePage_Host_0(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 1, "page-contact-profile", [], null, null, null, View_ContactProfilePage_0, RenderType_ContactProfilePage)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](1, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_25__contact_profile__["a" /* ContactProfilePage */], [__WEBPACK_IMPORTED_MODULE_26__services_TextAnalysis_service__["a" /* TextAnalysisService */], __WEBPACK_IMPORTED_MODULE_27__services_SentimentAnalysis_service__["a" /* SentimentAnalysisService */], __WEBPACK_IMPORTED_MODULE_28_ionic_angular_navigation_nav_params__["a" /* NavParams */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+var ContactProfilePageNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵccf */]("page-contact-profile", __WEBPACK_IMPORTED_MODULE_25__contact_profile__["a" /* ContactProfilePage */], View_ContactProfilePage_Host_0, {}, {}, []);
+
+//# sourceMappingURL=contact-profile.ngfactory.js.map
+
+/***/ }),
+
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55,22 +152,22 @@ module.exports = webpackAsyncContext;
 /* unused harmony export View_ContactsPage_Host_0 */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsPageNgFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_item_item_ngfactory__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_item_item_ngfactory__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular_components_item_item__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular_util_form__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular_config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular_components_item_item_reorder__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_angular_components_item_item_content__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_angular_components_toolbar_toolbar_header__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_angular_components_toolbar_toolbar_header__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__node_modules_ionic_angular_components_toolbar_navbar_ngfactory__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__node_modules_ionic_angular_components_toolbar_navbar_ngfactory__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ionic_angular_components_app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ionic_angular_navigation_nav_controller__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ionic_angular_components_toolbar_toolbar_title__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_ionic_angular_components_toolbar_toolbar__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__node_modules_ionic_angular_components_content_content_ngfactory__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__node_modules_ionic_angular_components_content_content_ngfactory__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_ionic_angular_components_content_content__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_ionic_angular_platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ionic_angular_platform_dom_controller__ = __webpack_require__(7);
@@ -78,7 +175,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic_angular_components_list_list__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ionic_angular_gestures_gesture_controller__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_common__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__contacts__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__contacts__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_ionic_angular_navigation_nav_params__ = __webpack_require__(9);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
@@ -127,98 +224,7 @@ var ContactsPageNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /*
 
 /***/ }),
 
-/***/ 200:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export RenderType_ContactProfilePage */
-/* unused harmony export View_ContactProfilePage_0 */
-/* unused harmony export View_ContactProfilePage_Host_0 */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactProfilePageNgFactory; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_button_button_ngfactory__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular_components_button_button__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular_components_card_card__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular_components_card_card_title__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_angular_components_toolbar_toolbar_header__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__node_modules_ionic_angular_components_toolbar_navbar_ngfactory__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ionic_angular_components_app_app__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ionic_angular_navigation_nav_controller__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ionic_angular_components_menu_menu_toggle__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ionic_angular_components_app_menu_controller__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_ionic_angular_components_toolbar_toolbar_item__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ionic_angular_components_toolbar_toolbar__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_ionic_angular_components_icon_icon__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__node_modules_ionic_angular_components_content_content_ngfactory__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ionic_angular_components_content_content__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ionic_angular_platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic_angular_platform_dom_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ionic_angular_platform_keyboard__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_ionic_angular_components_toolbar_toolbar_title__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__contact_profile__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_TextAnalysis_service__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27_ionic_angular_navigation_nav_params__ = __webpack_require__(9);
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var styles_ContactProfilePage = [];
-var RenderType_ContactProfilePage = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_ContactProfilePage, data: {} });
-
-function View_ContactProfilePage_1(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 5, "div", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](2, 0, null, null, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.analyzeContact() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_button_button_ngfactory__["b" /* View_Button_0 */], __WEBPACK_IMPORTED_MODULE_1__node_modules_ionic_angular_components_button_button_ngfactory__["a" /* RenderType_Button */])), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](3, 1097728, null, 0, __WEBPACK_IMPORTED_MODULE_2_ionic_angular_components_button_button__["a" /* Button */], [[8, ""], __WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 0, ["Analyze contact"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n  "]))], null, null); }
-function View_ContactProfilePage_3(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 7, "span", [["class", "emoji"]], [[1, "data-occurrence", 0]], null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n          "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](2, 0, null, null, 1, "span", [["class", "emoji-character"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](3, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n          "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](5, 0, null, null, 1, "span", [["class", "emoji-occurrence"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](6, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n        "]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.occurrence; _ck(_v, 0, 0, currVal_0); var currVal_1 = _v.context.$implicit.character; _ck(_v, 3, 0, currVal_1); var currVal_2 = _v.context.$implicit.occurrence; _ck(_v, 6, 0, currVal_2); }); }
-function View_ContactProfilePage_4(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 7, "span", [["class", "emoji"]], [[1, "data-occurrence", 0]], null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n          "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](2, 0, null, null, 1, "span", [["class", "emoji-character"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](3, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n          "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](5, 0, null, null, 1, "span", [["class", "emoji-occurrence"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](6, null, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n        "]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.occurrence; _ck(_v, 0, 0, currVal_0); var currVal_1 = _v.context.$implicit.character; _ck(_v, 3, 0, currVal_1); var currVal_2 = _v.context.$implicit.occurrence; _ck(_v, 6, 0, currVal_2); }); }
-function View_ContactProfilePage_2(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 34, "ion-card", [], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](1, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_4_ionic_angular_components_card_card__["a" /* Card */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](3, 0, null, null, 2, "ion-card-title", [["padding", ""]], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](4, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_5_ionic_angular_components_card_card_title__["a" /* CardTitle */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["Favourite emojis"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](7, 0, null, null, 11, "div", [["class", "container"], ["padding", ""]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](9, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["Sent"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](12, 0, null, null, 4, "div", [["class", "emoji-list"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵand */](16777216, null, null, 1, null, View_ContactProfilePage_3)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](15, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_6__angular_common__["h" /* NgForOf */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* TemplateRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](21, 0, null, null, 11, "div", [["class", "container"], ["padding", ""]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](23, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["Received"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](26, 0, null, null, 4, "div", [["class", "emoji-list"]], null, null, null, null, null)), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n        "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵand */](16777216, null, null, 1, null, View_ContactProfilePage_4)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](29, 802816, null, 0, __WEBPACK_IMPORTED_MODULE_6__angular_common__["h" /* NgForOf */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* TemplateRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, [" "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n\n  "]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.favouriteEmojis["out"]; _ck(_v, 15, 0, currVal_0); var currVal_1 = _co.favouriteEmojis["in"]; _ck(_v, 29, 0, currVal_1); }, null); }
-function View_ContactProfilePage_0(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 16, "ion-header", [], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](1, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_7_ionic_angular_components_toolbar_toolbar_header__["a" /* Header */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], [2, __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__["a" /* ViewController */]]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](3, 0, null, null, 12, "ion-navbar", [["class", "toolbar"]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, __WEBPACK_IMPORTED_MODULE_9__node_modules_ionic_angular_components_toolbar_navbar_ngfactory__["b" /* View_Navbar_0 */], __WEBPACK_IMPORTED_MODULE_9__node_modules_ionic_angular_components_toolbar_navbar_ngfactory__["a" /* RenderType_Navbar */])), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](4, 49152, null, 0, __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__["a" /* Navbar */], [__WEBPACK_IMPORTED_MODULE_11_ionic_angular_components_app_app__["a" /* App */], [2, __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__["a" /* ViewController */]], [2, __WEBPACK_IMPORTED_MODULE_12_ionic_angular_navigation_nav_controller__["a" /* NavController */]], __WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 3, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](6, 0, null, 0, 8, "button", [["menuToggle", "left"]], [[8, "hidden", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (__WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 7).toggle() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](7, 1064960, null, 0, __WEBPACK_IMPORTED_MODULE_13_ionic_angular_components_menu_menu_toggle__["a" /* MenuToggle */], [__WEBPACK_IMPORTED_MODULE_14_ionic_angular_components_app_menu_controller__["a" /* MenuController */], [2, __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__["a" /* ViewController */]], [2, __WEBPACK_IMPORTED_MODULE_2_ionic_angular_components_button_button__["a" /* Button */]], [2, __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__["a" /* Navbar */]]], { menuToggle: [0, "menuToggle"] }, null), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](8, 16384, null, 1, __WEBPACK_IMPORTED_MODULE_15_ionic_angular_components_toolbar_toolbar_item__["a" /* ToolbarItem */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], [2, __WEBPACK_IMPORTED_MODULE_16_ionic_angular_components_toolbar_toolbar__["a" /* Toolbar */]], [2, __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__["a" /* Navbar */]]], null, null), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_34" /* ɵqud */](603979776, 1, { _buttons: 1 }), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n      "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](11, 0, null, null, 2, "ion-icon", [["name", "menu"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](12, 147456, null, 0, __WEBPACK_IMPORTED_MODULE_17_ionic_angular_components_icon_icon__["a" /* Icon */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["Return to contact list"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n    "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 3, ["\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](18, 0, null, null, 12, "ion-content", [["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, __WEBPACK_IMPORTED_MODULE_18__node_modules_ionic_angular_components_content_content_ngfactory__["b" /* View_Content_0 */], __WEBPACK_IMPORTED_MODULE_18__node_modules_ionic_angular_components_content_content_ngfactory__["a" /* RenderType_Content */])), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](19, 4374528, null, 0, __WEBPACK_IMPORTED_MODULE_19_ionic_angular_components_content_content__["a" /* Content */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_20_ionic_angular_platform_platform__["a" /* Platform */], __WEBPACK_IMPORTED_MODULE_21_ionic_angular_platform_dom_controller__["a" /* DomController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], __WEBPACK_IMPORTED_MODULE_11_ionic_angular_components_app_app__["a" /* App */], __WEBPACK_IMPORTED_MODULE_22_ionic_angular_platform_keyboard__["a" /* Keyboard */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgZone */], [2, __WEBPACK_IMPORTED_MODULE_8_ionic_angular_navigation_view_controller__["a" /* ViewController */]], [2, __WEBPACK_IMPORTED_MODULE_12_ionic_angular_navigation_nav_controller__["a" /* NavController */]]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](21, 0, null, 1, 2, "ion-title", [], null, null, null, __WEBPACK_IMPORTED_MODULE_23__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__["b" /* View_ToolbarTitle_0 */], __WEBPACK_IMPORTED_MODULE_23__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__["a" /* RenderType_ToolbarTitle */])), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](22, 49152, null, 0, __WEBPACK_IMPORTED_MODULE_24_ionic_angular_components_toolbar_toolbar_title__["a" /* ToolbarTitle */], [__WEBPACK_IMPORTED_MODULE_3_ionic_angular_config_config__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], [2, __WEBPACK_IMPORTED_MODULE_16_ionic_angular_components_toolbar_toolbar__["a" /* Toolbar */]], [2, __WEBPACK_IMPORTED_MODULE_10_ionic_angular_components_toolbar_navbar__["a" /* Navbar */]]], null, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](23, 0, ["", ""])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵand */](16777216, null, 1, 1, null, View_ContactProfilePage_1)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](26, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_6__angular_common__["i" /* NgIf */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ɵand */](16777216, null, 1, 1, null, View_ContactProfilePage_2)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](29, 16384, null, 0, __WEBPACK_IMPORTED_MODULE_6__angular_common__["i" /* NgIf */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, 1, ["\n\n"])), (_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_36" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_3 = "left"; _ck(_v, 7, 0, currVal_3); var currVal_5 = "menu"; _ck(_v, 12, 0, currVal_5); var currVal_9 = !_co.isAnalyzed; _ck(_v, 26, 0, currVal_9); var currVal_10 = _co.isAnalyzed; _ck(_v, 29, 0, currVal_10); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 4)._hidden; var currVal_1 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 4)._sbPadding; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_2 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 7).isHidden; _ck(_v, 6, 0, currVal_2); var currVal_4 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 12)._hidden; _ck(_v, 11, 0, currVal_4); var currVal_6 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 19).statusbarPadding; var currVal_7 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵnov */](_v, 19)._hasRefresher; _ck(_v, 18, 0, currVal_6, currVal_7); var currVal_8 = _co.name; _ck(_v, 23, 0, currVal_8); }); }
-function View_ContactProfilePage_Host_0(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_37" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵeld */](0, 0, null, null, 1, "page-contact-profile", [], null, null, null, View_ContactProfilePage_0, RenderType_ContactProfilePage)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ɵdid */](1, 114688, null, 0, __WEBPACK_IMPORTED_MODULE_25__contact_profile__["a" /* ContactProfilePage */], [__WEBPACK_IMPORTED_MODULE_26__services_TextAnalysis_service__["a" /* TextAnalysisService */], __WEBPACK_IMPORTED_MODULE_27_ionic_angular_navigation_nav_params__["a" /* NavParams */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-var ContactProfilePageNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵccf */]("page-contact-profile", __WEBPACK_IMPORTED_MODULE_25__contact_profile__["a" /* ContactProfilePage */], View_ContactProfilePage_Host_0, {}, {}, []);
-
-//# sourceMappingURL=contact-profile.ngfactory.js.map
-
-/***/ }),
-
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -234,10 +240,10 @@ var core = __webpack_require__(0);
 var ionic_angular = __webpack_require__(44);
 
 // EXTERNAL MODULE: ./node_modules/@ionic-native/splash-screen/index.js
-var splash_screen = __webpack_require__(79);
+var splash_screen = __webpack_require__(80);
 
 // EXTERNAL MODULE: ./node_modules/@ionic-native/status-bar/index.js
-var status_bar = __webpack_require__(80);
+var status_bar = __webpack_require__(81);
 
 // CONCATENATED MODULE: ./src/pages/home/home.ts
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -378,7 +384,7 @@ var home_HomePage = /** @class */ (function () {
 
 //# sourceMappingURL=home.js.map
 // EXTERNAL MODULE: ./src/pages/contacts/contacts.ts
-var contacts = __webpack_require__(81);
+var contacts = __webpack_require__(82);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contact-profile/contact-profile.ts
 var contact_profile = __webpack_require__(55);
@@ -450,6 +456,9 @@ var app_component_MyApp = /** @class */ (function () {
 // EXTERNAL MODULE: ./src/services/TextAnalysis.service.ts
 var TextAnalysis_service = __webpack_require__(56);
 
+// EXTERNAL MODULE: ./src/services/SentimentAnalysis.service.ts
+var SentimentAnalysis_service = __webpack_require__(70);
+
 // CONCATENATED MODULE: ./src/app/app.module.ts
 var app_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -457,6 +466,7 @@ var app_module___decorate = (this && this.__decorate) || function (decorators, t
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -484,8 +494,8 @@ var app_module_AppModule = /** @class */ (function () {
                 platform_browser["a" /* BrowserModule */],
                 ionic_angular["d" /* IonicModule */].forRoot(app_component_MyApp, {}, {
                     links: [
-                        { loadChildren: '../pages/contacts/contacts.module.ngfactory#ContactsPageModuleNgFactory', name: 'ContactsPage', segment: 'contacts', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/contacts/contact-profile/contact-profile.module.ngfactory#ContactProfilePageModuleNgFactory', name: 'ContactProfilePage', segment: 'contact-profile', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/contacts/contact-profile/contact-profile.module.ngfactory#ContactProfilePageModuleNgFactory', name: 'ContactProfilePage', segment: 'contact-profile', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/contacts/contacts.module.ngfactory#ContactsPageModuleNgFactory', name: 'ContactsPage', segment: 'contacts', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -501,6 +511,7 @@ var app_module_AppModule = /** @class */ (function () {
                 status_bar["a" /* StatusBar */],
                 splash_screen["a" /* SplashScreen */],
                 TextAnalysis_service["a" /* TextAnalysisService */],
+                SentimentAnalysis_service["a" /* SentimentAnalysisService */],
                 { provide: core["q" /* ErrorHandler */], useClass: ionic_angular["c" /* IonicErrorHandler */] }
             ]
         })
@@ -513,34 +524,34 @@ var app_module_AppModule = /** @class */ (function () {
 var app_root = __webpack_require__(46);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
-var action_sheet_component_ngfactory = __webpack_require__(190);
+var action_sheet_component_ngfactory = __webpack_require__(191);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
-var alert_component_ngfactory = __webpack_require__(191);
+var alert_component_ngfactory = __webpack_require__(192);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
-var app_root_ngfactory = __webpack_require__(192);
+var app_root_ngfactory = __webpack_require__(193);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js + 1 modules
-var loading_component_ngfactory = __webpack_require__(193);
+var loading_component_ngfactory = __webpack_require__(194);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
-var modal_component_ngfactory = __webpack_require__(194);
+var modal_component_ngfactory = __webpack_require__(195);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
-var picker_component_ngfactory = __webpack_require__(195);
+var picker_component_ngfactory = __webpack_require__(196);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
-var popover_component_ngfactory = __webpack_require__(196);
+var popover_component_ngfactory = __webpack_require__(197);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js + 1 modules
-var select_popover_component_ngfactory = __webpack_require__(197);
+var select_popover_component_ngfactory = __webpack_require__(198);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
-var toast_component_ngfactory = __webpack_require__(198);
+var toast_component_ngfactory = __webpack_require__(199);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav.ngfactory.js
-var nav_ngfactory = __webpack_require__(235);
+var nav_ngfactory = __webpack_require__(245);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/split-pane/split-pane.js
 var split_pane = __webpack_require__(26);
@@ -607,7 +618,7 @@ var MyAppNgFactory = core["_13" /* ɵccf */]("ng-component", app_component_MyApp
 
 //# sourceMappingURL=app.component.ngfactory.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
-var content_ngfactory = __webpack_require__(102);
+var content_ngfactory = __webpack_require__(104);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
 var content = __webpack_require__(20);
@@ -666,22 +677,22 @@ var HomePageNgFactory = core["_13" /* ɵccf */]("page-home", home_HomePage, View
 
 //# sourceMappingURL=home.ngfactory.js.map
 // EXTERNAL MODULE: ./src/pages/contacts/contacts.ngfactory.js
-var contacts_ngfactory = __webpack_require__(199);
+var contacts_ngfactory = __webpack_require__(201);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contact-profile/contact-profile.ngfactory.js
 var contact_profile_ngfactory = __webpack_require__(200);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tabs.ngfactory.js + 1 modules
-var tabs_ngfactory = __webpack_require__(236);
+var tabs_ngfactory = __webpack_require__(246);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tabs.js
 var tabs = __webpack_require__(43);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab.ngfactory.js
-var tab_ngfactory = __webpack_require__(237);
+var tab_ngfactory = __webpack_require__(247);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab.js
-var tab = __webpack_require__(76);
+var tab = __webpack_require__(77);
 
 // CONCATENATED MODULE: ./src/pages/tabs-menu/tabs-menu.ngfactory.js
 /**
@@ -719,16 +730,16 @@ var TabsPageNgFactory = core["_13" /* ɵccf */]("tabs-menu", tabs_menu_TabsPage,
 var common = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-config.js
-var gesture_config = __webpack_require__(104);
+var gesture_config = __webpack_require__(106);
 
 // EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
 var esm5_forms = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-controller.js
-var action_sheet_controller = __webpack_require__(90);
+var action_sheet_controller = __webpack_require__(91);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/events.js
-var events = __webpack_require__(103);
+var events = __webpack_require__(105);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
 var util_form = __webpack_require__(15);
@@ -737,10 +748,10 @@ var util_form = __webpack_require__(15);
 var haptic = __webpack_require__(32);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-controller.js
-var loading_controller = __webpack_require__(99);
+var loading_controller = __webpack_require__(100);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(123);
+var ionic_angular_module = __webpack_require__(124);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/url-serializer.js
 var url_serializer = __webpack_require__(48);
@@ -749,34 +760,34 @@ var url_serializer = __webpack_require__(48);
 var module_loader = __webpack_require__(38);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-controller.js
-var modal_controller = __webpack_require__(108);
+var modal_controller = __webpack_require__(110);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-controller.js
 var picker_controller = __webpack_require__(63);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-controller.js
-var popover_controller = __webpack_require__(112);
+var popover_controller = __webpack_require__(114);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/tap-click/tap-click.js + 3 modules
-var tap_click = __webpack_require__(106);
+var tap_click = __webpack_require__(108);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-controller.js
-var toast_controller = __webpack_require__(118);
+var toast_controller = __webpack_require__(120);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/ionic-error-handler.js
-var ionic_error_handler = __webpack_require__(188);
+var ionic_error_handler = __webpack_require__(189);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform-registry.js
-var platform_registry = __webpack_require__(105);
+var platform_registry = __webpack_require__(107);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/menu-controller.js
 var menu_controller = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/ng-module-loader.js
-var ng_module_loader = __webpack_require__(101);
+var ng_module_loader = __webpack_require__(102);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/mode-registry.js
-var mode_registry = __webpack_require__(107);
+var mode_registry = __webpack_require__(109);
 
 // CONCATENATED MODULE: ./src/app/app.module.ngfactory.js
 /**
@@ -837,7 +848,8 @@ var mode_registry = __webpack_require__(107);
 
 
 
-var AppModuleNgFactory = core["_14" /* ɵcmf */](app_module_AppModule, [app_root["b" /* IonicApp */]], function (_l) { return core["_25" /* ɵmod */]([core["_26" /* ɵmpd */](512, core["l" /* ComponentFactoryResolver */], core["_10" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], MyAppNgFactory, HomePageNgFactory, contacts_ngfactory["a" /* ContactsPageNgFactory */], contact_profile_ngfactory["a" /* ContactProfilePageNgFactory */], TabsPageNgFactory]], [3, core["l" /* ComponentFactoryResolver */]], core["E" /* NgModuleRef */]]), core["_26" /* ɵmpd */](5120, core["C" /* LOCALE_ID */], core["_33" /* ɵq */], [[3, core["C" /* LOCALE_ID */]]]), core["_26" /* ɵmpd */](4608, common["k" /* NgLocalization */], common["j" /* NgLocaleLocalization */], [core["C" /* LOCALE_ID */], [2, common["s" /* ɵa */]]]), core["_26" /* ɵmpd */](5120, core["b" /* APP_ID */], core["_19" /* ɵi */], []), core["_26" /* ɵmpd */](5120, core["A" /* IterableDiffers */], core["_27" /* ɵn */], []), core["_26" /* ɵmpd */](5120, core["B" /* KeyValueDiffers */], core["_30" /* ɵo */], []), core["_26" /* ɵmpd */](4608, platform_browser["c" /* DomSanitizer */], platform_browser["q" /* ɵe */], [common["c" /* DOCUMENT */]]), core["_26" /* ɵmpd */](6144, core["R" /* Sanitizer */], null, [platform_browser["c" /* DomSanitizer */]]), core["_26" /* ɵmpd */](4608, platform_browser["f" /* HAMMER_GESTURE_CONFIG */], gesture_config["a" /* IonicGestureConfig */], []), core["_26" /* ɵmpd */](5120, platform_browser["d" /* EVENT_MANAGER_PLUGINS */], function (p0_0, p0_1, p1_0, p2_0, p2_1) { return [new platform_browser["k" /* ɵDomEventsPlugin */](p0_0, p0_1), new platform_browser["o" /* ɵKeyEventsPlugin */](p1_0), new platform_browser["n" /* ɵHammerGesturesPlugin */](p2_0, p2_1)]; }, [common["c" /* DOCUMENT */], core["G" /* NgZone */], common["c" /* DOCUMENT */], common["c" /* DOCUMENT */], platform_browser["f" /* HAMMER_GESTURE_CONFIG */]]), core["_26" /* ɵmpd */](4608, platform_browser["e" /* EventManager */], platform_browser["e" /* EventManager */], [platform_browser["d" /* EVENT_MANAGER_PLUGINS */], core["G" /* NgZone */]]), core["_26" /* ɵmpd */](135680, platform_browser["m" /* ɵDomSharedStylesHost */], platform_browser["m" /* ɵDomSharedStylesHost */], [common["c" /* DOCUMENT */]]), core["_26" /* ɵmpd */](4608, platform_browser["l" /* ɵDomRendererFactory2 */], platform_browser["l" /* ɵDomRendererFactory2 */], [platform_browser["e" /* EventManager */], platform_browser["m" /* ɵDomSharedStylesHost */]]), core["_26" /* ɵmpd */](6144, core["P" /* RendererFactory2 */], null, [platform_browser["l" /* ɵDomRendererFactory2 */]]), core["_26" /* ɵmpd */](6144, platform_browser["p" /* ɵSharedStylesHost */], null, [platform_browser["m" /* ɵDomSharedStylesHost */]]), core["_26" /* ɵmpd */](4608, core["W" /* Testability */], core["W" /* Testability */], [core["G" /* NgZone */]]), core["_26" /* ɵmpd */](4608, platform_browser["h" /* Meta */], platform_browser["h" /* Meta */], [common["c" /* DOCUMENT */]]), core["_26" /* ɵmpd */](4608, platform_browser["i" /* Title */], platform_browser["i" /* Title */], [common["c" /* DOCUMENT */]]), core["_26" /* ɵmpd */](4608, esm5_forms["k" /* ɵi */], esm5_forms["k" /* ɵi */], []), core["_26" /* ɵmpd */](4608, esm5_forms["c" /* FormBuilder */], esm5_forms["c" /* FormBuilder */], []), core["_26" /* ɵmpd */](4608, action_sheet_controller["a" /* ActionSheetController */], action_sheet_controller["a" /* ActionSheetController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, alert_controller["a" /* AlertController */], alert_controller["a" /* AlertController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, events["a" /* Events */], events["a" /* Events */], []), core["_26" /* ɵmpd */](4608, util_form["a" /* Form */], util_form["a" /* Form */], []), core["_26" /* ɵmpd */](4608, haptic["a" /* Haptic */], haptic["a" /* Haptic */], [platform_platform["a" /* Platform */]]), core["_26" /* ɵmpd */](4608, keyboard["a" /* Keyboard */], keyboard["a" /* Keyboard */], [config["a" /* Config */], platform_platform["a" /* Platform */], core["G" /* NgZone */], dom_controller["a" /* DomController */]]), core["_26" /* ɵmpd */](4608, loading_controller["a" /* LoadingController */], loading_controller["a" /* LoadingController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](5120, common["f" /* LocationStrategy */], ionic_angular_module["c" /* provideLocationStrategy */], [common["q" /* PlatformLocation */], [2, common["a" /* APP_BASE_HREF */]], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, common["e" /* Location */], common["e" /* Location */], [common["f" /* LocationStrategy */]]), core["_26" /* ɵmpd */](5120, url_serializer["b" /* UrlSerializer */], url_serializer["d" /* setupUrlSerializer */], [app["a" /* App */], url_serializer["a" /* DeepLinkConfigToken */]]), core["_26" /* ɵmpd */](5120, deep_linker["a" /* DeepLinker */], deep_linker["b" /* setupDeepLinker */], [app["a" /* App */], url_serializer["b" /* UrlSerializer */], common["e" /* Location */], module_loader["b" /* ModuleLoader */], core["l" /* ComponentFactoryResolver */]]), core["_26" /* ɵmpd */](4608, modal_controller["a" /* ModalController */], modal_controller["a" /* ModalController */], [app["a" /* App */], config["a" /* Config */], deep_linker["a" /* DeepLinker */]]), core["_26" /* ɵmpd */](4608, picker_controller["a" /* PickerController */], picker_controller["a" /* PickerController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, popover_controller["a" /* PopoverController */], popover_controller["a" /* PopoverController */], [app["a" /* App */], config["a" /* Config */], deep_linker["a" /* DeepLinker */]]), core["_26" /* ɵmpd */](4608, tap_click["a" /* TapClick */], tap_click["a" /* TapClick */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], app["a" /* App */], gesture_controller["l" /* GestureController */]]), core["_26" /* ɵmpd */](4608, toast_controller["a" /* ToastController */], toast_controller["a" /* ToastController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, transition_controller["a" /* TransitionController */], transition_controller["a" /* TransitionController */], [platform_platform["a" /* Platform */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, status_bar["a" /* StatusBar */], status_bar["a" /* StatusBar */], []), core["_26" /* ɵmpd */](4608, splash_screen["a" /* SplashScreen */], splash_screen["a" /* SplashScreen */], []), core["_26" /* ɵmpd */](4608, TextAnalysis_service["a" /* TextAnalysisService */], TextAnalysis_service["a" /* TextAnalysisService */], []), core["_26" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_26" /* ɵmpd */](512, core["q" /* ErrorHandler */], ionic_error_handler["a" /* IonicErrorHandler */], []), core["_26" /* ɵmpd */](256, config["b" /* ConfigToken */], {}, []), core["_26" /* ɵmpd */](1024, platform_registry["a" /* PlatformConfigToken */], platform_registry["b" /* providePlatformConfigs */], []), core["_26" /* ɵmpd */](1024, platform_platform["a" /* Platform */], platform_platform["b" /* setupPlatform */], [platform_browser["b" /* DOCUMENT */], platform_registry["a" /* PlatformConfigToken */], core["G" /* NgZone */]]), core["_26" /* ɵmpd */](1024, config["a" /* Config */], config["c" /* setupConfig */], [config["b" /* ConfigToken */], platform_platform["a" /* Platform */]]), core["_26" /* ɵmpd */](512, dom_controller["a" /* DomController */], dom_controller["a" /* DomController */], [platform_platform["a" /* Platform */]]), core["_26" /* ɵmpd */](512, menu_controller["a" /* MenuController */], menu_controller["a" /* MenuController */], []), core["_26" /* ɵmpd */](512, app["a" /* App */], app["a" /* App */], [config["a" /* Config */], platform_platform["a" /* Platform */], [2, menu_controller["a" /* MenuController */]]]), core["_26" /* ɵmpd */](512, gesture_controller["l" /* GestureController */], gesture_controller["l" /* GestureController */], [app["a" /* App */]]), core["_26" /* ɵmpd */](256, url_serializer["a" /* DeepLinkConfigToken */], { links: [{ loadChildren: "../pages/contacts/contacts.module.ngfactory#ContactsPageModuleNgFactory", name: "ContactsPage", segment: "contacts", priority: "low", defaultHistory: [] }, { loadChildren: "../pages/contacts/contact-profile/contact-profile.module.ngfactory#ContactProfilePageModuleNgFactory", name: "ContactProfilePage", segment: "contact-profile", priority: "low", defaultHistory: [] }] }, []), core["_26" /* ɵmpd */](512, core["j" /* Compiler */], core["j" /* Compiler */], []), core["_26" /* ɵmpd */](512, ng_module_loader["a" /* NgModuleLoader */], ng_module_loader["a" /* NgModuleLoader */], [core["j" /* Compiler */]]), core["_26" /* ɵmpd */](1024, module_loader["b" /* ModuleLoader */], module_loader["c" /* provideModuleLoader */], [ng_module_loader["a" /* NgModuleLoader */], core["y" /* Injector */]]), core["_26" /* ɵmpd */](1024, core["c" /* APP_INITIALIZER */], function (p0_0, p1_0, p2_0, p2_1, p3_0, p3_1, p3_2, p3_3, p3_4, p4_0, p4_1, p4_2, p4_3) { return [platform_browser["s" /* ɵh */](p0_0), mode_registry["a" /* registerModeConfigs */](p1_0), events["b" /* setupProvideEvents */](p2_0, p2_1), tap_click["b" /* setupTapClick */](p3_0, p3_1, p3_2, p3_3, p3_4), module_loader["d" /* setupPreloading */](p4_0, p4_1, p4_2, p4_3)]; }, [[2, core["F" /* NgProbeToken */]], config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], app["a" /* App */], gesture_controller["l" /* GestureController */], config["a" /* Config */], url_serializer["a" /* DeepLinkConfigToken */], module_loader["b" /* ModuleLoader */], core["G" /* NgZone */]]), core["_26" /* ɵmpd */](512, core["d" /* ApplicationInitStatus */], core["d" /* ApplicationInitStatus */], [[2, core["c" /* APP_INITIALIZER */]]]), core["_26" /* ɵmpd */](131584, core["f" /* ApplicationRef */], core["f" /* ApplicationRef */], [core["G" /* NgZone */], core["_11" /* ɵConsole */], core["y" /* Injector */], core["q" /* ErrorHandler */], core["l" /* ComponentFactoryResolver */], core["d" /* ApplicationInitStatus */]]), core["_26" /* ɵmpd */](512, core["e" /* ApplicationModule */], core["e" /* ApplicationModule */], [core["f" /* ApplicationRef */]]), core["_26" /* ɵmpd */](512, platform_browser["a" /* BrowserModule */], platform_browser["a" /* BrowserModule */], [[3, platform_browser["a" /* BrowserModule */]]]), core["_26" /* ɵmpd */](512, esm5_forms["j" /* ɵba */], esm5_forms["j" /* ɵba */], []), core["_26" /* ɵmpd */](512, esm5_forms["d" /* FormsModule */], esm5_forms["d" /* FormsModule */], []), core["_26" /* ɵmpd */](512, esm5_forms["i" /* ReactiveFormsModule */], esm5_forms["i" /* ReactiveFormsModule */], []), core["_26" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_26" /* ɵmpd */](512, app_module_AppModule, app_module_AppModule, []), core["_26" /* ɵmpd */](256, app_root["a" /* AppRootToken */], app_component_MyApp, []), core["_26" /* ɵmpd */](256, common["a" /* APP_BASE_HREF */], "/", [])]); });
+
+var AppModuleNgFactory = core["_14" /* ɵcmf */](app_module_AppModule, [app_root["b" /* IonicApp */]], function (_l) { return core["_25" /* ɵmod */]([core["_26" /* ɵmpd */](512, core["l" /* ComponentFactoryResolver */], core["_10" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], MyAppNgFactory, HomePageNgFactory, contacts_ngfactory["a" /* ContactsPageNgFactory */], contact_profile_ngfactory["a" /* ContactProfilePageNgFactory */], TabsPageNgFactory]], [3, core["l" /* ComponentFactoryResolver */]], core["E" /* NgModuleRef */]]), core["_26" /* ɵmpd */](5120, core["C" /* LOCALE_ID */], core["_33" /* ɵq */], [[3, core["C" /* LOCALE_ID */]]]), core["_26" /* ɵmpd */](4608, common["k" /* NgLocalization */], common["j" /* NgLocaleLocalization */], [core["C" /* LOCALE_ID */], [2, common["s" /* ɵa */]]]), core["_26" /* ɵmpd */](5120, core["b" /* APP_ID */], core["_19" /* ɵi */], []), core["_26" /* ɵmpd */](5120, core["A" /* IterableDiffers */], core["_27" /* ɵn */], []), core["_26" /* ɵmpd */](5120, core["B" /* KeyValueDiffers */], core["_30" /* ɵo */], []), core["_26" /* ɵmpd */](4608, platform_browser["c" /* DomSanitizer */], platform_browser["q" /* ɵe */], [common["c" /* DOCUMENT */]]), core["_26" /* ɵmpd */](6144, core["R" /* Sanitizer */], null, [platform_browser["c" /* DomSanitizer */]]), core["_26" /* ɵmpd */](4608, platform_browser["f" /* HAMMER_GESTURE_CONFIG */], gesture_config["a" /* IonicGestureConfig */], []), core["_26" /* ɵmpd */](5120, platform_browser["d" /* EVENT_MANAGER_PLUGINS */], function (p0_0, p0_1, p1_0, p2_0, p2_1) { return [new platform_browser["k" /* ɵDomEventsPlugin */](p0_0, p0_1), new platform_browser["o" /* ɵKeyEventsPlugin */](p1_0), new platform_browser["n" /* ɵHammerGesturesPlugin */](p2_0, p2_1)]; }, [common["c" /* DOCUMENT */], core["G" /* NgZone */], common["c" /* DOCUMENT */], common["c" /* DOCUMENT */], platform_browser["f" /* HAMMER_GESTURE_CONFIG */]]), core["_26" /* ɵmpd */](4608, platform_browser["e" /* EventManager */], platform_browser["e" /* EventManager */], [platform_browser["d" /* EVENT_MANAGER_PLUGINS */], core["G" /* NgZone */]]), core["_26" /* ɵmpd */](135680, platform_browser["m" /* ɵDomSharedStylesHost */], platform_browser["m" /* ɵDomSharedStylesHost */], [common["c" /* DOCUMENT */]]), core["_26" /* ɵmpd */](4608, platform_browser["l" /* ɵDomRendererFactory2 */], platform_browser["l" /* ɵDomRendererFactory2 */], [platform_browser["e" /* EventManager */], platform_browser["m" /* ɵDomSharedStylesHost */]]), core["_26" /* ɵmpd */](6144, core["P" /* RendererFactory2 */], null, [platform_browser["l" /* ɵDomRendererFactory2 */]]), core["_26" /* ɵmpd */](6144, platform_browser["p" /* ɵSharedStylesHost */], null, [platform_browser["m" /* ɵDomSharedStylesHost */]]), core["_26" /* ɵmpd */](4608, core["W" /* Testability */], core["W" /* Testability */], [core["G" /* NgZone */]]), core["_26" /* ɵmpd */](4608, platform_browser["h" /* Meta */], platform_browser["h" /* Meta */], [common["c" /* DOCUMENT */]]), core["_26" /* ɵmpd */](4608, platform_browser["i" /* Title */], platform_browser["i" /* Title */], [common["c" /* DOCUMENT */]]), core["_26" /* ɵmpd */](4608, esm5_forms["k" /* ɵi */], esm5_forms["k" /* ɵi */], []), core["_26" /* ɵmpd */](4608, esm5_forms["c" /* FormBuilder */], esm5_forms["c" /* FormBuilder */], []), core["_26" /* ɵmpd */](4608, action_sheet_controller["a" /* ActionSheetController */], action_sheet_controller["a" /* ActionSheetController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, alert_controller["a" /* AlertController */], alert_controller["a" /* AlertController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, events["a" /* Events */], events["a" /* Events */], []), core["_26" /* ɵmpd */](4608, util_form["a" /* Form */], util_form["a" /* Form */], []), core["_26" /* ɵmpd */](4608, haptic["a" /* Haptic */], haptic["a" /* Haptic */], [platform_platform["a" /* Platform */]]), core["_26" /* ɵmpd */](4608, keyboard["a" /* Keyboard */], keyboard["a" /* Keyboard */], [config["a" /* Config */], platform_platform["a" /* Platform */], core["G" /* NgZone */], dom_controller["a" /* DomController */]]), core["_26" /* ɵmpd */](4608, loading_controller["a" /* LoadingController */], loading_controller["a" /* LoadingController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](5120, common["f" /* LocationStrategy */], ionic_angular_module["c" /* provideLocationStrategy */], [common["q" /* PlatformLocation */], [2, common["a" /* APP_BASE_HREF */]], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, common["e" /* Location */], common["e" /* Location */], [common["f" /* LocationStrategy */]]), core["_26" /* ɵmpd */](5120, url_serializer["b" /* UrlSerializer */], url_serializer["d" /* setupUrlSerializer */], [app["a" /* App */], url_serializer["a" /* DeepLinkConfigToken */]]), core["_26" /* ɵmpd */](5120, deep_linker["a" /* DeepLinker */], deep_linker["b" /* setupDeepLinker */], [app["a" /* App */], url_serializer["b" /* UrlSerializer */], common["e" /* Location */], module_loader["b" /* ModuleLoader */], core["l" /* ComponentFactoryResolver */]]), core["_26" /* ɵmpd */](4608, modal_controller["a" /* ModalController */], modal_controller["a" /* ModalController */], [app["a" /* App */], config["a" /* Config */], deep_linker["a" /* DeepLinker */]]), core["_26" /* ɵmpd */](4608, picker_controller["a" /* PickerController */], picker_controller["a" /* PickerController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, popover_controller["a" /* PopoverController */], popover_controller["a" /* PopoverController */], [app["a" /* App */], config["a" /* Config */], deep_linker["a" /* DeepLinker */]]), core["_26" /* ɵmpd */](4608, tap_click["a" /* TapClick */], tap_click["a" /* TapClick */], [config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], app["a" /* App */], gesture_controller["l" /* GestureController */]]), core["_26" /* ɵmpd */](4608, toast_controller["a" /* ToastController */], toast_controller["a" /* ToastController */], [app["a" /* App */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, transition_controller["a" /* TransitionController */], transition_controller["a" /* TransitionController */], [platform_platform["a" /* Platform */], config["a" /* Config */]]), core["_26" /* ɵmpd */](4608, status_bar["a" /* StatusBar */], status_bar["a" /* StatusBar */], []), core["_26" /* ɵmpd */](4608, splash_screen["a" /* SplashScreen */], splash_screen["a" /* SplashScreen */], []), core["_26" /* ɵmpd */](4608, TextAnalysis_service["a" /* TextAnalysisService */], TextAnalysis_service["a" /* TextAnalysisService */], []), core["_26" /* ɵmpd */](4608, SentimentAnalysis_service["a" /* SentimentAnalysisService */], SentimentAnalysis_service["a" /* SentimentAnalysisService */], []), core["_26" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_26" /* ɵmpd */](512, core["q" /* ErrorHandler */], ionic_error_handler["a" /* IonicErrorHandler */], []), core["_26" /* ɵmpd */](256, config["b" /* ConfigToken */], {}, []), core["_26" /* ɵmpd */](1024, platform_registry["a" /* PlatformConfigToken */], platform_registry["b" /* providePlatformConfigs */], []), core["_26" /* ɵmpd */](1024, platform_platform["a" /* Platform */], platform_platform["b" /* setupPlatform */], [platform_browser["b" /* DOCUMENT */], platform_registry["a" /* PlatformConfigToken */], core["G" /* NgZone */]]), core["_26" /* ɵmpd */](1024, config["a" /* Config */], config["c" /* setupConfig */], [config["b" /* ConfigToken */], platform_platform["a" /* Platform */]]), core["_26" /* ɵmpd */](512, dom_controller["a" /* DomController */], dom_controller["a" /* DomController */], [platform_platform["a" /* Platform */]]), core["_26" /* ɵmpd */](512, menu_controller["a" /* MenuController */], menu_controller["a" /* MenuController */], []), core["_26" /* ɵmpd */](512, app["a" /* App */], app["a" /* App */], [config["a" /* Config */], platform_platform["a" /* Platform */], [2, menu_controller["a" /* MenuController */]]]), core["_26" /* ɵmpd */](512, gesture_controller["l" /* GestureController */], gesture_controller["l" /* GestureController */], [app["a" /* App */]]), core["_26" /* ɵmpd */](256, url_serializer["a" /* DeepLinkConfigToken */], { links: [{ loadChildren: "../pages/contacts/contact-profile/contact-profile.module.ngfactory#ContactProfilePageModuleNgFactory", name: "ContactProfilePage", segment: "contact-profile", priority: "low", defaultHistory: [] }, { loadChildren: "../pages/contacts/contacts.module.ngfactory#ContactsPageModuleNgFactory", name: "ContactsPage", segment: "contacts", priority: "low", defaultHistory: [] }] }, []), core["_26" /* ɵmpd */](512, core["j" /* Compiler */], core["j" /* Compiler */], []), core["_26" /* ɵmpd */](512, ng_module_loader["a" /* NgModuleLoader */], ng_module_loader["a" /* NgModuleLoader */], [core["j" /* Compiler */]]), core["_26" /* ɵmpd */](1024, module_loader["b" /* ModuleLoader */], module_loader["c" /* provideModuleLoader */], [ng_module_loader["a" /* NgModuleLoader */], core["y" /* Injector */]]), core["_26" /* ɵmpd */](1024, core["c" /* APP_INITIALIZER */], function (p0_0, p1_0, p2_0, p2_1, p3_0, p3_1, p3_2, p3_3, p3_4, p4_0, p4_1, p4_2, p4_3) { return [platform_browser["s" /* ɵh */](p0_0), mode_registry["a" /* registerModeConfigs */](p1_0), events["b" /* setupProvideEvents */](p2_0, p2_1), tap_click["b" /* setupTapClick */](p3_0, p3_1, p3_2, p3_3, p3_4), module_loader["d" /* setupPreloading */](p4_0, p4_1, p4_2, p4_3)]; }, [[2, core["F" /* NgProbeToken */]], config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], config["a" /* Config */], platform_platform["a" /* Platform */], dom_controller["a" /* DomController */], app["a" /* App */], gesture_controller["l" /* GestureController */], config["a" /* Config */], url_serializer["a" /* DeepLinkConfigToken */], module_loader["b" /* ModuleLoader */], core["G" /* NgZone */]]), core["_26" /* ɵmpd */](512, core["d" /* ApplicationInitStatus */], core["d" /* ApplicationInitStatus */], [[2, core["c" /* APP_INITIALIZER */]]]), core["_26" /* ɵmpd */](131584, core["f" /* ApplicationRef */], core["f" /* ApplicationRef */], [core["G" /* NgZone */], core["_11" /* ɵConsole */], core["y" /* Injector */], core["q" /* ErrorHandler */], core["l" /* ComponentFactoryResolver */], core["d" /* ApplicationInitStatus */]]), core["_26" /* ɵmpd */](512, core["e" /* ApplicationModule */], core["e" /* ApplicationModule */], [core["f" /* ApplicationRef */]]), core["_26" /* ɵmpd */](512, platform_browser["a" /* BrowserModule */], platform_browser["a" /* BrowserModule */], [[3, platform_browser["a" /* BrowserModule */]]]), core["_26" /* ɵmpd */](512, esm5_forms["j" /* ɵba */], esm5_forms["j" /* ɵba */], []), core["_26" /* ɵmpd */](512, esm5_forms["d" /* FormsModule */], esm5_forms["d" /* FormsModule */], []), core["_26" /* ɵmpd */](512, esm5_forms["i" /* ReactiveFormsModule */], esm5_forms["i" /* ReactiveFormsModule */], []), core["_26" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_26" /* ɵmpd */](512, app_module_AppModule, app_module_AppModule, []), core["_26" /* ɵmpd */](256, app_root["a" /* AppRootToken */], app_component_MyApp, []), core["_26" /* ɵmpd */](256, common["a" /* APP_BASE_HREF */], "/", [])]); });
 
 //# sourceMappingURL=app.module.ngfactory.js.map
 // CONCATENATED MODULE: ./src/app/main.ts
@@ -858,6 +870,7 @@ Object(platform_browser["j" /* platformBrowser */])().bootstrapModuleFactory(App
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_TextAnalysis_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_SentimentAnalysis_service__ = __webpack_require__(70);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -870,6 +883,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the ContactProfilePage page.
  *
@@ -877,7 +891,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ContactProfilePage = /** @class */ (function () {
-    function ContactProfilePage(analysis, navParams) {
+    function ContactProfilePage(analysis, sentiment, navParams) {
         this.navParams = navParams;
         // this.name = name;
         // this.data = Object;
@@ -913,6 +927,9 @@ var ContactProfilePage = /** @class */ (function () {
         this.favouriteEmojis["in"] = emojis["emojiIn"];
         console.log("this.favouriteEmojis", this.favouriteEmojis);
         this.isAnalyzed = true;
+        //  Integration of the sentiment analysis
+        var testSentiment = this.analysis.sentiment();
+        console.log(testSentiment);
     };
     ContactProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */])({
@@ -920,6 +937,7 @@ var ContactProfilePage = /** @class */ (function () {
             templateUrl: 'contact-profile.html',
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_TextAnalysis_service__["a" /* TextAnalysisService */],
+            __WEBPACK_IMPORTED_MODULE_3__services_SentimentAnalysis_service__["a" /* SentimentAnalysisService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ContactProfilePage);
     return ContactProfilePage;
@@ -934,6 +952,9 @@ var ContactProfilePage = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextAnalysisService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_node_sentiment_jouska__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_node_sentiment_jouska___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_node_sentiment_jouska__);
+
 var TextAnalysisService = /** @class */ (function () {
     function TextAnalysisService() {
         console.log("constructor TextAnalysisService");
@@ -1001,6 +1022,7 @@ var TextAnalysisService = /** @class */ (function () {
             analyses = [];
             localStorage.setItem('analyses', JSON.stringify(analyses));
         }
+        // As we push to the contact name, it either creates a new entry or update an old one
         analyses = JSON.parse(localStorage.getItem('analyses'));
         analyses.push({
             name: contactName,
@@ -1013,6 +1035,10 @@ var TextAnalysisService = /** @class */ (function () {
         console.log("ce que j'ai ajout\u00E9 au storage:", JSON.parse(localStorage.getItem('analyses')));
         var _a;
     };
+    TextAnalysisService.prototype.sentiment = function () {
+        console.log("sent:", __WEBPACK_IMPORTED_MODULE_0_node_sentiment_jouska__);
+        return __WEBPACK_IMPORTED_MODULE_0_node_sentiment_jouska__('hello, how are you today ?');
+    };
     return TextAnalysisService;
 }());
 
@@ -1020,7 +1046,26 @@ var TextAnalysisService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 81:
+/***/ 70:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SentimentAnalysisService; });
+// Pour le moment on ne se sert pas de ce fichier
+// pas encor esur de ce à quoi ça va servir
+// @Injectable()
+var SentimentAnalysisService = /** @class */ (function () {
+    function SentimentAnalysisService() {
+        // console.log(sentiment);
+    }
+    return SentimentAnalysisService;
+}());
+
+//# sourceMappingURL=SentimentAnalysis.service.js.map
+
+/***/ }),
+
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1077,5 +1122,5 @@ var ContactsPage = /** @class */ (function () {
 
 /***/ })
 
-},[201]);
+},[202]);
 //# sourceMappingURL=main.js.map

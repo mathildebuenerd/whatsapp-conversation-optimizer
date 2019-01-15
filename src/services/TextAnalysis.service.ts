@@ -1,3 +1,5 @@
+import * as sent from 'node-sentiment-jouska';
+
 export class TextAnalysisService {
 
   constructor() {
@@ -79,6 +81,7 @@ export class TextAnalysisService {
       localStorage.setItem('analyses', JSON.stringify(analyses));
     }
 
+    // As we push to the contact name, it either creates a new entry or update an old one
     analyses = JSON.parse(localStorage.getItem('analyses'));
     analyses.push({
       name: contactName,
@@ -90,6 +93,11 @@ export class TextAnalysisService {
     console.log(`analyses`, analyses);
     localStorage.setItem('analyses', JSON.stringify(analyses));
     console.log(`ce que j'ai ajouté au storage:`, JSON.parse(localStorage.getItem('analyses')));
+  }
+
+  sentiment() {
+    console.log(`sent:`, sent);
+    return sent('hello, how are you today ?');
   }
 
 }
