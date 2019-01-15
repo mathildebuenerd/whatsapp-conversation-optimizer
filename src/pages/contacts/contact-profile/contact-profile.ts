@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import { TextAnalysisService } from "../../../services/TextAnalysis.service";
-import { SentimentAnalysisService } from "../../../services/SentimentAnalysis.service";
 
 
 /**
@@ -26,7 +25,6 @@ export class ContactProfilePage {
   favouriteEmojis: Object;
 
   constructor(analysis: TextAnalysisService,
-              sentiment: SentimentAnalysisService,
               public navParams: NavParams) {
     // this.name = name;
     // this.data = Object;
@@ -49,8 +47,8 @@ export class ContactProfilePage {
       for (const entry of allAnalyses) {
         if (entry.name === this.name) {
           this.favouriteEmojis = {
-            "out": entry.analyses.emojis.emojiIn,
-            "in": entry.analyses.emojis.emojiOut
+            "out": entry.analyses.emoji.emojiIn,
+            "in": entry.analyses.emoji.emojiOut
           };
           this.isAnalyzed = true;
         }
@@ -61,10 +59,10 @@ export class ContactProfilePage {
   analyzeContact() {
     const emojis = this.analysis.getEmojis(this.name);
     console.log(`emojis received in analyseContact`, emojis);
-    this.favouriteEmojis["out"] = emojis["emojiOut"];
-    this.favouriteEmojis["in"] = emojis["emojiIn"];
+    this.favouriteEmojis["out"] = emojis.data["emojiOut"];
+    this.favouriteEmojis["in"] = emojis.data["emojiIn"];
 
-
+    this.analysis.addToStorage(emojis.name, emojis.type, emojis.data, this.isAnalyzed);
 
     console.log(`this.favouriteEmojis`, this.favouriteEmojis);
     this.isAnalyzed = true;

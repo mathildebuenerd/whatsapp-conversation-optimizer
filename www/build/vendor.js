@@ -364,9 +364,9 @@
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
@@ -6941,7 +6941,7 @@ var SystemJsNgModuleLoader = /** @class */ (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__(134)(module)
+        return __webpack_require__(133)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -6961,7 +6961,7 @@ var SystemJsNgModuleLoader = /** @class */ (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(134)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(133)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -19710,7 +19710,7 @@ function transition$$1(stateChangeExpr, steps) {
 
 //# sourceMappingURL=core.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(125)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(124)))
 
 /***/ }),
 /* 1 */
@@ -30751,9 +30751,9 @@ var NavController = (function () {
 "use strict";
 
 var root_1 = __webpack_require__(39);
-var toSubscriber_1 = __webpack_require__(203);
-var observable_1 = __webpack_require__(130);
-var pipe_1 = __webpack_require__(205);
+var toSubscriber_1 = __webpack_require__(202);
+var observable_1 = __webpack_require__(129);
+var pipe_1 = __webpack_require__(204);
 /**
  * A representation of any set of values over any amount of time. This is the most basic building block
  * of RxJS.
@@ -33254,11 +33254,11 @@ var Item = (function (_super) {
 /* unused harmony export ɵr */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(224);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__(34);
 /**
@@ -41454,7 +41454,7 @@ var ReactiveFormsModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__platform_keyboard__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navigation_nav_controller__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_scroll_view__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_scroll_view__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_view_controller__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -43540,7 +43540,7 @@ var SplitPane = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_nav_controller__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toolbar_base__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toolbar_base__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_view_controller__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -43841,7 +43841,7 @@ var TABS = 'tabs';
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UIEventManager; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointer_events__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointer_events__ = __webpack_require__(135);
 
 /**
  * @hidden
@@ -43897,7 +43897,7 @@ var UIEventManager = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ion__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__debouncer__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__debouncer__ = __webpack_require__(140);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -50028,10 +50028,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isFunction_1 = __webpack_require__(83);
+var isFunction_1 = __webpack_require__(82);
 var Subscription_1 = __webpack_require__(40);
-var Observer_1 = __webpack_require__(129);
-var rxSubscriber_1 = __webpack_require__(85);
+var Observer_1 = __webpack_require__(128);
+var rxSubscriber_1 = __webpack_require__(84);
 /**
  * Implements the {@link Observer} interface and extends the
  * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -50362,7 +50362,7 @@ var Transition = (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Toolbar; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toolbar_base__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toolbar_base__ = __webpack_require__(160);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -50510,7 +50510,7 @@ var Toolbar = (function (_super) {
 /* unused harmony export setupPreloadingImplementation */
 /* harmony export (immutable) */ __webpack_exports__["d"] = setupPreloading;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(2);
 
 
@@ -50628,7 +50628,7 @@ exports.root = _root;
     }
 })();
 //# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(125)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(124)))
 
 /***/ }),
 /* 40 */
@@ -50636,12 +50636,12 @@ exports.root = _root;
 
 "use strict";
 
-var isArray_1 = __webpack_require__(126);
-var isObject_1 = __webpack_require__(127);
-var isFunction_1 = __webpack_require__(83);
-var tryCatch_1 = __webpack_require__(128);
-var errorObject_1 = __webpack_require__(84);
-var UnsubscriptionError_1 = __webpack_require__(204);
+var isArray_1 = __webpack_require__(125);
+var isObject_1 = __webpack_require__(126);
+var isFunction_1 = __webpack_require__(82);
+var tryCatch_1 = __webpack_require__(127);
+var errorObject_1 = __webpack_require__(83);
+var UnsubscriptionError_1 = __webpack_require__(203);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -50900,7 +50900,7 @@ var dom_controller = __webpack_require__(7);
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder-util.js
-var item_reorder_util = __webpack_require__(143);
+var item_reorder_util = __webpack_require__(142);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
 var dom = __webpack_require__(14);
@@ -51380,7 +51380,7 @@ var item_reorder_ItemReorder = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);
@@ -51393,7 +51393,7 @@ var item_reorder_ItemReorder = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_url_serializer__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__split_pane_split_pane__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__tab_highlight__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__tab_highlight__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__navigation_view_controller__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -52027,16 +52027,16 @@ var app_root = __webpack_require__(46);
 var menu_controller = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet.js + 1 modules
-var action_sheet = __webpack_require__(90);
+var action_sheet = __webpack_require__(89);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-controller.js
-var action_sheet_controller = __webpack_require__(91);
+var action_sheet_controller = __webpack_require__(90);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.js
 var action_sheet_component = __webpack_require__(60);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert.js + 1 modules
-var alert_alert = __webpack_require__(92);
+var alert_alert = __webpack_require__(91);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-controller.js
 var alert_controller = __webpack_require__(62);
@@ -52048,58 +52048,58 @@ var alert_component = __webpack_require__(61);
 var app = __webpack_require__(5);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/avatar/avatar.js
-var avatar = __webpack_require__(137);
+var avatar = __webpack_require__(136);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/backdrop/backdrop.js
 var backdrop = __webpack_require__(25);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/badge/badge.js
-var badge = __webpack_require__(93);
+var badge = __webpack_require__(92);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
 var button_button = __webpack_require__(17);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card.js
-var card = __webpack_require__(94);
+var card = __webpack_require__(93);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-content.js
-var card_content = __webpack_require__(138);
+var card_content = __webpack_require__(137);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-header.js
-var card_header = __webpack_require__(139);
+var card_header = __webpack_require__(138);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-title.js
-var card_title = __webpack_require__(95);
+var card_title = __webpack_require__(94);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/checkbox/checkbox.js
-var checkbox_checkbox = __webpack_require__(140);
+var checkbox_checkbox = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/chip/chip.js
-var chip = __webpack_require__(144);
+var chip = __webpack_require__(143);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
 var content = __webpack_require__(20);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/datetime/datetime.js + 1 modules
-var datetime = __webpack_require__(145);
+var datetime = __webpack_require__(144);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/fab/fab.js
 var fab = __webpack_require__(65);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/fab/fab-container.js
-var fab_container = __webpack_require__(147);
+var fab_container = __webpack_require__(146);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/fab/fab-list.js
-var fab_list = __webpack_require__(96);
+var fab_list = __webpack_require__(95);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/col.js
-var col = __webpack_require__(148);
+var col = __webpack_require__(147);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/grid.js
-var grid = __webpack_require__(149);
+var grid = __webpack_require__(148);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/row.js
-var row = __webpack_require__(150);
+var row = __webpack_require__(149);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/ion.js
 var ion = __webpack_require__(8);
@@ -52108,16 +52108,16 @@ var ion = __webpack_require__(8);
 var icon = __webpack_require__(31);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/img/img.js
-var img = __webpack_require__(151);
+var img = __webpack_require__(150);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/infinite-scroll/infinite-scroll.js
-var infinite_scroll = __webpack_require__(97);
+var infinite_scroll = __webpack_require__(96);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/infinite-scroll/infinite-scroll-content.js
-var infinite_scroll_content = __webpack_require__(152);
+var infinite_scroll_content = __webpack_require__(151);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.js
-var input = __webpack_require__(153);
+var input = __webpack_require__(152);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
 var item = __webpack_require__(18);
@@ -52126,19 +52126,19 @@ var item = __webpack_require__(18);
 var item_content = __webpack_require__(66);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-divider.js
-var item_divider = __webpack_require__(155);
+var item_divider = __webpack_require__(154);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-group.js
-var item_group = __webpack_require__(156);
+var item_group = __webpack_require__(155);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-options.js
-var item_options = __webpack_require__(98);
+var item_options = __webpack_require__(97);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
 var item_reorder = __webpack_require__(42);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-sliding.js
-var item_sliding = __webpack_require__(157);
+var item_sliding = __webpack_require__(156);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/reorder.js
 var reorder = __webpack_require__(67);
@@ -52150,25 +52150,25 @@ var label = __webpack_require__(49);
 var list = __webpack_require__(51);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list-header.js
-var list_header = __webpack_require__(99);
+var list_header = __webpack_require__(98);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading.js + 1 modules
-var loading = __webpack_require__(158);
+var loading = __webpack_require__(157);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-controller.js
-var loading_controller = __webpack_require__(100);
+var loading_controller = __webpack_require__(99);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.js
 var loading_component = __webpack_require__(68);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/menu/menu.js + 1 modules
-var menu_menu = __webpack_require__(159);
+var menu_menu = __webpack_require__(158);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/menu/menu-close.js
-var menu_close = __webpack_require__(160);
+var menu_close = __webpack_require__(159);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/menu/menu-toggle.js
-var menu_toggle = __webpack_require__(101);
+var menu_toggle = __webpack_require__(100);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(16);
@@ -52333,37 +52333,37 @@ var menu_types_MenuOverlayType = (function (_super) {
 menu_controller["a" /* MenuController */].registerType('overlay', menu_types_MenuOverlayType);
 //# sourceMappingURL=menu-types.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal.js + 2 modules
-var modal = __webpack_require__(162);
+var modal = __webpack_require__(161);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.js
 var modal_component = __webpack_require__(69);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-controller.js
-var modal_controller = __webpack_require__(110);
+var modal_controller = __webpack_require__(109);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav.js
 var nav = __webpack_require__(52);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav-pop.js
-var nav_pop = __webpack_require__(111);
+var nav_pop = __webpack_require__(110);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav-pop-anchor.js
-var nav_pop_anchor = __webpack_require__(170);
+var nav_pop_anchor = __webpack_require__(169);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav-push.js
-var nav_push = __webpack_require__(112);
+var nav_push = __webpack_require__(111);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav-push-anchor.js
-var nav_push_anchor = __webpack_require__(171);
+var nav_push_anchor = __webpack_require__(170);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/note/note.js
-var note = __webpack_require__(172);
+var note = __webpack_require__(171);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/option/option.js
-var option_option = __webpack_require__(113);
+var option_option = __webpack_require__(112);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker.js + 1 modules
-var picker = __webpack_require__(146);
+var picker = __webpack_require__(145);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.js
 var picker_component = __webpack_require__(64);
@@ -52375,106 +52375,106 @@ var picker_column = __webpack_require__(50);
 var picker_controller = __webpack_require__(63);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover.js + 2 modules
-var popover = __webpack_require__(115);
+var popover = __webpack_require__(114);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.js
-var popover_component = __webpack_require__(72);
+var popover_component = __webpack_require__(71);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-controller.js
-var popover_controller = __webpack_require__(114);
+var popover_controller = __webpack_require__(113);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-button.js
-var radio_button = __webpack_require__(73);
+var radio_button = __webpack_require__(72);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-group.js
 var radio_group = __webpack_require__(53);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/range/range.js
-var range = __webpack_require__(173);
+var range = __webpack_require__(172);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/range/range-knob.js
-var range_knob = __webpack_require__(174);
+var range_knob = __webpack_require__(173);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher.js
-var refresher = __webpack_require__(116);
+var refresher = __webpack_require__(115);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
-var refresher_content = __webpack_require__(175);
+var refresher_content = __webpack_require__(174);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/scroll/scroll.js
-var scroll_scroll = __webpack_require__(176);
+var scroll_scroll = __webpack_require__(175);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/searchbar/searchbar.js
-var searchbar = __webpack_require__(177);
+var searchbar = __webpack_require__(176);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/segment/segment.js
-var segment = __webpack_require__(178);
+var segment = __webpack_require__(177);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/segment/segment-button.js
-var segment_button = __webpack_require__(117);
+var segment_button = __webpack_require__(116);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select.js
-var select_select = __webpack_require__(179);
+var select_select = __webpack_require__(178);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.js
-var select_popover_component = __webpack_require__(74);
+var select_popover_component = __webpack_require__(73);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/show-hide-when/show-when.js
-var show_when = __webpack_require__(180);
+var show_when = __webpack_require__(179);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/show-hide-when/display-when.js
-var display_when = __webpack_require__(118);
+var display_when = __webpack_require__(117);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/show-hide-when/hide-when.js
-var hide_when = __webpack_require__(181);
+var hide_when = __webpack_require__(180);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/slides/slide.js
-var slide = __webpack_require__(182);
+var slide = __webpack_require__(181);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/slides/slides.js + 14 modules
-var slides = __webpack_require__(119);
+var slides = __webpack_require__(118);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/spinner/spinner.js
-var spinner = __webpack_require__(71);
+var spinner = __webpack_require__(70);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/split-pane/split-pane.js
 var split_pane = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab.js
-var tab = __webpack_require__(77);
+var tab = __webpack_require__(76);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab-button.js
-var tab_button = __webpack_require__(79);
+var tab_button = __webpack_require__(78);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab-highlight.js
-var tab_highlight = __webpack_require__(78);
+var tab_highlight = __webpack_require__(77);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tabs.js
 var tabs = __webpack_require__(43);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast.js + 1 modules
-var toast = __webpack_require__(184);
+var toast = __webpack_require__(183);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.js
-var toast_component = __webpack_require__(75);
+var toast_component = __webpack_require__(74);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-controller.js
-var toast_controller = __webpack_require__(120);
+var toast_controller = __webpack_require__(119);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toggle/toggle.js + 1 modules
-var toggle = __webpack_require__(185);
+var toggle = __webpack_require__(184);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-footer.js
-var toolbar_footer = __webpack_require__(186);
+var toolbar_footer = __webpack_require__(185);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
-var toolbar_header = __webpack_require__(76);
+var toolbar_header = __webpack_require__(75);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
 var toolbar = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
-var toolbar_item = __webpack_require__(103);
+var toolbar_item = __webpack_require__(102);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
 var toolbar_title = __webpack_require__(54);
@@ -52483,22 +52483,22 @@ var toolbar_title = __webpack_require__(54);
 var navbar = __webpack_require__(27);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/thumbnail/thumbnail.js
-var thumbnail = __webpack_require__(183);
+var thumbnail = __webpack_require__(182);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/typography/typography.js
-var typography = __webpack_require__(187);
+var typography = __webpack_require__(186);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-footer.js
-var virtual_footer = __webpack_require__(121);
+var virtual_footer = __webpack_require__(120);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-header.js
-var virtual_header = __webpack_require__(122);
+var virtual_header = __webpack_require__(121);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-item.js
-var virtual_item = __webpack_require__(123);
+var virtual_item = __webpack_require__(122);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-scroll.js + 1 modules
-var virtual_scroll = __webpack_require__(188);
+var virtual_scroll = __webpack_require__(187);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config = __webpack_require__(1);
@@ -52809,7 +52809,7 @@ var nav_params = __webpack_require__(9);
 var nav_util = __webpack_require__(28);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/tap-click/tap-click.js + 3 modules
-var tap_click = __webpack_require__(108);
+var tap_click = __webpack_require__(107);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/url-serializer.js
 var url_serializer = __webpack_require__(48);
@@ -55039,19 +55039,19 @@ var gesture_Gesture = (function () {
 
 //# sourceMappingURL=gesture.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/slide-edge-gesture.js
-var slide_edge_gesture = __webpack_require__(89);
+var slide_edge_gesture = __webpack_require__(88);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/slide-gesture.js
-var slide_gesture = __webpack_require__(135);
+var slide_gesture = __webpack_require__(134);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
 var gesture_controller = __webpack_require__(6);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/events.js
-var events = __webpack_require__(105);
+var events = __webpack_require__(104);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/ionic-error-handler.js
-var ionic_error_handler = __webpack_require__(189);
+var ionic_error_handler = __webpack_require__(188);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
 var keyboard = __webpack_require__(21);
@@ -55066,16 +55066,16 @@ var page_transition = __webpack_require__(41);
 var transition = __webpack_require__(36);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform-registry.js
-var platform_registry = __webpack_require__(107);
+var platform_registry = __webpack_require__(106);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/mode-registry.js
-var mode_registry = __webpack_require__(109);
+var mode_registry = __webpack_require__(108);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-config.js
-var gesture_config = __webpack_require__(106);
+var gesture_config = __webpack_require__(105);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(124);
+var ionic_angular_module = __webpack_require__(123);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/index.js
 /* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "b", function() { return app_root["b" /* IonicApp */]; });
@@ -55549,9 +55549,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(13);
 var Subscriber_1 = __webpack_require__(35);
 var Subscription_1 = __webpack_require__(40);
-var ObjectUnsubscribedError_1 = __webpack_require__(221);
-var SubjectSubscription_1 = __webpack_require__(222);
-var rxSubscriber_1 = __webpack_require__(85);
+var ObjectUnsubscribedError_1 = __webpack_require__(220);
+var SubjectSubscription_1 = __webpack_require__(221);
+var rxSubscriber_1 = __webpack_require__(84);
 /**
  * @class SubjectSubscriber<T>
  */
@@ -55720,7 +55720,7 @@ exports.AnonymousSubject = AnonymousSubject;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ion__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__overlay_portal__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__overlay_portal__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_constants__ = __webpack_require__(47);
 var __extends = (this && this.__extends) || (function () {
@@ -57468,7 +57468,7 @@ var Nav = (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioGroup; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list_header__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list_header__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__(2);
 
 
@@ -58057,7 +58057,7 @@ var nav_params = __webpack_require__(9);
 var gesture_controller = __webpack_require__(6);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/slide-edge-gesture.js
-var slide_edge_gesture = __webpack_require__(89);
+var slide_edge_gesture = __webpack_require__(88);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/navigation/swipe-back.js
 var __extends = (this && this.__extends) || (function () {
@@ -59870,7 +59870,7 @@ var alertIds = -1;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 
@@ -60124,7 +60124,7 @@ var AlertController = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__picker__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__picker__ = __webpack_require__(145);
 
 
 
@@ -60498,7 +60498,7 @@ var ItemContent = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Reorder; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_reorder_util__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_reorder_util__ = __webpack_require__(142);
 
 
 /**
@@ -60772,8 +60772,7 @@ var ModalCmp = (function () {
 //# sourceMappingURL=modal-component.js.map
 
 /***/ }),
-/* 70 */,
-/* 71 */
+/* 70 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61104,7 +61103,7 @@ var SPINNERS = {
 //# sourceMappingURL=spinner.js.map
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61226,7 +61225,7 @@ var popoverIds = -1;
 //# sourceMappingURL=popover-component.js.map
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61464,7 +61463,7 @@ var RadioButton = (function (_super) {
 //# sourceMappingURL=radio-button.js.map
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61515,7 +61514,7 @@ var SelectPopover = (function () {
 //# sourceMappingURL=select-popover-component.js.map
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61617,7 +61616,7 @@ var toastIds = -1;
 //# sourceMappingURL=toast-component.js.map
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61688,7 +61687,7 @@ var Header = (function (_super) {
 //# sourceMappingURL=toolbar-header.js.map
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62097,7 +62096,7 @@ var Tab = (function (_super) {
 //# sourceMappingURL=tab.js.map
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62151,7 +62150,7 @@ var TabHighlight = (function () {
 //# sourceMappingURL=tab-highlight.js.map
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62239,13 +62238,13 @@ var TabButton = (function (_super) {
 //# sourceMappingURL=tab-button.js.map
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SplashScreen; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_core__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_core__ = __webpack_require__(189);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -62332,13 +62331,13 @@ var SplashScreen = (function (_super) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StatusBar; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_core__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_core__ = __webpack_require__(189);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -62541,8 +62540,8 @@ var StatusBar = (function (_super) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 82 */,
-/* 83 */
+/* 81 */,
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62554,7 +62553,7 @@ exports.isFunction = isFunction;
 //# sourceMappingURL=isFunction.js.map
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62564,7 +62563,7 @@ exports.errorObject = { e: {} };
 //# sourceMappingURL=errorObject.js.map
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62580,19 +62579,19 @@ exports.$$rxSubscriber = exports.rxSubscriber;
 //# sourceMappingURL=rxSubscriber.js.map
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var root_1 = __webpack_require__(39);
-var isArrayLike_1 = __webpack_require__(212);
-var isPromise_1 = __webpack_require__(213);
-var isObject_1 = __webpack_require__(127);
+var isArrayLike_1 = __webpack_require__(211);
+var isPromise_1 = __webpack_require__(212);
+var isObject_1 = __webpack_require__(126);
 var Observable_1 = __webpack_require__(13);
-var iterator_1 = __webpack_require__(214);
-var InnerSubscriber_1 = __webpack_require__(215);
-var observable_1 = __webpack_require__(130);
+var iterator_1 = __webpack_require__(213);
+var InnerSubscriber_1 = __webpack_require__(214);
+var observable_1 = __webpack_require__(129);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -62665,7 +62664,7 @@ exports.subscribeToResult = subscribeToResult;
 //# sourceMappingURL=subscribeToResult.js.map
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62701,7 +62700,7 @@ exports.OuterSubscriber = OuterSubscriber;
 //# sourceMappingURL=OuterSubscriber.js.map
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62805,12 +62804,12 @@ var OverlayPortal = (function (_super) {
 //# sourceMappingURL=overlay-portal.js.map
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlideEdgeGesture; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__slide_gesture__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__slide_gesture__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_dom__ = __webpack_require__(14);
 var __extends = (this && this.__extends) || (function () {
@@ -62886,7 +62885,7 @@ var SlideEdgeGesture = (function (_super) {
 //# sourceMappingURL=slide-edge-gesture.js.map
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63097,13 +63096,13 @@ var action_sheet_ActionSheet = (function (_super) {
 //# sourceMappingURL=action-sheet.js.map
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionSheetController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__action_sheet__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__action_sheet__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 
@@ -63286,7 +63285,7 @@ var ActionSheetController = (function () {
 //# sourceMappingURL=action-sheet-controller.js.map
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63553,7 +63552,7 @@ var alert_Alert = (function (_super) {
 //# sourceMappingURL=alert.js.map
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63603,7 +63602,7 @@ var Badge = (function (_super) {
 //# sourceMappingURL=badge.js.map
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63649,7 +63648,7 @@ var Card = (function (_super) {
 //# sourceMappingURL=card.js.map
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63695,7 +63694,7 @@ var CardTitle = (function (_super) {
 //# sourceMappingURL=card-title.js.map
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63806,7 +63805,7 @@ var FabList = (function () {
 //# sourceMappingURL=fab-list.js.map
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64218,7 +64217,7 @@ var POSITION_BOTTOM = 'bottom';
 //# sourceMappingURL=infinite-scroll.js.map
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64291,7 +64290,7 @@ var ItemOptions = (function () {
 //# sourceMappingURL=item-options.js.map
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64351,7 +64350,7 @@ var ListHeader = (function (_super) {
 //# sourceMappingURL=list-header.js.map
 
 /***/ }),
-/* 100 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64359,7 +64358,7 @@ var ListHeader = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__loading__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__loading__ = __webpack_require__(157);
 
 
 
@@ -64501,7 +64500,7 @@ var LoadingController = (function () {
 //# sourceMappingURL=loading-controller.js.map
 
 /***/ }),
-/* 101 */
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64666,7 +64665,7 @@ var MenuToggle = (function () {
 //# sourceMappingURL=menu-toggle.js.map
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64698,7 +64697,7 @@ function loadAndCompile(compiler, modulePath, ngModuleExport) {
     if (!ngModuleExport) {
         ngModuleExport = 'default';
     }
-    return __webpack_require__(164)(modulePath)
+    return __webpack_require__(163)(modulePath)
         .then(function (rawModule) {
         var module = rawModule[ngModuleExport];
         if (!module) {
@@ -64708,7 +64707,7 @@ function loadAndCompile(compiler, modulePath, ngModuleExport) {
     });
 }
 function loadPrecompiledFactory(modulePath, ngModuleExport) {
-    return __webpack_require__(164)(modulePath)
+    return __webpack_require__(163)(modulePath)
         .then(function (rawModule) {
         var ngModuleFactory = rawModule[ngModuleExport];
         if (!ngModuleFactory) {
@@ -64720,7 +64719,7 @@ function loadPrecompiledFactory(modulePath, ngModuleExport) {
 //# sourceMappingURL=ng-module-loader.js.map
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64790,7 +64789,7 @@ var ToolbarItem = (function (_super) {
 //# sourceMappingURL=toolbar-item.js.map
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64832,14 +64831,14 @@ var ContentNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵcc
 //# sourceMappingURL=content.ngfactory.js.map
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Events; });
 /* unused harmony export setupEvents */
 /* harmony export (immutable) */ __webpack_exports__["b"] = setupProvideEvents;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scroll_view__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scroll_view__ = __webpack_require__(141);
 
 /**
  * @name Events
@@ -65015,7 +65014,7 @@ function setupProvideEvents(plt, dom) {
 //# sourceMappingURL=events.js.map
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65061,7 +65060,7 @@ var IonicGestureConfig = (function (_super) {
 //# sourceMappingURL=gesture-config.js.map
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65069,7 +65068,7 @@ var IonicGestureConfig = (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlatformConfigToken; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = providePlatformConfigs;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__platform_utils__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__platform_utils__ = __webpack_require__(168);
 
 
 var PLATFORM_CONFIGS = {
@@ -65307,7 +65306,7 @@ function providePlatformConfigs() {
 //# sourceMappingURL=platform-registry.js.map
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65475,7 +65474,7 @@ var platform = __webpack_require__(3);
 var util_dom = __webpack_require__(14);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/pointer-events.js
-var pointer_events = __webpack_require__(136);
+var pointer_events = __webpack_require__(135);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/tap-click/ripple.js
 
@@ -65831,7 +65830,7 @@ function setupTapClick(config, plt, dom, app, gestureCtrl) {
 //# sourceMappingURL=tap-click.js.map
 
 /***/ }),
-/* 109 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65936,7 +65935,7 @@ function registerModeConfigs(config) {
 //# sourceMappingURL=mode-registry.js.map
 
 /***/ }),
-/* 110 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65944,7 +65943,7 @@ function registerModeConfigs(config) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_deep_linker__ = __webpack_require__(11);
 
 
@@ -66110,7 +66109,7 @@ var ModalController = (function () {
 //# sourceMappingURL=modal-controller.js.map
 
 /***/ }),
-/* 111 */
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66177,7 +66176,7 @@ var NavPop = (function () {
 //# sourceMappingURL=nav-pop.js.map
 
 /***/ }),
-/* 112 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66266,7 +66265,7 @@ var NavPush = (function () {
 //# sourceMappingURL=nav-push.js.map
 
 /***/ }),
-/* 113 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66365,7 +66364,7 @@ var Option = (function () {
 //# sourceMappingURL=option.js.map
 
 /***/ }),
-/* 114 */
+/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66373,7 +66372,7 @@ var Option = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__popover__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__popover__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_deep_linker__ = __webpack_require__(11);
 
 
@@ -66513,19 +66512,19 @@ var PopoverController = (function () {
 //# sourceMappingURL=popover-controller.js.map
 
 /***/ }),
-/* 115 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/overlay-proxy.js
-var overlay_proxy = __webpack_require__(163);
+var overlay_proxy = __webpack_require__(162);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.js
-var popover_component = __webpack_require__(72);
+var popover_component = __webpack_require__(71);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(16);
@@ -66892,7 +66891,7 @@ var popover_Popover = (function (_super) {
 //# sourceMappingURL=popover.js.map
 
 /***/ }),
-/* 116 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67374,7 +67373,7 @@ var STATE_COMPLETING = 'completing';
 //# sourceMappingURL=refresher.js.map
 
 /***/ }),
-/* 117 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67487,7 +67486,7 @@ var SegmentButton = (function () {
 //# sourceMappingURL=segment-button.js.map
 
 /***/ }),
-/* 118 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67539,7 +67538,7 @@ var DisplayWhen = (function () {
 //# sourceMappingURL=display-when.js.map
 
 /***/ }),
-/* 119 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68270,7 +68269,7 @@ var SWIPER_CONTROLLER = {
 };
 //# sourceMappingURL=swiper-controller.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform-utils.js
-var platform_utils = __webpack_require__(169);
+var platform_utils = __webpack_require__(168);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/slides/swiper/swiper-effects.js
 
@@ -71832,7 +71831,7 @@ var slidesId = -1;
 //# sourceMappingURL=slides.js.map
 
 /***/ }),
-/* 120 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71840,7 +71839,7 @@ var slidesId = -1;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toast__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toast__ = __webpack_require__(183);
 
 
 
@@ -71935,7 +71934,7 @@ var ToastController = (function () {
 //# sourceMappingURL=toast-controller.js.map
 
 /***/ }),
-/* 121 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71962,7 +71961,7 @@ var VirtualFooter = (function () {
 //# sourceMappingURL=virtual-footer.js.map
 
 /***/ }),
-/* 122 */
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71989,7 +71988,7 @@ var VirtualHeader = (function () {
 //# sourceMappingURL=virtual-header.js.map
 
 /***/ }),
-/* 123 */
+/* 122 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72018,7 +72017,7 @@ var VirtualItem = (function () {
 //# sourceMappingURL=virtual-item.js.map
 
 /***/ }),
-/* 124 */
+/* 123 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72034,117 +72033,117 @@ var VirtualItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_deep_linker__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_dom_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util_events__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util_events__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_form__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__gestures_gesture_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gestures_gesture_config__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gestures_gesture_config__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__tap_click_haptic__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__platform_keyboard__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__util_module_loader__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__util_ng_module_loader__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__util_ng_module_loader__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__platform_platform_registry__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__tap_click_tap_click__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__config_mode_registry__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__platform_platform_registry__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__tap_click_tap_click__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__config_mode_registry__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__transitions_transition_controller__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__navigation_url_serializer__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_action_sheet_action_sheet_component__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_action_sheet_action_sheet_controller__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_action_sheet_action_sheet_controller__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_alert_alert_component__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_alert_alert_controller__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_app_click_block__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_app_overlay_portal__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_avatar_avatar__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_app_click_block__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_app_overlay_portal__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_avatar_avatar__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_backdrop_backdrop__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_badge_badge__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_badge_badge__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_button_button__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_card_card__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_card_card_content__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_card_card_header__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_card_card_title__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_checkbox_checkbox__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_chip_chip__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_card_card__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_card_card_content__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_card_card_header__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_card_card_title__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_checkbox_checkbox__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_chip_chip__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_content_content__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_datetime_datetime__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_datetime_datetime__ = __webpack_require__(144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_fab_fab__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_fab_fab_container__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_fab_fab_list__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_grid_col__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_grid_grid__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_grid_row__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_fab_fab_container__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_fab_fab_list__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_grid_col__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_grid_grid__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_grid_row__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_icon_icon__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_img_img__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_infinite_scroll_infinite_scroll__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_infinite_scroll_infinite_scroll_content__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_input_input__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_img_img__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_infinite_scroll_infinite_scroll__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_infinite_scroll_infinite_scroll_content__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_input_input__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_item_item__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_item_item_content__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_item_item_divider__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_item_item_group__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_item_item_options__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_item_item_divider__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_item_item_group__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_item_item_options__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_item_item_reorder__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_item_item_sliding__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_item_item_sliding__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_item_reorder__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_label_label__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_list_list__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_list_list_header__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_list_list_header__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_loading_loading_component__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_loading_loading_controller__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_menu_menu__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_menu_menu_close__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_loading_loading_controller__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_menu_menu__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_menu_menu_close__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__components_app_menu_controller__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_menu_menu_toggle__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_menu_menu_toggle__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__components_modal_modal_component__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_modal_modal_controller__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_modal_modal_controller__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_nav_nav__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_nav_nav_pop__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__components_nav_nav_pop_anchor__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__components_nav_nav_push__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__components_nav_nav_push_anchor__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__components_note_note__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__components_option_option__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_nav_nav_pop__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__components_nav_nav_pop_anchor__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__components_nav_nav_push__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__components_nav_nav_push_anchor__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__components_note_note__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__components_option_option__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__components_picker_picker_component__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__components_picker_picker_column__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__components_picker_picker_controller__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__components_popover_popover_component__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__components_popover_popover_controller__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__components_radio_radio_button__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__components_popover_popover_component__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__components_popover_popover_controller__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__components_radio_radio_button__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__components_radio_radio_group__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__components_range_range__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__components_range_range_knob__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__components_refresher_refresher__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__components_refresher_refresher_content__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__components_scroll_scroll__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__components_searchbar_searchbar__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__components_segment_segment__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__components_select_select__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__components_select_select_popover_component__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__components_segment_segment_button__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__components_show_hide_when_show_when__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__components_show_hide_when_hide_when__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__components_slides_slide__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__components_slides_slides__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__components_spinner_spinner__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__components_range_range__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__components_range_range_knob__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__components_refresher_refresher__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__components_refresher_refresher_content__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__components_scroll_scroll__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__components_searchbar_searchbar__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__components_segment_segment__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__components_select_select__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__components_select_select_popover_component__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__components_segment_segment_button__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__components_show_hide_when_show_when__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__components_show_hide_when_hide_when__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__components_slides_slide__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__components_slides_slides__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__components_spinner_spinner__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_100__components_split_pane_split_pane__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__components_tabs_tab__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__components_tabs_tab_button__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__components_tabs_tab_highlight__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__components_tabs_tab__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__components_tabs_tab_button__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__components_tabs_tab_highlight__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__components_tabs_tabs__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__components_thumbnail_thumbnail__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__components_toast_toast_component__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__components_toast_toast_controller__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_108__components_toggle_toggle__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_109__components_toolbar_toolbar_footer__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__components_toolbar_toolbar_header__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__components_thumbnail_thumbnail__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__components_toast_toast_component__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__components_toast_toast_controller__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_108__components_toggle_toggle__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_109__components_toolbar_toolbar_footer__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__components_toolbar_toolbar_header__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__components_toolbar_toolbar__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__components_toolbar_toolbar_item__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__components_toolbar_toolbar_item__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__components_toolbar_toolbar_title__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__components_toolbar_navbar__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__components_typography_typography__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__components_virtual_scroll_virtual_footer__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__components_virtual_scroll_virtual_header__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__components_virtual_scroll_virtual_item__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_119__components_virtual_scroll_virtual_scroll__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__components_typography_typography__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__components_virtual_scroll_virtual_footer__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__components_virtual_scroll_virtual_header__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__components_virtual_scroll_virtual_item__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_119__components_virtual_scroll_virtual_scroll__ = __webpack_require__(187);
 /**
  * Import Angular
  */
@@ -72651,7 +72650,7 @@ function provideLocationStrategy(platformLocationStrategy, baseHref, config) {
 //# sourceMappingURL=module.js.map
 
 /***/ }),
-/* 125 */
+/* 124 */
 /***/ (function(module, exports) {
 
 var g;
@@ -72678,7 +72677,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 126 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72687,7 +72686,7 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 //# sourceMappingURL=isArray.js.map
 
 /***/ }),
-/* 127 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72699,12 +72698,12 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ }),
-/* 128 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var errorObject_1 = __webpack_require__(84);
+var errorObject_1 = __webpack_require__(83);
 var tryCatchTarget;
 function tryCatcher() {
     try {
@@ -72724,7 +72723,7 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ }),
-/* 129 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72738,7 +72737,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ }),
-/* 130 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72770,7 +72769,7 @@ exports.$$observable = exports.observable;
 //# sourceMappingURL=observable.js.map
 
 /***/ }),
-/* 131 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72857,7 +72856,7 @@ exports.EmptyObservable = EmptyObservable;
 //# sourceMappingURL=EmptyObservable.js.map
 
 /***/ }),
-/* 132 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72869,7 +72868,7 @@ exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
 /***/ }),
-/* 133 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72960,8 +72959,8 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=refCount.js.map
 
 /***/ }),
-/* 134 */,
-/* 135 */
+/* 133 */,
+/* 134 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73062,7 +73061,7 @@ var SlideGesture = (function (_super) {
 //# sourceMappingURL=slide-gesture.js.map
 
 /***/ }),
-/* 136 */
+/* 135 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73169,7 +73168,7 @@ var POINTER_EVENT_TYPE_TOUCH = 2;
 //# sourceMappingURL=pointer-events.js.map
 
 /***/ }),
-/* 137 */
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73200,7 +73199,7 @@ var Avatar = (function () {
 //# sourceMappingURL=avatar.js.map
 
 /***/ }),
-/* 138 */
+/* 137 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73246,7 +73245,7 @@ var CardContent = (function (_super) {
 //# sourceMappingURL=card-content.js.map
 
 /***/ }),
-/* 139 */
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73292,7 +73291,7 @@ var CardHeader = (function (_super) {
 //# sourceMappingURL=card-header.js.map
 
 /***/ }),
-/* 140 */
+/* 139 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73466,7 +73465,7 @@ var Checkbox = (function (_super) {
 //# sourceMappingURL=checkbox.js.map
 
 /***/ }),
-/* 141 */
+/* 140 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73501,7 +73500,7 @@ var TimeoutDebouncer = (function () {
 //# sourceMappingURL=debouncer.js.map
 
 /***/ }),
-/* 142 */
+/* 141 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73956,7 +73955,7 @@ var EVENT_OPTS = {
 //# sourceMappingURL=scroll-view.js.map
 
 /***/ }),
-/* 143 */
+/* 142 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73995,7 +73994,7 @@ function findReorderItem(node, listNode) {
 //# sourceMappingURL=item-reorder-util.js.map
 
 /***/ }),
-/* 144 */
+/* 143 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74125,7 +74124,7 @@ var Chip = (function (_super) {
 //# sourceMappingURL=chip.js.map
 
 /***/ }),
-/* 145 */
+/* 144 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75361,7 +75360,7 @@ var DEFAULT_FORMAT = 'MMM D, YYYY';
 //# sourceMappingURL=datetime.js.map
 
 /***/ }),
-/* 146 */
+/* 145 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75527,7 +75526,7 @@ var picker_Picker = (function (_super) {
 //# sourceMappingURL=picker.js.map
 
 /***/ }),
-/* 147 */
+/* 146 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75536,7 +75535,7 @@ var picker_Picker = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gestures_ui_event_manager__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fab__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fab_list__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fab_list__ = __webpack_require__(95);
 
 
 
@@ -75713,7 +75712,7 @@ var FabContainer = (function () {
 //# sourceMappingURL=fab-container.js.map
 
 /***/ }),
-/* 148 */
+/* 147 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75762,7 +75761,7 @@ var Col = (function () {
 //# sourceMappingURL=col.js.map
 
 /***/ }),
-/* 149 */
+/* 148 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76322,7 +76321,7 @@ var Grid = (function () {
 //# sourceMappingURL=grid.js.map
 
 /***/ }),
-/* 150 */
+/* 149 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76378,7 +76377,7 @@ var Row = (function () {
 //# sourceMappingURL=row.js.map
 
 /***/ }),
-/* 151 */
+/* 150 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76777,14 +76776,14 @@ function getUnitValue(val) {
 //# sourceMappingURL=img.js.map
 
 /***/ }),
-/* 152 */
+/* 151 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfiniteScrollContent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__infinite_scroll__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__infinite_scroll__ = __webpack_require__(96);
 
 
 
@@ -76834,7 +76833,7 @@ var InfiniteScrollContent = (function () {
 //# sourceMappingURL=infinite-scroll-content.js.map
 
 /***/ }),
-/* 153 */
+/* 152 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76844,7 +76843,7 @@ var InfiniteScrollContent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_config__ = __webpack_require__(1);
@@ -77639,18 +77638,18 @@ function removeClone(plt, srcComponentEle, srcNativeInputEle) {
 //# sourceMappingURL=input.js.map
 
 /***/ }),
-/* 154 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(13);
-var takeUntil_1 = __webpack_require__(229);
+var takeUntil_1 = __webpack_require__(228);
 Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 //# sourceMappingURL=takeUntil.js.map
 
 /***/ }),
-/* 155 */
+/* 154 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77699,7 +77698,7 @@ var ItemDivider = (function (_super) {
 //# sourceMappingURL=item-divider.js.map
 
 /***/ }),
-/* 156 */
+/* 155 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77725,7 +77724,7 @@ var ItemGroup = (function () {
 //# sourceMappingURL=item-group.js.map
 
 /***/ }),
-/* 157 */
+/* 156 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77735,7 +77734,7 @@ var ItemGroup = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__item__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__item_options__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__item_options__ = __webpack_require__(97);
 
 
 
@@ -78148,7 +78147,7 @@ var ItemSliding = (function () {
 //# sourceMappingURL=item-sliding.js.map
 
 /***/ }),
-/* 158 */
+/* 157 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78411,7 +78410,7 @@ var loading_Loading = (function (_super) {
 //# sourceMappingURL=loading.js.map
 
 /***/ }),
-/* 159 */
+/* 158 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78444,7 +78443,7 @@ var util = __webpack_require__(2);
 var keyboard = __webpack_require__(21);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/slide-edge-gesture.js
-var slide_edge_gesture = __webpack_require__(89);
+var slide_edge_gesture = __webpack_require__(88);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/menu/menu-gestures.js
 var __extends = (this && this.__extends) || (function () {
@@ -79229,7 +79228,7 @@ var menu_Menu = (function () {
 //# sourceMappingURL=menu.js.map
 
 /***/ }),
-/* 160 */
+/* 159 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79292,7 +79291,7 @@ var MenuClose = (function () {
 //# sourceMappingURL=menu-close.js.map
 
 /***/ }),
-/* 161 */
+/* 160 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79336,13 +79335,13 @@ var ToolbarBase = (function (_super) {
 //# sourceMappingURL=toolbar-base.js.map
 
 /***/ }),
-/* 162 */
+/* 161 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/overlay-proxy.js
-var overlay_proxy = __webpack_require__(163);
+var overlay_proxy = __webpack_require__(162);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
 var util = __webpack_require__(2);
@@ -79584,7 +79583,7 @@ var modal_Modal = (function (_super) {
 //# sourceMappingURL=modal.js.map
 
 /***/ }),
-/* 163 */
+/* 162 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79657,8 +79656,8 @@ var OverlayProxy = (function () {
 //# sourceMappingURL=overlay-proxy.js.map
 
 /***/ }),
-/* 164 */,
-/* 165 */
+/* 163 */,
+/* 164 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79740,7 +79739,7 @@ var ClickBlock = (function () {
 //# sourceMappingURL=click-block.js.map
 
 /***/ }),
-/* 166 */
+/* 165 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79829,7 +79828,7 @@ var ItemNgFactory = core["_13" /* ɵccf */]("ion-list-header,ion-item,[ion-item]
 //# sourceMappingURL=item.ngfactory.js.map
 
 /***/ }),
-/* 167 */
+/* 166 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79876,7 +79875,7 @@ var NavbarNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵccf
 //# sourceMappingURL=navbar.ngfactory.js.map
 
 /***/ }),
-/* 168 */
+/* 167 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79912,7 +79911,7 @@ var ToolbarTitleNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /*
 //# sourceMappingURL=toolbar-title.ngfactory.js.map
 
 /***/ }),
-/* 169 */
+/* 168 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79948,7 +79947,7 @@ function isIosUIWebView(plt) {
 //# sourceMappingURL=platform-utils.js.map
 
 /***/ }),
-/* 170 */
+/* 169 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79956,7 +79955,7 @@ function isIosUIWebView(plt) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navigation_deep_linker__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navigation_view_controller__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_pop__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_pop__ = __webpack_require__(110);
 
 
 
@@ -80002,14 +80001,14 @@ var NavPopAnchor = (function () {
 //# sourceMappingURL=nav-pop-anchor.js.map
 
 /***/ }),
-/* 171 */
+/* 170 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavPushAnchor; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navigation_deep_linker__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_push__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_push__ = __webpack_require__(111);
 
 
 
@@ -80051,7 +80050,7 @@ var NavPushAnchor = (function () {
 //# sourceMappingURL=nav-push-anchor.js.map
 
 /***/ }),
-/* 172 */
+/* 171 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80118,7 +80117,7 @@ var Note = (function (_super) {
 //# sourceMappingURL=note.js.map
 
 /***/ }),
-/* 173 */
+/* 172 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80679,7 +80678,7 @@ var Range = (function (_super) {
 //# sourceMappingURL=range.js.map
 
 /***/ }),
-/* 174 */
+/* 173 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80759,14 +80758,14 @@ var RangeKnob = (function () {
 //# sourceMappingURL=range-knob.js.map
 
 /***/ }),
-/* 175 */
+/* 174 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RefresherContent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__refresher__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__refresher__ = __webpack_require__(115);
 
 
 
@@ -80827,7 +80826,7 @@ var RefresherContent = (function () {
 //# sourceMappingURL=refresher-content.js.map
 
 /***/ }),
-/* 176 */
+/* 175 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80966,7 +80965,7 @@ var Scroll = (function () {
 //# sourceMappingURL=scroll.js.map
 
 /***/ }),
-/* 177 */
+/* 176 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80976,7 +80975,7 @@ var Scroll = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_base_input__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_debouncer__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_debouncer__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__platform_platform__ = __webpack_require__(3);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -81363,7 +81362,7 @@ var Searchbar = (function (_super) {
 //# sourceMappingURL=searchbar.js.map
 
 /***/ }),
-/* 178 */
+/* 177 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -81372,7 +81371,7 @@ var Searchbar = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_base_input__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__segment_button__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__segment_button__ = __webpack_require__(116);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -81502,16 +81501,16 @@ var Segment = (function (_super) {
 //# sourceMappingURL=segment.js.map
 
 /***/ }),
-/* 179 */
+/* 178 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Select; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__action_sheet_action_sheet__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alert_alert__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover_popover__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__action_sheet_action_sheet__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alert_alert__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover_popover__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_deep_linker__ = __webpack_require__(11);
@@ -81519,8 +81518,8 @@ var Segment = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util_base_input__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__item_item__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__option_option__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__select_popover_component__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__option_option__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__select_popover_component__ = __webpack_require__(73);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -82014,13 +82013,13 @@ var Select = (function (_super) {
 //# sourceMappingURL=select.js.map
 
 /***/ }),
-/* 180 */
+/* 179 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShowWhen; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__display_when__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__display_when__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__platform_platform__ = __webpack_require__(3);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -82102,14 +82101,14 @@ var ShowWhen = (function (_super) {
 //# sourceMappingURL=show-when.js.map
 
 /***/ }),
-/* 181 */
+/* 180 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HideWhen; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__display_when__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__display_when__ = __webpack_require__(117);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -82189,13 +82188,13 @@ var HideWhen = (function (_super) {
 //# sourceMappingURL=hide-when.js.map
 
 /***/ }),
-/* 182 */
+/* 181 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Slide; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slides__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slides__ = __webpack_require__(118);
 
 
 /**
@@ -82244,7 +82243,7 @@ var Slide = (function () {
 //# sourceMappingURL=slide.js.map
 
 /***/ }),
-/* 183 */
+/* 182 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -82275,7 +82274,7 @@ var Thumbnail = (function () {
 //# sourceMappingURL=thumbnail.js.map
 
 /***/ }),
-/* 184 */
+/* 183 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -82287,7 +82286,7 @@ var util = __webpack_require__(2);
 var app_constants = __webpack_require__(47);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.js
-var toast_component = __webpack_require__(75);
+var toast_component = __webpack_require__(74);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(16);
@@ -82627,7 +82626,7 @@ var TOAST_POSITION_BOTTOM = 'bottom';
 //# sourceMappingURL=toast.js.map
 
 /***/ }),
-/* 185 */
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -82960,7 +82959,7 @@ var toggle_Toggle = (function (_super) {
 //# sourceMappingURL=toggle.js.map
 
 /***/ }),
-/* 186 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83027,7 +83026,7 @@ var Footer = (function (_super) {
 //# sourceMappingURL=toolbar-footer.js.map
 
 /***/ }),
-/* 187 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83111,7 +83110,7 @@ var Typography = (function (_super) {
 //# sourceMappingURL=typography.js.map
 
 /***/ }),
-/* 188 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83672,13 +83671,13 @@ var platform = __webpack_require__(3);
 var view_controller = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-item.js
-var virtual_item = __webpack_require__(123);
+var virtual_item = __webpack_require__(122);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-footer.js
-var virtual_footer = __webpack_require__(121);
+var virtual_footer = __webpack_require__(120);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-header.js
-var virtual_header = __webpack_require__(122);
+var virtual_header = __webpack_require__(121);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/virtual-scroll/virtual-scroll.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return virtual_scroll_VirtualScroll; });
@@ -84418,7 +84417,7 @@ var SCROLL_DIFFERENCE_MINIMUM = 40;
 //# sourceMappingURL=virtual-scroll.js.map
 
 /***/ }),
-/* 189 */
+/* 188 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84501,13 +84500,13 @@ var IonicErrorHandler = (function (_super) {
 //# sourceMappingURL=ionic-error-handler.js.map
 
 /***/ }),
-/* 190 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/rxjs/add/observable/fromEvent.js
-var fromEvent = __webpack_require__(240);
+var fromEvent = __webpack_require__(239);
 var fromEvent_default = /*#__PURE__*/__webpack_require__.n(fromEvent);
 
 // EXTERNAL MODULE: ./node_modules/rxjs/Observable.js
@@ -85013,7 +85012,7 @@ function wrapInstance(pluginObj, methodName, opts) {
 }
 //# sourceMappingURL=plugin.js.map
 // EXTERNAL MODULE: ./node_modules/rxjs/observable/throw.js
-var observable_throw = __webpack_require__(243);
+var observable_throw = __webpack_require__(242);
 var throw_default = /*#__PURE__*/__webpack_require__.n(observable_throw);
 
 // CONCATENATED MODULE: ./node_modules/@ionic-native/core/decorators.js
@@ -85328,7 +85327,7 @@ var IonicNativePlugin = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 191 */
+/* 190 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85392,7 +85391,7 @@ var ActionSheetCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" 
 //# sourceMappingURL=action-sheet-component.ngfactory.js.map
 
 /***/ }),
-/* 192 */
+/* 191 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85480,7 +85479,7 @@ var AlertCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 //# sourceMappingURL=alert-component.ngfactory.js.map
 
 /***/ }),
-/* 193 */
+/* 192 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85489,7 +85488,7 @@ var AlertCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 /* unused harmony export View_IonicApp_Host_0 */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IonicAppNgFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overlay_portal__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overlay_portal__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_platform__ = __webpack_require__(3);
@@ -85497,7 +85496,7 @@ var AlertCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__transitions_transition_controller__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_deep_linker__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_dom_controller__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__click_block__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__click_block__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_root__ = __webpack_require__(46);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
@@ -85526,7 +85525,7 @@ var IonicAppNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 //# sourceMappingURL=app-root.ngfactory.js.map
 
 /***/ }),
-/* 194 */
+/* 193 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85538,7 +85537,7 @@ var core = __webpack_require__(0);
 var common = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/spinner/spinner.js
-var spinner = __webpack_require__(71);
+var spinner = __webpack_require__(70);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config = __webpack_require__(1);
@@ -85618,7 +85617,7 @@ var LoadingCmpNgFactory = core["_13" /* ɵccf */]("ion-loading", loading_compone
 //# sourceMappingURL=loading-component.ngfactory.js.map
 
 /***/ }),
-/* 195 */
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85662,7 +85661,7 @@ var ModalCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 //# sourceMappingURL=modal-component.ngfactory.js.map
 
 /***/ }),
-/* 196 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85787,7 +85786,7 @@ var PickerCmpNgFactory = core["_13" /* ɵccf */]("ion-picker-cmp", picker_compon
 //# sourceMappingURL=picker-component.ngfactory.js.map
 
 /***/ }),
-/* 197 */
+/* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85797,7 +85796,7 @@ var PickerCmpNgFactory = core["_13" /* ɵccf */]("ion-picker-cmp", picker_compon
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopoverCmpNgFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__backdrop_backdrop__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__popover_component__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__popover_component__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_nav_params__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navigation_view_controller__ = __webpack_require__(4);
@@ -85833,7 +85832,7 @@ var PopoverCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* �
 //# sourceMappingURL=popover-component.ngfactory.js.map
 
 /***/ }),
-/* 198 */
+/* 197 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85842,7 +85841,7 @@ var PopoverCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* �
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
-var item_ngfactory = __webpack_require__(166);
+var item_ngfactory = __webpack_require__(165);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
 var item = __webpack_require__(18);
@@ -85869,7 +85868,7 @@ var button_ngfactory = __webpack_require__(33);
 var button_button = __webpack_require__(17);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-button.js
-var radio_button = __webpack_require__(73);
+var radio_button = __webpack_require__(72);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-group.js
 var radio_group = __webpack_require__(53);
@@ -85919,7 +85918,7 @@ var dom_controller = __webpack_require__(7);
 var common = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.js
-var select_popover_component = __webpack_require__(74);
+var select_popover_component = __webpack_require__(73);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
 var nav_params = __webpack_require__(9);
@@ -85975,7 +85974,7 @@ var SelectPopoverNgFactory = core["_13" /* ɵccf */]("ng-component", select_popo
 //# sourceMappingURL=select-popover-component.ngfactory.js.map
 
 /***/ }),
-/* 199 */
+/* 198 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85988,7 +85987,7 @@ var SelectPopoverNgFactory = core["_13" /* ɵccf */]("ng-component", select_popo
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toast_component__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toast_component__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_nav_params__ = __webpack_require__(9);
 /**
@@ -86020,17 +86019,17 @@ var ToastCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 //# sourceMappingURL=toast-component.ngfactory.js.map
 
 /***/ }),
+/* 199 */,
 /* 200 */,
 /* 201 */,
-/* 202 */,
-/* 203 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Subscriber_1 = __webpack_require__(35);
-var rxSubscriber_1 = __webpack_require__(85);
-var Observer_1 = __webpack_require__(129);
+var rxSubscriber_1 = __webpack_require__(84);
+var Observer_1 = __webpack_require__(128);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -86049,7 +86048,7 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ }),
-/* 204 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86080,12 +86079,12 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ }),
-/* 205 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var noop_1 = __webpack_require__(206);
+var noop_1 = __webpack_require__(205);
 /* tslint:enable:max-line-length */
 function pipe() {
     var fns = [];
@@ -86111,7 +86110,7 @@ exports.pipeFromArray = pipeFromArray;
 //# sourceMappingURL=pipe.js.map
 
 /***/ }),
-/* 206 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86122,15 +86121,15 @@ exports.noop = noop;
 //# sourceMappingURL=noop.js.map
 
 /***/ }),
-/* 207 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(13);
-var ArrayObservable_1 = __webpack_require__(208);
-var isScheduler_1 = __webpack_require__(132);
-var mergeAll_1 = __webpack_require__(210);
+var ArrayObservable_1 = __webpack_require__(207);
+var isScheduler_1 = __webpack_require__(131);
+var mergeAll_1 = __webpack_require__(209);
 /* tslint:enable:max-line-length */
 /**
  * Creates an output Observable which concurrently emits all values from every
@@ -86218,7 +86217,7 @@ exports.merge = merge;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 208 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86229,9 +86228,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(13);
-var ScalarObservable_1 = __webpack_require__(209);
-var EmptyObservable_1 = __webpack_require__(131);
-var isScheduler_1 = __webpack_require__(132);
+var ScalarObservable_1 = __webpack_require__(208);
+var EmptyObservable_1 = __webpack_require__(130);
+var isScheduler_1 = __webpack_require__(131);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -86346,7 +86345,7 @@ exports.ArrayObservable = ArrayObservable;
 //# sourceMappingURL=ArrayObservable.js.map
 
 /***/ }),
-/* 209 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86410,13 +86409,13 @@ exports.ScalarObservable = ScalarObservable;
 //# sourceMappingURL=ScalarObservable.js.map
 
 /***/ }),
-/* 210 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMap_1 = __webpack_require__(211);
-var identity_1 = __webpack_require__(216);
+var mergeMap_1 = __webpack_require__(210);
+var identity_1 = __webpack_require__(215);
 /**
  * Converts a higher-order Observable into a first-order Observable which
  * concurrently delivers all values that are emitted on the inner Observables.
@@ -86469,7 +86468,7 @@ exports.mergeAll = mergeAll;
 //# sourceMappingURL=mergeAll.js.map
 
 /***/ }),
-/* 211 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86479,8 +86478,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var subscribeToResult_1 = __webpack_require__(86);
-var OuterSubscriber_1 = __webpack_require__(87);
+var subscribeToResult_1 = __webpack_require__(85);
+var OuterSubscriber_1 = __webpack_require__(86);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -86648,7 +86647,7 @@ exports.MergeMapSubscriber = MergeMapSubscriber;
 //# sourceMappingURL=mergeMap.js.map
 
 /***/ }),
-/* 212 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86657,7 +86656,7 @@ exports.isArrayLike = (function (x) { return x && typeof x.length === 'number'; 
 //# sourceMappingURL=isArrayLike.js.map
 
 /***/ }),
-/* 213 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86669,7 +86668,7 @@ exports.isPromise = isPromise;
 //# sourceMappingURL=isPromise.js.map
 
 /***/ }),
-/* 214 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86713,7 +86712,7 @@ exports.$$iterator = exports.iterator;
 //# sourceMappingURL=iterator.js.map
 
 /***/ }),
-/* 215 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86755,7 +86754,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ }),
-/* 216 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86767,12 +86766,12 @@ exports.identity = identity;
 //# sourceMappingURL=identity.js.map
 
 /***/ }),
-/* 217 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var share_1 = __webpack_require__(218);
+var share_1 = __webpack_require__(217);
 /**
  * Returns a new Observable that multicasts (shares) the original Observable. As long as there is at least one
  * Subscriber this Observable will be subscribed and emitting data. When all subscribers have unsubscribed it will
@@ -86797,13 +86796,13 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 218 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var multicast_1 = __webpack_require__(219);
-var refCount_1 = __webpack_require__(133);
+var multicast_1 = __webpack_require__(218);
+var refCount_1 = __webpack_require__(132);
 var Subject_1 = __webpack_require__(45);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -86828,12 +86827,12 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 219 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ConnectableObservable_1 = __webpack_require__(220);
+var ConnectableObservable_1 = __webpack_require__(219);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -86893,7 +86892,7 @@ exports.MulticastOperator = MulticastOperator;
 //# sourceMappingURL=multicast.js.map
 
 /***/ }),
-/* 220 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86907,7 +86906,7 @@ var Subject_1 = __webpack_require__(45);
 var Observable_1 = __webpack_require__(13);
 var Subscriber_1 = __webpack_require__(35);
 var Subscription_1 = __webpack_require__(40);
-var refCount_1 = __webpack_require__(133);
+var refCount_1 = __webpack_require__(132);
 /**
  * @class ConnectableObservable<T>
  */
@@ -87070,7 +87069,7 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ }),
-/* 221 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87103,7 +87102,7 @@ exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 //# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ }),
-/* 222 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87149,17 +87148,17 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ }),
-/* 223 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ForkJoinObservable_1 = __webpack_require__(224);
+var ForkJoinObservable_1 = __webpack_require__(223);
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 //# sourceMappingURL=forkJoin.js.map
 
 /***/ }),
-/* 224 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87170,10 +87169,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(13);
-var EmptyObservable_1 = __webpack_require__(131);
-var isArray_1 = __webpack_require__(126);
-var subscribeToResult_1 = __webpack_require__(86);
-var OuterSubscriber_1 = __webpack_require__(87);
+var EmptyObservable_1 = __webpack_require__(130);
+var isArray_1 = __webpack_require__(125);
+var subscribeToResult_1 = __webpack_require__(85);
+var OuterSubscriber_1 = __webpack_require__(86);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -87367,17 +87366,17 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ }),
-/* 225 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var PromiseObservable_1 = __webpack_require__(226);
+var PromiseObservable_1 = __webpack_require__(225);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
 /***/ }),
-/* 226 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87504,12 +87503,12 @@ function dispatchError(arg) {
 //# sourceMappingURL=PromiseObservable.js.map
 
 /***/ }),
-/* 227 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var map_1 = __webpack_require__(228);
+var map_1 = __webpack_require__(227);
 /**
  * Applies a given `project` function to each value emitted by the source
  * Observable, and emits the resulting values as an Observable.
@@ -87550,7 +87549,7 @@ exports.map = map;
 //# sourceMappingURL=map.js.map
 
 /***/ }),
-/* 228 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87645,12 +87644,12 @@ var MapSubscriber = (function (_super) {
 //# sourceMappingURL=map.js.map
 
 /***/ }),
-/* 229 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var takeUntil_1 = __webpack_require__(230);
+var takeUntil_1 = __webpack_require__(229);
 /**
  * Emits the values emitted by the source Observable until a `notifier`
  * Observable emits a value.
@@ -87691,7 +87690,7 @@ exports.takeUntil = takeUntil;
 //# sourceMappingURL=takeUntil.js.map
 
 /***/ }),
-/* 230 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87701,8 +87700,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(87);
-var subscribeToResult_1 = __webpack_require__(86);
+var OuterSubscriber_1 = __webpack_require__(86);
+var subscribeToResult_1 = __webpack_require__(85);
 /**
  * Emits the values emitted by the source Observable until a `notifier`
  * Observable emits a value.
@@ -87772,14 +87771,14 @@ var TakeUntilSubscriber = (function (_super) {
 //# sourceMappingURL=takeUntil.js.map
 
 /***/ }),
-/* 231 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/*
  * Multilanguage AFINN-based sentiment analysis for Node.js
  */
-var oDictionary = __webpack_require__(233);
-var oLangDetect = new (__webpack_require__(234));
+var oDictionary = __webpack_require__(232);
+var oLangDetect = new (__webpack_require__(233));
 
 var frenchExtraWords = {
     "ahah": 1,
@@ -88082,10 +88081,10 @@ module.exports = function (sPhrase, sLangCode = "en", originalPhrase = sPhrase, 
     });
 };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(232)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(231)))
 
 /***/ }),
-/* 232 */
+/* 231 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -88275,7 +88274,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 233 */
+/* 232 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -88292,13 +88291,13 @@ module.exports = {
 
 
 /***/ }),
-/* 234 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(235);
+module.exports = __webpack_require__(234);
 
 /***/ }),
-/* 235 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -88332,9 +88331,9 @@ module.exports = __webpack_require__(235);
  * </code>
  */
 
-var dbLang = __webpack_require__(236)
-  , Parser = __webpack_require__(237)
-  , ISO639 = __webpack_require__(239);
+var dbLang = __webpack_require__(235)
+  , Parser = __webpack_require__(236)
+  , ISO639 = __webpack_require__(238);
 
 var LanguageDetect = module.exports = function (languageType) {
 
@@ -88537,16 +88536,16 @@ LanguageDetect.prototype = {
 
 
 /***/ }),
-/* 236 */
+/* 235 */
 /***/ (function(module, exports) {
 
 module.exports = {"trigram":{"albanian":{"të ":"0"," të":"1","në ":"2","për":"3"," pë":"4"," e ":"5","sht":"6"," në":"7"," sh":"8","se ":"9","et ":"10","ë s":"11","ë t":"12"," se":"13","he ":"14","jë ":"15","ër ":"16","dhe":"17"," pa":"18","ë n":"19","ë p":"20"," që":"21"," dh":"22","një":"23","ë m":"24"," nj":"25","ësh":"26","in ":"27"," me":"28","që ":"29"," po":"30","e n":"31","e t":"32","ish":"33","më ":"34","së ":"35","me ":"36","htë":"37"," ka":"38"," si":"39","e k":"40","e p":"41"," i ":"42","anë":"43","ar ":"44"," nu":"45","und":"46","ve ":"47"," ës":"48","e s":"49"," më":"50","nuk":"51","par":"52","uar":"53","uk ":"54","jo ":"55","rë ":"56","ta ":"57","ë f":"58","en ":"59","it ":"60","min":"61","het":"62","n e":"63","ri ":"64","shq":"65","ë d":"66"," do":"67"," nd":"68","sh ":"69","ën ":"70","atë":"71","hqi":"72","ist":"73","ë q":"74"," gj":"75"," ng":"76"," th":"77","a n":"78","do ":"79","end":"80","imi":"81","ndi":"82","r t":"83","rat":"84","ë b":"85","ëri":"86"," mu":"87","art":"88","ash":"89","qip":"90"," ko":"91","e m":"92","edh":"93","eri":"94","je ":"95","ka ":"96","nga":"97","si ":"98","te ":"99","ë k":"100","ësi":"101"," ma":"102"," ti":"103","eve":"104","hje":"105","ira":"106","mun":"107","on ":"108","po ":"109","re ":"110"," pr":"111","im ":"112","lit":"113","o t":"114","ur ":"115","ë e":"116","ë v":"117","ët ":"118"," ku":"119"," së":"120","e d":"121","es ":"122","ga ":"123","iti":"124","jet":"125","ndë":"126","oli":"127","shi":"128","tje":"129"," bë":"130"," z ":"131","gje":"132","kan":"133","shk":"134","ënd":"135","ës ":"136"," de":"137"," kj":"138"," ru":"139"," vi":"140","ara":"141","gov":"142","kjo":"143","or ":"144","r p":"145","rto":"146","rug":"147","tet":"148","ugo":"149","ali":"150","arr":"151","at ":"152","d t":"153","ht ":"154","i p":"155","ipë":"156","izi":"157","jnë":"158","n n":"159","ohe":"160","shu":"161","shë":"162","t e":"163","tik":"164","a e":"165","arë":"166","etë":"167","hum":"168","nd ":"169","ndr":"170","osh":"171","ova":"172","rim":"173","tos":"174","va ":"175"," fa":"176"," fi":"177","a s":"178","hen":"179","i n":"180","mar":"181","ndo":"182","por":"183","ris":"184","sa ":"185","sis":"186","tës":"187","umë":"188","viz":"189","zit":"190"," di":"191"," mb":"192","aj ":"193","ana":"194","ata":"195","dër":"196","e a":"197","esh":"198","ime":"199","jes":"200","lar":"201","n s":"202","nte":"203","pol":"204","r n":"205","ran":"206","res":"207","rrë":"208","tar":"209","ë a":"210","ë i":"211"," at":"212"," jo":"213"," kë":"214"," re":"215","a k":"216","ai ":"217","akt":"218","hë ":"219","hën":"220","i i":"221","i m":"222","ia ":"223","men":"224","nis":"225","shm":"226","str":"227","t k":"228","t n":"229","t s":"230","ë g":"231","ërk":"232","ëve":"233"," ai":"234"," ci":"235"," ed":"236"," ja":"237"," kr":"238"," qe":"239"," ta":"240"," ve":"241","a p":"242","cil":"243","el ":"244","erë":"245","gji":"246","hte":"247","i t":"248","jen":"249","jit":"250","k d":"251","mën":"252","n t":"253","nyr":"254","ori":"255","pas":"256","ra ":"257","rie":"258","rës":"259","tor":"260","uaj":"261","yre":"262","ëm ":"263","ëny":"264"," ar":"265"," du":"266"," ga":"267"," je":"268","dës":"269","e e":"270","e z":"271","ha ":"272","hme":"273","ika":"274","ini":"275","ite":"276","ith":"277","koh":"278","kra":"279","ku ":"280","lim":"281","lis":"282","qën":"283","rën":"284","s s":"285","t d":"286","t t":"287","tir":"288","tën":"289","ver":"290","ë j":"291"," ba":"292"," in":"293"," tr":"294"," zg":"295","a a":"296","a m":"297","a t":"298","abr":"299"},"arabic":{" ال":"0","الع":"1","لعر":"2","عرا":"3","راق":"4"," في":"5","في ":"6","ين ":"7","ية ":"8","ن ا":"9","الم":"10","ات ":"11","من ":"12","ي ا":"13"," من":"14","الأ":"15","ة ا":"16","اق ":"17"," وا":"18","اء ":"19","الإ":"20"," أن":"21","وال":"22","ما ":"23"," عل":"24","لى ":"25","ت ا":"26","ون ":"27","هم ":"28","اقي":"29","ام ":"30","ل ا":"31","أن ":"32","م ا":"33","الت":"34","لا ":"35","الا":"36","ان ":"37","ها ":"38","ال ":"39","ة و":"40","ا ا":"41","رها":"42","لام":"43","يين":"44"," ول":"45","لأم":"46","نا ":"47","على":"48","ن ي":"49","الب":"50","اد ":"51","الق":"52","د ا":"53","ذا ":"54","ه ا":"55"," با":"56","الد":"57","ب ا":"58","مري":"59","لم ":"60"," إن":"61"," لل":"62","سلا":"63","أمر":"64","ريك":"65","مة ":"66","ى ا":"67","ا ي":"68"," عن":"69"," هذ":"70","ء ا":"71","ر ا":"72","كان":"73","قتل":"74","إسل":"75","الح":"76","وا ":"77"," إل":"78","ا أ":"79","بال":"80","ن م":"81","الس":"82","رة ":"83","لإس":"84","ن و":"85","هاب":"86","ي و":"87","ير ":"88"," كا":"89","لة ":"90","يات":"91"," لا":"92","انت":"93","ن أ":"94","يكي":"95","الر":"96","الو":"97","ة ف":"98","دة ":"99","الج":"100","قي ":"101","وي ":"102","الذ":"103","الش":"104","امي":"105","اني":"106","ذه ":"107","عن ":"108","لما":"109","هذه":"110","ول ":"111","اف ":"112","اوي":"113","بري":"114","ة ل":"115"," أم":"116"," لم":"117"," ما":"118","يد ":"119"," أي":"120","إره":"121","ع ا":"122","عمل":"123","ولا":"124","إلى":"125","ابي":"126","ن ف":"127","ختط":"128","لك ":"129","نه ":"130","ني ":"131","إن ":"132","دين":"133","ف ا":"134","لذي":"135","ي أ":"136","ي ب":"137"," وأ":"138","ا ع":"139","الخ":"140","تل ":"141","تي ":"142","قد ":"143","لدي":"144"," كل":"145"," مع":"146","اب ":"147","اخت":"148","ار ":"149","الن":"150","علا":"151","م و":"152","مع ":"153","س ا":"154","كل ":"155","لاء":"156","ن ب":"157","ن ت":"158","ي م":"159","عرب":"160","م ب":"161"," وق":"162"," يق":"163","ا ل":"164","ا م":"165","الف":"166","تطا":"167","داد":"168","لمس":"169","له ":"170","هذا":"171"," مح":"172","ؤلا":"173","بي ":"174","ة م":"175","ن ل":"176","هؤل":"177","كن ":"178","لإر":"179","لتي":"180"," أو":"181"," ان":"182"," عم":"183","ا ف":"184","ة أ":"185","طاف":"186","عب ":"187","ل م":"188","ن ع":"189","ور ":"190","يا ":"191"," يس":"192","ا ت":"193","ة ب":"194","راء":"195","عال":"196","قوا":"197","قية":"198","لعا":"199","م ي":"200","مي ":"201","مية":"202","نية":"203","أي ":"204","ابا":"205","بغد":"206","بل ":"207","رب ":"208","عما":"209","غدا":"210","مال":"211","ملي":"212","يس ":"213"," بأ":"214"," بع":"215"," بغ":"216"," وم":"217","بات":"218","بية":"219","ذلك":"220","عة ":"221","قاو":"222","قيي":"223","كي ":"224","م م":"225","ي ع":"226"," عر":"227"," قا":"228","ا و":"229","رى ":"230","ق ا":"231","وات":"232","وم ":"233"," هؤ":"234","ا ب":"235","دام":"236","دي ":"237","رات":"238","شعب":"239","لان":"240","لشع":"241","لقو":"242","ليا":"243","ن ه":"244","ي ت":"245","ي ي":"246"," وه":"247"," يح":"248","جرا":"249","جما":"250","حمد":"251","دم ":"252","كم ":"253","لاو":"254","لره":"255","ماع":"256","ن ق":"257","نة ":"258","هي ":"259"," بل":"260"," به":"261"," له":"262"," وي":"263","ا ك":"264","اذا":"265","اع ":"266","ت م":"267","تخا":"268","خاب":"269","ر م":"270","لمت":"271","مسل":"272","ى أ":"273","يست":"274","يطا":"275"," لأ":"276"," لي":"277","أمن":"278","است":"279","بعض":"280","ة ت":"281","ري ":"282","صدا":"283","ق و":"284","قول":"285","مد ":"286","نتخ":"287","نفس":"288","نها":"289","هنا":"290","أعم":"291","أنه":"292","ائن":"293","الآ":"294","الك":"295","حة ":"296","د م":"297","ر ع":"298","ربي":"299"},"azeri":{"lər":"0","in ":"1","ın ":"2","lar":"3","da ":"4","an ":"5","ir ":"6","də ":"7","ki ":"8"," bi":"9","ən ":"10","əri":"11","arı":"12","ər ":"13","dir":"14","nda":"15"," ki":"16","rin":"17","nın":"18","əsi":"19","ini":"20"," ed":"21"," qa":"22"," tə":"23"," ba":"24"," ol":"25","ası":"26","ilə":"27","rın":"28"," ya":"29","anı":"30"," və":"31","ndə":"32","ni ":"33","ara":"34","ını":"35","ınd":"36"," bu":"37","si ":"38","ib ":"39","aq ":"40","dən":"41","iya":"42","nə ":"43","rə ":"44","n b":"45","sın":"46","və ":"47","iri":"48","lə ":"49","nin":"50","əli":"51"," de":"52"," mü":"53","bir":"54","n s":"55","ri ":"56","ək ":"57"," az":"58"," sə":"59","ar ":"60","bil":"61","zər":"62","bu ":"63","dan":"64","edi":"65","ind":"66","man":"67","un ":"68","ərə":"69"," ha":"70","lan":"71","yyə":"72","iyy":"73"," il":"74"," ne":"75","r k":"76","ə b":"77"," is":"78","na ":"79","nun":"80","ır ":"81"," da":"82"," hə":"83","a b":"84","inə":"85","sin":"86","yan":"87","ərb":"88"," də":"89"," mə":"90"," qə":"91","dır":"92","li ":"93","ola":"94","rba":"95","azə":"96","can":"97","lı ":"98","nla":"99"," et":"100"," gö":"101","alı":"102","ayc":"103","bay":"104","eft":"105","ist":"106","n i":"107","nef":"108","tlə":"109","yca":"110","yət":"111","əcə":"112"," la":"113","ild":"114","nı ":"115","tin":"116","ldi":"117","lik":"118","n h":"119","n m":"120","oyu":"121","raq":"122","ya ":"123","əti":"124"," ar":"125","ada":"126","edə":"127","mas":"128","sı ":"129","ına":"130","ə d":"131","ələ":"132","ayı":"133","iyi":"134","lma":"135","mək":"136","n d":"137","ti ":"138","yin":"139","yun":"140","ət ":"141","azı":"142","ft ":"143","i t":"144","lli":"145","n a":"146","ra ":"147"," cə":"148"," gə":"149"," ko":"150"," nə":"151"," oy":"152","a d":"153","ana":"154","cək":"155","eyi":"156","ilm":"157","irl":"158","lay":"159","liy":"160","lub":"161","n ə":"162","ril":"163","rlə":"164","unu":"165","ver":"166","ün ":"167","ə o":"168","əni":"169"," he":"170"," ma":"171"," on":"172"," pa":"173","ala":"174","dey":"175","i m":"176","ima":"177","lmə":"178","mət":"179","par":"180","yə ":"181","ətl":"182"," al":"183"," mi":"184"," sa":"185"," əl":"186","adı":"187","akı":"188","and":"189","ard":"190","art":"191","ayi":"192","i a":"193","i q":"194","i y":"195","ili":"196","ill":"197","isə":"198","n o":"199","n q":"200","olu":"201","rla":"202","stə":"203","sə ":"204","tan":"205","tel":"206","yar":"207","ədə":"208"," me":"209"," rə":"210"," ve":"211"," ye":"212","a k":"213","at ":"214","baş":"215","diy":"216","ent":"217","eti":"218","həs":"219","i i":"220","ik ":"221","la ":"222","miş":"223","n n":"224","nu ":"225","qar":"226","ran":"227","tər":"228","xan":"229","ə a":"230","ə g":"231","ə t":"232"," dü":"233","ama":"234","b k":"235","dil":"236","era":"237","etm":"238","i b":"239","kil":"240","mil":"241","n r":"242","qla":"243","r s":"244","ras":"245","siy":"246","son":"247","tim":"248","yer":"249","ə k":"250"," gü":"251"," so":"252"," sö":"253"," te":"254"," xa":"255","ai ":"256","bar":"257","cti":"258","di ":"259","eri":"260","gör":"261","gün":"262","gəl":"263","hbə":"264","ihə":"265","iki":"266","isi":"267","lin":"268","mai":"269","maq":"270","n k":"271","n t":"272","n v":"273","onu":"274","qan":"275","qəz":"276","tə ":"277","xal":"278","yib":"279","yih":"280","zet":"281","zır":"282","ıb ":"283","ə m":"284","əze":"285"," br":"286"," in":"287"," i̇":"288"," pr":"289"," ta":"290"," to":"291"," üç":"292","a o":"293","ali":"294","ani":"295","anl":"296","aql":"297","azi":"298","bri":"299"},"bengali":{"ার ":"0","য় ":"1","েয়":"2","য়া":"3"," কর":"4","েত ":"5"," কা":"6"," পা":"7"," তা":"8","না ":"9","ায়":"10","ের ":"11","য়ে":"12"," বা":"13","েব ":"14"," যা":"15"," হে":"16"," সা":"17","ান ":"18","েছ ":"19"," িন":"20","েল ":"21"," িদ":"22"," না":"23"," িব":"24","েক ":"25","লা ":"26","তা ":"27"," বઘ":"28"," িক":"29","করে":"30"," পચ":"31","াের":"32","িনে":"33","রা ":"34"," োব":"35","কা ":"36"," কে":"37"," টা":"38","র ক":"39","েলা":"40"," োক":"41"," মা":"42"," োদ":"43"," োম":"44","দর ":"45","়া ":"46","িদে":"47","াকা":"48","়েছ":"49","েদর":"50"," আে":"51"," ও ":"52","াল ":"53","িট ":"54"," মু":"55","কের":"56","হয়":"57","করা":"58","পর ":"59","পাে":"60"," এক":"61"," পদ":"62","টাক":"63","ড় ":"64","কান":"65","টা ":"66","দગা":"67","পদગ":"68","াড়":"69","োকা":"70","ওয়":"71","কাপ":"72","হেয":"73","েনর":"74"," হয":"75","দেয":"76","নর ":"77","ানা":"78","ােল":"79"," আর":"80"," ় ":"81","বઘব":"82","িয়":"83"," দা":"84"," সম":"85","কার":"86","হার":"87","াই ":"88","ড়া":"89","িবি":"90"," রা":"91"," লা":"92","নার":"93","বহা":"94","বা ":"95","যায":"96","েন ":"97","ઘবহ":"98"," ভা":"99"," সে":"100"," োয":"101","রর ":"102","়ার":"103","়াল":"104","ગা ":"105","থেক":"106","ভাে":"107","়ে ":"108","েরর":"109"," ধর":"110"," হা":"111","নઘ ":"112","রেন":"113","ােব":"114","িড়":"115","ির ":"116"," োথ":"117","তার":"118","বিভ":"119","রেত":"120","সাে":"121","াকে":"122","ােত":"123","িভਭ":"124","ে ব":"125","োথে":"126"," োপ":"127"," োস":"128","বার":"129","ভਭ ":"130","রন ":"131","াম ":"132"," এখ":"133","আর ":"134","কাে":"135","দন ":"136","সাজ":"137","ােক":"138","ােন":"139","েনা":"140"," ঘে":"141"," তে":"142"," রে":"143","তেব":"144","বন ":"145","বઘা":"146","েড়":"147","েবন":"148"," খু":"149"," চা":"150"," সু":"151","কে ":"152","ধরে":"153","র ো":"154","় ি":"155","া ি":"156","ােথ":"157","াਠা":"158","িদ ":"159","িন ":"160"," অন":"161"," আপ":"162"," আম":"163"," থা":"164"," বચ":"165"," োফ":"166"," ৌত":"167","ঘের":"168","তে ":"169","ময়":"170","যাਠ":"171","র স":"172","রাখ":"173","া ব":"174","া ো":"175","ালা":"176","িক ":"177","িশ ":"178","েখ ":"179"," এর":"180"," চઓ":"181"," িড":"182","খন ":"183","ড়ে":"184","র ব":"185","়র ":"186","াইে":"187","ােদ":"188","িদন":"189","েরন":"190"," তੴ":"191","ছাড":"192","জনઘ":"193","তাই":"194","মা ":"195","মাে":"196","লার":"197","াজ ":"198","াতা":"199","ামা":"200","ਊেল":"201","ગার":"202"," সব":"203","আপন":"204","একট":"205","কাি":"206","জাই":"207","টর ":"208","ডজা":"209","দেখ":"210","পনা":"211","রও ":"212","লে ":"213","হেব":"214","াজা":"215","ািট":"216","িডজ":"217","েথ ":"218"," এব":"219"," জন":"220"," জা":"221","আমা":"222","গেল":"223","জান":"224","নেত":"225","বিশ":"226","মুে":"227","মেয":"228","র প":"229","সে ":"230","হেল":"231","় ো":"232","া হ":"233","াওয":"234","োমক":"235","ઘাি":"236"," অে":"237"," ট ":"238"," োগ":"239"," োন":"240","জর ":"241","তির":"242","দাম":"243","পড়":"244","পার":"245","বাঘ":"246","মকা":"247","মাম":"248","য়র":"249","যাে":"250","র ম":"251","রে ":"252","লর ":"253","া ক":"254","াগ ":"255","াবা":"256","ারা":"257","ািন":"258","ে গ":"259","েগ ":"260","েলর":"261","োদখ":"262","োবি":"263","ઓল ":"264"," দে":"265"," পু":"266"," বে":"267","অেন":"268","এখন":"269","কছু":"270","কাল":"271","গেয":"272","ছন ":"273","ত প":"274","নেয":"275","পাি":"276","মন ":"277","র আ":"278","রার":"279","াও ":"280","াপ ":"281","িকছ":"282","িগে":"283","েছন":"284","েজর":"285","োমা":"286","োমে":"287","ৌতি":"288","ઘাে":"289"," ' ":"290"," এছ":"291"," ছা":"292"," বল":"293"," যি":"294"," শি":"295"," িম":"296"," োল":"297","এছা":"298","খা ":"299"},"bulgarian":{"на ":"0"," на":"1","то ":"2"," пр":"3"," за":"4","та ":"5"," по":"6","ите":"7","те ":"8","а п":"9","а с":"10"," от":"11","за ":"12","ата":"13","ия ":"14"," в ":"15","е н":"16"," да":"17","а н":"18"," се":"19"," ко":"20","да ":"21","от ":"22","ани":"23","пре":"24","не ":"25","ени":"26","о н":"27","ни ":"28","се ":"29"," и ":"30","но ":"31","ане":"32","ето":"33","а в":"34","ва ":"35","ван":"36","е п":"37","а о":"38","ото":"39","ран":"40","ат ":"41","ред":"42"," не":"43","а д":"44","и п":"45"," до":"46","про":"47"," съ":"48","ли ":"49","при":"50","ния":"51","ски":"52","тел":"53","а и":"54","по ":"55","ри ":"56"," е ":"57"," ка":"58","ира":"59","кат":"60","ние":"61","нит":"62","е з":"63","и с":"64","о с":"65","ост":"66","че ":"67"," ра":"68","ист":"69","о п":"70"," из":"71"," са":"72","е д":"73","ини":"74","ки ":"75","мин":"76"," ми":"77","а б":"78","ава":"79","е в":"80","ие ":"81","пол":"82","ств":"83","т н":"84"," въ":"85"," ст":"86"," то":"87","аза":"88","е о":"89","ов ":"90","ст ":"91","ът ":"92","и н":"93","ият":"94","нат":"95","ра ":"96"," бъ":"97"," че":"98","алн":"99","е с":"100","ен ":"101","ест":"102","и д":"103","лен":"104","нис":"105","о о":"106","ови":"107"," об":"108"," сл":"109","а р":"110","ато":"111","кон":"112","нос":"113","ров":"114","ще ":"115"," ре":"116"," с ":"117"," сп":"118","ват":"119","еше":"120","и в":"121","иет":"122","о в":"123","ове":"124","ста":"125","а к":"126","а т":"127","дат":"128","ент":"129","ка ":"130","лед":"131","нет":"132","ори":"133","стр":"134","стъ":"135","ти ":"136","тър":"137"," те":"138","а з":"139","а м":"140","ад ":"141","ана":"142","ено":"143","и о":"144","ина":"145","ити":"146","ма ":"147","ска":"148","сле":"149","тво":"150","тер":"151","ция":"152","ят ":"153"," бе":"154"," де":"155"," па":"156","ате":"157","вен":"158","ви ":"159","вит":"160","и з":"161","и и":"162","нар":"163","нов":"164","ова":"165","пов":"166","рез":"167","рит":"168","са ":"169","ята":"170"," го":"171"," ще":"172","али":"173","в п":"174","гра":"175","е и":"176","еди":"177","ели":"178","или":"179","каз":"180","кит":"181","лно":"182","мен":"183","оли":"184","раз":"185"," ве":"186"," гр":"187"," им":"188"," ме":"189"," пъ":"190","ави":"191","ако":"192","ача":"193","вин":"194","во ":"195","гов":"196","дан":"197","ди ":"198","до ":"199","ед ":"200","ери":"201","еро":"202","жда":"203","ито":"204","ков":"205","кол":"206","лни":"207","мер":"208","нач":"209","о з":"210","ола":"211","он ":"212","она":"213","пра":"214","рав":"215","рем":"216","сия":"217","сти":"218","т п":"219","тан":"220","ха ":"221","ше ":"222","шен":"223","ълг":"224"," ба":"225"," си":"226","аро":"227","бъл":"228","в р":"229","гар":"230","е е":"231","елн":"232","еме":"233","ико":"234","има":"235","ко ":"236","кои":"237","ла ":"238","лга":"239","о д":"240","ози":"241","оит":"242","под":"243","рес":"244","рие":"245","сто":"246","т к":"247","т м":"248","т с":"249","уст":"250"," би":"251"," дв":"252"," дъ":"253"," ма":"254"," мо":"255"," ни":"256"," ос":"257","ала":"258","анс":"259","ара":"260","ати":"261","аци":"262","беш":"263","вър":"264","е р":"265","едв":"266","ема":"267","жав":"268","и к":"269","иал":"270","ица":"271","иче":"272","кия":"273","лит":"274","о б":"275","ово":"276","оди":"277","ока":"278","пос":"279","род":"280","сед":"281","слу":"282","т и":"283","тов":"284","ува":"285","циа":"286","чес":"287","я з":"288"," во":"289"," ил":"290"," ск":"291"," тр":"292"," це":"293","ами":"294","ари":"295","бат":"296","би ":"297","бра":"298","бъд":"299"},"cebuano":{"ng ":"0","sa ":"1"," sa":"2","ang":"3","ga ":"4","nga":"5"," ka":"6"," ng":"7","an ":"8"," an":"9"," na":"10"," ma":"11"," ni":"12","a s":"13","a n":"14","on ":"15"," pa":"16"," si":"17","a k":"18","a m":"19"," ba":"20","ong":"21","a i":"22","ila":"23"," mg":"24","mga":"25","a p":"26","iya":"27","a a":"28","ay ":"29","ka ":"30","ala":"31","ing":"32","g m":"33","n s":"34","g n":"35","lan":"36"," gi":"37","na ":"38","ni ":"39","o s":"40","g p":"41","n n":"42"," da":"43","ag ":"44","pag":"45","g s":"46","yan":"47","ayo":"48","o n":"49","si ":"50"," mo":"51","a b":"52","g a":"53","ail":"54","g b":"55","han":"56","a d":"57","asu":"58","nag":"59","ya ":"60","man":"61","ne ":"62","pan":"63","kon":"64"," il":"65"," la":"66","aka":"67","ako":"68","ana":"69","bas":"70","ko ":"71","od ":"72","yo ":"73"," di":"74"," ko":"75"," ug":"76","a u":"77","g k":"78","kan":"79","la ":"80","len":"81","sur":"82","ug ":"83"," ai":"84","apa":"85","aw ":"86","d s":"87","g d":"88","g g":"89","ile":"90","nin":"91"," iy":"92"," su":"93","ene":"94","og ":"95","ot ":"96","aba":"97","aha":"98","as ":"99","imo":"100"," ki":"101","a t":"102","aga":"103","ban":"104","ero":"105","nan":"106","o k":"107","ran":"108","ron":"109","sil":"110","una":"111","usa":"112"," us":"113","a g":"114","ahi":"115","ani":"116","er ":"117","ha ":"118","i a":"119","rer":"120","yon":"121"," pu":"122","ini":"123","nak":"124","ro ":"125","to ":"126","ure":"127"," ed":"128"," og":"129"," wa":"130","ili":"131","mo ":"132","n a":"133","nd ":"134","o a":"135"," ad":"136"," du":"137"," pr":"138","aro":"139","i s":"140","ma ":"141","n m":"142","ulo":"143","und":"144"," ta":"145","ara":"146","asa":"147","ato":"148","awa":"149","dmu":"150","e n":"151","edm":"152","ina":"153","mak":"154","mun":"155","niy":"156","san":"157","wa ":"158"," tu":"159"," un":"160","a l":"161","bay":"162","iga":"163","ika":"164","ita":"165","kin":"166","lis":"167","may":"168","os ":"169"," ar":"170","ad ":"171","ali":"172","ama":"173","ers":"174","ipa":"175","isa":"176","mao":"177","nim":"178","t s":"179","tin":"180"," ak":"181"," ap":"182"," hi":"183","abo":"184","agp":"185","ano":"186","ata":"187","g i":"188","gan":"189","gka":"190","gpa":"191","i m":"192","iha":"193","k s":"194","law":"195","or ":"196","rs ":"197","siy":"198","tag":"199"," al":"200"," at":"201"," ha":"202"," hu":"203"," im":"204","a h":"205","bu ":"206","e s":"207","gma":"208","kas":"209","lag":"210","mon":"211","nah":"212","ngo":"213","r s":"214","ra ":"215","sab":"216","sam":"217","sul":"218","uba":"219","uha":"220"," lo":"221"," re":"222","ada":"223","aki":"224","aya":"225","bah":"226","ce ":"227","d n":"228","lab":"229","pa ":"230","pak":"231","s n":"232","s s":"233","tan":"234","taw":"235","te ":"236","uma":"237","ura":"238"," in":"239"," lu":"240","a c":"241","abi":"242","at ":"243","awo":"244","bat":"245","dal":"246","dla":"247","ele":"248","g t":"249","g u":"250","gay":"251","go ":"252","hab":"253","hin":"254","i e":"255","i n":"256","kab":"257","kap":"258","lay":"259","lin":"260","nil":"261","pam":"262","pas":"263","pro":"264","pul":"265","ta ":"266","ton":"267","uga":"268","ugm":"269","unt":"270"," co":"271"," gu":"272"," mi":"273"," pi":"274"," ti":"275","a o":"276","abu":"277","adl":"278","ado":"279","agh":"280","agk":"281","ao ":"282","art":"283","bal":"284","cit":"285","di ":"286","dto":"287","dun":"288","ent":"289","g e":"290","gon":"291","gug":"292","ia ":"293","iba":"294","ice":"295","in ":"296","inu":"297","it ":"298","kaa":"299"},"croatian":{"je ":"0"," na":"1"," pr":"2"," po":"3","na ":"4"," je":"5"," za":"6","ije":"7","ne ":"8"," i ":"9","ti ":"10","da ":"11"," ko":"12"," ne":"13","li ":"14"," bi":"15"," da":"16"," u ":"17","ma ":"18","mo ":"19","a n":"20","ih ":"21","za ":"22","a s":"23","ko ":"24","i s":"25","a p":"26","koj":"27","pro":"28","ju ":"29","se ":"30"," go":"31","ost":"32","to ":"33","va ":"34"," do":"35"," to":"36","e n":"37","i p":"38"," od":"39"," ra":"40","no ":"41","ako":"42","ka ":"43","ni ":"44"," ka":"45"," se":"46"," mo":"47"," st":"48","i n":"49","ima":"50","ja ":"51","pri":"52","vat":"53","sta":"54"," su":"55","ati":"56","e p":"57","ta ":"58","tsk":"59","e i":"60","nij":"61"," tr":"62","cij":"63","jen":"64","nos":"65","o s":"66"," iz":"67","om ":"68","tro":"69","ili":"70","iti":"71","pos":"72"," al":"73","a i":"74","a o":"75","e s":"76","ija":"77","ini":"78","pre":"79","str":"80","la ":"81","og ":"82","ovo":"83"," sv":"84","ekt":"85","nje":"86","o p":"87","odi":"88","rva":"89"," ni":"90","ali":"91","min":"92","rij":"93","a t":"94","a z":"95","ats":"96","iva":"97","o t":"98","od ":"99","oje":"100","ra ":"101"," hr":"102","a m":"103","a u":"104","hrv":"105","im ":"106","ke ":"107","o i":"108","ovi":"109","red":"110","riv":"111","te ":"112","bi ":"113","e o":"114","god":"115","i d":"116","lek":"117","umi":"118","zvo":"119","din":"120","e u":"121","ene":"122","jed":"123","ji ":"124","lje":"125","nog":"126","su ":"127"," a ":"128"," el":"129"," mi":"130"," o ":"131","a d":"132","alu":"133","ele":"134","i u":"135","izv":"136","ktr":"137","lum":"138","o d":"139","ori":"140","rad":"141","sto":"142","a k":"143","anj":"144","ava":"145","e k":"146","men":"147","nic":"148","o j":"149","oj ":"150","ove":"151","ski":"152","tvr":"153","una":"154","vor":"155"," di":"156"," no":"157"," s ":"158"," ta":"159"," tv":"160","i i":"161","i o":"162","kak":"163","roš":"164","sko":"165","vod":"166"," sa":"167"," će":"168","a b":"169","adi":"170","amo":"171","eni":"172","gov":"173","iju":"174","ku ":"175","o n":"176","ora":"177","rav":"178","ruj":"179","smo":"180","tav":"181","tru":"182","u p":"183","ve ":"184"," in":"185"," pl":"186","aci":"187","bit":"188","de ":"189","diš":"190","ema":"191","i m":"192","ika":"193","išt":"194","jer":"195","ki ":"196","mog":"197","nik":"198","nov":"199","nu ":"200","oji":"201","oli":"202","pla":"203","pod":"204","st ":"205","sti":"206","tra":"207","tre":"208","vo ":"209"," sm":"210"," št":"211","dan":"212","e z":"213","i t":"214","io ":"215","ist":"216","kon":"217","lo ":"218","stv":"219","u s":"220","uje":"221","ust":"222","će ":"223","ći ":"224","što":"225"," dr":"226"," im":"227"," li":"228","ada":"229","aft":"230","ani":"231","ao ":"232","ars":"233","ata":"234","e t":"235","emo":"236","i k":"237","ine":"238","jem":"239","kov":"240","lik":"241","lji":"242","mje":"243","naf":"244","ner":"245","nih":"246","nja":"247","ogo":"248","oiz":"249","ome":"250","pot":"251","ran":"252","ri ":"253","roi":"254","rtk":"255","ska":"256","ter":"257","u i":"258","u o":"259","vi ":"260","vrt":"261"," me":"262"," ug":"263","ak ":"264","ama":"265","drž":"266","e e":"267","e g":"268","e m":"269","em ":"270","eme":"271","enj":"272","ent":"273","er ":"274","ere":"275","erg":"276","eur":"277","go ":"278","i b":"279","i z":"280","jet":"281","ksi":"282","o u":"283","oda":"284","ona":"285","pra":"286","reb":"287","rem":"288","rop":"289","tri":"290","žav":"291"," ci":"292"," eu":"293"," re":"294"," te":"295"," uv":"296"," ve":"297","aju":"298","an ":"299"},"czech":{" pr":"0"," po":"1","ní ":"2","pro":"3"," na":"4","na ":"5"," př":"6","ch ":"7"," je":"8"," ne":"9","že ":"10"," že":"11"," se":"12"," do":"13"," ro":"14"," st":"15"," v ":"16"," ve":"17","pře":"18","se ":"19","ho ":"20","sta":"21"," to":"22"," vy":"23"," za":"24","ou ":"25"," a ":"26","to ":"27"," by":"28","la ":"29","ce ":"30","e v":"31","ist":"32","le ":"33","pod":"34","í p":"35"," vl":"36","e n":"37","e s":"38","je ":"39","ké ":"40","by ":"41","em ":"42","ých":"43"," od":"44","ova":"45","řed":"46","dy ":"47","ení":"48","kon":"49","li ":"50","ně ":"51","str":"52"," zá":"53","ve ":"54"," ka":"55"," sv":"56","e p":"57","it ":"58","lád":"59","oho":"60","rov":"61","roz":"62","ter":"63","vlá":"64","ím ":"65"," ko":"66","hod":"67","nis":"68","pří":"69","ský":"70"," mi":"71"," ob":"72"," so":"73","a p":"74","ali":"75","bud":"76","edn":"77","ick":"78","kte":"79","ku ":"80","o s":"81","al ":"82","ci ":"83","e t":"84","il ":"85","ny ":"86","né ":"87","odl":"88","ová":"89","rot":"90","sou":"91","ání":"92"," bu":"93"," mo":"94"," o ":"95","ast":"96","byl":"97","de ":"98","ek ":"99","ost":"100"," mí":"101"," ta":"102","es ":"103","jed":"104","ky ":"105","las":"106","m p":"107","nes":"108","ním":"109","ran":"110","rem":"111","ros":"112","ého":"113"," de":"114"," kt":"115"," ni":"116"," si":"117"," vý":"118","at ":"119","jí ":"120","ký ":"121","mi ":"122","pre":"123","tak":"124","tan":"125","y v":"126","řek":"127"," ch":"128"," li":"129"," ná":"130"," pa":"131"," ře":"132","da ":"133","dle":"134","dne":"135","i p":"136","i v":"137","ly ":"138","min":"139","o n":"140","o v":"141","pol":"142","tra":"143","val":"144","vní":"145","ích":"146","ý p":"147","řej":"148"," ce":"149"," kd":"150"," le":"151","a s":"152","a z":"153","cen":"154","e k":"155","eds":"156","ekl":"157","emi":"158","kl ":"159","lat":"160","lo ":"161","mié":"162","nov":"163","pra":"164","sku":"165","ské":"166","sti":"167","tav":"168","ti ":"169","ty ":"170","ván":"171","vé ":"172","y n":"173","y s":"174","í s":"175","í v":"176","ě p":"177"," dn":"178"," ně":"179"," sp":"180"," čs":"181","a n":"182","a t":"183","ak ":"184","dní":"185","doh":"186","e b":"187","e m":"188","ejn":"189","ena":"190","est":"191","ini":"192","m z":"193","nal":"194","nou":"195","ná ":"196","ovi":"197","ové":"198","ový":"199","rsk":"200","stá":"201","tí ":"202","tře":"203","tů ":"204","ude":"205","za ":"206","é p":"207","ém ":"208","í d":"209"," ir":"210"," zv":"211","ale":"212","aně":"213","ave":"214","cké":"215","den":"216","e z":"217","ech":"218","en ":"219","erý":"220","hla":"221","i s":"222","iér":"223","lov":"224","mu ":"225","neb":"226","nic":"227","o b":"228","o m":"229","pad":"230","pot":"231","rav":"232","rop":"233","rý ":"234","sed":"235","si ":"236","t p":"237","tic":"238","tu ":"239","tě ":"240","u p":"241","u v":"242","vá ":"243","výš":"244","zvý":"245","ční":"246","ří ":"247","ům ":"248"," bl":"249"," br":"250"," ho":"251"," ja":"252"," re":"253"," s ":"254"," z ":"255"," zd":"256","a v":"257","ani":"258","ato":"259","bla":"260","bri":"261","ečn":"262","eře":"263","h v":"264","i n":"265","ie ":"266","ila":"267","irs":"268","ite":"269","kov":"270","nos":"271","o o":"272","o p":"273","oce":"274","ody":"275","ohl":"276","oli":"277","ovo":"278","pla":"279","poč":"280","prá":"281","ra ":"282","rit":"283","rod":"284","ry ":"285","sd ":"286","sko":"287","ssd":"288","tel":"289","u s":"290","vat":"291","veř":"292","vit":"293","vla":"294","y p":"295","áln":"296","čss":"297","šen":"298"," al":"299"},"danish":{"er ":"0","en ":"1"," de":"2","et ":"3","der":"4","de ":"5","for":"6"," fo":"7"," i ":"8","at ":"9"," at":"10","re ":"11","det":"12"," ha":"13","nde":"14","ere":"15","ing":"16","den":"17"," me":"18"," og":"19","ger":"20","ter":"21"," er":"22"," si":"23","and":"24"," af":"25","or ":"26"," st":"27"," ti":"28"," en":"29","og ":"30","ar ":"31","il ":"32","r s":"33","ige":"34","til":"35","ke ":"36","r e":"37","af ":"38","kke":"39"," ma":"40"," på":"41","om ":"42","på ":"43","ed ":"44","ge ":"45","end":"46","nge":"47","t s":"48","e s":"49","ler":"50"," sk":"51","els":"52","ern":"53","sig":"54","ne ":"55","lig":"56","r d":"57","ska":"58"," vi":"59","har":"60"," be":"61"," se":"62","an ":"63","ikk":"64","lle":"65","gen":"66","n f":"67","ste":"68","t a":"69","t d":"70","rin":"71"," ik":"72","es ":"73","ng ":"74","ver":"75","r b":"76","sen":"77","ede":"78","men":"79","r i":"80"," he":"81"," et":"82","ig ":"83","lan":"84","med":"85","nd ":"86","rne":"87"," da":"88"," in":"89","e t":"90","mme":"91","und":"92"," om":"93","e e":"94","e m":"95","her":"96","le ":"97","r f":"98","t f":"99","så ":"100","te ":"101"," so":"102","ele":"103","t e":"104"," ko":"105","est":"106","ske":"107"," bl":"108","e f":"109","ekt":"110","mar":"111","bru":"112","e a":"113","el ":"114","ers":"115","ret":"116","som":"117","tte":"118","ve ":"119"," la":"120"," ud":"121"," ve":"122","age":"123","e d":"124","e h":"125","lse":"126","man":"127","rug":"128","sel":"129","ser":"130"," fi":"131"," op":"132"," pr":"133","dt ":"134","e i":"135","n m":"136","r m":"137"," an":"138"," re":"139"," sa":"140","ion":"141","ner":"142","res":"143","t i":"144","get":"145","n s":"146","one":"147","orb":"148","t h":"149","vis":"150","år ":"151"," fr":"152","bil":"153","e k":"154","ens":"155","ind":"156","omm":"157","t m":"158"," hv":"159"," je":"160","dan":"161","ent":"162","fte":"163","nin":"164"," mi":"165","e o":"166","e p":"167","n o":"168","nte":"169"," ku":"170","ell":"171","nas":"172","ore":"173","r h":"174","r k":"175","sta":"176","sto":"177","dag":"178","eri":"179","kun":"180","lde":"181","mer":"182","r a":"183","r v":"184","rek":"185","rer":"186","t o":"187","tor":"188","tør":"189"," få":"190"," må":"191"," to":"192","boe":"193","che":"194","e v":"195","i d":"196","ive":"197","kab":"198","ns ":"199","oel":"200","se ":"201","t v":"202"," al":"203"," bo":"204"," un":"205","ans":"206","dre":"207","ire":"208","køb":"209","ors":"210","ove":"211","ren":"212","t b":"213","ør ":"214"," ka":"215","ald":"216","bet":"217","gt ":"218","isk":"219","kal":"220","kom":"221","lev":"222","n d":"223","n i":"224","pri":"225","r p":"226","rbr":"227","søg":"228","tel":"229"," så":"230"," te":"231"," va":"232","al ":"233","dir":"234","eje":"235","fis":"236","gså":"237","isc":"238","jer":"239","ker":"240","ogs":"241","sch":"242","st ":"243","t k":"244","uge":"245"," di":"246","ag ":"247","d a":"248","g i":"249","ill":"250","l a":"251","lsk":"252","n a":"253","on ":"254","sam":"255","str":"256","tet":"257","var":"258"," mo":"259","art":"260","ash":"261","att":"262","e b":"263","han":"264","hav":"265","kla":"266","kon":"267","n t":"268","ned":"269","r o":"270","ra ":"271","rre":"272","ves":"273","vil":"274"," el":"275"," kr":"276"," ov":"277","ann":"278","e u":"279","ess":"280","fra":"281","g a":"282","g d":"283","int":"284","ngs":"285","rde":"286","tra":"287"," år":"288","akt":"289","asi":"290","em ":"291","gel":"292","gym":"293","hol":"294","kan":"295","mna":"296","n h":"297","nsk":"298","old":"299"},"dutch":{"en ":"0","de ":"1"," de":"2","et ":"3","an ":"4"," he":"5","er ":"6"," va":"7","n d":"8","van":"9","een":"10","het":"11"," ge":"12","oor":"13"," ee":"14","der":"15"," en":"16","ij ":"17","aar":"18","gen":"19","te ":"20","ver":"21"," in":"22"," me":"23","aan":"24","den":"25"," we":"26","at ":"27","in ":"28"," da":"29"," te":"30","eer":"31","nde":"32","ter":"33","ste":"34","n v":"35"," vo":"36"," zi":"37","ing":"38","n h":"39","voo":"40","is ":"41"," op":"42","tie":"43"," aa":"44","ede":"45","erd":"46","ers":"47"," be":"48","eme":"49","ten":"50","ken":"51","n e":"52"," ni":"53"," ve":"54","ent":"55","ijn":"56","jn ":"57","mee":"58","iet":"59","n w":"60","ng ":"61","nie":"62"," is":"63","cht":"64","dat":"65","ere":"66","ie ":"67","ijk":"68","n b":"69","rde":"70","ar ":"71","e b":"72","e a":"73","met":"74","t d":"75","el ":"76","ond":"77","t h":"78"," al":"79","e w":"80","op ":"81","ren":"82"," di":"83"," on":"84","al ":"85","and":"86","bij":"87","zij":"88"," bi":"89"," hi":"90"," wi":"91","or ":"92","r d":"93","t v":"94"," wa":"95","e h":"96","lle":"97","rt ":"98","ang":"99","hij":"100","men":"101","n a":"102","n z":"103","rs ":"104"," om":"105","e o":"106","e v":"107","end":"108","est":"109","n t":"110","par":"111"," pa":"112"," pr":"113"," ze":"114","e g":"115","e p":"116","n p":"117","ord":"118","oud":"119","raa":"120","sch":"121","t e":"122","ege":"123","ich":"124","ien":"125","aat":"126","ek ":"127","len":"128","n m":"129","nge":"130","nt ":"131","ove":"132","rd ":"133","wer":"134"," ma":"135"," mi":"136","daa":"137","e k":"138","lij":"139","mer":"140","n g":"141","n o":"142","om ":"143","sen":"144","t b":"145","wij":"146"," ho":"147","e m":"148","ele":"149","gem":"150","heb":"151","pen":"152","ude":"153"," bo":"154"," ja":"155","die":"156","e e":"157","eli":"158","erk":"159","le ":"160","pro":"161","rij":"162"," er":"163"," za":"164","e d":"165","ens":"166","ind":"167","ke ":"168","n k":"169","nd ":"170","nen":"171","nte":"172","r h":"173","s d":"174","s e":"175","t z":"176"," b ":"177"," co":"178"," ik":"179"," ko":"180"," ov":"181","eke":"182","hou":"183","ik ":"184","iti":"185","lan":"186","ns ":"187","t g":"188","t m":"189"," do":"190"," le":"191"," zo":"192","ams":"193","e z":"194","g v":"195","it ":"196","je ":"197","ls ":"198","maa":"199","n i":"200","nke":"201","rke":"202","uit":"203"," ha":"204"," ka":"205"," mo":"206"," re":"207"," st":"208"," to":"209","age":"210","als":"211","ark":"212","art":"213","ben":"214","e r":"215","e s":"216","ert":"217","eze":"218","ht ":"219","ijd":"220","lem":"221","r v":"222","rte":"223","t p":"224","zeg":"225","zic":"226","aak":"227","aal":"228","ag ":"229","ale":"230","bbe":"231","ch ":"232","e t":"233","ebb":"234","erz":"235","ft ":"236","ge ":"237","led":"238","mst":"239","n n":"240","oek":"241","r i":"242","t o":"243","t w":"244","tel":"245","tte":"246","uur":"247","we ":"248","zit":"249"," af":"250"," li":"251"," ui":"252","ak ":"253","all":"254","aut":"255","doo":"256","e i":"257","ene":"258","erg":"259","ete":"260","ges":"261","hee":"262","jaa":"263","jke":"264","kee":"265","kel":"266","kom":"267","lee":"268","moe":"269","n s":"270","ort":"271","rec":"272","s o":"273","s v":"274","teg":"275","tij":"276","ven":"277","waa":"278","wel":"279"," an":"280"," au":"281"," bu":"282"," gr":"283"," pl":"284"," ti":"285","'' ":"286","ade":"287","dag":"288","e l":"289","ech":"290","eel":"291","eft":"292","ger":"293","gt ":"294","ig ":"295","itt":"296","j d":"297","ppe":"298","rda":"299"},"english":{" th":"0","the":"1","he ":"2","ed ":"3"," to":"4"," in":"5","er ":"6","ing":"7","ng ":"8"," an":"9","nd ":"10"," of":"11","and":"12","to ":"13","of ":"14"," co":"15","at ":"16","on ":"17","in ":"18"," a ":"19","d t":"20"," he":"21","e t":"22","ion":"23","es ":"24"," re":"25","re ":"26","hat":"27"," sa":"28"," st":"29"," ha":"30","her":"31","tha":"32","tio":"33","or ":"34"," ''":"35","en ":"36"," wh":"37","e s":"38","ent":"39","n t":"40","s a":"41","as ":"42","for":"43","is ":"44","t t":"45"," be":"46","ld ":"47","e a":"48","rs ":"49"," wa":"50","ut ":"51","ve ":"52","ll ":"53","al ":"54"," ma":"55","e i":"56"," fo":"57","'s ":"58","an ":"59","est":"60"," hi":"61"," mo":"62"," se":"63"," pr":"64","s t":"65","ate":"66","st ":"67","ter":"68","ere":"69","ted":"70","nt ":"71","ver":"72","d a":"73"," wi":"74","se ":"75","e c":"76","ect":"77","ns ":"78"," on":"79","ly ":"80","tol":"81","ey ":"82","r t":"83"," ca":"84","ati":"85","ts ":"86","all":"87"," no":"88","his":"89","s o":"90","ers":"91","con":"92","e o":"93","ear":"94","f t":"95","e w":"96","was":"97","ons":"98","sta":"99","'' ":"100","sti":"101","n a":"102","sto":"103","t h":"104"," we":"105","id ":"106","th ":"107"," it":"108","ce ":"109"," di":"110","ave":"111","d h":"112","cou":"113","pro":"114","ad ":"115","oll":"116","ry ":"117","d s":"118","e m":"119"," so":"120","ill":"121","cti":"122","te ":"123","tor":"124","eve":"125","g t":"126","it ":"127"," ch":"128"," de":"129","hav":"130","oul":"131","ty ":"132","uld":"133","use":"134"," al":"135","are":"136","ch ":"137","me ":"138","out":"139","ove":"140","wit":"141","ys ":"142","chi":"143","t a":"144","ith":"145","oth":"146"," ab":"147"," te":"148"," wo":"149","s s":"150","res":"151","t w":"152","tin":"153","e b":"154","e h":"155","nce":"156","t s":"157","y t":"158","e p":"159","ele":"160","hin":"161","s i":"162","nte":"163"," li":"164","le ":"165"," do":"166","aid":"167","hey":"168","ne ":"169","s w":"170"," as":"171"," fr":"172"," tr":"173","end":"174","sai":"175"," el":"176"," ne":"177"," su":"178","'t ":"179","ay ":"180","hou":"181","ive":"182","lec":"183","n't":"184"," ye":"185","but":"186","d o":"187","o t":"188","y o":"189"," ho":"190"," me":"191","be ":"192","cal":"193","e e":"194","had":"195","ple":"196"," at":"197"," bu":"198"," la":"199","d b":"200","s h":"201","say":"202","t i":"203"," ar":"204","e f":"205","ght":"206","hil":"207","igh":"208","int":"209","not":"210","ren":"211"," is":"212"," pa":"213"," sh":"214","ays":"215","com":"216","n s":"217","r a":"218","rin":"219","y a":"220"," un":"221","n c":"222","om ":"223","thi":"224"," mi":"225","by ":"226","d i":"227","e d":"228","e n":"229","t o":"230"," by":"231","e r":"232","eri":"233","old":"234","ome":"235","whe":"236","yea":"237"," gr":"238","ar ":"239","ity":"240","mpl":"241","oun":"242","one":"243","ow ":"244","r s":"245","s f":"246","tat":"247"," ba":"248"," vo":"249","bou":"250","sam":"251","tim":"252","vot":"253","abo":"254","ant":"255","ds ":"256","ial":"257","ine":"258","man":"259","men":"260"," or":"261"," po":"262","amp":"263","can":"264","der":"265","e l":"266","les":"267","ny ":"268","ot ":"269","rec":"270","tes":"271","tho":"272","ica":"273","ild":"274","ir ":"275","nde":"276","ose":"277","ous":"278","pre":"279","ste":"280","era":"281","per":"282","r o":"283","red":"284","rie":"285"," bo":"286"," le":"287","ali":"288","ars":"289","ore":"290","ric":"291","s m":"292","str":"293"," fa":"294","ess":"295","ie ":"296","ist":"297","lat":"298","uri":"299"},"estonian":{"st ":"0"," ka":"1","on ":"2","ja ":"3"," va":"4"," on":"5"," ja":"6"," ko":"7","se ":"8","ast":"9","le ":"10","es ":"11","as ":"12","is ":"13","ud ":"14"," sa":"15","da ":"16","ga ":"17"," ta":"18","aja":"19","sta":"20"," ku":"21"," pe":"22","a k":"23","est":"24","ist":"25","ks ":"26","ta ":"27","al ":"28","ava":"29","id ":"30","saa":"31","mis":"32","te ":"33","val":"34"," et":"35","nud":"36"," te":"37","inn":"38"," se":"39"," tu":"40","a v":"41","alu":"42","e k":"43","ise":"44","lu ":"45","ma ":"46","mes":"47"," mi":"48","et ":"49","iku":"50","lin":"51","ad ":"52","el ":"53","ime":"54","ne ":"55","nna":"56"," ha":"57"," in":"58"," ke":"59"," võ":"60","a s":"61","a t":"62","ab ":"63","e s":"64","esi":"65"," la":"66"," li":"67","e v":"68","eks":"69","ema":"70","las":"71","les":"72","rju":"73","tle":"74","tsi":"75","tus":"76","upa":"77","use":"78","ust":"79","var":"80"," lä":"81","ali":"82","arj":"83","de ":"84","ete":"85","i t":"86","iga":"87","ilm":"88","kui":"89","li ":"90","tul":"91"," ei":"92"," me":"93"," sõ":"94","aal":"95","ata":"96","dus":"97","ei ":"98","nik":"99","pea":"100","s k":"101","s o":"102","sal":"103","sõn":"104","ter":"105","ul ":"106","või":"107"," el":"108"," ne":"109","a j":"110","ate":"111","end":"112","i k":"113","ita":"114","kar":"115","kor":"116","l o":"117","lt ":"118","maa":"119","oli":"120","sti":"121","vad":"122","ään":"123"," ju":"124"," jä":"125"," kü":"126"," ma":"127"," po":"128"," üt":"129","aas":"130","aks":"131","at ":"132","ed ":"133","eri":"134","hoi":"135","i s":"136","ka ":"137","la ":"138","nni":"139","oid":"140","pai":"141","rit":"142","us ":"143","ütl":"144"," aa":"145"," lo":"146"," to":"147"," ve":"148","a e":"149","ada":"150","aid":"151","ami":"152","and":"153","dla":"154","e j":"155","ega":"156","gi ":"157","gu ":"158","i p":"159","idl":"160","ik ":"161","ini":"162","jup":"163","kal":"164","kas":"165","kes":"166","koh":"167","s e":"168","s p":"169","sel":"170","sse":"171","ui ":"172"," pi":"173"," si":"174","aru":"175","eda":"176","eva":"177","fil":"178","i v":"179","ida":"180","ing":"181","lää":"182","me ":"183","na ":"184","nda":"185","nim":"186","ole":"187","ots":"188","ris":"189","s l":"190","sia":"191","t p":"192"," en":"193"," mu":"194"," ol":"195"," põ":"196"," su":"197"," vä":"198"," üh":"199","a l":"200","a p":"201","aga":"202","ale":"203","aps":"204","arv":"205","e a":"206","ela":"207","ika":"208","lle":"209","loo":"210","mal":"211","pet":"212","t k":"213","tee":"214","tis":"215","vat":"216","äne":"217","õnn":"218"," es":"219"," fi":"220"," vi":"221","a i":"222","a o":"223","aab":"224","aap":"225","ala":"226","alt":"227","ama":"228","anu":"229","e p":"230","e t":"231","eal":"232","eli":"233","haa":"234","hin":"235","iva":"236","kon":"237","ku ":"238","lik":"239","lm ":"240","min":"241","n t":"242","odu":"243","oon":"244","psa":"245","ri ":"246","si ":"247","stu":"248","t e":"249","t s":"250","ti ":"251","ule":"252","uur":"253","vas":"254","vee":"255"," ki":"256"," ni":"257"," nä":"258"," ra":"259","aig":"260","aka":"261","all":"262","atu":"263","e e":"264","eis":"265","ers":"266","i e":"267","ii ":"268","iis":"269","il ":"270","ima":"271","its":"272","kka":"273","kuh":"274","l k":"275","lat":"276","maj":"277","ndu":"278","ni ":"279","nii":"280","oma":"281","ool":"282","rso":"283","ru ":"284","rva":"285","s t":"286","sek":"287","son":"288","ste":"289","t m":"290","taj":"291","tam":"292","ude":"293","uho":"294","vai":"295"," ag":"296"," os":"297"," pa":"298"," re":"299"},"farsi":{"ان ":"0","ای ":"1","ه ا":"2"," اي":"3"," در":"4","به ":"5"," بر":"6","در ":"7","ران":"8"," به":"9","ی ا":"10","از ":"11","ين ":"12","می ":"13"," از":"14","ده ":"15","ست ":"16","است":"17"," اس":"18"," که":"19","که ":"20","اير":"21","ند ":"22","اين":"23"," ها":"24","يرا":"25","ود ":"26"," را":"27","های":"28"," خو":"29","ته ":"30","را ":"31","رای":"32","رد ":"33","ن ب":"34","کرد":"35"," و ":"36"," کر":"37","ات ":"38","برا":"39","د ک":"40","مان":"41","ی د":"42"," ان":"43","خوا":"44","شور":"45"," با":"46","ن ا":"47"," سا":"48","تمی":"49","ری ":"50","اتم":"51","ا ا":"52","واه":"53"," ات":"54"," عر":"55","اق ":"56","ر م":"57","راق":"58","عرا":"59","ی ب":"60"," تا":"61"," تو":"62","ار ":"63","ر ا":"64","ن م":"65","ه ب":"66","ور ":"67","يد ":"68","ی ک":"69"," ام":"70"," دا":"71"," کن":"72","اهد":"73","هد ":"74"," آن":"75"," می":"76"," ني":"77"," گف":"78","د ا":"79","گفت":"80"," کش":"81","ا ب":"82","نی ":"83","ها ":"84","کشو":"85"," رو":"86","ت ک":"87","نيو":"88","ه م":"89","وی ":"90","ی ت":"91"," شو":"92","ال ":"93","دار":"94","مه ":"95","ن ک":"96","ه د":"97","يه ":"98"," ما":"99","امه":"100","د ب":"101","زار":"102","ورا":"103","گزا":"104"," پي":"105","آن ":"106","انت":"107","ت ا":"108","فت ":"109","ه ن":"110","ی خ":"111","اما":"112","بات":"113","ما ":"114","ملل":"115","نام":"116","ير ":"117","ی م":"118","ی ه":"119"," آم":"120"," ای":"121"," من":"122","انس":"123","اني":"124","ت د":"125","رده":"126","ساز":"127","ن د":"128","نه ":"129","ورد":"130"," او":"131"," بي":"132"," سو":"133"," شد":"134","اده":"135","اند":"136","با ":"137","ت ب":"138","ر ب":"139","ز ا":"140","زما":"141","سته":"142","ن ر":"143","ه س":"144","وان":"145","وز ":"146","ی ر":"147","ی س":"148"," هس":"149","ابا":"150","ام ":"151","اور":"152","تخا":"153","خاب":"154","خود":"155","د د":"156","دن ":"157","رها":"158","روز":"159","رگز":"160","نتخ":"161","ه ش":"162","ه ه":"163","هست":"164","يت ":"165","يم ":"166"," دو":"167"," دي":"168"," مو":"169"," نو":"170"," هم":"171"," کا":"172","اد ":"173","اری":"174","انی":"175","بر ":"176","بود":"177","ت ه":"178","ح ه":"179","حال":"180","رش ":"181","عه ":"182","لی ":"183","وم ":"184","ژان":"185"," سل":"186","آمر":"187","اح ":"188","توس":"189","داد":"190","دام":"191","ر د":"192","ره ":"193","ريک":"194","زی ":"195","سلا":"196","شود":"197","لاح":"198","مري":"199","نند":"200","ه ع":"201","يما":"202","يکا":"203","پيم":"204","گر ":"205"," آژ":"206"," ال":"207"," بو":"208"," مق":"209"," مل":"210"," وی":"211","آژا":"212","ازم":"213","ازی":"214","بار":"215","برن":"216","ر آ":"217","ز س":"218","سعه":"219","شته":"220","مات":"221","ن آ":"222","ن پ":"223","نس ":"224","ه گ":"225","وسع":"226","يان":"227","يوم":"228","کا ":"229","کام":"230","کند":"231"," خا":"232"," سر":"233","آور":"234","ارد":"235","اقد":"236","ايم":"237","ايی":"238","برگ":"239","ت ع":"240","تن ":"241","خت ":"242","د و":"243","ر خ":"244","رک ":"245","زير":"246","فته":"247","قدا":"248","ل ت":"249","مين":"250","ن گ":"251","ه آ":"252","ه خ":"253","ه ک":"254","ورک":"255","ويو":"256","يور":"257","يوي":"258","يی ":"259","ک ت":"260","ی ش":"261"," اق":"262"," حا":"263"," حق":"264"," دس":"265"," شک":"266"," عم":"267"," يک":"268","ا ت":"269","ا د":"270","ارج":"271","بين":"272","ت م":"273","ت و":"274","تاي":"275","دست":"276","ر ح":"277","ر س":"278","رنا":"279","ز ب":"280","شکا":"281","لل ":"282","م ک":"283","مز ":"284","ندا":"285","نوا":"286","و ا":"287","وره":"288","ون ":"289","وند":"290","يمز":"291"," آو":"292"," اع":"293"," فر":"294"," مت":"295"," نه":"296"," هر":"297"," وز":"298"," گز":"299"},"finnish":{"en ":"0","in ":"1","an ":"2","on ":"3","ist":"4","ta ":"5","ja ":"6","n t":"7","sa ":"8","sta":"9","aan":"10","n p":"11"," on":"12","ssa":"13","tta":"14","tä ":"15"," ka":"16"," pa":"17","si ":"18"," ja":"19","n k":"20","lla":"21","än ":"22","een":"23","n v":"24","ksi":"25","ett":"26","nen":"27","taa":"28","ttä":"29"," va":"30","ill":"31","itt":"32"," jo":"33"," ko":"34","n s":"35"," tu":"36","ia ":"37"," su":"38","a p":"39","aa ":"40","la ":"41","lle":"42","n m":"43","le ":"44","tte":"45","na ":"46"," ta":"47"," ve":"48","at ":"49"," vi":"50","utt":"51"," sa":"52","ise":"53","sen":"54"," ku":"55"," nä":"56"," pä":"57","ste":"58"," ol":"59","a t":"60","ais":"61","maa":"62","ti ":"63","a o":"64","oit":"65","pää":"66"," pi":"67","a v":"68","ala":"69","ine":"70","isi":"71","tel":"72","tti":"73"," si":"74","a k":"75","all":"76","iin":"77","kin":"78","stä":"79","uom":"80","vii":"81"," ma":"82"," se":"83","enä":"84"," mu":"85","a s":"86","est":"87","iss":"88","llä":"89","lok":"90","lä ":"91","n j":"92","n o":"93","toi":"94","ven":"95","ytt":"96"," li":"97","ain":"98","et ":"99","ina":"100","n a":"101","n n":"102","oll":"103","plo":"104","ten":"105","ust":"106","äll":"107","ään":"108"," to":"109","den":"110","men":"111","oki":"112","suo":"113","sä ":"114","tää":"115","uks":"116","vat":"117"," al":"118"," ke":"119"," te":"120","a e":"121","lii":"122","tai":"123","tei":"124","äis":"125","ää ":"126"," pl":"127","ell":"128","i t":"129","ide":"130","ikk":"131","ki ":"132","nta":"133","ova":"134","yst":"135","yt ":"136","ä p":"137","äyt":"138"," ha":"139"," pe":"140"," tä":"141","a n":"142","aik":"143","i p":"144","i v":"145","nyt":"146","näy":"147","pal":"148","tee":"149","un ":"150"," me":"151","a m":"152","ess":"153","kau":"154","pai":"155","stu":"156","ut ":"157","voi":"158"," et":"159","a h":"160","eis":"161","hte":"162","i o":"163","iik":"164","ita":"165","jou":"166","mis":"167","nin":"168","nut":"169","sia":"170","ssä":"171","van":"172"," ty":"173"," yh":"174","aks":"175","ime":"176","loi":"177","me ":"178","n e":"179","n h":"180","n l":"181","oin":"182","ome":"183","ott":"184","ouk":"185","sit":"186","sti":"187","tet":"188","tie":"189","ukk":"190","ä k":"191"," ra":"192"," ti":"193","aja":"194","asi":"195","ent":"196","iga":"197","iig":"198","ite":"199","jan":"200","kaa":"201","kse":"202","laa":"203","lan":"204","li ":"205","näj":"206","ole":"207","tii":"208","usi":"209","äjä":"210"," ov":"211","a a":"212","ant":"213","ava":"214","ei ":"215","eri":"216","kan":"217","kku":"218","lai":"219","lis":"220","läi":"221","mat":"222","ois":"223","pel":"224","sil":"225","sty":"226","taj":"227","tav":"228","ttu":"229","työ":"230","yös":"231","ä o":"232"," ai":"233"," pu":"234","a j":"235","a l":"236","aal":"237","arv":"238","ass":"239","ien":"240","imi":"241","imm":"242","itä":"243","ka ":"244","kes":"245","kue":"246","lee":"247","lin":"248","llo":"249","one":"250","ri ":"251","t o":"252","t p":"253","tu ":"254","val":"255","vuo":"256"," ei":"257"," he":"258"," hy":"259"," my":"260"," vo":"261","ali":"262","alo":"263","ano":"264","ast":"265","att":"266","auk":"267","eli":"268","ely":"269","hti":"270","ika":"271","ken":"272","kki":"273","lys":"274","min":"275","myö":"276","oht":"277","oma":"278","tus":"279","umi":"280","yks":"281","ät ":"282","ääl":"283","ös ":"284"," ar":"285"," eu":"286"," hu":"287"," na":"288","aat":"289","alk":"290","alu":"291","ans":"292","arj":"293","enn":"294","han":"295","kuu":"296","n y":"297","set":"298","sim":"299"},"french":{"es ":"0"," de":"1","de ":"2"," le":"3","ent":"4","le ":"5","nt ":"6","la ":"7","s d":"8"," la":"9","ion":"10","on ":"11","re ":"12"," pa":"13","e l":"14","e d":"15"," l'":"16","e p":"17"," co":"18"," pr":"19","tio":"20","ns ":"21"," en":"22","ne ":"23","que":"24","r l":"25","les":"26","ur ":"27","en ":"28","ati":"29","ue ":"30"," po":"31"," d'":"32","par":"33"," a ":"34","et ":"35","it ":"36"," qu":"37","men":"38","ons":"39","te ":"40"," et":"41","t d":"42"," re":"43","des":"44"," un":"45","ie ":"46","s l":"47"," su":"48","pou":"49"," au":"50"," à ":"51","con":"52","er ":"53"," no":"54","ait":"55","e c":"56","se ":"57","té ":"58","du ":"59"," du":"60"," dé":"61","ce ":"62","e e":"63","is ":"64","n d":"65","s a":"66"," so":"67","e r":"68","e s":"69","our":"70","res":"71","ssi":"72","eur":"73"," se":"74","eme":"75","est":"76","us ":"77","sur":"78","ant":"79","iqu":"80","s p":"81","une":"82","uss":"83","l'a":"84","pro":"85","ter":"86","tre":"87","end":"88","rs ":"89"," ce":"90","e a":"91","t p":"92","un ":"93"," ma":"94"," ru":"95"," ré":"96","ous":"97","ris":"98","rus":"99","sse":"100","ans":"101","ar ":"102","com":"103","e m":"104","ire":"105","nce":"106","nte":"107","t l":"108"," av":"109"," mo":"110"," te":"111","il ":"112","me ":"113","ont":"114","ten":"115","a p":"116","dan":"117","pas":"118","qui":"119","s e":"120","s s":"121"," in":"122","ist":"123","lle":"124","nou":"125","pré":"126","'un":"127","air":"128","d'a":"129","ir ":"130","n e":"131","rop":"132","ts ":"133"," da":"134","a s":"135","as ":"136","au ":"137","den":"138","mai":"139","mis":"140","ori":"141","out":"142","rme":"143","sio":"144","tte":"145","ux ":"146","a d":"147","ien":"148","n a":"149","ntr":"150","omm":"151","ort":"152","ouv":"153","s c":"154","son":"155","tes":"156","ver":"157","ère":"158"," il":"159"," m ":"160"," sa":"161"," ve":"162","a r":"163","ais":"164","ava":"165","di ":"166","n p":"167","sti":"168","ven":"169"," mi":"170","ain":"171","enc":"172","for":"173","ité":"174","lar":"175","oir":"176","rem":"177","ren":"178","rro":"179","rés":"180","sie":"181","t a":"182","tur":"183"," pe":"184"," to":"185","d'u":"186","ell":"187","err":"188","ers":"189","ide":"190","ine":"191","iss":"192","mes":"193","por":"194","ran":"195","sit":"196","st ":"197","t r":"198","uti":"199","vai":"200","é l":"201","ési":"202"," di":"203"," n'":"204"," ét":"205","a c":"206","ass":"207","e t":"208","in ":"209","nde":"210","pre":"211","rat":"212","s m":"213","ste":"214","tai":"215","tch":"216","ui ":"217","uro":"218","ès ":"219"," es":"220"," fo":"221"," tr":"222","'ad":"223","app":"224","aux":"225","e à":"226","ett":"227","iti":"228","lit":"229","nal":"230","opé":"231","r d":"232","ra ":"233","rai":"234","ror":"235","s r":"236","tat":"237","uté":"238","à l":"239"," af":"240","anc":"241","ara":"242","art":"243","bre":"244","ché":"245","dre":"246","e f":"247","ens":"248","lem":"249","n r":"250","n t":"251","ndr":"252","nne":"253","onn":"254","pos":"255","s t":"256","tiq":"257","ure":"258"," tu":"259","ale":"260","and":"261","ave":"262","cla":"263","cou":"264","e n":"265","emb":"266","ins":"267","jou":"268","mme":"269","rie":"270","rès":"271","sem":"272","str":"273","t i":"274","ues":"275","uni":"276","uve":"277","é d":"278","ée ":"279"," ch":"280"," do":"281"," eu":"282"," fa":"283"," lo":"284"," ne":"285"," ra":"286","arl":"287","att":"288","ec ":"289","ica":"290","l a":"291","l'o":"292","l'é":"293","mmi":"294","nta":"295","orm":"296","ou ":"297","r u":"298","rle":"299"},"german":{"en ":"0","er ":"1"," de":"2","der":"3","ie ":"4"," di":"5","die":"6","sch":"7","ein":"8","che":"9","ich":"10","den":"11","in ":"12","te ":"13","ch ":"14"," ei":"15","ung":"16","n d":"17","nd ":"18"," be":"19","ver":"20","es ":"21"," zu":"22","eit":"23","gen":"24","und":"25"," un":"26"," au":"27"," in":"28","cht":"29","it ":"30","ten":"31"," da":"32","ent":"33"," ve":"34","and":"35"," ge":"36","ine":"37"," mi":"38","r d":"39","hen":"40","ng ":"41","nde":"42"," vo":"43","e d":"44","ber":"45","men":"46","ei ":"47","mit":"48"," st":"49","ter":"50","ren":"51","t d":"52"," er":"53","ere":"54","n s":"55","ste":"56"," se":"57","e s":"58","ht ":"59","des":"60","ist":"61","ne ":"62","auf":"63","e a":"64","isc":"65","on ":"66","rte":"67"," re":"68"," we":"69","ges":"70","uch":"71"," fü":"72"," so":"73","bei":"74","e e":"75","nen":"76","r s":"77","ach":"78","für":"79","ier":"80","par":"81","ür ":"82"," ha":"83","as ":"84","ert":"85"," an":"86"," pa":"87"," sa":"88"," sp":"89"," wi":"90","for":"91","tag":"92","zu ":"93","das":"94","rei":"95","he ":"96","hre":"97","nte":"98","sen":"99","vor":"100"," sc":"101","ech":"102","etz":"103","hei":"104","lan":"105","n a":"106","pd ":"107","st ":"108","sta":"109","ese":"110","lic":"111"," ab":"112"," si":"113","gte":"114"," wa":"115","iti":"116","kei":"117","n e":"118","nge":"119","sei":"120","tra":"121","zen":"122"," im":"123"," la":"124","art":"125","im ":"126","lle":"127","n w":"128","rde":"129","rec":"130","set":"131","str":"132","tei":"133","tte":"134"," ni":"135","e p":"136","ehe":"137","ers":"138","g d":"139","nic":"140","von":"141"," al":"142"," pr":"143","an ":"144","aus":"145","erf":"146","r e":"147","tze":"148","tür":"149","uf ":"150","ag ":"151","als":"152","ar ":"153","chs":"154","end":"155","ge ":"156","ige":"157","ion":"158","ls ":"159","n m":"160","ngs":"161","nis":"162","nt ":"163","ord":"164","s s":"165","sse":"166"," tü":"167","ahl":"168","e b":"169","ede":"170","em ":"171","len":"172","n i":"173","orm":"174","pro":"175","rke":"176","run":"177","s d":"178","wah":"179","wer":"180","ürk":"181"," me":"182","age":"183","att":"184","ell":"185","est":"186","hat":"187","n b":"188","oll":"189","raf":"190","s a":"191","tsc":"192"," es":"193"," fo":"194"," gr":"195"," ja":"196","abe":"197","auc":"198","ben":"199","e n":"200","ege":"201","lie":"202","n u":"203","r v":"204","re ":"205","rit":"206","sag":"207"," am":"208","agt":"209","ahr":"210","bra":"211","de ":"212","erd":"213","her":"214","ite":"215","le ":"216","n p":"217","n v":"218","or ":"219","rbe":"220","rt ":"221","sic":"222","wie":"223","übe":"224"," is":"225"," üb":"226","cha":"227","chi":"228","e f":"229","e m":"230","eri":"231","ied":"232","mme":"233","ner":"234","r a":"235","sti":"236","t a":"237","t s":"238","tis":"239"," ko":"240","arb":"241","ds ":"242","gan":"243","n z":"244","r f":"245","r w":"246","ran":"247","se ":"248","t i":"249","wei":"250","wir":"251"," br":"252"," np":"253","am ":"254","bes":"255","d d":"256","deu":"257","e g":"258","e k":"259","efo":"260","et ":"261","eut":"262","fen":"263","hse":"264","lte":"265","n r":"266","npd":"267","r b":"268","rhe":"269","t w":"270","tz ":"271"," fr":"272"," ih":"273"," ke":"274"," ma":"275","ame":"276","ang":"277","d s":"278","eil":"279","el ":"280","era":"281","erh":"282","h d":"283","i d":"284","kan":"285","n f":"286","n l":"287","nts":"288","och":"289","rag":"290","rd ":"291","spd":"292","spr":"293","tio":"294"," ar":"295"," en":"296"," ka":"297","ark":"298","ass":"299"},"hausa":{" da":"0","da ":"1","in ":"2","an ":"3","ya ":"4"," wa":"5"," ya":"6","na ":"7","ar ":"8","a d":"9"," ma":"10","wa ":"11","a a":"12","a k":"13","a s":"14"," ta":"15","wan":"16"," a ":"17"," ba":"18"," ka":"19","ta ":"20","a y":"21","n d":"22"," ha":"23"," na":"24"," su":"25"," sa":"26","kin":"27","sa ":"28","ata":"29"," ko":"30","a t":"31","su ":"32"," ga":"33","ai ":"34"," sh":"35","a m":"36","uwa":"37","iya":"38","ma ":"39","a w":"40","asa":"41","yan":"42","ka ":"43","ani":"44","shi":"45","a b":"46","a h":"47","a c":"48","ama":"49","ba ":"50","nan":"51","n a":"52"," mu":"53","ana":"54"," yi":"55","a g":"56"," za":"57","i d":"58"," ku":"59","aka":"60","yi ":"61","n k":"62","ann":"63","ke ":"64","tar":"65"," ci":"66","iki":"67","n s":"68","ko ":"69"," ra":"70","ki ":"71","ne ":"72","a z":"73","mat":"74","hak":"75","nin":"76","e d":"77","nna":"78","uma":"79","nda":"80","a n":"81","ada":"82","cik":"83","ni ":"84","rin":"85","una":"86","ara":"87","kum":"88","akk":"89"," ce":"90"," du":"91","man":"92","n y":"93","nci":"94","sar":"95","aki":"96","awa":"97","ci ":"98","kan":"99","kar":"100","ari":"101","n m":"102","and":"103","hi ":"104","n t":"105","ga ":"106","owa":"107","ash":"108","kam":"109","dan":"110","ewa":"111","nsa":"112","ali":"113","ami":"114"," ab":"115"," do":"116","anc":"117","n r":"118","aya":"119","i n":"120","sun":"121","uka":"122"," al":"123"," ne":"124","a'a":"125","cew":"126","cin":"127","mas":"128","tak":"129","un ":"130","aba":"131","kow":"132","a r":"133","ra ":"134"," ja":"135"," ƙa":"136","en ":"137","r d":"138","sam":"139","tsa":"140"," ru":"141","ce ":"142","i a":"143","abi":"144","ida":"145","mut":"146","n g":"147","n j":"148","san":"149","a ƙ":"150","har":"151","on ":"152","i m":"153","suk":"154"," ak":"155"," ji":"156","yar":"157","'ya":"158","kwa":"159","min":"160"," 'y":"161","ane":"162","ban":"163","ins":"164","ruw":"165","i k":"166","n h":"167"," ad":"168","ake":"169","n w":"170","sha":"171","utu":"172"," ƴa":"173","bay":"174","tan":"175","ƴan":"176","bin":"177","duk":"178","e m":"179","n n":"180","oka":"181","yin":"182","ɗan":"183"," fa":"184","a i":"185","kki":"186","re ":"187","za ":"188","ala":"189","asu":"190","han":"191","i y":"192","mar":"193","ran":"194","ƙas":"195","add":"196","ars":"197","gab":"198","ira":"199","mma":"200","u d":"201"," ts":"202","abb":"203","abu":"204","aga":"205","gar":"206","n b":"207"," ɗa":"208","aci":"209","aik":"210","am ":"211","dun":"212","e s":"213","i b":"214","i w":"215","kas":"216","kok":"217","wam":"218"," am":"219","amf":"220","bba":"221","din":"222","fan":"223","gwa":"224","i s":"225","wat":"226","ano":"227","are":"228","dai":"229","iri":"230","ma'":"231"," la":"232","all":"233","dam":"234","ika":"235","mi ":"236","she":"237","tum":"238","uni":"239"," an":"240"," ai":"241"," ke":"242"," ki":"243","dag":"244","mai":"245","mfa":"246","no ":"247","nsu":"248","o d":"249","sak":"250","um ":"251"," bi":"252"," gw":"253"," kw":"254","jam":"255","yya":"256","a j":"257","fa ":"258","uta":"259"," hu":"260","'a ":"261","ans":"262","aɗa":"263","dda":"264","hin":"265","niy":"266","r s":"267","bat":"268","dar":"269","gan":"270","i t":"271","nta":"272","oki":"273","omi":"274","sal":"275","a l":"276","kac":"277","lla":"278","wad":"279","war":"280","amm":"281","dom":"282","r m":"283","ras":"284","sai":"285"," lo":"286","ats":"287","hal":"288","kat":"289","li ":"290","lok":"291","n c":"292","nar":"293","tin":"294","afa":"295","bub":"296","i g":"297","isa":"298","mak":"299"},"hawaiian":{" ka":"0","na ":"1"," o ":"2","ka ":"3"," ma":"4"," a ":"5"," la":"6","a i":"7","a m":"8"," i ":"9","la ":"10","ana":"11","ai ":"12","ia ":"13","a o":"14","a k":"15","a h":"16","o k":"17"," ke":"18","a a":"19","i k":"20"," ho":"21"," ia":"22","ua ":"23"," na":"24"," me":"25","e k":"26","e a":"27","au ":"28","ke ":"29","ma ":"30","mai":"31","aku":"32"," ak":"33","ahi":"34"," ha":"35"," ko":"36"," e ":"37","a l":"38"," no":"39","me ":"40","ku ":"41","aka":"42","kan":"43","no ":"44","i a":"45","ho ":"46","ou ":"47"," ai":"48","i o":"49","a p":"50","o l":"51","o a":"52","ama":"53","a n":"54"," an":"55","i m":"56","han":"57","i i":"58","iho":"59","kou":"60","ne ":"61"," ih":"62","o i":"63","iki":"64","ona":"65","hoo":"66","le ":"67","e h":"68"," he":"69","ina":"70"," wa":"71","ea ":"72","ako":"73","u i":"74","kah":"75","oe ":"76","i l":"77","u a":"78"," pa":"79","hoi":"80","e i":"81","era":"82","ko ":"83","u m":"84","kua":"85","mak":"86","oi ":"87","kai":"88","i n":"89","a e":"90","hin":"91","ane":"92"," ol":"93","i h":"94","mea":"95","wah":"96","lak":"97","e m":"98","o n":"99","u l":"100","ika":"101","ki ":"102","a w":"103","mal":"104","hi ":"105","e n":"106","u o":"107","hik":"108"," ku":"109","e l":"110","ele":"111","ra ":"112","ber":"113","ine":"114","abe":"115","ain":"116","ala":"117","lo ":"118"," po":"119","kon":"120"," ab":"121","ole":"122","he ":"123","pau":"124","mah":"125","va ":"126","ela":"127","kau":"128","nak":"129"," oe":"130","kei":"131","oia":"132"," ie":"133","ram":"134"," oi":"135","oa ":"136","eho":"137","hov":"138","ieh":"139","ova":"140"," ua":"141","una":"142","ara":"143","o s":"144","awa":"145","o o":"146","nau":"147","u n":"148","wa ":"149","wai":"150","hel":"151"," ae":"152"," al":"153","ae ":"154","ta ":"155","aik":"156"," hi":"157","ale":"158","ila":"159","lel":"160","ali":"161","eik":"162","olo":"163","onu":"164"," lo":"165","aua":"166","e o":"167","ola":"168","hon":"169","mam":"170","nan":"171"," au":"172","aha":"173","lau":"174","nua":"175","oho":"176","oma":"177"," ao":"178","ii ":"179","alu":"180","ima":"181","mau":"182","ike":"183","apa":"184","elo":"185","lii":"186","poe":"187","aia":"188","noa":"189"," in":"190","o m":"191","oka":"192","'u ":"193","aho":"194","ei ":"195","eka":"196","ha ":"197","lu ":"198","nei":"199","hol":"200","ino":"201","o e":"202","ema":"203","iwa":"204","olu":"205","ada":"206","naa":"207","pa ":"208","u k":"209","ewa":"210","hua":"211","lam":"212","lua":"213","o h":"214","ook":"215","u h":"216"," li":"217","ahu":"218","amu":"219","ui ":"220"," il":"221"," mo":"222"," se":"223","eia":"224","law":"225"," hu":"226"," ik":"227","ail":"228","e p":"229","li ":"230","lun":"231","uli":"232","io ":"233","kik":"234","noh":"235","u e":"236"," sa":"237","aaw":"238","awe":"239","ena":"240","hal":"241","kol":"242","lan":"243"," le":"244"," ne":"245","a'u":"246","ilo":"247","kap":"248","oko":"249","sa ":"250"," pe":"251","hop":"252","loa":"253","ope":"254","pe ":"255"," ad":"256"," pu":"257","ahe":"258","aol":"259","ia'":"260","lai":"261","loh":"262","na'":"263","oom":"264","aau":"265","eri":"266","kul":"267","we ":"268","ake":"269","kek":"270","laa":"271","ri ":"272","iku":"273","kak":"274","lim":"275","nah":"276","ner":"277","nui":"278","ono":"279","a u":"280","dam":"281","kum":"282","lok":"283","mua":"284","uma":"285","wal":"286","wi ":"287","'i ":"288","a'i":"289","aan":"290","alo":"291","eta":"292","mu ":"293","ohe":"294","u p":"295","ula":"296","uwa":"297"," nu":"298","amo":"299"},"hindi":{"ें ":"0"," है":"1","में":"2"," मे":"3","ने ":"4","की ":"5","के ":"6","है ":"7"," के":"8"," की":"9"," को":"10","ों ":"11","को ":"12","ा ह":"13"," का":"14","से ":"15","ा क":"16","े क":"17","ं क":"18","या ":"19"," कि":"20"," से":"21","का ":"22","ी क":"23"," ने":"24"," और":"25","और ":"26","ना ":"27","कि ":"28","भी ":"29","ी स":"30"," जा":"31"," पर":"32","ार ":"33"," कर":"34","ी ह":"35"," हो":"36","ही ":"37","िया":"38"," इस":"39"," रह":"40","र क":"41","ुना":"42","ता ":"43","ान ":"44","े स":"45"," भी":"46"," रा":"47","े ह":"48"," चु":"49"," पा":"50","पर ":"51","चुन":"52","नाव":"53"," कह":"54","प्र":"55"," भा":"56","राज":"57","हैं":"58","ा स":"59","ै क":"60","ैं ":"61","नी ":"62","ल क":"63","ीं ":"64","़ी ":"65","था ":"66","री ":"67","ाव ":"68","े ब":"69"," प्":"70","क्ष":"71","पा ":"72","ले ":"73"," दे":"74","ला ":"75","हा ":"76","ाजप":"77"," था":"78"," नह":"79","इस ":"80","कर ":"81","जपा":"82","नही":"83","भाज":"84","यों":"85","र स":"86","हीं":"87"," अम":"88"," बा":"89"," मा":"90"," वि":"91","रीक":"92","िए ":"93","े प":"94","्या":"95"," ही":"96","ं म":"97","कार":"98","ा ज":"99","े ल":"100"," ता":"101"," दि":"102"," सा":"103"," हम":"104","ा न":"105","ा म":"106","ाक़":"107","्ता":"108"," एक":"109"," सं":"110"," स्":"111","अमर":"112","क़ी":"113","ताज":"114","मरी":"115","स्थ":"116","ा थ":"117","ार्":"118"," हु":"119","इरा":"120","एक ":"121","न क":"122","र म":"123","राक":"124","ी ज":"125","ी न":"126"," इर":"127"," उन":"128"," पह":"129","कहा":"130","ते ":"131","े अ":"132"," तो":"133"," सु":"134","ति ":"135","ती ":"136","तो ":"137","मिल":"138","िक ":"139","ियो":"140","्रे":"141"," अप":"142"," फ़":"143"," लि":"144"," लो":"145"," सम":"146","म क":"147","र्ट":"148","हो ":"149","ा च":"150","ाई ":"151","ाने":"152","िन ":"153","्य ":"154"," उस":"155"," क़":"156"," सक":"157"," सै":"158","ं प":"159","ं ह":"160","गी ":"161","त क":"162","मान":"163","र न":"164","ष्ट":"165","स क":"166","स्त":"167","ाँ ":"168","ी ब":"169","ी म":"170","्री":"171"," दो":"172"," मि":"173"," मु":"174"," ले":"175"," शा":"176","ं स":"177","ज़ा":"178","त्र":"179","थी ":"180","लिए":"181","सी ":"182","़ा ":"183","़ार":"184","ांग":"185","े द":"186","े म":"187","्व ":"188"," ना":"189"," बन":"190","ंग्":"191","कां":"192","गा ":"193","ग्र":"194","जा ":"195","ज्य":"196","दी ":"197","न म":"198","पार":"199","भा ":"200","रही":"201","रे ":"202","रेस":"203","ली ":"204","सभा":"205","ा र":"206","ाल ":"207","ी अ":"208","ीकी":"209","े त":"210","ेश ":"211"," अं":"212"," तक":"213"," या":"214","ई ह":"215","करन":"216","तक ":"217","देश":"218","वर्":"219","ाया":"220","ी भ":"221","ेस ":"222","्ष ":"223"," गय":"224"," जि":"225"," थी":"226"," बड":"227"," यह":"228"," वा":"229","ंतर":"230","अंत":"231","क़ ":"232","गया":"233","टी ":"234","निक":"235","न्ह":"236","पहल":"237","बड़":"238","मार":"239","र प":"240","रने":"241","ाज़":"242","ि इ":"243","ी र":"244","े ज":"245","े व":"246","्ट ":"247","्टी":"248"," अब":"249"," लग":"250"," वर":"251"," सी":"252","ं भ":"253","उन्":"254","क क":"255","किय":"256","देख":"257","पूर":"258","फ़्":"259","यह ":"260","यान":"261","रिक":"262","रिय":"263","र्ड":"264","लेक":"265","सकत":"266","हों":"267","होग":"268","ा अ":"269","ा द":"270","ा प":"271","ाद ":"272","ारा":"273","ित ":"274","ी त":"275","ी प":"276","ो क":"277","ो द":"278"," ते":"279"," नि":"280"," सर":"281"," हा":"282","ं द":"283","अपन":"284","जान":"285","त म":"286","थित":"287","पनी":"288","महल":"289","र ह":"290","लोग":"291","व क":"292","हना":"293","हल ":"294","हाँ":"295","ाज्":"296","ाना":"297","िक्":"298","िस्":"299"},"hungarian":{" a ":"0"," az":"1"," sz":"2","az ":"3"," me":"4","en ":"5"," el":"6"," ho":"7","ek ":"8","gy ":"9","tt ":"10","ett":"11","sze":"12"," fe":"13","és ":"14"," ki":"15","tet":"16"," be":"17","et ":"18","ter":"19"," kö":"20"," és":"21","hog":"22","meg":"23","ogy":"24","szt":"25","te ":"26","t a":"27","zet":"28","a m":"29","nek":"30","nt ":"31","ség":"32","szá":"33","ak ":"34"," va":"35","an ":"36","eze":"37","ra ":"38","ta ":"39"," mi":"40","int":"41","köz":"42"," is":"43","esz":"44","fel":"45","min":"46","nak":"47","ors":"48","zer":"49"," te":"50","a a":"51","a k":"52","is ":"53"," cs":"54","ele":"55","er ":"56","men":"57","si ":"58","tek":"59","ti ":"60"," ne":"61","csa":"62","ent":"63","z e":"64","a t":"65","ala":"66","ere":"67","es ":"68","lom":"69","lte":"70","mon":"71","ond":"72","rsz":"73","sza":"74","tte":"75","zág":"76","ány":"77"," fo":"78"," ma":"79","ai ":"80","ben":"81","el ":"82","ene":"83","ik ":"84","jel":"85","tás":"86","áll":"87"," ha":"88"," le":"89"," ál":"90","agy":"91","alá":"92","isz":"93","y a":"94","zte":"95","ás ":"96"," al":"97","e a":"98","egy":"99","ely":"100","for":"101","lat":"102","lt ":"103","n a":"104","oga":"105","on ":"106","re ":"107","st ":"108","ság":"109","t m":"110","án ":"111","ét ":"112","ült":"113"," je":"114","gi ":"115","k a":"116","kül":"117","lam":"118","len":"119","lás":"120","más":"121","s k":"122","vez":"123","áso":"124","özö":"125"," ta":"126","a s":"127","a v":"128","asz":"129","atá":"130","ető":"131","kez":"132","let":"133","mag":"134","nem":"135","szé":"136","z m":"137","át ":"138","éte":"139","ölt":"140"," de":"141"," gy":"142"," ké":"143"," mo":"144"," vá":"145"," ér":"146","a b":"147","a f":"148","ami":"149","at ":"150","ato":"151","att":"152","bef":"153","dta":"154","gya":"155","hat":"156","i s":"157","las":"158","ndt":"159","rt ":"160","szo":"161","t k":"162","tár":"163","tés":"164","van":"165","ásá":"166","ól ":"167"," bé":"168"," eg":"169"," or":"170"," pá":"171"," pé":"172"," ve":"173","ban":"174","eke":"175","ekü":"176","elő":"177","erv":"178","ete":"179","fog":"180","i a":"181","kis":"182","lád":"183","nte":"184","nye":"185","nyi":"186","ok ":"187","omá":"188","os ":"189","rán":"190","rás":"191","sal":"192","t e":"193","vál":"194","yar":"195","ágo":"196","ála":"197","ége":"198","ény":"199","ött":"200"," tá":"201","adó":"202","elh":"203","fej":"204","het":"205","hoz":"206","ill":"207","jár":"208","kés":"209","llo":"210","mi ":"211","ny ":"212","ont":"213","ren":"214","res":"215","rin":"216","s a":"217","s e":"218","ssz":"219","zt ":"220"," ez":"221"," ka":"222"," ke":"223"," ko":"224"," re":"225","a h":"226","a n":"227","den":"228","dó ":"229","efo":"230","gad":"231","gat":"232","gye":"233","hel":"234","k e":"235","ket":"236","les":"237","mán":"238","nde":"239","nis":"240","ozz":"241","t b":"242","t i":"243","t é":"244","tat":"245","tos":"246","val":"247","z o":"248","zak":"249","ád ":"250","ály":"251","ára":"252","ési":"253","ész":"254"," ak":"255"," am":"256"," es":"257"," há":"258"," ny":"259"," tö":"260","aka":"261","art":"262","ató":"263","azt":"264","bbe":"265","ber":"266","ció":"267","cso":"268","em ":"269","eti":"270","eté":"271","gal":"272","i t":"273","ini":"274","ist":"275","ja ":"276","ker":"277","ki ":"278","kor":"279","koz":"280","l é":"281","ljá":"282","lye":"283","n v":"284","ni ":"285","pál":"286","ror":"287","ról":"288","rül":"289","s c":"290","s p":"291","s s":"292","s v":"293","sok":"294","t j":"295","t t":"296","tar":"297","tel":"298","vat":"299"},"icelandic":{"að ":"0","um ":"1"," að":"2","ir ":"3","ið ":"4","ur ":"5"," ve":"6"," í ":"7","na ":"8"," á ":"9"," se":"10"," er":"11"," og":"12","ar ":"13","og ":"14","ver":"15"," mi":"16","inn":"17","nn ":"18"," fy":"19","er ":"20","fyr":"21"," ek":"22"," en":"23"," ha":"24"," he":"25","ekk":"26"," st":"27","ki ":"28","st ":"29","ði ":"30"," ba":"31"," me":"32"," vi":"33","ig ":"34","rir":"35","yri":"36"," um":"37","g f":"38","leg":"39","lei":"40","ns ":"41","ð s":"42"," ei":"43"," þa":"44","in ":"45","kki":"46","r h":"47","r s":"48","egi":"49","ein":"50","ga ":"51","ing":"52","ra ":"53","sta":"54"," va":"55"," þe":"56","ann":"57","en ":"58","mil":"59","sem":"60","tjó":"61","arð":"62","di ":"63","eit":"64","haf":"65","ill":"66","ins":"67","ist":"68","llj":"69","ndi":"70","r a":"71","r e":"72","seg":"73","un ":"74","var":"75"," bi":"76"," el":"77"," fo":"78"," ge":"79"," yf":"80","and":"81","aug":"82","bau":"83","big":"84","ega":"85","eld":"86","erð":"87","fir":"88","foo":"89","gin":"90","itt":"91","n s":"92","ngi":"93","num":"94","od ":"95","ood":"96","sin":"97","ta ":"98","tt ":"99","við":"100","yfi":"101","ð e":"102","ð f":"103"," hr":"104"," sé":"105"," þv":"106","a e":"107","a á":"108","em ":"109","gi ":"110","i f":"111","jar":"112","jór":"113","lja":"114","m e":"115","r á":"116","rei":"117","rst":"118","rða":"119","rði":"120","rðu":"121","stj":"122","und":"123","veg":"124","ví ":"125","ð v":"126","það":"127","því":"128"," fj":"129"," ko":"130"," sl":"131","eik":"132","end":"133","ert":"134","ess":"135","fjá":"136","fur":"137","gir":"138","hús":"139","jár":"140","n e":"141","ri ":"142","tar":"143","ð þ":"144","ðar":"145","ður":"146","þes":"147"," br":"148"," hú":"149"," kr":"150"," le":"151"," up":"152","a s":"153","egg":"154","i s":"155","irt":"156","ja ":"157","kið":"158","len":"159","með":"160","mik":"161","n b":"162","nar":"163","nir":"164","nun":"165","r f":"166","r v":"167","rið":"168","rt ":"169","sti":"170","t v":"171","ti ":"172","una":"173","upp":"174","ða ":"175","óna":"176"," al":"177"," fr":"178"," gr":"179","a v":"180","all":"181","an ":"182","da ":"183","eið":"184","eð ":"185","fa ":"186","fra":"187","g e":"188","ger":"189","gið":"190","gt ":"191","han":"192","hef":"193","hel":"194","her":"195","hra":"196","i a":"197","i e":"198","i v":"199","i þ":"200","iki":"201","jón":"202","jör":"203","ka ":"204","kró":"205","lík":"206","m h":"207","n a":"208","nga":"209","r l":"210","ram":"211","ru ":"212","ráð":"213","rón":"214","svo":"215","vin":"216","í b":"217","í h":"218","ð h":"219","ð k":"220","ð m":"221","örð":"222"," af":"223"," fa":"224"," lí":"225"," rá":"226"," sk":"227"," sv":"228"," te":"229","a b":"230","a f":"231","a h":"232","a k":"233","a u":"234","afi":"235","agn":"236","arn":"237","ast":"238","ber":"239","efu":"240","enn":"241","erb":"242","erg":"243","fi ":"244","g a":"245","gar":"246","iðs":"247","ker":"248","kke":"249","lan":"250","ljó":"251","llt":"252","ma ":"253","mið":"254","n v":"255","n í":"256","nan":"257","nda":"258","ndu":"259","nið":"260","nna":"261","nnu":"262","nu ":"263","r o":"264","rbe":"265","rgi":"266","slö":"267","sé ":"268","t a":"269","t h":"270","til":"271","tin":"272","ugu":"273","vil":"274","ygg":"275","á s":"276","ð a":"277","ð b":"278","órn":"279","ögn":"280","öku":"281"," at":"282"," fi":"283"," fé":"284"," ka":"285"," ma":"286"," no":"287"," sa":"288"," si":"289"," ti":"290"," ák":"291","a m":"292","a t":"293","a í":"294","a þ":"295","afa":"296","afs":"297","ald":"298","arf":"299"},"indonesian":{"an ":"0"," me":"1","kan":"2","ang":"3","ng ":"4"," pe":"5","men":"6"," di":"7"," ke":"8"," da":"9"," se":"10","eng":"11"," be":"12","nga":"13","nya":"14"," te":"15","ah ":"16","ber":"17","aka":"18"," ya":"19","dan":"20","di ":"21","yan":"22","n p":"23","per":"24","a m":"25","ita":"26"," pa":"27","da ":"28","ata":"29","ada":"30","ya ":"31","ta ":"32"," in":"33","ala":"34","eri":"35","ia ":"36","a d":"37","n k":"38","am ":"39","ga ":"40","at ":"41","era":"42","n d":"43","ter":"44"," ka":"45","a p":"46","ari":"47","emb":"48","n m":"49","ri ":"50"," ba":"51","aan":"52","ak ":"53","ra ":"54"," it":"55","ara":"56","ela":"57","ni ":"58","ali":"59","ran":"60","ar ":"61","eru":"62","lah":"63","a b":"64","asi":"65","awa":"66","eba":"67","gan":"68","n b":"69"," ha":"70","ini":"71","mer":"72"," la":"73"," mi":"74","and":"75","ena":"76","wan":"77"," sa":"78","aha":"79","lam":"80","n i":"81","nda":"82"," wa":"83","a i":"84","dua":"85","g m":"86","mi ":"87","n a":"88","rus":"89","tel":"90","yak":"91"," an":"92","dal":"93","h d":"94","i s":"95","ing":"96","min":"97","ngg":"98","tak":"99","ami":"100","beb":"101","den":"102","gat":"103","ian":"104","ih ":"105","pad":"106","rga":"107","san":"108","ua ":"109"," de":"110","a t":"111","arg":"112","dar":"113","elu":"114","har":"115","i k":"116","i m":"117","i p":"118","ika":"119","in ":"120","iny":"121","itu":"122","mba":"123","n t":"124","ntu":"125","pan":"126","pen":"127","sah":"128","tan":"129","tu ":"130","a k":"131","ban":"132","edu":"133","eka":"134","g d":"135","ka ":"136","ker":"137","nde":"138","nta":"139","ora":"140","usa":"141"," du":"142"," ma":"143","a s":"144","ai ":"145","ant":"146","bas":"147","end":"148","i d":"149","ira":"150","kam":"151","lan":"152","n s":"153","uli":"154","al ":"155","apa":"156","ere":"157","ert":"158","lia":"159","mem":"160","rka":"161","si ":"162","tal":"163","ung":"164"," ak":"165","a a":"166","a w":"167","ani":"168","ask":"169","ent":"170","gar":"171","haa":"172","i i":"173","isa":"174","ked":"175","mbe":"176","ska":"177","tor":"178","uan":"179","uk ":"180","uka":"181"," ad":"182"," to":"183","asa":"184","aya":"185","bag":"186","dia":"187","dun":"188","erj":"189","mas":"190","na ":"191","rek":"192","rit":"193","sih":"194","us ":"195"," bi":"196","a h":"197","ama":"198","dib":"199","ers":"200","g s":"201","han":"202","ik ":"203","kem":"204","ma ":"205","n l":"206","nit":"207","r b":"208","rja":"209","sa ":"210"," ju":"211"," or":"212"," si":"213"," ti":"214","a y":"215","aga":"216","any":"217","as ":"218","cul":"219","eme":"220","emu":"221","eny":"222","epa":"223","erb":"224","erl":"225","gi ":"226","h m":"227","i a":"228","kel":"229","li ":"230","mel":"231","nia":"232","opa":"233","rta":"234","sia":"235","tah":"236","ula":"237","un ":"238","unt":"239"," at":"240"," bu":"241"," pu":"242"," ta":"243","agi":"244","alu":"245","amb":"246","bah":"247","bis":"248","er ":"249","i t":"250","ibe":"251","ir ":"252","ja ":"253","k m":"254","kar":"255","lai":"256","lal":"257","lu ":"258","mpa":"259","ngk":"260","nja":"261","or ":"262","pa ":"263","pas":"264","pem":"265","rak":"266","rik":"267","seb":"268","tam":"269","tem":"270","top":"271","tuk":"272","uni":"273","war":"274"," al":"275"," ga":"276"," ge":"277"," ir":"278"," ja":"279"," mu":"280"," na":"281"," pr":"282"," su":"283"," un":"284","ad ":"285","adi":"286","akt":"287","ann":"288","apo":"289","bel":"290","bul":"291","der":"292","ega":"293","eke":"294","ema":"295","emp":"296","ene":"297","enj":"298","esa":"299"},"italian":{" di":"0","to ":"1","la ":"2"," de":"3","di ":"4","no ":"5"," co":"6","re ":"7","ion":"8","e d":"9"," e ":"10","le ":"11","del":"12","ne ":"13","ti ":"14","ell":"15"," la":"16"," un":"17","ni ":"18","i d":"19","per":"20"," pe":"21","ent":"22"," in":"23","one":"24","he ":"25","ta ":"26","zio":"27","che":"28","o d":"29","a d":"30","na ":"31","ato":"32","e s":"33"," so":"34","i s":"35","lla":"36","a p":"37","li ":"38","te ":"39"," al":"40"," ch":"41","er ":"42"," pa":"43"," si":"44","con":"45","sta":"46"," pr":"47","a c":"48"," se":"49","el ":"50","ia ":"51","si ":"52","e p":"53"," da":"54","e i":"55","i p":"56","ont":"57","ano":"58","i c":"59","all":"60","azi":"61","nte":"62","on ":"63","nti":"64","o s":"65"," ri":"66","i a":"67","o a":"68","un ":"69"," an":"70","are":"71","ari":"72","e a":"73","i e":"74","ita":"75","men":"76","ri ":"77"," ca":"78"," il":"79"," no":"80"," po":"81","a s":"82","ant":"83","il ":"84","in ":"85","a l":"86","ati":"87","cia":"88","e c":"89","ro ":"90","ann":"91","est":"92","gli":"93","tà ":"94"," qu":"95","e l":"96","nta":"97"," a ":"98","com":"99","o c":"100","ra ":"101"," le":"102"," ne":"103","ali":"104","ere":"105","ist":"106"," ma":"107"," è ":"108","io ":"109","lle":"110","me ":"111","era":"112","ica":"113","ost":"114","pro":"115","tar":"116","una":"117"," pi":"118","da ":"119","tat":"120"," mi":"121","att":"122","ca ":"123","mo ":"124","non":"125","par":"126","sti":"127"," fa":"128"," i ":"129"," re":"130"," su":"131","ess":"132","ini":"133","nto":"134","o l":"135","ssi":"136","tto":"137","a e":"138","ame":"139","col":"140","ei ":"141","ma ":"142","o i":"143","za ":"144"," st":"145","a a":"146","ale":"147","anc":"148","ani":"149","i m":"150","ian":"151","o p":"152","oni":"153","sio":"154","tan":"155","tti":"156"," lo":"157","i r":"158","oci":"159","oli":"160","ona":"161","ono":"162","tra":"163"," l ":"164","a r":"165","eri":"166","ett":"167","lo ":"168","nza":"169","que":"170","str":"171","ter":"172","tta":"173"," ba":"174"," li":"175"," te":"176","ass":"177","e f":"178","enz":"179","for":"180","nno":"181","olo":"182","ori":"183","res":"184","tor":"185"," ci":"186"," vo":"187","a i":"188","al ":"189","chi":"190","e n":"191","lia":"192","pre":"193","ria":"194","uni":"195","ver":"196"," sp":"197","imo":"198","l a":"199","l c":"200","ran":"201","sen":"202","soc":"203","tic":"204"," fi":"205"," mo":"206","a n":"207","ce ":"208","dei":"209","ggi":"210","gio":"211","iti":"212","l s":"213","lit":"214","ll ":"215","mon":"216","ola":"217","pac":"218","sim":"219","tit":"220","utt":"221","vol":"222"," ar":"223"," fo":"224"," ha":"225"," sa":"226","acc":"227","e r":"228","ire":"229","man":"230","ntr":"231","rat":"232","sco":"233","tro":"234","tut":"235","va ":"236"," do":"237"," gi":"238"," me":"239"," sc":"240"," tu":"241"," ve":"242"," vi":"243","a m":"244","ber":"245","can":"246","cit":"247","i l":"248","ier":"249","ità":"250","lli":"251","min":"252","n p":"253","nat":"254","nda":"255","o e":"256","o f":"257","o u":"258","ore":"259","oro":"260","ort":"261","sto":"262","ten":"263","tiv":"264","van":"265","art":"266","cco":"267","ci ":"268","cos":"269","dal":"270","e v":"271","i i":"272","ila":"273","ino":"274","l p":"275","n c":"276","nit":"277","ole":"278","ome":"279","po ":"280","rio":"281","sa ":"282"," ce":"283"," es":"284"," tr":"285","a b":"286","and":"287","ata":"288","der":"289","ens":"290","ers":"291","gi ":"292","ial":"293","ina":"294","itt":"295","izi":"296","lan":"297","lor":"298","mil":"299"},"kazakh":{"ан ":"0","ен ":"1","ың ":"2"," қа":"3"," ба":"4","ай ":"5","нда":"6","ын ":"7"," са":"8"," ал":"9","ді ":"10","ары":"11","ды ":"12","ып ":"13"," мұ":"14"," бі":"15","асы":"16","да ":"17","най":"18"," жа":"19","мұн":"20","ста":"21","ған":"22","н б":"23","ұна":"24"," бо":"25","ның":"26","ін ":"27","лар":"28","сын":"29"," де":"30","аға":"31","тан":"32"," кө":"33","бір":"34","ер ":"35","мен":"36","аза":"37","ынд":"38","ыны":"39"," ме":"40","анд":"41","ері":"42","бол":"43","дың":"44","қаз":"45","аты":"46","сы ":"47","тын":"48","ғы ":"49"," ке":"50","ар ":"51","зақ":"52","ық ":"53","ала":"54","алы":"55","аны":"56","ара":"57","ағы":"58","ген":"59","тар":"60","тер":"61","тыр":"62","айд":"63","ард":"64","де ":"65","ға ":"66"," қо":"67","бар":"68","ің ":"69","қан":"70"," бе":"71"," қы":"72","ақс":"73","гер":"74","дан":"75","дар":"76","лық":"77","лға":"78","ына":"79","ір ":"80","ірі":"81","ғас":"82"," та":"83","а б":"84","гі ":"85","еді":"86","еле":"87","йды":"88","н к":"89","н т":"90","ола":"91","рын":"92","іп ":"93","қст":"94","қта":"95","ң б":"96"," ай":"97"," ол":"98"," со":"99","айт":"100","дағ":"101","иге":"102","лер":"103","лып":"104","н а":"105","ік ":"106","ақт":"107","бағ":"108","кен":"109","н қ":"110","ны ":"111","рге":"112","рға":"113","ыр ":"114"," ар":"115","алғ":"116","аса":"117","бас":"118","бер":"119","ге ":"120","еті":"121","на ":"122","нде":"123","не ":"124","ниг":"125","рды":"126","ры ":"127","сай":"128"," ау":"129"," кү":"130"," ни":"131"," от":"132"," өз":"133","ауд":"134","еп ":"135","иял":"136","лты":"137","н ж":"138","н о":"139","осы":"140","оты":"141","рып":"142","рі ":"143","тке":"144","ты ":"145","ы б":"146","ы ж":"147","ылы":"148","ысы":"149","і с":"150","қар":"151"," бұ":"152"," да":"153"," же":"154"," тұ":"155"," құ":"156","ады":"157","айл":"158","ап ":"159","ата":"160","ені":"161","йла":"162","н м":"163","н с":"164","нды":"165","нді":"166","р м":"167","тай":"168","тін":"169","ы т":"170","ыс ":"171","інд":"172"," би":"173","а ж":"174","ауы":"175","деп":"176","дің":"177","еке":"178","ери":"179","йын":"180","кел":"181","лды":"182","ма ":"183","нан":"184","оны":"185","п ж":"186","п о":"187","р б":"188","рия":"189","рла":"190","уда":"191","шыл":"192","ы а":"193","ықт":"194","і а":"195","і б":"196","із ":"197","ілі":"198","ң қ":"199"," ас":"200"," ек":"201"," жо":"202"," мә":"203"," ос":"204"," ре":"205"," се":"206","алд":"207","дал":"208","дег":"209","дей":"210","е б":"211","ет ":"212","жас":"213","й б":"214","лау":"215","лда":"216","мет":"217","нын":"218","сар":"219","сі ":"220","ті ":"221","ыры":"222","ыта":"223","ісі":"224","ң а":"225","өте":"226"," ат":"227"," ел":"228"," жү":"229"," ма":"230"," то":"231"," шы":"232","а а":"233","алт":"234","ама":"235","арл":"236","аст":"237","бұл":"238","дай":"239","дық":"240","ек ":"241","ель":"242","есі":"243","зді":"244","көт":"245","лем":"246","ль ":"247","н е":"248","п а":"249","р а":"250","рес":"251","са ":"252","та ":"253","тте":"254","тұр":"255","шы ":"256","ы д":"257","ы қ":"258","ыз ":"259","қыт":"260"," ко":"261"," не":"262"," ой":"263"," ор":"264"," сұ":"265"," тү":"266","аль":"267","аре":"268","атт":"269","дір":"270","ев ":"271","егі":"272","еда":"273","екі":"274","елд":"275","ерг":"276","ерд":"277","ияд":"278","кер":"279","кет":"280","лыс":"281","ліс":"282","мед":"283","мпи":"284","н д":"285","ні ":"286","нін":"287","п т":"288","пек":"289","рел":"290","рта":"291","ріл":"292","рін":"293","сен":"294","тал":"295","шіл":"296","ы к":"297","ы м":"298","ыст":"299"},"kyrgyz":{"ын ":"0","ан ":"1"," жа":"2","ен ":"3","да ":"4"," та":"5","ар ":"6","ин ":"7"," ка":"8","ары":"9"," ал":"10"," ба":"11"," би":"12","лар":"13"," бо":"14"," кы":"15","ала":"16","н к":"17"," са":"18","нда":"19","ган":"20","тар":"21"," де":"22","анд":"23","н б":"24"," ке":"25","ард":"26","мен":"27","н т":"28","ара":"29","нын":"30"," да":"31"," ме":"32","кыр":"33"," че":"34","н а":"35","ры ":"36"," ко":"37","ген":"38","дар":"39","кен":"40","кта":"41","уу ":"42","ене":"43","ери":"44"," ша":"45","алы":"46","ат ":"47","на ":"48"," кө":"49"," эм":"50","аты":"51","дан":"52","деп":"53","дын":"54","еп ":"55","нен":"56","рын":"57"," бе":"58","кан":"59","луу":"60","ргы":"61","тан":"62","шай":"63","ырг":"64","үн ":"65"," ар":"66"," ма":"67","агы":"68","акт":"69","аны":"70","гы ":"71","гыз":"72","ды ":"73","рда":"74","ай ":"75","бир":"76","бол":"77","ер ":"78","н с":"79","нды":"80","ун ":"81","ча ":"82","ынд":"83","а к":"84","ага":"85","айл":"86","ана":"87","ап ":"88","га ":"89","лге":"90","нча":"91","п к":"92","рды":"93","туу":"94","ыны":"95"," ан":"96"," өз":"97","ама":"98","ата":"99","дин":"100","йт ":"101","лга":"102","лоо":"103","оо ":"104","ри ":"105","тин":"106","ыз ":"107","ып ":"108","өрү":"109"," па":"110"," эк":"111","а б":"112","алг":"113","асы":"114","ашт":"115","биз":"116","кел":"117","кте":"118","тал":"119"," не":"120"," су":"121","акы":"122","ент":"123","инд":"124","ир ":"125","кал":"126","н д":"127","нде":"128","ого":"129","онд":"130","оюн":"131","р б":"132","р м":"133","ран":"134","сал":"135","ста":"136","сы ":"137","ура":"138","ыгы":"139"," аш":"140"," ми":"141"," сы":"142"," ту":"143","ал ":"144","арт":"145","бор":"146","елг":"147","ени":"148","ет ":"149","жат":"150","йло":"151","кар":"152","н м":"153","огу":"154","п а":"155","п ж":"156","р э":"157","сын":"158","ык ":"159","юнч":"160"," бу":"161"," ур":"162","а а":"163","ак ":"164","алд":"165","алу":"166","бар":"167","бер":"168","бою":"169","ге ":"170","дон":"171","еги":"172","ект":"173","ефт":"174","из ":"175","кат":"176","лды":"177","н ч":"178","н э":"179","н ө":"180","ндо":"181","неф":"182","он ":"183","сат":"184","тор":"185","ты ":"186","уда":"187","ул ":"188","ула":"189","ууд":"190","ы б":"191","ы ж":"192","ы к":"193","ыл ":"194","ына":"195","эке":"196","ясы":"197"," ат":"198"," до":"199"," жы":"200"," со":"201"," чы":"202","аас":"203","айт":"204","аст":"205","баа":"206","баш":"207","гар":"208","гын":"209","дө ":"210","е б":"211","ек ":"212","жыл":"213","и б":"214","ик ":"215","ияс":"216","кыз":"217","лда":"218","лык":"219","мда":"220","н ж":"221","нди":"222","ни ":"223","нин":"224","орд":"225","рдо":"226","сто":"227","та ":"228","тер":"229","тти":"230","тур":"231","тын":"232","уп ":"233","ушу":"234","фти":"235","ыкт":"236","үп ":"237","өн ":"238"," ай":"239"," бү":"240"," ич":"241"," иш":"242"," мо":"243"," пр":"244"," ре":"245"," өк":"246"," өт":"247","а д":"248","а у":"249","а э":"250","айм":"251","амд":"252","атт":"253","бек":"254","бул":"255","гол":"256","дег":"257","еге":"258","ейт":"259","еле":"260","енд":"261","жак":"262","и к":"263","ини":"264","ири":"265","йма":"266","кто":"267","лик":"268","мак":"269","мес":"270","н у":"271","н ш":"272","нтт":"273","ол ":"274","оло":"275","пар":"276","рак":"277","рүү":"278","сыр":"279","ти ":"280","тик":"281","тта":"282","төр":"283","у ж":"284","у с":"285","шка":"286","ы м":"287","ызы":"288","ылд":"289","эме":"290","үрү":"291","өлү":"292","өтө":"293"," же":"294"," тү":"295"," эл":"296"," өн":"297","а ж":"298","ады":"299"},"latin":{"um ":"0","us ":"1","ut ":"2","et ":"3","is ":"4"," et":"5"," in":"6"," qu":"7","tur":"8"," pr":"9","est":"10","tio":"11"," au":"12","am ":"13","em ":"14","aut":"15"," di":"16","ent":"17","in ":"18","dic":"19","t e":"20"," es":"21","ur ":"22","ati":"23","ion":"24","st ":"25"," ut":"26","ae ":"27","qua":"28"," de":"29","nt ":"30"," su":"31"," si":"32","itu":"33","unt":"34","rum":"35","ia ":"36","es ":"37","ter":"38"," re":"39","nti":"40","rae":"41","s e":"42","qui":"43","io ":"44","pro":"45","it ":"46","per":"47","ita":"48","one":"49","ici":"50","ius":"51"," co":"52","t d":"53","bus":"54","pra":"55","m e":"56"," no":"57","edi":"58","tia":"59","ue ":"60","ibu":"61"," se":"62"," ad":"63","er ":"64"," fi":"65","ili":"66","que":"67","t i":"68","de ":"69","oru":"70"," te":"71","ali":"72"," pe":"73","aed":"74","cit":"75","m d":"76","t s":"77","tat":"78","tem":"79","tis":"80","t p":"81","sti":"82","te ":"83","cum":"84","ere":"85","ium":"86"," ex":"87","rat":"88","ta ":"89","con":"90","cti":"91","oni":"92","ra ":"93","s i":"94"," cu":"95"," sa":"96","eni":"97","nis":"98","nte":"99","eri":"100","omi":"101","re ":"102","s a":"103","min":"104","os ":"105","ti ":"106","uer":"107"," ma":"108"," ue":"109","m s":"110","nem":"111","t m":"112"," mo":"113"," po":"114"," ui":"115","gen":"116","ict":"117","m i":"118","ris":"119","s s":"120","t a":"121","uae":"122"," do":"123","m a":"124","t c":"125"," ge":"126","as ":"127","e i":"128","e p":"129","ne ":"130"," ca":"131","ine":"132","quo":"133","s p":"134"," al":"135","e e":"136","ntu":"137","ro ":"138","tri":"139","tus":"140","uit":"141","atu":"142","ini":"143","iqu":"144","m p":"145","ost":"146","res":"147","ura":"148"," ac":"149"," fu":"150","a e":"151","ant":"152","nes":"153","nim":"154","sun":"155","tra":"156","e a":"157","s d":"158"," pa":"159"," uo":"160","ecu":"161"," om":"162"," tu":"163","ad ":"164","cut":"165","omn":"166","s q":"167"," ei":"168","ex ":"169","icu":"170","tor":"171","uid":"172"," ip":"173"," me":"174","e s":"175","era":"176","eru":"177","iam":"178","ide":"179","ips":"180"," iu":"181","a s":"182","do ":"183","e d":"184","eiu":"185","ica":"186","im ":"187","m c":"188","m u":"189","tiu":"190"," ho":"191","cat":"192","ist":"193","nat":"194","on ":"195","pti":"196","reg":"197","rit":"198","s t":"199","sic":"200","spe":"201"," en":"202"," sp":"203","dis":"204","eli":"205","liq":"206","lis":"207","men":"208","mus":"209","num":"210","pos":"211","sio":"212"," an":"213"," gr":"214","abi":"215","acc":"216","ect":"217","ri ":"218","uan":"219"," le":"220","ecc":"221","ete":"222","gra":"223","non":"224","se ":"225","uen":"226","uis":"227"," fa":"228"," tr":"229","ate":"230","e c":"231","fil":"232","na ":"233","ni ":"234","pul":"235","s f":"236","ui ":"237","at ":"238","cce":"239","dam":"240","i e":"241","ina":"242","leg":"243","nos":"244","ori":"245","pec":"246","rop":"247","sta":"248","uia":"249","ene":"250","iue":"251","iui":"252","siu":"253","t t":"254","t u":"255","tib":"256","tit":"257"," da":"258"," ne":"259","a d":"260","and":"261","ege":"262","equ":"263","hom":"264","imu":"265","lor":"266","m m":"267","mni":"268","ndo":"269","ner":"270","o e":"271","r e":"272","sit":"273","tum":"274","utu":"275","a p":"276","bis":"277","bit":"278","cer":"279","cta":"280","dom":"281","fut":"282","i s":"283","ign":"284","int":"285","mod":"286","ndu":"287","nit":"288","rib":"289","rti":"290","tas":"291","und":"292"," ab":"293","err":"294","ers":"295","ite":"296","iti":"297","m t":"298","o p":"299"},"latvian":{"as ":"0"," la":"1"," pa":"2"," ne":"3","es ":"4"," un":"5","un ":"6"," ka":"7"," va":"8","ar ":"9","s p":"10"," ar":"11"," vi":"12","is ":"13","ai ":"14"," no":"15","ja ":"16","ija":"17","iem":"18","em ":"19","tu ":"20","tie":"21","vie":"22","lat":"23","aks":"24","ien":"25","kst":"26","ies":"27","s a":"28","rak":"29","atv":"30","tvi":"31"," ja":"32"," pi":"33","ka ":"34"," ir":"35","ir ":"36","ta ":"37"," sa":"38","ts ":"39"," kā":"40","ās ":"41"," ti":"42","ot ":"43","s n":"44"," ie":"45"," ta":"46","arī":"47","par":"48","pie":"49"," pr":"50","kā ":"51"," at":"52"," ra":"53","am ":"54","inā":"55","tā ":"56"," iz":"57","jas":"58","lai":"59"," na":"60","aut":"61","ieš":"62","s s":"63"," ap":"64"," ko":"65"," st":"66","iek":"67","iet":"68","jau":"69","us ":"70","rī ":"71","tik":"72","ība":"73","na ":"74"," ga":"75","cij":"76","s i":"77"," uz":"78","jum":"79","s v":"80","ms ":"81","var":"82"," ku":"83"," ma":"84","jā ":"85","sta":"86","s u":"87"," tā":"88","die":"89","kai":"90","kas":"91","ska":"92"," ci":"93"," da":"94","kur":"95","lie":"96","tas":"97","a p":"98","est":"99","stā":"100","šan":"101","nes":"102","nie":"103","s d":"104","s m":"105","val":"106"," di":"107"," es":"108"," re":"109","no ":"110","to ":"111","umu":"112","vai":"113","ši ":"114"," vē":"115","kum":"116","nu ":"117","rie":"118","s t":"119","ām ":"120","ad ":"121","et ":"122","mu ":"123","s l":"124"," be":"125","aud":"126","tur":"127","vij":"128","viņ":"129","āju":"130","bas":"131","gad":"132","i n":"133","ika":"134","os ":"135","a v":"136","not":"137","oti":"138","sts":"139","aik":"140","u a":"141","ā a":"142","āk ":"143"," to":"144","ied":"145","stu":"146","ti ":"147","u p":"148","vēl":"149","āci":"150"," šo":"151","gi ":"152","ko ":"153","pro":"154","s r":"155","tāj":"156","u s":"157","u v":"158","vis":"159","aun":"160","ks ":"161","str":"162","zin":"163","a a":"164","adī":"165","da ":"166","dar":"167","ena":"168","ici":"169","kra":"170","nas":"171","stī":"172","šu ":"173"," mē":"174","a n":"175","eci":"176","i s":"177","ie ":"178","iņa":"179","ju ":"180","las":"181","r t":"182","ums":"183","šie":"184","bu ":"185","cit":"186","i a":"187","ina":"188","ma ":"189","pus":"190","ra ":"191"," au":"192"," se":"193"," sl":"194","a s":"195","ais":"196","eši":"197","iec":"198","iku":"199","pār":"200","s b":"201","s k":"202","sot":"203","ādā":"204"," in":"205"," li":"206"," tr":"207","ana":"208","eso":"209","ikr":"210","man":"211","ne ":"212","u k":"213"," tu":"214","an ":"215","av ":"216","bet":"217","būt":"218","im ":"219","isk":"220","līd":"221","nav":"222","ras":"223","ri ":"224","s g":"225","sti":"226","īdz":"227"," ai":"228","arb":"229","cin":"230","das":"231","ent":"232","gal":"233","i p":"234","lik":"235","mā ":"236","nek":"237","pat":"238","rēt":"239","si ":"240","tra":"241","uši":"242","vei":"243"," br":"244"," pu":"245"," sk":"246","als":"247","ama":"248","edz":"249","eka":"250","ešu":"251","ieg":"252","jis":"253","kam":"254","lst":"255","nāk":"256","oli":"257","pre":"258","pēc":"259","rot":"260","tās":"261","usi":"262","ēl ":"263","ēs ":"264"," bi":"265"," de":"266"," me":"267"," pā":"268","a i":"269","aid":"270","ajā":"271","ikt":"272","kat":"273","lic":"274","lod":"275","mi ":"276","ni ":"277","pri":"278","rād":"279","rīg":"280","sim":"281","trā":"282","u l":"283","uto":"284","uz ":"285","ēc ":"286","ītā":"287"," ce":"288"," jā":"289"," sv":"290","a t":"291","aga":"292","aiz":"293","atu":"294","ba ":"295","cie":"296","du ":"297","dzi":"298","dzī":"299"},"lithuanian":{"as ":"0"," pa":"1"," ka":"2","ai ":"3","us ":"4","os ":"5","is ":"6"," ne":"7"," ir":"8","ir ":"9","ti ":"10"," pr":"11","aus":"12","ini":"13","s p":"14","pas":"15","ių ":"16"," ta":"17"," vi":"18","iau":"19"," ko":"20"," su":"21","kai":"22","o p":"23","usi":"24"," sa":"25","vo ":"26","tai":"27","ali":"28","tų ":"29","io ":"30","jo ":"31","s k":"32","sta":"33","iai":"34"," bu":"35"," nu":"36","ius":"37","mo ":"38"," po":"39","ien":"40","s s":"41","tas":"42"," me":"43","uvo":"44","kad":"45"," iš":"46"," la":"47","to ":"48","ais":"49","ie ":"50","kur":"51","uri":"52"," ku":"53","ijo":"54","čia":"55","au ":"56","met":"57","je ":"58"," va":"59","ad ":"60"," ap":"61","and":"62"," gr":"63"," ti":"64","kal":"65","asi":"66","i p":"67","iči":"68","s i":"69","s v":"70","ink":"71","o n":"72","ės ":"73","buv":"74","s a":"75"," ga":"76","aip":"77","avi":"78","mas":"79","pri":"80","tik":"81"," re":"82","etu":"83","jos":"84"," da":"85","ent":"86","oli":"87","par":"88","ant":"89","ara":"90","tar":"91","ama":"92","gal":"93","imo":"94","išk":"95","o s":"96"," at":"97"," be":"98"," į ":"99","min":"100","tin":"101"," tu":"102","s n":"103"," jo":"104","dar":"105","ip ":"106","rei":"107"," te":"108","dži":"109","kas":"110","nin":"111","tei":"112","vie":"113"," li":"114"," se":"115","cij":"116","gar":"117","lai":"118","art":"119","lau":"120","ras":"121","no ":"122","o k":"123","tą ":"124"," ar":"125","ėjo":"126","vič":"127","iga":"128","pra":"129","vis":"130"," na":"131","men":"132","oki":"133","raš":"134","s t":"135","iet":"136","ika":"137","int":"138","kom":"139","tam":"140","aug":"141","avo":"142","rie":"143","s b":"144"," st":"145","eim":"146","ko ":"147","nus":"148","pol":"149","ria":"150","sau":"151","api":"152","me ":"153","ne ":"154","sik":"155"," ši":"156","i n":"157","ia ":"158","ici":"159","oja":"160","sak":"161","sti":"162","ui ":"163","ame":"164","lie":"165","o t":"166","pie":"167","čiu":"168"," di":"169"," pe":"170","gri":"171","ios":"172","lia":"173","lin":"174","s d":"175","s g":"176","ta ":"177","uot":"178"," ja":"179"," už":"180","aut":"181","i s":"182","ino":"183","mą ":"184","oje":"185","rav":"186","dėl":"187","nti":"188","o a":"189","toj":"190","ėl ":"191"," to":"192"," vy":"193","ar ":"194","ina":"195","lic":"196","o v":"197","sei":"198","su ":"199"," mi":"200"," pi":"201","din":"202","iš ":"203","lan":"204","si ":"205","tus":"206"," ba":"207","asa":"208","ata":"209","kla":"210","omi":"211","tat":"212"," an":"213"," ji":"214","als":"215","ena":"216","jų ":"217","nuo":"218","per":"219","rig":"220","s m":"221","val":"222","yta":"223","čio":"224"," ra":"225","i k":"226","lik":"227","net":"228","nė ":"229","tis":"230","tuo":"231","yti":"232","ęs ":"233","ų s":"234","ada":"235","ari":"236","do ":"237","eik":"238","eis":"239","ist":"240","lst":"241","ma ":"242","nes":"243","sav":"244","sio":"245","tau":"246"," ki":"247","aik":"248","aud":"249","ies":"250","ori":"251","s r":"252","ska":"253"," ge":"254","ast":"255","eig":"256","et ":"257","iam":"258","isa":"259","mis":"260","nam":"261","ome":"262","žia":"263","aba":"264","aul":"265","ikr":"266","ką ":"267","nta":"268","ra ":"269","tur":"270"," ma":"271","die":"272","ei ":"273","i t":"274","nas":"275","rin":"276","sto":"277","tie":"278","tuv":"279","vos":"280","ų p":"281"," dė":"282","are":"283","ats":"284","enė":"285","ili":"286","ima":"287","kar":"288","ms ":"289","nia":"290","r p":"291","rod":"292","s l":"293"," o ":"294","e p":"295","es ":"296","ide":"297","ik ":"298","ja ":"299"},"macedonian":{"на ":"0"," на":"1","та ":"2","ата":"3","ија":"4"," пр":"5","то ":"6","ја ":"7"," за":"8","а н":"9"," и ":"10","а с":"11","те ":"12","ите":"13"," ко":"14","от ":"15"," де":"16"," по":"17","а д":"18","во ":"19","за ":"20"," во":"21"," од":"22"," се":"23"," не":"24","се ":"25"," до":"26","а в":"27","ка ":"28","ање":"29","а п":"30","о п":"31","ува":"32","циј":"33","а о":"34","ици":"35","ето":"36","о н":"37","ани":"38","ни ":"39"," вл":"40","дек":"41","ека":"42","њет":"43","ќе ":"44"," е ":"45","а з":"46","а и":"47","ат ":"48","вла":"49","го ":"50","е н":"51","од ":"52","пре":"53"," го":"54"," да":"55"," ма":"56"," ре":"57"," ќе":"58","али":"59","и д":"60","и н":"61","иот":"62","нат":"63","ово":"64"," па":"65"," ра":"66"," со":"67","ове":"68","пра":"69","што":"70","ње ":"71","а е":"72","да ":"73","дат":"74","дон":"75","е в":"76","е д":"77","е з":"78","е с":"79","кон":"80","нит":"81","но ":"82","они":"83","ото":"84","пар":"85","при":"86","ста":"87","т н":"88"," шт":"89","а к":"90","аци":"91","ва ":"92","вањ":"93","е п":"94","ени":"95","ла ":"96","лад":"97","мак":"98","нес":"99","нос":"100","про":"101","рен":"102","јат":"103"," ин":"104"," ме":"105"," то":"106","а г":"107","а м":"108","а р":"109","аке":"110","ако":"111","вор":"112","гов":"113","едо":"114","ена":"115","и и":"116","ира":"117","кед":"118","не ":"119","ниц":"120","ниј":"121","ост":"122","ра ":"123","рат":"124","ред":"125","ска":"126","тен":"127"," ка":"128"," сп":"129"," ја":"130","а т":"131","аде":"132","арт":"133","е г":"134","е и":"135","кат":"136","лас":"137","нио":"138","о с":"139","ри ":"140"," ба":"141"," би":"142","ава":"143","ате":"144","вни":"145","д н":"146","ден":"147","дов":"148","држ":"149","дув":"150","е о":"151","ен ":"152","ере":"153","ери":"154","и п":"155","и с":"156","ина":"157","кој":"158","нци":"159","о м":"160","о о":"161","одн":"162","пор":"163","ски":"164","спо":"165","ств":"166","сти":"167","тво":"168","ти ":"169"," об":"170"," ов":"171","а б":"172","алн":"173","ара":"174","бар":"175","е к":"176","ед ":"177","ент":"178","еѓу":"179","и о":"180","ии ":"181","меѓ":"182","о д":"183","оја":"184","пот":"185","раз":"186","раш":"187","спр":"188","сто":"189","т д":"190","ци ":"191"," бе":"192"," гр":"193"," др":"194"," из":"195"," ст":"196","аа ":"197","бид":"198","вед":"199","гла":"200","еко":"201","енд":"202","есе":"203","етс":"204","зац":"205","и т":"206","иза":"207","инс":"208","ист":"209","ки ":"210","ков":"211","кол":"212","ку ":"213","лиц":"214","о з":"215","о и":"216","ова":"217","олк":"218","оре":"219","ори":"220","под":"221","рањ":"222","реф":"223","ржа":"224","ров":"225","рти":"226","со ":"227","тор":"228","фер":"229","цен":"230","цит":"231"," а ":"232"," вр":"233"," гл":"234"," дп":"235"," мо":"236"," ни":"237"," но":"238"," оп":"239"," от":"240","а ќ":"241","або":"242","ада":"243","аса":"244","аша":"245","ба ":"246","бот":"247","ваа":"248","ват":"249","вот":"250","ги ":"251","гра":"252","де ":"253","дин":"254","дум":"255","евр":"256","еду":"257","ено":"258","ера":"259","ес ":"260","ење":"261","же ":"262","зак":"263","и в":"264","ила":"265","иту":"266","коа":"267","кои":"268","лан":"269","лку":"270","лож":"271","мот":"272","нду":"273","нст":"274","о в":"275","оа ":"276","оал":"277","обр":"278","ов ":"279","ови":"280","овн":"281","ои ":"282","ор ":"283","орм":"284","ој ":"285","рет":"286","сед":"287","ст ":"288","тер":"289","тиј":"290","тоа":"291","фор":"292","ции":"293","ѓу ":"294"," ал":"295"," ве":"296"," вм":"297"," ги":"298"," ду":"299"},"mongolian":{"ын ":"0"," ба":"1","йн ":"2","бай":"3","ийн":"4","уул":"5"," ул":"6","улс":"7","ан ":"8"," ха":"9","ний":"10","н х":"11","гаа":"12","сын":"13","ий ":"14","лсы":"15"," бо":"16","й б":"17","эн ":"18","ах ":"19","бол":"20","ол ":"21","н б":"22","оло":"23"," хэ":"24","онг":"25","гол":"26","гуу":"27","нго":"28","ыг ":"29","жил":"30"," мо":"31","лаг":"32","лла":"33","мон":"34"," тє":"35"," ху":"36","айд":"37","ны ":"38","он ":"39","сан":"40","хий":"41"," аж":"42"," ор":"43","л у":"44","н т":"45","улг":"46","айг":"47","длы":"48","йг ":"49"," за":"50","дэс":"51","н а":"52","ндэ":"53","ула":"54","ээ ":"55","ага":"56","ийг":"57","vй ":"58","аа ":"59","й а":"60","лын":"61","н з":"62"," аю":"63"," зє":"64","аар":"65","ад ":"66","ар ":"67","гvй":"68","зєв":"69","ажи":"70","ал ":"71","аюу":"72","г х":"73","лгv":"74","лж ":"75","сни":"76","эсн":"77","юул":"78","йдл":"79","лыг":"80","нхи":"81","ууд":"82","хам":"83"," нэ":"84"," са":"85","гий":"86","лах":"87","лєл":"88","рєн":"89","єгч":"90"," та":"91","илл":"92","лий":"93","лэх":"94","рий":"95","эх ":"96"," ер":"97"," эр":"98","влє":"99","ерє":"100","ийл":"101","лон":"102","лєг":"103","євл":"104","єнх":"105"," хо":"106","ари":"107","их ":"108","хан":"109","эр ":"110","єн ":"111","vvл":"112","ж б":"113","тэй":"114","х х":"115","эрх":"116"," vн":"117"," нь":"118","vнд":"119","алт":"120","йлє":"121","нь ":"122","тєр":"123"," га":"124"," су":"125","аан":"126","даа":"127","илц":"128","йгу":"129","л а":"130","лаа":"131","н н":"132","руу":"133","эй ":"134"," то":"135","н с":"136","рил":"137","єри":"138","ааг":"139","гч ":"140","лээ":"141","н о":"142","рэг":"143","суу":"144","эрэ":"145","їїл":"146"," yн":"147"," бу":"148"," дэ":"149"," ол":"150"," ту":"151"," ши":"152","yнд":"153","аши":"154","г т":"155","иг ":"156","йл ":"157","хар":"158","шин":"159","эг ":"160","єр ":"161"," их":"162"," хє":"163"," хї":"164","ам ":"165","анг":"166","ин ":"167","йга":"168","лса":"169","н v":"170","н е":"171","нал":"172","нд ":"173","хуу":"174","цаа":"175","эд ":"176","ээр":"177","єл ":"178","vйл":"179","ада":"180","айн":"181","ала":"182","амт":"183","гах":"184","д х":"185","дал":"186","зар":"187","л б":"188","лан":"189","н д":"190","сэн":"191","улл":"192","х б":"193","хэр":"194"," бv":"195"," да":"196"," зо":"197","vрэ":"198","аад":"199","гээ":"200","лэн":"201","н и":"202","н э":"203","нга":"204","нэ ":"205","тал":"206","тын":"207","хур":"208","эл ":"209"," на":"210"," ни":"211"," он":"212","vлэ":"213","аг ":"214","аж ":"215","ай ":"216","ата":"217","бар":"218","г б":"219","гад":"220","гїй":"221","й х":"222","лт ":"223","н м":"224","на ":"225","оро":"226","уль":"227","чин":"228","эж ":"229","энэ":"230","ээд":"231","їй ":"232","їлэ":"233"," би":"234"," тэ":"235"," эн":"236","аны":"237","дий":"238","дээ":"239","лал":"240","лга":"241","лд ":"242","лог":"243","ль ":"244","н у":"245","н ї":"246","р б":"247","рал":"248","сон":"249","тай":"250","удл":"251","элт":"252","эрг":"253","єлє":"254"," vй":"255"," в ":"256"," гэ":"257"," хv":"258","ара":"259","бvр":"260","д н":"261","д о":"262","л х":"263","лс ":"264","лты":"265","н г":"266","нэг":"267","огт":"268","олы":"269","оёр":"270","р т":"271","рээ":"272","тав":"273","тог":"274","уур":"275","хоё":"276","хэл":"277","хээ":"278","элэ":"279","ёр ":"280"," ав":"281"," ас":"282"," аш":"283"," ду":"284"," со":"285"," чи":"286"," эв":"287"," єр":"288","аал":"289","алд":"290","амж":"291","анд":"292","асу":"293","вэр":"294","г у":"295","двэ":"296","жvv":"297","лца":"298","лэл":"299"},"nepali":{"को ":"0","का ":"1","मा ":"2","हरु":"3"," ने":"4","नेप":"5","पाल":"6","ेपा":"7"," सम":"8","ले ":"9"," प्":"10","प्र":"11","कार":"12","ा स":"13","एको":"14"," भए":"15"," छ ":"16"," भा":"17","्रम":"18"," गर":"19","रुक":"20"," र ":"21","भार":"22","ारत":"23"," का":"24"," वि":"25","भएक":"26","ाली":"27","ली ":"28","ा प":"29","ीहर":"30","ार्":"31","ो छ":"32","ना ":"33","रु ":"34","ालक":"35","्या":"36"," बा":"37","एका":"38","ने ":"39","न्त":"40","ा ब":"41","ाको":"42","ार ":"43","ा भ":"44","ाहर":"45","्रो":"46","क्ष":"47","न् ":"48","ारी":"49"," नि":"50","ा न":"51","ी स":"52"," डु":"53","क्र":"54","जना":"55","यो ":"56","ा छ":"57","ेवा":"58","्ता":"59"," रा":"60","त्य":"61","न्द":"62","हुन":"63","ा क":"64","ामा":"65","ी न":"66","्दा":"67"," से":"68","छन्":"69","म्ब":"70","रोत":"71","सेव":"72","स्त":"73","स्र":"74","ेका":"75","्त ":"76"," बी":"77"," हु":"78","क्त":"79","त्र":"80","रत ":"81","र्न":"82","र्य":"83","ा र":"84","ाका":"85","ुको":"86"," एक":"87"," सं":"88"," सु":"89","बीब":"90","बीस":"91","लको":"92","स्य":"93","ीबी":"94","ीसी":"95","ेको":"96","ो स":"97","्यक":"98"," छन":"99"," जन":"100"," बि":"101"," मु":"102"," स्":"103","गर्":"104","ताह":"105","न्ध":"106","बार":"107","मन्":"108","मस्":"109","रुल":"110","लाई":"111","ा व":"112","ाई ":"113","ाल ":"114","िका":"115"," त्":"116"," मा":"117"," यस":"118"," रु":"119","ताक":"120","बन्":"121","र ब":"122","रण ":"123","रुप":"124","रेक":"125","ष्ट":"126","सम्":"127","सी ":"128","ाएक":"129","ुका":"130","ुक्":"131"," अध":"132"," अन":"133"," तथ":"134"," थि":"135"," दे":"136"," पर":"137"," बै":"138","तथा":"139","ता ":"140","दा ":"141","द्द":"142","नी ":"143","बाट":"144","यक्":"145","री ":"146","रीह":"147","र्म":"148","लका":"149","समस":"150","ा अ":"151","ा ए":"152","ाट ":"153","िय ":"154","ो प":"155","ो म":"156","्न ":"157","्ने":"158","्षा":"159"," पा":"160"," यो":"161"," हा":"162","अधि":"163","डुव":"164","त भ":"165","त स":"166","था ":"167","धिक":"168","पमा":"169","बैठ":"170","मुद":"171","या ":"172","युक":"173","र न":"174","रति":"175","वान":"176","सार":"177","ा आ":"178","ा ज":"179","ा ह":"180","ुद्":"181","ुपम":"182","ुले":"183","ुवा":"184","ैठक":"185","ो ब":"186","्तर":"187","्य ":"188","्यस":"189"," क्":"190"," मन":"191"," रह":"192","चार":"193","तिय":"194","दै ":"195","निर":"196","नु ":"197","पर्":"198","रक्":"199","र्द":"200","समा":"201","सुर":"202","ाउन":"203","ान ":"204","ानम":"205","ारण":"206","ाले":"207","ि ब":"208","ियो":"209","ुन्":"210","ुरक":"211","्त्":"212","्बन":"213","्रा":"214","्ष ":"215"," आर":"216"," जल":"217"," बे":"218"," या":"219"," सा":"220","आएक":"221","एक ":"222","कर्":"223","जलस":"224","णका":"225","त र":"226","द्र":"227","धान":"228","धि ":"229","नका":"230","नमा":"231","नि ":"232","ममा":"233","रम ":"234","रहे":"235","राज":"236","लस्":"237","ला ":"238","वार":"239","सका":"240","हिल":"241","हेक":"242","ा त":"243","ारे":"244","िन्":"245","िस्":"246","े स":"247","ो न":"248","ो र":"249","ोत ":"250","्धि":"251","्मी":"252","्रस":"253"," दु":"254"," पन":"255"," बत":"256"," बन":"257"," भन":"258","ंयु":"259","आरम":"260","खि ":"261","ण्ड":"262","तका":"263","ताल":"264","दी ":"265","देख":"266","निय":"267","पनि":"268","प्त":"269","बता":"270","मी ":"271","म्भ":"272","र स":"273","रम्":"274","लमा":"275","विश":"276","षाक":"277","संय":"278","ा ड":"279","ा म":"280","ानक":"281","ालम":"282","ि भ":"283","ित ":"284","ी प":"285","ी र":"286","ु भ":"287","ुने":"288","े ग":"289","ेखि":"290","ेर ":"291","ो भ":"292","ो व":"293","ो ह":"294","्भ ":"295","्र ":"296"," ता":"297"," नम":"298"," ना":"299"},"norwegian":{"er ":"0","en ":"1","et ":"2"," de":"3","det":"4"," i ":"5","for":"6","il ":"7"," fo":"8"," me":"9","ing":"10","om ":"11"," ha":"12"," og":"13","ter":"14"," er":"15"," ti":"16"," st":"17","og ":"18","til":"19","ne ":"20"," vi":"21","re ":"22"," en":"23"," se":"24","te ":"25","or ":"26","de ":"27","kke":"28","ke ":"29","ar ":"30","ng ":"31","r s":"32","ene":"33"," so":"34","e s":"35","der":"36","an ":"37","som":"38","ste":"39","at ":"40","ed ":"41","r i":"42"," av":"43"," in":"44","men":"45"," at":"46"," ko":"47"," på":"48","har":"49"," si":"50","ere":"51","på ":"52","nde":"53","and":"54","els":"55","ett":"56","tte":"57","lig":"58","t s":"59","den":"60","t i":"61","ikk":"62","med":"63","n s":"64","rt ":"65","ser":"66","ska":"67","t e":"68","ker":"69","sen":"70","av ":"71","ler":"72","r a":"73","ten":"74","e f":"75","r e":"76","r t":"77","ede":"78","ig ":"79"," re":"80","han":"81","lle":"82","ner":"83"," bl":"84"," fr":"85","le ":"86"," ve":"87","e t":"88","lan":"89","mme":"90","nge":"91"," be":"92"," ik":"93"," om":"94"," å ":"95","ell":"96","sel":"97","sta":"98","ver":"99"," et":"100"," sk":"101","nte":"102","one":"103","ore":"104","r d":"105","ske":"106"," an":"107"," la":"108","del":"109","gen":"110","nin":"111","r f":"112","r v":"113","se ":"114"," po":"115","ir ":"116","jon":"117","mer":"118","nen":"119","omm":"120","sjo":"121"," fl":"122"," sa":"123","ern":"124","kom":"125","r m":"126","r o":"127","ren":"128","vil":"129","ale":"130","es ":"131","n a":"132","t f":"133"," le":"134","bli":"135","e e":"136","e i":"137","e v":"138","het":"139","ye ":"140"," ir":"141","al ":"142","e o":"143","ide":"144","iti":"145","lit":"146","nne":"147","ran":"148","t o":"149","tal":"150","tat":"151","tt ":"152"," ka":"153","ans":"154","asj":"155","ge ":"156","inn":"157","kon":"158","lse":"159","pet":"160","t d":"161","vi ":"162"," ut":"163","ent":"164","eri":"165","oli":"166","r p":"167","ret":"168","ris":"169","sto":"170","str":"171","t a":"172"," ga":"173","all":"174","ape":"175","g s":"176","ill":"177","ira":"178","kap":"179","nn ":"180","opp":"181","r h":"182","rin":"183"," br":"184"," op":"185","e m":"186","ert":"187","ger":"188","ion":"189","kal":"190","lsk":"191","nes":"192"," gj":"193"," mi":"194"," pr":"195","ang":"196","e h":"197","e r":"198","elt":"199","enn":"200","i s":"201","ist":"202","jen":"203","kan":"204","lt ":"205","nal":"206","res":"207","tor":"208","ass":"209","dre":"210","e b":"211","e p":"212","mel":"213","n t":"214","nse":"215","ort":"216","per":"217","reg":"218","sje":"219","t p":"220","t v":"221"," hv":"222"," nå":"223"," va":"224","ann":"225","ato":"226","e a":"227","est":"228","ise":"229","isk":"230","oil":"231","ord":"232","pol":"233","ra ":"234","rak":"235","sse":"236","toi":"237"," gr":"238","ak ":"239","eg ":"240","ele":"241","g a":"242","ige":"243","igh":"244","m e":"245","n f":"246","n v":"247","ndr":"248","nsk":"249","rer":"250","t m":"251","und":"252","var":"253","år ":"254"," he":"255"," no":"256"," ny":"257","end":"258","ete":"259","fly":"260","g i":"261","ghe":"262","ier":"263","ind":"264","int":"265","lin":"266","n d":"267","n p":"268","rne":"269","sak":"270","sie":"271","t b":"272","tid":"273"," al":"274"," pa":"275"," tr":"276","ag ":"277","dig":"278","e d":"279","e k":"280","ess":"281","hol":"282","i d":"283","lag":"284","led":"285","n e":"286","n i":"287","n o":"288","pri":"289","r b":"290","st ":"291"," fe":"292"," li":"293"," ry":"294","air":"295","ake":"296","d s":"297","eas":"298","egi":"299"},"pashto":{" د ":"0","اؤ ":"1"," اؤ":"2","نو ":"3","ې د":"4","ره ":"5"," په":"6","نه ":"7","چې ":"8"," چې":"9","په ":"10","ه د":"11","ته ":"12","و ا":"13","ونو":"14","و د":"15"," او":"16","انو":"17","ونه":"18","ه ک":"19"," دا":"20","ه ا":"21","دې ":"22","ښې ":"23"," کې":"24","ان ":"25","لو ":"26","هم ":"27","و م":"28","کښې":"29","ه م":"30","ى ا":"31"," نو":"32"," ته":"33"," کښ":"34","رون":"35","کې ":"36","ده ":"37","له ":"38","به ":"39","رو ":"40"," هم":"41","ه و":"42","وى ":"43","او ":"44","تون":"45","دا ":"46"," کو":"47"," کړ":"48","قام":"49"," تر":"50","ران":"51","ه پ":"52","ې و":"53","ې پ":"54"," به":"55"," خو":"56","تو ":"57","د د":"58","د ا":"59","ه ت":"60","و پ":"61","يا ":"62"," خپ":"63"," دو":"64"," را":"65"," مش":"66"," پر":"67","ارو":"68","رې ":"69","م د":"70","مشر":"71"," شو":"72"," ور":"73","ار ":"74","دى ":"75"," اد":"76"," دى":"77"," مو":"78","د پ":"79","لي ":"80","و ک":"81"," مق":"82"," يو":"83","ؤ د":"84","خپل":"85","سره":"86","ه چ":"87","ور ":"88"," تا":"89"," دې":"90"," رو":"91"," سر":"92"," مل":"93"," کا":"94","ؤ ا":"95","اره":"96","برو":"97","مه ":"98","ه ب":"99","و ت":"100","پښت":"101"," با":"102"," دغ":"103"," قب":"104"," له":"105"," وا":"106"," پا":"107"," پښ":"108","د م":"109","د ه":"110","لې ":"111","مات":"112","مو ":"113","ه ه":"114","وي ":"115","ې ب":"116","ې ک":"117"," ده":"118"," قا":"119","ال ":"120","اما":"121","د ن":"122","قبر":"123","ه ن":"124","پار":"125"," اث":"126"," بي":"127"," لا":"128"," لر":"129","اثا":"130","د خ":"131","دار":"132","ريخ":"133","شرا":"134","مقا":"135","نۍ ":"136","ه ر":"137","ه ل":"138","ولو":"139","يو ":"140","کوم":"141"," دد":"142"," لو":"143"," مح":"144"," مر":"145"," وو":"146","اتو":"147","اري":"148","الو":"149","اند":"150","خان":"151","د ت":"152","سې ":"153","لى ":"154","نور":"155","و ل":"156","ي چ":"157","ړي ":"158","ښتو":"159","ې ل":"160"," جو":"161"," سي":"162","ام ":"163","بان":"164","تار":"165","تر ":"166","ثار":"167","خو ":"168","دو ":"169","ر ک":"170","ل د":"171","مون":"172","ندې":"173","و ن":"174","ول ":"175","وه ":"176","ى و":"177","ي د":"178","ې ا":"179","ې ت":"180","ې ي":"181"," حک":"182"," خب":"183"," نه":"184"," پو":"185","ا د":"186","تې ":"187","جوړ":"188","حکم":"189","حکو":"190","خبر":"191","دان":"192","ر د":"193","غه ":"194","قاف":"195","محک":"196","وال":"197","ومت":"198","ويل":"199","ى د":"200","ى م":"201","يره":"202","پر ":"203","کول":"204","ې ه":"205"," تي":"206"," خا":"207"," وک":"208"," يا":"209"," ځا":"210","ؤ ق":"211","انۍ":"212","بى ":"213","غو ":"214","ه خ":"215","و ب":"216","ودا":"217","يدو":"218","ړې ":"219","کال":"220"," بر":"221"," قد":"222"," مي":"223"," وي":"224"," کر":"225","ؤ م":"226","ات ":"227","ايي":"228","تى ":"229","تيا":"230","تير":"231","خوا":"232","دغو":"233","دم ":"234","ديم":"235","ر و":"236","قدي":"237","م خ":"238","مان":"239","مې ":"240","نيو":"241","نږ ":"242","ه ي":"243","و س":"244","و چ":"245","وان":"246","ورو":"247","ونږ":"248","پور":"249","ړه ":"250","ړو ":"251","ۍ د":"252","ې ن":"253"," اه":"254"," زي":"255"," سو":"256"," شي":"257"," هر":"258"," هغ":"259"," ښا":"260","اتل":"261","اق ":"262","اني":"263","بري":"264","بې ":"265","ت ا":"266","د ب":"267","د س":"268","ر م":"269","رى ":"270","عرا":"271","لان":"272","مى ":"273","نى ":"274","و خ":"275","وئ ":"276","ورک":"277","ورې":"278","ون ":"279","وکړ":"280","ى چ":"281","يمه":"282","يې ":"283","ښتن":"284","که ":"285","کړي":"286","ې خ":"287","ے ش":"288"," تح":"289"," تو":"290"," در":"291"," دپ":"292"," صو":"293"," عر":"294"," ول":"295"," يؤ":"296"," پۀ":"297"," څو":"298","ا ا":"299"},"pidgin":{" de":"0"," we":"1"," di":"2","di ":"3","dem":"4","em ":"5","ay ":"6"," sa":"7","or ":"8","say":"9","ke ":"10","ey ":"11"," an":"12"," go":"13"," e ":"14"," to":"15"," ma":"16","e d":"17","wey":"18","for":"19","nd ":"20","to ":"21"," be":"22"," fo":"23","ake":"24","im ":"25"," pe":"26","le ":"27","go ":"28","ll ":"29","de ":"30","e s":"31","on ":"32","get":"33","ght":"34","igh":"35"," ri":"36","et ":"37","rig":"38"," ge":"39","y d":"40"," na":"41","mak":"42","t t":"43"," no":"44","and":"45","tin":"46","ing":"47","eve":"48","ri ":"49"," im":"50"," am":"51"," or":"52","am ":"53","be ":"54"," ev":"55"," ta":"56","ht ":"57","e w":"58"," li":"59","eri":"60","ng ":"61","ver":"62","all":"63","e f":"64","ers":"65","ntr":"66","ont":"67"," do":"68","r d":"69"," ko":"70"," ti":"71","an ":"72","kon":"73","per":"74","tri":"75","y e":"76","rso":"77","son":"78","no ":"79","ome":"80","is ":"81","do ":"82","ne ":"83","one":"84","ion":"85","m g":"86","i k":"87"," al":"88","bod":"89","i w":"90","odi":"91"," so":"92"," wo":"93","o d":"94","st ":"95","t r":"96"," of":"97","aim":"98","e g":"99","nai":"100"," co":"101","dis":"102","me ":"103","of ":"104"," wa":"105","e t":"106"," ar":"107","e l":"108","ike":"109","lik":"110","t a":"111","wor":"112","alk":"113","ell":"114","eop":"115","lk ":"116","opl":"117","peo":"118","ple":"119","re ":"120","tal":"121","any":"122","e a":"123","o g":"124","art":"125","cle":"126","i p":"127","icl":"128","rti":"129","the":"130","tic":"131","we ":"132","f d":"133","in ":"134"," mu":"135","e n":"136","e o":"137","mus":"138","n d":"139","na ":"140","o m":"141","ust":"142","wel":"143","e e":"144","her":"145","m d":"146","nt ":"147"," fi":"148","at ":"149","e b":"150","it ":"151","m w":"152","o t":"153","wan":"154","com":"155","da ":"156","fit":"157","m b":"158","so ":"159"," fr":"160","ce ":"161","er ":"162","o a":"163"," if":"164"," on":"165","ent":"166","if ":"167","ind":"168","kin":"169","l d":"170","man":"171","o s":"172"," se":"173","y a":"174","y m":"175"," re":"176","ee ":"177","k a":"178","t s":"179","ve ":"180","y w":"181"," ki":"182","eti":"183","men":"184","ta ":"185","y n":"186","d t":"187","dey":"188","e c":"189","i o":"190","ibo":"191","ld ":"192","m t":"193","n b":"194","o b":"195","ow ":"196","ree":"197","rio":"198","t d":"199"," hu":"200"," su":"201","en ":"202","hts":"203","ive":"204","m n":"205","n g":"206","ny ":"207","oth":"208","ts ":"209"," as":"210"," wh":"211","as ":"212","gom":"213","hum":"214","k s":"215","oda":"216","ork":"217","se ":"218","uma":"219","ut ":"220"," ba":"221"," ot":"222","ano":"223","m a":"224","m s":"225","nod":"226","om ":"227","r a":"228","r i":"229","rk ":"230"," fa":"231"," si":"232"," th":"233","ad ":"234","e m":"235","eac":"236","m m":"237","n w":"238","nob":"239","orl":"240","out":"241","own":"242","r s":"243","r w":"244","rib":"245","rld":"246","s w":"247","ure":"248","wn ":"249"," ow":"250","a d":"251","bad":"252","ch ":"253","fre":"254","gs ":"255","m k":"256","nce":"257","ngs":"258","o f":"259","obo":"260","rea":"261","sur":"262","y o":"263"," ab":"264"," un":"265","abo":"266","ach":"267","bou":"268","d m":"269","dat":"270","e p":"271","g w":"272","hol":"273","i m":"274","i r":"275","m f":"276","m o":"277","n o":"278","now":"279","ry ":"280","s a":"281","t o":"282","tay":"283","wet":"284"," ag":"285"," bo":"286"," da":"287"," pr":"288","arr":"289","ati":"290","d d":"291","d p":"292","i g":"293","i t":"294","liv":"295","ly ":"296","n a":"297","od ":"298","ok ":"299"},"polish":{"ie ":"0","nie":"1","em ":"2"," ni":"3"," po":"4"," pr":"5","dzi":"6"," na":"7","że ":"8","rze":"9","na ":"10","łem":"11","wie":"12"," w ":"13"," że":"14","go ":"15"," by":"16","prz":"17","owa":"18","ię ":"19"," do":"20"," si":"21","owi":"22"," pa":"23"," za":"24","ch ":"25","ego":"26","ał ":"27","się":"28","ej ":"29","wał":"30","ym ":"31","ani":"32","ałe":"33","to ":"34"," i ":"35"," to":"36"," te":"37","e p":"38"," je":"39"," z ":"40","czy":"41","był":"42","pan":"43","sta":"44","kie":"45"," ja":"46","do ":"47"," ch":"48"," cz":"49"," wi":"50","iał":"51","a p":"52","pow":"53"," mi":"54","li ":"55","eni":"56","zie":"57"," ta":"58"," wa":"59","ło ":"60","ać ":"61","dy ":"62","ak ":"63","e w":"64"," a ":"65"," od":"66"," st":"67","nia":"68","rzy":"69","ied":"70"," kt":"71","odz":"72","cie":"73","cze":"74","ia ":"75","iel":"76","któ":"77","o p":"78","tór":"79","ści":"80"," sp":"81"," wy":"82","jak":"83","tak":"84","zy ":"85"," mo":"86","ałę":"87","pro":"88","ski":"89","tem":"90","łęs":"91"," tr":"92","e m":"93","jes":"94","my ":"95"," ro":"96","edz":"97","eli":"98","iej":"99"," rz":"100","a n":"101","ale":"102","an ":"103","e s":"104","est":"105","le ":"106","o s":"107","i p":"108","ki ":"109"," co":"110","ada":"111","czn":"112","e t":"113","e z":"114","ent":"115","ny ":"116","pre":"117","rzą":"118","y s":"119"," ko":"120"," o ":"121","ach":"122","am ":"123","e n":"124","o t":"125","oli":"126","pod":"127","zia":"128"," go":"129"," ka":"130","by ":"131","ieg":"132","ier":"133","noś":"134","roz":"135","spo":"136","ych":"137","ząd":"138"," mn":"139","acz":"140","adz":"141","bie":"142","cho":"143","mni":"144","o n":"145","ost":"146","pra":"147","ze ":"148","ła ":"149"," so":"150","a m":"151","cza":"152","iem":"153","ić ":"154","obi":"155","ył ":"156","yło":"157"," mu":"158"," mó":"159","a t":"160","acj":"161","ci ":"162","e b":"163","ich":"164","kan":"165","mi ":"166","mie":"167","ośc":"168","row":"169","zen":"170","zyd":"171"," al":"172"," re":"173","a w":"174","den":"175","edy":"176","ił ":"177","ko ":"178","o w":"179","rac":"180","śmy":"181"," ma":"182"," ra":"183"," sz":"184"," ty":"185","e j":"186","isk":"187","ji ":"188","ka ":"189","m s":"190","no ":"191","o z":"192","rez":"193","wa ":"194","ów ":"195","łow":"196","ść ":"197"," ob":"198","ech":"199","ecz":"200","ezy":"201","i w":"202","ja ":"203","kon":"204","mów":"205","ne ":"206","ni ":"207","now":"208","nym":"209","pol":"210","pot":"211","yde":"212"," dl":"213"," sy":"214","a s":"215","aki":"216","ali":"217","dla":"218","icz":"219","ku ":"220","ocz":"221","st ":"222","str":"223","szy":"224","trz":"225","wia":"226","y p":"227","za ":"228"," wt":"229","chc":"230","esz":"231","iec":"232","im ":"233","la ":"234","o m":"235","sa ":"236","wać":"237","y n":"238","zac":"239","zec":"240"," gd":"241","a z":"242","ard":"243","co ":"244","dar":"245","e r":"246","ien":"247","m n":"248","m w":"249","mia":"250","moż":"251","raw":"252","rdz":"253","tan":"254","ted":"255","teg":"256","wił":"257","wte":"258","y z":"259","zna":"260","zło":"261","a r":"262","awi":"263","bar":"264","cji":"265","czą":"266","dow":"267","eż ":"268","gdy":"269","iek":"270","je ":"271","o d":"272","tał":"273","wal":"274","wsz":"275","zed":"276","ówi":"277","ęsa":"278"," ba":"279"," lu":"280"," wo":"281","aln":"282","arn":"283","ba ":"284","dzo":"285","e c":"286","hod":"287","igi":"288","lig":"289","m p":"290","myś":"291","o c":"292","oni":"293","rel":"294","sku":"295","ste":"296","y w":"297","yst":"298","z w":"299"},"portuguese":{"de ":"0"," de":"1","os ":"2","as ":"3","que":"4"," co":"5","ão ":"6","o d":"7"," qu":"8","ue ":"9"," a ":"10","do ":"11","ent":"12"," se":"13","a d":"14","s d":"15","e a":"16","es ":"17"," pr":"18","ra ":"19","da ":"20"," es":"21"," pa":"22","to ":"23"," o ":"24","em ":"25","con":"26","o p":"27"," do":"28","est":"29","nte":"30","ção":"31"," da":"32"," re":"33","ma ":"34","par":"35"," te":"36","ara":"37","ida":"38"," e ":"39","ade":"40","is ":"41"," um":"42"," po":"43","a a":"44","a p":"45","dad":"46","no ":"47","te ":"48"," no":"49","açã":"50","pro":"51","al ":"52","com":"53","e d":"54","s a":"55"," as":"56","a c":"57","er ":"58","men":"59","s e":"60","ais":"61","nto":"62","res":"63","a s":"64","ado":"65","ist":"66","s p":"67","tem":"68","e c":"69","e s":"70","ia ":"71","o s":"72","o a":"73","o c":"74","e p":"75","sta":"76","ta ":"77","tra":"78","ura":"79"," di":"80"," pe":"81","ar ":"82","e e":"83","ser":"84","uma":"85","mos":"86","se ":"87"," ca":"88","o e":"89"," na":"90","a e":"91","des":"92","ont":"93","por":"94"," in":"95"," ma":"96","ect":"97","o q":"98","ria":"99","s c":"100","ste":"101","ver":"102","cia":"103","dos":"104","ica":"105","str":"106"," ao":"107"," em":"108","das":"109","e t":"110","ito":"111","iza":"112","pre":"113","tos":"114"," nã":"115","ada":"116","não":"117","ess":"118","eve":"119","or ":"120","ran":"121","s n":"122","s t":"123","tur":"124"," ac":"125"," fa":"126","a r":"127","ens":"128","eri":"129","na ":"130","sso":"131"," si":"132"," é ":"133","bra":"134","esp":"135","mo ":"136","nos":"137","ro ":"138","um ":"139","a n":"140","ao ":"141","ico":"142","liz":"143","min":"144","o n":"145","ons":"146","pri":"147","ten":"148","tic":"149","ões":"150"," tr":"151","a m":"152","aga":"153","e n":"154","ili":"155","ime":"156","m a":"157","nci":"158","nha":"159","nta":"160","spe":"161","tiv":"162","am ":"163","ano":"164","arc":"165","ass":"166","cer":"167","e o":"168","ece":"169","emo":"170","ga ":"171","o m":"172","rag":"173","so ":"174","são":"175"," au":"176"," os":"177"," sa":"178","ali":"179","ca ":"180","ema":"181","emp":"182","ici":"183","ido":"184","inh":"185","iss":"186","l d":"187","la ":"188","lic":"189","m c":"190","mai":"191","onc":"192","pec":"193","ram":"194","s q":"195"," ci":"196"," en":"197"," fo":"198","a o":"199","ame":"200","car":"201","co ":"202","der":"203","eir":"204","ho ":"205","io ":"206","om ":"207","ora":"208","r a":"209","sen":"210","ter":"211"," br":"212"," ex":"213","a u":"214","cul":"215","dev":"216","e u":"217","ha ":"218","mpr":"219","nce":"220","oca":"221","ove":"222","rio":"223","s o":"224","sa ":"225","sem":"226","tes":"227","uni":"228","ven":"229","zaç":"230","çõe":"231"," ad":"232"," al":"233"," an":"234"," mi":"235"," mo":"236"," ve":"237"," à ":"238","a i":"239","a q":"240","ala":"241","amo":"242","bli":"243","cen":"244","col":"245","cos":"246","cto":"247","e m":"248","e v":"249","ede":"250","gás":"251","ias":"252","ita":"253","iva":"254","ndo":"255","o t":"256","ore":"257","r d":"258","ral":"259","rea":"260","s f":"261","sid":"262","tro":"263","vel":"264","vid":"265","ás ":"266"," ap":"267"," ar":"268"," ce":"269"," ou":"270"," pú":"271"," so":"272"," vi":"273","a f":"274","act":"275","arr":"276","bil":"277","cam":"278","e f":"279","e i":"280","el ":"281","for":"282","lem":"283","lid":"284","lo ":"285","m d":"286","mar":"287","nde":"288","o o":"289","omo":"290","ort":"291","per":"292","púb":"293","r u":"294","rei":"295","rem":"296","ros":"297","rre":"298","ssi":"299"},"romanian":{" de":"0"," în":"1","de ":"2"," a ":"3","ul ":"4"," co":"5","în ":"6","re ":"7","e d":"8","ea ":"9"," di":"10"," pr":"11","le ":"12","şi ":"13","are":"14","at ":"15","con":"16","ui ":"17"," şi":"18","i d":"19","ii ":"20"," cu":"21","e a":"22","lui":"23","ern":"24","te ":"25","cu ":"26"," la":"27","a c":"28","că ":"29","din":"30","e c":"31","or ":"32","ulu":"33","ne ":"34","ter":"35","la ":"36","să ":"37","tat":"38","tre":"39"," ac":"40"," să":"41","est":"42","st ":"43","tă ":"44"," ca":"45"," ma":"46"," pe":"47","cur":"48","ist":"49","mân":"50","a d":"51","i c":"52","nat":"53"," ce":"54","i a":"55","ia ":"56","in ":"57","scu":"58"," mi":"59","ato":"60","aţi":"61","ie ":"62"," re":"63"," se":"64","a a":"65","int":"66","ntr":"67","tru":"68","uri":"69","ă a":"70"," fo":"71"," pa":"72","ate":"73","ini":"74","tul":"75","ent":"76","min":"77","pre":"78","pro":"79","a p":"80","e p":"81","e s":"82","ei ":"83","nă ":"84","par":"85","rna":"86","rul":"87","tor":"88"," in":"89"," ro":"90"," tr":"91"," un":"92","al ":"93","ale":"94","art":"95","ce ":"96","e e":"97","e î":"98","fos":"99","ita":"100","nte":"101","omâ":"102","ost":"103","rom":"104","ru ":"105","str":"106","ver":"107"," ex":"108"," na":"109","a f":"110","lor":"111","nis":"112","rea":"113","rit":"114"," al":"115"," eu":"116"," no":"117","ace":"118","cer":"119","ile":"120","nal":"121","pri":"122","ri ":"123","sta":"124","ste":"125","ţie":"126"," au":"127"," da":"128"," ju":"129"," po":"130","ar ":"131","au ":"132","ele":"133","ere":"134","eri":"135","ina":"136","n a":"137","n c":"138","res":"139","se ":"140","t a":"141","tea":"142"," că":"143"," do":"144"," fi":"145","a s":"146","ată":"147","com":"148","e ş":"149","eur":"150","guv":"151","i s":"152","ice":"153","ili":"154","na ":"155","rec":"156","rep":"157","ril":"158","rne":"159","rti":"160","uro":"161","uve":"162","ă p":"163"," ar":"164"," o ":"165"," su":"166"," vi":"167","dec":"168","dre":"169","oar":"170","ons":"171","pe ":"172","rii":"173"," ad":"174"," ge":"175","a m":"176","a r":"177","ain":"178","ali":"179","car":"180","cat":"181","ecu":"182","ene":"183","ept":"184","ext":"185","ilo":"186","iu ":"187","n p":"188","ori":"189","sec":"190","u p":"191","une":"192","ă c":"193","şti":"194","ţia":"195"," ch":"196"," gu":"197","ai ":"198","ani":"199","cea":"200","e f":"201","isc":"202","l a":"203","lic":"204","liu":"205","mar":"206","nic":"207","nt ":"208","nul":"209","ris":"210","t c":"211","t p":"212","tic":"213","tid":"214","u a":"215","ucr":"216"," as":"217"," dr":"218"," fa":"219"," nu":"220"," pu":"221"," to":"222","cra":"223","dis":"224","enţ":"225","esc":"226","gen":"227","it ":"228","ivi":"229","l d":"230","n d":"231","nd ":"232","nu ":"233","ond":"234","pen":"235","ral":"236","riv":"237","rte":"238","sti":"239","t d":"240","ta ":"241","to ":"242","uni":"243","xte":"244","ând":"245","îns":"246","ă s":"247"," bl":"248"," st":"249"," uc":"250","a b":"251","a i":"252","a l":"253","air":"254","ast":"255","bla":"256","bri":"257","che":"258","duc":"259","dul":"260","e m":"261","eas":"262","edi":"263","esp":"264","i l":"265","i p":"266","ica":"267","ică":"268","ir ":"269","iun":"270","jud":"271","lai":"272","lul":"273","mai":"274","men":"275","ni ":"276","pus":"277","put":"278","ra ":"279","rai":"280","rop":"281","sil":"282","ti ":"283","tra":"284","u s":"285","ua ":"286","ude":"287","urs":"288","ân ":"289","înt":"290","ţă ":"291"," lu":"292"," mo":"293"," s ":"294"," sa":"295"," sc":"296","a u":"297","an ":"298","atu":"299"},"russian":{" на":"0"," пр":"1","то ":"2"," не":"3","ли ":"4"," по":"5","но ":"6"," в ":"7","на ":"8","ть ":"9","не ":"10"," и ":"11"," ко":"12","ом ":"13","про":"14"," то":"15","их ":"16"," ка":"17","ать":"18","ото":"19"," за":"20","ие ":"21","ова":"22","тел":"23","тор":"24"," де":"25","ой ":"26","сти":"27"," от":"28","ах ":"29","ми ":"30","стр":"31"," бе":"32"," во":"33"," ра":"34","ая ":"35","ват":"36","ей ":"37","ет ":"38","же ":"39","иче":"40","ия ":"41","ов ":"42","сто":"43"," об":"44","вер":"45","го ":"46","и в":"47","и п":"48","и с":"49","ии ":"50","ист":"51","о в":"52","ост":"53","тра":"54"," те":"55","ели":"56","ере":"57","кот":"58","льн":"59","ник":"60","нти":"61","о с":"62","рор":"63","ств":"64","чес":"65"," бо":"66"," ве":"67"," да":"68"," ин":"69"," но":"70"," с ":"71"," со":"72"," сп":"73"," ст":"74"," чт":"75","али":"76","ами":"77","вид":"78","дет":"79","е н":"80","ель":"81","еск":"82","ест":"83","зал":"84","и н":"85","ива":"86","кон":"87","ого":"88","одн":"89","ожн":"90","оль":"91","ори":"92","ров":"93","ско":"94","ся ":"95","тер":"96","что":"97"," мо":"98"," са":"99"," эт":"100","ант":"101","все":"102","ерр":"103","есл":"104","иде":"105","ина":"106","ино":"107","иро":"108","ите":"109","ка ":"110","ко ":"111","кол":"112","ком":"113","ла ":"114","ния":"115","о т":"116","оло":"117","ран":"118","ред":"119","сь ":"120","тив":"121","тич":"122","ых ":"123"," ви":"124"," вс":"125"," го":"126"," ма":"127"," сл":"128","ако":"129","ани":"130","аст":"131","без":"132","дел":"133","е д":"134","е п":"135","ем ":"136","жно":"137","и д":"138","ика":"139","каз":"140","как":"141","ки ":"142","нос":"143","о н":"144","опа":"145","при":"146","рро":"147","ски":"148","ти ":"149","тов":"150","ые ":"151"," вы":"152"," до":"153"," ме":"154"," ни":"155"," од":"156"," ро":"157"," св":"158"," чи":"159","а н":"160","ает":"161","аза":"162","ате":"163","бес":"164","в п":"165","ва ":"166","е в":"167","е м":"168","е с":"169","ез ":"170","ени":"171","за ":"172","зна":"173","ини":"174","кам":"175","ках":"176","кто":"177","лов":"178","мер":"179","мож":"180","нал":"181","ниц":"182","ны ":"183","ным":"184","ора":"185","оро":"186","от ":"187","пор":"188","рав":"189","рес":"190","рис":"191","рос":"192","ска":"193","т н":"194","том":"195","чит":"196","шко":"197"," бы":"198"," о ":"199"," тр":"200"," уж":"201"," чу":"202"," шк":"203","а б":"204","а в":"205","а р":"206","аби":"207","ала":"208","ало":"209","аль":"210","анн":"211","ати":"212","бин":"213","вес":"214","вно":"215","во ":"216","вши":"217","дал":"218","дат":"219","дно":"220","е з":"221","его":"222","еле":"223","енн":"224","ент":"225","ете":"226","и о":"227","или":"228","ись":"229","ит ":"230","ици":"231","ков":"232","лен":"233","льк":"234","мен":"235","мы ":"236","нет":"237","ни ":"238","нны":"239","ног":"240","ной":"241","ном":"242","о п":"243","обн":"244","ове":"245","овн":"246","оры":"247","пер":"248","по ":"249","пра":"250","пре":"251","раз":"252","роп":"253","ры ":"254","се ":"255","сли":"256","сов":"257","тре":"258","тся":"259","уро":"260","цел":"261","чно":"262","ь в":"263","ько":"264","ьно":"265","это":"266","ют ":"267","я н":"268"," ан":"269"," ес":"270"," же":"271"," из":"272"," кт":"273"," ми":"274"," мы":"275"," пе":"276"," се":"277"," це":"278","а м":"279","а п":"280","а т":"281","авш":"282","аже":"283","ак ":"284","ал ":"285","але":"286","ане":"287","ачи":"288","ают":"289","бна":"290","бол":"291","бы ":"292","в и":"293","в с":"294","ван":"295","гра":"296","даж":"297","ден":"298","е к":"299"},"serbian":{" на":"0"," је":"1"," по":"2","је ":"3"," и ":"4"," не":"5"," пр":"6","га ":"7"," св":"8","ог ":"9","а с":"10","их ":"11","на ":"12","кој":"13","ога":"14"," у ":"15","а п":"16","не ":"17","ни ":"18","ти ":"19"," да":"20","ом ":"21"," ве":"22"," ср":"23","и с":"24","ско":"25"," об":"26","а н":"27","да ":"28","е н":"29","но ":"30","ног":"31","о ј":"32","ој ":"33"," за":"34","ва ":"35","е с":"36","и п":"37","ма ":"38","ник":"39","обр":"40","ова":"41"," ко":"42","а и":"43","диј":"44","е п":"45","ка ":"46","ко ":"47","ког":"48","ост":"49","све":"50","ств":"51","сти":"52","тра":"53","еди":"54","има":"55","пок":"56","пра":"57","раз":"58","те ":"59"," бо":"60"," ви":"61"," са":"62","аво":"63","бра":"64","гос":"65","е и":"66","ели":"67","ени":"68","за ":"69","ики":"70","ио ":"71","пре":"72","рав":"73","рад":"74","у с":"75","ју ":"76","ња ":"77"," би":"78"," до":"79"," ст":"80","аст":"81","бој":"82","ебо":"83","и н":"84","им ":"85","ку ":"86","лан":"87","неб":"88","ово":"89","ого":"90","осл":"91","ојш":"92","пед":"93","стр":"94","час":"95"," го":"96"," кр":"97"," мо":"98"," чл":"99","а м":"100","а о":"101","ако":"102","ача":"103","вел":"104","вет":"105","вог":"106","еда":"107","ист":"108","ити":"109","ије":"110","око":"111","сло":"112","срб":"113","чла":"114"," бе":"115"," ос":"116"," от":"117"," ре":"118"," се":"119","а в":"120","ан ":"121","бог":"122","бро":"123","вен":"124","гра":"125","е о":"126","ика":"127","ија":"128","ких":"129","ком":"130","ли ":"131","ну ":"132","ота":"133","ојн":"134","под":"135","рбс":"136","ред":"137","рој":"138","са ":"139","сни":"140","тач":"141","тва":"142","ја ":"143","ји ":"144"," ка":"145"," ов":"146"," тр":"147","а ј":"148","ави":"149","аз ":"150","ано":"151","био":"152","вик":"153","во ":"154","гов":"155","дни":"156","е ч":"157","его":"158","и о":"159","ива":"160","иво":"161","ик ":"162","ине":"163","ини":"164","ипе":"165","кип":"166","лик":"167","ло ":"168","наш":"169","нос":"170","о т":"171","од ":"172","оди":"173","она":"174","оји":"175","поч":"176","про":"177","ра ":"178","рис":"179","род":"180","рст":"181","се ":"182","спо":"183","ста":"184","тић":"185","у д":"186","у н":"187","у о":"188","чин":"189","ша ":"190","јед":"191","јни":"192","ће ":"193"," м ":"194"," ме":"195"," ни":"196"," он":"197"," па":"198"," сл":"199"," те":"200","а у":"201","ава":"202","аве":"203","авн":"204","ана":"205","ао ":"206","ати":"207","аци":"208","ају":"209","ања":"210","бск":"211","вор":"212","вос":"213","вск":"214","дин":"215","е у":"216","едн":"217","ези":"218","ека":"219","ено":"220","ето":"221","ења":"222","жив":"223","и г":"224","и и":"225","и к":"226","и т":"227","ику":"228","ичк":"229","ки ":"230","крс":"231","ла ":"232","лав":"233","лит":"234","ме ":"235","мен":"236","нац":"237","о н":"238","о п":"239","о у":"240","одн":"241","оли":"242","орн":"243","осн":"244","осп":"245","оче":"246","пск":"247","реч":"248","рпс":"249","сво":"250","ски":"251","сла":"252","срп":"253","су ":"254","та ":"255","тав":"256","тве":"257","у б":"258","јез":"259","ћи ":"260"," ен":"261"," жи":"262"," им":"263"," му":"264"," од":"265"," су":"266"," та":"267"," хр":"268"," ча":"269"," шт":"270"," ње":"271","а д":"272","а з":"273","а к":"274","а т":"275","аду":"276","ало":"277","ани":"278","асо":"279","ван":"280","вач":"281","вањ":"282","вед":"283","ви ":"284","вно":"285","вот":"286","вој":"287","ву ":"288","доб":"289","дру":"290","дсе":"291","ду ":"292","е б":"293","е д":"294","е м":"295","ем ":"296","ема":"297","ент":"298","енц":"299"},"slovak":{" pr":"0"," po":"1"," ne":"2"," a ":"3","ch ":"4"," na":"5"," je":"6","ní ":"7","je ":"8"," do":"9","na ":"10","ova":"11"," v ":"12","to ":"13","ho ":"14","ou ":"15"," to":"16","ick":"17","ter":"18","že ":"19"," st":"20"," za":"21","ost":"22","ých":"23"," se":"24","pro":"25"," te":"26","e s":"27"," že":"28","a p":"29"," kt":"30","pre":"31"," by":"32"," o ":"33","se ":"34","kon":"35"," př":"36","a s":"37","né ":"38","ně ":"39","sti":"40","ako":"41","ist":"42","mu ":"43","ame":"44","ent":"45","ky ":"46","la ":"47","pod":"48"," ve":"49"," ob":"50","om ":"51","vat":"52"," ko":"53","sta":"54","em ":"55","le ":"56","a v":"57","by ":"58","e p":"59","ko ":"60","eri":"61","kte":"62","sa ":"63","ého":"64","e v":"65","mer":"66","tel":"67"," ak":"68"," sv":"69"," zá":"70","hla":"71","las":"72","lo ":"73"," ta":"74","a n":"75","ej ":"76","li ":"77","ne ":"78"," sa":"79","ak ":"80","ani":"81","ate":"82","ia ":"83","sou":"84"," so":"85","ení":"86","ie ":"87"," re":"88","ce ":"89","e n":"90","ori":"91","tic":"92"," vy":"93","a t":"94","ké ":"95","nos":"96","o s":"97","str":"98","ti ":"99","uje":"100"," sp":"101","lov":"102","o p":"103","oli":"104","ová":"105"," ná":"106","ale":"107","den":"108","e o":"109","ku ":"110","val":"111"," am":"112"," ro":"113"," si":"114","nie":"115","pol":"116","tra":"117"," al":"118","ali":"119","o v":"120","tor":"121"," mo":"122"," ni":"123","ci ":"124","o n":"125","ím ":"126"," le":"127"," pa":"128"," s ":"129","al ":"130","ati":"131","ero":"132","ove":"133","rov":"134","ván":"135","ích":"136"," ja":"137"," z ":"138","cké":"139","e z":"140"," od":"141","byl":"142","de ":"143","dob":"144","nep":"145","pra":"146","ric":"147","spo":"148","tak":"149"," vš":"150","a a":"151","e t":"152","lit":"153","me ":"154","nej":"155","no ":"156","nýc":"157","o t":"158","a j":"159","e a":"160","en ":"161","est":"162","jí ":"163","mi ":"164","slo":"165","stá":"166","u v":"167","for":"168","nou":"169","pos":"170","pře":"171","si ":"172","tom":"173"," vl":"174","a z":"175","ly ":"176","orm":"177","ris":"178","za ":"179","zák":"180"," k ":"181","at ":"182","cký":"183","dno":"184","dos":"185","dy ":"186","jak":"187","kov":"188","ny ":"189","res":"190","ror":"191","sto":"192","van":"193"," op":"194","da ":"195","do ":"196","e j":"197","hod":"198","len":"199","ný ":"200","o z":"201","poz":"202","pri":"203","ran":"204","u s":"205"," ab":"206","aj ":"207","ast":"208","it ":"209","kto":"210","o o":"211","oby":"212","odo":"213","u p":"214","va ":"215","ání":"216","í p":"217","ým ":"218"," in":"219"," mi":"220","ať ":"221","dov":"222","ka ":"223","nsk":"224","áln":"225"," an":"226"," bu":"227"," sl":"228"," tr":"229","e m":"230","ech":"231","edn":"232","i n":"233","kýc":"234","níc":"235","ov ":"236","pří":"237","í a":"238"," aj":"239"," bo":"240","a d":"241","ide":"242","o a":"243","o d":"244","och":"245","pov":"246","svo":"247","é s":"248"," kd":"249"," vo":"250"," vý":"251","bud":"252","ich":"253","il ":"254","ili":"255","ni ":"256","ním":"257","od ":"258","osl":"259","ouh":"260","rav":"261","roz":"262","st ":"263","stv":"264","tu ":"265","u a":"266","vál":"267","y s":"268","í s":"269","í v":"270"," hl":"271"," li":"272"," me":"273","a m":"274","e b":"275","h s":"276","i p":"277","i s":"278","iti":"279","lád":"280","nem":"281","nov":"282","opo":"283","uhl":"284","eno":"285","ens":"286","men":"287","nes":"288","obo":"289","te ":"290","ved":"291","vlá":"292","y n":"293"," ma":"294"," mu":"295"," vá":"296","bez":"297","byv":"298","cho":"299"},"slovene":{"je ":"0"," pr":"1"," po":"2"," je":"3"," v ":"4"," za":"5"," na":"6","pre":"7","da ":"8"," da":"9","ki ":"10","ti ":"11","ja ":"12","ne ":"13"," in":"14","in ":"15","li ":"16","no ":"17","na ":"18","ni ":"19"," bi":"20","jo ":"21"," ne":"22","nje":"23","e p":"24","i p":"25","pri":"26","o p":"27","red":"28"," do":"29","anj":"30","em ":"31","ih ":"32"," bo":"33"," ki":"34"," iz":"35"," se":"36"," so":"37","al ":"38"," de":"39","e v":"40","i s":"41","ko ":"42","bil":"43","ira":"44","ove":"45"," br":"46"," ob":"47","e b":"48","i n":"49","ova":"50","se ":"51","za ":"52","la ":"53"," ja":"54","ati":"55","so ":"56","ter":"57"," ta":"58","a s":"59","del":"60","e d":"61"," dr":"62"," od":"63","a n":"64","ar ":"65","jal":"66","ji ":"67","rit":"68"," ka":"69"," ko":"70"," pa":"71","a b":"72","ani":"73","e s":"74","er ":"75","ili":"76","lov":"77","o v":"78","tov":"79"," ir":"80"," ni":"81"," vo":"82","a j":"83","bi ":"84","bri":"85","iti":"86","let":"87","o n":"88","tan":"89","še ":"90"," le":"91"," te":"92","eni":"93","eri":"94","ita":"95","kat":"96","por":"97","pro":"98","ali":"99","ke ":"100","oli":"101","ov ":"102","pra":"103","ri ":"104","uar":"105","ve ":"106"," to":"107","a i":"108","a v":"109","ako":"110","arj":"111","ate":"112","di ":"113","do ":"114","ga ":"115","le ":"116","lo ":"117","mer":"118","o s":"119","oda":"120","oro":"121","pod":"122"," ma":"123"," mo":"124"," si":"125","a p":"126","bod":"127","e n":"128","ega":"129","ju ":"130","ka ":"131","lje":"132","rav":"133","ta ":"134","a o":"135","e t":"136","e z":"137","i d":"138","i v":"139","ila":"140","lit":"141","nih":"142","odo":"143","sti":"144","to ":"145","var":"146","ved":"147","vol":"148"," la":"149"," no":"150"," vs":"151","a d":"152","agu":"153","aja":"154","dej":"155","dnj":"156","eda":"157","gov":"158","gua":"159","jag":"160","jem":"161","kon":"162","ku ":"163","nij":"164","omo":"165","oči":"166","pov":"167","rak":"168","rja":"169","sta":"170","tev":"171","a t":"172","aj ":"173","ed ":"174","eja":"175","ent":"176","ev ":"177","i i":"178","i o":"179","ijo":"180","ist":"181","ost":"182","ske":"183","str":"184"," ra":"185"," s ":"186"," tr":"187"," še":"188","arn":"189","bo ":"190","drž":"191","i j":"192","ilo":"193","izv":"194","jen":"195","lja":"196","nsk":"197","o d":"198","o i":"199","om ":"200","ora":"201","ovo":"202","raz":"203","rža":"204","tak":"205","va ":"206","ven":"207","žav":"208"," me":"209"," če":"210","ame":"211","avi":"212","e i":"213","e o":"214","eka":"215","gre":"216","i t":"217","ija":"218","il ":"219","ite":"220","kra":"221","lju":"222","mor":"223","nik":"224","o t":"225","obi":"226","odn":"227","ran":"228","re ":"229","sto":"230","stv":"231","udi":"232","v i":"233","van":"234"," am":"235"," sp":"236"," st":"237"," tu":"238"," ve":"239"," že":"240","ajo":"241","ale":"242","apo":"243","dal":"244","dru":"245","e j":"246","edn":"247","ejo":"248","elo":"249","est":"250","etj":"251","eva":"252","iji":"253","ik ":"254","im ":"255","itv":"256","mob":"257","nap":"258","nek":"259","pol":"260","pos":"261","rat":"262","ski":"263","tič":"264","tom":"265","ton":"266","tra":"267","tud":"268","tve":"269","v b":"270","vil":"271","vse":"272","čit":"273"," av":"274"," gr":"275","a z":"276","ans":"277","ast":"278","avt":"279","dan":"280","e m":"281","eds":"282","for":"283","i z":"284","kot":"285","mi ":"286","nim":"287","o b":"288","o o":"289","od ":"290","odl":"291","oiz":"292","ot ":"293","par":"294","pot":"295","rje":"296","roi":"297","tem":"298","val":"299"},"somali":{"ka ":"0","ay ":"1","da ":"2"," ay":"3","aal":"4","oo ":"5","aan":"6"," ka":"7","an ":"8","in ":"9"," in":"10","ada":"11","maa":"12","aba":"13"," so":"14","ali":"15","bad":"16","add":"17","soo":"18"," na":"19","aha":"20","ku ":"21","ta ":"22"," wa":"23","yo ":"24","a s":"25","oma":"26","yaa":"27"," ba":"28"," ku":"29"," la":"30"," oo":"31","iya":"32","sha":"33","a a":"34","dda":"35","nab":"36","nta":"37"," da":"38"," ma":"39","nka":"40","uu ":"41","y i":"42","aya":"43","ha ":"44","raa":"45"," dh":"46"," qa":"47","a k":"48","ala":"49","baa":"50","doo":"51","had":"52","liy":"53","oom":"54"," ha":"55"," sh":"56","a d":"57","a i":"58","a n":"59","aar":"60","ee ":"61","ey ":"62","y k":"63","ya ":"64"," ee":"65"," iy":"66","aa ":"67","aaq":"68","gaa":"69","lam":"70"," bu":"71","a b":"72","a m":"73","ad ":"74","aga":"75","ama":"76","iyo":"77","la ":"78","a c":"79","a l":"80","een":"81","int":"82","she":"83","wax":"84","yee":"85"," si":"86"," uu":"87","a h":"88","aas":"89","alk":"90","dha":"91","gu ":"92","hee":"93","ii ":"94","ira":"95","mad":"96","o a":"97","o k":"98","qay":"99"," ah":"100"," ca":"101"," wu":"102","ank":"103","ash":"104","axa":"105","eed":"106","en ":"107","ga ":"108","haa":"109","n a":"110","n s":"111","naa":"112","nay":"113","o d":"114","taa":"115","u b":"116","uxu":"117","wux":"118","xuu":"119"," ci":"120"," do":"121"," ho":"122"," ta":"123","a g":"124","a u":"125","ana":"126","ayo":"127","dhi":"128","iin":"129","lag":"130","lin":"131","lka":"132","o i":"133","san":"134","u s":"135","una":"136","uun":"137"," ga":"138"," xa":"139"," xu":"140","aab":"141","abt":"142","aq ":"143","aqa":"144","ara":"145","arl":"146","caa":"147","cir":"148","eeg":"149","eel":"150","isa":"151","kal":"152","lah":"153","ney":"154","qaa":"155","rla":"156","sad":"157","sii":"158","u d":"159","wad":"160"," ad":"161"," ar":"162"," di":"163"," jo":"164"," ra":"165"," sa":"166"," u ":"167"," yi":"168","a j":"169","a q":"170","aad":"171","aat":"172","aay":"173","ah ":"174","ale":"175","amk":"176","ari":"177","as ":"178","aye":"179","bus":"180","dal":"181","ddu":"182","dii":"183","du ":"184","duu":"185","ed ":"186","ege":"187","gey":"188","hay":"189","hii":"190","ida":"191","ine":"192","joo":"193","laa":"194","lay":"195","mar":"196","mee":"197","n b":"198","n d":"199","n m":"200","no ":"201","o b":"202","o l":"203","oog":"204","oon":"205","rga":"206","sh ":"207","sid":"208","u q":"209","unk":"210","ush":"211","xa ":"212","y d":"213"," bi":"214"," gu":"215"," is":"216"," ke":"217"," lo":"218"," me":"219"," mu":"220"," qo":"221"," ug":"222","a e":"223","a o":"224","a w":"225","adi":"226","ado":"227","agu":"228","al ":"229","ant":"230","ark":"231","asa":"232","awi":"233","bta":"234","bul":"235","d a":"236","dag":"237","dan":"238","do ":"239","e s":"240","gal":"241","gay":"242","guu":"243","h e":"244","hal":"245","iga":"246","ihi":"247","iri":"248","iye":"249","ken":"250","lad":"251","lid":"252","lsh":"253","mag":"254","mun":"255","n h":"256","n i":"257","na ":"258","o n":"259","o w":"260","ood":"261","oor":"262","ora":"263","qab":"264","qor":"265","rab":"266","rit":"267","rta":"268","s o":"269","sab":"270","ska":"271","to ":"272","u a":"273","u h":"274","u u":"275","ud ":"276","ugu":"277","uls":"278","uud":"279","waa":"280","xus":"281","y b":"282","y q":"283","y s":"284","yad":"285","yay":"286","yih":"287"," aa":"288"," bo":"289"," br":"290"," go":"291"," ji":"292"," mi":"293"," of":"294"," ti":"295"," um":"296"," wi":"297"," xo":"298","a x":"299"},"spanish":{" de":"0","de ":"1"," la":"2","os ":"3","la ":"4","el ":"5","es ":"6"," qu":"7"," co":"8","e l":"9","as ":"10","que":"11"," el":"12","ue ":"13","en ":"14","ent":"15"," en":"16"," se":"17","nte":"18","res":"19","con":"20","est":"21"," es":"22","s d":"23"," lo":"24"," pr":"25","los":"26"," y ":"27","do ":"28","ón ":"29","ión":"30"," un":"31","ció":"32","del":"33","o d":"34"," po":"35","a d":"36","aci":"37","sta":"38","te ":"39","ado":"40","pre":"41","to ":"42","par":"43","a e":"44","a l":"45","ra ":"46","al ":"47","e e":"48","se ":"49","pro":"50","ar ":"51","ia ":"52","o e":"53"," re":"54","ida":"55","dad":"56","tra":"57","por":"58","s p":"59"," a ":"60","a p":"61","ara":"62","cia":"63"," pa":"64","com":"65","no ":"66"," di":"67"," in":"68","ien":"69","n l":"70","ad ":"71","ant":"72","e s":"73","men":"74","a c":"75","on ":"76","un ":"77","las":"78","nci":"79"," tr":"80","cio":"81","ier":"82","nto":"83","tiv":"84","n d":"85","n e":"86","or ":"87","s c":"88","enc":"89","ern":"90","io ":"91","a s":"92","ici":"93","s e":"94"," ma":"95","dos":"96","e a":"97","e c":"98","emp":"99","ica":"100","ivo":"101","l p":"102","n c":"103","r e":"104","ta ":"105","ter":"106","e d":"107","esa":"108","ez ":"109","mpr":"110","o a":"111","s a":"112"," ca":"113"," su":"114","ion":"115"," cu":"116"," ju":"117","an ":"118","da ":"119","ene":"120","ero":"121","na ":"122","rec":"123","ro ":"124","tar":"125"," al":"126"," an":"127","bie":"128","e p":"129","er ":"130","l c":"131","n p":"132","omp":"133","ten":"134"," em":"135","ist":"136","nes":"137","nta":"138","o c":"139","so ":"140","tes":"141","era":"142","l d":"143","l m":"144","les":"145","ntr":"146","o s":"147","ore":"148","rá ":"149","s q":"150","s y":"151","sto":"152","a a":"153","a r":"154","ari":"155","des":"156","e q":"157","ivi":"158","lic":"159","lo ":"160","n a":"161","one":"162","ora":"163","per":"164","pue":"165","r l":"166","re ":"167","ren":"168","una":"169","ía ":"170","ada":"171","cas":"172","ere":"173","ide":"174","min":"175","n s":"176","ndo":"177","ran":"178","rno":"179"," ac":"180"," ex":"181"," go":"182"," no":"183","a t":"184","aba":"185","ble":"186","ece":"187","ect":"188","l a":"189","l g":"190","lid":"191","nsi":"192","ons":"193","rac":"194","rio":"195","str":"196","uer":"197","ust":"198"," ha":"199"," le":"200"," mi":"201"," mu":"202"," ob":"203"," pe":"204"," pu":"205"," so":"206","a i":"207","ale":"208","ca ":"209","cto":"210","e i":"211","e u":"212","eso":"213","fer":"214","fic":"215","gob":"216","jo ":"217","ma ":"218","mpl":"219","o p":"220","obi":"221","s m":"222","sa ":"223","sep":"224","ste":"225","sti":"226","tad":"227","tod":"228","y s":"229"," ci":"230","and":"231","ces":"232","có ":"233","dor":"234","e m":"235","eci":"236","eco":"237","esi":"238","int":"239","iza":"240","l e":"241","lar":"242","mie":"243","ner":"244","orc":"245","rci":"246","ria":"247","tic":"248","tor":"249"," as":"250"," si":"251","ce ":"252","den":"253","e r":"254","e t":"255","end":"256","eri":"257","esp":"258","ial":"259","ido":"260","ina":"261","inc":"262","mit":"263","o l":"264","ome":"265","pli":"266","ras":"267","s t":"268","sid":"269","sup":"270","tab":"271","uen":"272","ues":"273","ura":"274","vo ":"275","vor":"276"," sa":"277"," ti":"278","abl":"279","ali":"280","aso":"281","ast":"282","cor":"283","cti":"284","cue":"285","div":"286","duc":"287","ens":"288","eti":"289","imi":"290","ini":"291","lec":"292","o q":"293","oce":"294","ort":"295","ral":"296","rma":"297","roc":"298","rod":"299"},"swahili":{" wa":"0","wa ":"1","a k":"2","a m":"3"," ku":"4"," ya":"5","a w":"6","ya ":"7","ni ":"8"," ma":"9","ka ":"10","a u":"11","na ":"12","za ":"13","ia ":"14"," na":"15","ika":"16","ma ":"17","ali":"18","a n":"19"," am":"20","ili":"21","kwa":"22"," kw":"23","ini":"24"," ha":"25","ame":"26","ana":"27","i n":"28"," za":"29","a h":"30","ema":"31","i m":"32","i y":"33","kuw":"34","la ":"35","o w":"36","a y":"37","ata":"38","sem":"39"," la":"40","ati":"41","chi":"42","i w":"43","uwa":"44","aki":"45","li ":"46","eka":"47","ira":"48"," nc":"49","a s":"50","iki":"51","kat":"52","nch":"53"," ka":"54"," ki":"55","a b":"56","aji":"57","amb":"58","ra ":"59","ri ":"60","rik":"61","ada":"62","mat":"63","mba":"64","mes":"65","yo ":"66","zi ":"67","da ":"68","hi ":"69","i k":"70","ja ":"71","kut":"72","tek":"73","wan":"74"," bi":"75","a a":"76","aka":"77","ao ":"78","asi":"79","cha":"80","ese":"81","eza":"82","ke ":"83","moj":"84","oja":"85"," hi":"86","a z":"87","end":"88","ha ":"89","ji ":"90","mu ":"91","shi":"92","wat":"93"," bw":"94","ake":"95","ara":"96","bw ":"97","i h":"98","imb":"99","tik":"100","wak":"101","wal":"102"," hu":"103"," mi":"104"," mk":"105"," ni":"106"," ra":"107"," um":"108","a l":"109","ate":"110","esh":"111","ina":"112","ish":"113","kim":"114","o k":"115"," ir":"116","a i":"117","ala":"118","ani":"119","aq ":"120","azi":"121","hin":"122","i a":"123","idi":"124","ima":"125","ita":"126","rai":"127","raq":"128","sha":"129"," ms":"130"," se":"131","afr":"132","ama":"133","ano":"134","ea ":"135","ele":"136","fri":"137","go ":"138","i i":"139","ifa":"140","iwa":"141","iyo":"142","kus":"143","lia":"144","lio":"145","maj":"146","mku":"147","no ":"148","tan":"149","uli":"150","uta":"151","wen":"152"," al":"153","a j":"154","aad":"155","aid":"156","ari":"157","awa":"158","ba ":"159","fa ":"160","nde":"161","nge":"162","nya":"163","o y":"164","u w":"165","ua ":"166","umo":"167","waz":"168","ye ":"169"," ut":"170"," vi":"171","a d":"172","a t":"173","aif":"174","di ":"175","ere":"176","ing":"177","kin":"178","nda":"179","o n":"180","oa ":"181","tai":"182","toa":"183","usa":"184","uto":"185","was":"186","yak":"187","zo ":"188"," ji":"189"," mw":"190","a p":"191","aia":"192","amu":"193","ang":"194","bik":"195","bo ":"196","del":"197","e w":"198","ene":"199","eng":"200","ich":"201","iri":"202","iti":"203","ito":"204","ki ":"205","kir":"206","ko ":"207","kuu":"208","mar":"209","mbo":"210","mil":"211","ngi":"212","ngo":"213","o l":"214","ong":"215","si ":"216","ta ":"217","tak":"218","u y":"219","umu":"220","usi":"221","uu ":"222","wam":"223"," af":"224"," ba":"225"," li":"226"," si":"227"," zi":"228","a v":"229","ami":"230","atu":"231","awi":"232","eri":"233","fan":"234","fur":"235","ger":"236","i z":"237","isi":"238","izo":"239","lea":"240","mbi":"241","mwa":"242","nye":"243","o h":"244","o m":"245","oni":"246","rez":"247","saa":"248","ser":"249","sin":"250","tat":"251","tis":"252","tu ":"253","uin":"254","uki":"255","ur ":"256","wi ":"257","yar":"258"," da":"259"," en":"260"," mp":"261"," ny":"262"," ta":"263"," ul":"264"," we":"265","a c":"266","a f":"267","ais":"268","apo":"269","ayo":"270","bar":"271","dhi":"272","e a":"273","eke":"274","eny":"275","eon":"276","hai":"277","han":"278","hiy":"279","hur":"280","i s":"281","imw":"282","kal":"283","kwe":"284","lak":"285","lam":"286","mak":"287","msa":"288","ne ":"289","ngu":"290","ru ":"291","sal":"292","swa":"293","te ":"294","ti ":"295","uku":"296","uma":"297","una":"298","uru":"299"},"swedish":{"en ":"0"," de":"1","et ":"2","er ":"3","tt ":"4","om ":"5","för":"6","ar ":"7","de ":"8","att":"9"," fö":"10","ing":"11"," in":"12"," at":"13"," i ":"14","det":"15","ch ":"16","an ":"17","gen":"18"," an":"19","t s":"20","som":"21","te ":"22"," oc":"23","ter":"24"," ha":"25","lle":"26","och":"27"," sk":"28"," so":"29","ra ":"30","r a":"31"," me":"32","var":"33","nde":"34","är ":"35"," ko":"36","on ":"37","ans":"38","int":"39","n s":"40","na ":"41"," en":"42"," fr":"43"," på":"44"," st":"45"," va":"46","and":"47","nte":"48","på ":"49","ska":"50","ta ":"51"," vi":"52","der":"53","äll":"54","örs":"55"," om":"56","da ":"57","kri":"58","ka ":"59","nst":"60"," ho":"61","as ":"62","stä":"63","r d":"64","t f":"65","upp":"66"," be":"67","nge":"68","r s":"69","tal":"70","täl":"71","ör ":"72"," av":"73","ger":"74","ill":"75","ng ":"76","e s":"77","ekt":"78","ade":"79","era":"80","ers":"81","har":"82","ll ":"83","lld":"84","rin":"85","rna":"86","säk":"87","und":"88","inn":"89","lig":"90","ns ":"91"," ma":"92"," pr":"93"," up":"94","age":"95","av ":"96","iva":"97","kti":"98","lda":"99","orn":"100","son":"101","ts ":"102","tta":"103","äkr":"104"," sj":"105"," ti":"106","avt":"107","ber":"108","els":"109","eta":"110","kol":"111","men":"112","n d":"113","t k":"114","vta":"115","år ":"116","juk":"117","man":"118","n f":"119","nin":"120","r i":"121","rsä":"122","sju":"123","sso":"124"," är":"125","a s":"126","ach":"127","ag ":"128","bac":"129","den":"130","ett":"131","fte":"132","hor":"133","nba":"134","oll":"135","rnb":"136","ste":"137","til":"138"," ef":"139"," si":"140","a a":"141","e h":"142","ed ":"143","eft":"144","ga ":"145","ig ":"146","it ":"147","ler":"148","med":"149","n i":"150","nd ":"151","så ":"152","tiv":"153"," bl":"154"," et":"155"," fi":"156"," sä":"157","at ":"158","des":"159","e a":"160","gar":"161","get":"162","lan":"163","lss":"164","ost":"165","r b":"166","r e":"167","re ":"168","ret":"169","sta":"170","t i":"171"," ge":"172"," he":"173"," re":"174","a f":"175","all":"176","bos":"177","ets":"178","lek":"179","let":"180","ner":"181","nna":"182","nne":"183","r f":"184","rit":"185","s s":"186","sen":"187","sto":"188","tor":"189","vav":"190","ygg":"191"," ka":"192"," så":"193"," tr":"194"," ut":"195","ad ":"196","al ":"197","are":"198","e o":"199","gon":"200","kom":"201","n a":"202","n h":"203","nga":"204","r h":"205","ren":"206","t d":"207","tag":"208","tar":"209","tre":"210","ätt":"211"," få":"212"," hä":"213"," se":"214","a d":"215","a i":"216","a p":"217","ale":"218","ann":"219","ara":"220","byg":"221","gt ":"222","han":"223","igt":"224","kan":"225","la ":"226","n o":"227","nom":"228","nsk":"229","omm":"230","r k":"231","r p":"232","r v":"233","s f":"234","s k":"235","t a":"236","t p":"237","ver":"238"," bo":"239"," br":"240"," ku":"241"," nå":"242","a b":"243","a e":"244","del":"245","ens":"246","es ":"247","fin":"248","ige":"249","m s":"250","n p":"251","någ":"252","or ":"253","r o":"254","rbe":"255","rs ":"256","rt ":"257","s a":"258","s n":"259","skr":"260","t o":"261","ten":"262","tio":"263","ven":"264"," al":"265"," ja":"266"," p ":"267"," r ":"268"," sa":"269","a h":"270","bet":"271","cke":"272","dra":"273","e f":"274","e i":"275","eda":"276","eno":"277","erä":"278","ess":"279","ion":"280","jag":"281","m f":"282","ne ":"283","nns":"284","pro":"285","r t":"286","rar":"287","riv":"288","rät":"289","t e":"290","t t":"291","ust":"292","vad":"293","öre":"294"," ar":"295"," by":"296"," kr":"297"," mi":"298","arb":"299"},"tagalog":{"ng ":"0","ang":"1"," na":"2"," sa":"3","an ":"4","nan":"5","sa ":"6","na ":"7"," ma":"8"," ca":"9","ay ":"10","n g":"11"," an":"12","ong":"13"," ga":"14","at ":"15"," pa":"16","ala":"17"," si":"18","a n":"19","ga ":"20","g n":"21","g m":"22","ito":"23","g c":"24","man":"25","san":"26","g s":"27","ing":"28","to ":"29","ila":"30","ina":"31"," di":"32"," ta":"33","aga":"34","iya":"35","aca":"36","g t":"37"," at":"38","aya":"39","ama":"40","lan":"41","a a":"42","qui":"43","a c":"44","a s":"45","nag":"46"," ba":"47","g i":"48","tan":"49","'t ":"50"," cu":"51","aua":"52","g p":"53"," ni":"54","os ":"55","'y ":"56","a m":"57"," n ":"58","la ":"59"," la":"60","o n":"61","yan":"62"," ay":"63","usa":"64","cay":"65","on ":"66","ya ":"67"," it":"68","al ":"69","apa":"70","ata":"71","t n":"72","uan":"73","aha":"74","asa":"75","pag":"76"," gu":"77","g l":"78","di ":"79","mag":"80","aba":"81","g a":"82","ara":"83","a p":"84","in ":"85","ana":"86","it ":"87","si ":"88","cus":"89","g b":"90","uin":"91","a t":"92","as ":"93","n n":"94","hin":"95"," hi":"96","a't":"97","ali":"98"," bu":"99","gan":"100","uma":"101","a d":"102","agc":"103","aqu":"104","g d":"105"," tu":"106","aon":"107","ari":"108","cas":"109","i n":"110","niy":"111","pin":"112","a i":"113","gca":"114","siy":"115","a'y":"116","yao":"117","ag ":"118","ca ":"119","han":"120","ili":"121","pan":"122","sin":"123","ual":"124","n s":"125","nam":"126"," lu":"127","can":"128","dit":"129","gui":"130","y n":"131","gal":"132","hat":"133","nal":"134"," is":"135","bag":"136","fra":"137"," fr":"138"," su":"139","a l":"140"," co":"141","ani":"142"," bi":"143"," da":"144","alo":"145","isa":"146","ita":"147","may":"148","o s":"149","sil":"150","una":"151"," in":"152"," pi":"153","l n":"154","nil":"155","o a":"156","pat":"157","sac":"158","t s":"159"," ua":"160","agu":"161","ail":"162","bin":"163","dal":"164","g h":"165","ndi":"166","oon":"167","ua ":"168"," ha":"169","ind":"170","ran":"171","s n":"172","tin":"173","ulo":"174","eng":"175","g f":"176","ini":"177","lah":"178","lo ":"179","rai":"180","rin":"181","ton":"182","g u":"183","inu":"184","lon":"185","o'y":"186","t a":"187"," ar":"188","a b":"189","ad ":"190","bay":"191","cal":"192","gya":"193","ile":"194","mat":"195","n a":"196","pau":"197","ra ":"198","tay":"199","y m":"200","ant":"201","ban":"202","i m":"203","nas":"204","nay":"205","no ":"206","sti":"207"," ti":"208","ags":"209","g g":"210","ta ":"211","uit":"212","uno":"213"," ib":"214"," ya":"215","a u":"216","abi":"217","ati":"218","cap":"219","ig ":"220","is ":"221","la'":"222"," do":"223"," pu":"224","api":"225","ayo":"226","gos":"227","gul":"228","lal":"229","tag":"230","til":"231","tun":"232","y c":"233","y s":"234","yon":"235","ano":"236","bur":"237","iba":"238","isi":"239","lam":"240","nac":"241","nat":"242","ni ":"243","nto":"244","od ":"245","pa ":"246","rgo":"247","urg":"248"," m ":"249","adr":"250","ast":"251","cag":"252","gay":"253","gsi":"254","i p":"255","ino":"256","len":"257","lin":"258","m g":"259","mar":"260","nah":"261","to'":"262"," de":"263","a h":"264","cat":"265","cau":"266","con":"267","iqu":"268","lac":"269","mab":"270","min":"271","og ":"272","par":"273","sal":"274"," za":"275","ao ":"276","doo":"277","ipi":"278","nod":"279","nte":"280","uha":"281","ula":"282"," re":"283","ill":"284","lit":"285","mac":"286","nit":"287","o't":"288","or ":"289","ora":"290","sum":"291","y p":"292"," al":"293"," mi":"294"," um":"295","aco":"296","ada":"297","agd":"298","cab":"299"},"turkish":{"lar":"0","en ":"1","ler":"2","an ":"3","in ":"4"," bi":"5"," ya":"6","eri":"7","de ":"8"," ka":"9","ir ":"10","arı":"11"," ba":"12"," de":"13"," ha":"14","ın ":"15","ara":"16","bir":"17"," ve":"18"," sa":"19","ile":"20","le ":"21","nde":"22","da ":"23"," bu":"24","ana":"25","ini":"26","ını":"27","er ":"28","ve ":"29"," yı":"30","lma":"31","yıl":"32"," ol":"33","ar ":"34","n b":"35","nda":"36","aya":"37","li ":"38","ası":"39"," ge":"40","ind":"41","n k":"42","esi":"43","lan":"44","nla":"45","ak ":"46","anı":"47","eni":"48","ni ":"49","nı ":"50","rın":"51","san":"52"," ko":"53"," ye":"54","maz":"55","baş":"56","ili":"57","rin":"58","alı":"59","az ":"60","hal":"61","ınd":"62"," da":"63"," gü":"64","ele":"65","ılm":"66","ığı":"67","eki":"68","gün":"69","i b":"70","içi":"71","den":"72","kar":"73","si ":"74"," il":"75","e y":"76","na ":"77","yor":"78","ek ":"79","n s":"80"," iç":"81","bu ":"82","e b":"83","im ":"84","ki ":"85","len":"86","ri ":"87","sın":"88"," so":"89","ün ":"90"," ta":"91","nin":"92","iği":"93","tan":"94","yan":"95"," si":"96","nat":"97","nın":"98","kan":"99","rı ":"100","çin":"101","ğı ":"102","eli":"103","n a":"104","ır ":"105"," an":"106","ine":"107","n y":"108","ola":"109"," ar":"110","al ":"111","e s":"112","lik":"113","n d":"114","sin":"115"," al":"116"," dü":"117","anl":"118","ne ":"119","ya ":"120","ım ":"121","ına":"122"," be":"123","ada":"124","ala":"125","ama":"126","ilm":"127","or ":"128","sı ":"129","yen":"130"," me":"131","atı":"132","di ":"133","eti":"134","ken":"135","la ":"136","lı ":"137","oru":"138"," gö":"139"," in":"140","and":"141","e d":"142","men":"143","un ":"144","öne":"145","a d":"146","at ":"147","e a":"148","e g":"149","yar":"150"," ku":"151","ayı":"152","dan":"153","edi":"154","iri":"155","ünü":"156","ği ":"157","ılı":"158","eme":"159","eği":"160","i k":"161","i y":"162","ıla":"163"," ça":"164","a y":"165","alk":"166","dı ":"167","ede":"168","el ":"169","ndı":"170","ra ":"171","üne":"172"," sü":"173","dır":"174","e k":"175","ere":"176","ik ":"177","imi":"178","işi":"179","mas":"180","n h":"181","sür":"182","yle":"183"," ad":"184"," fi":"185"," gi":"186"," se":"187","a k":"188","arl":"189","aşı":"190","iyo":"191","kla":"192","lığ":"193","nem":"194","ney":"195","rme":"196","ste":"197","tı ":"198","unl":"199","ver":"200"," sı":"201"," te":"202"," to":"203","a s":"204","aşk":"205","ekl":"206","end":"207","kal":"208","liğ":"209","min":"210","tır":"211","ulu":"212","unu":"213","yap":"214","ye ":"215","ı i":"216","şka":"217","ştı":"218"," bü":"219"," ke":"220"," ki":"221","ard":"222","art":"223","aşa":"224","n i":"225","ndi":"226","ti ":"227","top":"228","ı b":"229"," va":"230"," ön":"231","aki":"232","cak":"233","ey ":"234","fil":"235","isi":"236","kle":"237","kur":"238","man":"239","nce":"240","nle":"241","nun":"242","rak":"243","ık ":"244"," en":"245"," yo":"246","a g":"247","lis":"248","mak":"249","n g":"250","tir":"251","yas":"252"," iş":"253"," yö":"254","ale":"255","bil":"256","bul":"257","et ":"258","i d":"259","iye":"260","kil":"261","ma ":"262","n e":"263","n t":"264","nu ":"265","olu":"266","rla":"267","te ":"268","yön":"269","çık":"270"," ay":"271"," mü":"272"," ço":"273"," çı":"274","a a":"275","a b":"276","ata":"277","der":"278","gel":"279","i g":"280","i i":"281","ill":"282","ist":"283","ldı":"284","lu ":"285","mek":"286","mle":"287","n ç":"288","onu":"289","opl":"290","ran":"291","rat":"292","rdı":"293","rke":"294","siy":"295","son":"296","ta ":"297","tçı":"298","tın":"299"},"ukrainian":{" на":"0"," за":"1","ння":"2","ня ":"3","на ":"4"," пр":"5","ого":"6","го ":"7","ськ":"8"," по":"9"," у ":"10","від":"11","ере":"12"," мі":"13"," не":"14","их ":"15","ть ":"16","пер":"17"," ві":"18","ів ":"19"," пе":"20"," що":"21","льн":"22","ми ":"23","ні ":"24","не ":"25","ти ":"26","ати":"27","енн":"28","міс":"29","пра":"30","ува":"31","ник":"32","про":"33","рав":"34","івн":"35"," та":"36","буд":"37","влі":"38","рів":"39"," ко":"40"," рі":"41","аль":"42","но ":"43","ому":"44","що ":"45"," ви":"46","му ":"47","рев":"48","ся ":"49","інн":"50"," до":"51"," уп":"52","авл":"53","анн":"54","ком":"55","ли ":"56","лін":"57","ног":"58","упр":"59"," бу":"60"," з ":"61"," ро":"62","за ":"63","и н":"64","нов":"65","оро":"66","ост":"67","ста":"68","ті ":"69","ють":"70"," мо":"71"," ні":"72"," як":"73","бор":"74","ва ":"75","ван":"76","ень":"77","и п":"78","нь ":"79","ові":"80","рон":"81","сті":"82","та ":"83","у в":"84","ько":"85","іст":"86"," в ":"87"," ре":"88","до ":"89","е п":"90","заб":"91","ий ":"92","нсь":"93","о в":"94","о п":"95","при":"96","і п":"97"," ку":"98"," пі":"99"," сп":"100","а п":"101","або":"102","анс":"103","аці":"104","ват":"105","вни":"106","и в":"107","ими":"108","ка ":"109","нен":"110","ніч":"111","она":"112","ої ":"113","пов":"114","ьки":"115","ьно":"116","ізн":"117","ічн":"118"," ав":"119"," ма":"120"," ор":"121"," су":"122"," чи":"123"," ін":"124","а з":"125","ам ":"126","ає ":"127","вне":"128","вто":"129","дом":"130","ент":"131","жит":"132","зни":"133","им ":"134","итл":"135","ла ":"136","них":"137","ниц":"138","ова":"139","ови":"140","ом ":"141","пор":"142","тьс":"143","у р":"144","ься":"145","ідо":"146","іль":"147","ісь":"148"," ва":"149"," ді":"150"," жи":"151"," че":"152"," і ":"153","а в":"154","а н":"155","али":"156","вез":"157","вно":"158","еве":"159","езе":"160","зен":"161","ицт":"162","ки ":"163","ких":"164","кон":"165","ку ":"166","лас":"167","ля ":"168","мож":"169","нач":"170","ним":"171","ної":"172","о б":"173","ову":"174","оди":"175","ою ":"176","ро ":"177","рок":"178","сно":"179","спо":"180","так":"181","тва":"182","ту ":"183","у п":"184","цтв":"185","ьни":"186","я з":"187","і м":"188","ії ":"189"," вс":"190"," гр":"191"," де":"192"," но":"193"," па":"194"," се":"195"," ук":"196"," їх":"197","а о":"198","авт":"199","аст":"200","ают":"201","вар":"202","ден":"203","ди ":"204","ду ":"205","зна":"206","и з":"207","ико":"208","ися":"209","ити":"210","ког":"211","мен":"212","ном":"213","ну ":"214","о н":"215","о с":"216","обу":"217","ово":"218","пла":"219","ран":"220","рив":"221","роб":"222","ска":"223","тан":"224","тим":"225","тис":"226","то ":"227","тра":"228","удо":"229","чин":"230","чни":"231","і в":"232","ію ":"233"," а ":"234"," во":"235"," да":"236"," кв":"237"," ме":"238"," об":"239"," ск":"240"," ти":"241"," фі":"242"," є ":"243","а р":"244","а с":"245","а у":"246","ак ":"247","ані":"248","арт":"249","асн":"250","в у":"251","вик":"252","віз":"253","дов":"254","дпо":"255","дів":"256","еві":"257","енс":"258","же ":"259","и м":"260","и с":"261","ика":"262","ичн":"263","кі ":"264","ків":"265","між":"266","нан":"267","нос":"268","о у":"269","обл":"270","одн":"271","ок ":"272","оло":"273","отр":"274","рен":"275","рим":"276","роз":"277","сь ":"278","сі ":"279","тла":"280","тів":"281","у з":"282","уго":"283","уді":"284","чи ":"285","ше ":"286","я н":"287","я у":"288","ідп":"289","ій ":"290","іна":"291","ія ":"292"," ка":"293"," ни":"294"," ос":"295"," си":"296"," то":"297"," тр":"298"," уг":"299"},"urdu":{"یں ":"0"," کی":"1","کے ":"2"," کے":"3","نے ":"4"," کہ":"5","ے ک":"6","کی ":"7","میں":"8"," می":"9","ہے ":"10","وں ":"11","کہ ":"12"," ہے":"13","ان ":"14","ہیں":"15","ور ":"16"," کو":"17","یا ":"18"," ان":"19"," نے":"20","سے ":"21"," سے":"22"," کر":"23","ستا":"24"," او":"25","اور":"26","تان":"27","ر ک":"28","ی ک":"29"," اس":"30","ے ا":"31"," پا":"32"," ہو":"33"," پر":"34","رف ":"35"," کا":"36","ا ک":"37","ی ا":"38"," ہی":"39","در ":"40","کو ":"41"," ای":"42","ں ک":"43"," مش":"44"," مل":"45","ات ":"46","صدر":"47","اکس":"48","شرف":"49","مشر":"50","پاک":"51","کست":"52","ی م":"53"," دی":"54"," صد":"55"," یہ":"56","ا ہ":"57","ن ک":"58","وال":"59","یہ ":"60","ے و":"61"," بھ":"62"," دو":"63","اس ":"64","ر ا":"65","نہی":"66","کا ":"67","ے س":"68","ئی ":"69","ہ ا":"70","یت ":"71","ے ہ":"72","ت ک":"73"," سا":"74","لے ":"75","ہا ":"76","ے ب":"77"," وا":"78","ار ":"79","نی ":"80","کہا":"81","ی ہ":"82","ے م":"83"," سی":"84"," لی":"85","انہ":"86","انی":"87","ر م":"88","ر پ":"89","ریت":"90","ن م":"91","ھا ":"92","یر ":"93"," جا":"94"," جن":"95","ئے ":"96","پر ":"97","ں ن":"98","ہ ک":"99","ی و":"100","ے د":"101"," تو":"102"," تھ":"103"," گی":"104","ایک":"105","ل ک":"106","نا ":"107","کر ":"108","ں م":"109","یک ":"110"," با":"111","ا ت":"112","دی ":"113","ن س":"114","کیا":"115","یوں":"116","ے ج":"117","ال ":"118","تو ":"119","ں ا":"120","ے پ":"121"," چا":"122","ام ":"123","بھی":"124","تی ":"125","تے ":"126","دوس":"127","س ک":"128","ملک":"129","ن ا":"130","ہور":"131","یے ":"132"," مو":"133"," وک":"134","ائی":"135","ارت":"136","الے":"137","بھا":"138","ردی":"139","ری ":"140","وہ ":"141","ویز":"142","ں د":"143","ھی ":"144","ی س":"145"," رہ":"146"," من":"147"," نہ":"148"," ور":"149"," وہ":"150"," ہن":"151","ا ا":"152","است":"153","ت ا":"154","ت پ":"155","د ک":"156","ز م":"157","ند ":"158","ورد":"159","وکل":"160","گی ":"161","گیا":"162","ہ پ":"163","یز ":"164","ے ت":"165"," اع":"166"," اپ":"167"," جس":"168"," جم":"169"," جو":"170"," سر":"171","اپن":"172","اکث":"173","تھا":"174","ثری":"175","دیا":"176","ر د":"177","رت ":"178","روی":"179","سی ":"180","ملا":"181","ندو":"182","وست":"183","پرو":"184","چاہ":"185","کثر":"186","کلا":"187","ہ ہ":"188","ہند":"189","ہو ":"190","ے ل":"191"," اک":"192"," دا":"193"," سن":"194"," وز":"195"," پی":"196","ا چ":"197","اء ":"198","اتھ":"199","اقا":"200","اہ ":"201","تھ ":"202","دو ":"203","ر ب":"204","روا":"205","رے ":"206","سات":"207","ف ک":"208","قات":"209","لا ":"210","لاء":"211","م م":"212","م ک":"213","من ":"214","نوں":"215","و ا":"216","کرن":"217","ں ہ":"218","ھار":"219","ہوئ":"220","ہی ":"221","یش ":"222"," ام":"223"," لا":"224"," مس":"225"," پو":"226"," پہ":"227","انے":"228","ت م":"229","ت ہ":"230","ج ک":"231","دون":"232","زیر":"233","س س":"234","ش ک":"235","ف ن":"236","ل ہ":"237","لاق":"238","لی ":"239","وری":"240","وزی":"241","ونو":"242","کھن":"243","گا ":"244","ں س":"245","ں گ":"246","ھنے":"247","ھے ":"248","ہ ب":"249","ہ ج":"250","ہر ":"251","ی آ":"252","ی پ":"253"," حا":"254"," وف":"255"," گا":"256","ا ج":"257","ا گ":"258","اد ":"259","ادی":"260","اعظ":"261","اہت":"262","جس ":"263","جمہ":"264","جو ":"265","ر س":"266","ر ہ":"267","رنے":"268","س م":"269","سا ":"270","سند":"271","سنگ":"272","ظم ":"273","عظم":"274","ل م":"275","لیے":"276","مل ":"277","موہ":"278","مہو":"279","نگھ":"280","و ص":"281","ورٹ":"282","وہن":"283","کن ":"284","گھ ":"285","گے ":"286","ں ج":"287","ں و":"288","ں ی":"289","ہ د":"290","ہن ":"291","ہوں":"292","ے ح":"293","ے گ":"294","ے ی":"295"," اگ":"296"," بع":"297"," رو":"298"," شا":"299"},"uzbek":{"ан ":"0","ган":"1","лар":"2","га ":"3","нг ":"4","инг":"5","нин":"6","да ":"7","ни ":"8","ида":"9","ари":"10","ига":"11","ини":"12","ар ":"13","ди ":"14"," би":"15","ани":"16"," бо":"17","дан":"18","лга":"19"," ҳа":"20"," ва":"21"," са":"22","ги ":"23","ила":"24","н б":"25","и б":"26"," кў":"27"," та":"28","ир ":"29"," ма":"30","ага":"31","ала":"32","бир":"33","ри ":"34","тга":"35","лан":"36","лик":"37","а к":"38","аги":"39","ати":"40","та ":"41","ади":"42","даг":"43","рга":"44"," йи":"45"," ми":"46"," па":"47"," бў":"48"," қа":"49"," қи":"50","а б":"51","илл":"52","ли ":"53","аси":"54","и т":"55","ик ":"56","или":"57","лла":"58","ард":"59","вчи":"60","ва ":"61","иб ":"62","ири":"63","лиг":"64","нга":"65","ран":"66"," ке":"67"," ўз":"68","а с":"69","ахт":"70","бўл":"71","иги":"72","кўр":"73","рда":"74","рни":"75","са ":"76"," бе":"77"," бу":"78"," да":"79"," жа":"80","а т":"81","ази":"82","ери":"83","и а":"84","илг":"85","йил":"86","ман":"87","пах":"88","рид":"89","ти ":"90","увч":"91","хта":"92"," не":"93"," со":"94"," уч":"95","айт":"96","лли":"97","тла":"98"," ай":"99"," фр":"100"," эт":"101"," ҳо":"102","а қ":"103","али":"104","аро":"105","бер":"106","бил":"107","бор":"108","ими":"109","ист":"110","он ":"111","рин":"112","тер":"113","тил":"114","ун ":"115","фра":"116","қил":"117"," ба":"118"," ол":"119","анс":"120","ефт":"121","зир":"122","кат":"123","мил":"124","неф":"125","саг":"126","чи ":"127","ўра":"128"," на":"129"," те":"130"," эн":"131","а э":"132","ам ":"133","арн":"134","ат ":"135","иш ":"136","ма ":"137","нла":"138","рли":"139","чил":"140","шга":"141"," иш":"142"," му":"143"," ўқ":"144","ара":"145","ваз":"146","и у":"147","иқ ":"148","моқ":"149","рим":"150","учу":"151","чун":"152","ши ":"153","энг":"154","қув":"155","ҳам":"156"," сў":"157"," ши":"158","бар":"159","бек":"160","дам":"161","и ҳ":"162","иши":"163","лад":"164","оли":"165","олл":"166","ори":"167","оқд":"168","р б":"169","ра ":"170","рла":"171","уни":"172","фт ":"173","ўлг":"174","ўқу":"175"," де":"176"," ка":"177"," қў":"178","а ў":"179","аба":"180","амм":"181","атл":"182","б к":"183","бош":"184","збе":"185","и в":"186","им ":"187","ин ":"188","ишл":"189","лаб":"190","лей":"191","мин":"192","н д":"193","нда":"194","оқ ":"195","р м":"196","рил":"197","сид":"198","тал":"199","тан":"200","тид":"201","тон":"202","ўзб":"203"," ам":"204"," ки":"205","а ҳ":"206","анг":"207","анд":"208","арт":"209","аёт":"210","дир":"211","ент":"212","и д":"213","и м":"214","и о":"215","и э":"216","иро":"217","йти":"218","нсу":"219","оди":"220","ор ":"221","си ":"222","тиш":"223","тоб":"224","эти":"225","қар":"226","қда":"227"," бл":"228"," ге":"229"," до":"230"," ду":"231"," но":"232"," пр":"233"," ра":"234"," фо":"235"," қо":"236","а м":"237","а о":"238","айд":"239","ало":"240","ама":"241","бле":"242","г н":"243","дол":"244","ейр":"245","ек ":"246","ерг":"247","жар":"248","зид":"249","и к":"250","и ф":"251","ий ":"252","ило":"253","лди":"254","либ":"255","лин":"256","ми ":"257","мма":"258","н в":"259","н к":"260","н ў":"261","н ҳ":"262","ози":"263","ора":"264","оси":"265","рас":"266","риш":"267","рка":"268","роқ":"269","сто":"270","тин":"271","хат":"272","шир":"273"," ав":"274"," рў":"275"," ту":"276"," ўт":"277","а п":"278","авт":"279","ада":"280","аза":"281","анл":"282","б б":"283","бой":"284","бу ":"285","вто":"286","г э":"287","гин":"288","дар":"289","ден":"290","дун":"291","иде":"292","ион":"293","ирл":"294","ишг":"295","йха":"296","кел":"297","кўп":"298","лио":"299"},"vietnamese":{"ng ":"0"," th":"1"," ch":"2","g t":"3"," nh":"4","ông":"5"," kh":"6"," tr":"7","nh ":"8"," cô":"9","côn":"10"," ty":"11","ty ":"12","i t":"13","n t":"14"," ng":"15","ại ":"16"," ti":"17","ch ":"18","y l":"19","ền ":"20"," đư":"21","hi ":"22"," gở":"23","gởi":"24","iền":"25","tiề":"26","ởi ":"27"," gi":"28"," le":"29"," vi":"30","cho":"31","ho ":"32","khá":"33"," và":"34","hác":"35"," ph":"36","am ":"37","hàn":"38","ách":"39","ôi ":"40","i n":"41","ược":"42","ợc ":"43"," tô":"44","chú":"45","iệt":"46","tôi":"47","ên ":"48","úng":"49","ệt ":"50"," có":"51","c t":"52","có ":"53","hún":"54","việ":"55","đượ":"56"," na":"57","g c":"58","i c":"59","n c":"60","n n":"61","t n":"62","và ":"63","n l":"64","n đ":"65","àng":"66","ác ":"67","ất ":"68","h l":"69","nam":"70","ân ":"71","ăm ":"72"," hà":"73"," là":"74"," nă":"75"," qu":"76"," tạ":"77","g m":"78","năm":"79","tại":"80","ới ":"81"," lẹ":"82","ay ":"83","e g":"84","h h":"85","i v":"86","i đ":"87","le ":"88","lẹ ":"89","ều ":"90","ời ":"91","hân":"92","nhi":"93","t t":"94"," củ":"95"," mộ":"96"," về":"97"," đi":"98","an ":"99","của":"100","là ":"101","một":"102","về ":"103","ành":"104","ết ":"105","ột ":"106","ủa ":"107"," bi":"108"," cá":"109","a c":"110","anh":"111","các":"112","h c":"113","iều":"114","m t":"115","ện ":"116"," ho":"117","'s ":"118","ave":"119","e's":"120","el ":"121","g n":"122","le'":"123","n v":"124","o c":"125","rav":"126","s t":"127","thi":"128","tra":"129","vel":"130","ận ":"131","ến ":"132"," ba":"133"," cu":"134"," sa":"135"," đó":"136"," đế":"137","c c":"138","chu":"139","hiề":"140","huy":"141","khi":"142","nhâ":"143","như":"144","ong":"145","ron":"146","thu":"147","thư":"148","tro":"149","y c":"150","ày ":"151","đến":"152","ười":"153","ườn":"154","ề v":"155","ờng":"156"," vớ":"157","cuộ":"158","g đ":"159","iết":"160","iện":"161","ngà":"162","o t":"163","u c":"164","uộc":"165","với":"166","à c":"167","ài ":"168","ơng":"169","ươn":"170","ải ":"171","ộc ":"172","ức ":"173"," an":"174"," lậ":"175"," ra":"176"," sẽ":"177"," số":"178"," tổ":"179","a k":"180","biế":"181","c n":"182","c đ":"183","chứ":"184","g v":"185","gia":"186","gày":"187","hán":"188","hôn":"189","hư ":"190","hức":"191","i g":"192","i h":"193","i k":"194","i p":"195","iên":"196","khô":"197","lập":"198","n k":"199","ra ":"200","rên":"201","sẽ ":"202","t c":"203","thà":"204","trê":"205","tổ ":"206","u n":"207","y t":"208","ình":"209","ấy ":"210","ập ":"211","ổ c":"212"," má":"213"," để":"214","ai ":"215","c s":"216","gườ":"217","h v":"218","hoa":"219","hoạ":"220","inh":"221","m n":"222","máy":"223","n g":"224","ngư":"225","nhậ":"226","o n":"227","oa ":"228","oàn":"229","p c":"230","số ":"231","t đ":"232","y v":"233","ào ":"234","áy ":"235","ăn ":"236","đó ":"237","để ":"238","ước":"239","ần ":"240","ển ":"241","ớc ":"242"," bá":"243"," cơ":"244"," cả":"245"," cầ":"246"," họ":"247"," kỳ":"248"," li":"249"," mạ":"250"," sở":"251"," tặ":"252"," vé":"253"," vụ":"254"," đạ":"255","a đ":"256","bay":"257","cơ ":"258","g s":"259","han":"260","hươ":"261","i s":"262","kỳ ":"263","m c":"264","n m":"265","n p":"266","o b":"267","oại":"268","qua":"269","sở ":"270","tha":"271","thá":"272","tặn":"273","vào":"274","vé ":"275","vụ ":"276","y b":"277","àn ":"278","áng":"279","ơ s":"280","ầu ":"281","ật ":"282","ặng":"283","ọc ":"284","ở t":"285","ững":"286"," du":"287"," lu":"288"," ta":"289"," to":"290"," từ":"291"," ở ":"292","a v":"293","ao ":"294","c v":"295","cả ":"296","du ":"297","g l":"298","giả":"299"},"welsh":{"yn ":"0","dd ":"1"," yn":"2"," y ":"3","ydd":"4","eth":"5","th ":"6"," i ":"7","aet":"8","d y":"9","ch ":"10","od ":"11","ol ":"12","edd":"13"," ga":"14"," gw":"15","'r ":"16","au ":"17","ddi":"18","ad ":"19"," cy":"20"," gy":"21"," ei":"22"," o ":"23","iad":"24","yr ":"25","an ":"26","bod":"27","wed":"28"," bo":"29"," dd":"30","el ":"31","n y":"32"," am":"33","di ":"34","edi":"35","on ":"36"," we":"37"," ym":"38"," ar":"39"," rh":"40","odd":"41"," ca":"42"," ma":"43","ael":"44","oed":"45","dae":"46","n a":"47","dda":"48","er ":"49","h y":"50","all":"51","ei ":"52"," ll":"53","am ":"54","eu ":"55","fod":"56","fyd":"57","l y":"58","n g":"59","wyn":"60","d a":"61","i g":"62","mae":"63","neu":"64","os ":"65"," ne":"66","d i":"67","dod":"68","dol":"69","n c":"70","r h":"71","wyd":"72","wyr":"73","ai ":"74","ar ":"75","in ":"76","rth":"77"," fy":"78"," he":"79"," me":"80"," yr":"81","'n ":"82","dia":"83","est":"84","h c":"85","hai":"86","i d":"87","id ":"88","r y":"89","y b":"90"," dy":"91"," ha":"92","ada":"93","i b":"94","n i":"95","ote":"96","rot":"97","tes":"98","y g":"99","yd ":"100"," ad":"101"," mr":"102"," un":"103","cyn":"104","dau":"105","ddy":"106","edo":"107","i c":"108","i w":"109","ith":"110","lae":"111","lla":"112","nd ":"113","oda":"114","ryd":"115","tho":"116"," a ":"117"," dr":"118","aid":"119","ain":"120","ddo":"121","dyd":"122","fyn":"123","gyn":"124","hol":"125","io ":"126","o a":"127","wch":"128","wyb":"129","ybo":"130","ych":"131"," br":"132"," by":"133"," di":"134"," fe":"135"," na":"136"," o'":"137"," pe":"138","art":"139","byd":"140","dro":"141","gal":"142","l e":"143","lai":"144","mr ":"145","n n":"146","r a":"147","rhy":"148","wn ":"149","ynn":"150"," on":"151"," r ":"152","cae":"153","d g":"154","d o":"155","d w":"156","gan":"157","gwy":"158","n d":"159","n f":"160","n o":"161","ned":"162","ni ":"163","o'r":"164","r d":"165","ud ":"166","wei":"167","wrt":"168"," an":"169"," cw":"170"," da":"171"," ni":"172"," pa":"173"," pr":"174"," wy":"175","d e":"176","dai":"177","dim":"178","eud":"179","gwa":"180","idd":"181","im ":"182","iri":"183","lwy":"184","n b":"185","nol":"186","r o":"187","rwy":"188"," ch":"189"," er":"190"," fo":"191"," ge":"192"," hy":"193"," i'":"194"," ro":"195"," sa":"196"," tr":"197","bob":"198","cwy":"199","cyf":"200","dio":"201","dyn":"202","eit":"203","hel":"204","hyn":"205","ich":"206","ll ":"207","mdd":"208","n r":"209","ond":"210","pro":"211","r c":"212","r g":"213","red":"214","rha":"215","u a":"216","u c":"217","u y":"218","y c":"219","ymd":"220","ymr":"221","yw ":"222"," ac":"223"," be":"224"," bl":"225"," co":"226"," os":"227","adw":"228","ae ":"229","af ":"230","d p":"231","efn":"232","eic":"233","en ":"234","eol":"235","es ":"236","fer":"237","gel":"238","h g":"239","hod":"240","ied":"241","ir ":"242","laf":"243","n h":"244","na ":"245","nyd":"246","odo":"247","ofy":"248","rdd":"249","rie":"250","ros":"251","stw":"252","twy":"253","yda":"254","yng":"255"," at":"256"," de":"257"," go":"258"," id":"259"," oe":"260"," â ":"261","'ch":"262","ac ":"263","ach":"264","ae'":"265","al ":"266","bl ":"267","d c":"268","d l":"269","dan":"270","dde":"271","ddw":"272","dir":"273","dla":"274","ed ":"275","ela":"276","ell":"277","ene":"278","ewn":"279","gyd":"280","hau":"281","hyw":"282","i a":"283","i f":"284","iol":"285","ion":"286","l a":"287","l i":"288","lia":"289","med":"290","mon":"291","n s":"292","no ":"293","obl":"294","ola":"295","ref":"296","rn ":"297","thi":"298","un ":"299"}},"trigram-unicodemap":{"Basic Latin":{"albanian":661,"azeri":653,"bengali":1,"cebuano":750,"croatian":733,"czech":652,"danish":734,"dutch":741,"english":723,"estonian":739,"finnish":743,"french":733,"german":750,"hausa":752,"hawaiian":751,"hungarian":693,"icelandic":662,"indonesian":776,"italian":741,"latin":764,"latvian":693,"lithuanian":738,"mongolian":19,"norwegian":742,"pidgin":702,"polish":701,"portuguese":726,"romanian":714,"slovak":677,"slovene":740,"somali":755,"spanish":749,"swahili":770,"swedish":717,"tagalog":767,"turkish":673,"vietnamese":503,"welsh":728},"Latin-1 Supplement":{"albanian":68,"azeri":10,"czech":51,"danish":13,"estonian":19,"finnish":39,"french":21,"german":8,"hungarian":72,"icelandic":80,"italian":3,"norwegian":5,"polish":6,"portuguese":18,"romanian":9,"slovak":37,"spanish":6,"swedish":26,"turkish":25,"vietnamese":56,"welsh":1},"[Malformatted]":{"albanian":68,"arabic":724,"azeri":109,"bengali":1472,"bulgarian":750,"croatian":10,"czech":78,"danish":13,"estonian":19,"farsi":706,"finnish":39,"french":21,"german":8,"hausa":8,"hindi":1386,"hungarian":74,"icelandic":80,"italian":3,"kazakh":767,"kyrgyz":767,"latvian":56,"lithuanian":30,"macedonian":755,"mongolian":743,"nepali":1514,"norwegian":5,"pashto":677,"polish":45,"portuguese":18,"romanian":31,"russian":759,"serbian":757,"slovak":45,"slovene":10,"spanish":6,"swedish":26,"turkish":87,"ukrainian":748,"urdu":682,"uzbek":773,"vietnamese":289,"welsh":1},"Arabic":{"arabic":724,"farsi":706,"pashto":677,"urdu":682},"Latin Extended-B":{"azeri":73,"hausa":8,"vietnamese":19},"Latin Extended-A":{"azeri":25,"croatian":10,"czech":27,"hungarian":2,"latvian":56,"lithuanian":30,"polish":39,"romanian":22,"slovak":8,"slovene":10,"turkish":62,"vietnamese":20},"Combining Diacritical Marks":{"azeri":1},"Bengali":{"bengali":714},"Gujarati":{"bengali":16},"Gurmukhi":{"bengali":6},"Cyrillic":{"bulgarian":750,"kazakh":767,"kyrgyz":767,"macedonian":755,"mongolian":743,"russian":759,"serbian":757,"ukrainian":748,"uzbek":773},"Devanagari":{"hindi":693,"nepali":757},"Latin Extended Additional":{"vietnamese":97}}}
 
 /***/ }),
-/* 237 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dbUnicodeBlocks = __webpack_require__(238);
+var dbUnicodeBlocks = __webpack_require__(237);
 
 /**
  * This class represents a text sample to be parsed.
@@ -88875,13 +88874,13 @@ Parser.prototype = {
 };
 
 /***/ }),
-/* 238 */
+/* 237 */
 /***/ (function(module, exports) {
 
 module.exports = [["0x0000","0x007F","Basic Latin"],["0x0080","0x00FF","Latin-1 Supplement"],["0x0100","0x017F","Latin Extended-A"],["0x0180","0x024F","Latin Extended-B"],["0x0250","0x02AF","IPA Extensions"],["0x02B0","0x02FF","Spacing Modifier Letters"],["0x0300","0x036F","Combining Diacritical Marks"],["0x0370","0x03FF","Greek and Coptic"],["0x0400","0x04FF","Cyrillic"],["0x0500","0x052F","Cyrillic Supplement"],["0x0530","0x058F","Armenian"],["0x0590","0x05FF","Hebrew"],["0x0600","0x06FF","Arabic"],["0x0700","0x074F","Syriac"],["0x0750","0x077F","Arabic Supplement"],["0x0780","0x07BF","Thaana"],["0x0900","0x097F","Devanagari"],["0x0980","0x09FF","Bengali"],["0x0A00","0x0A7F","Gurmukhi"],["0x0A80","0x0AFF","Gujarati"],["0x0B00","0x0B7F","Oriya"],["0x0B80","0x0BFF","Tamil"],["0x0C00","0x0C7F","Telugu"],["0x0C80","0x0CFF","Kannada"],["0x0D00","0x0D7F","Malayalam"],["0x0D80","0x0DFF","Sinhala"],["0x0E00","0x0E7F","Thai"],["0x0E80","0x0EFF","Lao"],["0x0F00","0x0FFF","Tibetan"],["0x1000","0x109F","Myanmar"],["0x10A0","0x10FF","Georgian"],["0x1100","0x11FF","Hangul Jamo"],["0x1200","0x137F","Ethiopic"],["0x1380","0x139F","Ethiopic Supplement"],["0x13A0","0x13FF","Cherokee"],["0x1400","0x167F","Unified Canadian Aboriginal Syllabics"],["0x1680","0x169F","Ogham"],["0x16A0","0x16FF","Runic"],["0x1700","0x171F","Tagalog"],["0x1720","0x173F","Hanunoo"],["0x1740","0x175F","Buhid"],["0x1760","0x177F","Tagbanwa"],["0x1780","0x17FF","Khmer"],["0x1800","0x18AF","Mongolian"],["0x1900","0x194F","Limbu"],["0x1950","0x197F","Tai Le"],["0x1980","0x19DF","New Tai Lue"],["0x19E0","0x19FF","Khmer Symbols"],["0x1A00","0x1A1F","Buginese"],["0x1D00","0x1D7F","Phonetic Extensions"],["0x1D80","0x1DBF","Phonetic Extensions Supplement"],["0x1DC0","0x1DFF","Combining Diacritical Marks Supplement"],["0x1E00","0x1EFF","Latin Extended Additional"],["0x1F00","0x1FFF","Greek Extended"],["0x2000","0x206F","General Punctuation"],["0x2070","0x209F","Superscripts and Subscripts"],["0x20A0","0x20CF","Currency Symbols"],["0x20D0","0x20FF","Combining Diacritical Marks for Symbols"],["0x2100","0x214F","Letterlike Symbols"],["0x2150","0x218F","Number Forms"],["0x2190","0x21FF","Arrows"],["0x2200","0x22FF","Mathematical Operators"],["0x2300","0x23FF","Miscellaneous Technical"],["0x2400","0x243F","Control Pictures"],["0x2440","0x245F","Optical Character Recognition"],["0x2460","0x24FF","Enclosed Alphanumerics"],["0x2500","0x257F","Box Drawing"],["0x2580","0x259F","Block Elements"],["0x25A0","0x25FF","Geometric Shapes"],["0x2600","0x26FF","Miscellaneous Symbols"],["0x2700","0x27BF","Dingbats"],["0x27C0","0x27EF","Miscellaneous Mathematical Symbols-A"],["0x27F0","0x27FF","Supplemental Arrows-A"],["0x2800","0x28FF","Braille Patterns"],["0x2900","0x297F","Supplemental Arrows-B"],["0x2980","0x29FF","Miscellaneous Mathematical Symbols-B"],["0x2A00","0x2AFF","Supplemental Mathematical Operators"],["0x2B00","0x2BFF","Miscellaneous Symbols and Arrows"],["0x2C00","0x2C5F","Glagolitic"],["0x2C80","0x2CFF","Coptic"],["0x2D00","0x2D2F","Georgian Supplement"],["0x2D30","0x2D7F","Tifinagh"],["0x2D80","0x2DDF","Ethiopic Extended"],["0x2E00","0x2E7F","Supplemental Punctuation"],["0x2E80","0x2EFF","CJK Radicals Supplement"],["0x2F00","0x2FDF","Kangxi Radicals"],["0x2FF0","0x2FFF","Ideographic Description Characters"],["0x3000","0x303F","CJK Symbols and Punctuation"],["0x3040","0x309F","Hiragana"],["0x30A0","0x30FF","Katakana"],["0x3100","0x312F","Bopomofo"],["0x3130","0x318F","Hangul Compatibility Jamo"],["0x3190","0x319F","Kanbun"],["0x31A0","0x31BF","Bopomofo Extended"],["0x31C0","0x31EF","CJK Strokes"],["0x31F0","0x31FF","Katakana Phonetic Extensions"],["0x3200","0x32FF","Enclosed CJK Letters and Months"],["0x3300","0x33FF","CJK Compatibility"],["0x3400","0x4DBF","CJK Unified Ideographs Extension A"],["0x4DC0","0x4DFF","Yijing Hexagram Symbols"],["0x4E00","0x9FFF","CJK Unified Ideographs"],["0xA000","0xA48F","Yi Syllables"],["0xA490","0xA4CF","Yi Radicals"],["0xA700","0xA71F","Modifier Tone Letters"],["0xA800","0xA82F","Syloti Nagri"],["0xAC00","0xD7AF","Hangul Syllables"],["0xD800","0xDB7F","High Surrogates"],["0xDB80","0xDBFF","High Private Use Surrogates"],["0xDC00","0xDFFF","Low Surrogates"],["0xE000","0xF8FF","Private Use Area"],["0xF900","0xFAFF","CJK Compatibility Ideographs"],["0xFB00","0xFB4F","Alphabetic Presentation Forms"],["0xFB50","0xFDFF","Arabic Presentation Forms-A"],["0xFE00","0xFE0F","Variation Selectors"],["0xFE10","0xFE1F","Vertical Forms"],["0xFE20","0xFE2F","Combining Half Marks"],["0xFE30","0xFE4F","CJK Compatibility Forms"],["0xFE50","0xFE6F","Small Form Variants"],["0xFE70","0xFEFF","Arabic Presentation Forms-B"],["0xFF00","0xFFEF","Halfwidth and Fullwidth Forms"],["0xFFF0","0xFFFF","Specials"],["0x10000","0x1007F","Linear B Syllabary"],["0x10080","0x100FF","Linear B Ideograms"],["0x10100","0x1013F","Aegean Numbers"],["0x10140","0x1018F","Ancient Greek Numbers"],["0x10300","0x1032F","Old Italic"],["0x10330","0x1034F","Gothic"],["0x10380","0x1039F","Ugaritic"],["0x103A0","0x103DF","Old Persian"],["0x10400","0x1044F","Deseret"],["0x10450","0x1047F","Shavian"],["0x10480","0x104AF","Osmanya"],["0x10800","0x1083F","Cypriot Syllabary"],["0x10A00","0x10A5F","Kharoshthi"],["0x1D000","0x1D0FF","Byzantine Musical Symbols"],["0x1D100","0x1D1FF","Musical Symbols"],["0x1D200","0x1D24F","Ancient Greek Musical Notation"],["0x1D300","0x1D35F","Tai Xuan Jing Symbols"],["0x1D400","0x1D7FF","Mathematical Alphanumeric Symbols"],["0x20000","0x2A6DF","CJK Unified Ideographs Extension B"],["0x2F800","0x2FA1F","CJK Compatibility Ideographs Supplement"],["0xE0000","0xE007F","Tags"],["0xE0100","0xE01EF","Variation Selectors Supplement"],["0xF0000","0xFFFFF","Supplementary Private Use Area-A"],["0x100000","0x10FFFF","Supplementary Private Use Area-B"]]
 
 /***/ }),
-/* 239 */
+/* 238 */
 /***/ (function(module, exports) {
 
 var Languages = module.exports = {
@@ -89119,28 +89118,28 @@ var Languages = module.exports = {
 };
 
 /***/ }),
-/* 240 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(13);
-var fromEvent_1 = __webpack_require__(241);
+var fromEvent_1 = __webpack_require__(240);
 Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 //# sourceMappingURL=fromEvent.js.map
 
 /***/ }),
-/* 241 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var FromEventObservable_1 = __webpack_require__(242);
+var FromEventObservable_1 = __webpack_require__(241);
 exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 //# sourceMappingURL=fromEvent.js.map
 
 /***/ }),
-/* 242 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89151,9 +89150,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(13);
-var tryCatch_1 = __webpack_require__(128);
-var isFunction_1 = __webpack_require__(83);
-var errorObject_1 = __webpack_require__(84);
+var tryCatch_1 = __webpack_require__(127);
+var isFunction_1 = __webpack_require__(82);
+var errorObject_1 = __webpack_require__(83);
 var Subscription_1 = __webpack_require__(40);
 var toString = Object.prototype.toString;
 function isNodeStyleEventEmitter(sourceObj) {
@@ -89362,17 +89361,17 @@ exports.FromEventObservable = FromEventObservable;
 //# sourceMappingURL=FromEventObservable.js.map
 
 /***/ }),
-/* 243 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ErrorObservable_1 = __webpack_require__(244);
+var ErrorObservable_1 = __webpack_require__(243);
 exports._throw = ErrorObservable_1.ErrorObservable.create;
 //# sourceMappingURL=throw.js.map
 
 /***/ }),
-/* 244 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89461,7 +89460,7 @@ exports.ErrorObservable = ErrorObservable;
 //# sourceMappingURL=ErrorObservable.js.map
 
 /***/ }),
-/* 245 */
+/* 244 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -89509,7 +89508,7 @@ var NavNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵccf */
 //# sourceMappingURL=nav.ngfactory.js.map
 
 /***/ }),
-/* 246 */
+/* 245 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -89524,13 +89523,13 @@ var icon = __webpack_require__(31);
 var config = __webpack_require__(1);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/badge/badge.js
-var badge = __webpack_require__(93);
+var badge = __webpack_require__(92);
 
 // EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
 var common = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab-button.js
-var tab_button = __webpack_require__(79);
+var tab_button = __webpack_require__(78);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/tabs/tab-button.ngfactory.js
 /**
@@ -89560,7 +89559,7 @@ var TabButtonNgFactory = core["_13" /* ɵccf */](".tab-button", tab_button["a" /
 
 //# sourceMappingURL=tab-button.ngfactory.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tab-highlight.js
-var tab_highlight = __webpack_require__(78);
+var tab_highlight = __webpack_require__(77);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
 var dom_controller = __webpack_require__(7);
@@ -89632,7 +89631,7 @@ var TabsNgFactory = core["_13" /* ɵccf */]("ion-tabs", tabs["a" /* Tabs */], Vi
 //# sourceMappingURL=tabs.ngfactory.js.map
 
 /***/ }),
-/* 247 */
+/* 246 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -89641,7 +89640,7 @@ var TabsNgFactory = core["_13" /* ɵccf */]("ion-tabs", tabs["a" /* Tabs */], Vi
 /* unused harmony export View_Tab_Host_0 */
 /* unused harmony export TabNgFactory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);

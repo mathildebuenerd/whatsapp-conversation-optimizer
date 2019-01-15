@@ -11,7 +11,6 @@ import { ContactProfilePage } from "../pages/contacts/contact-profile/contact-pr
 import { TabsPage } from "../pages/tabs-menu/tabs-menu";
 
 import { TextAnalysisService } from "../services/TextAnalysis.service";
-import { SentimentAnalysisService } from "../services/SentimentAnalysis.service";
 
 
 @NgModule({
@@ -38,7 +37,6 @@ import { SentimentAnalysisService } from "../services/SentimentAnalysis.service"
     StatusBar,
     SplashScreen,
     TextAnalysisService,
-    SentimentAnalysisService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
