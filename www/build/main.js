@@ -260,16 +260,27 @@ var home_HomePage = /** @class */ (function () {
         this.navCtrl = navCtrl;
         this.alertCtrl = alertCtrl;
         this.currentName = '';
-        // localStorage.removeItem("conversations");
-        console.log("conversations localStorage:", JSON.parse(localStorage.getItem("conversations")));
+        // If the localStorage is empty, we add "conversations" and "contactList" items
+        if (!JSON.parse(localStorage.getItem("conversations"))) {
+            // console.log("conversations n'existe pas");
+            var conversations = [];
+            localStorage.setItem('conversations', JSON.stringify(conversations));
+        }
+        if (!JSON.parse(localStorage.getItem("contactList"))) {
+            // We also create a contactList array
+            var contactList = [];
+            localStorage.setItem('contactList', JSON.stringify(contactList));
+        }
     }
     HomePage.prototype.scrapConversation = function () {
         var _this = this;
         var getContent = browser.tabs.executeScript(null, { file: '../assets/js/content.js' }).then(function (content) {
             console.log("promesse réussie");
             console.log(content);
-            _this.currentConversation = content;
-            _this.askForName();
+            _this.currentConversation = content[0]["messages"];
+            _this.currentName = content[0]["contactName"];
+            console.log("j'ai re\u00E7u comme content de la promesse:", content, content["messages"], content["contactName"]);
+            _this.askForLanguage();
             // console.log(JSON.parse(localStorage.getItem("conversations")));
             // console.log(JSON.parse(localStorage.getItem("conversations")));
         }).catch(function (error) {
@@ -279,57 +290,48 @@ var home_HomePage = /** @class */ (function () {
     HomePage.prototype.openAddContactForm = function () {
     };
     HomePage.prototype.addConversationToStorage = function (contactName, language) {
-        var conversations;
-        var contactList;
-        if (!JSON.parse(localStorage.getItem("conversations"))) {
-            console.log("conversations n'existe pas");
-            conversations = [];
-            localStorage.setItem('conversations', JSON.stringify(conversations));
-        }
-        if (!JSON.parse(localStorage.getItem("contactList"))) {
-            // We also create a contactList array
-            contactList = [];
-            localStorage.setItem('contactList', JSON.stringify(contactList));
-        }
         // as we can't "push()" into the localstorage
         // we have to first get all the content, modify it and then add it back to the localstorage
-        conversations = JSON.parse(localStorage.getItem('conversations'));
+        var conversations = JSON.parse(localStorage.getItem('conversations'));
         // console.log(conversations);
+        var isNew = true;
         for (var _i = 0, conversations_1 = conversations; _i < conversations_1.length; _i++) {
             var contact = conversations_1[_i];
-            if (contact[name] === contactName) {
-                // If we have already added that contact, we remove it before adding it again
-                // In order to avoid duplication
-                conversations.pop(contact);
+            if (contact.name == contactName) {
+                console.log("contact[name]", contact.name);
+                console.log("contactName", contactName);
+                // If we have already added that contact, we update the already existing entry instead of adding a new one
+                contact.language = language;
+                contact.messages = this.currentConversation;
+                isNew = false; // as the contact was already in the list, we set isNew to false so that it will not be added once again
                 break;
             }
         }
-        conversations.push({
-            name: contactName,
-            language: language,
-            messages: this.currentConversation
-        });
-        contactList = JSON.parse(localStorage.getItem('contactList'));
+        if (isNew) {
+            // If it's the first time we see that contact, then we add a new entry
+            conversations.push({
+                name: contactName,
+                language: language,
+                messages: this.currentConversation
+            });
+        }
+        var contactList = JSON.parse(localStorage.getItem('contactList'));
         contactList.push(contactName);
         localStorage.setItem("conversations", JSON.stringify(conversations));
         localStorage.setItem('contactList', JSON.stringify(contactList));
         console.log(JSON.parse(localStorage.getItem("conversations")));
-        // this.currentName = "";
+        this.currentName = "";
         this.currentConversation = "";
     };
-    HomePage.prototype.askForName = function () {
+    HomePage.prototype.askForLanguage = function () {
         var _this = this;
         var promptAlert = this.alertCtrl.create({
-            title: 'Remember that conversation',
-            message: 'Enter contact name and language of the conversation',
+            title: "Add conversation with " + this.currentName,
+            message: 'What language it is?',
             inputs: [
                 {
-                    name: 'contact-name',
-                    placeholder: 'Julien'
-                },
-                {
                     name: 'language',
-                    placeholder: "enter the code, eg 'en' for english",
+                    placeholder: "en",
                     value: 'en'
                 }
             ],
@@ -337,9 +339,9 @@ var home_HomePage = /** @class */ (function () {
                 {
                     text: 'Save conversation',
                     handler: function (data) {
-                        console.log("data:", data);
+                        // console.log(`data:`, data);
                         // this.currentName = data['contact-name'];
-                        _this.addConversationToStorage(data['contact-name'], data['language']);
+                        _this.addConversationToStorage(_this.currentName, data['language']);
                     }
                 }
             ]

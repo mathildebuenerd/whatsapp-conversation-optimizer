@@ -13,8 +13,20 @@ export class HomePage {
   constructor(public navCtrl: NavController,
               public alertCtrl: AlertController) {
     this.currentName = '';
-    // localStorage.removeItem("conversations");
-    console.log(`conversations localStorage:`, JSON.parse(localStorage.getItem("conversations")));
+
+    // If the localStorage is empty, we add "conversations" and "contactList" items
+    if (!JSON.parse(localStorage.getItem("conversations"))) {
+      // console.log("conversations n'existe pas");
+      const conversations = [];
+      localStorage.setItem('conversations', JSON.stringify(conversations));
+    }
+
+    if (!JSON.parse(localStorage.getItem("contactList"))) {
+      // We also create a contactList array
+      const contactList = [];
+      localStorage.setItem('contactList', JSON.stringify(contactList));
+    }
+
   }
 
   scrapConversation(): void {
@@ -23,8 +35,10 @@ export class HomePage {
       console.log("promesse réussie");
       console.log(content);
 
-      this.currentConversation = content;
-      this.askForName();
+      this.currentConversation = content[0]["messages"];
+      this.currentName = content[0]["contactName"];
+      console.log(`j'ai reçu comme content de la promesse:`, content, content["messages"], content["contactName"]);
+      this.askForLanguage();
 
       // console.log(JSON.parse(localStorage.getItem("conversations")));
       // console.log(JSON.parse(localStorage.getItem("conversations")));
@@ -38,41 +52,37 @@ export class HomePage {
   }
 
   addConversationToStorage(contactName, language) {
-    let conversations;
-    let contactList;
-    if (!JSON.parse(localStorage.getItem("conversations"))) {
-      console.log("conversations n'existe pas");
-      conversations = [];
-      localStorage.setItem('conversations', JSON.stringify(conversations));
-    }
-
-    if (!JSON.parse(localStorage.getItem("contactList"))) {
-      // We also create a contactList array
-      contactList = [];
-      localStorage.setItem('contactList', JSON.stringify(contactList));
-    }
 
 
     // as we can't "push()" into the localstorage
     // we have to first get all the content, modify it and then add it back to the localstorage
-    conversations = JSON.parse(localStorage.getItem('conversations'));
+    let conversations = JSON.parse(localStorage.getItem('conversations'));
     // console.log(conversations);
 
+    let isNew = true;
+
     for (const contact of conversations) {
-      if (contact[name] === contactName) {
-        // If we have already added that contact, we remove it before adding it again
-        // In order to avoid duplication
-        conversations.pop(contact);
+      if (contact.name == contactName) {
+        // If we have already added that contact, we update the already existing entry instead of adding a new one
+        contact.language = language;
+        contact.messages = this.currentConversation;
+        isNew = false; // as the contact was already in the list, we set isNew to false so that it will not be added once again
         break;
       }
     }
-    conversations.push({
-      name: contactName,
-      language: language,
-      messages: this.currentConversation
-    });
 
-    contactList = JSON.parse(localStorage.getItem('contactList'));
+    if (isNew) {
+      // If it's the first time we see that contact, then we add a new entry
+      conversations.push({
+        name: contactName,
+        language: language,
+        messages: this.currentConversation
+      });
+    }
+
+
+
+    const contactList = JSON.parse(localStorage.getItem('contactList'));
     contactList.push(contactName);
 
     localStorage.setItem("conversations", JSON.stringify(conversations));
@@ -80,24 +90,21 @@ export class HomePage {
     console.log(JSON.parse(localStorage.getItem("conversations")));
 
 
-    // this.currentName = "";
+    this.currentName = "";
     this.currentConversation = "";
   }
 
 
 
-  private askForName() {
+  private askForLanguage() {
+
     const promptAlert = this.alertCtrl.create({
-      title: 'Remember that conversation',
-      message: 'Enter contact name and language of the conversation',
+      title: `Add conversation with ${this.currentName}`,
+      message: 'What language it is?',
       inputs: [
         {
-          name: 'contact-name',
-          placeholder: 'Julien'
-        },
-        {
           name: 'language',
-          placeholder: `enter the code, eg 'en' for english`,
+          placeholder: `en`,
           value: 'en'
         }
       ],
@@ -105,9 +112,9 @@ export class HomePage {
         {
           text: 'Save conversation',
           handler: data => {
-            console.log(`data:`, data);
+            // console.log(`data:`, data);
             // this.currentName = data['contact-name'];
-            this.addConversationToStorage(data['contact-name'], data['language']);
+            this.addConversationToStorage(this.currentName, data['language']);
           }
         }
       ]

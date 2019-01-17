@@ -67,8 +67,7 @@
         }
         
         .machine-message p {
-          letter-spacing: 2px;
-          font: 2em monospace;
+          font: 1.2em "GT America Mono";
           animation: machineMessage 1s ease infinite;
         }
         
@@ -131,7 +130,15 @@
     toggleProcessingAnimation();
 
     let messages = getMessages();
-    return messages;
+
+    // Get the contact name as it is registered in the phone
+    const contactName = document.querySelector('header ._1wjpf').textContent;
+
+
+    return {
+      contactName: contactName,
+      messages: messages
+    };
 
     function getEmojis(message) {
       // In whatsapp, the emojis are displayed as an image
@@ -149,12 +156,12 @@
           const emoji = item.attributes[`alt`].nodeValue;
           emojiList.push(emoji);
         } else {
-          console.warn(`This item doesn't have an 'alt' attribute :`, item);
+          console.warn(`This item doesn't have an 'alt' attribute, and that's what we use for getting the emoji code:`, item);
         }
 
       }
 
-      console.log("emojiList", emojiList);
+      // console.log("emojiList", emojiList);
       return emojiList;
 
 
