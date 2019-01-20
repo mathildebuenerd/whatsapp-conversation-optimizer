@@ -17,7 +17,7 @@ export class TextAnalysisService {
     const allConversations = JSON.parse(localStorage.getItem("conversations"));
     for (const conversation of allConversations) {
       if (conversation.hasOwnProperty("name")) {
-        if (conversation.name === contact) {
+        if (conversation.name == contact) {
           return conversation;
         }
       }
@@ -61,10 +61,10 @@ export class TextAnalysisService {
   getEmojis(contact: string) {
 
     const data = this.findConversation(contact);
-    // console.log(`data in getEmojis:`, data);
+    console.log(`data in getEmojis:`, data);
     // console.log(data.messages);
-    const emojiIn = this.countEmojis(data.messages[0].messagesIn);
-    const emojiOut = this.countEmojis(data.messages[0].messagesOut);
+    const emojiIn = this.countEmojis(data.messages.messagesIn);
+    const emojiOut = this.countEmojis(data.messages.messagesOut);
 
     // Returns all the infomations needed for adding it to localStorage
     return {

@@ -27,6 +27,7 @@ export class HomePage {
       localStorage.setItem('contactList', JSON.stringify(contactList));
     }
 
+
   }
 
   scrapConversation(): void {
@@ -43,7 +44,7 @@ export class HomePage {
       // console.log(JSON.parse(localStorage.getItem("conversations")));
       // console.log(JSON.parse(localStorage.getItem("conversations")));
     }).catch((error) => {
-      console.log("promesse échouée", error);
+      console.warn("promesse échouée", error);
     });
   }
 
@@ -60,6 +61,7 @@ export class HomePage {
     // console.log(conversations);
 
     let isNew = true;
+
 
     for (const contact of conversations) {
       if (contact.name == contactName) {
@@ -78,15 +80,18 @@ export class HomePage {
         language: language,
         messages: this.currentConversation
       });
+
+      // And we also add it to the contactList
+      const contactList = JSON.parse(localStorage.getItem('contactList'));
+      contactList.push(contactName);
+      localStorage.setItem('contactList', JSON.stringify(contactList));
     }
 
 
 
-    const contactList = JSON.parse(localStorage.getItem('contactList'));
-    contactList.push(contactName);
+
 
     localStorage.setItem("conversations", JSON.stringify(conversations));
-    localStorage.setItem('contactList', JSON.stringify(contactList));
     console.log(JSON.parse(localStorage.getItem("conversations")));
 
 

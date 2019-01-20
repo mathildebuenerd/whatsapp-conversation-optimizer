@@ -284,7 +284,7 @@ var home_HomePage = /** @class */ (function () {
             // console.log(JSON.parse(localStorage.getItem("conversations")));
             // console.log(JSON.parse(localStorage.getItem("conversations")));
         }).catch(function (error) {
-            console.log("promesse échouée", error);
+            console.warn("promesse échouée", error);
         });
     };
     HomePage.prototype.openAddContactForm = function () {
@@ -298,8 +298,6 @@ var home_HomePage = /** @class */ (function () {
         for (var _i = 0, conversations_1 = conversations; _i < conversations_1.length; _i++) {
             var contact = conversations_1[_i];
             if (contact.name == contactName) {
-                console.log("contact[name]", contact.name);
-                console.log("contactName", contactName);
                 // If we have already added that contact, we update the already existing entry instead of adding a new one
                 contact.language = language;
                 contact.messages = this.currentConversation;
@@ -314,11 +312,12 @@ var home_HomePage = /** @class */ (function () {
                 language: language,
                 messages: this.currentConversation
             });
+            // And we also add it to the contactList
+            var contactList = JSON.parse(localStorage.getItem('contactList'));
+            contactList.push(contactName);
+            localStorage.setItem('contactList', JSON.stringify(contactList));
         }
-        var contactList = JSON.parse(localStorage.getItem('contactList'));
-        contactList.push(contactName);
         localStorage.setItem("conversations", JSON.stringify(conversations));
-        localStorage.setItem('contactList', JSON.stringify(contactList));
         console.log(JSON.parse(localStorage.getItem("conversations")));
         this.currentName = "";
         this.currentConversation = "";
@@ -961,7 +960,7 @@ var TextAnalysisService = /** @class */ (function () {
         for (var _i = 0, allConversations_1 = allConversations; _i < allConversations_1.length; _i++) {
             var conversation = allConversations_1[_i];
             if (conversation.hasOwnProperty("name")) {
-                if (conversation.name === contact) {
+                if (conversation.name == contact) {
                     return conversation;
                 }
             }
@@ -1001,10 +1000,10 @@ var TextAnalysisService = /** @class */ (function () {
     };
     TextAnalysisService.prototype.getEmojis = function (contact) {
         var data = this.findConversation(contact);
-        // console.log(`data in getEmojis:`, data);
+        console.log("data in getEmojis:", data);
         // console.log(data.messages);
-        var emojiIn = this.countEmojis(data.messages[0].messagesIn);
-        var emojiOut = this.countEmojis(data.messages[0].messagesOut);
+        var emojiIn = this.countEmojis(data.messages.messagesIn);
+        var emojiOut = this.countEmojis(data.messages.messagesOut);
         // Returns all the infomations needed for adding it to localStorage
         return {
             name: contact,
