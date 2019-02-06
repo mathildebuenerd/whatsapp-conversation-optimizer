@@ -10,10 +10,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 4 modules
-var ionic_angular = __webpack_require__(44);
+var ionic_angular = __webpack_require__(38);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contact-profile/contact-profile.ts
-var contact_profile = __webpack_require__(55);
+var contact_profile = __webpack_require__(45);
 
 // EXTERNAL MODULE: ./src/services/TextAnalysis.service.ts
 var TextAnalysis_service = __webpack_require__(56);
@@ -89,7 +89,7 @@ var esm5_forms = __webpack_require__(19);
 var ionic_angular_module = __webpack_require__(123);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
-var module_loader = __webpack_require__(38);
+var module_loader = __webpack_require__(39);
 
 // CONCATENATED MODULE: ./src/pages/contacts/contact-profile/contact-profile.module.ngfactory.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactProfilePageModuleNgFactory", function() { return ContactProfilePageModuleNgFactory; });

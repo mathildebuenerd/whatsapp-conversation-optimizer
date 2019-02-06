@@ -368,9 +368,9 @@
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subscription__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subscription__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subscription___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Subscription__);
 /**
  * @license Angular v5.2.11
@@ -21906,7 +21906,7 @@ var core = __webpack_require__(0);
 var platform_browser = __webpack_require__(34);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-constants.js
-var app_constants = __webpack_require__(47);
+var app_constants = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config = __webpack_require__(1);
@@ -21927,7 +21927,7 @@ var animation = __webpack_require__(16);
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/page-transition.js
-var page_transition = __webpack_require__(41);
+var page_transition = __webpack_require__(42);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/transitions/transition-ios.js
 var __extends = (this && this.__extends) || (function () {
@@ -29968,7 +29968,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Version */]
 /* unused harmony export getNavFromTree */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav_util__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__url_serializer__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__url_serializer__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__view_controller__ = __webpack_require__(4);
 
 
@@ -30750,7 +30750,7 @@ var NavController = (function () {
 
 "use strict";
 
-var root_1 = __webpack_require__(39);
+var root_1 = __webpack_require__(40);
 var toSubscriber_1 = __webpack_require__(202);
 var observable_1 = __webpack_require__(129);
 var pipe_1 = __webpack_require__(204);
@@ -32728,8 +32728,8 @@ var Button = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_form__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__icon_icon__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ion__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__label_label__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__item_reorder__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__label_label__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__item_reorder__ = __webpack_require__(43);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -50029,7 +50029,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isFunction_1 = __webpack_require__(82);
-var Subscription_1 = __webpack_require__(40);
+var Subscription_1 = __webpack_require__(41);
 var Observer_1 = __webpack_require__(128);
 var rxSubscriber_1 = __webpack_require__(84);
 /**
@@ -50504,1524 +50504,9 @@ var Toolbar = (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LAZY_LOADED_TOKEN; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ModuleLoader; });
-/* harmony export (immutable) */ __webpack_exports__["c"] = provideModuleLoader;
-/* unused harmony export setupPreloadingImplementation */
-/* harmony export (immutable) */ __webpack_exports__["d"] = setupPreloading;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(2);
-
-
-
-var LAZY_LOADED_TOKEN = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* InjectionToken */]('LZYCMP');
-/**
- * @hidden
- */
-var ModuleLoader = (function () {
-    function ModuleLoader(_ngModuleLoader, _injector) {
-        this._ngModuleLoader = _ngModuleLoader;
-        this._injector = _injector;
-        /** @internal */
-        this._cfrMap = new Map();
-        this._promiseMap = new Map();
-    }
-    ModuleLoader.prototype.load = function (modulePath) {
-        var _this = this;
-        (void 0) /* console.time */;
-        var splitString = modulePath.split(SPLITTER);
-        var promise = this._promiseMap.get(modulePath);
-        if (!promise) {
-            promise = this._ngModuleLoader.load(splitString[0], splitString[1]);
-            this._promiseMap.set(modulePath, promise);
-        }
-        return promise.then(function (loadedModule) {
-            (void 0) /* console.timeEnd */;
-            var ref = loadedModule.create(_this._injector);
-            var component = ref.injector.get(LAZY_LOADED_TOKEN);
-            _this._cfrMap.set(component, ref.componentFactoryResolver);
-            return {
-                componentFactoryResolver: ref.componentFactoryResolver,
-                component: component
-            };
-        });
-    };
-    ModuleLoader.prototype.getComponentFactoryResolver = function (component) {
-        return this._cfrMap.get(component);
-    };
-    ModuleLoader.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Injectable */] },
-    ];
-    /** @nocollapse */
-    ModuleLoader.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__["a" /* NgModuleLoader */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injector */], },
-    ]; };
-    return ModuleLoader;
-}());
-
-var SPLITTER = '#';
-/**
- * @hidden
- */
-function provideModuleLoader(ngModuleLoader, injector) {
-    return new ModuleLoader(ngModuleLoader, injector);
-}
-/**
- * @hidden
- */
-function setupPreloadingImplementation(config, deepLinkConfig, moduleLoader) {
-    if (!deepLinkConfig || !deepLinkConfig.links || !config.getBoolean('preloadModules')) {
-        return Promise.resolve();
-    }
-    var linksToLoad = deepLinkConfig.links.filter(function (link) { return !!link.loadChildren && link.priority !== 'off'; });
-    // Load the high priority modules first
-    var highPriorityPromises = linksToLoad
-        .filter(function (link) { return link.priority === 'high'; })
-        .map(function (link) { return moduleLoader.load(link.loadChildren); });
-    return Promise.all(highPriorityPromises).then(function () {
-        // Load the low priority modules after the high priority are done
-        var lowPriorityPromises = linksToLoad
-            .filter(function (link) { return link.priority === 'low'; })
-            .map(function (link) { return moduleLoader.load(link.loadChildren); });
-        return Promise.all(lowPriorityPromises);
-    }).catch(function (err) {
-        console.error(err.message);
-    });
-}
-/**
- * @hidden
- */
-function setupPreloading(config, deepLinkConfig, moduleLoader, ngZone) {
-    return function () {
-        Object(__WEBPACK_IMPORTED_MODULE_2__util__["s" /* requestIonicCallback */])(function () {
-            ngZone.runOutsideAngular(function () {
-                setupPreloadingImplementation(config, deepLinkConfig, moduleLoader);
-            });
-        });
-    };
-}
-//# sourceMappingURL=module-loader.js.map
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {
-// CommonJS / Node have global context exposed as "global" variable.
-// We don't want to include the whole node.d.ts this this compilation unit so we'll just fake
-// the global "global" var for now.
-var __window = typeof window !== 'undefined' && window;
-var __self = typeof self !== 'undefined' && typeof WorkerGlobalScope !== 'undefined' &&
-    self instanceof WorkerGlobalScope && self;
-var __global = typeof global !== 'undefined' && global;
-var _root = __window || __global || __self;
-exports.root = _root;
-// Workaround Closure Compiler restriction: The body of a goog.module cannot use throw.
-// This is needed when used with angular/tsickle which inserts a goog.module statement.
-// Wrap in IIFE
-(function () {
-    if (!_root) {
-        throw new Error('RxJS could not find any global context (window, self, global)');
-    }
-})();
-//# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(124)))
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var isArray_1 = __webpack_require__(125);
-var isObject_1 = __webpack_require__(126);
-var isFunction_1 = __webpack_require__(82);
-var tryCatch_1 = __webpack_require__(127);
-var errorObject_1 = __webpack_require__(83);
-var UnsubscriptionError_1 = __webpack_require__(203);
-/**
- * Represents a disposable resource, such as the execution of an Observable. A
- * Subscription has one important method, `unsubscribe`, that takes no argument
- * and just disposes the resource held by the subscription.
- *
- * Additionally, subscriptions may be grouped together through the `add()`
- * method, which will attach a child Subscription to the current Subscription.
- * When a Subscription is unsubscribed, all its children (and its grandchildren)
- * will be unsubscribed as well.
- *
- * @class Subscription
- */
-var Subscription = (function () {
-    /**
-     * @param {function(): void} [unsubscribe] A function describing how to
-     * perform the disposal of resources when the `unsubscribe` method is called.
-     */
-    function Subscription(unsubscribe) {
-        /**
-         * A flag to indicate whether this Subscription has already been unsubscribed.
-         * @type {boolean}
-         */
-        this.closed = false;
-        this._parent = null;
-        this._parents = null;
-        this._subscriptions = null;
-        if (unsubscribe) {
-            this._unsubscribe = unsubscribe;
-        }
-    }
-    /**
-     * Disposes the resources held by the subscription. May, for instance, cancel
-     * an ongoing Observable execution or cancel any other type of work that
-     * started when the Subscription was created.
-     * @return {void}
-     */
-    Subscription.prototype.unsubscribe = function () {
-        var hasErrors = false;
-        var errors;
-        if (this.closed) {
-            return;
-        }
-        var _a = this, _parent = _a._parent, _parents = _a._parents, _unsubscribe = _a._unsubscribe, _subscriptions = _a._subscriptions;
-        this.closed = true;
-        this._parent = null;
-        this._parents = null;
-        // null out _subscriptions first so any child subscriptions that attempt
-        // to remove themselves from this subscription will noop
-        this._subscriptions = null;
-        var index = -1;
-        var len = _parents ? _parents.length : 0;
-        // if this._parent is null, then so is this._parents, and we
-        // don't have to remove ourselves from any parent subscriptions.
-        while (_parent) {
-            _parent.remove(this);
-            // if this._parents is null or index >= len,
-            // then _parent is set to null, and the loop exits
-            _parent = ++index < len && _parents[index] || null;
-        }
-        if (isFunction_1.isFunction(_unsubscribe)) {
-            var trial = tryCatch_1.tryCatch(_unsubscribe).call(this);
-            if (trial === errorObject_1.errorObject) {
-                hasErrors = true;
-                errors = errors || (errorObject_1.errorObject.e instanceof UnsubscriptionError_1.UnsubscriptionError ?
-                    flattenUnsubscriptionErrors(errorObject_1.errorObject.e.errors) : [errorObject_1.errorObject.e]);
-            }
-        }
-        if (isArray_1.isArray(_subscriptions)) {
-            index = -1;
-            len = _subscriptions.length;
-            while (++index < len) {
-                var sub = _subscriptions[index];
-                if (isObject_1.isObject(sub)) {
-                    var trial = tryCatch_1.tryCatch(sub.unsubscribe).call(sub);
-                    if (trial === errorObject_1.errorObject) {
-                        hasErrors = true;
-                        errors = errors || [];
-                        var err = errorObject_1.errorObject.e;
-                        if (err instanceof UnsubscriptionError_1.UnsubscriptionError) {
-                            errors = errors.concat(flattenUnsubscriptionErrors(err.errors));
-                        }
-                        else {
-                            errors.push(err);
-                        }
-                    }
-                }
-            }
-        }
-        if (hasErrors) {
-            throw new UnsubscriptionError_1.UnsubscriptionError(errors);
-        }
-    };
-    /**
-     * Adds a tear down to be called during the unsubscribe() of this
-     * Subscription.
-     *
-     * If the tear down being added is a subscription that is already
-     * unsubscribed, is the same reference `add` is being called on, or is
-     * `Subscription.EMPTY`, it will not be added.
-     *
-     * If this subscription is already in an `closed` state, the passed
-     * tear down logic will be executed immediately.
-     *
-     * @param {TeardownLogic} teardown The additional logic to execute on
-     * teardown.
-     * @return {Subscription} Returns the Subscription used or created to be
-     * added to the inner subscriptions list. This Subscription can be used with
-     * `remove()` to remove the passed teardown logic from the inner subscriptions
-     * list.
-     */
-    Subscription.prototype.add = function (teardown) {
-        if (!teardown || (teardown === Subscription.EMPTY)) {
-            return Subscription.EMPTY;
-        }
-        if (teardown === this) {
-            return this;
-        }
-        var subscription = teardown;
-        switch (typeof teardown) {
-            case 'function':
-                subscription = new Subscription(teardown);
-            case 'object':
-                if (subscription.closed || typeof subscription.unsubscribe !== 'function') {
-                    return subscription;
-                }
-                else if (this.closed) {
-                    subscription.unsubscribe();
-                    return subscription;
-                }
-                else if (typeof subscription._addParent !== 'function' /* quack quack */) {
-                    var tmp = subscription;
-                    subscription = new Subscription();
-                    subscription._subscriptions = [tmp];
-                }
-                break;
-            default:
-                throw new Error('unrecognized teardown ' + teardown + ' added to Subscription.');
-        }
-        var subscriptions = this._subscriptions || (this._subscriptions = []);
-        subscriptions.push(subscription);
-        subscription._addParent(this);
-        return subscription;
-    };
-    /**
-     * Removes a Subscription from the internal list of subscriptions that will
-     * unsubscribe during the unsubscribe process of this Subscription.
-     * @param {Subscription} subscription The subscription to remove.
-     * @return {void}
-     */
-    Subscription.prototype.remove = function (subscription) {
-        var subscriptions = this._subscriptions;
-        if (subscriptions) {
-            var subscriptionIndex = subscriptions.indexOf(subscription);
-            if (subscriptionIndex !== -1) {
-                subscriptions.splice(subscriptionIndex, 1);
-            }
-        }
-    };
-    Subscription.prototype._addParent = function (parent) {
-        var _a = this, _parent = _a._parent, _parents = _a._parents;
-        if (!_parent || _parent === parent) {
-            // If we don't have a parent, or the new parent is the same as the
-            // current parent, then set this._parent to the new parent.
-            this._parent = parent;
-        }
-        else if (!_parents) {
-            // If there's already one parent, but not multiple, allocate an Array to
-            // store the rest of the parent Subscriptions.
-            this._parents = [parent];
-        }
-        else if (_parents.indexOf(parent) === -1) {
-            // Only add the new parent to the _parents list if it's not already there.
-            _parents.push(parent);
-        }
-    };
-    Subscription.EMPTY = (function (empty) {
-        empty.closed = true;
-        return empty;
-    }(new Subscription()));
-    return Subscription;
-}());
-exports.Subscription = Subscription;
-function flattenUnsubscriptionErrors(errors) {
-    return errors.reduce(function (errs, err) { return errs.concat((err instanceof UnsubscriptionError_1.UnsubscriptionError) ? err.errors : err); }, []);
-}
-//# sourceMappingURL=Subscription.js.map
-
-/***/ }),
-/* 41 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageTransition; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transition__ = __webpack_require__(36);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-/**
- * @hidden
- */
-var PageTransition = (function (_super) {
-    __extends(PageTransition, _super);
-    function PageTransition() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    PageTransition.prototype.init = function () {
-        var _this = this;
-        if (this.enteringView) {
-            this.enteringPage = new __WEBPACK_IMPORTED_MODULE_0__animations_animation__["a" /* Animation */](this.plt, this.enteringView.pageRef());
-            this.add(this.enteringPage.beforeAddClass('show-page'));
-            // Resize content before transition starts
-            this.beforeAddRead(function () {
-                _this.enteringView.readReady.emit();
-            });
-            this.beforeAddWrite(function () {
-                _this.enteringView.writeReady.emit();
-            });
-        }
-    };
-    PageTransition.prototype.destroy = function () {
-        _super.prototype.destroy.call(this);
-        this.enteringPage && this.enteringPage.destroy();
-        this.enteringPage = null;
-    };
-    return PageTransition;
-}(__WEBPACK_IMPORTED_MODULE_1__transition__["a" /* Transition */]));
-
-//# sourceMappingURL=page-transition.js.map
-
-/***/ }),
-/* 42 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
-var core = __webpack_require__(0);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
-var content = __webpack_require__(20);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
-var dom_controller = __webpack_require__(7);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
-var util = __webpack_require__(2);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder-util.js
-var item_reorder_util = __webpack_require__(142);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
-var dom = __webpack_require__(14);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/ui-event-manager.js
-var ui_event_manager = __webpack_require__(29);
-
-// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/item-reorder-gesture.js
-
-
-
-/**
- * @hidden
- */
-var item_reorder_gesture_ItemReorderGesture = (function () {
-    function ItemReorderGesture(plt, reorderList) {
-        this.plt = plt;
-        this.reorderList = reorderList;
-        this.selectedItemEle = null;
-        this.events = new ui_event_manager["a" /* UIEventManager */](plt);
-        this.events.pointerEvents({
-            element: this.reorderList.getNativeElement(),
-            pointerDown: this.onDragStart.bind(this),
-            pointerMove: this.onDragMove.bind(this),
-            pointerUp: this.onDragEnd.bind(this),
-            zone: false
-        });
-    }
-    ItemReorderGesture.prototype.onDragStart = function (ev) {
-        if (this.selectedItemEle) {
-            return false;
-        }
-        var reorderElement = ev.target;
-        if (reorderElement.nodeName !== 'ION-REORDER') {
-            return false;
-        }
-        var reorderMark = reorderElement['$ionComponent'];
-        if (!reorderMark) {
-            console.error('ion-reorder does not contain $ionComponent');
-            return false;
-        }
-        this.reorderList._reorderPrepare();
-        var item = reorderMark.getReorderNode();
-        if (!item) {
-            console.error('reorder node not found');
-            return false;
-        }
-        ev.preventDefault();
-        // Preparing state
-        this.selectedItemEle = item;
-        this.selectedItemHeight = item.offsetHeight;
-        this.lastYcoord = -100;
-        this.lastToIndex = Object(item_reorder_util["b" /* indexForItem */])(item);
-        this.windowHeight = this.plt.height() - AUTO_SCROLL_MARGIN;
-        this.lastScrollPosition = this.reorderList._scrollContent(0);
-        this.offset = Object(dom["f" /* pointerCoord */])(ev);
-        this.offset.y += this.lastScrollPosition;
-        item.classList.add(ITEM_REORDER_ACTIVE);
-        this.reorderList._reorderStart();
-        return true;
-    };
-    ItemReorderGesture.prototype.onDragMove = function (ev) {
-        var selectedItem = this.selectedItemEle;
-        if (!selectedItem) {
-            return;
-        }
-        ev.preventDefault();
-        // Get coordinate
-        var coord = Object(dom["f" /* pointerCoord */])(ev);
-        var posY = coord.y;
-        // Scroll if we reach the scroll margins
-        var scrollPosition = this.scroll(posY);
-        // Only perform hit test if we moved at least 30px from previous position
-        if (Math.abs(posY - this.lastYcoord) > 30) {
-            var overItem = this.itemForCoord(coord);
-            if (overItem) {
-                var toIndex = Object(item_reorder_util["b" /* indexForItem */])(overItem);
-                if (toIndex !== undefined && (toIndex !== this.lastToIndex || this.emptyZone)) {
-                    var fromIndex = Object(item_reorder_util["b" /* indexForItem */])(selectedItem);
-                    this.lastToIndex = toIndex;
-                    this.lastYcoord = posY;
-                    this.emptyZone = false;
-                    this.reorderList._reorderMove(fromIndex, toIndex, this.selectedItemHeight);
-                }
-            }
-            else {
-                this.emptyZone = true;
-            }
-        }
-        // Update selected item position
-        var ydiff = Math.round(posY - this.offset.y + scrollPosition);
-        selectedItem.style[this.plt.Css.transform] = "translateY(" + ydiff + "px)";
-    };
-    ItemReorderGesture.prototype.onDragEnd = function (ev) {
-        var _this = this;
-        var selectedItem = this.selectedItemEle;
-        if (!selectedItem) {
-            return;
-        }
-        if (ev) {
-            ev.preventDefault();
-            ev.stopPropagation();
-        }
-        var toIndex = this.lastToIndex;
-        var fromIndex = Object(item_reorder_util["b" /* indexForItem */])(selectedItem);
-        var reorderInactive = function () {
-            _this.selectedItemEle.style.transition = '';
-            _this.selectedItemEle.classList.remove(ITEM_REORDER_ACTIVE);
-            _this.selectedItemEle = null;
-        };
-        if (toIndex === fromIndex) {
-            selectedItem.style.transition = 'transform 200ms ease-in-out';
-            setTimeout(reorderInactive, 200);
-        }
-        else {
-            reorderInactive();
-        }
-        this.reorderList._reorderEmit(fromIndex, toIndex);
-    };
-    ItemReorderGesture.prototype.itemForCoord = function (coord) {
-        var sideOffset = this.reorderList._isStart === this.plt.isRTL ? -100 : 100;
-        var x = this.offset.x + sideOffset;
-        var y = coord.y;
-        var element = this.plt.getElementFromPoint(x, y);
-        return Object(item_reorder_util["a" /* findReorderItem */])(element, this.reorderList.getNativeElement());
-    };
-    ItemReorderGesture.prototype.scroll = function (posY) {
-        if (posY < AUTO_SCROLL_MARGIN) {
-            this.lastScrollPosition = this.reorderList._scrollContent(-SCROLL_JUMP);
-        }
-        else if (posY > this.windowHeight) {
-            this.lastScrollPosition = this.reorderList._scrollContent(SCROLL_JUMP);
-        }
-        return this.lastScrollPosition;
-    };
-    /**
-     * @hidden
-     */
-    ItemReorderGesture.prototype.destroy = function () {
-        this.onDragEnd(null);
-        this.events.destroy();
-        this.events = null;
-        this.reorderList = null;
-    };
-    return ItemReorderGesture;
-}());
-
-var AUTO_SCROLL_MARGIN = 60;
-var SCROLL_JUMP = 10;
-var ITEM_REORDER_ACTIVE = 'reorder-active';
-//# sourceMappingURL=item-reorder-gesture.js.map
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
-var platform = __webpack_require__(3);
-
-// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js
-/* unused harmony export ReorderIndexes */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return item_reorder_ItemReorder; });
-
-
-
-
-
-
-var item_reorder_ReorderIndexes = (function () {
-    function ReorderIndexes(from, to) {
-        this.from = from;
-        this.to = to;
-    }
-    ReorderIndexes.prototype.applyTo = function (array) {
-        Object(util["r" /* reorderArray */])(array, this);
-    };
-    return ReorderIndexes;
-}());
-
-/**
- * @name ItemReorder
- * @description
- * Item reorder adds the ability to change an item's order in a group.
- * It can be used within an `ion-list` or `ion-item-group` to provide a
- * visual drag and drop interface.
- *
- * ## Grouping Items
- *
- * All reorderable items must be grouped in the same element. If an item
- * should not be reordered, it shouldn't be included in this group. For
- * example, the following code works because the items are grouped in the
- * `<ion-list>`:
- *
- *  ```html
- *  <ion-list reorder="true">
- *    <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
- *  </ion-list>
- *  ```
- *
- * However, the below list includes a header that shouldn't be reordered:
- *
- *  ```html
- *  <ion-list reorder="true">
- *    <ion-list-header>Header</ion-list-header>
- *    <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
- *  </ion-list>
- *  ```
- *
- * In order to mix different sets of items, `ion-item-group` should be used to
- * group the reorderable items:
- *
- *  ```html
- *  <ion-list>
- *    <ion-list-header>Header</ion-list-header>
- *    <ion-item-group reorder="true">
- *      <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
- *    </ion-item-group>
- *  </ion-list>
- *  ```
- *
- * It's important to note that in this example, the `[reorder]` directive is applied to
- * the `<ion-item-group>` instead of the `<ion-list>`. This way makes it possible to
- * mix items that should and shouldn't be reordered.
- *
- *
- * ## Implementing the Reorder Function
- *
- * When the item is dragged and dropped into the new position, the `(ionItemReorder)` event is
- * emitted. This event provides the initial index (from) and the new index (to) of the reordered
- * item. For example, if the first item is dragged to the fifth position, the event will emit
- * `{from: 0, to: 4}`. Note that the index starts at zero.
- *
- * A function should be called when the event is emitted that handles the reordering of the items.
- * See [usage](#usage) below for some examples.
- *
- *
- * @usage
- *
- * ```html
- * <ion-list>
- *   <ion-list-header>Header</ion-list-header>
- *   <ion-item-group reorder="true" (ionItemReorder)="reorderItems($event)">
- *     <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
- *   </ion-item-group>
- * </ion-list>
- * ```
- *
- * ```ts
- * class MyComponent {
- *   items = [];
- *
- *   constructor() {
- *     for (let x = 0; x < 5; x++) {
- *       this.items.push(x);
- *     }
- *   }
- *
- *   reorderItems(indexes) {
- *     let element = this.items[indexes.from];
- *     this.items.splice(indexes.from, 1);
- *     this.items.splice(indexes.to, 0, element);
- *   }
- * }
- * ```
- *
- * Ionic also provides a helper function called `reorderArray` to
- * reorder the array of items. This can be used instead:
- *
- * ```ts
- * import { reorderArray } from 'ionic-angular';
- *
- * class MyComponent {
- *   items = [];
- *
- *   constructor() {
- *     for (let x = 0; x < 5; x++) {
- *       this.items.push(x);
- *     }
- *   }
- *
- *   reorderItems(indexes) {
- *     this.items = reorderArray(this.items, indexes);
- *   }
- * }
- * ```
- * Alternatevely you can execute helper function inside template:
- *
- * ```html
- * <ion-list>
- *   <ion-list-header>Header</ion-list-header>
- *   <ion-item-group reorder="true" (ionItemReorder)="$event.applyTo(items)">
- *     <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
- *   </ion-item-group>
- * </ion-list>
- * ```
- *
- * @demo /docs/demos/src/item-reorder/
- * @see {@link /docs/components#lists List Component Docs}
- * @see {@link ../../list/List List API Docs}
- * @see {@link ../Item Item API Docs}
- */
-var item_reorder_ItemReorder = (function () {
-    function ItemReorder(_plt, _dom, elementRef, _rendered, _zone, _content) {
-        this._plt = _plt;
-        this._dom = _dom;
-        this._rendered = _rendered;
-        this._zone = _zone;
-        this._content = _content;
-        this._enableReorder = false;
-        this._visibleReorder = false;
-        this._isStart = false;
-        this._lastToIndex = -1;
-        /**
-         * @output {object} Emitted when the item is reordered. Emits an object
-         * with `from` and `to` properties.
-         */
-        this.ionItemReorder = new core["r" /* EventEmitter */]();
-        this._element = elementRef.nativeElement;
-    }
-    Object.defineProperty(ItemReorder.prototype, "side", {
-        /**
-         * @input {string} Which side of the view the ion-reorder should be placed. Default `"end"`.
-         */
-        set: function (side) {
-            this._isStart = side === 'start';
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @hidden
-     */
-    ItemReorder.prototype.ngOnDestroy = function () {
-        this._element = null;
-        this._reorderGesture && this._reorderGesture.destroy();
-    };
-    Object.defineProperty(ItemReorder.prototype, "reorder", {
-        /**
-         * @hidden
-         */
-        get: function () {
-            return this._enableReorder;
-        },
-        set: function (val) {
-            var _this = this;
-            var enabled = Object(util["o" /* isTrueProperty */])(val);
-            if (!enabled && this._reorderGesture) {
-                this._reorderGesture.destroy();
-                this._reorderGesture = null;
-                this._visibleReorder = false;
-                setTimeout(function () { return _this._enableReorder = false; }, 400);
-            }
-            else if (enabled && !this._reorderGesture) {
-                (void 0) /* console.debug */;
-                this._reorderGesture = new item_reorder_gesture_ItemReorderGesture(this._plt, this);
-                this._enableReorder = true;
-                this._dom.write(function () {
-                    _this._zone.run(function () {
-                        _this._visibleReorder = true;
-                    });
-                }, 16);
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    ItemReorder.prototype._reorderPrepare = function () {
-        var ele = this._element;
-        var children = ele.children;
-        for (var i = 0, ilen = children.length; i < ilen; i++) {
-            var child = children[i];
-            child.$ionIndex = i;
-            child.$ionReorderList = ele;
-        }
-    };
-    ItemReorder.prototype._reorderStart = function () {
-        this.setElementClass('reorder-list-active', true);
-    };
-    ItemReorder.prototype._reorderEmit = function (fromIndex, toIndex) {
-        var _this = this;
-        this._reorderReset();
-        if (fromIndex !== toIndex) {
-            this._zone.run(function () {
-                var indexes = new item_reorder_ReorderIndexes(fromIndex, toIndex);
-                _this.ionItemReorder.emit(indexes);
-            });
-        }
-    };
-    ItemReorder.prototype._scrollContent = function (scroll) {
-        var scrollTop = this._content.scrollTop + scroll;
-        if (scroll !== 0) {
-            this._content.scrollTo(0, scrollTop, 0);
-        }
-        return scrollTop;
-    };
-    ItemReorder.prototype._reorderReset = function () {
-        var children = this._element.children;
-        var len = children.length;
-        this.setElementClass('reorder-list-active', false);
-        var transform = this._plt.Css.transform;
-        for (var i = 0; i < len; i++) {
-            children[i].style[transform] = '';
-        }
-        this._lastToIndex = -1;
-    };
-    ItemReorder.prototype._reorderMove = function (fromIndex, toIndex, itemHeight) {
-        if (this._lastToIndex === -1) {
-            this._lastToIndex = fromIndex;
-        }
-        var lastToIndex = this._lastToIndex;
-        this._lastToIndex = toIndex;
-        // TODO: I think both loops can be merged into a single one
-        // but I had no luck last time I tried
-        /********* DOM READ ********** */
-        var children = this._element.children;
-        /********* DOM WRITE ********* */
-        var transform = this._plt.Css.transform;
-        if (toIndex >= lastToIndex) {
-            for (var i = lastToIndex; i <= toIndex; i++) {
-                if (i !== fromIndex) {
-                    children[i].style[transform] = (i > fromIndex)
-                        ? "translateY(" + -itemHeight + "px)" : '';
-                }
-            }
-        }
-        if (toIndex <= lastToIndex) {
-            for (var i = toIndex; i <= lastToIndex; i++) {
-                if (i !== fromIndex) {
-                    children[i].style[transform] = (i < fromIndex)
-                        ? "translateY(" + itemHeight + "px)" : '';
-                }
-            }
-        }
-    };
-    /**
-     * @hidden
-     */
-    ItemReorder.prototype.setElementClass = function (classname, add) {
-        this._rendered.setElementClass(this._element, classname, add);
-    };
-    /**
-     * @hidden
-     */
-    ItemReorder.prototype.getNativeElement = function () {
-        return this._element;
-    };
-    ItemReorder.decorators = [
-        { type: core["o" /* Directive */], args: [{
-                    selector: 'ion-list[reorder],ion-item-group[reorder]',
-                    host: {
-                        '[class.reorder-enabled]': '_enableReorder',
-                        '[class.reorder-visible]': '_visibleReorder',
-                        '[class.reorder-side-start]': '_isStart'
-                    }
-                },] },
-    ];
-    /** @nocollapse */
-    ItemReorder.ctorParameters = function () { return [
-        { type: platform["a" /* Platform */], },
-        { type: dom_controller["a" /* DomController */], },
-        { type: core["p" /* ElementRef */], },
-        { type: core["N" /* Renderer */], },
-        { type: core["G" /* NgZone */], },
-        { type: content["a" /* Content */], decorators: [{ type: core["H" /* Optional */] },] },
-    ]; };
-    ItemReorder.propDecorators = {
-        'ionItemReorder': [{ type: core["I" /* Output */] },],
-        'side': [{ type: core["z" /* Input */], args: ['side',] },],
-        'reorder': [{ type: core["z" /* Input */] },],
-    };
-    return ItemReorder;
-}());
-
-//# sourceMappingURL=item-reorder.js.map
-
-/***/ }),
-/* 43 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Tabs; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navigation_deep_linker__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ion__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_keyboard__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__navigation_nav_controller__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_nav_util__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_url_serializer__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__split_pane_split_pane__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__tab_highlight__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__navigation_view_controller__ = __webpack_require__(4);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * @name Tabs
- * @description
- * Tabs make it easy to navigate between different pages or functional
- * aspects of an app. The Tabs component, written as `<ion-tabs>`, is
- * a container of individual [Tab](../Tab/) components. Each individual `ion-tab`
- * is a declarative component for a [NavController](../../../navigation/NavController/)
- *
- * For more information on using nav controllers like Tab or [Nav](../../nav/Nav/),
- * take a look at the [NavController API Docs](../../../navigation/NavController/).
- *
- * ### Placement
- *
- * The position of the tabs relative to the content varies based on
- * the mode. The tabs are placed at the bottom of the screen
- * for iOS and Android, and at the top for Windows by default. The position can
- * be configured using the `tabsPlacement` attribute on the `<ion-tabs>` component,
- * or in an app's [config](../../config/Config/).
- * See the [Input Properties](#input-properties) below for the available
- * values of `tabsPlacement`.
- *
- * ### Layout
- *
- * The layout for all of the tabs can be defined using the `tabsLayout`
- * property. If the individual tab has a title and icon, the icons will
- * show on top of the title by default. All tabs can be changed by setting
- * the value of `tabsLayout` on the `<ion-tabs>` element, or in your
- * app's [config](../../config/Config/). For example, this is useful if
- * you want to show tabs with a title only on Android, but show icons
- * and a title for iOS. See the [Input Properties](#input-properties)
- * below for the available values of `tabsLayout`.
- *
- * ### Selecting a Tab
- *
- * There are different ways you can select a specific tab from the tabs
- * component. You can use the `selectedIndex` property to set the index
- * on the `<ion-tabs>` element, or you can call `select()` from the `Tabs`
- * instance after creation. See [usage](#usage) below for more information.
- *
- * @usage
- *
- * You can add a basic tabs template to a `@Component` using the following
- * template:
- *
- * ```html
- * <ion-tabs>
- *   <ion-tab [root]="tab1Root"></ion-tab>
- *   <ion-tab [root]="tab2Root"></ion-tab>
- *   <ion-tab [root]="tab3Root"></ion-tab>
- * </ion-tabs>
- * ```
- *
- * Where `tab1Root`, `tab2Root`, and `tab3Root` are each a page:
- *
- *```ts
- * @Component({
- *   templateUrl: 'build/pages/tabs/tabs.html'
- * })
- * export class TabsPage {
- *   // this tells the tabs component which Pages
- *   // should be each tab's root Page
- *   tab1Root = Page1;
- *   tab2Root = Page2;
- *   tab3Root = Page3;
- *
- *   constructor() {
- *
- *   }
- * }
- *```
- *
- * By default, the first tab will be selected upon navigation to the
- * Tabs page. We can change the selected tab by using `selectedIndex`
- * on the `<ion-tabs>` element:
- *
- * ```html
- * <ion-tabs selectedIndex="2">
- *   <ion-tab [root]="tab1Root"></ion-tab>
- *   <ion-tab [root]="tab2Root"></ion-tab>
- *   <ion-tab [root]="tab3Root"></ion-tab>
- * </ion-tabs>
- * ```
- *
- * Since the index starts at `0`, this will select the 3rd tab which has
- * root set to `tab3Root`. If you wanted to change it dynamically from
- * your class, you could use [property binding](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#property-binding).
- *
- * Alternatively, you can grab the `Tabs` instance and call the `select()`
- * method. This requires the `<ion-tabs>` element to have an `id`. For
- * example, set the value of `id` to `myTabs`:
- *
- * ```html
- * <ion-tabs #myTabs>
- *   <ion-tab [root]="tab1Root"></ion-tab>
- *   <ion-tab [root]="tab2Root"></ion-tab>
- *   <ion-tab [root]="tab3Root"></ion-tab>
- * </ion-tabs>
- * ```
- *
- * Then in your class you can grab the `Tabs` instance and call `select()`,
- * passing the index of the tab as the argument. Here we're grabbing the tabs
- * by using ViewChild.
- *
- *```ts
- * export class TabsPage {
- *
- * @ViewChild('myTabs') tabRef: Tabs;
- *
- * ionViewDidEnter() {
- *   this.tabRef.select(2);
- *  }
- *
- * }
- *```
- *
- * You can also switch tabs from a child component by calling `select()` on the
- * parent view using the `NavController` instance. For example, assuming you have
- * a `TabsPage` component, you could call the following from any of the child
- * components to switch to `TabsRoot3`:
- *
- *```ts
- * switchTabs() {
- *   this.navCtrl.parent.select(2);
- * }
- *```
- * @demo /docs/demos/src/tabs/
- *
- * @see {@link /docs/components#tabs Tabs Component Docs}
- * @see {@link ../Tab Tab API Docs}
- * @see {@link ../../config/Config Config API Docs}
- *
- */
-var Tabs = (function (_super) {
-    __extends(Tabs, _super);
-    function Tabs(parent, viewCtrl, _app, config, elementRef, _plt, renderer, _linker, keyboard) {
-        var _this = _super.call(this, config, elementRef, renderer, 'tabs') || this;
-        _this.viewCtrl = viewCtrl;
-        _this._app = _app;
-        _this._plt = _plt;
-        _this._linker = _linker;
-        /** @internal */
-        _this._ids = -1;
-        /** @internal */
-        _this._tabs = [];
-        /** @internal */
-        _this._selectHistory = [];
-        /** @internal */
-        _this._onDestroy = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
-        /**
-         * @output {any} Emitted when the tab changes.
-         */
-        _this.ionChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* EventEmitter */]();
-        _this.parent = parent;
-        _this.id = 't' + (++tabIds);
-        _this._sbPadding = config.getBoolean('statusbarPadding');
-        _this.tabsHighlight = config.getBoolean('tabsHighlight');
-        if (_this.parent) {
-            // this Tabs has a parent Nav
-            _this.parent.registerChildNav(_this);
-        }
-        else if (viewCtrl && viewCtrl.getNav()) {
-            // this Nav was opened from a modal
-            _this.parent = viewCtrl.getNav();
-            _this.parent.registerChildNav(_this);
-        }
-        else if (_this._app) {
-            // this is the root navcontroller for the entire app
-            _this._app.registerRootNav(_this);
-        }
-        // Tabs may also be an actual ViewController which was navigated to
-        // if Tabs is static and not navigated to within a NavController
-        // then skip this and don't treat it as it's own ViewController
-        if (viewCtrl) {
-            viewCtrl._setContent(_this);
-            viewCtrl._setContentRef(elementRef);
-        }
-        var keyboardResizes = config.getBoolean('keyboardResizes', false);
-        if (keyboard && keyboardResizes) {
-            keyboard.willHide
-                .takeUntil(_this._onDestroy)
-                .subscribe(function () {
-                _this._plt.timeout(function () { return _this.setTabbarHidden(false); }, 50);
-            });
-            keyboard.willShow
-                .takeUntil(_this._onDestroy)
-                .subscribe(function () { return _this.setTabbarHidden(true); });
-        }
-        return _this;
-    }
-    /**
-     * @internal
-     */
-    Tabs.prototype.setTabbarHidden = function (tabbarHidden) {
-        this.setElementClass('tabbar-hidden', tabbarHidden);
-        this.resize();
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.ngOnDestroy = function () {
-        this._onDestroy.next();
-        if (this.parent) {
-            this.parent.unregisterChildNav(this);
-        }
-        else {
-            this._app.unregisterRootNav(this);
-        }
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.ngAfterViewInit = function () {
-        var _this = this;
-        this._setConfig('tabsPlacement', 'bottom');
-        this._setConfig('tabsLayout', 'icon-top');
-        this._setConfig('tabsHighlight', this.tabsHighlight);
-        if (this.tabsHighlight) {
-            this._plt.resize
-                .takeUntil(this._onDestroy)
-                .subscribe(function () { return _this._highlight.select(_this.getSelected()); });
-        }
-        this.initTabs();
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.initTabs = function () {
-        var _this = this;
-        // get the selected index from the input
-        // otherwise default it to use the first index
-        var selectedIndex = (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["f" /* isBlank */])(this.selectedIndex) ? 0 : parseInt(this.selectedIndex, 10));
-        // now see if the deep linker can find a tab index
-        var tabsSegment = this._linker.getSegmentByNavIdOrName(this.id, this.name);
-        if (tabsSegment) {
-            // we found a segment which probably represents which tab to select
-            selectedIndex = this._getSelectedTabIndex(tabsSegment.secondaryId, selectedIndex);
-        }
-        // get the selectedIndex and ensure it isn't hidden or disabled
-        var selectedTab = this._tabs.find(function (t, i) { return i === selectedIndex && t.enabled && t.show; });
-        if (!selectedTab) {
-            // wasn't able to select the tab they wanted
-            // try to find the first tab that's available
-            selectedTab = this._tabs.find(function (t) { return t.enabled && t.show; });
-        }
-        var promise = Promise.resolve();
-        if (selectedTab) {
-            selectedTab._segment = tabsSegment;
-            promise = this.select(selectedTab);
-        }
-        return promise.then(function () {
-            // set the initial href attribute values for each tab
-            _this._tabs.forEach(function (t) {
-                t.updateHref(t.root, t.rootParams);
-            });
-        });
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype._setConfig = function (attrKey, fallback) {
-        var val = this[attrKey];
-        if (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["f" /* isBlank */])(val)) {
-            val = this._config.get(attrKey, fallback);
-        }
-        this.setElementAttribute(attrKey, val);
-    };
-    /**
-     * @hidden
-     */
-    Tabs.prototype.add = function (tab) {
-        this._tabs.push(tab);
-        return this.id + '-' + (++this._ids);
-    };
-    /**
-     * @param {number|Tab} tabOrIndex Index, or the Tab instance, of the tab to select.
-     */
-    Tabs.prototype.select = function (tabOrIndex, opts, fromUrl) {
-        var _this = this;
-        if (opts === void 0) { opts = {}; }
-        if (fromUrl === void 0) { fromUrl = false; }
-        var selectedTab = (typeof tabOrIndex === 'number' ? this.getByIndex(tabOrIndex) : tabOrIndex);
-        if (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["f" /* isBlank */])(selectedTab)) {
-            return Promise.resolve();
-        }
-        // If the selected tab is the current selected tab, we do not switch
-        var currentTab = this.getSelected();
-        if (selectedTab === currentTab && currentTab.getActive()) {
-            return this._updateCurrentTab(selectedTab, fromUrl);
-        }
-        // If the selected tab does not have a root, we do not switch (#9392)
-        // it's possible the tab is only for opening modal's or signing out
-        // and doesn't actually have content. In the case there's no content
-        // for a tab then do nothing and leave the current view as is
-        if (selectedTab.root) {
-            // At this point we are going to perform a page switch
-            // Let's fire willLeave in the current tab page
-            var currentPage;
-            if (currentTab) {
-                currentPage = currentTab.getActive();
-                currentPage && currentPage._willLeave(false);
-            }
-            // Fire willEnter in the new selected tab
-            var selectedPage_1 = selectedTab.getActive();
-            selectedPage_1 && selectedPage_1._willEnter();
-            // Let's start the transition
-            opts.animate = false;
-            return selectedTab.load(opts).then(function () {
-                _this._tabSwitchEnd(selectedTab, selectedPage_1, currentPage);
-                if (opts.updateUrl !== false) {
-                    _this._linker.navChange(__WEBPACK_IMPORTED_MODULE_10__navigation_nav_util__["c" /* DIRECTION_SWITCH */]);
-                }
-                (void 0) /* assert */;
-                _this._fireChangeEvent(selectedTab);
-            });
-        }
-        else {
-            this._fireChangeEvent(selectedTab);
-            return Promise.resolve();
-        }
-    };
-    Tabs.prototype._fireChangeEvent = function (selectedTab) {
-        selectedTab.ionSelect.emit(selectedTab);
-        this.ionChange.emit(selectedTab);
-    };
-    Tabs.prototype._tabSwitchEnd = function (selectedTab, selectedPage, currentPage) {
-        (void 0) /* assert */;
-        (void 0) /* assert */;
-        // Update tabs selection state
-        var tabs = this._tabs;
-        var tab;
-        for (var i = 0; i < tabs.length; i++) {
-            tab = tabs[i];
-            tab.setSelected(tab === selectedTab);
-        }
-        if (this.tabsHighlight) {
-            this._highlight.select(selectedTab);
-        }
-        // Fire didEnter/didLeave lifecycle events
-        if (selectedPage) {
-            selectedPage._didEnter();
-            this._app.viewDidEnter.emit(selectedPage);
-        }
-        if (currentPage) {
-            currentPage && currentPage._didLeave();
-            this._app.viewDidLeave.emit(currentPage);
-        }
-        // track the order of which tabs have been selected, by their index
-        // do not track if the tab index is the same as the previous
-        if (this._selectHistory[this._selectHistory.length - 1] !== selectedTab.id) {
-            this._selectHistory.push(selectedTab.id);
-        }
-    };
-    /**
-     * Get the previously selected Tab which is currently not disabled or hidden.
-     * @param {boolean} trimHistory If the selection history should be trimmed up to the previous tab selection or not.
-     * @returns {Tab}
-     */
-    Tabs.prototype.previousTab = function (trimHistory) {
-        var _this = this;
-        if (trimHistory === void 0) { trimHistory = true; }
-        // walk backwards through the tab selection history
-        // and find the first previous tab that is enabled and shown
-        (void 0) /* console.debug */;
-        for (var i = this._selectHistory.length - 2; i >= 0; i--) {
-            var tab = this._tabs.find(function (t) { return t.id === _this._selectHistory[i]; });
-            if (tab && tab.enabled && tab.show) {
-                if (trimHistory) {
-                    this._selectHistory.splice(i + 1);
-                }
-                return tab;
-            }
-        }
-        return null;
-    };
-    /**
-     * @param {number} index Index of the tab you want to get
-     * @returns {Tab} Returns the tab who's index matches the one passed
-     */
-    Tabs.prototype.getByIndex = function (index) {
-        return this._tabs[index];
-    };
-    /**
-     * @return {Tab} Returns the currently selected tab
-     */
-    Tabs.prototype.getSelected = function () {
-        var tabs = this._tabs;
-        for (var i = 0; i < tabs.length; i++) {
-            if (tabs[i].isSelected) {
-                return tabs[i];
-            }
-        }
-        return null;
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.getActiveChildNavs = function () {
-        var selected = this.getSelected();
-        return selected ? [selected] : [];
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.getAllChildNavs = function () {
-        return this._tabs;
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.getIndex = function (tab) {
-        return this._tabs.indexOf(tab);
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.length = function () {
-        return this._tabs.length;
-    };
-    /**
-     * "Touch" the active tab, going back to the root view of the tab
-     * or optionally letting the tab handle the event
-     */
-    Tabs.prototype._updateCurrentTab = function (tab, fromUrl) {
-        var active = tab.getActive();
-        if (active) {
-            if (fromUrl && tab._segment) {
-                // see if the view controller exists
-                var vc = tab.getViewById(tab._segment.name);
-                if (vc) {
-                    // the view is already in the stack
-                    return tab.popTo(vc, {
-                        animate: false,
-                        updateUrl: false,
-                    });
-                }
-                else if (tab._views.length === 0 && tab._segment.defaultHistory && tab._segment.defaultHistory.length) {
-                    return this._linker.initViews(tab._segment).then(function (views) {
-                        return tab.setPages(views, {
-                            animate: false, updateUrl: false
-                        });
-                    }).then(function () {
-                        tab._segment = null;
-                    });
-                }
-                else {
-                    return tab.setRoot(tab._segment.name, tab._segment.data, {
-                        animate: false, updateUrl: false
-                    }).then(function () {
-                        tab._segment = null;
-                    });
-                }
-            }
-            else if (active._cmp && active._cmp.instance.ionSelected) {
-                // if they have a custom tab selected handler, call it
-                active._cmp.instance.ionSelected();
-                return Promise.resolve();
-            }
-            else if (tab.length() > 1) {
-                // if we're a few pages deep, pop to root
-                return tab.popToRoot();
-            }
-            else {
-                return Object(__WEBPACK_IMPORTED_MODULE_10__navigation_nav_util__["j" /* getComponent */])(this._linker, tab.root).then(function (viewController) {
-                    if (viewController.component !== active.component) {
-                        // Otherwise, if the page we're on is not our real root
-                        // reset it to our default root type
-                        return tab.setRoot(tab.root);
-                    }
-                }).catch(function () {
-                    (void 0) /* console.debug */;
-                });
-            }
-        }
-    };
-    /**
-     * @internal
-     * DOM WRITE
-     */
-    Tabs.prototype.setTabbarPosition = function (top, bottom) {
-        if (this._top !== top || this._bottom !== bottom) {
-            var tabbarEle = this._tabbar.nativeElement;
-            tabbarEle.style.top = (top > -1 ? top + 'px' : '');
-            tabbarEle.style.bottom = (bottom > -1 ? bottom + 'px' : '');
-            tabbarEle.classList.add('show-tabbar');
-            this._top = top;
-            this._bottom = bottom;
-        }
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.resize = function () {
-        var tab = this.getSelected();
-        tab && tab.resize();
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.initPane = function () {
-        var isMain = this._elementRef.nativeElement.hasAttribute('main');
-        return isMain;
-    };
-    /**
-     * @internal
-     */
-    Tabs.prototype.paneChanged = function (isPane) {
-        if (isPane) {
-            this.resize();
-        }
-    };
-    Tabs.prototype.goToRoot = function (opts) {
-        if (this._tabs.length) {
-            return this.select(this._tabs[0], opts);
-        }
-    };
-    /*
-     * @private
-     */
-    Tabs.prototype.getType = function () {
-        return 'tabs';
-    };
-    /*
-     * @private
-     */
-    Tabs.prototype.getSecondaryIdentifier = function () {
-        var tabs = this.getActiveChildNavs();
-        if (tabs && tabs.length) {
-            return this._linker._getTabSelector(tabs[0]);
-        }
-        return '';
-    };
-    /**
-     * @private
-     */
-    Tabs.prototype._getSelectedTabIndex = function (secondaryId, fallbackIndex) {
-        if (secondaryId === void 0) { secondaryId = ''; }
-        if (fallbackIndex === void 0) { fallbackIndex = 0; }
-        // we found a segment which probably represents which tab to select
-        var indexMatch = secondaryId.match(/tab-(\d+)/);
-        if (indexMatch) {
-            // awesome, the segment name was something "tab-0", and
-            // the numbe represents which tab to select
-            return parseInt(indexMatch[1], 10);
-        }
-        // wasn't in the "tab-0" format so maybe it's using a word
-        var tab = this._tabs.find(function (t) {
-            return (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["l" /* isPresent */])(t.tabUrlPath) && t.tabUrlPath === secondaryId) ||
-                (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["l" /* isPresent */])(t.tabTitle) && Object(__WEBPACK_IMPORTED_MODULE_11__navigation_url_serializer__["c" /* formatUrlPart */])(t.tabTitle) === secondaryId);
-        });
-        return Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["l" /* isPresent */])(tab) ? tab.index : fallbackIndex;
-    };
-    Tabs.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
-                    selector: 'ion-tabs',
-                    template: '<div class="tabbar" role="tablist" #tabbar>' +
-                        '<a *ngFor="let t of _tabs" [tab]="t" class="tab-button" role="tab" href="#" (ionSelect)="select(t)"></a>' +
-                        '<div class="tab-highlight"></div>' +
-                        '</div>' +
-                        '<ng-content></ng-content>' +
-                        '<div #portal tab-portal></div>',
-                    encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* ViewEncapsulation */].None,
-                    providers: [{ provide: __WEBPACK_IMPORTED_MODULE_12__split_pane_split_pane__["a" /* RootNode */], useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* forwardRef */])(function () { return Tabs; }) }]
-                },] },
-    ];
-    /** @nocollapse */
-    Tabs.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_9__navigation_nav_controller__["a" /* NavController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
-        { type: __WEBPACK_IMPORTED_MODULE_15__navigation_view_controller__["a" /* ViewController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
-        { type: __WEBPACK_IMPORTED_MODULE_3__app_app__["a" /* App */], },
-        { type: __WEBPACK_IMPORTED_MODULE_4__config_config__["a" /* Config */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
-        { type: __WEBPACK_IMPORTED_MODULE_13__platform_platform__["a" /* Platform */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
-        { type: __WEBPACK_IMPORTED_MODULE_5__navigation_deep_linker__["a" /* DeepLinker */], },
-        { type: __WEBPACK_IMPORTED_MODULE_8__platform_keyboard__["a" /* Keyboard */], },
-    ]; };
-    Tabs.propDecorators = {
-        'name': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-        'selectedIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-        'tabsLayout': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-        'tabsPlacement': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-        'tabsHighlight': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-        'ionChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */] },],
-        '_highlight': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: [__WEBPACK_IMPORTED_MODULE_14__tab_highlight__["a" /* TabHighlight */],] },],
-        '_tabbar': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['tabbar',] },],
-        'portal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['portal', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */] },] },],
-    };
-    return Tabs;
-}(__WEBPACK_IMPORTED_MODULE_6__ion__["a" /* Ion */]));
-
-var tabIds = -1;
-//# sourceMappingURL=tabs.js.map
-
-/***/ }),
-/* 44 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.js
-var app_root = __webpack_require__(46);
+var app_root = __webpack_require__(47);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/menu-controller.js
 var menu_controller = __webpack_require__(23);
@@ -52135,7 +50620,7 @@ var item_group = __webpack_require__(155);
 var item_options = __webpack_require__(97);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
-var item_reorder = __webpack_require__(42);
+var item_reorder = __webpack_require__(43);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-sliding.js
 var item_sliding = __webpack_require__(156);
@@ -52144,10 +50629,10 @@ var item_sliding = __webpack_require__(156);
 var reorder = __webpack_require__(67);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/label/label.js
-var label = __webpack_require__(49);
+var label = __webpack_require__(50);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list.js + 1 modules
-var list = __webpack_require__(51);
+var list = __webpack_require__(52);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list-header.js
 var list_header = __webpack_require__(98);
@@ -52342,7 +50827,7 @@ var modal_component = __webpack_require__(69);
 var modal_controller = __webpack_require__(109);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav.js
-var nav = __webpack_require__(52);
+var nav = __webpack_require__(53);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav-pop.js
 var nav_pop = __webpack_require__(110);
@@ -52369,7 +50854,7 @@ var picker = __webpack_require__(145);
 var picker_component = __webpack_require__(64);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-column.js + 1 modules
-var picker_column = __webpack_require__(50);
+var picker_column = __webpack_require__(51);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-controller.js
 var picker_controller = __webpack_require__(63);
@@ -52387,7 +50872,7 @@ var popover_controller = __webpack_require__(113);
 var radio_button = __webpack_require__(72);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-group.js
-var radio_group = __webpack_require__(53);
+var radio_group = __webpack_require__(54);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/range/range.js
 var range = __webpack_require__(172);
@@ -52450,7 +50935,7 @@ var tab_button = __webpack_require__(78);
 var tab_highlight = __webpack_require__(77);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tabs.js
-var tabs = __webpack_require__(43);
+var tabs = __webpack_require__(44);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast.js + 1 modules
 var toast = __webpack_require__(183);
@@ -52477,7 +50962,7 @@ var toolbar = __webpack_require__(37);
 var toolbar_item = __webpack_require__(102);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
-var toolbar_title = __webpack_require__(54);
+var toolbar_title = __webpack_require__(55);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
 var navbar = __webpack_require__(27);
@@ -52812,7 +51297,7 @@ var nav_util = __webpack_require__(28);
 var tap_click = __webpack_require__(107);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/url-serializer.js
-var url_serializer = __webpack_require__(48);
+var url_serializer = __webpack_require__(49);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
 var view_controller = __webpack_require__(4);
@@ -55060,7 +53545,7 @@ var keyboard = __webpack_require__(21);
 var util_form = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/page-transition.js
-var page_transition = __webpack_require__(41);
+var page_transition = __webpack_require__(42);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/transition.js
 var transition = __webpack_require__(36);
@@ -55536,7 +54021,1523 @@ var ionic_angular_module = __webpack_require__(123);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 45 */
+/* 39 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LAZY_LOADED_TOKEN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ModuleLoader; });
+/* harmony export (immutable) */ __webpack_exports__["c"] = provideModuleLoader;
+/* unused harmony export setupPreloadingImplementation */
+/* harmony export (immutable) */ __webpack_exports__["d"] = setupPreloading;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(2);
+
+
+
+var LAZY_LOADED_TOKEN = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* InjectionToken */]('LZYCMP');
+/**
+ * @hidden
+ */
+var ModuleLoader = (function () {
+    function ModuleLoader(_ngModuleLoader, _injector) {
+        this._ngModuleLoader = _ngModuleLoader;
+        this._injector = _injector;
+        /** @internal */
+        this._cfrMap = new Map();
+        this._promiseMap = new Map();
+    }
+    ModuleLoader.prototype.load = function (modulePath) {
+        var _this = this;
+        (void 0) /* console.time */;
+        var splitString = modulePath.split(SPLITTER);
+        var promise = this._promiseMap.get(modulePath);
+        if (!promise) {
+            promise = this._ngModuleLoader.load(splitString[0], splitString[1]);
+            this._promiseMap.set(modulePath, promise);
+        }
+        return promise.then(function (loadedModule) {
+            (void 0) /* console.timeEnd */;
+            var ref = loadedModule.create(_this._injector);
+            var component = ref.injector.get(LAZY_LOADED_TOKEN);
+            _this._cfrMap.set(component, ref.componentFactoryResolver);
+            return {
+                componentFactoryResolver: ref.componentFactoryResolver,
+                component: component
+            };
+        });
+    };
+    ModuleLoader.prototype.getComponentFactoryResolver = function (component) {
+        return this._cfrMap.get(component);
+    };
+    ModuleLoader.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Injectable */] },
+    ];
+    /** @nocollapse */
+    ModuleLoader.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_1__ng_module_loader__["a" /* NgModuleLoader */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injector */], },
+    ]; };
+    return ModuleLoader;
+}());
+
+var SPLITTER = '#';
+/**
+ * @hidden
+ */
+function provideModuleLoader(ngModuleLoader, injector) {
+    return new ModuleLoader(ngModuleLoader, injector);
+}
+/**
+ * @hidden
+ */
+function setupPreloadingImplementation(config, deepLinkConfig, moduleLoader) {
+    if (!deepLinkConfig || !deepLinkConfig.links || !config.getBoolean('preloadModules')) {
+        return Promise.resolve();
+    }
+    var linksToLoad = deepLinkConfig.links.filter(function (link) { return !!link.loadChildren && link.priority !== 'off'; });
+    // Load the high priority modules first
+    var highPriorityPromises = linksToLoad
+        .filter(function (link) { return link.priority === 'high'; })
+        .map(function (link) { return moduleLoader.load(link.loadChildren); });
+    return Promise.all(highPriorityPromises).then(function () {
+        // Load the low priority modules after the high priority are done
+        var lowPriorityPromises = linksToLoad
+            .filter(function (link) { return link.priority === 'low'; })
+            .map(function (link) { return moduleLoader.load(link.loadChildren); });
+        return Promise.all(lowPriorityPromises);
+    }).catch(function (err) {
+        console.error(err.message);
+    });
+}
+/**
+ * @hidden
+ */
+function setupPreloading(config, deepLinkConfig, moduleLoader, ngZone) {
+    return function () {
+        Object(__WEBPACK_IMPORTED_MODULE_2__util__["s" /* requestIonicCallback */])(function () {
+            ngZone.runOutsideAngular(function () {
+                setupPreloadingImplementation(config, deepLinkConfig, moduleLoader);
+            });
+        });
+    };
+}
+//# sourceMappingURL=module-loader.js.map
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
+// CommonJS / Node have global context exposed as "global" variable.
+// We don't want to include the whole node.d.ts this this compilation unit so we'll just fake
+// the global "global" var for now.
+var __window = typeof window !== 'undefined' && window;
+var __self = typeof self !== 'undefined' && typeof WorkerGlobalScope !== 'undefined' &&
+    self instanceof WorkerGlobalScope && self;
+var __global = typeof global !== 'undefined' && global;
+var _root = __window || __global || __self;
+exports.root = _root;
+// Workaround Closure Compiler restriction: The body of a goog.module cannot use throw.
+// This is needed when used with angular/tsickle which inserts a goog.module statement.
+// Wrap in IIFE
+(function () {
+    if (!_root) {
+        throw new Error('RxJS could not find any global context (window, self, global)');
+    }
+})();
+//# sourceMappingURL=root.js.map
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(124)))
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var isArray_1 = __webpack_require__(125);
+var isObject_1 = __webpack_require__(126);
+var isFunction_1 = __webpack_require__(82);
+var tryCatch_1 = __webpack_require__(127);
+var errorObject_1 = __webpack_require__(83);
+var UnsubscriptionError_1 = __webpack_require__(203);
+/**
+ * Represents a disposable resource, such as the execution of an Observable. A
+ * Subscription has one important method, `unsubscribe`, that takes no argument
+ * and just disposes the resource held by the subscription.
+ *
+ * Additionally, subscriptions may be grouped together through the `add()`
+ * method, which will attach a child Subscription to the current Subscription.
+ * When a Subscription is unsubscribed, all its children (and its grandchildren)
+ * will be unsubscribed as well.
+ *
+ * @class Subscription
+ */
+var Subscription = (function () {
+    /**
+     * @param {function(): void} [unsubscribe] A function describing how to
+     * perform the disposal of resources when the `unsubscribe` method is called.
+     */
+    function Subscription(unsubscribe) {
+        /**
+         * A flag to indicate whether this Subscription has already been unsubscribed.
+         * @type {boolean}
+         */
+        this.closed = false;
+        this._parent = null;
+        this._parents = null;
+        this._subscriptions = null;
+        if (unsubscribe) {
+            this._unsubscribe = unsubscribe;
+        }
+    }
+    /**
+     * Disposes the resources held by the subscription. May, for instance, cancel
+     * an ongoing Observable execution or cancel any other type of work that
+     * started when the Subscription was created.
+     * @return {void}
+     */
+    Subscription.prototype.unsubscribe = function () {
+        var hasErrors = false;
+        var errors;
+        if (this.closed) {
+            return;
+        }
+        var _a = this, _parent = _a._parent, _parents = _a._parents, _unsubscribe = _a._unsubscribe, _subscriptions = _a._subscriptions;
+        this.closed = true;
+        this._parent = null;
+        this._parents = null;
+        // null out _subscriptions first so any child subscriptions that attempt
+        // to remove themselves from this subscription will noop
+        this._subscriptions = null;
+        var index = -1;
+        var len = _parents ? _parents.length : 0;
+        // if this._parent is null, then so is this._parents, and we
+        // don't have to remove ourselves from any parent subscriptions.
+        while (_parent) {
+            _parent.remove(this);
+            // if this._parents is null or index >= len,
+            // then _parent is set to null, and the loop exits
+            _parent = ++index < len && _parents[index] || null;
+        }
+        if (isFunction_1.isFunction(_unsubscribe)) {
+            var trial = tryCatch_1.tryCatch(_unsubscribe).call(this);
+            if (trial === errorObject_1.errorObject) {
+                hasErrors = true;
+                errors = errors || (errorObject_1.errorObject.e instanceof UnsubscriptionError_1.UnsubscriptionError ?
+                    flattenUnsubscriptionErrors(errorObject_1.errorObject.e.errors) : [errorObject_1.errorObject.e]);
+            }
+        }
+        if (isArray_1.isArray(_subscriptions)) {
+            index = -1;
+            len = _subscriptions.length;
+            while (++index < len) {
+                var sub = _subscriptions[index];
+                if (isObject_1.isObject(sub)) {
+                    var trial = tryCatch_1.tryCatch(sub.unsubscribe).call(sub);
+                    if (trial === errorObject_1.errorObject) {
+                        hasErrors = true;
+                        errors = errors || [];
+                        var err = errorObject_1.errorObject.e;
+                        if (err instanceof UnsubscriptionError_1.UnsubscriptionError) {
+                            errors = errors.concat(flattenUnsubscriptionErrors(err.errors));
+                        }
+                        else {
+                            errors.push(err);
+                        }
+                    }
+                }
+            }
+        }
+        if (hasErrors) {
+            throw new UnsubscriptionError_1.UnsubscriptionError(errors);
+        }
+    };
+    /**
+     * Adds a tear down to be called during the unsubscribe() of this
+     * Subscription.
+     *
+     * If the tear down being added is a subscription that is already
+     * unsubscribed, is the same reference `add` is being called on, or is
+     * `Subscription.EMPTY`, it will not be added.
+     *
+     * If this subscription is already in an `closed` state, the passed
+     * tear down logic will be executed immediately.
+     *
+     * @param {TeardownLogic} teardown The additional logic to execute on
+     * teardown.
+     * @return {Subscription} Returns the Subscription used or created to be
+     * added to the inner subscriptions list. This Subscription can be used with
+     * `remove()` to remove the passed teardown logic from the inner subscriptions
+     * list.
+     */
+    Subscription.prototype.add = function (teardown) {
+        if (!teardown || (teardown === Subscription.EMPTY)) {
+            return Subscription.EMPTY;
+        }
+        if (teardown === this) {
+            return this;
+        }
+        var subscription = teardown;
+        switch (typeof teardown) {
+            case 'function':
+                subscription = new Subscription(teardown);
+            case 'object':
+                if (subscription.closed || typeof subscription.unsubscribe !== 'function') {
+                    return subscription;
+                }
+                else if (this.closed) {
+                    subscription.unsubscribe();
+                    return subscription;
+                }
+                else if (typeof subscription._addParent !== 'function' /* quack quack */) {
+                    var tmp = subscription;
+                    subscription = new Subscription();
+                    subscription._subscriptions = [tmp];
+                }
+                break;
+            default:
+                throw new Error('unrecognized teardown ' + teardown + ' added to Subscription.');
+        }
+        var subscriptions = this._subscriptions || (this._subscriptions = []);
+        subscriptions.push(subscription);
+        subscription._addParent(this);
+        return subscription;
+    };
+    /**
+     * Removes a Subscription from the internal list of subscriptions that will
+     * unsubscribe during the unsubscribe process of this Subscription.
+     * @param {Subscription} subscription The subscription to remove.
+     * @return {void}
+     */
+    Subscription.prototype.remove = function (subscription) {
+        var subscriptions = this._subscriptions;
+        if (subscriptions) {
+            var subscriptionIndex = subscriptions.indexOf(subscription);
+            if (subscriptionIndex !== -1) {
+                subscriptions.splice(subscriptionIndex, 1);
+            }
+        }
+    };
+    Subscription.prototype._addParent = function (parent) {
+        var _a = this, _parent = _a._parent, _parents = _a._parents;
+        if (!_parent || _parent === parent) {
+            // If we don't have a parent, or the new parent is the same as the
+            // current parent, then set this._parent to the new parent.
+            this._parent = parent;
+        }
+        else if (!_parents) {
+            // If there's already one parent, but not multiple, allocate an Array to
+            // store the rest of the parent Subscriptions.
+            this._parents = [parent];
+        }
+        else if (_parents.indexOf(parent) === -1) {
+            // Only add the new parent to the _parents list if it's not already there.
+            _parents.push(parent);
+        }
+    };
+    Subscription.EMPTY = (function (empty) {
+        empty.closed = true;
+        return empty;
+    }(new Subscription()));
+    return Subscription;
+}());
+exports.Subscription = Subscription;
+function flattenUnsubscriptionErrors(errors) {
+    return errors.reduce(function (errs, err) { return errs.concat((err instanceof UnsubscriptionError_1.UnsubscriptionError) ? err.errors : err); }, []);
+}
+//# sourceMappingURL=Subscription.js.map
+
+/***/ }),
+/* 42 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageTransition; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transition__ = __webpack_require__(36);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+/**
+ * @hidden
+ */
+var PageTransition = (function (_super) {
+    __extends(PageTransition, _super);
+    function PageTransition() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    PageTransition.prototype.init = function () {
+        var _this = this;
+        if (this.enteringView) {
+            this.enteringPage = new __WEBPACK_IMPORTED_MODULE_0__animations_animation__["a" /* Animation */](this.plt, this.enteringView.pageRef());
+            this.add(this.enteringPage.beforeAddClass('show-page'));
+            // Resize content before transition starts
+            this.beforeAddRead(function () {
+                _this.enteringView.readReady.emit();
+            });
+            this.beforeAddWrite(function () {
+                _this.enteringView.writeReady.emit();
+            });
+        }
+    };
+    PageTransition.prototype.destroy = function () {
+        _super.prototype.destroy.call(this);
+        this.enteringPage && this.enteringPage.destroy();
+        this.enteringPage = null;
+    };
+    return PageTransition;
+}(__WEBPACK_IMPORTED_MODULE_1__transition__["a" /* Transition */]));
+
+//# sourceMappingURL=page-transition.js.map
+
+/***/ }),
+/* 43 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
+var content = __webpack_require__(20);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
+var dom_controller = __webpack_require__(7);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/util.js
+var util = __webpack_require__(2);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder-util.js
+var item_reorder_util = __webpack_require__(142);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
+var dom = __webpack_require__(14);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/ui-event-manager.js
+var ui_event_manager = __webpack_require__(29);
+
+// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/item-reorder-gesture.js
+
+
+
+/**
+ * @hidden
+ */
+var item_reorder_gesture_ItemReorderGesture = (function () {
+    function ItemReorderGesture(plt, reorderList) {
+        this.plt = plt;
+        this.reorderList = reorderList;
+        this.selectedItemEle = null;
+        this.events = new ui_event_manager["a" /* UIEventManager */](plt);
+        this.events.pointerEvents({
+            element: this.reorderList.getNativeElement(),
+            pointerDown: this.onDragStart.bind(this),
+            pointerMove: this.onDragMove.bind(this),
+            pointerUp: this.onDragEnd.bind(this),
+            zone: false
+        });
+    }
+    ItemReorderGesture.prototype.onDragStart = function (ev) {
+        if (this.selectedItemEle) {
+            return false;
+        }
+        var reorderElement = ev.target;
+        if (reorderElement.nodeName !== 'ION-REORDER') {
+            return false;
+        }
+        var reorderMark = reorderElement['$ionComponent'];
+        if (!reorderMark) {
+            console.error('ion-reorder does not contain $ionComponent');
+            return false;
+        }
+        this.reorderList._reorderPrepare();
+        var item = reorderMark.getReorderNode();
+        if (!item) {
+            console.error('reorder node not found');
+            return false;
+        }
+        ev.preventDefault();
+        // Preparing state
+        this.selectedItemEle = item;
+        this.selectedItemHeight = item.offsetHeight;
+        this.lastYcoord = -100;
+        this.lastToIndex = Object(item_reorder_util["b" /* indexForItem */])(item);
+        this.windowHeight = this.plt.height() - AUTO_SCROLL_MARGIN;
+        this.lastScrollPosition = this.reorderList._scrollContent(0);
+        this.offset = Object(dom["f" /* pointerCoord */])(ev);
+        this.offset.y += this.lastScrollPosition;
+        item.classList.add(ITEM_REORDER_ACTIVE);
+        this.reorderList._reorderStart();
+        return true;
+    };
+    ItemReorderGesture.prototype.onDragMove = function (ev) {
+        var selectedItem = this.selectedItemEle;
+        if (!selectedItem) {
+            return;
+        }
+        ev.preventDefault();
+        // Get coordinate
+        var coord = Object(dom["f" /* pointerCoord */])(ev);
+        var posY = coord.y;
+        // Scroll if we reach the scroll margins
+        var scrollPosition = this.scroll(posY);
+        // Only perform hit test if we moved at least 30px from previous position
+        if (Math.abs(posY - this.lastYcoord) > 30) {
+            var overItem = this.itemForCoord(coord);
+            if (overItem) {
+                var toIndex = Object(item_reorder_util["b" /* indexForItem */])(overItem);
+                if (toIndex !== undefined && (toIndex !== this.lastToIndex || this.emptyZone)) {
+                    var fromIndex = Object(item_reorder_util["b" /* indexForItem */])(selectedItem);
+                    this.lastToIndex = toIndex;
+                    this.lastYcoord = posY;
+                    this.emptyZone = false;
+                    this.reorderList._reorderMove(fromIndex, toIndex, this.selectedItemHeight);
+                }
+            }
+            else {
+                this.emptyZone = true;
+            }
+        }
+        // Update selected item position
+        var ydiff = Math.round(posY - this.offset.y + scrollPosition);
+        selectedItem.style[this.plt.Css.transform] = "translateY(" + ydiff + "px)";
+    };
+    ItemReorderGesture.prototype.onDragEnd = function (ev) {
+        var _this = this;
+        var selectedItem = this.selectedItemEle;
+        if (!selectedItem) {
+            return;
+        }
+        if (ev) {
+            ev.preventDefault();
+            ev.stopPropagation();
+        }
+        var toIndex = this.lastToIndex;
+        var fromIndex = Object(item_reorder_util["b" /* indexForItem */])(selectedItem);
+        var reorderInactive = function () {
+            _this.selectedItemEle.style.transition = '';
+            _this.selectedItemEle.classList.remove(ITEM_REORDER_ACTIVE);
+            _this.selectedItemEle = null;
+        };
+        if (toIndex === fromIndex) {
+            selectedItem.style.transition = 'transform 200ms ease-in-out';
+            setTimeout(reorderInactive, 200);
+        }
+        else {
+            reorderInactive();
+        }
+        this.reorderList._reorderEmit(fromIndex, toIndex);
+    };
+    ItemReorderGesture.prototype.itemForCoord = function (coord) {
+        var sideOffset = this.reorderList._isStart === this.plt.isRTL ? -100 : 100;
+        var x = this.offset.x + sideOffset;
+        var y = coord.y;
+        var element = this.plt.getElementFromPoint(x, y);
+        return Object(item_reorder_util["a" /* findReorderItem */])(element, this.reorderList.getNativeElement());
+    };
+    ItemReorderGesture.prototype.scroll = function (posY) {
+        if (posY < AUTO_SCROLL_MARGIN) {
+            this.lastScrollPosition = this.reorderList._scrollContent(-SCROLL_JUMP);
+        }
+        else if (posY > this.windowHeight) {
+            this.lastScrollPosition = this.reorderList._scrollContent(SCROLL_JUMP);
+        }
+        return this.lastScrollPosition;
+    };
+    /**
+     * @hidden
+     */
+    ItemReorderGesture.prototype.destroy = function () {
+        this.onDragEnd(null);
+        this.events.destroy();
+        this.events = null;
+        this.reorderList = null;
+    };
+    return ItemReorderGesture;
+}());
+
+var AUTO_SCROLL_MARGIN = 60;
+var SCROLL_JUMP = 10;
+var ITEM_REORDER_ACTIVE = 'reorder-active';
+//# sourceMappingURL=item-reorder-gesture.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
+var platform = __webpack_require__(3);
+
+// CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js
+/* unused harmony export ReorderIndexes */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return item_reorder_ItemReorder; });
+
+
+
+
+
+
+var item_reorder_ReorderIndexes = (function () {
+    function ReorderIndexes(from, to) {
+        this.from = from;
+        this.to = to;
+    }
+    ReorderIndexes.prototype.applyTo = function (array) {
+        Object(util["r" /* reorderArray */])(array, this);
+    };
+    return ReorderIndexes;
+}());
+
+/**
+ * @name ItemReorder
+ * @description
+ * Item reorder adds the ability to change an item's order in a group.
+ * It can be used within an `ion-list` or `ion-item-group` to provide a
+ * visual drag and drop interface.
+ *
+ * ## Grouping Items
+ *
+ * All reorderable items must be grouped in the same element. If an item
+ * should not be reordered, it shouldn't be included in this group. For
+ * example, the following code works because the items are grouped in the
+ * `<ion-list>`:
+ *
+ *  ```html
+ *  <ion-list reorder="true">
+ *    <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
+ *  </ion-list>
+ *  ```
+ *
+ * However, the below list includes a header that shouldn't be reordered:
+ *
+ *  ```html
+ *  <ion-list reorder="true">
+ *    <ion-list-header>Header</ion-list-header>
+ *    <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
+ *  </ion-list>
+ *  ```
+ *
+ * In order to mix different sets of items, `ion-item-group` should be used to
+ * group the reorderable items:
+ *
+ *  ```html
+ *  <ion-list>
+ *    <ion-list-header>Header</ion-list-header>
+ *    <ion-item-group reorder="true">
+ *      <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
+ *    </ion-item-group>
+ *  </ion-list>
+ *  ```
+ *
+ * It's important to note that in this example, the `[reorder]` directive is applied to
+ * the `<ion-item-group>` instead of the `<ion-list>`. This way makes it possible to
+ * mix items that should and shouldn't be reordered.
+ *
+ *
+ * ## Implementing the Reorder Function
+ *
+ * When the item is dragged and dropped into the new position, the `(ionItemReorder)` event is
+ * emitted. This event provides the initial index (from) and the new index (to) of the reordered
+ * item. For example, if the first item is dragged to the fifth position, the event will emit
+ * `{from: 0, to: 4}`. Note that the index starts at zero.
+ *
+ * A function should be called when the event is emitted that handles the reordering of the items.
+ * See [usage](#usage) below for some examples.
+ *
+ *
+ * @usage
+ *
+ * ```html
+ * <ion-list>
+ *   <ion-list-header>Header</ion-list-header>
+ *   <ion-item-group reorder="true" (ionItemReorder)="reorderItems($event)">
+ *     <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
+ *   </ion-item-group>
+ * </ion-list>
+ * ```
+ *
+ * ```ts
+ * class MyComponent {
+ *   items = [];
+ *
+ *   constructor() {
+ *     for (let x = 0; x < 5; x++) {
+ *       this.items.push(x);
+ *     }
+ *   }
+ *
+ *   reorderItems(indexes) {
+ *     let element = this.items[indexes.from];
+ *     this.items.splice(indexes.from, 1);
+ *     this.items.splice(indexes.to, 0, element);
+ *   }
+ * }
+ * ```
+ *
+ * Ionic also provides a helper function called `reorderArray` to
+ * reorder the array of items. This can be used instead:
+ *
+ * ```ts
+ * import { reorderArray } from 'ionic-angular';
+ *
+ * class MyComponent {
+ *   items = [];
+ *
+ *   constructor() {
+ *     for (let x = 0; x < 5; x++) {
+ *       this.items.push(x);
+ *     }
+ *   }
+ *
+ *   reorderItems(indexes) {
+ *     this.items = reorderArray(this.items, indexes);
+ *   }
+ * }
+ * ```
+ * Alternatevely you can execute helper function inside template:
+ *
+ * ```html
+ * <ion-list>
+ *   <ion-list-header>Header</ion-list-header>
+ *   <ion-item-group reorder="true" (ionItemReorder)="$event.applyTo(items)">
+ *     <ion-item *ngFor="let item of items">{% raw %}{{ item }}{% endraw %}</ion-item>
+ *   </ion-item-group>
+ * </ion-list>
+ * ```
+ *
+ * @demo /docs/demos/src/item-reorder/
+ * @see {@link /docs/components#lists List Component Docs}
+ * @see {@link ../../list/List List API Docs}
+ * @see {@link ../Item Item API Docs}
+ */
+var item_reorder_ItemReorder = (function () {
+    function ItemReorder(_plt, _dom, elementRef, _rendered, _zone, _content) {
+        this._plt = _plt;
+        this._dom = _dom;
+        this._rendered = _rendered;
+        this._zone = _zone;
+        this._content = _content;
+        this._enableReorder = false;
+        this._visibleReorder = false;
+        this._isStart = false;
+        this._lastToIndex = -1;
+        /**
+         * @output {object} Emitted when the item is reordered. Emits an object
+         * with `from` and `to` properties.
+         */
+        this.ionItemReorder = new core["r" /* EventEmitter */]();
+        this._element = elementRef.nativeElement;
+    }
+    Object.defineProperty(ItemReorder.prototype, "side", {
+        /**
+         * @input {string} Which side of the view the ion-reorder should be placed. Default `"end"`.
+         */
+        set: function (side) {
+            this._isStart = side === 'start';
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @hidden
+     */
+    ItemReorder.prototype.ngOnDestroy = function () {
+        this._element = null;
+        this._reorderGesture && this._reorderGesture.destroy();
+    };
+    Object.defineProperty(ItemReorder.prototype, "reorder", {
+        /**
+         * @hidden
+         */
+        get: function () {
+            return this._enableReorder;
+        },
+        set: function (val) {
+            var _this = this;
+            var enabled = Object(util["o" /* isTrueProperty */])(val);
+            if (!enabled && this._reorderGesture) {
+                this._reorderGesture.destroy();
+                this._reorderGesture = null;
+                this._visibleReorder = false;
+                setTimeout(function () { return _this._enableReorder = false; }, 400);
+            }
+            else if (enabled && !this._reorderGesture) {
+                (void 0) /* console.debug */;
+                this._reorderGesture = new item_reorder_gesture_ItemReorderGesture(this._plt, this);
+                this._enableReorder = true;
+                this._dom.write(function () {
+                    _this._zone.run(function () {
+                        _this._visibleReorder = true;
+                    });
+                }, 16);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ItemReorder.prototype._reorderPrepare = function () {
+        var ele = this._element;
+        var children = ele.children;
+        for (var i = 0, ilen = children.length; i < ilen; i++) {
+            var child = children[i];
+            child.$ionIndex = i;
+            child.$ionReorderList = ele;
+        }
+    };
+    ItemReorder.prototype._reorderStart = function () {
+        this.setElementClass('reorder-list-active', true);
+    };
+    ItemReorder.prototype._reorderEmit = function (fromIndex, toIndex) {
+        var _this = this;
+        this._reorderReset();
+        if (fromIndex !== toIndex) {
+            this._zone.run(function () {
+                var indexes = new item_reorder_ReorderIndexes(fromIndex, toIndex);
+                _this.ionItemReorder.emit(indexes);
+            });
+        }
+    };
+    ItemReorder.prototype._scrollContent = function (scroll) {
+        var scrollTop = this._content.scrollTop + scroll;
+        if (scroll !== 0) {
+            this._content.scrollTo(0, scrollTop, 0);
+        }
+        return scrollTop;
+    };
+    ItemReorder.prototype._reorderReset = function () {
+        var children = this._element.children;
+        var len = children.length;
+        this.setElementClass('reorder-list-active', false);
+        var transform = this._plt.Css.transform;
+        for (var i = 0; i < len; i++) {
+            children[i].style[transform] = '';
+        }
+        this._lastToIndex = -1;
+    };
+    ItemReorder.prototype._reorderMove = function (fromIndex, toIndex, itemHeight) {
+        if (this._lastToIndex === -1) {
+            this._lastToIndex = fromIndex;
+        }
+        var lastToIndex = this._lastToIndex;
+        this._lastToIndex = toIndex;
+        // TODO: I think both loops can be merged into a single one
+        // but I had no luck last time I tried
+        /********* DOM READ ********** */
+        var children = this._element.children;
+        /********* DOM WRITE ********* */
+        var transform = this._plt.Css.transform;
+        if (toIndex >= lastToIndex) {
+            for (var i = lastToIndex; i <= toIndex; i++) {
+                if (i !== fromIndex) {
+                    children[i].style[transform] = (i > fromIndex)
+                        ? "translateY(" + -itemHeight + "px)" : '';
+                }
+            }
+        }
+        if (toIndex <= lastToIndex) {
+            for (var i = toIndex; i <= lastToIndex; i++) {
+                if (i !== fromIndex) {
+                    children[i].style[transform] = (i < fromIndex)
+                        ? "translateY(" + itemHeight + "px)" : '';
+                }
+            }
+        }
+    };
+    /**
+     * @hidden
+     */
+    ItemReorder.prototype.setElementClass = function (classname, add) {
+        this._rendered.setElementClass(this._element, classname, add);
+    };
+    /**
+     * @hidden
+     */
+    ItemReorder.prototype.getNativeElement = function () {
+        return this._element;
+    };
+    ItemReorder.decorators = [
+        { type: core["o" /* Directive */], args: [{
+                    selector: 'ion-list[reorder],ion-item-group[reorder]',
+                    host: {
+                        '[class.reorder-enabled]': '_enableReorder',
+                        '[class.reorder-visible]': '_visibleReorder',
+                        '[class.reorder-side-start]': '_isStart'
+                    }
+                },] },
+    ];
+    /** @nocollapse */
+    ItemReorder.ctorParameters = function () { return [
+        { type: platform["a" /* Platform */], },
+        { type: dom_controller["a" /* DomController */], },
+        { type: core["p" /* ElementRef */], },
+        { type: core["N" /* Renderer */], },
+        { type: core["G" /* NgZone */], },
+        { type: content["a" /* Content */], decorators: [{ type: core["H" /* Optional */] },] },
+    ]; };
+    ItemReorder.propDecorators = {
+        'ionItemReorder': [{ type: core["I" /* Output */] },],
+        'side': [{ type: core["z" /* Input */], args: ['side',] },],
+        'reorder': [{ type: core["z" /* Input */] },],
+    };
+    return ItemReorder;
+}());
+
+//# sourceMappingURL=item-reorder.js.map
+
+/***/ }),
+/* 44 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Tabs; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navigation_deep_linker__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ion__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_util__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_keyboard__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__navigation_nav_controller__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_nav_util__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_url_serializer__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__split_pane_split_pane__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__platform_platform__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__tab_highlight__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__navigation_view_controller__ = __webpack_require__(4);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * @name Tabs
+ * @description
+ * Tabs make it easy to navigate between different pages or functional
+ * aspects of an app. The Tabs component, written as `<ion-tabs>`, is
+ * a container of individual [Tab](../Tab/) components. Each individual `ion-tab`
+ * is a declarative component for a [NavController](../../../navigation/NavController/)
+ *
+ * For more information on using nav controllers like Tab or [Nav](../../nav/Nav/),
+ * take a look at the [NavController API Docs](../../../navigation/NavController/).
+ *
+ * ### Placement
+ *
+ * The position of the tabs relative to the content varies based on
+ * the mode. The tabs are placed at the bottom of the screen
+ * for iOS and Android, and at the top for Windows by default. The position can
+ * be configured using the `tabsPlacement` attribute on the `<ion-tabs>` component,
+ * or in an app's [config](../../config/Config/).
+ * See the [Input Properties](#input-properties) below for the available
+ * values of `tabsPlacement`.
+ *
+ * ### Layout
+ *
+ * The layout for all of the tabs can be defined using the `tabsLayout`
+ * property. If the individual tab has a title and icon, the icons will
+ * show on top of the title by default. All tabs can be changed by setting
+ * the value of `tabsLayout` on the `<ion-tabs>` element, or in your
+ * app's [config](../../config/Config/). For example, this is useful if
+ * you want to show tabs with a title only on Android, but show icons
+ * and a title for iOS. See the [Input Properties](#input-properties)
+ * below for the available values of `tabsLayout`.
+ *
+ * ### Selecting a Tab
+ *
+ * There are different ways you can select a specific tab from the tabs
+ * component. You can use the `selectedIndex` property to set the index
+ * on the `<ion-tabs>` element, or you can call `select()` from the `Tabs`
+ * instance after creation. See [usage](#usage) below for more information.
+ *
+ * @usage
+ *
+ * You can add a basic tabs template to a `@Component` using the following
+ * template:
+ *
+ * ```html
+ * <ion-tabs>
+ *   <ion-tab [root]="tab1Root"></ion-tab>
+ *   <ion-tab [root]="tab2Root"></ion-tab>
+ *   <ion-tab [root]="tab3Root"></ion-tab>
+ * </ion-tabs>
+ * ```
+ *
+ * Where `tab1Root`, `tab2Root`, and `tab3Root` are each a page:
+ *
+ *```ts
+ * @Component({
+ *   templateUrl: 'build/pages/tabs/tabs.html'
+ * })
+ * export class TabsPage {
+ *   // this tells the tabs component which Pages
+ *   // should be each tab's root Page
+ *   tab1Root = Page1;
+ *   tab2Root = Page2;
+ *   tab3Root = Page3;
+ *
+ *   constructor() {
+ *
+ *   }
+ * }
+ *```
+ *
+ * By default, the first tab will be selected upon navigation to the
+ * Tabs page. We can change the selected tab by using `selectedIndex`
+ * on the `<ion-tabs>` element:
+ *
+ * ```html
+ * <ion-tabs selectedIndex="2">
+ *   <ion-tab [root]="tab1Root"></ion-tab>
+ *   <ion-tab [root]="tab2Root"></ion-tab>
+ *   <ion-tab [root]="tab3Root"></ion-tab>
+ * </ion-tabs>
+ * ```
+ *
+ * Since the index starts at `0`, this will select the 3rd tab which has
+ * root set to `tab3Root`. If you wanted to change it dynamically from
+ * your class, you could use [property binding](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#property-binding).
+ *
+ * Alternatively, you can grab the `Tabs` instance and call the `select()`
+ * method. This requires the `<ion-tabs>` element to have an `id`. For
+ * example, set the value of `id` to `myTabs`:
+ *
+ * ```html
+ * <ion-tabs #myTabs>
+ *   <ion-tab [root]="tab1Root"></ion-tab>
+ *   <ion-tab [root]="tab2Root"></ion-tab>
+ *   <ion-tab [root]="tab3Root"></ion-tab>
+ * </ion-tabs>
+ * ```
+ *
+ * Then in your class you can grab the `Tabs` instance and call `select()`,
+ * passing the index of the tab as the argument. Here we're grabbing the tabs
+ * by using ViewChild.
+ *
+ *```ts
+ * export class TabsPage {
+ *
+ * @ViewChild('myTabs') tabRef: Tabs;
+ *
+ * ionViewDidEnter() {
+ *   this.tabRef.select(2);
+ *  }
+ *
+ * }
+ *```
+ *
+ * You can also switch tabs from a child component by calling `select()` on the
+ * parent view using the `NavController` instance. For example, assuming you have
+ * a `TabsPage` component, you could call the following from any of the child
+ * components to switch to `TabsRoot3`:
+ *
+ *```ts
+ * switchTabs() {
+ *   this.navCtrl.parent.select(2);
+ * }
+ *```
+ * @demo /docs/demos/src/tabs/
+ *
+ * @see {@link /docs/components#tabs Tabs Component Docs}
+ * @see {@link ../Tab Tab API Docs}
+ * @see {@link ../../config/Config Config API Docs}
+ *
+ */
+var Tabs = (function (_super) {
+    __extends(Tabs, _super);
+    function Tabs(parent, viewCtrl, _app, config, elementRef, _plt, renderer, _linker, keyboard) {
+        var _this = _super.call(this, config, elementRef, renderer, 'tabs') || this;
+        _this.viewCtrl = viewCtrl;
+        _this._app = _app;
+        _this._plt = _plt;
+        _this._linker = _linker;
+        /** @internal */
+        _this._ids = -1;
+        /** @internal */
+        _this._tabs = [];
+        /** @internal */
+        _this._selectHistory = [];
+        /** @internal */
+        _this._onDestroy = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
+        /**
+         * @output {any} Emitted when the tab changes.
+         */
+        _this.ionChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* EventEmitter */]();
+        _this.parent = parent;
+        _this.id = 't' + (++tabIds);
+        _this._sbPadding = config.getBoolean('statusbarPadding');
+        _this.tabsHighlight = config.getBoolean('tabsHighlight');
+        if (_this.parent) {
+            // this Tabs has a parent Nav
+            _this.parent.registerChildNav(_this);
+        }
+        else if (viewCtrl && viewCtrl.getNav()) {
+            // this Nav was opened from a modal
+            _this.parent = viewCtrl.getNav();
+            _this.parent.registerChildNav(_this);
+        }
+        else if (_this._app) {
+            // this is the root navcontroller for the entire app
+            _this._app.registerRootNav(_this);
+        }
+        // Tabs may also be an actual ViewController which was navigated to
+        // if Tabs is static and not navigated to within a NavController
+        // then skip this and don't treat it as it's own ViewController
+        if (viewCtrl) {
+            viewCtrl._setContent(_this);
+            viewCtrl._setContentRef(elementRef);
+        }
+        var keyboardResizes = config.getBoolean('keyboardResizes', false);
+        if (keyboard && keyboardResizes) {
+            keyboard.willHide
+                .takeUntil(_this._onDestroy)
+                .subscribe(function () {
+                _this._plt.timeout(function () { return _this.setTabbarHidden(false); }, 50);
+            });
+            keyboard.willShow
+                .takeUntil(_this._onDestroy)
+                .subscribe(function () { return _this.setTabbarHidden(true); });
+        }
+        return _this;
+    }
+    /**
+     * @internal
+     */
+    Tabs.prototype.setTabbarHidden = function (tabbarHidden) {
+        this.setElementClass('tabbar-hidden', tabbarHidden);
+        this.resize();
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.ngOnDestroy = function () {
+        this._onDestroy.next();
+        if (this.parent) {
+            this.parent.unregisterChildNav(this);
+        }
+        else {
+            this._app.unregisterRootNav(this);
+        }
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this._setConfig('tabsPlacement', 'bottom');
+        this._setConfig('tabsLayout', 'icon-top');
+        this._setConfig('tabsHighlight', this.tabsHighlight);
+        if (this.tabsHighlight) {
+            this._plt.resize
+                .takeUntil(this._onDestroy)
+                .subscribe(function () { return _this._highlight.select(_this.getSelected()); });
+        }
+        this.initTabs();
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.initTabs = function () {
+        var _this = this;
+        // get the selected index from the input
+        // otherwise default it to use the first index
+        var selectedIndex = (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["f" /* isBlank */])(this.selectedIndex) ? 0 : parseInt(this.selectedIndex, 10));
+        // now see if the deep linker can find a tab index
+        var tabsSegment = this._linker.getSegmentByNavIdOrName(this.id, this.name);
+        if (tabsSegment) {
+            // we found a segment which probably represents which tab to select
+            selectedIndex = this._getSelectedTabIndex(tabsSegment.secondaryId, selectedIndex);
+        }
+        // get the selectedIndex and ensure it isn't hidden or disabled
+        var selectedTab = this._tabs.find(function (t, i) { return i === selectedIndex && t.enabled && t.show; });
+        if (!selectedTab) {
+            // wasn't able to select the tab they wanted
+            // try to find the first tab that's available
+            selectedTab = this._tabs.find(function (t) { return t.enabled && t.show; });
+        }
+        var promise = Promise.resolve();
+        if (selectedTab) {
+            selectedTab._segment = tabsSegment;
+            promise = this.select(selectedTab);
+        }
+        return promise.then(function () {
+            // set the initial href attribute values for each tab
+            _this._tabs.forEach(function (t) {
+                t.updateHref(t.root, t.rootParams);
+            });
+        });
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype._setConfig = function (attrKey, fallback) {
+        var val = this[attrKey];
+        if (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["f" /* isBlank */])(val)) {
+            val = this._config.get(attrKey, fallback);
+        }
+        this.setElementAttribute(attrKey, val);
+    };
+    /**
+     * @hidden
+     */
+    Tabs.prototype.add = function (tab) {
+        this._tabs.push(tab);
+        return this.id + '-' + (++this._ids);
+    };
+    /**
+     * @param {number|Tab} tabOrIndex Index, or the Tab instance, of the tab to select.
+     */
+    Tabs.prototype.select = function (tabOrIndex, opts, fromUrl) {
+        var _this = this;
+        if (opts === void 0) { opts = {}; }
+        if (fromUrl === void 0) { fromUrl = false; }
+        var selectedTab = (typeof tabOrIndex === 'number' ? this.getByIndex(tabOrIndex) : tabOrIndex);
+        if (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["f" /* isBlank */])(selectedTab)) {
+            return Promise.resolve();
+        }
+        // If the selected tab is the current selected tab, we do not switch
+        var currentTab = this.getSelected();
+        if (selectedTab === currentTab && currentTab.getActive()) {
+            return this._updateCurrentTab(selectedTab, fromUrl);
+        }
+        // If the selected tab does not have a root, we do not switch (#9392)
+        // it's possible the tab is only for opening modal's or signing out
+        // and doesn't actually have content. In the case there's no content
+        // for a tab then do nothing and leave the current view as is
+        if (selectedTab.root) {
+            // At this point we are going to perform a page switch
+            // Let's fire willLeave in the current tab page
+            var currentPage;
+            if (currentTab) {
+                currentPage = currentTab.getActive();
+                currentPage && currentPage._willLeave(false);
+            }
+            // Fire willEnter in the new selected tab
+            var selectedPage_1 = selectedTab.getActive();
+            selectedPage_1 && selectedPage_1._willEnter();
+            // Let's start the transition
+            opts.animate = false;
+            return selectedTab.load(opts).then(function () {
+                _this._tabSwitchEnd(selectedTab, selectedPage_1, currentPage);
+                if (opts.updateUrl !== false) {
+                    _this._linker.navChange(__WEBPACK_IMPORTED_MODULE_10__navigation_nav_util__["c" /* DIRECTION_SWITCH */]);
+                }
+                (void 0) /* assert */;
+                _this._fireChangeEvent(selectedTab);
+            });
+        }
+        else {
+            this._fireChangeEvent(selectedTab);
+            return Promise.resolve();
+        }
+    };
+    Tabs.prototype._fireChangeEvent = function (selectedTab) {
+        selectedTab.ionSelect.emit(selectedTab);
+        this.ionChange.emit(selectedTab);
+    };
+    Tabs.prototype._tabSwitchEnd = function (selectedTab, selectedPage, currentPage) {
+        (void 0) /* assert */;
+        (void 0) /* assert */;
+        // Update tabs selection state
+        var tabs = this._tabs;
+        var tab;
+        for (var i = 0; i < tabs.length; i++) {
+            tab = tabs[i];
+            tab.setSelected(tab === selectedTab);
+        }
+        if (this.tabsHighlight) {
+            this._highlight.select(selectedTab);
+        }
+        // Fire didEnter/didLeave lifecycle events
+        if (selectedPage) {
+            selectedPage._didEnter();
+            this._app.viewDidEnter.emit(selectedPage);
+        }
+        if (currentPage) {
+            currentPage && currentPage._didLeave();
+            this._app.viewDidLeave.emit(currentPage);
+        }
+        // track the order of which tabs have been selected, by their index
+        // do not track if the tab index is the same as the previous
+        if (this._selectHistory[this._selectHistory.length - 1] !== selectedTab.id) {
+            this._selectHistory.push(selectedTab.id);
+        }
+    };
+    /**
+     * Get the previously selected Tab which is currently not disabled or hidden.
+     * @param {boolean} trimHistory If the selection history should be trimmed up to the previous tab selection or not.
+     * @returns {Tab}
+     */
+    Tabs.prototype.previousTab = function (trimHistory) {
+        var _this = this;
+        if (trimHistory === void 0) { trimHistory = true; }
+        // walk backwards through the tab selection history
+        // and find the first previous tab that is enabled and shown
+        (void 0) /* console.debug */;
+        for (var i = this._selectHistory.length - 2; i >= 0; i--) {
+            var tab = this._tabs.find(function (t) { return t.id === _this._selectHistory[i]; });
+            if (tab && tab.enabled && tab.show) {
+                if (trimHistory) {
+                    this._selectHistory.splice(i + 1);
+                }
+                return tab;
+            }
+        }
+        return null;
+    };
+    /**
+     * @param {number} index Index of the tab you want to get
+     * @returns {Tab} Returns the tab who's index matches the one passed
+     */
+    Tabs.prototype.getByIndex = function (index) {
+        return this._tabs[index];
+    };
+    /**
+     * @return {Tab} Returns the currently selected tab
+     */
+    Tabs.prototype.getSelected = function () {
+        var tabs = this._tabs;
+        for (var i = 0; i < tabs.length; i++) {
+            if (tabs[i].isSelected) {
+                return tabs[i];
+            }
+        }
+        return null;
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.getActiveChildNavs = function () {
+        var selected = this.getSelected();
+        return selected ? [selected] : [];
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.getAllChildNavs = function () {
+        return this._tabs;
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.getIndex = function (tab) {
+        return this._tabs.indexOf(tab);
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.length = function () {
+        return this._tabs.length;
+    };
+    /**
+     * "Touch" the active tab, going back to the root view of the tab
+     * or optionally letting the tab handle the event
+     */
+    Tabs.prototype._updateCurrentTab = function (tab, fromUrl) {
+        var active = tab.getActive();
+        if (active) {
+            if (fromUrl && tab._segment) {
+                // see if the view controller exists
+                var vc = tab.getViewById(tab._segment.name);
+                if (vc) {
+                    // the view is already in the stack
+                    return tab.popTo(vc, {
+                        animate: false,
+                        updateUrl: false,
+                    });
+                }
+                else if (tab._views.length === 0 && tab._segment.defaultHistory && tab._segment.defaultHistory.length) {
+                    return this._linker.initViews(tab._segment).then(function (views) {
+                        return tab.setPages(views, {
+                            animate: false, updateUrl: false
+                        });
+                    }).then(function () {
+                        tab._segment = null;
+                    });
+                }
+                else {
+                    return tab.setRoot(tab._segment.name, tab._segment.data, {
+                        animate: false, updateUrl: false
+                    }).then(function () {
+                        tab._segment = null;
+                    });
+                }
+            }
+            else if (active._cmp && active._cmp.instance.ionSelected) {
+                // if they have a custom tab selected handler, call it
+                active._cmp.instance.ionSelected();
+                return Promise.resolve();
+            }
+            else if (tab.length() > 1) {
+                // if we're a few pages deep, pop to root
+                return tab.popToRoot();
+            }
+            else {
+                return Object(__WEBPACK_IMPORTED_MODULE_10__navigation_nav_util__["j" /* getComponent */])(this._linker, tab.root).then(function (viewController) {
+                    if (viewController.component !== active.component) {
+                        // Otherwise, if the page we're on is not our real root
+                        // reset it to our default root type
+                        return tab.setRoot(tab.root);
+                    }
+                }).catch(function () {
+                    (void 0) /* console.debug */;
+                });
+            }
+        }
+    };
+    /**
+     * @internal
+     * DOM WRITE
+     */
+    Tabs.prototype.setTabbarPosition = function (top, bottom) {
+        if (this._top !== top || this._bottom !== bottom) {
+            var tabbarEle = this._tabbar.nativeElement;
+            tabbarEle.style.top = (top > -1 ? top + 'px' : '');
+            tabbarEle.style.bottom = (bottom > -1 ? bottom + 'px' : '');
+            tabbarEle.classList.add('show-tabbar');
+            this._top = top;
+            this._bottom = bottom;
+        }
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.resize = function () {
+        var tab = this.getSelected();
+        tab && tab.resize();
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.initPane = function () {
+        var isMain = this._elementRef.nativeElement.hasAttribute('main');
+        return isMain;
+    };
+    /**
+     * @internal
+     */
+    Tabs.prototype.paneChanged = function (isPane) {
+        if (isPane) {
+            this.resize();
+        }
+    };
+    Tabs.prototype.goToRoot = function (opts) {
+        if (this._tabs.length) {
+            return this.select(this._tabs[0], opts);
+        }
+    };
+    /*
+     * @private
+     */
+    Tabs.prototype.getType = function () {
+        return 'tabs';
+    };
+    /*
+     * @private
+     */
+    Tabs.prototype.getSecondaryIdentifier = function () {
+        var tabs = this.getActiveChildNavs();
+        if (tabs && tabs.length) {
+            return this._linker._getTabSelector(tabs[0]);
+        }
+        return '';
+    };
+    /**
+     * @private
+     */
+    Tabs.prototype._getSelectedTabIndex = function (secondaryId, fallbackIndex) {
+        if (secondaryId === void 0) { secondaryId = ''; }
+        if (fallbackIndex === void 0) { fallbackIndex = 0; }
+        // we found a segment which probably represents which tab to select
+        var indexMatch = secondaryId.match(/tab-(\d+)/);
+        if (indexMatch) {
+            // awesome, the segment name was something "tab-0", and
+            // the numbe represents which tab to select
+            return parseInt(indexMatch[1], 10);
+        }
+        // wasn't in the "tab-0" format so maybe it's using a word
+        var tab = this._tabs.find(function (t) {
+            return (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["l" /* isPresent */])(t.tabUrlPath) && t.tabUrlPath === secondaryId) ||
+                (Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["l" /* isPresent */])(t.tabTitle) && Object(__WEBPACK_IMPORTED_MODULE_11__navigation_url_serializer__["c" /* formatUrlPart */])(t.tabTitle) === secondaryId);
+        });
+        return Object(__WEBPACK_IMPORTED_MODULE_7__util_util__["l" /* isPresent */])(tab) ? tab.index : fallbackIndex;
+    };
+    Tabs.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
+                    selector: 'ion-tabs',
+                    template: '<div class="tabbar" role="tablist" #tabbar>' +
+                        '<a *ngFor="let t of _tabs" [tab]="t" class="tab-button" role="tab" href="#" (ionSelect)="select(t)"></a>' +
+                        '<div class="tab-highlight"></div>' +
+                        '</div>' +
+                        '<ng-content></ng-content>' +
+                        '<div #portal tab-portal></div>',
+                    encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* ViewEncapsulation */].None,
+                    providers: [{ provide: __WEBPACK_IMPORTED_MODULE_12__split_pane_split_pane__["a" /* RootNode */], useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* forwardRef */])(function () { return Tabs; }) }]
+                },] },
+    ];
+    /** @nocollapse */
+    Tabs.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_9__navigation_nav_controller__["a" /* NavController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
+        { type: __WEBPACK_IMPORTED_MODULE_15__navigation_view_controller__["a" /* ViewController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
+        { type: __WEBPACK_IMPORTED_MODULE_3__app_app__["a" /* App */], },
+        { type: __WEBPACK_IMPORTED_MODULE_4__config_config__["a" /* Config */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_13__platform_platform__["a" /* Platform */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
+        { type: __WEBPACK_IMPORTED_MODULE_5__navigation_deep_linker__["a" /* DeepLinker */], },
+        { type: __WEBPACK_IMPORTED_MODULE_8__platform_keyboard__["a" /* Keyboard */], },
+    ]; };
+    Tabs.propDecorators = {
+        'name': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+        'selectedIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+        'tabsLayout': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+        'tabsPlacement': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+        'tabsHighlight': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+        'ionChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */] },],
+        '_highlight': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: [__WEBPACK_IMPORTED_MODULE_14__tab_highlight__["a" /* TabHighlight */],] },],
+        '_tabbar': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['tabbar',] },],
+        'portal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ViewChild */], args: ['portal', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* ViewContainerRef */] },] },],
+    };
+    return Tabs;
+}(__WEBPACK_IMPORTED_MODULE_6__ion__["a" /* Ion */]));
+
+var tabIds = -1;
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+/* 45 */,
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55548,7 +55549,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(13);
 var Subscriber_1 = __webpack_require__(35);
-var Subscription_1 = __webpack_require__(40);
+var Subscription_1 = __webpack_require__(41);
 var ObjectUnsubscribedError_1 = __webpack_require__(220);
 var SubjectSubscription_1 = __webpack_require__(221);
 var rxSubscriber_1 = __webpack_require__(84);
@@ -55710,7 +55711,7 @@ exports.AnonymousSubject = AnonymousSubject;
 //# sourceMappingURL=Subject.js.map
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55722,7 +55723,7 @@ exports.AnonymousSubject = AnonymousSubject;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ion__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__overlay_portal__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_constants__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_constants__ = __webpack_require__(48);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -55900,7 +55901,7 @@ var IonicApp = (function (_super) {
 //# sourceMappingURL=app-root.js.map
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55915,7 +55916,7 @@ var PORTAL_TOAST = 4;
 //# sourceMappingURL=app-constants.js.map
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56439,7 +56440,7 @@ function getNonHydratedSegmentIfLinkAndUrlMatch(urlChunks, navLink) {
 //# sourceMappingURL=url-serializer.js.map
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56566,7 +56567,7 @@ var Label = (function (_super) {
 //# sourceMappingURL=label.js.map
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56973,7 +56974,7 @@ var picker_column_PickerColumnCmp = (function () {
 //# sourceMappingURL=picker-column.js.map
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57252,7 +57253,7 @@ var list_List = (function (_super) {
 //# sourceMappingURL=list.js.map
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57461,7 +57462,7 @@ var Nav = (function (_super) {
 //# sourceMappingURL=nav.js.map
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57721,7 +57722,7 @@ var radioGroupIds = -1;
 //# sourceMappingURL=radio-group.js.map
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57819,7 +57820,6 @@ var ToolbarTitle = (function (_super) {
 //# sourceMappingURL=toolbar-title.js.map
 
 /***/ }),
-/* 55 */,
 /* 56 */,
 /* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -60173,7 +60173,7 @@ var PickerController = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_key__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navigation_nav_params__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_view_controller__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__picker_column__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__picker_column__ = __webpack_require__(51);
 
 
 
@@ -60662,7 +60662,7 @@ var loadingIds = -1;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navigation_nav_params__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gestures_gesture_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_module_loader__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_module_loader__ = __webpack_require__(39);
 
 
 
@@ -61114,7 +61114,7 @@ var SPINNERS = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_nav_params__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_module_loader__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_module_loader__ = __webpack_require__(39);
 
 
 
@@ -61236,7 +61236,7 @@ var popoverIds = -1;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ion__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__item_item__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_group__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_group__ = __webpack_require__(54);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -61701,7 +61701,7 @@ var Header = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_nav_controller_base__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__tabs__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__tabs__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__transitions_transition_controller__ = __webpack_require__(22);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -62568,7 +62568,7 @@ exports.errorObject = { e: {} };
 
 "use strict";
 
-var root_1 = __webpack_require__(39);
+var root_1 = __webpack_require__(40);
 var Symbol = root_1.root.Symbol;
 exports.rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 'function') ?
     Symbol.for('rxSubscriber') : '@@rxSubscriber';
@@ -62584,7 +62584,7 @@ exports.$$rxSubscriber = exports.rxSubscriber;
 
 "use strict";
 
-var root_1 = __webpack_require__(39);
+var root_1 = __webpack_require__(40);
 var isArrayLike_1 = __webpack_require__(211);
 var isPromise_1 = __webpack_require__(212);
 var isObject_1 = __webpack_require__(126);
@@ -66530,7 +66530,7 @@ var popover_component = __webpack_require__(71);
 var animation = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/page-transition.js
-var page_transition = __webpack_require__(41);
+var page_transition = __webpack_require__(42);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/popover/popover-transitions.js
 var __extends = (this && this.__extends) || (function () {
@@ -72029,7 +72029,7 @@ var VirtualItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_app_app__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_app_app_root__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_app_app_root__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_deep_linker__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_dom_controller__ = __webpack_require__(7);
@@ -72039,14 +72039,14 @@ var VirtualItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gestures_gesture_config__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__tap_click_haptic__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__platform_keyboard__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__util_module_loader__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__util_module_loader__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__util_ng_module_loader__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__platform_platform_registry__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__tap_click_tap_click__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__config_mode_registry__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__transitions_transition_controller__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__navigation_url_serializer__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__navigation_url_serializer__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_action_sheet_action_sheet_component__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_action_sheet_action_sheet_controller__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_alert_alert_component__ = __webpack_require__(61);
@@ -72081,11 +72081,11 @@ var VirtualItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_item_item_divider__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_item_item_group__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_item_item_options__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_item_item_reorder__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_item_item_reorder__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_item_item_sliding__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_item_reorder__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_label_label__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_list_list__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_label_label__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_list_list__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_list_list_header__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_loading_loading_component__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_loading_loading_controller__ = __webpack_require__(99);
@@ -72095,7 +72095,7 @@ var VirtualItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_menu_menu_toggle__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__components_modal_modal_component__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_modal_modal_controller__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_nav_nav__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_nav_nav__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_nav_nav_pop__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__components_nav_nav_pop_anchor__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__components_nav_nav_push__ = __webpack_require__(111);
@@ -72103,12 +72103,12 @@ var VirtualItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__components_note_note__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__components_option_option__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__components_picker_picker_component__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__components_picker_picker_column__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__components_picker_picker_column__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__components_picker_picker_controller__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__components_popover_popover_component__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__components_popover_popover_controller__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__components_radio_radio_button__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__components_radio_radio_group__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__components_radio_radio_group__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__components_range_range__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__components_range_range_knob__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__components_refresher_refresher__ = __webpack_require__(115);
@@ -72128,7 +72128,7 @@ var VirtualItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__components_tabs_tab__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__components_tabs_tab_button__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__components_tabs_tab_highlight__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__components_tabs_tabs__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__components_tabs_tabs__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__components_thumbnail_thumbnail__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__components_toast_toast_component__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__components_toast_toast_controller__ = __webpack_require__(119);
@@ -72137,7 +72137,7 @@ var VirtualItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__components_toolbar_toolbar_header__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__components_toolbar_toolbar__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__components_toolbar_toolbar_item__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__components_toolbar_toolbar_title__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__components_toolbar_toolbar_title__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__components_toolbar_navbar__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__components_typography_typography__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__components_virtual_scroll_virtual_footer__ = __webpack_require__(120);
@@ -72742,7 +72742,7 @@ exports.empty = {
 
 "use strict";
 
-var root_1 = __webpack_require__(39);
+var root_1 = __webpack_require__(40);
 function getSymbolObservable(context) {
     var $$observable;
     var Symbol = context.Symbol;
@@ -76841,7 +76841,7 @@ var InfiniteScrollContent = (function () {
 /* unused harmony export getScrollData */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__);
@@ -77732,7 +77732,7 @@ var ItemGroup = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__item__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__item_options__ = __webpack_require__(97);
 
@@ -78156,7 +78156,7 @@ var ItemSliding = (function () {
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-constants.js
-var app_constants = __webpack_require__(47);
+var app_constants = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.js
 var loading_component = __webpack_require__(68);
@@ -78550,7 +78550,7 @@ var menu_gestures_MenuContentGesture = (function (_super) {
 var menu_controller = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav.js
-var nav = __webpack_require__(52);
+var nav = __webpack_require__(53);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
 var platform = __webpack_require__(3);
@@ -79347,7 +79347,7 @@ var overlay_proxy = __webpack_require__(162);
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-constants.js
-var app_constants = __webpack_require__(47);
+var app_constants = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.js
 var modal_component = __webpack_require__(69);
@@ -79356,7 +79356,7 @@ var modal_component = __webpack_require__(69);
 var animation = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/transitions/page-transition.js
-var page_transition = __webpack_require__(41);
+var page_transition = __webpack_require__(42);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/modal/modal-transitions.js
 var __extends = (this && this.__extends) || (function () {
@@ -79748,7 +79748,7 @@ var ClickBlock = (function () {
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/label/label.js
-var label = __webpack_require__(49);
+var label = __webpack_require__(50);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
 var config = __webpack_require__(1);
@@ -79791,7 +79791,7 @@ var item = __webpack_require__(18);
 var util_form = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
-var item_reorder = __webpack_require__(42);
+var item_reorder = __webpack_require__(43);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RenderType_Item; });
@@ -79885,7 +79885,7 @@ var NavbarNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵccf
 /* unused harmony export ToolbarTitleNgFactory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toolbar_title__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toolbar_title__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__toolbar__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navbar__ = __webpack_require__(27);
@@ -82283,7 +82283,7 @@ var Thumbnail = (function () {
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-constants.js
-var app_constants = __webpack_require__(47);
+var app_constants = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.js
 var toast_component = __webpack_require__(74);
@@ -85497,7 +85497,7 @@ var AlertCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_deep_linker__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__platform_dom_controller__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__click_block__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_root__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_root__ = __webpack_require__(47);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
  *
@@ -85631,7 +85631,7 @@ var LoadingCmpNgFactory = core["_13" /* ɵccf */]("ion-loading", loading_compone
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_nav_params__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gestures_gesture_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_module_loader__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_module_loader__ = __webpack_require__(39);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
  *
@@ -85682,7 +85682,7 @@ var button_button = __webpack_require__(17);
 var config = __webpack_require__(1);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-column.js + 1 modules
-var picker_column = __webpack_require__(50);
+var picker_column = __webpack_require__(51);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
 var platform = __webpack_require__(3);
@@ -85801,7 +85801,7 @@ var PickerCmpNgFactory = core["_13" /* ɵccf */]("ion-picker-cmp", picker_compon
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_nav_params__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__gestures_gesture_controller__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_module_loader__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_module_loader__ = __webpack_require__(39);
 /**
  * @fileoverview This file was generated by the Angular template compiler. Do not edit.
  *
@@ -85853,13 +85853,13 @@ var util_form = __webpack_require__(15);
 var config = __webpack_require__(1);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
-var item_reorder = __webpack_require__(42);
+var item_reorder = __webpack_require__(43);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-content.js
 var item_content = __webpack_require__(66);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/label/label.js
-var label = __webpack_require__(49);
+var label = __webpack_require__(50);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
 var button_ngfactory = __webpack_require__(33);
@@ -85871,7 +85871,7 @@ var button_button = __webpack_require__(17);
 var radio_button = __webpack_require__(72);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/radio/radio-group.js
-var radio_group = __webpack_require__(53);
+var radio_group = __webpack_require__(54);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/radio/radio-button.ngfactory.js
 /**
@@ -85903,7 +85903,7 @@ var RadioButtonNgFactory = core["_13" /* ɵccf */]("ion-radio", radio_button["a"
 var esm5_forms = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list.js + 1 modules
-var list = __webpack_require__(51);
+var list = __webpack_require__(52);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
 var platform = __webpack_require__(3);
@@ -86673,7 +86673,7 @@ exports.isPromise = isPromise;
 
 "use strict";
 
-var root_1 = __webpack_require__(39);
+var root_1 = __webpack_require__(40);
 function symbolIteratorPonyfill(root) {
     var Symbol = root.Symbol;
     if (typeof Symbol === 'function') {
@@ -86803,7 +86803,7 @@ exports.share = share;
 
 var multicast_1 = __webpack_require__(218);
 var refCount_1 = __webpack_require__(132);
-var Subject_1 = __webpack_require__(45);
+var Subject_1 = __webpack_require__(46);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
 }
@@ -86902,10 +86902,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(45);
+var Subject_1 = __webpack_require__(46);
 var Observable_1 = __webpack_require__(13);
 var Subscriber_1 = __webpack_require__(35);
-var Subscription_1 = __webpack_require__(40);
+var Subscription_1 = __webpack_require__(41);
 var refCount_1 = __webpack_require__(132);
 /**
  * @class ConnectableObservable<T>
@@ -87112,7 +87112,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(40);
+var Subscription_1 = __webpack_require__(41);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -87386,7 +87386,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var root_1 = __webpack_require__(39);
+var root_1 = __webpack_require__(40);
 var Observable_1 = __webpack_require__(13);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -89153,7 +89153,7 @@ var Observable_1 = __webpack_require__(13);
 var tryCatch_1 = __webpack_require__(127);
 var isFunction_1 = __webpack_require__(82);
 var errorObject_1 = __webpack_require__(83);
-var Subscription_1 = __webpack_require__(40);
+var Subscription_1 = __webpack_require__(41);
 var toString = Object.prototype.toString;
 function isNodeStyleEventEmitter(sourceObj) {
     return !!sourceObj && typeof sourceObj.addListener === 'function' && typeof sourceObj.removeListener === 'function';
@@ -89470,7 +89470,7 @@ exports.ErrorObservable = ErrorObservable;
 /* unused harmony export NavNgFactory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__split_pane_split_pane__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_view_controller__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_nav_controller__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_app__ = __webpack_require__(5);
@@ -89568,7 +89568,7 @@ var dom_controller = __webpack_require__(7);
 var split_pane = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/tabs/tabs.js
-var tabs = __webpack_require__(43);
+var tabs = __webpack_require__(44);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
 var nav_controller = __webpack_require__(12);
@@ -89641,7 +89641,7 @@ var TabsNgFactory = core["_13" /* ɵccf */]("ion-tabs", tabs["a" /* Tabs */], Vi
 /* unused harmony export TabNgFactory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__platform_platform__ = __webpack_require__(3);

@@ -197,7 +197,7 @@
       let messagesOut = [];
       // console.log(`messagesOut`, messagesOut);
 
-      console.log(`typeof de messagesIn[0]: ${typeof messagesIn[0]}`);
+      // console.log(`typeof de messagesIn[0]: ${typeof messagesIn[0]}`);
 
 
       for (let i=0; i<messagesInElements.length; i++) {
@@ -206,7 +206,7 @@
         messagesIn[i].emojis = getEmojis(messagesInElements[i]);
         messagesIn[i].date = {};
         messagesIn[i].date = getDate(messagesInElements[i].parentNode.attributes[`data-pre-plain-text`].nodeValue);
-        console.log(`messagesIn[i]`, messagesIn[i]);
+        // console.log(`messagesIn[i]`, messagesIn[i]);
         // messagesIn.push(messagesInElements[i].textContent)
       }
 

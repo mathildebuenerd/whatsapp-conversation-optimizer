@@ -23,11 +23,18 @@ export class ContactProfilePage {
   analysis;
 
   favouriteEmojis: Object;
+  // contactName: string;
 
   constructor(analysis: TextAnalysisService,
               public navParams: NavParams) {
     // this.name = name;
     // this.data = Object;
+
+    // this.params = params;
+    // console.log(this.params); // returns NavParams {data: Object}
+    // this.contactName = navParams.data.contactName;
+
+    console.log(`navParams de contact profile: `, navParams)
     this.analysis = analysis;
     this.favouriteEmojis = {
       "out": {},

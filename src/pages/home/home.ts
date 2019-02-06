@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {AlertController, NavController} from 'ionic-angular';
+import {ContactProfilePage} from "../contacts/contact-profile/contact-profile";
 
 @Component({
   selector: 'page-home',
@@ -40,6 +41,8 @@ export class HomePage {
       this.currentName = content[0]["contactName"];
       console.log(`j'ai reçu comme content de la promesse:`, content, content["messages"], content["contactName"]);
       this.askForLanguage();
+      this.onGoToSingleContact(this.currentName);
+
 
       // console.log(JSON.parse(localStorage.getItem("conversations")));
       // console.log(JSON.parse(localStorage.getItem("conversations")));
@@ -50,6 +53,10 @@ export class HomePage {
 
   openAddContactForm() {
 
+  }
+
+  onGoToSingleContact(name: string) {
+    this.navCtrl.push(ContactProfilePage, {contactName: name});
   }
 
   addConversationToStorage(contactName, language) {
@@ -130,6 +137,26 @@ export class HomePage {
   printLocalStorage(key) {
     console.log(JSON.parse(localStorage.getItem(key)));
   }
+
+
+  showTextData(contactName: string) {
+    // Shows the conversation in a text form so that we can use it for training the LSTM model
+    const data = JSON.parse(localStorage.getItem("conversations"));
+    let text = "";
+    for (const contact of data) {
+      if (contact.name === contactName) {
+        for (const message of contact.messages.messagesIn) {
+          // Because message.emojis is an array, we remove the commas
+          const emojis = String(message.emojis).replace(/,/g, '');
+          // Add a line break at the end of the sentence
+          text+= `${message.text} ${emojis} \r`;
+        }
+      }
+    }
+    console.log(text)
+  }
+
+
   emptyStorage() {
     // Confirm alert to avoid deleting accidentally the data
     let confirmAlert = this.alertCtrl.create({
@@ -150,4 +177,6 @@ export class HomePage {
     });
     confirmAlert.present();
   }
+
+
 }

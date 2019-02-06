@@ -1,4 +1,5 @@
 import * as sent from 'node-sentiment-jouska';
+import local = browser.storage.local;
 
 export class TextAnalysisService {
 
@@ -112,5 +113,6 @@ export class TextAnalysisService {
     console.log(`sent:`, sent);
     return sent('hello, how are you today ?');
   }
+
 
 }
