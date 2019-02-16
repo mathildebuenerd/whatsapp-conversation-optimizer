@@ -358,23 +358,33 @@ var home_HomePage = /** @class */ (function () {
     HomePage.prototype.printLocalStorage = function (key) {
         console.log(JSON.parse(localStorage.getItem(key)));
     };
-    HomePage.prototype.showTextData = function (contactName) {
-        // Shows the conversation in a text form so that we can use it for training the LSTM model
-        var data = JSON.parse(localStorage.getItem("conversations"));
-        var text = "";
-        for (var _i = 0, data_1 = data; _i < data_1.length; _i++) {
-            var contact = data_1[_i];
-            if (contact.name === contactName) {
-                for (var _a = 0, _b = contact.messages.messagesIn; _a < _b.length; _a++) {
-                    var message = _b[_a];
-                    // Because message.emojis is an array, we remove the commas
-                    var emojis = String(message.emojis).replace(/,/g, '');
-                    // Add a line break at the end of the sentence
-                    text += message.text + " " + emojis + " \r";
+    HomePage.prototype.showTextData = function () {
+        this.getContactName().then(function (contactName) {
+            console.log("contact name", contactName);
+            // Shows the conversation in a text form so that we can use it for training the LSTM model
+            var data = JSON.parse(localStorage.getItem("conversations"));
+            var text = "";
+            for (var _i = 0, data_1 = data; _i < data_1.length; _i++) {
+                var contact = data_1[_i];
+                if (contact.name === contactName) {
+                    for (var _a = 0, _b = contact.messages.messagesIn; _a < _b.length; _a++) {
+                        var message = _b[_a];
+                        // Because message.emojis is an array, we remove the commas
+                        var emojis = String(message.emojis).replace(/,/g, '');
+                        // Add a line break at the end of the sentence
+                        text += message.text + " " + emojis + " \r";
+                    }
                 }
             }
-        }
-        console.log(text);
+            console.log(text);
+        });
+    };
+    HomePage.prototype.getContactName = function () {
+        return browser.tabs.executeScript(null, { file: '../assets/js/getCurrentContact.js' })
+            .then(function (name) {
+            console.log("nom: ", name[0]);
+            return String(name[0]);
+        });
     };
     HomePage.prototype.emptyStorage = function () {
         // Confirm alert to avoid deleting accidentally the data
@@ -431,15 +441,16 @@ var tabs_menu_TabsPage = /** @class */ (function () {
         this.homePage = home_HomePage;
         this.contactsPage = contacts["a" /* ContactsPage */];
         this.contactProfilePage = contact_profile["a" /* ContactProfilePage */];
-        this.getContactName();
+        this.contactName = this.getContactName();
     }
     TabsPage.prototype.getContactName = function () {
-        var _this = this;
+        var currName = "";
         var name = browser.tabs.executeScript(null, { file: '../assets/js/getCurrentContact.js' })
             .then(function (name) {
             console.log("nom: ", name[0]);
-            _this.contactName = String(name[0]);
+            currName = String(name[0]);
         });
+        return currName;
     };
     TabsPage = tabs_menu___decorate([
         Object(core["k" /* Component */])({
@@ -700,7 +711,7 @@ function View_HomePage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core[
         var pd_0 = (_co.printLocalStorage("analyses") !== false);
         ad = (pd_0 && ad);
     } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](30, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n    Print analyses\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_17" /* ɵeld */](33, 0, null, 1, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.showTextData("Cl\u00E9mence") !== false);
+        var pd_0 = (_co.showTextData() !== false);
         ad = (pd_0 && ad);
     } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_16" /* ɵdid */](34, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["p" /* ElementRef */], core["N" /* Renderer */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n    Print text data\n  "])), (_l()(), core["_36" /* ɵted */](-1, 1, ["\n\n  "])), (_l()(), core["_17" /* ɵeld */](37, 0, null, 1, 2, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.emptyStorage() !== false);

@@ -139,21 +139,33 @@ export class HomePage {
   }
 
 
-  showTextData(contactName: string) {
-    // Shows the conversation in a text form so that we can use it for training the LSTM model
-    const data = JSON.parse(localStorage.getItem("conversations"));
-    let text = "";
-    for (const contact of data) {
-      if (contact.name === contactName) {
-        for (const message of contact.messages.messagesIn) {
-          // Because message.emojis is an array, we remove the commas
-          const emojis = String(message.emojis).replace(/,/g, '');
-          // Add a line break at the end of the sentence
-          text+= `${message.text} ${emojis} \r`;
+  showTextData(): void {
+    this.getContactName().then( (contactName) => {
+      console.log(`contact name`, contactName);
+      // Shows the conversation in a text form so that we can use it for training the LSTM model
+      const data = JSON.parse(localStorage.getItem("conversations"));
+      let text = "";
+      for (const contact of data) {
+        if (contact.name === contactName) {
+          for (const message of contact.messages.messagesIn) {
+            // Because message.emojis is an array, we remove the commas
+            const emojis = String(message.emojis).replace(/,/g, '');
+            // Add a line break at the end of the sentence
+            text+= `${message.text} ${emojis} \r`;
+          }
         }
       }
-    }
-    console.log(text)
+      console.log(text)
+    });
+
+  }
+
+  getContactName(): Promise<string> {
+    return browser.tabs.executeScript(null, {file: '../assets/js/getCurrentContact.js'})
+      .then( (name) => {
+        console.log(`nom: `, name[0]);
+        return String(name[0]);
+      });
   }
 
 

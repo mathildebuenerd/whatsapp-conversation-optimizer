@@ -17,18 +17,22 @@ export class TabsPage {
 
 
   constructor(params?: NavParams) {
-    this.getContactName();
+    this.contactName = this.getContactName();
   }
 
-  getContactName(): void {
+  getContactName(): string {
+    let currName = "";
     const name = browser.tabs.executeScript(null, {file: '../assets/js/getCurrentContact.js'})
       .then( (name) => {
         console.log(`nom: `, name[0]);
-        this.contactName = String(name[0]);
+        currName = String(name[0]);
       });
+    return currName;
   }
 
   homePage = HomePage;
   contactsPage = ContactsPage;
   contactProfilePage = ContactProfilePage;
+
+
 }
