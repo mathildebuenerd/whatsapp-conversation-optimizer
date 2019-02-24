@@ -3,7 +3,7 @@
   "name": "Conversaton Optimizer",
   "short_name": "conversation-optimizr",
   "version": "0.1.0",
-  "content_security_policy": "script-src 'self' 'sha256-N0k0/YcUD0DG7+FEelEAXKBs7MLL5QYx8+LoBNMtJJY='; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/firebasejs/5.8.4/firebase.js; 'sha256-N0k0/YcUD0DG7+FEelEAXKBs7MLL5QYx8+LoBNMtJJY='; object-src 'self'",
   "sidebar_action": {
     "default_title": "Conversation Optimizer",
     "default_panel": "index.html",
