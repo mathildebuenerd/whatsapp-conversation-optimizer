@@ -11,6 +11,7 @@ import { ContactProfilePage } from "../pages/contacts/contact-profile/contact-pr
 import { TabsPage } from "../pages/tabs-menu/tabs-menu";
 
 import { TextAnalysisService } from "../services/TextAnalysis.service";
+import { FirebaseService } from "../services/Firebase.service";
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { TextAnalysisService } from "../services/TextAnalysis.service";
     StatusBar,
     SplashScreen,
     TextAnalysisService,
+    FirebaseService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
