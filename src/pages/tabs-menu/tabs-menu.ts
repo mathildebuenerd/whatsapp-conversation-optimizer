@@ -17,7 +17,7 @@ export class TabsPage {
 
 
   constructor(params?: NavParams) {
-    this.contactName = this.getContactName();
+    // this.contactName = this.getContactName();
   }
 
   getContactName(): string {
@@ -32,7 +32,6 @@ export class TabsPage {
 
   homePage = HomePage;
   contactsPage = ContactsPage;
-  contactProfilePage = ContactProfilePage;
 
 
 }

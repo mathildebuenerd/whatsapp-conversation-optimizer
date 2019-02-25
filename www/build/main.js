@@ -78,8 +78,8 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic_angular_platform_dom_controller__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ionic_angular_platform_keyboard__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_ionic_angular_components_toolbar_toolbar_title__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__contact_profile__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_ionic_angular_components_toolbar_toolbar_title__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__contact_profile__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_TextAnalysis_service__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27_ionic_angular_navigation_nav_params__ = __webpack_require__(9);
 /**
@@ -163,14 +163,14 @@ var ContactProfilePageNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ionic_angular_components_app_app__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ionic_angular_navigation_nav_controller__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__node_modules_ionic_angular_components_toolbar_toolbar_title_ngfactory__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ionic_angular_components_toolbar_toolbar_title__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ionic_angular_components_toolbar_toolbar_title__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_ionic_angular_components_toolbar_toolbar__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__node_modules_ionic_angular_components_content_content_ngfactory__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_ionic_angular_components_content_content__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_ionic_angular_platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ionic_angular_platform_dom_controller__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ionic_angular_platform_keyboard__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic_angular_components_list_list__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic_angular_components_list_list__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ionic_angular_gestures_gesture_controller__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_common__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__contacts__ = __webpack_require__(81);
@@ -244,7 +244,7 @@ var splash_screen = __webpack_require__(79);
 var status_bar = __webpack_require__(80);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contact-profile/contact-profile.ts
-var contact_profile = __webpack_require__(45);
+var contact_profile = __webpack_require__(55);
 
 // CONCATENATED MODULE: ./src/pages/home/home.ts
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -435,13 +435,11 @@ var tabs_menu___metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var tabs_menu_TabsPage = /** @class */ (function () {
     function TabsPage(params) {
         this.homePage = home_HomePage;
         this.contactsPage = contacts["a" /* ContactsPage */];
-        this.contactProfilePage = contact_profile["a" /* ContactProfilePage */];
-        this.contactName = this.getContactName();
+        // this.contactName = this.getContactName();
     }
     TabsPage.prototype.getContactName = function () {
         var currName = "";
@@ -563,7 +561,7 @@ var app_module_AppModule = /** @class */ (function () {
 
 //# sourceMappingURL=app.module.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.js
-var app_root = __webpack_require__(47);
+var app_root = __webpack_require__(46);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
 var action_sheet_component_ngfactory = __webpack_require__(190);
@@ -599,7 +597,7 @@ var nav_ngfactory = __webpack_require__(244);
 var split_pane = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/nav/nav.js
-var nav = __webpack_require__(53);
+var nav = __webpack_require__(52);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
 var view_controller = __webpack_require__(4);
@@ -770,7 +768,7 @@ var nav_params = __webpack_require__(9);
 var styles_TabsPage = [];
 var RenderType_TabsPage = core["_15" /* ɵcrt */]({ encapsulation: 2, styles: styles_TabsPage, data: {} });
 
-function View_TabsPage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 12, "ion-tabs", [], null, null, null, tabs_ngfactory["b" /* View_Tabs_0 */], tabs_ngfactory["a" /* RenderType_Tabs */])), core["_32" /* ɵprd */](6144, null, split_pane["a" /* RootNode */], null, [tabs["a" /* Tabs */]]), core["_16" /* ɵdid */](2, 4374528, null, 0, tabs["a" /* Tabs */], [[2, nav_controller["a" /* NavController */]], [2, view_controller["a" /* ViewController */]], app["a" /* App */], config["a" /* Config */], core["p" /* ElementRef */], platform_platform["a" /* Platform */], core["N" /* Renderer */], deep_linker["a" /* DeepLinker */], keyboard["a" /* Keyboard */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n  "])), (_l()(), core["_17" /* ɵeld */](4, 0, null, 0, 1, "ion-tab", [["role", "tabpanel"], ["tabIcon", "home"], ["tabTitle", "Home"]], [[1, "id", 0], [1, "aria-labelledby", 0]], null, null, tab_ngfactory["b" /* View_Tab_0 */], tab_ngfactory["a" /* RenderType_Tab */])), core["_16" /* ɵdid */](5, 245760, null, 0, tab["a" /* Tab */], [tabs["a" /* Tabs */], app["a" /* App */], config["a" /* Config */], platform_platform["a" /* Platform */], core["p" /* ElementRef */], core["G" /* NgZone */], core["N" /* Renderer */], core["l" /* ComponentFactoryResolver */], core["i" /* ChangeDetectorRef */], gesture_controller["l" /* GestureController */], transition_controller["a" /* TransitionController */], [2, deep_linker["a" /* DeepLinker */]], dom_controller["a" /* DomController */], core["q" /* ErrorHandler */]], { root: [0, "root"], tabTitle: [1, "tabTitle"], tabIcon: [2, "tabIcon"] }, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n  "])), (_l()(), core["_17" /* ɵeld */](7, 0, null, 0, 1, "ion-tab", [["role", "tabpanel"], ["tabIcon", "contact"]], [[1, "id", 0], [1, "aria-labelledby", 0]], null, null, tab_ngfactory["b" /* View_Tab_0 */], tab_ngfactory["a" /* RenderType_Tab */])), core["_16" /* ɵdid */](8, 245760, null, 0, tab["a" /* Tab */], [tabs["a" /* Tabs */], app["a" /* App */], config["a" /* Config */], platform_platform["a" /* Platform */], core["p" /* ElementRef */], core["G" /* NgZone */], core["N" /* Renderer */], core["l" /* ComponentFactoryResolver */], core["i" /* ChangeDetectorRef */], gesture_controller["l" /* GestureController */], transition_controller["a" /* TransitionController */], [2, deep_linker["a" /* DeepLinker */]], dom_controller["a" /* DomController */], core["q" /* ErrorHandler */]], { root: [0, "root"], tabTitle: [1, "tabTitle"], tabIcon: [2, "tabIcon"] }, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n  "])), (_l()(), core["_17" /* ɵeld */](10, 0, null, 0, 1, "ion-tab", [["role", "tabpanel"], ["tabIcon", "chatbubbles"], ["tabTitle", "All contacts"]], [[1, "id", 0], [1, "aria-labelledby", 0]], null, null, tab_ngfactory["b" /* View_Tab_0 */], tab_ngfactory["a" /* RenderType_Tab */])), core["_16" /* ɵdid */](11, 245760, null, 0, tab["a" /* Tab */], [tabs["a" /* Tabs */], app["a" /* App */], config["a" /* Config */], platform_platform["a" /* Platform */], core["p" /* ElementRef */], core["G" /* NgZone */], core["N" /* Renderer */], core["l" /* ComponentFactoryResolver */], core["i" /* ChangeDetectorRef */], gesture_controller["l" /* GestureController */], transition_controller["a" /* TransitionController */], [2, deep_linker["a" /* DeepLinker */]], dom_controller["a" /* DomController */], core["q" /* ErrorHandler */]], { root: [0, "root"], tabTitle: [1, "tabTitle"], tabIcon: [2, "tabIcon"] }, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.homePage; var currVal_3 = "Home"; var currVal_4 = "home"; _ck(_v, 5, 0, currVal_2, currVal_3, currVal_4); var currVal_7 = _co.contactProfilePage; var currVal_8 = _co.contactName; var currVal_9 = "contact"; _ck(_v, 8, 0, currVal_7, currVal_8, currVal_9); var currVal_12 = _co.contactsPage; var currVal_13 = "All contacts"; var currVal_14 = "chatbubbles"; _ck(_v, 11, 0, currVal_12, currVal_13, currVal_14); }, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 5)._tabId; var currVal_1 = core["_29" /* ɵnov */](_v, 5)._btnId; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_5 = core["_29" /* ɵnov */](_v, 8)._tabId; var currVal_6 = core["_29" /* ɵnov */](_v, 8)._btnId; _ck(_v, 7, 0, currVal_5, currVal_6); var currVal_10 = core["_29" /* ɵnov */](_v, 11)._tabId; var currVal_11 = core["_29" /* ɵnov */](_v, 11)._btnId; _ck(_v, 10, 0, currVal_10, currVal_11); }); }
+function View_TabsPage_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 9, "ion-tabs", [], null, null, null, tabs_ngfactory["b" /* View_Tabs_0 */], tabs_ngfactory["a" /* RenderType_Tabs */])), core["_32" /* ɵprd */](6144, null, split_pane["a" /* RootNode */], null, [tabs["a" /* Tabs */]]), core["_16" /* ɵdid */](2, 4374528, null, 0, tabs["a" /* Tabs */], [[2, nav_controller["a" /* NavController */]], [2, view_controller["a" /* ViewController */]], app["a" /* App */], config["a" /* Config */], core["p" /* ElementRef */], platform_platform["a" /* Platform */], core["N" /* Renderer */], deep_linker["a" /* DeepLinker */], keyboard["a" /* Keyboard */]], null, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n  "])), (_l()(), core["_17" /* ɵeld */](4, 0, null, 0, 1, "ion-tab", [["role", "tabpanel"], ["tabIcon", "home"], ["tabTitle", "Home"]], [[1, "id", 0], [1, "aria-labelledby", 0]], null, null, tab_ngfactory["b" /* View_Tab_0 */], tab_ngfactory["a" /* RenderType_Tab */])), core["_16" /* ɵdid */](5, 245760, null, 0, tab["a" /* Tab */], [tabs["a" /* Tabs */], app["a" /* App */], config["a" /* Config */], platform_platform["a" /* Platform */], core["p" /* ElementRef */], core["G" /* NgZone */], core["N" /* Renderer */], core["l" /* ComponentFactoryResolver */], core["i" /* ChangeDetectorRef */], gesture_controller["l" /* GestureController */], transition_controller["a" /* TransitionController */], [2, deep_linker["a" /* DeepLinker */]], dom_controller["a" /* DomController */], core["q" /* ErrorHandler */]], { root: [0, "root"], tabTitle: [1, "tabTitle"], tabIcon: [2, "tabIcon"] }, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n  "])), (_l()(), core["_17" /* ɵeld */](7, 0, null, 0, 1, "ion-tab", [["role", "tabpanel"], ["tabIcon", "chatbubbles"], ["tabTitle", "All contacts"]], [[1, "id", 0], [1, "aria-labelledby", 0]], null, null, tab_ngfactory["b" /* View_Tab_0 */], tab_ngfactory["a" /* RenderType_Tab */])), core["_16" /* ɵdid */](8, 245760, null, 0, tab["a" /* Tab */], [tabs["a" /* Tabs */], app["a" /* App */], config["a" /* Config */], platform_platform["a" /* Platform */], core["p" /* ElementRef */], core["G" /* NgZone */], core["N" /* Renderer */], core["l" /* ComponentFactoryResolver */], core["i" /* ChangeDetectorRef */], gesture_controller["l" /* GestureController */], transition_controller["a" /* TransitionController */], [2, deep_linker["a" /* DeepLinker */]], dom_controller["a" /* DomController */], core["q" /* ErrorHandler */]], { root: [0, "root"], tabTitle: [1, "tabTitle"], tabIcon: [2, "tabIcon"] }, null), (_l()(), core["_36" /* ɵted */](-1, 0, ["\n"])), (_l()(), core["_36" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.homePage; var currVal_3 = "Home"; var currVal_4 = "home"; _ck(_v, 5, 0, currVal_2, currVal_3, currVal_4); var currVal_7 = _co.contactsPage; var currVal_8 = "All contacts"; var currVal_9 = "chatbubbles"; _ck(_v, 8, 0, currVal_7, currVal_8, currVal_9); }, function (_ck, _v) { var currVal_0 = core["_29" /* ɵnov */](_v, 5)._tabId; var currVal_1 = core["_29" /* ɵnov */](_v, 5)._btnId; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_5 = core["_29" /* ɵnov */](_v, 8)._tabId; var currVal_6 = core["_29" /* ɵnov */](_v, 8)._btnId; _ck(_v, 7, 0, currVal_5, currVal_6); }); }
 function View_TabsPage_Host_0(_l) { return core["_37" /* ɵvid */](0, [(_l()(), core["_17" /* ɵeld */](0, 0, null, null, 1, "tabs-menu", [], null, null, null, View_TabsPage_0, RenderType_TabsPage)), core["_16" /* ɵdid */](1, 49152, null, 0, tabs_menu_TabsPage, [nav_params["a" /* NavParams */]], null, null)], null, null); }
 var TabsPageNgFactory = core["_13" /* ɵccf */]("tabs-menu", tabs_menu_TabsPage, View_TabsPage_Host_0, {}, {}, []);
 
@@ -803,7 +801,7 @@ var loading_controller = __webpack_require__(99);
 var ionic_angular_module = __webpack_require__(123);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/url-serializer.js
-var url_serializer = __webpack_require__(49);
+var url_serializer = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
 var module_loader = __webpack_require__(39);
@@ -910,7 +908,7 @@ Object(platform_browser["j" /* platformBrowser */])().bootstrapModuleFactory(App
 
 /***/ }),
 
-/***/ 45:
+/***/ 55:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1121,7 +1119,7 @@ var TextAnalysisService = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_profile_contact_profile__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_profile_contact_profile__ = __webpack_require__(55);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

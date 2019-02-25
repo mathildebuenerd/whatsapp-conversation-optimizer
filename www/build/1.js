@@ -13,7 +13,7 @@ var core = __webpack_require__(0);
 var ionic_angular = __webpack_require__(38);
 
 // EXTERNAL MODULE: ./src/pages/contacts/contact-profile/contact-profile.ts
-var contact_profile = __webpack_require__(45);
+var contact_profile = __webpack_require__(55);
 
 // EXTERNAL MODULE: ./src/services/TextAnalysis.service.ts
 var TextAnalysis_service = __webpack_require__(56);
