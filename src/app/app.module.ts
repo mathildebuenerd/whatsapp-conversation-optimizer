@@ -14,31 +14,29 @@ import { TextAnalysisService } from "../services/TextAnalysis.service";
 
 
 @NgModule({
+  bootstrap: [IonicApp],
   declarations: [
     MyApp,
     HomePage,
-    // ContactsPage,
-    // ContactProfilePage,
-    TabsPage
+    TabsPage,
   ],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp)
-  ],
-  bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     ContactsPage,
     ContactProfilePage,
-    TabsPage
+    TabsPage,
+  ],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp),
   ],
   providers: [
     StatusBar,
     SplashScreen,
     TextAnalysisService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+  ],
 })
 export class AppModule {
 }
