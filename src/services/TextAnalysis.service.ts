@@ -4,14 +4,11 @@ import local = browser.storage.local;
 export class TextAnalysisService {
 
   constructor() {
-    console.log("constructor TextAnalysisService");
-
     // If it's the first time we ever run an analysis we add an entry to the localStorage
     if (!JSON.parse(localStorage.getItem('analyses'))) {
       let analyses = [];
       localStorage.setItem('analyses', JSON.stringify(analyses));
     }
-
   }
 
   findConversation(contact: string) {
@@ -79,8 +76,6 @@ export class TextAnalysisService {
   }
 
   addToStorage(contactName: string, type: string, data: Object, isAnalyzed: boolean) {
-
-    console.log(`j'ajoute au storage`);
 
     // Get all the analyses because we can't directly push something into the localStorage
     let analyses = JSON.parse(localStorage.getItem('analyses'));

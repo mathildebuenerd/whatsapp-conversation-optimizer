@@ -34,18 +34,10 @@ export class HomePage {
   scrapConversation(): void {
     const getContent = browser.tabs.executeScript(null, {file: '../assets/js/content.js'}
     ).then((content) => {
-      console.log("promesse réussie");
-      console.log(content);
-
       this.currentConversation = content[0]["messages"];
       this.currentName = content[0]["contactName"];
-      console.log(`j'ai reçu comme content de la promesse:`, content, content["messages"], content["contactName"]);
       this.askForLanguage();
       this.onGoToSingleContact(this.currentName);
-
-
-      // console.log(JSON.parse(localStorage.getItem("conversations")));
-      // console.log(JSON.parse(localStorage.getItem("conversations")));
     }).catch((error) => {
       console.warn("promesse échouée", error);
     });
@@ -155,7 +147,6 @@ export class HomePage {
           }
         }
       }
-      console.log(text)
     });
 
   }
@@ -163,7 +154,6 @@ export class HomePage {
   getContactName(): Promise<string> {
     return browser.tabs.executeScript(null, {file: '../assets/js/getCurrentContact.js'})
       .then( (name) => {
-        console.log(`nom: `, name[0]);
         return String(name[0]);
       });
   }
