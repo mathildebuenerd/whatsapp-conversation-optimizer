@@ -6,8 +6,8 @@ import { ContactProfilePage } from "../contacts/contact-profile/contact-profile"
   selector: "page-home",
   templateUrl: "home.html",
 })
-export class HomePage {
 
+export class HomePage {
   currentName: string;
   currentConversation: object;
 
@@ -33,8 +33,9 @@ export class HomePage {
   scrapConversation(): void {
     const getContent = browser.tabs.executeScript(null, {file: "../assets/js/content.js"}
     ).then((content) => {
-      this.currentConversation = content[0].messages;
-      this.currentName = content[0].contactName;
+      console.log("content", content);
+      this.currentConversation = content[0]["messages"];
+      this.currentName = content[0]["contactName"];
       this.askForLanguage();
       this.onGoToSingleContact(this.currentName);
     }).catch((error) => {
@@ -89,7 +90,7 @@ export class HomePage {
 
 
   private askForLanguage() {
-
+    console.log("i am gonna ask for language");
     const promptAlert = this.alertCtrl.create({
       buttons: [
         {

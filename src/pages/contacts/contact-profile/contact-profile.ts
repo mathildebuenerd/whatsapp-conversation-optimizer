@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { IonicPage, NavParams } from "ionic-angular";
 import { TextAnalysisService } from "../../../services/TextAnalysis.service";
 
 
@@ -12,45 +12,35 @@ import { TextAnalysisService } from "../../../services/TextAnalysis.service";
 
 @IonicPage()
 @Component({
-  selector: 'page-contact-profile',
-  templateUrl: 'contact-profile.html',
+  selector: "page-contact-profile",
+  templateUrl: "contact-profile.html",
 })
 export class ContactProfilePage {
 
   name: string;
-  data: Object;
+  data: object;
   isAnalyzed: boolean;
   analysis;
 
-  favouriteEmojis: Object;
-  // contactName: string;
+  favouriteEmojis: object;
 
   constructor(analysis: TextAnalysisService,
               public navParams: NavParams) {
-    // this.name = name;
-    // this.data = Object;
-
-    // this.params = params;
-    // console.log(this.params); // returns NavParams {data: Object}
-    // this.contactName = navParams.data.contactName;
-
-    console.log(`navParams de contact profile: `, navParams)
     this.analysis = analysis;
     this.favouriteEmojis = {
       "out": {},
       "in": {}
     };
-    // console.log(`this.analysis`, this.analysis);
   }
 
   ngOnInit() {
     // Get the name passed when we came from the precedent page
-    this.name = this.navParams.get('contactName');
+    this.name = this.navParams.get("contactName");
 
     this.isAnalyzed = false;
 
-    if (JSON.parse(localStorage.getItem('analyses'))) {
-      const allAnalyses = JSON.parse(localStorage.getItem('analyses'));
+    if (JSON.parse(localStorage.getItem("analyses"))) {
+      const allAnalyses = JSON.parse(localStorage.getItem("analyses"));
       for (const entry of allAnalyses) {
         if (entry.name === this.name) {
           this.favouriteEmojis = {
@@ -77,8 +67,6 @@ export class ContactProfilePage {
   //  Integration of the sentiment analysis
     const testSentiment = this.analysis.sentiment();
     console.log(testSentiment);
-
-
   }
 
 
